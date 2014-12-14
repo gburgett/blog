@@ -1,0 +1,15 @@
+baseurl = "http://yourSiteHere"
+languageCode = "en-us"
+title = "first things first"
+author = "Gordon Burgett"
+
+
+[indexes]
+	category = "categories"
+	tag = "tags"
+[Params]
+	AuthorName = "Gordon"
+	github = "gburgett"
+	email = "gordon.burgett@gmail.com"
+	description = "A blog about whatever crosses my mind, ordered by importance."
+
