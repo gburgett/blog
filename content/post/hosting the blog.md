@@ -27,4 +27,9 @@ I then copied the files from the 'public' folder to /var/www/html on the server 
 
 After that I could navigate to http://ec2-54-149-156-115.us-west-2.compute.amazonaws.com/ in my browser and my blog worked!  Hooray!
 
-I'll probably code all that up into a deploy script, but I'll wait till I get the domain first.
+I'll probably code all that up into a deploy script eventually.
+
+The final step was hooking it up to my domain.  I allocated an elastic IP for my amazon instance, and updated my 1and1 domain's A record to point to it.
+![EC2 elastic IP](/images/Amazon elastic IP.png)
+Then I just had to rebuild the site for my domain and push it.
+`hugo --baseUrl="http://ec2-54-149-156-115.us-west-2.compute.amazonaws.com"  --theme=hugo-uno`
