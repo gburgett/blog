@@ -2,7 +2,7 @@ baseurl = "http://yourSiteHere"
 languageCode = "en-us"
 title = "first things first"
 author = "Gordon Burgett"
-
+theme="hugo-uno"
 
 [indexes]
 	category = "categories"
