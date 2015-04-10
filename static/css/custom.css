@@ -1,0 +1,34 @@
+.red {
+	color: red;
+}
+
+
+.panel-cover--overlay {
+  background-color: rgba(68, 68, 68, 0.4);
+  background-image: -webkit-linear-gradient(-410deg, rgba(68, 68, 68, 0.4) 40%, rgba(0, 0, 0, 0.6));
+  background-image: linear-gradient(140deg,rgba(68, 68, 68, 0.4) 40%, rgba(0, 0, 0, 0.6)); }
+
+ .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 600px) and (orientation: portrait){
+	.panel-cover {
+	  
+	  background: top left no-repeat #666666;
+	  background-image: none;
+	  background-size: cover; 
+	}
+}
