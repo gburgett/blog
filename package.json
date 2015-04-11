@@ -1,0 +1,10 @@
+{
+  "name": "gordonburgett.net",
+  "version": "0.1.0",
+  "description": "gordon burgett's personal blog",
+  "repository": "https://github.com/gburgett/blog",
+  "dependencies": {
+    "express": "^4.12.3",
+    "googleapis": "^2.0.2"
+  }
+}
