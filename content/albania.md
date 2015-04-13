@@ -30,6 +30,10 @@ I would love to have a phone call with you, or meet you in person to talk more a
 </div>
 </div>
 
+#### Spreading the word
+
+I would love the opportunity to talk to your friends, community groups, bible studies, or even co-workers about what God is doing in Albania.  Raising awareness of God's work in Albania is one of my primary goals!  So please, Like, Tweet, and share with as many people as you can!
+
 #### Financially
 
 The cost of the STINT and the July trip in total are about $38,000.  Our first deadline is May 15, by which I need to have $2000 raised to pay for plane tickets for the summer trip.  My friends joining me on the summer trip will each need to raise $2800.  If you'd be willing, I ask you to partner with me in the amount of $50 or $100 per month over the next 12 months, to help me meet my fundraising goal.

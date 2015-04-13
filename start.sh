@@ -8,4 +8,4 @@ trap "kill $hugo_pid; exit" SIGHUP SIGINT SIGTERM EXIT
 
 cd public/
 
-DEBUG=express:* node node/server.js 3000
+DEBUG=express:* node node/server.js 8080 8081
