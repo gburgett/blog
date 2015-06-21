@@ -32,3 +32,13 @@
 	  background-size: cover; 
 	}
 }
+
+.source {
+  float: right;
+  padding-right: 10px;
+  text-decoration: underline;
+}
+
+blockquote p {
+  margin-bottom: 1.7em;
+}

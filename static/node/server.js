@@ -1,9 +1,7 @@
 #!/usr/bin/env node
 
 var fs = require('fs');
-var privateKey = fs.readFileSync(process.env.HOME + '/www.gordonburgett.net_private_key.key');
-var certificate = fs.readFileSync(process.env.HOME + '/www.gordonburgett.net_ssl_certificate.cer');
-var cacert = fs.readFileSync(process.env.HOME + '/cacert.cer');
+var url = require('url')
 
 port = 80
 if(process.argv.length > 2){
@@ -15,15 +13,24 @@ if(process.argv.length > 3) {
 }
 
 var express = require('express');
-var https = require('https');
 var http = require('http');
 
 var app = express();
 
 console.log("listening on port " + port + " ssl " + sslport)
 
-http.createServer(app).listen(port);
-https.createServer({key: privateKey, cert: certificate, ca:cacert}, app).listen(sslport);
+//http redirect to https
+http.createServer(function(request,response){
+				urlObj = url.parse(request.url)
+				urlObj.protocol = "https:"
+				if (request.headers.host) {
+					urlObj.host = request.headers.host
+				}
+				response.writeHead(301, {"Location": url.format(urlObj)});
+				response.end();
+			}).listen(port)
+
+http.createServer(app).listen(sslport);
 
 
 function send404(req, res, next) {
