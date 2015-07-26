@@ -5,9 +5,30 @@ Tags = ["missions", "albania", "cru"]
 date = "2015-04-09T22:20:15-05:00"
 menu = "main"
 title = "Albania!  YEEEEHAWWW!"
-type = "custom-albania"
+navtitle = "Albania"
+type = "albania"
 
 +++
+
+<div class="row">
+    <div class="jumbotron intro-header">
+        <div class="intro-message col-md-6 hidden-xs">
+            <h1>Team Albania!</h1>
+        </div>
+        <div class="dropdown col-md-3 col-md-offset-3">
+          <a class="btn btn-info dropdown-toggle"  style="float:right" href="https://give.cru.org/0746249">
+             <span class="glyphicon glyphicon-heart"></span>  Donate!
+          </a>
+        </div>
+    </div>
+</div>
+<div class="row intro-links">
+    <div class="col-md-6">
+      <a href="mailto:gordon.burgett@cru.org?Subject=Please%20add%20me%20to%20your%20email%20list&Body=Hi%20Gordon%21%0APlease%20add%20me%20to%20the%20list%20to%20receive%20your%20email%20newsletter.">
+        <span class="glyphicon glyphicon-envelope"></span> Get the newsletter!
+      </a>
+    </div>
+</div>
 
 ## This is the team!
 
@@ -40,39 +61,11 @@ The cost of the STINT and the July trip in total are about $38,000.  Our first d
 
 [Donate for my year-long STINT](https://give.cru.org/0746249) - My donation number is 0746249
 
-<div class="panel-group" id="team" role="tablist">
-<div class="panel panel-default">
-<div class="panel-heading" role="tab" id="headingOne">
-<a data-toggle="collapse" data-parent="#team" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color: inherit">
-  <h4 class="panel-title">Donate for another member of the Summer Trip</h4>
-</a>
-</div>
-<div id="collapseOne" class="panel-collapse collapse in">
-<table class="table table-striped">
-  <tbody>
-    <tr><td><a href="https://give.cru.org/0742368">Aaron Abeyta</a> </td><td> 0742368</td></tr>
-    <tr><td><a href="https://give.cru.org/0735128">Amanda Green</a> </td><td> 0735128</td></tr>
-    <tr><td><a href="https://give.cru.org/0735249">Billy Wand</a> </td><td> 0735249 </td></tr>
-    <tr><td><a href="https://give.cru.org/0735181">Brittany Novy</a> </td><td> 0735181 </td></tr>
-    <tr><td><a href="https://give.cru.org/0735060">Candace Denton</a> </td><td> 0735060 </td></tr>
-    <tr><td><a href="https://give.cru.org/0734962">Coleton Burch</a> </td><td> 0734962 </td></tr>
-    <tr><td><a href="https://give.cru.org/0735103">Emily Goetz</a> </td><td> 0735103 </td></tr>
-    <tr><td><a href="https://give.cru.org/0734948">Erica Barnes</a> </td><td> 0734948 </td></tr>
-    <tr><td><a href="https://give.cru.org/0737257">Jeff Welskopf</a> </td><td> 0737257 </td></tr>
-    <tr><td><a href="https://give.cru.org/0735085">Jeremy Eackles</a> </td><td> 0735085 </td></tr>
-    <tr><td><a href="https://give.cru.org/0735263">Joseph Woodard</a> </td><td> 0735263 </td></tr>
-    <tr><td><a href="https://give.cru.org/0735224">Katie Van Slyke</a> </td><td> 0735224 </td></tr>
-    <tr><td><a href="https://give.cru.org/0735046">Lauren Dean</a> </td><td> 0735046 </td></tr>
-    <tr><td><a href="https://give.cru.org/0735007">Lucy Chang</a> </td><td> 0735007 </td></tr>
-    <tr><td><a href="https://give.cru.org/0735200">Mark Saha</a> </td><td> 0735200 </td></tr>
-    <tr><td><a href="https://give.cru.org/0735021">Matt Dalka</a> </td><td> 0735021 </td></tr>
-    <tr><td><a href="https://give.cru.org/0735142">Patrick Miller</a> </td><td> 0735142</td></tr>
-    <tr><td><a href="https://give.cru.org/0734923">Ron Acord</a> </td><td> 0734923 </td></tr>
-    <tr><td><a href="https://give.cru.org/0735167">Will Noll</a> </td><td> 0735167 </td></tr>
-  </tbody>
-</table>
-</div>
-</div>
+How close am I to my goal?
+<div class="progress">
+  <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="97.8" aria-valuemin="0" aria-valuemax="100" style="width: 97.8%">
+    97.8%!
+  </div>
 </div>
 
 **Check donations**  
