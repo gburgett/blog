@@ -38,9 +38,43 @@
         </div>
       </div>
     </nav>
+
     <div class="container">
+
+      {{ if eq .Params.navtitle "Albania" }}
+      <div class="row">
+          <div class="jumbotron intro-header">
+              <div class="intro-message col-md-6 hidden-xs">
+                  <h1>Team Albania!</h1>
+              </div>
+              <div class="dropdown col-md-3 col-md-offset-3">
+                <a class="btn btn-info dropdown-toggle"  style="float:right" href="https://give.cru.org/0746249">
+                   <span class="glyphicon glyphicon-heart"></span>  Donate!
+                </a>
+              </div>
+          </div>
+      </div>
+      <div class="row intro-links">
+          <div class="col-md-6">
+            <a href="mailto:gordon.burgett@cru.org?Subject=Please%20add%20me%20to%20your%20email%20list&Body=Hi%20Gordon%21%0APlease%20add%20me%20to%20the%20list%20to%20receive%20your%20email%20newsletter.">
+              <span class="glyphicon glyphicon-envelope"></span> Get the newsletter!
+            </a>
+          </div>
+      </div>
+      {{ end }}
+
         <div class="row">
+          <div class="col-md-9" id="content">
         	{{ .Content }}
+          </div>
+          {{ if ne .Params.navtitle "Albania" }}
+          <div class="col-md-3 hidden-xs">
+            <nav class="bs-docs-sidebar affix">
+              <ul id="h-sidebar" class="nav nav-stacked fixed">
+              </ul>
+            </nav>
+          </div>
+          {{ end }}
         </div>
         
         {{ partial "share.html" . }}
@@ -49,6 +83,8 @@
     {{ partial "footer.html" .}}
 
   	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="/js/albania.js"></script>
     {{ partial "script.html" .}}
+
   </body>
 </html>

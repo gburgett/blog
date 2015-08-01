@@ -10,17 +10,15 @@ $(document).ready(function(){
 		$('#email').off();
 	})
 
-	$( "img.data-img" ).each(function() {
-	  var attr = $(this).attr('data-image-src');
+	$( "img" ).each(function() {
+	  var attr = $(this).attr('src');
 
 	  if (typeof attr !== typeof undefined && attr !== false) {
-	    if (window.matchMedia && window.matchMedia("(max-width: 640px)").matches){
-			arr = attr.split('.')
-			end = arr.pop()
-			arr.push('640x', end)
-	      $(this).attr('src', arr.join('.'));
-	    } else {
-	      $(this).attr('src', attr);
+	    if (!window.matchMedia || !window.matchMedia("(max-width: 640px)").matches){
+	      if (attr.indexOf('640x.')  > -1){
+	      	attr = attr.replace('640x.', '')
+	      	$(this).attr('src', attr);
+	      }
 	    }
 	  }
 	});

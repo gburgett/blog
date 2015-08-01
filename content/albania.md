@@ -10,37 +10,17 @@ type = "albania"
 
 +++
 
-<div class="row">
-    <div class="jumbotron intro-header">
-        <div class="intro-message col-md-6 hidden-xs">
-            <h1>Team Albania!</h1>
-        </div>
-        <div class="dropdown col-md-3 col-md-offset-3">
-          <a class="btn btn-info dropdown-toggle"  style="float:right" href="https://give.cru.org/0746249">
-             <span class="glyphicon glyphicon-heart"></span>  Donate!
-          </a>
-        </div>
-    </div>
-</div>
-<div class="row intro-links">
-    <div class="col-md-6">
-      <a href="mailto:gordon.burgett@cru.org?Subject=Please%20add%20me%20to%20your%20email%20list&Body=Hi%20Gordon%21%0APlease%20add%20me%20to%20the%20list%20to%20receive%20your%20email%20newsletter.">
-        <span class="glyphicon glyphicon-envelope"></span> Get the newsletter!
-      </a>
-    </div>
-</div>
-
-## This is the team!
+# This is the team!
 
 Are you excited?  I know I am.  Two years ago it was just 3 of us, now we have a group of 20 going to two different cities to spread the Gospel in the small country of Albania.  And if that's not enough change, this year I've been accepted into the STINT program, which means I'll be traveling back to Albania in September to work full-time for CRU.  This 1-year commitment will be a great opportunity for me to live out my faith and spend my life pursuing that which is truly meaningful.
 
-## How can you help?
+# How can you help?
 
-#### Prayer 
+## Prayer 
 
 Prayer is the most important way you can partner with me.  Honestly the idea of going over to Albania to share the Gospel scares me.  Not because of the hardships of leaving my culture & familiar settings, but because I don't know how I could possibly succeed.  The task feels too big for me.  But I know that if God is with me I can't fail, and I know that He listens to your prayers.
 
-#### Encouragement
+## Encouragement
 
 <div class="row">
 <div class="col-md-10">
@@ -51,11 +31,11 @@ I would love to have a phone call with you, or meet you in person to talk more a
 </div>
 </div>
 
-#### Spreading the word
+## Spreading the word
 
 I would love the opportunity to talk to your friends, community groups, bible studies, or even co-workers about what God is doing in Albania.  Raising awareness of God's work in Albania is one of my primary goals!  So please, Like, Tweet, and share with as many people as you can!
 
-#### Financially
+## Financially
 
 The cost of the STINT and the July trip in total are about $38,000.  Our first deadline is May 15, by which I need to have $2000 raised to pay for plane tickets for the summer trip.  My friends joining me on the summer trip will each need to raise $2800.  If you'd be willing, I ask you to partner with me in the amount of $50 or $100 per month over the next 12 months, to help me meet my fundraising goal.
 
@@ -82,21 +62,21 @@ How close am I to my goal?
 **By Telephone**  
 To make a credit card donation by phone, please dial 1 (888) 278 – 7233.  They will ask you for the 7-digit donation number (please see above).
 
-## So wait, you said a year?  What's that all about?
+# So wait, you said a year?  What's that all about?
 
 Yep!  Really I've been thinking about this since the first time I went to Albania.  There's a lot of reasons that went into this decision, and I'd like to share with you a few, in ascending order of importance:
 
-#### 1. There will never be a better time.
+## 1. There will never be a better time.
 
 I’m 27, single, and have no debt or other entanglements.  As I’ve been told, once you’re married or have kids, things get a lot more complicated :)
 
-#### 2. The work being done in Albania is transforming the region.
+## 2. The work being done in Albania is transforming the region.
 
 The Albanians believe that the opportunity has been given to them to reach the surrounding Balkan muslim countries for Christ.  They are uniquely positioned to be welcomed into closed or unfriendly countries like Macedonia, Turkey, and Montenegro.  They take this opportunity seriously; they are constantly sending people on short term trips around the whole region, and are even sending some staff members on longer missions.
 
 The Albanians are also hungry for the Gospel.  Having lived under Communist rule for so long, they are looking for the Truth that gives life purpose.  I’m always surprised by the number of people that are coming to CRU to hear the Gospel, and the speed with which the Albanian church is growing.
 
-#### 3. Jesus Christ rose from the dead.
+## 3. Jesus Christ rose from the dead.
 
 At Easter we celebrate a historical fact.  The fact that changes everything.  If Jesus Christ rose from the dead, then I too will rise from the dead (1 Corinthians 15:22), and this world is not my home (Hebrews 11:13-16).  What then in this life is not worth giving up for the sake of eternity?  Everything pales in comparison to the Resurrection.  
 
@@ -110,7 +90,7 @@ If you are not convinced, if you are sure that Jesus Christ did not rise from th
 
 > and if Christ has not been raised, your faith is worthless; you are still in your sins. Then those also who have fallen asleep in Christ have perished. If we have hoped in Christ in this life only, we are of all men most to be pitied.  [1 Corinthians 15:17-19](https://www.biblegateway.com/passage/?search=1+Corinthians+15)
 
-## What's next?
+# What's next?
 
 I'll be spending the next 6 months raising support for the STINT.  In September, I'll be leaving my position at Concur and flying to Albania, to begin my full-time employment with CRU.  I don't know yet exactly which team I'll be joining, or what my day to day will look like.  My desire and hope is to continue working with young adults.  I've spent the past 4 years volunteering with [The Porch](http://www.theporchdallas.com/), and I am continually amazed by the way God is moving through young adults to do amazing things.  Surrendered to Christ, We are changing the **world** through the lives of young adults.
 
