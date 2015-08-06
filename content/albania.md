@@ -12,7 +12,12 @@ type = "albania"
 
 # This is the team!
 
-Are you excited?  I know I am.  Two years ago it was just 3 of us, now we have a group of 20 going to two different cities to spread the Gospel in the small country of Albania.  And if that's not enough change, this year I've been accepted into the STINT program, which means I'll be traveling back to Albania in September to work full-time for CRU.  This 1-year commitment will be a great opportunity for me to live out my faith and spend my life pursuing that which is truly meaningful.
+Are you excited?  I know I am.  Two years ago it was just 3 of us, and this year we had a group of 20 going to two different cities to spread the Gospel in the small country of Albania.  And if that's not enough change, this year I've been accepted into the STINT program, which means I'll be traveling back to Albania in September to work full-time for CRU.  This 1-year commitment will be a great opportunity for me to live out my faith and spend my life pursuing that which is truly meaningful.
+
+The trip this summer was incredibly powerful.  We saw a lot of kids come to Christ, and had our first successful year of ministry to the high school students in Elbasan!  I'd love to tell you more about it, which is why I've made my journal from the trip available here:  
+[www.gordonburgett.net/albania/2015](/albania/2015)
+
+If you liked that, I'm sure you'll love what's coming next.  I'm going back in September to start my full-time employment with CRU Albania.
 
 # How can you help?
 
@@ -22,14 +27,7 @@ Prayer is the most important way you can partner with me.  Honestly the idea of 
 
 ## Encouragement
 
-<div class="row">
-<div class="col-md-10">
-I would love to have a phone call with you, or meet you in person to talk more about Albania.  Your words of encouragement would mean a lot to me.  You can also <a href="https://www.facebook.com/groups/1040599605969459/">follow my journey on Facebook</a>, or follow my blog at <a href="http://www.gordonburgett.net">http://www.gordonburgett.net</a>.
-</div>
-<div class="col-md-2 hidden-xs">
-<object  type="application/x-shockwave-flash" data="https://clients4.google.com/voice/embed/webCallButton" width="230" height="85"><param name="movie" value="https://clients4.google.com/voice/embed/webCallButton" /><param name="wmode" value="transparent" /><param name="FlashVars" value="id=e20edaab933f313a09a23918d8284084eeacae66&style=0" /></object>
-</div>
-</div>
+I would love to have a phone call with you, or meet you in person to talk more about Albania.  Your words of encouragement would mean a lot to me.  You can also [follow my journey on Facebook](https://www.facebook.com/groups/1040599605969459/), or follow my blog at [http://www.gordonburgett.net](/#blog)
 
 ## Spreading the word
 
@@ -37,16 +35,17 @@ I would love the opportunity to talk to your friends, community groups, bible st
 
 ## Financially
 
-The cost of the STINT and the July trip in total are about $38,000.  Our first deadline is May 15, by which I need to have $2000 raised to pay for plane tickets for the summer trip.  My friends joining me on the summer trip will each need to raise $2800.  If you'd be willing, I ask you to partner with me in the amount of $50 or $100 per month over the next 12 months, to help me meet my fundraising goal.
+The cost of the STINT and the July trip in total are about $38,000.  If you'd be willing, I ask you to partner with me in the amount of $50 or $100 per month over the next 12 months, to help me meet my fundraising goal.
 
 [Donate for my year-long STINT](https://give.cru.org/0746249) - My donation number is 0746249
 
 How close am I to my goal?
 <div class="progress">
-  <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="97.8" aria-valuemin="0" aria-valuemax="100" style="width: 97.8%">
-    97.8%!
+  <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="97.8" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+    100%!
   </div>
 </div>
+I'm fully funded!  Praise God!
 
 **Check donations**  
 1. Make check out to “Cru”  
