@@ -10,14 +10,14 @@ type = "albania"
 
 +++
 
-# This is the team!
+# The time is now
 
-Are you excited?  I know I am.  Two years ago it was just 3 of us, and this year we had a group of 20 going to two different cities to spread the Gospel in the small country of Albania.  And if that's not enough change, this year I've been accepted into the STINT program, which means I'll be traveling back to Albania in September to work full-time for CRU.  This 1-year commitment will be a great opportunity for me to live out my faith and spend my life pursuing that which is truly meaningful.
+My name is Gordon Burgett and I'm spending this year as a missionary with CRU in Albania.  This has been in the works for a while and now it's finally here!  I'm working to fulfill the Great Commission, "go and make disciples of all nations", and I want you to join me.  We're building a partnership here, CRU Albania partnering with the body of Christ in Dallas.
 
-The trip this summer was incredibly powerful.  We saw a lot of kids come to Christ, and had our first successful year of ministry to the high school students in Elbasan!  I'd love to tell you more about it, which is why I've made my journal from the trip available here:  
+Two years ago it was just 3 of us, and this year we had a group of 20 going to two different cities to spread the Gospel in the small country of Albania.  The trip this summer was incredibly powerful.  We saw a lot of kids come to Christ, and had our first successful year of ministry to the high school students in Elbasan!  I'd love to tell you more about it, which is why I've made my journal from the trip available here:
 [www.gordonburgett.net/albania/2015](/albania/2015)
 
-If you liked that, I'm sure you'll love what's coming next.  I'm going back in September to start my full-time employment with CRU Albania.
+We plan to bring at least as many people in July 2016, and God knows where the partnership will go from there.  I'll be on the ground all year, getting deeply plugged in with CRU and building up new believers who will take the Gospel to the rest of the balkans.
 
 # How can you help?
 
@@ -27,7 +27,7 @@ Prayer is the most important way you can partner with me.  Honestly the idea of 
 
 ## Encouragement
 
-I would love to have a phone call with you, or meet you in person to talk more about Albania.  Your words of encouragement would mean a lot to me.  You can also [follow my journey on Facebook](https://www.facebook.com/groups/1040599605969459/), or follow my blog at [http://www.gordonburgett.net](/#blog)
+I would love to skype with you.  My skype name is *gordon.burgett*.  Your words of encouragement would mean a lot to me.  You can also [follow my journey on Facebook](https://www.facebook.com/groups/1040599605969459/), or follow my blog at [http://www.gordonburgett.net](/#blog)
 
 ## Spreading the word
 
@@ -35,13 +35,13 @@ I would love the opportunity to talk to your friends, community groups, bible st
 
 ## Financially
 
-The cost of the STINT and the July trip in total are about $38,000.  If you'd be willing, I ask you to partner with me in the amount of $50 or $100 per month over the next 12 months, to help me meet my fundraising goal.
+My need is about $2800/mo in recurring donations over the course of the next 12 months.  If you'd be willing, I ask you to partner with me in the amount of $50 or $100 per month over the next 12 months, to help me meet my fundraising goal.
 
 [Donate for my year-long STINT](https://give.cru.org/0746249) - My donation number is 0746249
 
 How close am I to my goal?
 <div class="progress">
-  <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="97.8" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+  <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
     100%!
   </div>
 </div>
@@ -85,14 +85,6 @@ In short, I plan to take Pascal’s wager.  I’m hardly wagering my life at thi
 
 If you are convinced that Jesus Christ rose from the dead, I *need* your prayers.  I cannot succeed without the power of God working in the hearts of those whom I meet.  I don’t fancy myself skilled at evangelism, or at leading bible studies, or discipling young men.  I have some training, but I feel inadequate here.  Yet I know that I cannot fail if the Lord is with me, and I know that He listens to prayers (1 John 5:14-15).
 
-If you are not convinced, if you are sure that Jesus Christ did not rise from the dead, then for my sake I need you to not ignore this letter.  Please give me a phone call and convince me not to go.  Because if Jesus Christ did not rise from the dead, then I am giving up far too much to follow a charlatan and his gang of gullible idiots.  Even the apostle Paul says as much:  
+If you are not convinced, if you are sure that Jesus Christ did not rise from the dead, then for my sake I need you to not ignore this blog post.  Please give me a phone call and convince me not to go.  Because if Jesus Christ did not rise from the dead, then I am giving up far too much to follow a charlatan and his gang of gullible idiots.  Even the apostle Paul says as much:  
 
 > and if Christ has not been raised, your faith is worthless; you are still in your sins. Then those also who have fallen asleep in Christ have perished. If we have hoped in Christ in this life only, we are of all men most to be pitied.  [1 Corinthians 15:17-19](https://www.biblegateway.com/passage/?search=1+Corinthians+15)
-
-# What's next?
-
-I'll be spending the next 6 months raising support for the STINT.  In September, I'll be leaving my position at Concur and flying to Albania, to begin my full-time employment with CRU.  I don't know yet exactly which team I'll be joining, or what my day to day will look like.  My desire and hope is to continue working with young adults.  I've spent the past 4 years volunteering with [The Porch](http://www.theporchdallas.com/), and I am continually amazed by the way God is moving through young adults to do amazing things.  Surrendered to Christ, We are changing the **world** through the lives of young adults.
-
-While there I'll still keep in contact with my good friends, and I'm hoping that this STINT will continue to build up the partnership that we've been developing between Dallas and Albania.  I'm excited to begin, and excited for all that God's going to do through this!
-
-

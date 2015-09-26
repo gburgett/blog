@@ -1,4 +1,4 @@
-baseurl = "http://yourSiteHere"
+BaseURL = "http://www.gordonburgett.net"
 languageCode = "en-us"
 title = "first things first"
 author = "Gordon Burgett"
