@@ -5,12 +5,17 @@ RUN yum install -y epel-release
 # Install Node.js and npm
 RUN yum install -y nodejs npm
 
+# Install hugo
+RUN curl -L -o /tmp/hugo.tar.gz https://github.com/spf13/hugo/releases/download/v0.14/hugo_0.14_linux_386.tar.gz
+RUN tar xvf /tmp/hugo.tar.gz -C /tmp/
+RUN mv /tmp/hugo_0.14_linux_386/hugo_0.14_linux_386 /usr/bin/hugo
+
 COPY package.json /src/package.json
 RUN cd /src; npm install
 
 EXPOSE 8080 8081
 
-CMD ["node", "/src/server.js", "/www", "8080", "8081"]
+CMD ["node", "/src/node/server.js", "/src/public", "8080", "8081"]
 
-COPY ./node/ /src
-COPY ./public /www
+COPY ./ /src/
+RUN hugo -s /src/ --baseUrl="http://www.gordonburgett.net"
