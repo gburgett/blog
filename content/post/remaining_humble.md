@@ -4,7 +4,7 @@ Description = ""
 Tags = ["cru", "Albania"]
 date = "2015-11-12T10:31:35+01:00"
 menu = "main"
-title = "Excitement, Discouragement, Hope"
+title = "Remaining Humble"
 
 +++
 
