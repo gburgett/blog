@@ -18,7 +18,7 @@ Rick and I had a good time at breakfast on Saturday, chatting about the Porch an
 
 We made it back to Tirana in time to have coffee with the young professionals.  We invited the believers to join Rick for coffee, and he challenged them to be leaders in ministry.  I'm really glad we were able to get all of them together, so they could get to know eachother and see that they're not alone!
 
-!["Young Professionals with Rick"](/images/young_professionals_with_rick.640x.jpg)
+!["Young Professionals with Rick"](/images/young_professionals_with_rick.jpg)
 <span style="float: right; font-size: 10pt;">photo by <a href="https://www.instagram.com/p/-7In4IhIcu/">Cheryl Boyd</a></span>
 
 The next day Rick preached a sermon at our church, Cornerstone.  He preached on the second week of the Advent calendar, the fulfilled prophesies.  We had lunch at the Sheraton hotel, where there was some kind of christmas market going on, so it was a lot more crowded than in the past.  I managed to find a couple good christmas presents there, some authentic Albanian stuff.
