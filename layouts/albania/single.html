@@ -33,7 +33,19 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
              <li class="{{ if eq .Params.navtitle "Albania" }}active{{ end }}"><a href="/albania">Albania</a></li>
-             <li class="{{ if eq .Params.navtitle "2015" }}active{{ end }}"><a href="/albania/2015">Journal: 2015</a></li>
+             <li class="dropdown {{ if eq .Params.menu "journal" }}active{{ end }}">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                {{ if eq .Params.menu "journal" }}{{ .Title }}{{ else }}Journal{{ end }} <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                {{ range where .Site.Pages "Params.menu" "=" "journal" }}
+                  <li>
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                  </li>
+                {{ end }}
+              </ul>
+             </li>
+             <!--<li class="{{ if eq .Params.navtitle "2015" }}active{{ end }}"><a href="/albania/2015">Journal: 2015</a></li>-->
           </ul>
         </div>
       </div>
