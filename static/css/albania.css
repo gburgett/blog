@@ -64,6 +64,11 @@ hr {
   clear:both;
 }
 
+iframe {
+  width:100%;
+  height: 750px;
+}
+
 @media only screen and (max-width: 640px) {
   .intro-header {
     background-image: url(../images/albania/me_albanian_flag.640x.jpg);
