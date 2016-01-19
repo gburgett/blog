@@ -1,7 +1,7 @@
 +++
-Categories = ["Development", "Docker"]
+Categories = ["Development", "Hosting"]
 Description = ""
-Tags = ["Development", "docker"]
+Tags = ["Development", "docker", "hosting"]
 date = "2015-10-07T20:33:41+02:00"
 menu = "main"
 title = "Running with Docker"

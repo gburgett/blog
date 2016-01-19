@@ -2,7 +2,8 @@
 date = "2014-12-14T18:42:21-06:00"
 draft = false
 title = "hosting the blog"
-
+Categories = ["Development", "Hosting"]
+Tags = ["Development", "hosting"]
 +++
 
 I decided to use Amazon EC2 to host the blog, because they give you 1 year free on a micro instance.  Plus I've always wanted to learn how to host something on Amazon's cloud.  I'll get a linux instance and put an Apache HTTP server on it.  Should be easy enough to do.

@@ -2,6 +2,8 @@
 date = "2014-12-14T13:52:12-06:00"
 draft = false
 title = "Creating a blog"
+Categories = ["Development", "Hosting"]
+Tags = ["Development", "hosting"]
 
 +++
 
