@@ -8,7 +8,7 @@ title = "docker cloud is neat"
 
 +++
 
-After our recent marriage conference in Durres, I had some time off today so I decided to revisit how I'm hosting all my stuff.  One of my issues with using Amazon's container service is that they make you assign resource values to each container, and those are not flexible.  So, I have to give each container high enough memory that it won't die, but then I run out of space on my server real quick.  Since most of the stuff I want to host just sits idle the majority of the time, this wasn't ideal for me.
+I had some time off today so I decided to revisit how I'm hosting all my stuff.  One of my issues with using Amazon's container service is that they make you assign resource values to each container, and those are not flexible.  So, I have to give each container high enough memory that it won't die, but then I run out of space on my server real quick.  Since most of the stuff I want to host just sits idle the majority of the time, this wasn't ideal for me.
 
 I'd heard about Tutum before, so I went to check it out.  It's another container management solution.  It's since been acquired by Docker and rebranded as [docker cloud](https://cloud.docker.com).  It's definitely got a slick interface, and looks to provide all the features I'll need.  One that I particularly like is the "autoredeploy" switch, which automatically redeploys a container when you push a new image.  Perfect for my blog.  So, I set about getting it set up.
 
@@ -31,6 +31,8 @@ Now to set up my services.  You can set them up directly using the web interface
 Now I need to set up my haproxy load balancer in front of it.  I decided this time I'll dockerize my load balancer instead of having it run straight on the EC2 instance.  I messed around with it for a long time before I found this image, which does everything I want: https://hub.docker.com/r/dockercloud/haproxy/
 
 Setting that up was a breeze.  I created a service to run it, and set it to listen on ports 80 and 443 (the HTTP and HTTPS ports).  It contacts the docker cloud API and discoveres the locations of all my other services automatically, and imports their info into its configuration.  I just needed to declare a couple environment variables in my other services, like hostname and SSL keys, and it imports them to route virtual hosts and terminate SSL connections automagically.  Sweet!
+
+Only a couple things tripped me up at this point.  One was the routing based on the `VIRTUAL_HOST` environment variable.  If you want it to route https traffic, you need an "https://" virtual host in there.  Another thing was that, while this haproxy service has a DNS hostname, I can't just make a CNAME to it from www.gordonburgett.net, since the DNS hostname changes whenever the container is reloaded.  So I stuck to my old way of assigning an Elastic IP to the node and using that in my DNS records.
 
 ## Running the Reclaimed site
 
