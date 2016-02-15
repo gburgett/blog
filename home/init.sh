@@ -8,6 +8,7 @@ sudo apt-get update
 sudo apt-get -y install python-pip
 sudo pip install docker-cloud
 docker-cloud node byo | grep 'curl' | sh
+sudo gpasswd -a ubuntu docker
 
 # install squid proxy & configure
 sudo apt-get -y install squid
