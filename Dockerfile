@@ -13,9 +13,9 @@ RUN mv /tmp/hugo_0.14_linux_386/hugo_0.14_linux_386 /usr/bin/hugo
 COPY package.json /src/package.json
 RUN cd /src; npm install
 
-EXPOSE 8080 8081
+EXPOSE 8080
 
-CMD ["node", "/src/node/server.js", "/src/public", "8080", "8081"]
+CMD ["node", "/src/node/server.js", "/src/public", "8080"]
 
 COPY ./ /src/
 RUN hugo -s /src/ --baseUrl="http://www.gordonburgett.net"

@@ -8,13 +8,9 @@ if(process.argv.length > 2){
 	dir = process.argv[2]
 }
 
-port = 80
-if(process.argv.length > 3){
-	port = parseInt(process.argv[3])
-}
 sslport = 443
-if(process.argv.length > 4) {
-	sslport = parseInt(process.argv[4])
+if(process.argv.length > 3){
+	sslport = parseInt(process.argv[3])
 }
 
 var express = require('express');
@@ -22,18 +18,7 @@ var http = require('http');
 
 var app = express();
 
-console.log("listening on port " + port + " ssl " + sslport)
-
-//http redirect to https
-http.createServer(function(request,response){
-				urlObj = url.parse(request.url)
-				urlObj.protocol = "https:"
-				if (request.headers.host) {
-					urlObj.host = request.headers.host
-				}
-				response.writeHead(301, {"Location": url.format(urlObj)});
-				response.end();
-			}).listen(port)
+console.log("listening on port " + sslport)
 
 http.createServer(app).listen(sslport);
 
