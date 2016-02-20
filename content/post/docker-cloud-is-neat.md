@@ -4,7 +4,7 @@ Description = ""
 Tags = ["Development", "docker"]
 date = "2016-02-15T14:09:13+01:00"
 menu = "main"
-title = "docker cloud is neat"
+title = "Docker Cloud is Neat"
 
 +++
 
