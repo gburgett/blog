@@ -27,11 +27,6 @@ I don't mean to write this post to get sympathy.  One thing that I know is there
 	<img src="/images/dating_seminar_crowd.640x.jpg" >
 	</img>
 </div>
-<div class="data-img col-md-6">
-	<span>Our awesome volunteer, Adi, running the show at social time!</span>
-	<img src="/images/emcee_Adi.jpg" >
-	</img>
-</div>
 
 The point is that it's not glamorous or rosy or fun all the time.  In the in-between, the day to day, it's difficult and challenging and tiring.  It takes effort and patience.  I'm asking God every day for more patience.  I admire the teammates I have, who have been doing this for years on end.  Some of them in tough soil where they haven't seen much fruit at all.  But nothing worthwhile ever comes without effort.  I never expected this to be easy.
 
