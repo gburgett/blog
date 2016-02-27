@@ -28,7 +28,7 @@ I don't mean to write this post to get sympathy.  One thing that I know is there
 	</img>
 </div>
 
-The point is that it's not glamorous or rosy or fun all the time.  In the in-between, the day to day, it's difficult and challenging and tiring.  It takes effort and patience.  I'm asking God every day for more patience.  I admire the teammates I have, who have been doing this for years on end.  Some of them in tough soil where they haven't seen much fruit at all.  But nothing worthwhile ever comes without effort.  I never expected this to be easy.
+The point is that it's not glamorous or rosy or fun all the time.  In the in-between, the day to day, it's difficult and challenging and tiring.  You don't come to a new place, even in your home culture, and start being impactful right away.  It takes effort and patience.  I admire the teammates I have, who have been doing this for years on end.  Some of them in tough soil where they haven't seen much fruit at all.  But nothing worthwhile ever comes without effort.  I never expected this to be easy.
 
 One of the people at the stint conference said (and I'm paraphrasing), "God does less in 1 year than you hope, but more in 5 years than you can imagine."  I think that quote will ring true for a lot of people in ministry.  I've been told that for foreign missionaries, ministry doesn't really take off until your 2nd year, when you have a better command of the language & better understanding of the culture.  I'm trusting God that next year I'll read this blog post again, and think about how worthwhile all this investment is.
 

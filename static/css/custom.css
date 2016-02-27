@@ -43,11 +43,12 @@ blockquote p {
   margin-bottom: 1.7em;
 }
 
-.post p {
-  transition: background-color 2s ease;
+.post > p {
+  transition: color 2s ease, background-color 2s ease;
   border-radius: 8px;
   padding: 2px;
 }
-.post p:hover {
-  background-color: #d9edf7
+.post > p:hover {
+  background-color: #d9edf7;
+  color: black;
 }
