@@ -1,9 +1,11 @@
 FROM httpd:2
 
+RUN apt-get update && apt-get install -y curl
+
 # Install hugo
-RUN curl -L -o /tmp/hugo.tar.gz https://github.com/spf13/hugo/releases/download/v0.14/hugo_0.14_linux_386.tar.gz
+RUN curl -L -o /tmp/hugo.tar.gz https://github.com/spf13/hugo/releases/download/v0.15/hugo_0.15_linux_386.tar.gz
 RUN tar xvf /tmp/hugo.tar.gz -C /tmp/
-RUN mv /tmp/hugo_0.14_linux_386/hugo_0.14_linux_386 /usr/bin/hugo
+RUN mv /tmp/hugo_0.15_linux_386/hugo_0.15_linux_386 /usr/bin/hugo
 
 EXPOSE 80
 
