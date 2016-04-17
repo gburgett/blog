@@ -9,4 +9,4 @@ RUN mv /tmp/hugo_0.15_linux_386/hugo_0.15_linux_386 /usr/bin/hugo
 
 COPY ./ /src/
 RUN hugo -s /src/ --baseUrl="http://www.gordonburgett.net"
-RUN mv /src/public/* /usr/local/apache2/htdocs/
+RUN rm -r /usr/local/apache2/htdocs && mv /src/public /usr/local/apache2/htdocs
