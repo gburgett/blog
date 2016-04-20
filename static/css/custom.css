@@ -33,6 +33,12 @@
 	}
 }
 
+.img-footer {
+  float:right;
+  color: gray;
+  font-size: 8pt;
+}
+
 .source {
   float: right;
   padding-right: 10px;
