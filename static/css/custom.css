@@ -2,6 +2,10 @@
 	color: red;
 }
 
+.post a {
+	text-decoration: underline;
+}
+
 
 .panel-cover--overlay {
   background-color: rgba(68, 68, 68, 0.4);
@@ -26,10 +30,10 @@
 
 @media only screen and (max-width: 600px) and (orientation: portrait){
 	.panel-cover {
-	  
+
 	  background: top left no-repeat #666666;
 	  background-image: none;
-	  background-size: cover; 
+	  background-size: cover;
 	}
 }
 
