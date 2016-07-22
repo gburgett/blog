@@ -11,10 +11,29 @@ navtitle = "2016 - Young Professionals"
 
 Hi there! We're about to start the 2016 Young Professionals summer conference, on July 5!  It's going to be an exciting time.  Check back in late July to read the whole journal!
 
+# Day 1
+<h2 id="July-5" class="hidden-xs">Monday July 4</h2>
+
+Today was a nice break.  We canceled the morning trip to Kruja, because all the Americans (including me) were worn out from the high schoolers.  I slept in till about 9:30, then camped out with Wes and Chris at Mulliri Vjeter.  They had to finish working on last minute changes to their presentations.  We met up with the staff team for a relaxing lunch.  The American team and staff got introduced to each-other and we had a nice relaxing time.
+
+We met again at the office for a dinner with the whole set of Young Professional volunteers.  I gave a devotional & encouragement out of 2 Corinthians 2-3.  We talked about being an aroma of Christ this week.  We went over the schedule and responsibilities, hen spent some time praying together.  We prayed for God to bring lots of new people, and to move mightily here.
+
+After the meeting the staff had a surprise for us!  They led us outside and Adi shot off a bundle of fireworks.  But it wasn't anchored to anything and flipped on it's side!  Fortunately no-one was hurt.  God's protecting us :)  We had Ice Cream together as well, and all us Americans sang The Star Spangled Banner.  It was a great way to spend the 4th.
+
+<hr/>
+
 # Day 2
 <h2 id="July-5" class="hidden-xs">Tuesday July 5</h2>
 
-Day 1 hasn't happened yet!  I'll update soon, I promise!
+I've been having to deal with some personal stuff during this time as well.  Pal and I are moving out of our house, for the next month we'll be living at a friend's house while they're in America in order to take care of their dog.  So I headed over there early with some luggage, and started some laundry.  After that I trekked back to Mulliri Vjeter and met up with Will and Wes around 9:30.  They just finished meeting with Adi and one of his friends, and were on their way to meet Enerik.  It's good that they're busy!  I hung out with Pal until 10:30 and then went to my Albanian lesson.
+
+After having lunch with the guys, I headed to Relax bar and met Arben, a YP whom Adi and I had met some time ago.  Chris joined us, and I attempted to translate the conversation.  Arben is a Muslim who goes to the mosque regularly, but is not as committed as he'd like to be.  He said he'd like to learn more about Jesus and Christianity, though maybe we need a better translator.
+
+I went back home to let the dog out and prep for the meeting.  We got started at 5:30ish setting up.  Everyone arrived at 6:30, and we began at 7.  Wes did a great job with his seminar on negotiation.  We had some small group discussion and everyone was extremely interested!  The best thing though was how many new people showed up!  Not only did Adi invite all his friends, some of the attendees had just happened to see the event on Facebook & decided to come.  Wes told me he and Will made several coffee appointments.
+
+I went right after the meeting to coffee with a friend of Berti Berhami's, named Jonito.  Jonito is a very smart guy.  He knows a lot of information but has no consistent worldview.  He says he'll be coming back tomorrow, but my fear is that he'll take the teachings of Jesus and add them to everything else, in order to make his life better.  He won't accept the transforming power of the Gospel.  I'll be praying for him.
+
+We finished the night at Zgarra Korçarë, an Albanian style grill which has delicious meatballs.  It's one of my favorite restaurants in Tirana.  Wes and I had a great conversation about seeking opportunities to grow in your faith.  He told me all the ways he's trying to grow, and the only thing I can think to add is "don't grow weary".  I'm glad he's here on this team to share his experience with these young professionals.
 
 <hr/>
 
