@@ -56,9 +56,57 @@ Blerina made an awesome spread!  Pilaf, Byrek, Fërgesë, macaroni, chicken and 
 
 <hr/>
 
-# Day 1
-<h2 id="Jun-27" class="hidden-xs">Monday June 27</h2>
+# Day 4
+<h2 id="Jun-30" class="hidden-xs">Thursday June 30</h2>
 
-Day 1 hasn't happened yet!  I'll update soon, I promise!
+Today started off as a bit of a hassle, but by the end it turned out great!  In the morning I had to send out several dozen messages trying to coordinate meetings, to make sure everything goes smoothly next week.  We couldn't quite figure it all out, since Will has been so busy.  I suggested to him that he try to delegate more of his responsibilities, especially for next week.
+
+We had our team devotion at 11am, then I left with Lauren to go get Wes at the airport.  He was excited to arrive, but also a bit tired.  We got to the hotel and met the Young Professionals staff in the coffee shop next door while Wes changed and unpacked.  We talked through the schedule and there seemed no objections.  I had to leave a bit early for a coffee with some students at 3.
+
+I met Silvio, Daniel and Ervin.  We talked about sports, school, and relationships.  Then I shifted the conversation.  I found out Daniel is a believer.  He has been with RPJ almost 1 year.  Ervin is from a catholic background.  We'll have to talk more to him later.  Silvio is a muslim.  His dad goes to the mosque and he is keeping Ramadan.  We talked a bit about eternal life.  Daniel gave a summary of the Gospel, saying that there is no other way to eternal life except through Jesus Christ.  I asked Silvio, how does the Koran say you receive eternal life?  He said by following the rules.
+
+We went from that coffee to Ice and Spice.  Today we had a small group discussion time about the first 2 spiritual laws.  One of the students was new today and he was very much a skeptic.  His name is Donald.  We had some very interesting back and forth, and eventually I asked him to meet me for coffee.  I told him that I need his help, because I've staked my life on the truth of the resurrection.  If that is not true, why shouldn't I move back to Dallas?  He agreed with me, and said that the best thing for me was probably to move back.  Finally someone who understands that the Resurrection is the key!  We scheduled coffee for 10am tomorrow.
+
+We danced a while and then had a debrief.  It seemed that a lot of the others also had good conversations today.  We left to go to dinner, and I suggested we go to the new Arabic restaurant.  Unfortunately they only had a limited menu because of Ramadan, a "fasting menu".  I wonder why they are even open?  We went instead to Taiwan, which is a big complex in a park near the city center.  We had some good italian food and a fun conversation.  Matt got another red bull, and they poured it into a wine glass.  Will got way too much food, but we pushed him into finishing his pizzaa too.  I really enjoyed hanging with them all.  I'm gonna miss them a lot when they go back.
+
+After dinner we stopped for Gelato.  Matt got the Red Bull flavor.  This has become tradition for him, to consume as much red bull as possible right before bed.  We walked over to the new pavillion
+that they've constructed in the square.  Will pulled out the guitar, he and Matt started singing random songs about Gold Bond & Red Bull.  Dustyn engaged some Albanians sitting there.  They didn't speak any English so he tried Italian, and one of them responded!  They moved over to take a picture with us, then I started talking to them in Albanian.  We invited them to the camp tomorrow.  It felt like a divine appointment, I hope they show up!  We walked back and I split off from the group to go home.  Again it's almost like I'm back as one of the gang, but not quite.
+
+<hr/>
+
+# Day 5
+<h2 id="Jul-1" class="hidden-xs">Friday July 1</h2>
+
+Today was the culmination of the first half of the camp, and it was awesome!  To make plenty of time for afternoon coffee we planned to start the Texas Event about 11:30.  But first I had an appointment with Donald, the skeptic from yesterday.  I've begun to use an approach where I ask the skeptic to prove to me that Jesus didn't rise from the dead.  I showed Donald the passage in 1 Corinthians 15, where the Bible directly tells you how it's claims can be shown to be false.  He was more interested in making emotional arguments grounded in his psych 101 class.  We talked about my Ego vs Id problem, how my Id wants to go back Dallas and I should let it because we are all just animals anyways.  I explained to him that I'm investing my life here, how I'm looking for it to pay dividends in eternity.  He seemed surprised that I'd use economics terms in relation to faith, but that seems natural to me.  Economics is a study of rational human interactions with eachother and the world.  Eventually we got to the real crux of the issue.  He didn't have any new info to challenge that Jesus rose from the dead.  He doesn't believe it because he enjoys drinking, smoking, gambling, and fornicating.  He thinks he has joy in that; I told him he's never experienced joy like I have in Christ.  I hope someday, when he realizes his life is empty, he'll remember the guy who told him to invest it instead of spend it.
+
+
+
+<hr/>
+
+# Day 6
+<h2 id="Jul-2" class="hidden-xs">Saturday July 2</h2>
+
+Today was a free day.  Some of the team had coffee with kids, but for the rest today we went touring and bought souvenirs.  At about 10am we started it off by going to the Italian chocolate restaurant.  They literally sell glasses full of melted chocolate, as well as delicious crepes and other super fattening stuff!  Everyone was extremely satisfied.  We went from there to Sky Tower, while some of us split off to have coffees with kids.  Everyone loved the view from there, and Lauren tried to get herself better oriented to the city.  I'm not sure how successful she was.  They are building a giant new mosque and we could see the construction.  The plan is for everyone to come back next year so we can see the completed building.  We went over to "souvenir row" so they could shop, but the veterans were less interested in that.  We headed down to the Stephen Center and I introduced Ron & Lauren to "Çai Mali", Albanian mountain tea.  They agree with me that it's pretty tasty.  
+
+I left them there to go run some errands and clean my old house.  Several of them wanted to come see where I had been living.  I cleaned up quite a bit, then ran into Pal on my way to meet up with them.  He told me to stall another 30 minutes so he could clean up a bit more (I hadn't cleaned his room).  I found some of Team Elbasan there at Mon Cheri and heard a bit about how their week went.  Turns out Patrick enjoys being goofy & drawing attention (who knew?).  They apparently had several kids accept Christ this week!
+
+We went up to my house which was now super clean.  We sat around and chatted for 30 minutes, drinking some of my homemade lemonade.  Some of them enjoyed the sunset from my balcony.  Then we headed down to dinner.  Dinner was at Floga, a great restaurant where we've been before.  Our party was about 30 people, which put some stress on the staff & owner.  It was more difficult to find out who had which dish because many of the Americans ordered off the English version of the menu, and didn't understand when the waiters called out the Albanian names of the dishes.  But everyone got their food and it turned out OK.  Someone who didn't want to be named generously paid for the whole dinner, about $300.  Some of the Albanians have been feeling uncomfortable by the generosity of the American team.  Maybe we can discuss this more with the Albanians and talk about it before the next trip.
+
+Of course we couldn't miss the Euro cup match between Germany and Italy!  Half the Albanians love Germany and the other half love Italy.  We went to an outdoor coffee shop with a big projector to see it.  Italy fell on the 9th penatly kick.  Gedis was sad.  Pal didn't care because he's rooting for Wales.  I got back to my house about 12pm and went right to sleep.
+
+<hr/>
+
+# Day 7
+<h2 id="Jul-3" class="hidden-xs">Sunday July 3</h2>
+
+Today was the last day that I'd get to spend with most of my friends for a long while.  But it was a great and full day.  We went to church at Cornerstone church (Guri i Themelit) and heard a good sermon from Alan over 2 Corinthians 3.  Alan is another Texan who works for a church in Houston, and splits his time there and in Albania.  After church we took a picture together upstairs.  I can't wait to see all of Ron's photos from the trip.
+
+We went to the restaurant in the nearby Sheraton hotel for lunch with the elders of the church.  I got a chance to talk to Brandy & Michele a bit, who were part of the Elbasan team.  They were really glad to have a chance to come on this trip, and to meet all the awesome people here.  I'm really glad they enjoyed it.  From there we all loaded up the bus to Durres.  Will brought out his guitar, he and Ermal did a smash up of American freestyle with Albanian traditional vocals.  It was pretty hillarious.
+
+We unloaded at the beach and got a spot at a beachfront coffee shop.  Pal and I rented a paddle boat and had fun on that for a while.  When we paddled back in a bunch of the guys got on at the same time, and almost sank it!  It was fun horsing around with them.  Back at the coffee shop we saw several Gypsy children begging for money.  Unfortunately, directly giving them money is more likely to hurt than help.  The parents don't send the children to school because they are good beggars.  Really the best way to help is donate to an organization like Pioneers, which works to help the Roma and other communities like them.  Chris made a nice gesture and bought the kids some Fanta Exotic, but he had to argue with them because they at first told him they didn't want anything but money.
+
+We moved over to the pier to have dinner at the seafood restaurant at the end.  I sat with Gedis, Lauren, Chris & Danita, Erin, and Ermal.  Ermal got fish by the kilogram, which still had heads attached.  That freaked Danita out a bit, so we had to put up a barrier made of a napkin & a couple water bottles.  Gedis and I got Tavë Karkalec, which is a creamy shrimp casserole.  Definitely the best thing on the menu, delicious but super rich.  Matt got some prawns, turns out one of them was Sebastian's cousin.  In total, the bill for all that seafood was only about $11.50/person.  Not bad!
+
+Will made a good toast to this year's efforts.  He challenged each of us to think about our ongoing involvement in Albania, even to the point of considering quitting our jobs to move here.  I hope some more people will take up the challenge.  I got to hang out with the team at the hotel until late, but I was exhausted so I didn't stay up with them too late.  So I said goodbye and went home.  I'm definitely gonna miss all of them.  It's been a great week, but there's another one ahead of us.
 
 <hr/>
