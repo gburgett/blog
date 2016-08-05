@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	//auto-scrolling sidebar
 	ul = $("#h-sidebar")
 
 	lasth1 = undefined
@@ -37,5 +38,32 @@ $(document).ready(function(){
 	$('body').scrollspy({
 	    target: '.bs-docs-sidebar',
 	    offset: 100
+	});
+
+	//window view of images
+	function showFullSize(){
+		var attr = $(this).attr('src');
+
+	  if (typeof attr !== typeof undefined && attr !== false) {
+      if (attr.indexOf('640x.')  > -1){
+				var img = $("<img/>", {
+					src: $(this).attr('src').replace('640x.', ''),
+					alt: $(this).attr('alt'),
+				});
+				$("#image-frame").html(img);
+
+				$("#image-modal").modal();
+      }
+	  }
+	}
+
+	$( "img" ).each(function() {
+	  var attr = $(this).attr('src');
+
+	  if (typeof attr !== typeof undefined && attr !== false) {
+      if (attr.indexOf('640x.')  > -1){
+				$(this).click(showFullSize);
+      }
+	  }
 	});
 });
