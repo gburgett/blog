@@ -17,7 +17,7 @@ Today was a nice break.  We canceled the morning trip to Kruja, because all the 
 
 <div class="data-img">
 	<img src="/images/albania/2016/yp_committe.640x.jpg" alt="The Young Professionals Committee"></img>
-	<span>photo by Lauren Dean</span>
+	<span>photo by the beautiful and talented Lauren Dean</span>
 </div>
 
 
@@ -38,7 +38,7 @@ I went back home to let the dog out and prep for the meeting.  We got started at
 
 <div class="data-img">
 	<img src="/images/albania/2016/yps_listening_to_wes.640x.jpg" alt="Wes giving his excellent seminar"></img>
-	<span>photo by Lauren Dean</span>
+	<span>photo by the beautiful and talented Lauren Dean</span>
 </div>
 
 I went right after the meeting to coffee with a friend of Berti Berhami's, named Jonito.  Jonito is a very smart guy.  He knows a lot of information but has no consistent worldview.  He says he'll be coming back tomorrow, but my fear is that he'll take the teachings of Jesus and add them to everything else, in order to make his life better.  He won't accept the transforming power of the Gospel.  I'll be praying for him.
@@ -58,14 +58,14 @@ I said goodbye to those guys about noon and went to lunch with Will, Chris, and 
 
 <div class="data-img">
 	<img src="/images/albania/2016/yp_chris_testimony.640x.jpg" alt="Chris sharing his testimony"></img>
-	<span>photo by Lauren Dean</span>
+	<span>photo by the beautiful and talented Lauren Dean</span>
 </div>
 
 In the afternoon I went back home for a bit to relax.  Soon enough it came time to get ready for the seminar.  I biked down to the office and helped get everything set up.  Today was Chris' turn to talk.  He did an amazing job sharing his story, and shared a really great poem!  Ilir was able to translate it to Albanian, and read it after he finished the English version.  It seemed to be very impactful.  His gospel presentation was also very clear and powerful.  It's a great opportunity just to be able to present the Gospel to such a large group.  I was praying during the whole time that God would open their hearts and remove the veil from their eyes.
 
 <div class="data-img">
 	<img src="/images/albania/2016/yp_small_group.640x.jpg" alt="Mira and Adi administering the food quiz"></img>
-	<span>photo by Lauren Dean</span>
+	<span>photo by the beautiful and talented Lauren Dean</span>
 </div>
 
 We were organized in small groups, and I was with all of Adi's friends plus a few others.  Few of them spoke english, so I didn't talk a lot.  I did share a bit about my life while we were playing Soularium.  Later during the discussion time I heard a lot of good discussion going on.  We had a good mix of believers and non-believers.  I hope it was impactful.  Adi will ask them tomorrow if any of them accepted Jesus tonight.
@@ -83,14 +83,14 @@ After I finished my lesson I went with the Americans to the Stephen Center for l
 
 <div class="data-img">
 	<img src="/images/albania/2016/yp_albanian_night.640x.jpg" alt="Mira and Adi administering the food quiz"></img>
-	<span>photo by Lauren Dean</span>
+	<span>photo by the beautiful and talented Lauren Dean</span>
 </div>
 
 After lunch I went to the office and prepped some food for the American/Albanian culture night.  I made sweet tea, lemonade, and salsa.  It took about an hour, then I went home to relax and let the dog out.  I got dressed up in a very Texas-y outfit, including boots and a bandana.  On the way back I picked up my Texas flag from the previous house (which I'm not quite yet moved out of, but I have time).  I got to the office just in time to start helping out.  We put up the Texas flag stretching between the flagpoles of the American and Albanian flags, and used some tape to secure it.  My tea and lemonade got set up on one table, while a bunch of Albanian food got set up on the other table.  It's too bad I couldn't make some nachos, that would have been a good "American dish" to have for the event.
 
 <div class="data-img">
 	<img src="/images/albania/2016/yp_albanian_night_2.640x.jpg" alt="Will & the texas quiz"></img>
-	<span>photo by Lauren Dean</span>
+	<span>photo by the beautiful and talented Lauren Dean</span>
 </div>
 
 Mira was the MC for the event, and she dressed up in a traditional Albanian dress.  I love the colors of the traditional Albanian clothing, it's very bold and beautiful.  She started the event with a blind taste test.  I volunteered to be one of the contestants, and managed to guess the Bakllava, Kackavall cheese, and Raki (which is a very strong Albanian liquor), but I didn't know the rest.  After the taste test we had a "quiz of songs".  They played a bunch of songs and each table got a point for guessing the name of the song and the singer.  The Albanians knew all the Albanian songs, and even some Michael Jackson.  But noone knew George Strait's "All My Exes Live In Texas".  They must not listen to a lot of country here.
@@ -99,14 +99,14 @@ Wes got up there to talk about the American flag, the symbolism and history behi
 
 <div class="data-img">
 	<img src="/images/albania/2016/yp_country_dancing.640x.jpg" alt="Country dancing with the Albanians"></img>
-	<span>photo by Lauren Dean</span>
+	<span>photo by the beautiful and talented Lauren Dean</span>
 </div>
 
 As a matter of course, the party finished with dancing.  We learned several Albanian dances, and then I taught the Copperhead Road dance.  I'm getting pretty good at that dance, the Albanians always want to learn it.  We also tried teaching two-stepping but it wasn't too successful.  I did learn an Italian partner dance that they do sometimes.  This was the first time I had seen it.
 
 <div class="data-img">
 	<img src="/images/albania/2016/yp_dancing.640x.jpg" alt="Albanian style dancing"></img>
-	<span>photo by Lauren Dean</span>
+	<span>photo by the beautiful and talented Lauren Dean</span>
 </div>
 
 I'd be remiss if I didn't mention our new friend, the President of the Donald Trump Albania foundation.  He is a yuuuuge Donald Trump supporter - his business card reads "Make Albania Great Again".  He came to our event and I talked to him for a bit, he had a lot of interesting stories to tell about famous Albanians living in the USA.  He got a picture of him with Will in front of our American flag.  I'm pretty sure Will's face is going to end up on some campaign literature.
@@ -162,7 +162,7 @@ Once she finished, Genti talked for a bit about our plans for next year.  He tal
 
 <div class="data-img">
 	<img src="/images/albania/2016/yp_portrait_everyone.640x.jpg" alt="Everyone who came to the retreat"></img>
-	<span>photo by Lauren Dean</span>
+	<span>photo by the beautiful and talented Lauren Dean</span>
 </div>
 
 We spent the afternoon playing Volleyball and relaxing by the pool.  I got a chance to hang out with Wes and talk about various aspects of the trip here.  He loved it so much and is excited to help as much as he can once he gets back to the states.  He's thinking already about whom he will invite to come next year, as well as how he can continue to spread the word about Albania.  He's also doing some really interesting stuff at Watermark and continuing to get involved more deeply there.  I can see that he's really full of the Spirit now.  Chris was also very excited about Albania.  He's done a great job of encouraging the young professionals with his story and his poetry.  Alba asked me if we can study some of his poetry at our next English club meeting.  I hope he can continue to have an impact here even as he goes back to Dallas.
