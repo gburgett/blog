@@ -64,7 +64,7 @@ I said goodbye to those guys about noon and went to lunch with Will, Chris, and 
 In the afternoon I went back home for a bit to relax.  Soon enough it came time to get ready for the seminar.  I biked down to the office and helped get everything set up.  Today was Chris' turn to talk.  He did an amazing job sharing his story, and shared a really great poem!  Ilir was able to translate it to Albanian, and read it after he finished the English version.  It seemed to be very impactful.  His gospel presentation was also very clear and powerful.  It's a great opportunity just to be able to present the Gospel to such a large group.  I was praying during the whole time that God would open their hearts and remove the veil from their eyes.
 
 <div class="data-img">
-	<img src="/images/albania/2016/yp_small_group.640x.jpg" alt="Mira and Adi administering the food quiz"></img>
+	<img src="/images/albania/2016/yp_small_group.640x.jpg" alt="One of the small groups"></img>
 	<span>photo by the beautiful and talented Lauren Dean</span>
 </div>
 
