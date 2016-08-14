@@ -11,7 +11,7 @@ navtitle = "2016 - Young Professionals"
 
 
 # Day 1
-<h2 id="July-5" class="hidden-xs">Monday July 4</h2>
+<h2 id="July-4" class="hidden-xs">Monday July 4</h2>
 
 Today was a nice break.  We canceled the morning trip to Kruja, because all the Americans (including me) were worn out from the high schoolers.  I slept in till about 9:30, then camped out with Wes and Chris at Mulliri Vjeter.  They had to finish working on last minute changes to their presentations.  We met up with the staff team for a relaxing lunch.  The American team and staff got introduced to each-other and we had a nice relaxing time.
 
