@@ -5,11 +5,6 @@ set -ex
 cd /home/ubuntu
 sudo apt-get update
 
-# install squid proxy & configure
-sudo apt-get -y install squid
-sudo cp ~/hosting/squid.conf /etc/squid3/squid.conf
-sudo service squid3 stop
-
 # set up docker cloud
 sudo apt-get -y install python-pip jq
 export DOCKERCLOUD_USER=gordonburgett
@@ -25,14 +20,11 @@ unzip ~/CloudWatchMonitoringScripts-1.2.1.zip -d ~/
 rm ~/CloudWatchMonitoringScripts-1.2.1.zip
 echo '*/5 * * * * ubuntu /home/ubuntu/aws-scripts-mon/mon-put-instance-data.pl --mem-util --mem-used --mem-avail --swap-util --swap-used --disk-space-util --disk-space-used --disk-path=/ --auto-scaling=only --from-cron' | sudo tee /etc/cron.d/metrics > /dev/null
 
+# set up backup job
+chmod +x /home/ubuntu/backup.sh
+echo '0 * * * * ubuntu /home/ubuntu/backup.sh >> /home/ubuntu/backup.log' | sudo tee /etc/cron.d/backup > /dev/null 
+
+
 # download mosh and other utils
 sudo apt-get -y install mosh
 
-# download letsencrypt
-sudo apt-get -y install git
-git clone https://github.com/letsencrypt/letsencrypt
-letsencrypt/letsencrypt-auto --help
-sudo install letsencrypt/letsencrypt-auto /usr/bin/letsencrypt
-sudo mkdir -p /var/letsencrypt/www
-sudo aws s3 cp --recursive s3://gordonburgett.net/letsencrypt /etc/letsencrypt/
-sudo chown -R root:root /etc/letsencrypt
