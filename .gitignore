@@ -1,4 +1,4 @@
-public/
+hugo/public/
 ec2-user@*/
 node_modules
 blog.sublime-project
