@@ -4,11 +4,22 @@ set -ex
 
 cd /home/ubuntu
 sudo apt-get update
-
-# set up docker cloud
 sudo apt-get -y install python-pip jq
+
+# get AWS info
+export INSTANCE_ID=$(curl -s http://instance-data/latest/meta-data/instance-id)
+export AWS_DEFAULT_REGION=`curl -s http://169.254.169.254/latest/dynamic/instance-identity/document | grep region | awk -F\" '{print $4}'`
+[[ -d ~/.aws ]] || mkdir ~/.aws
+echo "[default]
+region=$AWS_DEFAULT_REGION
+" > ~/.aws/config
+
+# get dockercloud API key & set up dockercloud
+apikey=$(aws ec2 describe-tags --filters "Name=resource-id,Values=$INSTANCE_ID" "Name=key,Values=dockercloud:api_key" | jq .Tags[0].Value)
+apikey=$(echo "$apikey" | sed 's/^\"\(.*\)\"$/\1/g')
+
 export DOCKERCLOUD_USER=gordonburgett
-export DOCKERCLOUD_APIKEY=6b142137-ac0b-47f9-ab65-d0317b1c691b
+export DOCKERCLOUD_APIKEY=$apikey
 sudo pip install docker-cloud
 docker-cloud node byo | grep 'curl' | sh
 sudo gpasswd -a ubuntu docker
@@ -22,9 +33,8 @@ echo '*/5 * * * * ubuntu /home/ubuntu/aws-scripts-mon/mon-put-instance-data.pl -
 
 # set up backup job
 chmod +x /home/ubuntu/backup.sh
-echo '0 * * * * ubuntu /home/ubuntu/backup.sh s3://gordonburgett.net/backup >> /home/ubuntu/backup.log' | sudo tee /etc/cron.d/backup > /dev/null 
+echo '0 * * * * ubuntu /home/ubuntu/backup.sh s3://gordonburgett.net/backup >> /home/ubuntu/backup.log' | sudo tee /etc/cron.d/backup > /dev/null
 
 
 # download mosh and other utils
 sudo apt-get -y install mosh
-
