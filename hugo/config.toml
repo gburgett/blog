@@ -11,6 +11,5 @@ copyright = "All content © Gordon Burgett, 2014-2015"
 [Params]
 	AuthorName = "Gordon"
 	github = "gburgett"
-	email = "gordon.burgett@gmail.com"
+	email = "gordon@gordonburgett.net"
 	description = "A blog about whatever crosses my mind, ordered by importance."
-

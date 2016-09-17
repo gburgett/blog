@@ -62,3 +62,30 @@ blockquote p {
   background-color: #d9edf7;
   color: black;
 }
+
+.post table {
+	color: black;
+}
+
+.post table td {
+	border-bottom: 1px solid gray;
+	padding: 5px;
+}
+
+.post table tbody tr {
+  border-right: 1px solid gray;
+	border-left: 1px solid gray;
+}
+
+.post table tr:hover {
+	background-color: lightcyan;
+}
+
+.post table thead tr {
+	border-bottom: 2px solid gray;
+	margin:5px;
+}
+
+.domain::before {
+	content: "\0040";    /* Unicode character for @ symbol */
+}
