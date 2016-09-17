@@ -25,18 +25,24 @@ docker ps --format '{{.ID}}' | while read i; do
     bkdir=$(readlink -m "/tmp/backup/$nm/")
     [[ -d "$bkdir" ]] || mkdir -p $bkdir
 
-    # quit if backup command fails
-    set -e
 
-    [[ -z "$s3_bucket" ]] && "cannot backup: no s3 bucket specified"
+    [[ -z "$s3_bucket" ]] && echo "cannot backup $i: no s3 bucket specified" && continue;
+
+    bloc=$(echo "$envvars" | grep "^\"BACKUP_LOCATION=")
+    if [[ -z "$bloc" ]]; then
+      bloc=/tmp/backup/
+    else
+      bloc=`echo "$bloc" | sed 's/^"BACKUP_LOCATION=\(.*\)"/\1/'`
+    fi
+
 
     dcmd="docker exec $i $bcmd"
     echo "$(timestamp): $dcmd"
-    $dcmd   # run the backup command
+    $dcmd || continue;  # run the backup command
 
-    dcmd="docker cp $i:/tmp/backup/ $bkdir/"
+    dcmd="docker cp $i:$bloc $bkdir/"
     echo "$(timestamp): $dcmd"
-    $dcmd  # run the copy command
+    $dcmd || continue;  # run the copy command
 
     nm=$(echo "/$nm" | sed s#//*#/#g)
 
