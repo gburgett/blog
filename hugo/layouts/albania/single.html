@@ -5,17 +5,13 @@
     <!-- Enable responsiveness on mobile devices-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <title> {{ .Title }} &middot; {{ .Site.Title }} </title>
-    <link rel="canonical" href="{{ .Permalink }}/albania">
+    <link rel="canonical" href="{{ .Permalink }}">
     <!-- CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/albania.css" />
     <!-- Icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
     <link rel="shortcut icon" href="/favicon.ico">
-    <!-- Script -->
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/main.min.js">
-    </script>
   </head>
   <body>
     <!-- Popup modal for image enlargement -->
@@ -145,9 +141,10 @@
         <!-- /.container -->
     {{ partial "footer.html" .}}
 
+    {{ partial "script.html" .}}
+
   	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script src="/js/albania.js"></script>
-    {{ partial "script.html" .}}
 
   </body>
 </html>
