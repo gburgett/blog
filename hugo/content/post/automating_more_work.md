@@ -49,7 +49,7 @@ while read -r path; do
     sed -i ':a;N;$!ba;s/\n/\\n/g' $path/dockercloud.key
 
     echo "built $path/dockercloud.key"
-done <<< "$domains"
+done <<< "$DOMAINS"
 ```
 
 The bigger step is uploading that to the [Docker Cloud API](https://docs.docker.com/apidocs/docker-cloud/).  I want to use cURL in order to
@@ -106,8 +106,6 @@ Fortunately I looked on Google for how to do a PATCH with cURL before I bashed m
 
 done <<< "$KEYS"
 
-# TODO: find and restart the load balancer automatically
-echo "please restart the load balancer"
 ```
 
 There's still a lot to do before it's automated, but at least now I don't have to remember how to combine the stupid files and update the
@@ -115,7 +113,6 @@ Docker Cloud service myself.
 
 Some of the things to do are:
 
-* Restart the load balancer within the script
 * Bail out early if the certs don't need to be replaced
 * Better error handling
 * Blow my brains out trying to figure out how to do a cron job within the container
