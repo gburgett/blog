@@ -118,3 +118,78 @@ Some of the things to do are:
 * Blow my brains out trying to figure out how to do a cron job within the container
 
 All that's for the next time I have a spare afternoon :)
+
+<hr />
+
+Update: I got automatic renewal working! (at least I hope, it's going to be 2 months before any of these certs actually need renewal.)
+
+If you remember a [previous post](/post/taking_control_of_my_data/) I talked about setting up a 
+[backup script](https://github.com/gburgett/blog/blob/master/home/backup.sh) on a cron job.  This baby is still humming along just fine,
+and it is robust enough that it handles exactly my needs.  I'm going to use it to execute my automatic certificate check by setting up
+my command as the `BACKUP_CMD` variable.
+
+First, we need a few modifications to the renewAll script.  It needs to automatically restore the `~/.acme.sh/` directory if it's a new
+container, can't have the script dying there.  So here's my additions to the beginning of the script ([see the whole thing on github](https://github.com/gburgett/dockerfile/blob/master/letsencrypt/scripts/renewAll.sh)):
+
+```bash
+[[ ! -d ~/.acme.sh/ ]] && echo "restoring from s3" && ./restore.sh
+
+# find all directories which correspond to domains & list them so we can see what changed
+DOMAINS=`find ~/.acme.sh/ -maxdepth 1 -mindepth 1 -type d | grep '\.[^/]\{2,\}$'`
+if [[ -z "$DOMAINS" ]]; then
+    echo "restoring from s3"
+    ./restore.sh
+
+    DOMAINS=`find ~/.acme.sh/ -maxdepth 1 -mindepth 1 -type d | grep '\.[^/]\{2,\}$'`
+    [[ -z "$DOMAINS" ]] && echo "error restoring from bucket $S3_BUCKET" && exit -1;
+fi
+```
+
+It also needs to check and see if anything actually changed, and not do anything if we didn't update any certs.  
+I use an associative array which is a feature of bash 4 in order to keep track of what's changed.
+
+```bash
+set -e
+
+declare -A stats
+while read -r path; do
+    domain=`basename $path`
+
+    stats[$domain]=`ls -l $path`
+done <<< "$DOMAINS"
+
+acme.sh --renewAll
+
+# find all domains again and compare
+DOMAINS=`find ~/.acme.sh/ -maxdepth 1 -mindepth 1 -type d | grep '\.[^/]\{2,\}$'`
+
+while read -r path; do
+    domain=`basename $path`
+
+    # nothing changed, skip creating the dockercloud file
+    [[ "${stats[$domain]}" == "`ls -l $path`" ]] && continue;
+
+    # combine the certificate with the private key
+    cat $path/fullchain.cer $path/$domain.key  > $path/dockercloud.key
+    # replace newlines with the literal newline character as required by dockercloud
+    sed -i ':a;N;$!ba;s/\n/\\n/g' $path/dockercloud.key
+
+    echo "built $path/dockercloud.key"
+done <<< "$DOMAINS"
+```
+
+Now the "updateDockercloud.sh" script needs a tweak as well, it needs to remove the `dockercloud.key` file when it successfully
+updates the service.  That was a one-line change. ([See the whole thing on Github](https://github.com/gburgett/dockerfile/blob/master/letsencrypt/scripts/updateDockercloud.sh))
+
+And with those tweaks, I can now run an automated check-and-update with this command:
+
+```bash
+~/renewAll.sh && ~/updateDockercloud.sh && ~/backup.sh
+```
+
+Almost there, just need to set that as the `BACKUP_CMD` environment variable.  Problem is I'm executing that variable with `docker exec`, so
+I need to wrap it as an invocation to bash in the dockercloud console.
+
+![environment variables](/images/backup_cmd_letsencrypt.png)
+
+And voila!
