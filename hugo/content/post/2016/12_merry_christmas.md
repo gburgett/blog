@@ -25,7 +25,7 @@ One of the four virtues of the Advent calendar is Hope.  Along with Love, Joy, a
 > know that suffering produces perseverance; perseverance, character; and character, hope. And hope 
 > does not put us to shame, because God’s love has been poured out into our hearts through the Holy 
 > Spirit, who has been given to us.
-> <span class="source"><a href="http://biblehub.com/niv/Romans/5.htm">Romans 5:1-5</a></span>
+> <span class="source"><a href="http://biblehub.com/niv/romans/5.htm">Romans 5:1-5</a></span>
 
 We had an encouragement and prayer meeting with the professionals about 2 weeks ago, and we talked about their prayers for Albania.  We talked about what a "harvest" would look like.  I shared the story about the "Layman's Prayer Revival", which was the start of the third Great Awakening in America back in the 1850s.  When I asked whether they thought the same thing could happen in Albania, the first response I got was, "it's very difficult for that to happen here".
 

@@ -96,11 +96,11 @@ If you have an existing webserver, all you have to do is run the `hugo` command,
 
 ## Now the fun part - Spicing up the Javascript
 
-The inspiration for this post is [a new website I'm working on for CRU Albania](https://cru-albania-ds.gitlab.io).  We're using Hugo for that website too, but I wanted to do a little more with the Javascript and CSS.  Modern websites don't use raw Javascript and CSS anymore, they use preprocessors and bundlers like [Sass](http://sass-lang.com/guide) and [Webpack](https://webpack.js.org/).  So instead of writing CSS I'll be writing Sass, and instead of using Javascript I'll be writing [Typescript](http://www.typescriptlang.org/).  Now since all of this gets transformed into CSS and Javascript by pre-processors, I can still use it along with Hugo to create a completely static site.
+The inspiration for this post is [a new website I'm working on for CRU Albania](https://crualbaniadigital.gitlab.io).  We're using Hugo for that website too, but I wanted to do a little more with the Javascript and CSS.  Modern websites don't use raw Javascript and CSS anymore, they use preprocessors and bundlers like [Sass](http://sass-lang.com/guide) and [Webpack](https://webpack.js.org/).  So instead of writing CSS I'll be writing Sass, and instead of using Javascript I'll be writing [Typescript](http://www.typescriptlang.org/).  Now since all of this gets transformed into CSS and Javascript by pre-processors, I can still use it along with Hugo to create a completely static site.
 
 I started with the [victor-hugo template on Github](https://github.com/netlify/victor-hugo).  This template uses [Gulp](http://gulpjs.com/) to automate the process of running all the pre-processors, and producing the output.  The [provided gulpfile](https://github.com/netlify/victor-hugo/blob/master/gulpfile.babel.js) runs Webpack on the "js" task, and Postcss on the "css" task.  The outputs of those tasks are put directly into the `public/` folder, the same place where Hugo puts its content.  The "build" task depends on those two tasks and also the "hugo" task, which calls hugo to build the site into the `public/` directory.  So simply running `gulp build` combines these pre-processors to build the static site.
 
-[Follow along with the code on Gitlab](https://gitlab.com/cru-albania-ds/cru-albania-ds.gitlab.io)
+[Follow along with the code on Gitlab](https://gitlab.com/crualbaniadigital/crualbaniadigital.gitlab.io)
 
 #### Using Sass to preprocess the CSS
 
@@ -154,7 +154,7 @@ The webpack config file also tells webpack to put the output file in the `static
 
 One thing to watch out for with a static site is your image size.  Wordpress isn't there with a convenient plugin to prevent you from uploading a huge image.  If you're not careful you can really blow up someone's mobile bandwidth with a gigantic 300 megabyte banner image.  This is important for my use case especially because other people will be writing blog posts for this website, and if they upload a huge image I want to automatically have it be resized before it's put on the web.
 
-Fortunately there's [gulp-image-resize](https://www.npmjs.com/package/gulp-image-resize) and [gulp-imagemin](https://www.npmjs.com/package/gulp-imagemin).  These libraries use ImageMagick to resize images inside a gulp task.  I created [a separate file for the image tasks](https://gitlab.com/cru-albania-ds/cru-albania-ds.gitlab.io/blob/master/gulp_image_tasks.babel.js) which does the following steps:
+Fortunately there's [gulp-image-resize](https://www.npmjs.com/package/gulp-image-resize) and [gulp-imagemin](https://www.npmjs.com/package/gulp-imagemin).  These libraries use ImageMagick to resize images inside a gulp task.  I created [a separate file for the image tasks](https://gitlab.com/CruAlbaniaDigital/crualbaniadigital.gitlab.io/blob/master/gulp/image_tasks.babel.js) which does the following steps:
 
 1. Scans for any new jpg, png, gif or svg files in `static/images/` and backs them up to `static/.original_images`
 2. For all the original-size images in `static/.original_images/`:
@@ -199,7 +199,7 @@ $('img').each(function() {
 })
 ```
 
-This little baby is in [src/js/app.ts](https://gitlab.com/cru-albania-ds/cru-albania-ds.gitlab.io/blob/master/src/js/app.ts) and runs over every `<img >` tag.  Using this line `window.matchMedia('(max-width: 640px)').matches` it checks if the current screen is wider than 640px.  If it is, then it replaces all hrefs that point to `/images/` with ones that point to `/.original-images`.  What this means is that phone screens which are less than 640px wide will only see the compressed images, while people on laptops and desktop computers will download the full image in all its glory.  This way we don't blow up the bandwidth of phone users.
+This little baby is in [src/js/app.ts](https://gitlab.com/crualbaniadigital/crualbaniadigital.gitlab.io/blob/master/src/js/app.ts) and runs over every `<img >` tag.  Using this line `window.matchMedia('(max-width: 640px)').matches` it checks if the current screen is wider than 640px.  If it is, then it replaces all hrefs that point to `/images/` with ones that point to `/.original-images`.  What this means is that phone screens which are less than 640px wide will only see the compressed images, while people on laptops and desktop computers will download the full image in all its glory.  This way we don't blow up the bandwidth of phone users.
 
 #### Here's how it looks when you run Gulp to build the site
 ![gulp output gif](/images/modern_static_sites/gulp_output.gif)

@@ -13,7 +13,7 @@ aliases = [
 
 Here's another technical post for y'all!  
 
-I had some time this past weekend, so I took a look into the website I made a year ago for [Reclaimed](http://www.reclaimed431.org).  The old version was made with [Locomotive CMS](http://locomotivecms.com/), and hosted on [Locomotive hosting](www.locomotivehosting.com).  It was a good choice at the time, because we needed something fast.  We wanted to deploy it before the 2015 super bowl.
+I had some time this past weekend, so I took a look into the website I made a year ago for [Reclaimed](http://www.reclaimed431.org).  The old version was made with [Locomotive CMS](http://locomotivecms.com/), and hosted on [Locomotive hosting](http://www.locomotivehosting.com).  It was a good choice at the time, because we needed something fast.  We wanted to deploy it before the 2015 super bowl.
 
 I'd previously looked into moving it to Wordpress or Drupal, but that would basically require redoing the whole site.  More work than I'm willing to put in.  But, just this past weekend, [Locomotive v3](http://locomotive.works/) came out.  I decided to try hosting it myself, because $20/mo is just a bit too much to be paying for a simple website like this.  Plus, it would be fun! (or so I thought.)
 
