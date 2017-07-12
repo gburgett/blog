@@ -3,9 +3,9 @@ FROM httpd:2
 RUN apt-get update && apt-get install -y curl
 
 # Install hugo
-RUN curl -L -o /tmp/hugo.tar.gz https://github.com/spf13/hugo/releases/download/v0.16/hugo_0.16_linux-32bit.tgz
+RUN curl -L -o /tmp/hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/v0.19/hugo_0.19_Linux-32bit.tar.gz
 RUN tar xvf /tmp/hugo.tar.gz -C /tmp/
-RUN mv /tmp/hugo /usr/bin/hugo
+RUN mv /tmp/hugo_0.19_linux_386/hugo_0.19_linux_386 /usr/bin/hugo
 
 # copy config
 COPY ./conf/ /usr/local/apache2/conf/
