@@ -76,7 +76,7 @@ gulp.task('img-make-640x', () => {
   return gulp.src('./static/images/**/*.{jpg,png,svg}')
         // filter out files where the copy in the 640x directory has already been processed
       .pipe(filterIfCopyExists(srcToMirror))
-      .pipe(debug())
+
         // resize the images from the mirror folder
       .pipe(imageResize({
         width: 640,
@@ -93,24 +93,36 @@ gulp.task('gif-optimize', () => {
   return gulp.src('./static/images/**/*.gif', { read: false })
         // filter out files where the copy has already been processed
       .pipe(filterIfCopyExists(srcToMirror))
-      .pipe(debug())
+
         // optimize the source gif into the correct place
       .pipe(new Transform({
         objectMode: true,
 
         transform (file, encoding, callback) {
-          execFile(gifsicle,
-            ['--output', path.join(srcToMirror(file), file.relative), '--resize-width', '640', '--colors', '256', '--optimize=3', file.path],
-            (err, stdout, stderr) => {
-              if (err) {
-                console.error(stderr)
-                callback(err)
-                return
-              }
-
-              callback(null, file)
+          const toFile = path.join(srcToMirror(file), file.relative)
+          fs.ensureDir(path.dirname(toFile), (err) => {
+            if (err) {
+              gutil.log(gutil.colors.red('[gif] Error making dir') + err)
+              callback(err)
+              return
             }
-          )
+
+            execFile(gifsicle,
+              ['--output', toFile, '--resize-width', '640', '--colors', '256', '--optimize=3', file.path],
+              (err, stdout, stderr) => {
+                if (err) {
+                  gutil.log(gutil.colors.red('[gif] gifsicle error:\n') + stderr)
+                  callback(err)
+                  return
+                }
+                gutil.log(gutil.colors.dim(stdout))
+
+                callback(null, file)
+              }
+            )
+          })
+
+          
         }
       }))
 })
