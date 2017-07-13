@@ -99,18 +99,31 @@ gulp.task('gif-optimize', () => {
         objectMode: true,
 
         transform (file, encoding, callback) {
-          execFile(gifsicle,
-            ['--output', path.join(srcToMirror(file), file.relative), '--resize-width', '640', '--colors', '256', '--optimize=3', file.path],
-            (err, stdout, stderr) => {
-              if (err) {
-                console.error(stderr)
-                callback(err)
-                return
-              }
-
-              callback(null, file)
+          const toFile = path.join(srcToMirror(file), file.relative)
+          fs.ensureDir(path.dirname(toFile), (err) => {
+            if (err) {
+              gutil.log(gutil.colors.red('[gif] Error making dir') + err)
+              callback(err)
+              return
             }
-          )
+            console.log('toFile:', toFile)
+
+            execFile(gifsicle,
+              ['--output', toFile, '--resize-width', '640', '--colors', '256', '--optimize=3', file.path],
+              (err, stdout, stderr) => {
+                if (err) {
+                  gutil.log(gutil.colors.red('[gif] gifsicle error:\n') + stderr)
+                  callback(err)
+                  return
+                }
+                gutil.log(gutil.colors.dim(stdout))
+
+                callback(null, file)
+              }
+            )
+          })
+
+          
         }
       }))
 })
