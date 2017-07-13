@@ -47,7 +47,7 @@ Hugo Static Site Generator v0.19 linux/amd64 BuildDate: 2017-02-27T13:38:34+01:0
 
 Now you can make a new website using the command `hugo new site [website name]`.  This creates a basic hugo site structure.  Now you need a theme.  Browse to [themes.gohugo.io](http://themes.gohugo.io) and download one, then extract it into your themes directory.  For example, if you chose the "Beautiful Hugo" theme, it should go in a folder called "beautifulHugo" inside the "themes" directory in your site.  Then you need go back to your root folder and change `config.toml` to use that theme.  You can have as many themes as you want in your themes directory, and choose between them in `config.toml`.
 
-![hugo new site example](/images/modern_static_sites/hugo_new_site.gif)
+![hugo new site example](/.640x/images/modern_static_sites/hugo_new_site.gif)
 
 ```bash
 ❯ ls -l themes/beautifulhugo 
@@ -72,7 +72,7 @@ theme = "beautifulhugo"  # This should exactly match the name of the folder in y
 ```
 Now if you run `hugo server` you can look at a preview of your new site at [http://localhost:1313](http://localhost:1313).  It should look like this because you have no content:
 
-![new site image](/images/modern_static_sites/new_site.png)
+![new site image](/.640x/images/modern_static_sites/new_site.png)
 
 ### Step 2: Adding content and images
 

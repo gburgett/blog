@@ -17,7 +17,7 @@ March 13-17 was a big week for us.  We invited a group from Louisville, TX To jo
 
 The group featured Paul Henry, former finance director for the Kimberly Clark corporation, as well as Quentin 'Pete' Peterson, a retired 2 star air force general.  As you can imagine these two drew quite a crowd of people who wanted to hear them speak!  We advertised Paul for the anchor seminar on Wednesday March 15, but one of our partners Adi Muço organized a separate event for Tuesday night just for military members.  I wasn't invited personally but I heard it went great!
 
-![Seminar on Wednesday](/images/2017/march_2017_seminar.640x.jpg)
+![Seminar on Wednesday](/.640x/images/2017/march_2017_seminar.jpg)
 
 On Thursday the 16th, we reserved the whole afternoon for coffee.  This was a great decision in my opinion.  It helped us to solidify some relationships with a couple new people who came to the seminar.  I went with Paul Henry to his two scheduled coffee appointments.  The first was with a guy who is an atheist, but loves discussing various viewpoints.  He's searching for a job right now so was very interested in the theme of the seminar.  After a while Paul was able to turn the discussion to spiritual things and we got halfway through the four spiritual laws with him before the conversation turned again.  Our second coffee was with a friend of one of our consistent comers who is a young entrepeneur.  He had a lot of questions for Paul about business, but at one point Paul asked about his spiritual journey.  The guy said he believes in God but that he's in control of his own destiny.  He brought a friend with him who said that she is searching but doesn't know what she's looking for.  We invited her to come to the ladies' meeting that was happening later.  She got connected there but we haven't followed up with her yet.
 
@@ -27,14 +27,14 @@ One other idea we had was to ask our American team to prepare something to share
 
 On Friday we had a party!  We love parties.  The American team prepared some "minute to win it" style games.  The Albanians loved them!  They did not love however the sweet tea that I made.  Almost every glass was still full of sweet tea at the end of the night.  We also had guacamole, salsa, tortilla chips, chili, and cornbread.  I particularly enjoyed the food, even if the Albanians didn't!  We also presented the American team with some gifts as a thank you for their hard work.
 
-![Party night](/images/2017/march_2017_games.640x.jpg)
+![Party night](/.640x/images/2017/march_2017_games.jpg)
 ![The American team](/images/2017/march_2017_americans.jpg)
 
 ## Building on the momentum
 
 The next week, after all was said and done, Genti and Erjona invited all of our partners for a thank-you dinner at their house.  There we had a good discussion about the future of Leader Impact in Albania.  All of them were sharing their vision of seeing this movement grow all over Albania.  This is a very compelling vision and I'm proud to be a part of it.  I'm proud of all our partners and very excited that I get to work with them for the rest of this year.
 
-![Appreciation dinner](/images/2017/march_2017_appreciation_dinner.640x.jpg)
+![Appreciation dinner](/.640x/images/2017/march_2017_appreciation_dinner.jpg)
 
 I've been thinking a lot personally about how I want to commit to this vision.  I'm coming up on the end of my 2nd year on STINT.  After 2 years, CRU requires you to commit to joining staff or to leave.  You can't do STINT indefinitely.  So, I'm at a big decision point.  Not only do I have to decide whether to join CRU, I have to decide whether I want to commit more to Albania or to Dallas for the forseeable future.
 

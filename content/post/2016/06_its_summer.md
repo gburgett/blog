@@ -21,11 +21,11 @@ This time it's a little different, since I've been here for almost a full year. 
 
 It's going to be awesome hanging out with the team again! I hope it will feel like it did the past couple years, where I get to be one of "the Americans".  It's also great that a lot of them are my good friends.  Unfortunately I don't get to go to Elbasan this year because I need to be around in Tirana to help plan for next week.
 
-![Albania team 2016](/images/albania/2016/2016_team.640x.jpg)
+![Albania team 2016](/.640x/images/albania/2016/2016_team.jpg)
 
 After the summer camp for the high school students, we're going to have a conference for the [Young Professionals](/albania/2016_YoungProfessionals/).  That will be mostly in the evening.  We will have 2 seminars and a social event, then on Friday we'll spend time getting coffee with them as much as possible.  On the weekend we're planning to have a retreat for the believers.  This will be a good time to encourage them and challenge them to be a crucial part of our ministry for next year.
 
-![Young Professionals working with us](/images/albania/2016/yp_committe.640x.jpg)
+![Young Professionals working with us](/.640x/images/albania/2016/yp_committe.jpg)
 
 It's going to be an exciting couple weeks, and afterwards I'll be pretty exhausted!  But At least I get a week off after the young professionals conference.  I'm hoping to go to south Albania & Greece, in Seranda and Korfu.  I hear it's very beautiful down there but I haven't been yet.
 

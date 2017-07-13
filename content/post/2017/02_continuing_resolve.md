@@ -28,7 +28,7 @@ I spent the next week putting the finishing touches on my translation and
 subtitling of Seasons of Gray, a modern-day Joseph story.  This film was made
 by a small independent studio with the support of Watermark Church in Dallas,
 and I still had my DVD copy so I decided to translate it as a language project.
-![Seasons Of Gray trailer image](/images/2017/sograydvd_bottom.640x.jpg)
+![Seasons Of Gray trailer image](/.640x/images/2017/sograydvd_bottom.jpg)
 We finished the translation and had a small screening as a Sotmeria event.
 It went fantastic!  Everybody was teared up at the end.  I went out for coffee
 with a couple guys afterwards and we talked about forgiveness, eventually
@@ -56,7 +56,7 @@ of the ministry and to give their L.I.F.E. (Leadership, Influence, Finances, and
 If you'd like to make a donation to help cover the costs for a young professional, [please click here](https://give.cru.org/0905203)<br/> and write in the comments: <b>TraNet 2017 young professional</b>
 </span>
 
-![Cyprus](/images/2017/cyprus.640x.jpg)
+![Cyprus](/.640x/images/2017/cyprus.jpg)
 Here's hoping Cyprus will look like this when we get there!
 
 ### What's next?

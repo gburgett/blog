@@ -35,10 +35,10 @@ Talking to some students about Open Source software, the Gift Economy, and the G
 <span style="float: right; font-size: 10pt;">photo by <a href="https://www.instagram.com/p/-7In4IhIcu/">Cheryl Boyd</a></span>
 
 Making new friends over American Football:
-![Pal watching Texas A&M football](/images/2015/pal_texas_a&m.640x.jpg)
+![Pal watching Texas A&M football](/.640x/images/2015/pal_texas_a&m.jpg)
 
 This is how wild Albanians get for soccer!
-![Albanian fans at a soccer match](/images/2015/albanians_at_soccer_match.640x.jpg)
+![Albanian fans at a soccer match](/.640x/images/2015/albanians_at_soccer_match.jpg)
 
 It's been a wild ride so far.  Thank you to everyone who has made it possible for me to come here, and everyone who has been with me on this race so far.
 

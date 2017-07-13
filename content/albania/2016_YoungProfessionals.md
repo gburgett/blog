@@ -16,7 +16,7 @@ navtitle = "2016 - Young Professionals"
 Today was a nice break.  We canceled the morning trip to Kruja, because all the Americans (including me) were worn out from the high schoolers.  I slept in till about 9:30, then camped out with Wes and Chris at Mulliri Vjeter.  They had to finish working on last minute changes to their presentations.  We met up with the staff team for a relaxing lunch.  The American team and staff got introduced to each-other and we had a nice relaxing time.
 
 <div class="data-img">
-	<img src="/images/albania/2016/yp_committe.640x.jpg" alt="The Young Professionals Committee"></img>
+	<img src="/.640x/images/albania/2016/yp_committe.jpg" alt="The Young Professionals Committee"></img>
 	<span>photo by the beautiful and talented Lauren Dean</span>
 </div>
 
@@ -37,7 +37,7 @@ After having lunch with the guys, I headed to Relax bar and met Arben, a YP whom
 I went back home to let the dog out and prep for the meeting.  We got started at 5:30ish setting up.  Everyone arrived at 6:30, and we began at 7.  Wes did a great job with his seminar on negotiation.  We had some small group discussion and everyone was extremely interested!  The best thing though was how many new people showed up!  Not only did Adi invite all his friends, some of the attendees had just happened to see the event on Facebook & decided to come.  Wes told me he and Will made several coffee appointments.
 
 <div class="data-img">
-	<img src="/images/albania/2016/yps_listening_to_wes.640x.jpg" alt="Wes giving his excellent seminar"></img>
+	<img src="/.640x/images/albania/2016/yps_listening_to_wes.jpg" alt="Wes giving his excellent seminar"></img>
 	<span>photo by the beautiful and talented Lauren Dean</span>
 </div>
 
@@ -57,14 +57,14 @@ One of Adi's friends, Erind, joined us about 10:30.  He is a believer who attend
 I said goodbye to those guys about noon and went to lunch with Will, Chris, and Wes.  We met Genti at a greek grill and hung out there for an hour.  Genti told them all about his times in Dallas, how a lot of his support comes from Northwest Bible Church.  He'll be going back there next year to meet up with all his supporters.  Wes is planning to ensure that Genti gets some barbeque.
 
 <div class="data-img">
-	<img src="/images/albania/2016/yp_chris_testimony.640x.jpg" alt="Chris sharing his testimony"></img>
+	<img src="/.640x/images/albania/2016/yp_chris_testimony.jpg" alt="Chris sharing his testimony"></img>
 	<span>photo by the beautiful and talented Lauren Dean</span>
 </div>
 
 In the afternoon I went back home for a bit to relax.  Soon enough it came time to get ready for the seminar.  I biked down to the office and helped get everything set up.  Today was Chris' turn to talk.  He did an amazing job sharing his story, and shared a really great poem!  Ilir was able to translate it to Albanian, and read it after he finished the English version.  It seemed to be very impactful.  His gospel presentation was also very clear and powerful.  It's a great opportunity just to be able to present the Gospel to such a large group.  I was praying during the whole time that God would open their hearts and remove the veil from their eyes.
 
 <div class="data-img">
-	<img src="/images/albania/2016/yp_small_group.640x.jpg" alt="One of the small groups"></img>
+	<img src="/.640x/images/albania/2016/yp_small_group.jpg" alt="One of the small groups"></img>
 	<span>photo by the beautiful and talented Lauren Dean</span>
 </div>
 
@@ -82,14 +82,14 @@ This morning I didn't have any coffees scheduled, so I went to hang out at Mulli
 After I finished my lesson I went with the Americans to the Stephen Center for lunch.  We got a really tasty cheeseburger over there.  Will unfortunately had some more work to do right after lunch so he pulled out his computer and got to it.  He's been working from 6am to 3pm every day this week, in addition to all the Young Professionals activities.  It's a tough thing to do but I think it's a good example for our YPs to follow.  I'm excited to hear his talk on Saturday.
 
 <div class="data-img">
-	<img src="/images/albania/2016/yp_albanian_night.640x.jpg" alt="Mira and Adi administering the food quiz"></img>
+	<img src="/.640x/images/albania/2016/yp_albanian_night.jpg" alt="Mira and Adi administering the food quiz"></img>
 	<span>photo by the beautiful and talented Lauren Dean</span>
 </div>
 
 After lunch I went to the office and prepped some food for the American/Albanian culture night.  I made sweet tea, lemonade, and salsa.  It took about an hour, then I went home to relax and let the dog out.  I got dressed up in a very Texas-y outfit, including boots and a bandana.  On the way back I picked up my Texas flag from the previous house (which I'm not quite yet moved out of, but I have time).  I got to the office just in time to start helping out.  We put up the Texas flag stretching between the flagpoles of the American and Albanian flags, and used some tape to secure it.  My tea and lemonade got set up on one table, while a bunch of Albanian food got set up on the other table.  It's too bad I couldn't make some nachos, that would have been a good "American dish" to have for the event.
 
 <div class="data-img">
-	<img src="/images/albania/2016/yp_albanian_night_2.640x.jpg" alt="Will & the texas quiz"></img>
+	<img src="/.640x/images/albania/2016/yp_albanian_night_2.jpg" alt="Will & the texas quiz"></img>
 	<span>photo by the beautiful and talented Lauren Dean</span>
 </div>
 
@@ -98,14 +98,14 @@ Mira was the MC for the event, and she dressed up in a traditional Albanian dres
 Wes got up there to talk about the American flag, the symbolism and history behind it.  We also learned a bit about the Albanian flag.  The two-heads of the eagle represent the two administrative centers of the Roman empire, Rome and Constantinople.  A lot of the symbolism comes from the time of Gjergj Kastrioti Skenderbeg, Albania's national hero who led them to a somewhat successful rebellion against the Ottoman empire.  Unfortunately after he died the Ottomans re-conquered Albania.  After the flag discussion Will showed the Texas trivia quiz that they made for the high-schoolers.  It worked for the young adults too, they enjoyed the interesting Texas trivia.
 
 <div class="data-img">
-	<img src="/images/albania/2016/yp_country_dancing.640x.jpg" alt="Country dancing with the Albanians"></img>
+	<img src="/.640x/images/albania/2016/yp_country_dancing.jpg" alt="Country dancing with the Albanians"></img>
 	<span>photo by the beautiful and talented Lauren Dean</span>
 </div>
 
 As a matter of course, the party finished with dancing.  We learned several Albanian dances, and then I taught the Copperhead Road dance.  I'm getting pretty good at that dance, the Albanians always want to learn it.  We also tried teaching two-stepping but it wasn't too successful.  I did learn an Italian partner dance that they do sometimes.  This was the first time I had seen it.
 
 <div class="data-img">
-	<img src="/images/albania/2016/yp_dancing.640x.jpg" alt="Albanian style dancing"></img>
+	<img src="/.640x/images/albania/2016/yp_dancing.jpg" alt="Albanian style dancing"></img>
 	<span>photo by the beautiful and talented Lauren Dean</span>
 </div>
 
@@ -161,7 +161,7 @@ She transitioned to talking about leadership and her experience as a porch team 
 Once she finished, Genti talked for a bit about our plans for next year.  He talked about our desire to form a leadership team of young professionals, ones who are committed to the mission.  We will be inviting them individually to make that commitment later on.  He said that those who are not part of the leadership team should consider how they can take part in the mission.  He told them also about our plans for expanding into Elbasan next year.  It's an exciting time to be part of this ministry and I think the young professionals are excited to take part!
 
 <div class="data-img">
-	<img src="/images/albania/2016/yp_portrait_everyone.640x.jpg" alt="Everyone who came to the retreat"></img>
+	<img src="/.640x/images/albania/2016/yp_portrait_everyone.jpg" alt="Everyone who came to the retreat"></img>
 	<span>photo by the beautiful and talented Lauren Dean</span>
 </div>
 
@@ -170,6 +170,6 @@ We spent the afternoon playing Volleyball and relaxing by the pool.  I got a cha
 The bus pulled up at 5 and we all hopped in to go home.  I dropped my stuff off at home, then we went out to the local beer garden and restaurant to eat dinner and watch the European Championship final.  Portugal beat France 1-0 in extra time.  We had a great celebratory dinner, several of the young professionals came as well.  It was a great time reflecting on the week and the state of the ministry.  As we head into vacation we are all excited about next year & the opportunities coming up.  Will was really excited to bring even more people next year.  Here's to more and more continuing involvement in Albania.
 
 <div class="data-img" style="width:100%; max-width:100%">
-	<img src="/images/albania/2016/yp_portrait.640x.jpg" alt="Some of our favorite young professionals"></img>
+	<img src="/.640x/images/albania/2016/yp_portrait.jpg" alt="Some of our favorite young professionals"></img>
 	<span>photo by <a href="http://www.ronacord.com">Ron Acord</a></span>
 </div>

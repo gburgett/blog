@@ -11,7 +11,7 @@ aliases = [
 
 +++
 
-![Sunrise over Malaga](/images/2016/malaga_sunrise.640x.jpg)
+![Sunrise over Malaga](/.640x/images/2016/malaga_sunrise.jpg)
 
 This past week I went to the STINT Mid-Year conference in Málaga, Spain.  It was a lot of fun to hang out with a bunch of Americans!  I didn't know anyone when I got there, but by the end I had made several friends.  The beachfront was beautiful, especially the late sunrise over the Mediterranean.  I was excited to play a bunch of Ultimate Frisbee, since I hadn't played for several months.
 
@@ -23,14 +23,14 @@ Another interesting point was the need for a simple and transmissible disciplesh
 
 On a more personal note, I learned that often STINTers feel the need to escape back to their home culture.  This often takes the form of binge-watching American TV shows or talking with family/friends on skype all the time.  It can become unhealthy if it's consuming, and if it's preventing you from becoming engaged in the culture.  For me, I've noticed that I've become a lot more interested in politics since I came over here.  Many days I'll spend an hour or so at a coffee shop reading political blogs.  The good thing is that I feel more informed in the upcoming election cycle, and I have been motivated to register for an absentee ballot.  The bad thing is I often read these blogs and find myself feeling upset or angry about situations back home, or waste too much time on them.
 
-!["Voter Registration"](/images/2016/voting.640x.jpg)
+!["Voter Registration"](/.640x/images/2016/voting.jpg)
 <span style="float: right; font-size: 10pt;">I'm doing my part to stop Donald Trump!  Are you?</span>
 
 I also recognized that most STINTers are on a team of fellow Americans.  This has been very helpful for them (though of course they have their own challenges because of it).  Since I didn't go through the traditional channels, I don't have that same-culture support.  It's been important for me to lean on the support of my community group back home.  Thank you Ron, Chris, Matt, Billy, Daniel and Patrick.  I've appreciated skyping with y'all and keeping up over GroupMe.  Maybe in the future one of y'all would like to come on STINT with me? ;)
 
 Maybe I can tempt y'all with some of the cool things I get to do!  We had a free day in the middle of the week, and many of us took an excursion to Gibraltar.  It was really neat to see it!  You can walk across the whole town in about 30 minutes, it's not very big.  There's a cable car up to the top, where you can look out across the Strait of Gibraltar and see Morocco.
 
-!["Morocco from Gibraltar"](/images/2016/gibraltar.640x.jpg)
+!["Morocco from Gibraltar"](/.640x/images/2016/gibraltar.jpg)
 
 I felt moved to pray for the ministry in North Africa.  We had many STINTers at the conference from that region, even some from Ethiopia.  I pray that God will turn the entire continent into a sending continent, and bless them to share the Gospel with the rest of the world.
 

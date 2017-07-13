@@ -17,11 +17,11 @@ Anyways I might as well post more about what I've learned.  I've been wanting to
 
 The first thing that I have to do manually whenever my server dies is change the DNS records.  So let's try to make that automatic.  AWS has it's own DNS service called Route53.  It lets you link all sorts of things, like load balancers and the like, and update it programmatically via the API.  So I migrated my DNS records over to Route53.
 
-![Route53 Domain records](/images/2016/route53-dns.640x.png)
+![Route53 Domain records](/.640x/images/2016/route53-dns.png)
 
 Next I created an AWS Lambda function.  AWS Lambda lets you run NodeJS or Python programs on demand, based on any number of input events.  You don't have to worry at all about infrastructure, they charge based on resource usage and execution time.  I'm using it to automatically update my DNS records whenever my blog server dies & is restarted.
 
-![AWS Lambda function](/images/2016/aws-lambda-config.640x.png)
+![AWS Lambda function](/.640x/images/2016/aws-lambda-config.png)
 
 One "gotcha" that's not immediately apparent with AWS Lambda, is that if you need any extra nodejs libraries you have to pack them yourself.  Since I'm using the `async` and `https` libraries, I had to package the whole thing as a zip file including the `node_modules` folder.  Also, it runs an older version of nodejs, so you need to make sure you're developing on that version.
 

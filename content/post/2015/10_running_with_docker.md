@@ -155,6 +155,6 @@ I created a sub-section of my subscribers list based on whether they had opted o
 
 I set up an automatic campaign to send an email with the content of my most recent blog posts.  It checks the RSS feed [here](/index.xml) every day at 4am eastern time, and if there's a new post, it sends a message and also posts for me on facebook.  Neat, eh?
 
-![Mailchimp RSS example](/images/2015/mailchimp_rss_example.640x.png)
+![Mailchimp RSS example](/.640x/images/2015/mailchimp_rss_example.png)
 
 Well, that's it for this adventure in useless stuff I didn't really need to do but had fun doing.  See you next time, technical readers!

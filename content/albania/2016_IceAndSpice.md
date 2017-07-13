@@ -11,7 +11,7 @@ navtitle = "2016 - Ice And Spice"
 
 
 <div class="data-img" style="width:100%; max-width:100%">
-	<img src="/images/albania/2016/2016_team.640x.jpg" >
+	<img src="/.640x/images/albania/2016/2016_team.jpg" >
 	</img>
 	<span>photo by <a href="http://www.ronacord.com">Ron Acord</a></span>
 </div>
@@ -24,14 +24,14 @@ This year things have been a bit different, but I'm trying as much as possible t
 Orientation went well!  I always enjoy an opportunity to worship in English.  Aldo went through the standard intro, which I've now seen 4 times.  I made a map of all the good coffee spots too, so the team doesn't always end up taking the students to the same coffee shop.  We headed over to Big Bite for lunch, which is kind of tradition now.  Matt brought out his candy: gobstoppers, nerds and laffy taffy.  He spent the whole lunch reading off laffy taffy jokes, and generally being a goofball.  Definitely had us cracking up.
 
 <div class="data-img">
-	<img src="/images/albania/2016/will_guitar.640x.jpg" alt="Will with his guitar"></img>
+	<img src="/.640x/images/albania/2016/will_guitar.jpg" alt="Will with his guitar"></img>
 	<span>photo by <a href="http://www.ronacord.com">Ron Acord</a></span>
 </div>
 
 We hung out around the coffee shop next to the office until about 4.  That's when the kids started to arrive.  We had about 50 the first day, many already are believers.  The first couple days will be more get-to-know-you activities.  We all got on stage as the American team and introduced ourselves one by one.  After the intro session we had several games.  Matt and I were on the same team for one, we had to fish some candy out of a bowl of flour using just our mouths!  For another we had to pass an egg along from one person to another, holding it only by a plastic spoon between our teeth.  The kids loved the games but we didn't get too much interaction from them.  Afterwards we all went to coffee and watched the big Euro Cup match of the day, Italy vs Spain.  The boys were all super interested in that.  I did talk with a couple of them about sports.  I tried to show them a bit about baseball but they weren't too interested.  At halftime the kids mostly went home.
 
 <div class="data-img">
-	<img src="/images/albania/2016/spoon_game.640x.jpg" alt="playing the spoon game"></img>
+	<img src="/.640x/images/albania/2016/spoon_game.jpg" alt="playing the spoon game"></img>
 	<span>photo by <a href="http://www.ronacord.com">Ron Acord</a></span>
 </div>
 
@@ -47,7 +47,7 @@ I started the day at the new coffee shop on Elbasan rd, called Mulliri Vjeter.  
 We talked business for a bit then ended around 11.  We didn't know what to do since the camp wouldn't start until 4.  I tried to message a guy for coffee but he didn't have time today, so we hung out in the basement playing Jungle Pong for a while.  The girls started working on their "Relationships & Sex" talk which they will give later this week.  Matt is doing the guys' side of the sex talk.  He was planning to do more prep later, but for now Jungle Pong takes precedence.  In my opinion, his priorities are absolutely in the right place.
 
 <div class="data-img">
-	<img src="/images/albania/2016/jungle_pong_matt_fatmir.640x.jpg" alt="Jungle Pong is a contact sport"></img>
+	<img src="/.640x/images/albania/2016/jungle_pong_matt_fatmir.jpg" alt="Jungle Pong is a contact sport"></img>
 	<span>photo by <a href="http://www.ronacord.com">Ron Acord</a></span>
 </div>
 
@@ -56,7 +56,7 @@ We went for lunch at a Greek place down in the "Block" (Blloku).  It had all kin
 We played some more jungle pong after lunch, and around 5 started the camp.  We played a game called "Soularium", in which we spread a bunch of pictures out on the floor.  The students were asked to select pictures that represent how they feel their life looks right now.  One of the girls, for example, picked the one with a scale because she feels uncomfortable about her weight.  Then Aldo asked them to pick two pictures that describe God.  Most of the students picked ones with a light, or beautiful scenery.  It gave us an idea where to start with coffee conversations.
 
 <div class="data-img">
-	<img src="/images/albania/2016/bball.640x.jpg" alt="Intense basketball"></img>
+	<img src="/.640x/images/albania/2016/bball.jpg" alt="Intense basketball"></img>
 	<span>photo by <a href="http://www.ronacord.com">Ron Acord</a></span>
 </div>
 
@@ -65,7 +65,7 @@ We headed out from there to a park with a Basketball and Volleyball court.  My t
 We headed back to the office for a debrief, then Berti and Adelina Berhami took us o dinner at Era.  We always have a great time at dinner on these trips and tonight was no exception.  Matt told a few more Laffy Taffy jokes, while at the other end of the table Will was having a good discussion with Berti & Adelina.  Matt also drank 2 more red bulls.  I'll have to ask his roommate Dustyn in the morning whether there was any sleeping in that room.
 
 <div class="data-img"  style="width:100%; max-width:100%">
-	<img src="/images/albania/2016/albania_ladies.640x.jpg" alt="Ladies having fun"></img>
+	<img src="/.640x/images/albania/2016/albania_ladies.jpg" alt="Ladies having fun"></img>
 	<span>photo by <a href="http://www.ronacord.com">Ron Acord</a></span>
 </div>
 
@@ -79,7 +79,7 @@ Today was a bit tough, and kinda highlighted my dual role here.  In the morning 
 I grabbed a Byrek më Gjizë (a delicious cheese-filled pastry which I've come to love) on the way back to the office.  After scarfing down that deliciousness I went for coffee with a believer named Emmanuel.  He's a good kid, he's just not been coming to RPJ much recently.  Turns out he was dating a girl who didn't want him to go.  Now that they've broken up he's coming back.  He's interested in programming, so I showed him some of the parts of my blog where I discuss programming challenges.  Incidentally it had an error so I showed him how I kill the server and automatically restart it.  I also showed him my blog post detailing the reasons I decided to come to Albania.  This led to a discussion about heavenly rewards and investing in the Kingdom of God.  He seems to think everyone will be equal in heaven so why bother?  As long as his entry is secured he doesn't care to invest more.  We talked about how there will be no jealousy or pride in heaven, but when we do good works here then God allows us to enjoy their fruit for eternity.  Ron also talked to him a bit about dating, and gave him good advice for future relationships.
 
 <div class="data-img">
-	<img src="/images/albania/2016/master_chef.640x.jpg" alt="Master Chef"></img>
+	<img src="/.640x/images/albania/2016/master_chef.jpg" alt="Master Chef"></img>
 	<span>photo by <a href="http://www.ronacord.com">Ron Acord</a></span>
 </div>
 
@@ -90,7 +90,7 @@ We regrouped at the Pyramid, and while waiting for the rest of the group a few o
 Blerina made an awesome spread!  Pilaf, Byrek, Fërgesë, macaroni, chicken and potatoes.  Everyone loves fërgesë now.  For entertainment, Amanda danced the nae-nae for us.  She is really good!  But it's really not surprising she's learned it, it seems to be RPJ's favorite song.  We called it a night about 10:30 since everyone was super tired.
 
 <div class="data-img"  style="width:100%; max-width:100%">
-	<img src="/images/albania/2016/master_chef_winners.640x.jpg" alt="Master Chef winning team"></img>
+	<img src="/.640x/images/albania/2016/master_chef_winners.jpg" alt="Master Chef winning team"></img>
 	<span>photo by <a href="http://www.ronacord.com">Ron Acord</a></span>
 </div>
 
@@ -109,7 +109,7 @@ I met Silvio, Daniel and Ervin.  We talked about sports, school, and relationshi
 We went from that coffee to Ice and Spice.  Today we had a small group discussion time about the first 2 spiritual laws.  One of the students was new today and he was very much a skeptic.  His name is Donald.  We had some very interesting back and forth, and eventually I asked him to meet me for coffee.  I told him that I need his help, because I've staked my life on the truth of the resurrection.  If that is not true, why shouldn't I move back to Dallas?  He agreed with me, and said that the best thing for me was probably to move back.  Finally someone who understands that the Resurrection is the key!  We scheduled coffee for 10am tomorrow.
 
 <div class="data-img">
-	<img src="/images/albania/2016/dancing_with_aldo.640x.jpg" alt="Dancing with Aldo"></img>
+	<img src="/.640x/images/albania/2016/dancing_with_aldo.jpg" alt="Dancing with Aldo"></img>
 	<span>photo by <a href="http://www.ronacord.com">Ron Acord</a></span>
 </div>
 
@@ -126,21 +126,21 @@ that they've constructed in the square.  Will pulled out the guitar, he and Matt
 Today was the culmination of the first half of the camp, and it was awesome!  To make plenty of time for afternoon coffee we planned to start the Texas Event about 11:30.  But first I had an appointment with Donald, the skeptic from yesterday.  I've begun to use an approach where I ask the skeptic to prove to me that Jesus didn't rise from the dead.  I showed Donald the passage in 1 Corinthians 15, where the Bible directly tells you how it's claims can be shown to be false.  He was more interested in making emotional arguments grounded in his psych 101 class.  We talked about my Ego vs Id problem, how my Id wants to go back Dallas and I should let it because we are all just animals anyways.  I explained to him that I'm investing my life here, how I'm looking for it to pay dividends in eternity.  He seemed surprised that I'd use economics terms in relation to faith, but that seems natural to me.  Economics is a study of rational human interactions with eachother and the world.  Eventually we got to the real crux of the issue.  He didn't have any new info to challenge that Jesus rose from the dead.  He doesn't believe it because he enjoys drinking, smoking, gambling, and fornicating.  He thinks he has joy in that; I told him he's never experienced joy like I have in Christ.  I hope someday, when he realizes his life is empty, he'll remember the guy who told him to invest it instead of spend it.
 
 <div class="data-img">
-	<img src="/images/albania/2016/candy_table.640x.jpg" alt="The massive candy table!"></img>
+	<img src="/.640x/images/albania/2016/candy_table.jpg" alt="The massive candy table!"></img>
 	<span>photo by <a href="http://www.ronacord.com">Ron Acord</a></span>
 </div>
 
 After that I went back to the office for the Texas Event.  The guys were not messing around, they really did bring boxes full of candy!  I think we contributed to future dental problems for all these kids.  We had a bunch of games, including a farkle.  They narrowed it down to 8 potential losers, then they showed a video of the last time that I lost a farkle - the time I got peanut butter slathered on my face, and they let the dog in to lick it off.  The potential losers were starting to get anxious!  In the end though all they had to do was get up on stage and dance [We No Speak Americano](https://youtu.be/KW_eRTj3TuI), then they got a prize.  We also taught them 2-stepping.  They enjoyed that much more than the group from 2 years ago did.  
 
 <div class="data-img">
-	<img src="/images/albania/2016/baloon_game.640x.jpg" alt="The baloon popping game"></img>
+	<img src="/.640x/images/albania/2016/baloon_game.jpg" alt="The baloon popping game"></img>
 	<span>photo by <a href="http://www.ronacord.com">Ron Acord</a></span>
 </div>
 
 After all the dancing was finished, we sat them down so that Dustyn could share the Gospel.  Then Wes shared his testimony.  I'm interested to ask some of the kids what they thought about his testimony, because generally Albanians aren't open to talk about sexual issues.  A lot of what Wes brought up is a fairly taboo subject here.  I'm sure that's the first time any of those kids heard anyone talk about those kind of issues.  But I think God will use it.  Who knows?  Maybe some of those kids were struggling with similar things.
 
 <div class="data-img">
-	<img src="/images/albania/2016/hs_listening.640x.jpg" alt="Listening to the Gospel"></img>
+	<img src="/.640x/images/albania/2016/hs_listening.jpg" alt="Listening to the Gospel"></img>
 	<span>photo by <a href="http://www.ronacord.com">Ron Acord</a></span>
 </div>
 
@@ -158,7 +158,7 @@ For dinner we walked to a Mexican restaurant.  It was actually really good!  I d
 Today was a free day.  Some of the team had coffee with kids, but for the rest today we went touring and bought souvenirs.  At about 10am we started it off by going to the Italian chocolate restaurant.  They literally sell glasses full of melted chocolate, as well as delicious crepes and other super fattening stuff!  Everyone was extremely satisfied.  We went from there to Sky Tower, while some of us split off to have coffees with kids.  Everyone loved the view from there, and Lauren tried to get herself better oriented to the city.  I'm not sure how successful she was.  They are building a giant new mosque and we could see the construction.  The plan is for everyone to come back next year so we can see the completed building.  We went over to "souvenir row" so they could shop, but the veterans were less interested in that.  We headed down to the Stephen Center and I introduced Ron & Lauren to "Çai Mali", Albanian mountain tea.  They agree with me that it's pretty tasty.  
 
 <div class="data-img">
-	<img src="/images/albania/2016/chocolate_cup.640x.jpg" alt="A cup full of Italian chocolate"></img>
+	<img src="/.640x/images/albania/2016/chocolate_cup.jpg" alt="A cup full of Italian chocolate"></img>
 	<span>photo by <a href="http://www.ronacord.com">Ron Acord</a></span>
 </div>
 
@@ -176,7 +176,7 @@ Of course we couldn't miss the Euro cup match between Germany and Italy!  Half t
 Today was the last day that I'd get to spend with most of my friends for a long while.  But it was a great and full day.  We went to church at Cornerstone church (Guri i Themelit) and heard a good sermon from Alan over 2 Corinthians 3.  Alan is another Texan who works for a church in Houston, and splits his time there and in Albania.  After church we took a picture together upstairs.  I can't wait to see all of Ron's photos from the trip.
 
 <div class="data-img">
-	<img src="/images/albania/2016/boys_with_toys.640x.jpg" alt="The guys having fun at the beachfront carnival"></img>
+	<img src="/.640x/images/albania/2016/boys_with_toys.jpg" alt="The guys having fun at the beachfront carnival"></img>
 	<span>photo by <a href="http://www.ronacord.com">Ron Acord</a></span>
 </div>
 
@@ -189,7 +189,7 @@ We moved over to the pier to have dinner at the seafood restaurant at the end.  
 Will made a good toast to this year's efforts.  He challenged each of us to think about our ongoing involvement in Albania, even to the point of considering quitting our jobs to move here.  I hope some more people will take up the challenge.  I got to hang out with the team at the hotel until late, but I was exhausted so I didn't stay up with them too late.  So I said goodbye and went home.  I'm definitely gonna miss all of them.  It's been a great week, but there's another one ahead of us.
 
 <div class="data-img" style="width:100%; max-width:100%">
-	<img src="/images/albania/2016/durres_sunset.640x.jpg" alt="Sunset over Durres"></img>
+	<img src="/.640x/images/albania/2016/durres_sunset.jpg" alt="Sunset over Durres"></img>
 	<span>photo by <a href="http://www.ronacord.com">Ron Acord</a></span>
 </div>
 

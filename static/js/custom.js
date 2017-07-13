@@ -15,8 +15,8 @@ $(document).ready(function(){
 
 	  if (typeof attr !== typeof undefined && attr !== false) {
 	    if (!window.matchMedia || !window.matchMedia("(max-width: 640px)").matches){
-	      if (attr.indexOf('640x.')  > -1){
-	      	attr = attr.replace('640x.', '')
+	      if (attr.indexOf('/.640x')  > -1){
+	      	attr = attr.replace('/.640x', '')
 	      	$(this).attr('src', attr);
 	      }
 	    }

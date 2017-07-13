@@ -15,7 +15,7 @@ Thanks to a good friend hosting an event last weekend, I have now reached my mon
 
 Speaking of which, I bought my plane tickets today!  First time I've ever bought a one-way flight.  But it's locked in now.  I fly from Dallas to Washington D.C. on September 23, and I'll fly from DC to Tirana on Sunday the 27th.
 
-<img src="/images/2015/austrian-tickets.640x.png" ></img>
+<img src="/.640x/images/2015/austrian-tickets.png" ></img>
 
 Now I just need to enjoy my last couple months in Dallas, and prepare my heart to go.  That part has been tough.  I'm not entirely sure how to prepare myself spiritually and mentally for this adventure, but I know a healthy amount of time in the Word will be very important.  This past week, I've been reflecting on my most recent trip to Albania as I wrote up my journal.  Reading over my journal I can clearly see how God is moving in Albania and how much I want to be a part of the stories He's writing there.
 
