@@ -21,6 +21,7 @@ services:
 - docker
 
 install:
+- apt-get install -y imagemagick graphicsmagick
 - yarn install
 - curl -L -o /tmp/hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/v0.19/hugo_0.19_Linux-32bit.tar.gz
 - tar xvf /tmp/hugo.tar.gz -C /tmp/
