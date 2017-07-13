@@ -26,6 +26,8 @@ install:
 - tar xvf /tmp/hugo.tar.gz -C /tmp/
 - sudo mv /tmp/hugo_0.19_linux_386/hugo_0.19_linux_386 /usr/bin/hugo
 
+script: gulp
+
 after_success:
 - rm -r node_modules
 - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
