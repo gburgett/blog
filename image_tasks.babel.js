@@ -76,7 +76,7 @@ gulp.task('img-make-640x', () => {
   return gulp.src('./static/images/**/*.{jpg,png,svg}')
         // filter out files where the copy in the 640x directory has already been processed
       .pipe(filterIfCopyExists(srcToMirror))
-      .pipe(debug())
+
         // resize the images from the mirror folder
       .pipe(imageResize({
         width: 640,
@@ -93,7 +93,7 @@ gulp.task('gif-optimize', () => {
   return gulp.src('./static/images/**/*.gif', { read: false })
         // filter out files where the copy has already been processed
       .pipe(filterIfCopyExists(srcToMirror))
-      .pipe(debug())
+
         // optimize the source gif into the correct place
       .pipe(new Transform({
         objectMode: true,
@@ -106,7 +106,6 @@ gulp.task('gif-optimize', () => {
               callback(err)
               return
             }
-            console.log('toFile:', toFile)
 
             execFile(gifsicle,
               ['--output', toFile, '--resize-width', '640', '--colors', '256', '--optimize=3', file.path],
