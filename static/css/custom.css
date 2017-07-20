@@ -7,6 +7,12 @@
 }
 
 
+.attribution {
+  float:right;
+  color: gray;
+  font-size: 8pt;
+}
+
 .panel-cover--overlay {
   background-color: rgba(68, 68, 68, 0.4);
   background-image: -webkit-linear-gradient(-410deg, rgba(68, 68, 68, 0.4) 40%, rgba(0, 0, 0, 0.6));
