@@ -5,7 +5,9 @@
   "repository": "https://github.com/gburgett/blog",
   "dependencies": {
     "express": "^4.12.3",
-    "googleapis": "^2.0.2"
+    "googleapis": "^2.0.2",
+    "hugo-search-index": "^0.1.1",
+    "search-index": "^0.13.0"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",

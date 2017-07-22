@@ -6,19 +6,23 @@
 	text-decoration: underline;
 }
 
-
 .attribution {
   float:right;
   color: gray;
   font-size: 8pt;
 }
 
+.blog-button {
+  min-width: 60px;
+}
+
 .panel-cover--overlay {
   background-color: rgba(68, 68, 68, 0.4);
   background-image: -webkit-linear-gradient(-410deg, rgba(68, 68, 68, 0.4) 40%, rgba(0, 0, 0, 0.6));
-  background-image: linear-gradient(140deg,rgba(68, 68, 68, 0.4) 40%, rgba(0, 0, 0, 0.6)); }
+  background-image: linear-gradient(140deg,rgba(68, 68, 68, 0.4) 40%, rgba(0, 0, 0, 0.6)); 
+}
 
- .video-container {
+.video-container {
     position: relative;
     padding-bottom: 56.25%;
     padding-top: 35px;
@@ -94,4 +98,21 @@ blockquote p {
 
 .domain::before {
 	content: "\0040";    /* Unicode character for @ symbol */
+}
+
+#searchForm input {
+  border-radius: 16px;
+  border: 1px solid;
+  width: 90%;
+  padding: 10px;
+  padding-left: 30px;
+}
+
+#searchForm .fa-search {
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 10px;
+  z-index: 1;
+  color: #4f5b66;
+  cursor: pointer;
 }

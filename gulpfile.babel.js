@@ -7,13 +7,16 @@ import fs from 'fs-extra';
 // import image processing tasks
 require('./image_tasks.babel.js');
 
+// import search index tasks
+require('hugo-search-index/gulp')(gulp, gutil)
+
 const browserSync = BrowserSync.create();
 const hugoBin = "hugo";
 const defaultArgs = ["-v"];
 
 gulp.task("default", ["build"]);
 
-gulp.task("build", ["hugo"]);
+gulp.task("build", ["hugo", "search"]);
 
 /**
  * hugo: runs the hugo binary to build the hugo site.

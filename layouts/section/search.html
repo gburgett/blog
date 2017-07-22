@@ -1,0 +1,17 @@
+    {{ partial "head.html" . }}
+    <body>
+        {{ partial "sidebar.html" . }}
+        <div class="content-wrapper">
+            <div class="content-wrapper__inner">
+                {{ .Content }}
+            </div>
+        </div>
+    </body>
+    {{ partial "script.html" .}}
+
+    <script src="/js/search-index.min.js"></script>
+    <script src="/js/search.min.js"></script>
+    <script type="text/javascript">
+      $('.panel-cover').addClass('panel-cover--collapsed');
+    </script>
+</html>
