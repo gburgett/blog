@@ -126,7 +126,7 @@ All that's for the next time I have a spare afternoon :)
 
 Update: I got automatic renewal working! (at least I hope, it's going to be 2 months before any of these certs actually need renewal.)
 
-If you remember a [previous post](/post/taking_control_of_my_data/) I talked about setting up a 
+If you remember a [previous post](/post/2016/09_taking_control_of_my_data/) I talked about setting up a 
 [backup script](https://github.com/gburgett/blog/blob/master/home/backup.sh) on a cron job.  This baby is still humming along just fine,
 and it is robust enough that it handles exactly my needs.  I'm going to use it to execute my automatic certificate check by setting up
 my command as the `BACKUP_CMD` variable.

@@ -70,7 +70,7 @@ title = "My New Hugo Site"
 baseURL = "http://example.org/"
 theme = "beautifulhugo"  # This should exactly match the name of the folder in your themes directory
 ```
-Now if you run `hugo server` you can look at a preview of your new site at [http://localhost:1313](http://localhost:1313).  It should look like this because you have no content:
+Now if you run `hugo server` you can look at a preview of your new site at `http://localhost:1313`.  It should look like this because you have no content:
 
 ![new site image](/.640x/images/modern_static_sites/new_site.png)
 
@@ -78,7 +78,7 @@ Now if you run `hugo server` you can look at a preview of your new site at [http
 
 [Hugo has a great tutorial](http://gohugo.io/overview/quickstart/) on how to build your site and add content.  Seriously, read through it.  The awesome thing about hugo is that all content is markdown files.  Markdown makes it super easy to just write, and you can worry about presentation later.
 
-All content goes in the `content/` folder, and the way it is organized within that folder affects where it is on the website.  Most websites, especially blogs like this one, have a `post/` category.  For example, this blog post is in the file `content/post/modern_static_sites.md`.  [Check out the raw content of this post here](https://raw.githubusercontent.com/gburgett/blog/master/hugo/content/post/modern_static_sites.md) to see an example.  All images are stored in the `static/images` folder.  Then you just reference them with the URL path `/images/my_image.jpg`.  Everything in the `static` folder actually gets copied directly to the output folder, so you can put anything you want in there.
+All content goes in the `content/` folder, and the way it is organized within that folder affects where it is on the website.  Most websites, especially blogs like this one, have a `post/` category.  For example, this blog post is in the file `content/post/2017/04_modern_static_sites.md`.  [Check out the raw content of this post here](https://github.com/gburgett/blog/blob/master/content/post/2017/04_modern_static_sites.md) to see an example.  All images are stored in the `static/images` folder.  Then you just reference them with the URL path `/images/my_image.jpg`.  Everything in the `static` folder actually gets copied directly to the output folder, so you can put anything you want in there.
 
 ### Step 3: Adding Javascript and CSS
 
@@ -86,7 +86,7 @@ You put your custom CSS and Javascript in the `static/` folder.  The trick now i
 
 Layouts are how you tell Hugo what HTML to build out of your content.  Your theme already comes with layouts though you can always add more.  Here we'll override two layouts in order to add our CSS and JS.  The "beautifulhugo" theme has two custom layout files called `head_custom.html` and `footer_custom.html` (a different theme will have different layouts, you need to crack open the files and figure out which one you want to override).  They are in `my-awesome-site/themes/beautifulhugo/layouts/partials/`.  You need to copy those to the root folder, `my-awesome-site/themes/partials/head_custom.html` and `my-awesome-site/themes/partials/footer_custom.html`.
 
-Now open up those files and add in a reference to your scripts and css.  If you want to see a working example, [here is the file I overwrote to add in custom scripts to my blog](https://github.com/gburgett/blog/blob/master/hugo/layouts/partials/script.html).  My blog uses the hugo-uno theme, so I needed to overwrite the `script.html` file.
+Now open up those files and add in a reference to your scripts and css.  If you want to see a working example, [here is the file I overwrote to add in custom scripts to my blog](https://github.com/gburgett/blog/blob/master/layouts/partials/script.html).  My blog uses the hugo-uno theme, so I needed to overwrite the `script.html` file.
 
 ### Step 4: Building and hosting the site
 

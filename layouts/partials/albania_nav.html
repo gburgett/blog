@@ -20,7 +20,7 @@
           <ul class="dropdown-menu">
             {{ range where .Site.Pages "Params.menu" "=" "journal" }}
               <li>
-                <a href="{{ .Permalink }}">{{ .Title }}</a>
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
               </li>
             {{ end }}
           </ul>

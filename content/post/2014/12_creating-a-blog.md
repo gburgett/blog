@@ -5,7 +5,7 @@ title = "Creating a blog"
 Categories = ["Development", "Hosting"]
 Tags = ["Development", "hosting"]
 aliases = [
-  "/post/creating a blog/",
+  "/post/creating a blog",
 ]
 
 +++
@@ -25,7 +25,7 @@ It was pretty easy to set up, I just did the following:
 3. `hugo new about.md`
 4. `hugo new post/first.md`
 
-All this text is inside 'first.md', which I then renamed to 'creating a blog.md'.  The URL after Hugo generates the html page is 'http://localhost:1313/post/creating%20a%20blog/'.  Easy peasy.
+All this text is inside 'first.md', which I then renamed to 'creating a blog.md'.  The URL after Hugo generates the html page is `http://localhost:1313/post/creating%20a%20blog/`.  Easy peasy.
 
 I grabbed the themes using `git clone --recursive https://github.com/spf13/hugoThemes themes`, then ran the server using the 'hugo-uno' theme:
 `hugo server --theme=hugo-uno --buildDrafts --watch`

@@ -19,7 +19,7 @@ a static site?
 [Hugo](https://gohugo.io), a static site generator.  What that means is that I have a folder full of partial HTML files, another folder
 full of plain text files in a format called Markdown, a folder full of images/javascript/css, and when I type the command `hugo` in my
 terminal, it combines all of those to create HTML files in an output folder.  So if you want to 
-[download the source code for my blog](https://github.com/gordonburgett/blog), you're not getting HTML.  You're getting all the things
+[download the source code for my blog](https://github.com/gburgett/blog), you're not getting HTML.  You're getting all the things
 that go into creating the HTML.
 
 So why does that matter for adding search functionality?  Well a static site, however it's generated, is just HTML, Javascript, CSS, and media.
