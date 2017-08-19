@@ -16,7 +16,7 @@ const defaultArgs = ["-v"];
 
 gulp.task("default", ["build"]);
 
-gulp.task("build", ["hugo", "search"]);
+gulp.task("build", ["hugo", "hugo-search-index"]);
 
 /**
  * hugo: runs the hugo binary to build the hugo site.

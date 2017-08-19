@@ -5,4 +5,4 @@ navtitle = "Search"
 
 +++
 
-# Search
+# Kërko

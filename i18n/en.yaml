@@ -1,0 +1,25 @@
+- id: T_blog
+  translation: Blog
+
+- id: T_albania
+  translation: Albania
+
+- id: T_search
+  translation: Search
+
+- id: T_home
+  translation: Home
+
+- id: T_journal
+  translation: Journal
+
+- id: newsletter
+  translation:
+    one: Newsletter
+    other: Newsletters
+
+- id: T_read_more
+  translation: Read more
+
+- id: T_archive
+  translation: Archive

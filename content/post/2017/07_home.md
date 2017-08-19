@@ -58,6 +58,6 @@ Shifemi shumë shpejt miq :)
 
 
 <div>
-  <img src="/.640x/images/2017/project/sunset.jpg" alt="Summer retreat group">
+  <img src="/.640x/images/2017/project/sunset.jpg" alt="sunset">
   <span class="attribution">photo by Lauren Dean</span>
 </div>

@@ -1,0 +1,25 @@
+- id: T_blog
+  translation: Blog
+
+- id: T_albania
+  translation: Shqipëri
+
+- id: T_search
+  translation: Kërko
+
+- id: T_home
+  translation: Kryëfaqje
+
+- id: T_journal
+  translation: Ditar
+
+- id: newsletter
+  translation:
+    one: gazetë
+    other: gazete
+
+- id: T_read_more
+  translation: Lexo
+
+- id: T_archive
+  translation: Të gjitha postimet
