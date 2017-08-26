@@ -7,6 +7,9 @@ menu = "main"
 title = "Albania!  YEEEEHAWWW!"
 navtitle = "Albania"
 type = "albania"
+aliases = [
+  "/sq/albania/",
+]
 
 +++
 
