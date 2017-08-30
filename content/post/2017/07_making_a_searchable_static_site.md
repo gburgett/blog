@@ -251,12 +251,12 @@ SearchIndex(options, (libErr, si) => {
 
 ```
 
-You can see all this in the actual file [here](https://github.com/gburgett/hugo-search-index/blob/master/src/search/SearchIndexLoader.ts).
+You can see all this in the actual file [here](https://github.com/gburgett/hugo-search-index/blob/master/src/lib/search/SearchIndexLoader.ts).
 
 ## Executing a search
 
 To execute a search, we need to generate a query object and execute the `search` method on the search index, as described [in the documentation](https://github.com/fergiemcdowall/search-index/blob/master/docs/search.md).
-I built a wrapper object around the search index to handle this, with a method `executeSearch`.  [Here is the source](https://github.com/gburgett/hugo-search-index/blob/master/src/search/store.ts).
+I built a wrapper object around the search index to handle this, with a method `executeSearch`.  [Here is the source](https://github.com/gburgett/hugo-search-index/blob/master/src/lib/search/store.ts).
 
 ```ts
 public runSearch(query: string, lang?: string | SearchCallback, cb?: SearchCallback): void {
