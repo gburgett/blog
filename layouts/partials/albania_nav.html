@@ -39,6 +39,13 @@
           </ul>
          </li>
       </ul>
+      <ul class="nav navbar-nav navbar-right">
+        {{ range .Translations }}
+          <li>
+            <a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>
+          </li>
+        {{ end }}
+      </ul>
     </div>
   </div>
 </nav>

@@ -1,7 +1,7 @@
 +++
 menu = "main"
-title = "Search"
-navtitle = "Search"
+title = "Kërko"
+navtitle = "Kërko"
 
 +++
 

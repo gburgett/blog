@@ -31,4 +31,10 @@
     <!-- RSS -->
     <link href="{{ .Site.RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
 
+    {{ with .Params.redirect }}
+      <meta http-equiv="refresh" content="0; url={{ . | absURL }}" />
+      <link rel="canonical" href="{{ . | absURL }}">
+    {{ else }}
+      <link rel="canonical" href="{{ .Permalink }}">
+    {{ end }}
 </head>

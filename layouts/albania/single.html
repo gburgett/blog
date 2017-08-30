@@ -5,12 +5,18 @@
     <!-- Enable responsiveness on mobile devices-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <title> {{ .Title }} &middot; {{ .Site.Title }} </title>
-    <link rel="canonical" href="{{ .Permalink }}">
+    
     <!-- CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/albania.css" />
     <!-- Icons -->
     <link rel="shortcut icon" href="/favicon.ico">
+    {{ with .Params.redirect }}
+      <meta http-equiv="refresh" content="0; url={{ . | absURL }}" />
+      <link rel="canonical" href="{{ . | absURL }}">
+    {{ else }}
+      <link rel="canonical" href="{{ .Permalink }}">
+    {{ end }}
   </head>
   <body>
     <!-- Popup modal for image enlargement -->

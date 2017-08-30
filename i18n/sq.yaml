@@ -22,4 +22,37 @@
   translation: Lexo
 
 - id: T_archive
-  translation: Të gjitha postimet
+  translation: Të gjithë postimet
+
+- id: T_close
+  translation: Mbyll
+
+- id: T_subscribe
+  translation: Regjistrohu
+
+- id: T_donate
+  translation: Dhuro!
+
+- id: T_newsletter_modal
+  translation: Regjistrohu për Gazetën!
+
+- id: T_newsletter_subscribe
+  translation: Regjistrohu për Gazetën!
+
+- id: F_mce-EMAIL
+  translation: Adresa e Emailit
+
+- id: F_mce-FNAME
+  translation: Emri
+
+- id: F_mcd-LNAME
+  translation: Mbiemri
+
+- id: F_placeholder_mce-EMAIL
+  translation: Filan.Filani@yahoo.com
+
+- id: F_placeholder_mce-FNAME
+  translation: Filan
+
+- id: F_placeholder_mce-LNAME
+  translation: Filani

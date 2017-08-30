@@ -7,9 +7,7 @@ menu = "main"
 title = "Albania!  YEEEEHAWWW!"
 navtitle = "Albania"
 type = "albania"
-aliases = [
-  "/sq/albania/",
-]
+modal_message = "Yes, the newsletter is still happening even though my STINT has finished :)"
 
 +++
 
