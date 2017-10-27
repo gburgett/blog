@@ -66,4 +66,9 @@ $(document).ready(function(){
       }
 	  }
 	});
+
+	//newsletter modal
+	if (window.location.hash == '#newsletterSignup') {
+		$('#newsletterSignup').modal();
+	}
 });
