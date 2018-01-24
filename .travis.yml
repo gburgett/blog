@@ -28,16 +28,16 @@ install:
 - sudo mv /tmp/hugo_0.19_linux_386/hugo_0.19_linux_386 /usr/bin/hugo
 - yarn global add http-server broken-link-checker
 
-script: 
+script:
   - gulp
   - http-server ./public &
   - broken-link-checker -ore --filter-level=2 http://127.0.0.1:8080
   - kill %1
 
-after_success:
-- rm -r node_modules
-- docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
-- export REPO=gordonburgett/blog
-- export TAG=`if [ "$TRAVIS_BRANCH" == "master" ]; then echo "latest"; else echo $TRAVIS_BRANCH; fi`
-- docker build -f Dockerfile -t $REPO:$TAG .
-- docker push $REPO
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
+  keep-history: true
+  on:
+    branch: master
