@@ -1,0 +1,198 @@
+  <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title> Docker Cloud is Neat &middot; first things first </title>
+    
+    <link rel="stylesheet" type="text/css" href="/css/uno.min.css" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/custom.css" />
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <link href="http://www.gordonburgett.net/index.xml" rel="alternate" type="application/rss+xml" title="first things first" />
+
+    
+      <link rel="canonical" href="http://www.gordonburgett.net/post/2016/02_docker-cloud-is-neat/">
+    
+</head>
+
+  <body>
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-bars btn-mobile-menu__icon"></i>
+        <i class="fa fa-times btn-mobile-close__icon hidden"></i>
+    </span>
+<header class="panel-cover panel-cover--collapsed " >
+    <div class="panel-main">
+        <div class="panel-main__inner panel-inverted">
+            <div class="panel-main__content"> 
+                <h1 class="panel-cover__title panel-title">
+                    <a href="/" title="link to homepage for first things first">first things first</a>
+                </h1>
+                <hr class="panel-cover__divider" />
+                <p class="panel-cover__description">  A blog about whatever crosses my mind, ordered by importance.  </p>
+                <hr class="panel-cover__divider panel-cover__divider--secondary" />
+                <div class="navigation-wrapper">
+                    <nav class="cover-navigation cover-navigation--primary">
+                        <ul class="navigation">
+                            <li class="navigation__item"><a href="/albania" title='Albania' class="blog-button">
+                            Albania
+                            </a></li>
+                            <br/>
+                            <li class="navigation__item"><a href="/search" title='Search' class="blog-button">Search</a></li>
+                            <br/>
+                            <li class="navigation__item">
+                                
+                            </li>
+                        </ul>
+                    </nav> <nav class="cover-navigation navigation--social">
+    <ul class="navigation">
+        <li class="navigation__item">
+        <a href="http://www.gordonburgett.net/index.xml" title="RSS">
+            <i class="fa fa-rss"></i>
+            <span class="label">RSS</span>
+        </a>
+        </li>
+        <br/>
+        
+         
+        
+        
+        <li class="navigation__item">
+            <a href="https://github.com/gburgett" title="gburgett on github"> <i class='fa fa-github'></i> <span class="label">Github</span> </a>
+        </li>
+        
+         </br>
+         
+         
+         
+        
+        <li class="navigation__item">
+            <a href="#" id="email" title="Email"> <i class='fa fa-envelope-o'></i> <span class="label">Email</span> </a>
+        </li>
+        
+        <br/>
+        
+        <li class="navigation__item">
+            <a href="/pubkey.txt" id="gpg" title="GPG key"> <i class='fa fa-key'></i> <span class="label">GPG key</span> </a>
+        </li>
+    </ul>
+</nav>
+ </div>
+            </div>
+        </div>
+        <div class="panel-cover--overlay"></div>
+    </div>
+</header>
+    <div class="content-wrapper">
+      <div class="content-wrapper__inner">
+        <div class="post">
+          <h1>Docker Cloud is Neat</h1>
+          <span class="post-date">Mon, Feb 15, 2016</span>
+          
+
+<p>I had some time off today so I decided to revisit how I&rsquo;m hosting all my stuff.  One of my issues with using Amazon&rsquo;s container service is that they make you assign resource values to each container, and those are not flexible.  So, I have to give each container high enough memory that it won&rsquo;t die, but then I run out of space on my server real quick.  Since most of the stuff I want to host just sits idle the majority of the time, this wasn&rsquo;t ideal for me.</p>
+
+<p>I&rsquo;d heard about Tutum before, so I went to check it out.  It&rsquo;s another container management solution.  It&rsquo;s since been acquired by Docker and rebranded as <a href="https://cloud.docker.com">docker cloud</a>.  It&rsquo;s definitely got a slick interface, and looks to provide all the features I&rsquo;ll need.  One that I particularly like is the &ldquo;autoredeploy&rdquo; switch, which automatically redeploys a container when you push a new image.  Perfect for my blog.  So, I set about getting it set up.</p>
+
+<p><img src="/.640x/images/2016/docker-cloud-tour.png" alt="Docker cloud tour" />
+They have a neat tour!  Getting set up with AWS as my service provider was a snap.  It spins up its own AWS instances to use as nodes though, which means I can&rsquo;t use my fancy auto-initialization with an auto-scaling group.  But, you can also &lsquo;bring your own node&rsquo; by installing the docker-cloud client.  Turned out to be pretty simple to incorporate that into my launch script:</p>
+
+<pre><code class="language-bash"># set up docker cloud
+sudo apt-get -y install python-pip
+sudo pip install docker-cloud
+# the 'byo' command prints out a list of instructions, we just need to run the line with the curl command.
+docker-cloud node byo | grep 'curl' | sh
+sudo gpasswd -a ubuntu docker
+</code></pre>
+
+<p>One tricky part was that I couldn&rsquo;t use the Amazon ECS-optimized image, since the docker-cloud client only supports ubuntu.  So I had to switch all my initialization stuff over to an ubuntu image.  That was a bit of a pain.  But, after getting it all set up, my node appeared in the &lsquo;nodes&rsquo; tab on docker cloud!</p>
+
+<p>Now to set up my services.  You can set them up directly using the web interface, but I prefer to have well-defined files somewhere describing my services.  Docker cloud has a concept called &lsquo;stacks&rsquo; which are defined by yaml files, similar to docker-compose.  This let me link all the dependent services together in a declarative way.  I created my &lsquo;blog&rsquo; stack like this:</p>
+
+<p><img src="/.640x/images/2016/blog-stack-yaml.png" alt="Blog stackfile" />
+Now I need to set up my haproxy load balancer in front of it.  I decided this time I&rsquo;ll dockerize my load balancer instead of having it run straight on the EC2 instance.  I messed around with it for a long time before I found this image, which does everything I want: <a href="https://hub.docker.com/r/dockercloud/haproxy/">https://hub.docker.com/r/dockercloud/haproxy/</a></p>
+
+<p>Setting that up was a breeze.  I created a service to run it, and set it to listen on ports 80 and 443 (the HTTP and HTTPS ports).  It contacts the docker cloud API and discoveres the locations of all my other services automatically, and imports their info into its configuration.  I just needed to declare a couple environment variables in my other services, like hostname and SSL keys, and it imports them to route virtual hosts and terminate SSL connections automagically.  Sweet!</p>
+
+<p>Only a couple things tripped me up at this point.  One was the routing based on the <code>VIRTUAL_HOST</code> environment variable.  If you want it to route https traffic, you need an &ldquo;https://&rdquo; virtual host in there.  Another thing was that, while this haproxy service has a DNS hostname, I can&rsquo;t just make a CNAME to it from www.gordonburgett.net, since the DNS hostname changes whenever the container is reloaded.  So I stuck to my old way of assigning an Elastic IP to the node and using that in my DNS records.</p>
+
+<h2 id="running-the-reclaimed-site">Running the Reclaimed site</h2>
+
+<p>One of the things that sparked all this was my attempt to get the Reclaimed site to do automatic nightly backups to aws s3.  I modified <a href="https://hub.docker.com/r/yaronr/backup-volume-container/">this docker container</a>, which automatically backs up anything in <code>/var/backup</code> to aws s3, and linked that in to my other two containers.  I also had to set up cron tasks in the other two containers to do automated backup and restore to and from <code>/var/backup</code>.  That took a while, but I think my solution works well.</p>
+
+<p>Once I got all that figured out locally, deploying it to docker cloud was pretty simple.  Here&rsquo;s my stackfile:</p>
+
+<pre><code class="language-yaml">backup:
+  image: 'gordonburgett/backup-volume-container:latest'
+  command: 's3://s3.amazonaws.com/gordonburgett.net/backup/reclaimed 30'
+  environment:
+    - AWS_ACCESS_KEY_ID=********
+    - AWS_SECRET_ACCESS_KEY=********
+db:
+  image: 'gordonburgett/mongo-locomotive:latest'
+  volumes_from:
+    - backup
+engine:
+  image: 'gordonburgett/locomotive_engine:latest'
+  environment:
+    - SECRET_KEY_BASE=********
+    - VIRTUAL_HOST=reclaimed.gordonburgett.net
+  expose:
+    - '8080'
+  links:
+    - db
+  restart: on-failure
+  volumes_from:
+    - backup
+</code></pre>
+
+<p>I updated my haproxy service to link to the &ldquo;engine&rdquo; service, and started it up.  Now going to &lsquo;reclaimed.gordonburgett.net&rsquo; gets me through the load balancer and into the rails app.  Perfect!  I uploaded the site, which you can see at <a href="http://reclaimed.gordonburgett.net">http://reclaimed.gordonburgett.net</a></p>
+
+<p>Here it is!
+<img src="/.640x/images/2016/docker-cloud-node.png" alt="The node with everything running" /></p>
+
+<p>Like I said, neat!</p>
+
+        </div>
+      </div>
+    </div>
+  </body>
+  
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/monokai_sublime.min.css">
+
+
+
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+<script src="/js/main.min.js"></script>
+<script src="/js/custom.js" ></script>
+
+<script src="/js/highlight/highlight.pack.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+</html>

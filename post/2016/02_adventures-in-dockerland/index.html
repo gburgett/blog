@@ -1,0 +1,223 @@
+  <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title> Adventures in Dockerland &middot; first things first </title>
+    
+    <link rel="stylesheet" type="text/css" href="/css/uno.min.css" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/custom.css" />
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <link href="http://www.gordonburgett.net/index.xml" rel="alternate" type="application/rss+xml" title="first things first" />
+
+    
+      <link rel="canonical" href="http://www.gordonburgett.net/post/2016/02_adventures-in-dockerland/">
+    
+</head>
+
+  <body>
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-bars btn-mobile-menu__icon"></i>
+        <i class="fa fa-times btn-mobile-close__icon hidden"></i>
+    </span>
+<header class="panel-cover panel-cover--collapsed " >
+    <div class="panel-main">
+        <div class="panel-main__inner panel-inverted">
+            <div class="panel-main__content"> 
+                <h1 class="panel-cover__title panel-title">
+                    <a href="/" title="link to homepage for first things first">first things first</a>
+                </h1>
+                <hr class="panel-cover__divider" />
+                <p class="panel-cover__description">  A blog about whatever crosses my mind, ordered by importance.  </p>
+                <hr class="panel-cover__divider panel-cover__divider--secondary" />
+                <div class="navigation-wrapper">
+                    <nav class="cover-navigation cover-navigation--primary">
+                        <ul class="navigation">
+                            <li class="navigation__item"><a href="/albania" title='Albania' class="blog-button">
+                            Albania
+                            </a></li>
+                            <br/>
+                            <li class="navigation__item"><a href="/search" title='Search' class="blog-button">Search</a></li>
+                            <br/>
+                            <li class="navigation__item">
+                                
+                            </li>
+                        </ul>
+                    </nav> <nav class="cover-navigation navigation--social">
+    <ul class="navigation">
+        <li class="navigation__item">
+        <a href="http://www.gordonburgett.net/index.xml" title="RSS">
+            <i class="fa fa-rss"></i>
+            <span class="label">RSS</span>
+        </a>
+        </li>
+        <br/>
+        
+         
+        
+        
+        <li class="navigation__item">
+            <a href="https://github.com/gburgett" title="gburgett on github"> <i class='fa fa-github'></i> <span class="label">Github</span> </a>
+        </li>
+        
+         </br>
+         
+         
+         
+        
+        <li class="navigation__item">
+            <a href="#" id="email" title="Email"> <i class='fa fa-envelope-o'></i> <span class="label">Email</span> </a>
+        </li>
+        
+        <br/>
+        
+        <li class="navigation__item">
+            <a href="/pubkey.txt" id="gpg" title="GPG key"> <i class='fa fa-key'></i> <span class="label">GPG key</span> </a>
+        </li>
+    </ul>
+</nav>
+ </div>
+            </div>
+        </div>
+        <div class="panel-cover--overlay"></div>
+    </div>
+</header>
+    <div class="content-wrapper">
+      <div class="content-wrapper__inner">
+        <div class="post">
+          <h1>Adventures in Dockerland</h1>
+          <span class="post-date">Sat, Feb 20, 2016</span>
+          <p>I&rsquo;ve been on a serious docker/aws kick recently.  I&rsquo;ve learned just enough that it drives me to play with it.  I spent a lot of my free time on it this week, and didn&rsquo;t spend as much as I&rsquo;d like on learning Albanian&hellip; This could be a problem&hellip;</p>
+
+<p>Anyways I might as well post more about what I&rsquo;ve learned.  I&rsquo;ve been wanting to make my web server more robust, to where if it dies for whatever reason I don&rsquo;t have to do anything, it&rsquo;ll come back on a new instance all on its own.  Unfortunately that&rsquo;s a bit more difficult than you&rsquo;d expect.  Lots of moving parts.</p>
+
+<p>The first thing that I have to do manually whenever my server dies is change the DNS records.  So let&rsquo;s try to make that automatic.  AWS has it&rsquo;s own DNS service called Route53.  It lets you link all sorts of things, like load balancers and the like, and update it programmatically via the API.  So I migrated my DNS records over to Route53.</p>
+
+<p><img src="/.640x/images/2016/route53-dns.png" alt="Route53 Domain records" /></p>
+
+<p>Next I created an AWS Lambda function.  AWS Lambda lets you run NodeJS or Python programs on demand, based on any number of input events.  You don&rsquo;t have to worry at all about infrastructure, they charge based on resource usage and execution time.  I&rsquo;m using it to automatically update my DNS records whenever my blog server dies &amp; is restarted.</p>
+
+<p><img src="/.640x/images/2016/aws-lambda-config.png" alt="AWS Lambda function" /></p>
+
+<p>One &ldquo;gotcha&rdquo; that&rsquo;s not immediately apparent with AWS Lambda, is that if you need any extra nodejs libraries you have to pack them yourself.  Since I&rsquo;m using the <code>async</code> and <code>https</code> libraries, I had to package the whole thing as a zip file including the <code>node_modules</code> folder.  Also, it runs an older version of nodejs, so you need to make sure you&rsquo;re developing on that version.</p>
+
+<p>You can see my code here: <a href="https://github.com/gburgett/lambdas/blob/master/route53-asg-update/index.js">https://github.com/gburgett/lambdas/blob/master/route53-asg-update/index.js</a></p>
+
+<p>Through the boilerplate of the async calls, it&rsquo;s doing the following things:</p>
+
+<pre><code class="language-javascript">// look for the tag named &quot;DomainMeta&quot; on the AutoScalingGroup
+ autoscaling.describeTags({ ... })l
+
+// Parse that tag into the ID of the Route53 DNS records
+ var tokens = response.Tags[0].Value.split(':');
+ var route53Tags = {
+  HostedZoneId: tokens[0],
+  RecordName: tokens[1]
+ };
+
+// Get the IP addresses of all the active EC2 instances in the AutoScalingGroup
+ autoscaling.describeAutoScalingGroups({ ... });
+ ...
+ ec2.describeInstances({ InstanceIds: instance_ids });
+ ...
+ var resource_records = ec2Response.Reservations.map(function(reservation) {
+  return {
+    Value: reservation.Instances[0].NetworkInterfaces[0].Association.PublicIp
+  };
+ });
+
+// Change the DNS record in Route53 to point to these public IP addresses
+ route53.changeResourceRecordSets({
+  ChangeBatch: {
+   Changes: [{
+     Action: 'UPSERT',
+     ResourceRecordSet: {
+      Name: route53Tags.RecordName,
+      Type: 'A',
+      TTL: 10,
+      ResourceRecords: resource_records
+     }
+    }]
+  },
+  HostedZoneId: route53Tags.HostedZoneId
+ });
+</code></pre>
+
+<p>Now the last thing is to hook that up to the AutoScalingGroup&rsquo;s change events.  I used an AWS SNS topic to link the two.</p>
+
+<p><img src="/images/2016/aws-sns-topic.png" alt="the SNS topic" /></p>
+
+<p><img src="/images/2016/aws-asg-notifications.png" alt="The Auto-Scaling group" /></p>
+
+<p>And now, whenever my instance dies, the DNS settings are automatically updated with the new instance&rsquo;s IP address!  There&rsquo;s just one problem though.  Docker cloud limits you to only 1 node for free.  It&rsquo;s $15/mo for each additional node.  If you try to bring online a second node when it thinks there&rsquo;s still one up, it sends you a <a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#4xx_Client_Error">402 Payment Required</a>.</p>
+
+<p>To solve this, I just had to add to my lambda code something to notify the docker cloud API that my node has been terminated.  Normally, when a node dies, docker cloud calls it &ldquo;unreachable&rdquo; but doesn&rsquo;t give up on it.  However, when my lambda function gets an event, I know that the node is dead.  So I can make a call to the docker cloud API to tell it to terminate the node.</p>
+
+<p>The relevant code is in the <code>updateDockerCloud</code> function.  Again stripping the boilerplate:</p>
+
+<pre><code class="language-javascript">// Get all my running nodes
+ var req = https.request({ host: &quot;cloud.docker.com&quot;, path: &quot;/api/infra/v1/node/&quot;, method: &quot;GET&quot;});
+...
+// Find in the list all the nodes which Docker Cloud thinks are alive, but aren't.
+ objs = objs.filter(function(o) 
+    { return !resource_records.some(function(rr) {return rr.Value == o.public_ip;}); }
+  );
+  objs = objs.filter(function(o)
+    { return o.state != &quot;Terminated&quot;; }
+  );
+  console.log(&quot;to terminate: &quot; + JSON.stringify(objs));
+...
+// Send a delete request for each of those nodes.
+ var req = https.request({
+  host: &quot;cloud.docker.com&quot;,
+  path: &quot;/api/infra/v1/node/&quot; + o.uuid + &quot;/&quot;,
+  method: &quot;DELETE&quot;
+ });
+</code></pre>
+
+<p>Once I included that in my Lambda function, the whole shebang goes off without a hitch.  I can kill my node, and my auto-scaling group fires up a new one within minutes.  Docker cloud then sees the new node, and deploys my containers to it.  Success!</p>
+
+        </div>
+      </div>
+    </div>
+  </body>
+  
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/monokai_sublime.min.css">
+
+
+
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+<script src="/js/main.min.js"></script>
+<script src="/js/custom.js" ></script>
+
+<script src="/js/highlight/highlight.pack.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+</html>
