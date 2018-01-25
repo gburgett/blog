@@ -1,0 +1,58 @@
+- id: T_blog
+  translation: Blog
+
+- id: T_albania
+  translation: Albania
+
+- id: T_search
+  translation: Search
+
+- id: T_home
+  translation: Home
+
+- id: T_journal
+  translation: Journal
+
+- id: newsletter
+  translation:
+    one: Newsletter
+    other: Newsletters
+
+- id: T_read_more
+  translation: Read more
+
+- id: T_archive
+  translation: Archive
+
+- id: T_close
+  translation: Close
+
+- id: T_subscribe
+  translation: Subscribe
+
+- id: T_donate
+  translation: Donate!
+
+- id: T_newsletter_modal
+  translation: Get the newsletter!
+
+- id: T_newsletter_subscribe
+  translation: Subscribe to my newsletter!
+
+- id: F_mce-EMAIL
+  translation: Email Address
+
+- id: F_mce-FNAME
+  translation: First Name
+
+- id: F_mcd-LNAME
+  translation: Last Name
+
+- id: F_placeholder_mce-EMAIL
+  translation: your.email@yahoo.com
+
+- id: F_placeholder_mce-FNAME
+  translation: John
+
+- id: F_placeholder_mce-LNAME
+  translation: Smith

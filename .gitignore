@@ -1,0 +1,7 @@
+public/
+ec2-user@*/
+node_modules
+blog.sublime-project
+blog.sublime-workspace
+*.pem
+.640x/

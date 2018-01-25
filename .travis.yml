@@ -1,0 +1,43 @@
+env:
+  global:
+  - secure: EXQdCj2yajKvJPr+4467YgXSwX7xo9JKbZjduJQ/uh7UTRjoplEIPXuI1EKZVRTMQ5Mo/Wzmixaq5YnOTkHaCozzyHTIR4VakShp+rxgbOg1dfBxUiZ1kS/ceCkKeiiMetK7UMP+j30D1y4eZ2zJ5l7r02IZceUhbm/qNlv2Z1E=
+  - secure: QiPWsi/vHqlAAN7VA9W/pErogJEHxMhOugmcuL28XjCjFbEsP1nwkwpg72tJBeJZ33FnaZ6OZLQfJoxoZTtzW6YKEcVC0U+/HrK3J9qjhB+Vom3HJANJEagjx66H/HzIkyXKEkjVfNF8vrybhEr9b/NnsdIMg7+NSd3WGsYl65c=
+  - secure: csU2kh1rnQ68pNh0Z/7dX4QIsEeudq+afrTkAAqeFW7yQwCXBlBujUSdENiEB/z6n+cOiDSybGkGs2dYzao20zmoZ8wY3fQGkInFYbFAc7HfE9xVUH7mkcjQgNJKRVkUh2ibCPt91bFdWFHs5W75ZR64K+tZFZOTjR2WX+oG7tc=
+  - CXX=g++-4.8
+
+addons:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - g++-4.8
+
+language: node_js
+node_js:
+- '7'
+sudo: required
+
+services:
+- docker
+
+install:
+- sudo apt-get install -y imagemagick graphicsmagick
+- yarn install
+- curl -L -o /tmp/hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/v0.19/hugo_0.19_Linux-32bit.tar.gz
+- tar xvf /tmp/hugo.tar.gz -C /tmp/
+- sudo mv /tmp/hugo_0.19_linux_386/hugo_0.19_linux_386 /usr/bin/hugo
+- yarn global add http-server broken-link-checker
+
+script:
+  - gulp
+  - http-server ./public &
+  - broken-link-checker -ore --filter-level=2 http://127.0.0.1:8080
+  - kill %1
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
+  keep-history: true
+  on:
+    branch: master
