@@ -19,7 +19,7 @@ in Albania was Mark 10:29-30
 > and fields—along with persecutions—and in the age to come eternal life.
 > <span class="source"><a href="http://biblehub.com/niv/mark/10.htm">Mark 10:29-30</a></span>
 
-This weekend I felt again the truth of that verse.  I went back to a place I consider my second
+This whole trip I felt again the truth of that verse.  I went back to a place I consider my second
 home, and got to just hang out with all my friends over the past two years.  I got to celebrate
 my housemate Pal's engagement to his beautiful fiancee Ueda, I got to chill out and play Laser-Tag
 with my Albanian community group, and I got to have great coffee conversations with a lot of people.
