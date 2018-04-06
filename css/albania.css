@@ -166,3 +166,19 @@ iframe {
 .bs-docs-sidebar .nav>.active>ul.nav {
     display: block;           
 }
+
+.journal-link {
+  display: flex;
+}
+
+.journal-link a {
+  color: #563d7c !important;
+}
+
+.journal-link .prev {
+  margin: 0 auto 0 0;
+}
+
+.journal-link .next {
+  margin: 0 0 0 auto;
+}

@@ -115,3 +115,19 @@ blockquote p {
   color: #4f5b66;
   cursor: pointer;
 }
+
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+  color: #fff;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+  color: #fff;
+}
+
+.btn {
+  cursor: pointer;
+}
