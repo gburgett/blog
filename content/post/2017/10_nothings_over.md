@@ -32,6 +32,6 @@ We'll need to raise $1500 total to cover the expenses of the retreat, on top of 
 are putting the plane tickets on our own credit cards and are fully committed to doing this, regardless
 of how much we end up raising.  At the same time, we do want to offer y'all the opportunity to join
 us through financial support.  So as soon as we get the details squared away I'll send an email out
-to [my email list](http://localhost:8080/albania/#newsletterSignup).
+to [my email list](/albania/#newsletterSignup).
 
 Looking forward to sharing more details with you all in the coming weeks!
