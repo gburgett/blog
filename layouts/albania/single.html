@@ -40,17 +40,26 @@
     {{ partial "albania_nav.html" . }}
 
     <div class="container">
-        <div class="row">
-          <div class="col-md-9" id="content">
-        	{{ .Content }}
-          </div>
-          <div class="col-md-3 hidden-xs">
-            <nav class="bs-docs-sidebar affix">
-              <ul id="h-sidebar" class="nav nav-stacked fixed">
-              </ul>
-            </nav>
-          </div>
+      <div class="journal-link">
+      {{ with .PrevInSection }}
+        <a href="{{ .RelPermalink }}" class="prev">&lt;-- {{ .Title }}</a>
+      {{ end }}
+      {{ with .NextInSection }}
+        <a href="{{ .RelPermalink }}" class="next">{{ .Title }} --&gt;</a>
+      {{ end }}
+    </div>
+
+      <div class="row">
+        <div class="col-md-9" id="content">
+        {{ .Content }}
         </div>
+        <div class="col-md-3 hidden-xs">
+          <nav class="bs-docs-sidebar affix">
+            <ul id="h-sidebar" class="nav nav-stacked fixed">
+            </ul>
+          </nav>
+        </div>
+      </div>
 
    </div>
         <!-- /.container -->
