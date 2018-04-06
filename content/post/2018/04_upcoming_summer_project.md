@@ -41,12 +41,12 @@ also made some fantastic information booklets for each team member.  We're bless
 to have him as a leader on this project.
 
 <a href="http://www.teamalbania.org/2018#roster"><button class="btn btn-success">
-  Please consider supporting the team!
+  Please consider supporting the team! ↗
 </button></a>
 
 # Priorities in Dallas
 
-As I detailed in [last June's blog post](/post/2017/06_big_decision.md), my
+As I detailed in [last June's blog post](/post/2017/06_big_decision), my
 primary reason for spending this year in Dallas is to go through the ReGeneration
 program.  I'm now a little over 4 months into working the steps with my closed
 group, and I can say that it's definitely been the right decision.  Through this
