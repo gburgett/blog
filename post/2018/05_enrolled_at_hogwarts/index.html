@@ -1,0 +1,456 @@
+  <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title> Feeling Like I&#39;m at Hogwarts &middot; first things first </title>
+    
+    <link rel="stylesheet" type="text/css" href="/css/uno.min.css" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/custom.css" />
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <link href="http://www.gordonburgett.net/index.xml" rel="alternate" type="application/rss+xml" title="first things first" />
+
+    
+      <link rel="canonical" href="http://www.gordonburgett.net/post/2018/05_enrolled_at_hogwarts/">
+    
+</head>
+
+  <body>
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-bars btn-mobile-menu__icon"></i>
+        <i class="fa fa-times btn-mobile-close__icon hidden"></i>
+    </span>
+<header class="panel-cover panel-cover--collapsed " >
+    <div class="panel-main">
+        <div class="panel-main__inner panel-inverted">
+            <div class="panel-main__content"> 
+                <h1 class="panel-cover__title panel-title">
+                    <a href="/" title="link to homepage for first things first">first things first</a>
+                </h1>
+                <hr class="panel-cover__divider" />
+                <p class="panel-cover__description">  A blog about whatever crosses my mind, ordered by importance.  </p>
+                <hr class="panel-cover__divider panel-cover__divider--secondary" />
+                <div class="navigation-wrapper">
+                    <nav class="cover-navigation cover-navigation--primary">
+                        <ul class="navigation">
+                            <li class="navigation__item"><a href="/albania" title='Albania' class="blog-button">
+                            Albania
+                            </a></li>
+                            <br/>
+                            <li class="navigation__item"><a href="/search" title='Search' class="blog-button">Search</a></li>
+                            <br/>
+                            <li class="navigation__item">
+                                
+                            </li>
+                        </ul>
+                    </nav> <nav class="cover-navigation navigation--social">
+    <ul class="navigation">
+        <li class="navigation__item">
+        <a href="http://www.gordonburgett.net/index.xml" title="RSS">
+            <i class="fa fa-rss"></i>
+            <span class="label">RSS</span>
+        </a>
+        </li>
+        <br/>
+        
+         
+        
+        
+        <li class="navigation__item">
+            <a href="https://github.com/gburgett" title="gburgett on github"> <i class='fa fa-github'></i> <span class="label">Github</span> </a>
+        </li>
+        
+         </br>
+         
+         
+         
+        
+        <li class="navigation__item">
+            <a href="#" id="email" title="Email"> <i class='fa fa-envelope-o'></i> <span class="label">Email</span> </a>
+        </li>
+        
+        <br/>
+        
+        <li class="navigation__item">
+            <a href="/pubkey.txt" id="gpg" title="GPG key"> <i class='fa fa-key'></i> <span class="label">GPG key</span> </a>
+        </li>
+    </ul>
+</nav>
+ </div>
+            </div>
+        </div>
+        <div class="panel-cover--overlay"></div>
+    </div>
+</header>
+    <div class="content-wrapper">
+      <div class="content-wrapper__inner">
+        <div class="post">
+          <h1>Feeling Like I&#39;m at Hogwarts</h1>
+          <span class="post-date">Sun, May 20, 2018</span>
+          
+
+<p>I spent some time this week playing with <a href="https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-8.html">Typescript 2.8&rsquo;s new features</a>
+for modeling various complex types.  The new syntax that I wanted to play with
+was the conditional type syntax,</p>
+
+<pre><code class="language-ts">T extends U ? X : Y
+</code></pre>
+
+<p>This syntax allows you to express some really crazy type relationships!  Some of
+the most interesting ones have been pre-defined in the Typescript standard lib:</p>
+
+<ul>
+<li><code>Exclude&lt;T, U&gt;</code> – Exclude from T those types that are assignable to U.</li>
+<li><code>Extract&lt;T, U&gt;</code> – Extract from T those types that are assignable to U.</li>
+</ul>
+
+<p>I wanted to see if I could use these to model the way we&rsquo;ve been working with
+return values from <a href="https://www.contentful.com/developers/docs/references/content-delivery-api/">Contentful&rsquo;s Content Delivery API</a>.</p>
+
+<p><a href="#going-recursive">Skip to the final type definitions &ndash;&gt;</a></p>
+
+<h2 id="modeling-a-cdn-api-response">Modeling a CDN API response</h2>
+
+<p>We can break up the raw response into several re-usable sections.  First, all links
+have a common structure that we can model with an <code>ILink</code> type:</p>
+
+<pre><code class="language-json">{
+  &quot;sys&quot;: {
+    &quot;type&quot;: &quot;Link&quot;,
+    &quot;linkType&quot;: &quot;Entry&quot;,
+    &quot;id&quot;: &quot;0SUbYs2vZlXjVR6bH6o83O&quot;
+  }
+}
+</code></pre>
+
+<pre><code class="language-ts">export interface ILink&lt;Type extends string&gt; {
+  sys: {
+    type: 'Link',
+    linkType: Type,
+    id: string,
+  },
+}
+</code></pre>
+
+<p>Notice that the ILink is generic over the LinkType.  This lets us have a
+<code>ILink&lt;'Entry'&gt;</code> and an <code>ILink&lt;'Space'&gt;</code>, which cannot be assigned to eachother.
+This reflects all the kinds of links that can exist in a response.</p>
+
+<p>Next let&rsquo;s wrap up the entry Sys field in its own interface:</p>
+
+<pre><code class="language-ts">export interface ISys&lt;Type extends string&gt; {
+  space: ILink&lt;'Space'&gt;,
+  id: string,
+  type: Type,
+  createdAt?: string,
+  updatedAt?: string,
+  revision?: number,
+  environment?: ILink&lt;'Environment'&gt;,
+  contentType: ILink&lt;'ContentType'&gt;,
+  locale?: string,
+}
+</code></pre>
+
+<p>ISys is also generic over the type, so an <code>ISys&lt;'Entry'&gt;</code> and <code>ISys&lt;'Asset'&gt;</code> are
+not compatible.</p>
+
+<p>Now we can define an Entry:</p>
+
+<pre><code class="language-ts">export interface IEntry&lt;TFields&gt; {
+  sys: ISys&lt;'Entry'&gt;,
+  fields: TFields
+}
+</code></pre>
+
+<p>and an Asset:</p>
+
+<pre><code class="language-ts">export interface IAsset {
+  sys: ISys&lt;'Asset'&gt;,
+  fields: {
+    // TODO: more fields for different asset types
+    title?: string,
+    description?: string,
+    file: {
+      url?: string,
+      details?: {
+        size?: number,
+      },
+      fileName?: string,
+      contentType?: string,
+    },
+  }
+}
+</code></pre>
+
+<p>This construction allows us to define Typescript interfaces for our content types
+by simply defining their fields, without duplicating the Sys object definition:</p>
+
+<pre><code class="language-ts">export interface IPageProps {
+  title: string
+  slug: string
+  parent: ILink&lt;'Entry'&gt;
+  sections?: Array&lt;ILink&lt;'Entry'&gt;&gt;
+  subpages?: Array&lt;ILink&lt;'Entry'&gt;&gt;
+}
+
+export interface IPage extends IEntry&lt;IPageProps&gt; {}
+
+export function isPage(entry: IEntry&lt;any&gt;): entry is IPage {
+  return entry &amp;&amp;
+    entry.sys &amp;&amp;
+    entry.sys.contentType &amp;&amp;
+    entry.sys.contentType.sys &amp;&amp;
+    entry.sys.contentType.sys.id == 'page'
+}
+</code></pre>
+
+<p>I love having intellisense pop up to help me see the fields on an entry!
+<img src="/images/2018/05_entry_intellisense.jpg" alt="Intellisense on an entry" /></p>
+
+<h2 id="resolving-links">Resolving links</h2>
+
+<p>Now I have a problem though, because I want to take a link to a section and then
+download the actual section object in order to render it.  One way to do that
+is to wrap a function around the API that resolves my links:</p>
+
+<pre><code class="language-ts">export function resolve&lt;TLink&gt;(link: ILink&lt;TLink&gt;): IEntry&lt;any&gt; {
+  // hit the API here
+}
+</code></pre>
+
+<p>But ideally, I&rsquo;d like to be able to just resolve my tree of objects once using
+something like <a href="https://www.contentful.com/developers/docs/references/content-delivery-api/#/reference/links/retrieval-of-linked-items">the <code>include</code> parameter</a>
+and then replace links in my object structure with the actual resolved entry.
+The implementation of this is not too difficult - and less interesting.  What&rsquo;s
+more interesting is modeling the types.  My goal is to be able to do something
+ridiculous like this:</p>
+
+<pre><code class="language-ts">const thumbUrl =
+  page.fields.parent.fields.sections[0].fields.header.fields.thumbnail.fields.file.url
+</code></pre>
+
+<p>Defining the types to be able to do this in an elegant way is going to take some
+magic.  So let&rsquo;s take a trip to Hogwarts :)</p>
+
+<p>First, let&rsquo;s reflect the fact that my Page can have links that are either resolved
+or not, and define the allowable types that they can resolve to:</p>
+
+<pre><code class="language-ts">export interface IPageProps {
+  title: string
+  slug: string
+  parent: ILink&lt;'Entry'&gt; | IPage
+  sections?: Array&lt;ILink&lt;'Entry'&gt; | PageSection&gt;
+  subpages?: Array&lt;ILink&lt;'Entry'&gt; | IPage&gt;
+}
+
+// this is all the content types that can be assigned to the Sections array.
+export type PageSection = ISectionHeader | ISectionBlockText | ...
+</code></pre>
+
+<p>This gets me part-way there.  Now instead of calling <code>resolve</code> to hit the API
+every time I want to access a section, I can just cast it.  Or, to get some runtime
+protection, I can create a method <code>expectResolved</code> to early-exit if it&rsquo;s still a link:</p>
+
+<pre><code class="language-ts">function expectResolved&lt;T&gt;(prop: T): Exclude&lt;T, ILink&lt;any&gt;&gt; {
+  if (isLink(prop)) {
+    throw new Error(`Expect ${prop.sys.id} to have been resolved but was still a link.`)
+  }
+  return prop
+}
+</code></pre>
+
+<p>usage:</p>
+
+<pre><code class="language-jsx">  public render() {
+    const { title, sections } = this.props.page.fields
+
+    return &lt;div&gt;
+      &lt;h1&gt;{title}&lt;/h1&gt;
+      {sections.map((s) =&gt; this.renderSection(expectResolved(s)))}
+    &lt;/div&gt;
+  }
+
+  private renderSection(s: PageSection) {
+</code></pre>
+
+<p>But this doesn&rsquo;t satisfy me.  This is some Ron Weasley code.  What would Hermione do?</p>
+
+<h2 id="enter-the-magic">Enter the magic</h2>
+
+<p>I know I can recursively resolve my entire tree at runtime, but can I recursively
+modify the type definitions in order to tell Typescript that <code>ILink</code> is never
+going to be present in these props?  I certainly don&rsquo;t want to maintain two
+versions of <code>IPage</code>.  That would be a pain.  I&rsquo;d ideally like a generic type
+<code>Resolved&lt;T&gt;</code> such that <code>Resolved&lt;IPage&gt;</code> says there are no links in the fields,
+and no links in the fields of those linked fields.  This&rsquo;ll enable my desired
+result:</p>
+
+<pre><code class="language-ts">const page: Resolved&lt;IPage&gt; = ...
+const thumbUrl =
+  page.fields.parent.fields.sections[0].fields.header.fields.thumbnail.fields.file.url
+</code></pre>
+
+<p>Fortunately Typescript 2.8 just introduced a new form of magic - the conditional
+type defs!  Using those together with the <code>infer</code> keyword, I can basically use
+if statements and assign variables inside a typedef!</p>
+
+<p>So let&rsquo;s go top-down.  Supposing I have an <code>IEntry&lt;ISomeFields&gt;</code>, I want to transform
+<code>ISomeFields</code> such that <code>ILink&lt;any&gt;</code> does not appear in any of its properties.</p>
+
+<pre><code class="language-typescript">export type Resolved&lt;TEntry&gt; =
+  TEntry extends IEntry&lt;infer TProps&gt; ?
+    // TEntry is an entry and we know the type of it's props
+    IEntry&lt;{
+      [P in keyof TProps]: ... // Transform the values of these props
+    }&gt;
+    // Compiler should validate that TEntry is never not an entry
+    : never
+</code></pre>
+
+<p>Now we&rsquo;re down into the weeds of this spell.  We have access to the type of each
+property in the entry&rsquo;s <code>fields</code> via <code>TProps[P]</code>.  If the field <code>name</code> is a string,
+then <code>TProps['name'] == string</code>.  If the field <code>parent</code> is an <code>ILink&lt;'Entry'&gt; | IPage</code>,
+how do we get it to be just an <code>IPage</code>?  <code>Exclude</code> does the trick:</p>
+
+<pre><code class="language-ts">  [P in keyof TProps]: Exclude&lt;TProps[P], ILink&lt;any&gt;&gt;
+</code></pre>
+
+<p>Alrighty, now we&rsquo;ve got <code>parent</code> working.  We also get assets for free, since
+<code>ILink&lt;'Asset'&gt; | IAsset</code> becomes just <code>IAsset</code>.  Time to go deeper.  We need to
+handle Arrays.  Let&rsquo;s define a new type:</p>
+
+<pre><code class="language-ts">type ResolvedArray&lt;TItem&gt; = Array&lt;Exclude&lt;TItem, ILink&lt;any&gt;&gt;&gt;
+</code></pre>
+
+<p>And a wrapper type that checks if the field is an array:</p>
+
+<pre><code class="language-ts">type ResolvedField&lt;TField&gt; =
+    TField extends Array&lt;infer TItem&gt; ?
+      // Array of entries - dive into the item type to remove links
+      ResolvedArray&lt;TItem&gt; :
+      TField
+</code></pre>
+
+<p>Then we use that in our properties declaration:</p>
+
+<pre><code class="language-ts">  [P in keyof TProps]: ResolvedField&lt;Exclude&lt;TProps[P], ILink&lt;any&gt;&gt;&gt;
+</code></pre>
+
+<p>Now we&rsquo;ve got a type that wraps any <code>IEntry</code>, conforming to the IEntry interface
+and none of it&rsquo;s properties are links!  So we can do this:</p>
+
+<pre><code class="language-ts">const page: Resolved&lt;IPage&gt; = ...
+const headerSection = page.fields.parent.fields.sections[0]
+// headerSection is `ILink&lt;'Entry'&gt; | PageSection`
+</code></pre>
+
+<p>but we can&rsquo;t recursively dig deeper.  Yet :)</p>
+
+<h2 id="going-recursive">Going recursive</h2>
+
+<p>In Harry Potter, Dumbledore gives Hermione a Time-Turner, which can rewind time
+allowing her to get to all her classes and finish her homework every night.</p>
+
+<p><img src="/images/2018/05_hermione_time_turner.jpg" alt="Hermione's time turner" /></p>
+
+<p>That&rsquo;s the kind of power that recursion gives us!  Thanks to Typescript 2.8, we
+can go recursive in type definitions as well, building a type definition that
+recursively modifies properties all the way down the tree!  All we have to do
+is find every spot in our typedef that could be an entry, and if it is, wrap it
+in a <code>Resolved&lt;&gt;</code>.</p>
+
+<pre><code class="language-ts">type ResolvedField&lt;TField&gt; =
+  // three cases - an Entry which we recursively declare resolved,
+  //  an Array which we recursively declare resolved,
+  //  or a normal field which we declare to not have links.
+  TField extends IEntry&lt;infer TProps&gt; ?
+    // Single entry link, recursively declare it resolved.
+    Resolved&lt;TField&gt; :
+    TField extends Array&lt;infer TItem&gt; ?
+      // Array of entries - dive into the item type to remove links
+      ResolvedArray&lt;TItem&gt; :
+      // Some other type that doesn't need recursive resolution -
+      //  declare it has no links and be done
+      TField
+
+type ResolvedArray&lt;TItem&gt; =
+  TItem extends IEntry&lt;any&gt; ?
+      // Entries must be recursively resolved.
+    Array&lt;Resolved&lt;TItem&gt;&gt; :
+    Array&lt;Exclude&lt;TItem, ILink&lt;any&gt;&gt;&gt;
+
+export type Resolved&lt;TEntry&gt; =
+  TEntry extends IEntry&lt;infer TProps&gt; ?
+    // TEntry is an entry and we know the type of it's props
+    IEntry&lt;{
+      [P in keyof TProps]: ResolvedField&lt;Exclude&lt;TProps[P], ILink&lt;any&gt;&gt;&gt;
+    }&gt;
+    // Compiler should validate that TEntry is never not an entry
+    : never
+</code></pre>
+
+<p>I found it!  I found the incantation which lets me magically declare all fields
+as resolved all the way down the tree!</p>
+
+<h2 id="application">Application</h2>
+
+<p>This has real-life uses for our new app at Watermark Community Church.  We have
+a tree of available downloads wrapped in nested categories, which we display using
+react components on a single page.  We pull this tree from Contentful, recursively
+grabbing all the objects in the tree and building out the tree structure in a way
+that looks like the above type definitions.  Then we write that JSON out to the
+page, where our React components pick it up.</p>
+
+<p>The top-level react component accepts a <code>Resolved&lt;IResourceTree&gt;</code> in the props,
+and thus it no longer has to worry about whether a node on the tree contains
+the actual values, or needs to be resolved.  That&rsquo;s asserted by Typescript -
+you can&rsquo;t assign an <code>IResourceTree</code> directly to the properties, you have to
+wrap it in <code>expectResolved()</code> which performs the runtime validation.</p>
+
+<p>I&rsquo;m really enjoying the expressive power of the typescript type system, and it&rsquo;s
+ability to catch errors you didn&rsquo;t even think to write tests for!</p>
+
+        </div>
+      </div>
+    </div>
+  </body>
+  
+
+<link rel="stylesheet" href="/js/highlight/styles/vs2015.css">
+
+
+
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+<script src="/js/main.min.js"></script>
+<script src="/js/custom.js" ></script>
+
+<script src="/js/highlight/highlight.pack.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+</html>
