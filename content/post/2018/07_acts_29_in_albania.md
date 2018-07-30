@@ -132,7 +132,102 @@ more open mind.  Please pray for Eriona.
 
 ### Relationship and Partnership Building
 
-- Pal's bachelor party
-- Kampi i Kishes
-- Follow-up discussions with CRU staff
+#### Church Camp
+
+The past two years, Guri i Themelit (Cornerstone) Church has hosted a discipleship camp in 
+Vlora.  I really enjoyed going last year and fortunately was able to work it out with
+my job that I could go again this year.  This summer we had fewer people, many of the
+young professionals were not able to make it because of work.  But I was able to take
+the opportunity to get to know a couple of guys better whom I didn't have much of a
+relationship with before.
+
+My small group for the discussion time included Mattias, Arti Cana, Roel Taga, Landi
+Dermyshi, and Berti Nikolli.  The theme of the camp was Paul's letters to Timothy.  Each
+day we discussed a different "key word" or theme:
+
+1. Love, from a pure heart and a clean conscience.
+2. Doctrine, which protects the Gospel
+3. Gifts, your spiritual gifting
+4. Purpose, the objective of your life.
+
+A lot of very real discussion took place.  I was glad to see the guys opening up somewhat.
+We talked a lot on the last day about things that would block us from achieving our
+purpose, and was that we get distracted.  Other than the #1 most obvious distraction,
+(girls), various sin issues were also discussed, if still in vague terms.  It's a difficult
+culture over there to discuss these things openly, but I'm glad we got to at least
+introduce the subject.
+
+We also played a lot of Spikeball on the sand.  Me and Roel on a team were almost unbeatable.
+I left the Spikeball with the CRU high school ministry so that they can keep enjoying it at their camps.
+
+#### Pal's Bachelor Party
+
+The #1 reason that I stayed so long in Albania this summer was to attend Pal Hila's wedding.  Pal and I
+were roommates for the two years that I lived there, and he has been together with Ueda for almost 5
+years.  The reason they waited so long was primarily due to her parents having objections to the marriage.
+They are from a Muslim background, and Pal comes from a Catholic background.  So, when they finally
+consented to the marriage, we knew we had to celebrate.
+
+I was honored when Pal asked me to be his best man.  I think it not only speaks to our friendship, but
+also to the partnership we have developed with the Albanian staff over these years.  Our friendship has
+been very precious to me and I gladly accepted the responsibility of being his best man.
+
+One of the duties of the best man in America, as I informed Pal, was to plan the bachelor party.  I asked
+our good friend Erald, who owns a tourism business in Albania, for a suggestion of a good spot to go on
+a day trip.  He suggested Shengjergj, a village on the other side of Dajti mountain.  There's a waterfall,
+and I later found a hiking trail up to a mountain lake.  It's only 5 kilometers, I thought.  No big deal,
+we'll hike from morning till late afternoon and then go have dinner.
+
+The waterfall was really cool!  It's a short walk from the main road, through a wooded area following along
+a creek.  The water was cool and clear, very fresh.  We were not the only ones there, it's a fairly heavily
+trafficed tourist stop.  So, we left there around 11:30 am and headed over to the village where the trail
+started.
+
+There was some discussion about whether we should actually do this adventure, but we decided to go ahead
+with it, especially since Pal was enthusiastic about it.  It ended up being quite the hike up the side of
+the mountain.  At one point we lost the trail and ended up scrambling up a steep hill to find it again.
+But, at the end, the lake we found was very beautiful.  The water was fresh and clear, coming from a
+natural spring at the top of the mountain.  Some of the guys took a swim, while others stayed out because
+they were afraid of snakes.  Noone was bitten, God was with us!  Afterwards, when we had arrived at the bottom,
+Aldo said that now that he knows how far it was, he should not have agreed to go!
+
+Aldo and the high school guys had to go after that, and some other guys who could not go to the hiking
+adventure joined us for dinner at Nari.  Nari is just outside Tirana, near TEG, and it's up on a hill
+with a good view of the valley.  We had an outdoor table and spent the evening enjoying conversation
+and toasting to Pal's wedding.  The best bachelor parties end up with stories to tell, and the guys
+couldn't stop sharing about the hiking adventure up the mountain.
+
+#### The Wedding
+
+No better way to end this blog post than with the wedding!  You'd think it was royalty getting married
+with how many people RSVP'd.  The venue was on top of mount Dajti, overlooking Tirana.  It was a very
+beautiful outdoor setting, and God kept the rain away.  The main ceremony was more western style.  After
+the bride came to the altar, Pastor Ylli preached for about 15 minutes on the meaning of marriage.  He
+did a good job of talking about a Biblical perspective on marriage while being respectful of the Muslims
+in the audience, especially Ueda's parents.  The ceremony itself went fairly quickly, as western-style
+marriage ceremonies generally do, and then we began the reception.
+
+The reception consisted almost entirely of Albanian traditional music and dancing, DJ'd by our good
+friend Endri.  Endri himself finally set a date for his wedding, it will be in August.  I'm looking
+forward to photos from that wedding as well!  We wrapped up all the dancing around 2:30pm, and left
+the venue to take a break before the second wedding.
+
+We had about 6 hours before the second wedding, which is mainly for the Bride's family.  This one took
+place in Lezhe, their home town.  It was much more traditional style.  The bride and her family got there
+early and took their places, and then they wait for the groom.  He comes with his whole family a couple
+hours later.  When they enter, they make sure to shake the hands of the whole bride's family, and then
+the groom takes his place and the dancing can resume.
+
+There were a number of interesting traditions that I was glad to experience.  At one point a pair of
+kids came out and performed a dance routine.  At another point, several of the women put on traditional
+Albanian costumes and danced for a while in those.  There was a lot of dancing and celebrating well into
+the night.  The cake didn't even come out until 2:15 AM.
+
+Unfortunately I had not realized that it would go this late when I booked my plane tickets, and so I
+had to leave at 2:30 am.  This was a good excuse for some of the others to leave as well, those who didn't
+want to stay until the party fizzled out in the late morning.  So we unintentionally interrupted the party
+to line up and say goodbye.  I'll miss Pal and Ueda a lot, but I'm really glad I got to be there for their
+wedding.  It's a memory I'll treasure for a long time.
+
+
 
