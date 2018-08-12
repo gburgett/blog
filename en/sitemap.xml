@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.gordonburgett.net/post/2018/07_acts_29_in_albania/</loc>
+    <lastmod>2018-07-11T08:55:43+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.gordonburgett.net/albania/2018/</loc>
+    <lastmod>2018-07-01T00:36:09-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.gordonburgett.net/post/2018/05_enrolled_at_hogwarts/</loc>
     <lastmod>2018-05-20T14:52:15-05:00</lastmod>
   </url>
@@ -267,25 +277,19 @@
   </url>
   
   <url>
-    <loc>http://www.gordonburgett.net/tags/albania/</loc>
-    <lastmod>2018-04-05T20:18:22-07:00</lastmod>
+    <loc>http://www.gordonburgett.net/categories/albania/</loc>
+    <lastmod>2018-07-11T08:55:43+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.gordonburgett.net/categories/albania/</loc>
-    <lastmod>2018-04-05T20:18:22-07:00</lastmod>
+    <loc>http://www.gordonburgett.net/tags/albania/</loc>
+    <lastmod>2018-07-11T08:55:43+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.gordonburgett.net/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.gordonburgett.net/tags/christianity/</loc>
-    <lastmod>2015-03-30T23:14:36-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -296,20 +300,20 @@
   </url>
   
   <url>
-    <loc>http://www.gordonburgett.net/tags/cru/</loc>
-    <lastmod>2018-04-05T20:18:22-07:00</lastmod>
+    <loc>http://www.gordonburgett.net/tags/christianity/</loc>
+    <lastmod>2015-03-30T23:14:36-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.gordonburgett.net/categories/cru/</loc>
-    <lastmod>2018-04-05T20:18:22-07:00</lastmod>
+    <lastmod>2018-07-11T08:55:43+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.gordonburgett.net/tags/development/</loc>
-    <lastmod>2018-05-20T14:52:15-05:00</lastmod>
+    <loc>http://www.gordonburgett.net/tags/cru/</loc>
+    <lastmod>2018-07-11T08:55:43+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -320,13 +324,19 @@
   </url>
   
   <url>
-    <loc>http://www.gordonburgett.net/tags/docker/</loc>
-    <lastmod>2017-03-21T16:20:52+01:00</lastmod>
+    <loc>http://www.gordonburgett.net/tags/development/</loc>
+    <lastmod>2018-05-20T14:52:15-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.gordonburgett.net/categories/docker/</loc>
+    <lastmod>2017-03-21T16:20:52+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.gordonburgett.net/tags/docker/</loc>
     <lastmod>2017-03-21T16:20:52+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -338,13 +348,13 @@
   </url>
   
   <url>
-    <loc>http://www.gordonburgett.net/tags/golang/</loc>
+    <loc>http://www.gordonburgett.net/categories/golang/</loc>
     <lastmod>2015-01-06T22:49:08+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.gordonburgett.net/categories/golang/</loc>
+    <loc>http://www.gordonburgett.net/tags/golang/</loc>
     <lastmod>2015-01-06T22:49:08+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -356,13 +366,13 @@
   </url>
   
   <url>
-    <loc>http://www.gordonburgett.net/tags/hosting/</loc>
+    <loc>http://www.gordonburgett.net/categories/hosting/</loc>
     <lastmod>2015-10-07T20:33:41+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.gordonburgett.net/categories/hosting/</loc>
+    <loc>http://www.gordonburgett.net/tags/hosting/</loc>
     <lastmod>2015-10-07T20:33:41+02:00</lastmod>
     <priority>0</priority>
   </url>
@@ -381,7 +391,7 @@
   
   <url>
     <loc>http://www.gordonburgett.net/tags/journal/</loc>
-    <lastmod>2017-07-10T21:36:09-05:00</lastmod>
+    <lastmod>2018-07-01T00:36:09-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -398,14 +408,14 @@
   </url>
   
   <url>
-    <loc>http://www.gordonburgett.net/tags/missions/</loc>
-    <lastmod>2017-07-10T21:36:09-05:00</lastmod>
+    <loc>http://www.gordonburgett.net/categories/missions/</loc>
+    <lastmod>2018-07-01T00:36:09-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.gordonburgett.net/categories/missions/</loc>
-    <lastmod>2017-07-10T21:36:09-05:00</lastmod>
+    <loc>http://www.gordonburgett.net/tags/missions/</loc>
+    <lastmod>2018-07-01T00:36:09-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -429,18 +439,18 @@
   
   <url>
     <loc>http://www.gordonburgett.net/post/</loc>
-    <lastmod>2018-05-20T14:52:15-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.gordonburgett.net/tags/reclaimed/</loc>
-    <lastmod>2016-01-19T21:31:01+01:00</lastmod>
+    <lastmod>2018-07-11T08:55:43+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.gordonburgett.net/categories/reclaimed/</loc>
+    <lastmod>2016-01-19T21:31:01+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.gordonburgett.net/tags/reclaimed/</loc>
     <lastmod>2016-01-19T21:31:01+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -474,7 +484,7 @@
   
   <url>
     <loc>http://www.gordonburgett.net/</loc>
-    <lastmod>2018-05-20T14:52:15-05:00</lastmod>
+    <lastmod>2018-07-11T08:55:43+02:00</lastmod>
     <priority>0</priority>
   </url>
   
