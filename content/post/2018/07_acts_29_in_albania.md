@@ -67,7 +67,7 @@ every day I'm in Albania.
 
 I also got to encourage a couple friends who are going through some conflict, some
 of it as a result of the demands of this project with Sotmeria.  They had come to
-me to discuss some of the difficulties, failures, and miscommunication that occurred.
+me to discuss some of the miscommunication that occurred.
 I told them about the 24 hour rule that Watermark staff has.  If I were to come to
 you and tell you about issues I have with another person on staff, even say Todd
 Wagner himself, you would respond by asking me to go directly to Todd and share
@@ -182,9 +182,6 @@ years.  The reason they waited so long was primarily due to her parents having o
 They are from a Muslim background, and Pal comes from a Catholic background.  So, when they finally
 consented to the marriage, we knew we had to celebrate.
 
-![Swimming in a mountain lake](/.640x/images/2018/mountain_lake_swimming.jpg)
-<span class="subtitle">Swimming on top of a mountain</span>
-
 I was honored when Pal asked me to be his best man.  I think it not only speaks to our friendship, but
 also to the partnership we have developed with the Albanian staff over these years.  Our friendship has
 been very precious to me and I gladly accepted the responsibility of being his best man.
@@ -195,10 +192,16 @@ a day trip.  He suggested Shengjergj, a village on the other side of Dajti mount
 and I later found a hiking trail up to a mountain lake.  It's only 5 kilometers, I thought.  No big deal,
 we'll hike from morning till late afternoon and then go have dinner.
 
+![Shengjergj waterfall](/.640x/images/2018/waterfall.jpg)
+<span class="subtitle">Shengjergj waterfall</span>
+
 The waterfall was really cool!  It's a short walk from the main road, through a wooded area following along
 a creek.  The water was cool and clear, very fresh.  We were not the only ones there, it's a fairly heavily
 trafficed tourist stop.  So, we left there around 11:30 am and headed over to the village where the trail
 started.
+
+![Swimming in a mountain lake](/.640x/images/2018/mountain_lake_swimming.jpg)
+<span class="subtitle">Swimming on top of a mountain</span>
 
 There was some discussion about whether we should actually do this adventure, but we decided to go ahead
 with it, especially since Pal was enthusiastic about it.  It ended up being quite the hike up the side of
