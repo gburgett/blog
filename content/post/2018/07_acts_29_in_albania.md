@@ -43,6 +43,8 @@ additional follow up and discipleship from the project.
 
 ### The Earthquake
 
+We had a morning prayer session the first day of the project, and while we were praying an
+earthquake struck!
 [Read about it more here -->](/albania/2018#day-2)
 
 ### Pastor On Call Opportunities
@@ -84,6 +86,9 @@ where I was staying.  I paid for 2 weeks in a co-working space, which turned out
 be a great decision not just for my own sanity, but also for opportunities for
 evangelism.
 
+![Morning Coffee Spot](/.640x/images/2018/morning_coffee_spot.jpg)
+<span class="subtitle">My morning coffee spot</span>
+
 The first opportunity I had was with a guy whom I'd shared the Gospel with over a year
 ago.  He was in town just for one day, but I was able to meet with him because I was
 already in the center of the city.  He doesn't consider himself a Muslim or a Christian.
@@ -91,6 +96,9 @@ He's in the process of finishing reading the Koran, and I encouraged him to read
 Bible as well.  I helped him to download the Bible app on his phone, and showed him
 how to activate the audio-book feature.  I will keep up with him over facebook to
 encourage him to keep reading the Bible.
+
+![View from the Office](/.640x/images/2018/office.jpg)
+<span class="subtitle">The view from the office</span>
 
 My second week in the office I struck up a conversation with the IT manager for the
 office.  We were able to go out for coffee the next day, and had a nice long conversation
@@ -132,6 +140,9 @@ more open mind.  Please pray for Eriona.
 
 ### Relationship and Partnership Building
 
+![World Cup watching](/.640x/images/2018/world_cup.jpg)
+<span class="subtitle">Watching the World Cup with friends</span>
+
 #### Church Camp
 
 The past two years, Guri i Themelit (Cornerstone) Church has hosted a discipleship camp in 
@@ -150,6 +161,9 @@ day we discussed a different "key word" or theme:
 3. Gifts, your spiritual gifting
 4. Purpose, the objective of your life.
 
+![View from the Beach](/.640x/images/2018/zvernec_2.jpg)
+![Sunset from the bluff](/.640x/images/2018/zvernec_sunset.jpg)
+
 A lot of very real discussion took place.  I was glad to see the guys opening up somewhat.
 We talked a lot on the last day about things that would block us from achieving our
 purpose, and was that we get distracted.  Other than the #1 most obvious distraction,
@@ -167,6 +181,9 @@ were roommates for the two years that I lived there, and he has been together wi
 years.  The reason they waited so long was primarily due to her parents having objections to the marriage.
 They are from a Muslim background, and Pal comes from a Catholic background.  So, when they finally
 consented to the marriage, we knew we had to celebrate.
+
+![Swimming in a mountain lake](/.640x/images/2018/mountain_lake_swimming.jpg)
+<span class="subtitle">Swimming on top of a mountain</span>
 
 I was honored when Pal asked me to be his best man.  I think it not only speaks to our friendship, but
 also to the partnership we have developed with the Albanian staff over these years.  Our friendship has
@@ -199,6 +216,8 @@ couldn't stop sharing about the hiking adventure up the mountain.
 
 #### The Wedding
 
+![Cutting the Cake](/.640x/images/2018/wedding_1.jpg)
+
 No better way to end this blog post than with the wedding!  You'd think it was royalty getting married
 with how many people RSVP'd.  The venue was on top of mount Dajti, overlooking Tirana.  It was a very
 beautiful outdoor setting, and God kept the rain away.  The main ceremony was more western style.  After
@@ -212,6 +231,8 @@ friend Endri.  Endri himself finally set a date for his wedding, it will be in A
 forward to photos from that wedding as well!  We wrapped up all the dancing around 2:30pm, and left
 the venue to take a break before the second wedding.
 
+![Pal & Ueda Dancing](/.640x/images/2018/wedding_2.jpg)
+
 We had about 6 hours before the second wedding, which is mainly for the Bride's family.  This one took
 place in Lezhe, their home town.  It was much more traditional style.  The bride and her family got there
 early and took their places, and then they wait for the groom.  He comes with his whole family a couple
@@ -223,11 +244,10 @@ kids came out and performed a dance routine.  At another point, several of the w
 Albanian costumes and danced for a while in those.  There was a lot of dancing and celebrating well into
 the night.  The cake didn't even come out until 2:15 AM.
 
+![Me with the couple](/.640x/images/2018/wedding_3.jpg)
+
 Unfortunately I had not realized that it would go this late when I booked my plane tickets, and so I
 had to leave at 2:30 am.  This was a good excuse for some of the others to leave as well, those who didn't
 want to stay until the party fizzled out in the late morning.  So we unintentionally interrupted the party
 to line up and say goodbye.  I'll miss Pal and Ueda a lot, but I'm really glad I got to be there for their
 wedding.  It's a memory I'll treasure for a long time.
-
-
-
