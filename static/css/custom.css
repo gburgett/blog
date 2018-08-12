@@ -6,6 +6,12 @@
 	text-decoration: underline;
 }
 
+.subtitle {
+  float:right;
+  color: gray;
+  font-size: 8pt;
+}
+
 .attribution {
   float:right;
   color: gray;
