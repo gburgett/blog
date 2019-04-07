@@ -26,13 +26,9 @@ install:
 - curl -L -o /tmp/hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/v0.54.0/hugo_0.54.0_Linux-32bit.tar.gz
 - tar xvf /tmp/hugo.tar.gz -C /tmp/
 - sudo mv /tmp/hugo /usr/bin/hugo
-- yarn global add http-server broken-link-checker
 
 script:
   - gulp
-  - http-server ./public &
-  - broken-link-checker -ore --filter-level=2 http://127.0.0.1:8080
-  - kill %1
 
 deploy:
   provider: pages
