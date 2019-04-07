@@ -5,3 +5,5 @@ blog.sublime-project
 blog.sublime-workspace
 *.pem
 .640x/
+.package-lock.json
+yarn-error.log

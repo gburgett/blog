@@ -137,3 +137,21 @@ gulp.task('img-clean', (cb) => {
     cb()
   })
 })
+
+
+/**
+ * img: Processes images in-place in the static/images/ folder.
+ *      Images are resized to a max width of 640x and compressed to save
+ *      bandwidth.  Includes checks so it will do nothing if images are already
+ *      processed.  Tasks loaded from './gulp_image_tasks.babel.js'
+ * 
+ *      Images in both the 'images/' and 'images.original/' folder should be
+ *      checked in to git in order to reduce the image processing work that has
+ *      to be done on builds.
+ * 
+ * depends -
+ *   img-mirror: copies any new images from 'images/' to '.original-images' to save the originals
+ *   img-make-640x: resizes and compresses images from '.original-images' over their equivalent in 'images/'
+ *   gif-optimize: resizes and compresses gifs from '.original-images' over their equivalent in 'images/'
+ */
+gulp.task('img', gulp.parallel("img-make-640x", "gif-optimize"))
