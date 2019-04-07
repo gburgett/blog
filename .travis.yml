@@ -23,9 +23,9 @@ services:
 install:
 - sudo apt-get install -y imagemagick graphicsmagick
 - yarn install
-- curl -L -o /tmp/hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/v0.19/hugo_0.19_Linux-32bit.tar.gz
+- curl -L -o /tmp/hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/v0.54/hugo_0.54_Linux-32bit.tar.gz
 - tar xvf /tmp/hugo.tar.gz -C /tmp/
-- sudo mv /tmp/hugo_0.19_linux_386/hugo_0.19_linux_386 /usr/bin/hugo
+- sudo mv /tmp/hugo_0.54_linux_386/hugo_0.54_linux_386 /usr/bin/hugo
 - yarn global add http-server broken-link-checker
 
 script:
