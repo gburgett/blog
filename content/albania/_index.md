@@ -11,20 +11,62 @@ modal_message = "Yes, the newsletter is still happening even though my STINT has
 
 +++
 
-# What am I doing now?
+Howdy!  My name is Gordon Burgett and I'm going to Albania this summer.  I first
+went in the summer of 2013, and fell in love with both the people and the mission.
+Since that time I’ve been back and forth every summer, and a few stints in between.
 
-I've been working as a Software Developer for [Watermark Community Church](https://www.watermark.org) since September 2017.  There's a lot of work to be done on various
-projects with the Church, and the job is flexible enough that I can continue to be involved in Albania!
+This summer, we're continuing the work we've been doing over the past 7+ years.
+As the Poland Re:Generation project matures, we're starting to look into new ways
+we can support the native staff and church members in Albania and beyond.  This
+is a great opportunity for us to continue to invest in people whose hearts are
+fully devoted to God:
 
-[We went back in December for a men's conference](/post/2017/12_mens_retreat/), and [we're going back this summer](http://www.teamalbania.org/2018) as well.  I'm leading
-the team that will work with the Young Professionals in the capital city of Tirana.  I'm excited to see all my friends and to see what's changed while I've been in Dallas!
-My intention is to stay in Albania for the whole month of July.
+> For the eyes of the LORD run to and fro throughout the whole earth, to give
+> strong support to those whose heart is blameless toward him.
+> <span class="source"><a href="http://biblehub.com/esv/2_chronicles/16-9.htm">2 Chronicles 16:9</a></span>
 
-Feel free to [read all my posts from my STINT years](/post/), starting with ["Day 1 in Albania"](/post/2015/09_day-1-in-albania/) and ending with ["Home"](/post/2017/07_home/).  It's been quite a journey!
+We have built many deep relationships over the years in Albania, and know many
+people whose lives and ministries God is already strongly supporting.  The question
+we are now asking ourselves is, [how can we be part of that support?](https://www.teamalbania.org/blog/2019-02-25-the-plus-in-albania-plus)  A secondary purpose of our mission this year
+is to investigate opportunities to support leaders throughout the year, not just
+during the summer.
+
+One avenue we are investigating is the ministry to college students in Shkodër,
+Albania.  My good friend and former roommate [Pal Hila](https://give.cru.org/0790936)
+lives there, leading the college ministry team.  He has invited myself and Jenn
+Saucier to come take part in that ministry for a week.  Pal and his wife Ueda
+are among those whom we believe God has big plans for; anything we can do to support
+them will be a valuable use of time and resources.
+
+In addition to this, I will be taking part in the Young Professionals ministry
+again this year.  This is another area worth investing in, because the lay leaders
+in the Young Professionals ministry are the key to the next generation of the church.
+They are active, inspired, and trained to take the Gospel to their
+workplaces and friend groups.  Beyond that, they form the core of the next
+generation of church leaders.  We can and must continue to invest in discipling
+them.
+
+# How you can help
+
+By God’s grace, several of those who supported my 2-year STINT have continued to
+be generous over the last year, and most of my support needs for this summer are
+already met!  Any additional funds you see fit to gift to this work will be transferred
+to the Young Professionals ministry in Albania. If you do decide to donate,
+[you can do so here](https://give.cru.org/0746249).
+
+More importantly I need your prayers!  The most effective part of my support comes
+from those who are on their knees pleading beside me before our Father in Heaven,
+that this ministry will be effective.  Our works are for nothing if God does not
+go before us.  “With people this is impossible, but with God all things are possible.”
+(Matthew 19:26).
+
+Please [sign up for the newsletter](https://gordonburgett.us11.list-manage.com/subscribe/post?u=fbcbfba66020e12dd41b9cf1b&amp;id=4a0067c925)
+or text the word "Albania" to +1 214-444-7523 to get updates from the trip, including
+our prayer calendars. 
 
 # Why Albania?
 
-Albania has been on my heart since 2013 when [me, Jeff Welskopf, and Will Noll went for 10 days to evangelize high school students](/albania/2013/).  Since then our partnership with Albania has continued to grow.  In 2015 I quit my job as a programmer to spend 2 years there helping them start a ministry to professionals, similar to what we do at [The Porch in Dallas](http://www.theporchdallas.com).  In July 2017 Watermark sent 32 professionals to Albania to serve with 4 separate CRU ministries for 9 days, [including the now 2-year old Albanian professionals ministry](/albania/2017/).  This is far from the culmination of our efforts.  I expect our partnership to continue to grow over the coming years.
+Albania has been on my heart since 2013 when [me, Jeff Welskopf, and Will Noll went for 10 days to evangelize high school students](/albania/2013/).  Since then our partnership with Albania has continued to grow.  In 2015 I quit my job as a programmer to spend 2 years there helping them start a ministry to professionals, similar to what we do at [The Porch in Dallas](http://www.theporchdallas.com).  In July 2018 Watermark sent 39 professionals to Albania to serve with 4 separate CRU ministries for 9 days, [including the now 3-year old Albanian professionals ministry](/albania/2018/).  This is far from the culmination of our efforts.  I expect our partnership to continue to grow over the coming years.
 
 ## The work being done in Albania is transforming the region.
 
@@ -39,3 +81,5 @@ At Easter we celebrate a historical fact.  The fact that changes everything.  If
 Secondly, if Jesus Christ rose from the dead, that validates what He said about Himself.  He is the Way the Truth and the Life, and no one comes to the Father except through Him (John 14:6).  There are people in the world today who have never heard why we celebrate Easter.  These people don’t know that God has made a way for them to be reconciled to Him, to be forgiven, redeemed and made righteous.  They have to know, and we have to go tell them! (Romans 10:13-15)  
 
 > and if Christ has not been raised, your faith is worthless; you are still in your sins. Then those also who have fallen asleep in Christ have perished. If we have hoped in Christ in this life only, we are of all men most to be pitied.  [1 Corinthians 15:17-19](https://www.biblegateway.com/passage/?search=1+Corinthians+15)
+
+Feel free to [read all my posts from my STINT years](/post/), starting with ["Day 1 in Albania"](/post/2015/09_day-1-in-albania/) and ending with ["Home"](/post/2017/07_home/).  It's been quite a journey!
