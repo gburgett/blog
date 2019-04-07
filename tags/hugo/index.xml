@@ -2,14 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on first things first</title>
-    <link>http://www.gordonburgett.net/tags/hugo/index.xml</link>
+    <link>http://www.gordonburgett.net/tags/hugo/</link>
     <description>Recent content in Hugo on first things first</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All content © Gordon Burgett, 2014-2015</copyright>
-    <atom:link href="/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 Apr 2017 13:49:22 +0200</lastBuildDate>
+    
+	<atom:link href="http://www.gordonburgett.net/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Modern Static Sites</title>
+      <link>http://www.gordonburgett.net/post/2017/04_modern_static_sites/</link>
+      <pubDate>Thu, 20 Apr 2017 13:49:22 +0200</pubDate>
+      
+      <guid>http://www.gordonburgett.net/post/2017/04_modern_static_sites/</guid>
+      <description>Today in 2017, there are a thousand and one different ways to build a website. As always there&amp;rsquo;s good old fashioned Wordpress, and of course there&amp;rsquo;s drag-n-drop website builders like Wix. One thing these have in common is that they need a traditional hosting environment, and for that you gotta pay.
+If you can manage it, the cheapest way to host a website nowadays is to create a static HTML site.</description>
+    </item>
     
   </channel>
 </rss>

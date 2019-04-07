@@ -2,20 +2,55 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hosting on first things first</title>
-    <link>http://www.gordonburgett.net/tags/hosting/index.xml</link>
+    <link>http://www.gordonburgett.net/tags/hosting/</link>
     <description>Recent content in Hosting on first things first</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All content © Gordon Burgett, 2014-2015</copyright>
-    <atom:link href="/tags/hosting/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Oct 2015 20:33:41 +0200</lastBuildDate>
+    
+	<atom:link href="http://www.gordonburgett.net/tags/hosting/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Running with Docker</title>
+      <link>http://www.gordonburgett.net/post/2015/10_running_with_docker/</link>
+      <pubDate>Wed, 07 Oct 2015 20:33:41 +0200</pubDate>
+      
+      <guid>http://www.gordonburgett.net/post/2015/10_running_with_docker/</guid>
+      <description>Locked out! I managed to lock myself out of my EC2 instance when I was managing my keys. So in order to update my blog, I had to deploy it to a new EC2 instance. I decided to take the opportunity to improve the way I&amp;rsquo;m deploying new versions of my site.
+Note: This will be a technical post. If you&amp;rsquo;re following along with my adventure in Albania, you can skip this one.</description>
+    </item>
     
+    <item>
+      <title>Migrating to Node</title>
+      <link>http://www.gordonburgett.net/post/2015/04_migrating-to-node/</link>
+      <pubDate>Fri, 10 Apr 2015 23:23:19 -0500</pubDate>
+      
+      <guid>http://www.gordonburgett.net/post/2015/04_migrating-to-node/</guid>
+      <description>So I wanted an app server. How hard could it be right? Well, not really that hard at all.
+I was tired of having a static site served by apache. I want to do some cool stuff with the google APIs, like maybe a form submit where the results end up in a google doc for me. To do that I need more than hugo&amp;rsquo;s static site generation. But I didn&amp;rsquo;t want to get rid of hugo because I like a lot of it&amp;rsquo;s features, so I added nodejs on top of it as the application server.</description>
+    </item>
     
+    <item>
+      <title>hosting the blog</title>
+      <link>http://www.gordonburgett.net/post/2014/12_hosting-the-blog/</link>
+      <pubDate>Sun, 14 Dec 2014 18:42:21 -0600</pubDate>
+      
+      <guid>http://www.gordonburgett.net/post/2014/12_hosting-the-blog/</guid>
+      <description>I decided to use Amazon EC2 to host the blog, because they give you 1 year free on a micro instance. Plus I&amp;rsquo;ve always wanted to learn how to host something on Amazon&amp;rsquo;s cloud. I&amp;rsquo;ll get a linux instance and put an Apache HTTP server on it. Should be easy enough to do.
+Here&amp;rsquo;s my EC2 management console after signing up for an Amazon account and creating a linux micro instance: It took a bit to then be able to log in.</description>
+    </item>
     
-    
-    
-    
+    <item>
+      <title>Creating a blog</title>
+      <link>http://www.gordonburgett.net/post/2014/12_creating-a-blog/</link>
+      <pubDate>Sun, 14 Dec 2014 13:52:12 -0600</pubDate>
+      
+      <guid>http://www.gordonburgett.net/post/2014/12_creating-a-blog/</guid>
+      <description>Well, here it is. I&amp;rsquo;ve been wanting to create a blog for a while. I don&amp;rsquo;t know what it will look like in the future, or how often I&amp;rsquo;ll update it, but as I sit here writing it it&amp;rsquo;s kind of cathartic. It would be good to get some thoughts out there, and if anybody reads it that&amp;rsquo;s a bonus.
+I want to talk about anything and everything on this blog.</description>
+    </item>
     
   </channel>
 </rss>

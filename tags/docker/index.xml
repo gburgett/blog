@@ -2,24 +2,74 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docker on first things first</title>
-    <link>http://www.gordonburgett.net/tags/docker/index.xml</link>
+    <link>http://www.gordonburgett.net/tags/docker/</link>
     <description>Recent content in Docker on first things first</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All content © Gordon Burgett, 2014-2015</copyright>
-    <atom:link href="/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Mar 2017 16:20:52 +0100</lastBuildDate>
+    
+	<atom:link href="http://www.gordonburgett.net/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Automating more work</title>
+      <link>http://www.gordonburgett.net/post/2017/03_automating_more_work/</link>
+      <pubDate>Tue, 21 Mar 2017 16:20:52 +0100</pubDate>
+      
+      <guid>http://www.gordonburgett.net/post/2017/03_automating_more_work/</guid>
+      <description>So I took a look at my blog recently to make sure everything is working, and got a big fat &amp;ldquo;Your connection is not secure&amp;rdquo; message. Uh oh!
+Fortunately I just need to request a new certificate from Let&amp;rsquo;s Encrypt and install it. I&amp;rsquo;ve done this before, it&amp;rsquo;s a 10 minute job. Buuuuuttt&amp;hellip; what if I could automate it? If I spend all afternoon on this I&amp;rsquo;ll save myself 15 minutes of work every 3 months!</description>
+    </item>
     
+    <item>
+      <title>Taking Control of My Data</title>
+      <link>http://www.gordonburgett.net/post/2016/09_taking_control_of_my_data/</link>
+      <pubDate>Sat, 17 Sep 2016 15:33:34 +0200</pubDate>
+      
+      <guid>http://www.gordonburgett.net/post/2016/09_taking_control_of_my_data/</guid>
+      <description>One of my projects during my vacation has been to take back control of my data. The question of online privacy is a difficult one, because while there&amp;rsquo;s some things you can do to improve your privacy, to really own your data takes a lot of effort and learning. For most people, hosting their own services is more headache than it&amp;rsquo;s worth. There&amp;rsquo;s a lot of good privacy-conscious services out there if you&amp;rsquo;re willing to pay, but most people are not willing to pay.</description>
+    </item>
     
+    <item>
+      <title>Adventures in Dockerland</title>
+      <link>http://www.gordonburgett.net/post/2016/02_adventures-in-dockerland/</link>
+      <pubDate>Sat, 20 Feb 2016 20:33:52 +0100</pubDate>
+      
+      <guid>http://www.gordonburgett.net/post/2016/02_adventures-in-dockerland/</guid>
+      <description>I&amp;rsquo;ve been on a serious docker/aws kick recently. I&amp;rsquo;ve learned just enough that it drives me to play with it. I spent a lot of my free time on it this week, and didn&amp;rsquo;t spend as much as I&amp;rsquo;d like on learning Albanian&amp;hellip; This could be a problem&amp;hellip;
+Anyways I might as well post more about what I&amp;rsquo;ve learned. I&amp;rsquo;ve been wanting to make my web server more robust, to where if it dies for whatever reason I don&amp;rsquo;t have to do anything, it&amp;rsquo;ll come back on a new instance all on its own.</description>
+    </item>
     
+    <item>
+      <title>Docker Cloud is Neat</title>
+      <link>http://www.gordonburgett.net/post/2016/02_docker-cloud-is-neat/</link>
+      <pubDate>Mon, 15 Feb 2016 14:09:13 +0100</pubDate>
+      
+      <guid>http://www.gordonburgett.net/post/2016/02_docker-cloud-is-neat/</guid>
+      <description>I had some time off today so I decided to revisit how I&amp;rsquo;m hosting all my stuff. One of my issues with using Amazon&amp;rsquo;s container service is that they make you assign resource values to each container, and those are not flexible. So, I have to give each container high enough memory that it won&amp;rsquo;t die, but then I run out of space on my server real quick. Since most of the stuff I want to host just sits idle the majority of the time, this wasn&amp;rsquo;t ideal for me.</description>
+    </item>
     
+    <item>
+      <title>Hosting Reclaimed</title>
+      <link>http://www.gordonburgett.net/post/2016/01_hosting_reclaimed/</link>
+      <pubDate>Tue, 19 Jan 2016 21:31:01 +0100</pubDate>
+      
+      <guid>http://www.gordonburgett.net/post/2016/01_hosting_reclaimed/</guid>
+      <description>Here&amp;rsquo;s another technical post for y&amp;rsquo;all!
+I had some time this past weekend, so I took a look into the website I made a year ago for Reclaimed. The old version was made with Locomotive CMS, and hosted on Locomotive hosting. It was a good choice at the time, because we needed something fast. We wanted to deploy it before the 2015 super bowl.
+I&amp;rsquo;d previously looked into moving it to Wordpress or Drupal, but that would basically require redoing the whole site.</description>
+    </item>
     
-    
-    
-    
-    
-    
+    <item>
+      <title>Running with Docker</title>
+      <link>http://www.gordonburgett.net/post/2015/10_running_with_docker/</link>
+      <pubDate>Wed, 07 Oct 2015 20:33:41 +0200</pubDate>
+      
+      <guid>http://www.gordonburgett.net/post/2015/10_running_with_docker/</guid>
+      <description>Locked out! I managed to lock myself out of my EC2 instance when I was managing my keys. So in order to update my blog, I had to deploy it to a new EC2 instance. I decided to take the opportunity to improve the way I&amp;rsquo;m deploying new versions of my site.
+Note: This will be a technical post. If you&amp;rsquo;re following along with my adventure in Albania, you can skip this one.</description>
+    </item>
     
   </channel>
 </rss>

@@ -2,36 +2,134 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Development on first things first</title>
-    <link>http://www.gordonburgett.net/categories/development/index.xml</link>
+    <link>http://www.gordonburgett.net/categories/development/</link>
     <description>Recent content in Development on first things first</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All content © Gordon Burgett, 2014-2015</copyright>
-    <atom:link href="/categories/development/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 May 2018 14:52:15 -0500</lastBuildDate>
+    
+	<atom:link href="http://www.gordonburgett.net/categories/development/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Feeling Like I&#39;m at Hogwarts</title>
+      <link>http://www.gordonburgett.net/post/2018/05_enrolled_at_hogwarts/</link>
+      <pubDate>Sun, 20 May 2018 14:52:15 -0500</pubDate>
+      
+      <guid>http://www.gordonburgett.net/post/2018/05_enrolled_at_hogwarts/</guid>
+      <description>I spent some time this week playing with Typescript 2.8&amp;rsquo;s new features for modeling various complex types. The new syntax that I wanted to play with was the conditional type syntax,
+T extends U ? X : Y  This syntax allows you to express some really crazy type relationships! Some of the most interesting ones have been pre-defined in the Typescript standard lib:
+ Exclude&amp;lt;T, U&amp;gt; – Exclude from T those types that are assignable to U.</description>
+    </item>
     
+    <item>
+      <title>Making a static site searchable</title>
+      <link>http://www.gordonburgett.net/post/2017/07_making_a_searchable_static_site/</link>
+      <pubDate>Sun, 23 Jul 2017 17:28:52 +0200</pubDate>
+      
+      <guid>http://www.gordonburgett.net/post/2017/07_making_a_searchable_static_site/</guid>
+      <description>My site is getting pretty big now! 50+ posts, plus my journal entries from years past, I have content stretching over 4 years. So I started thinking about ways to add search functionality. And anyone who knows me knows I like to make these kind of things more complicated than they need to be, so with that in mind I had a fun challenge to solve. How do I add search functionality to a static site?</description>
+    </item>
     
+    <item>
+      <title>Modern Static Sites</title>
+      <link>http://www.gordonburgett.net/post/2017/04_modern_static_sites/</link>
+      <pubDate>Thu, 20 Apr 2017 13:49:22 +0200</pubDate>
+      
+      <guid>http://www.gordonburgett.net/post/2017/04_modern_static_sites/</guid>
+      <description>Today in 2017, there are a thousand and one different ways to build a website. As always there&amp;rsquo;s good old fashioned Wordpress, and of course there&amp;rsquo;s drag-n-drop website builders like Wix. One thing these have in common is that they need a traditional hosting environment, and for that you gotta pay.
+If you can manage it, the cheapest way to host a website nowadays is to create a static HTML site.</description>
+    </item>
     
+    <item>
+      <title>Taking Control of My Data</title>
+      <link>http://www.gordonburgett.net/post/2016/09_taking_control_of_my_data/</link>
+      <pubDate>Sat, 17 Sep 2016 15:33:34 +0200</pubDate>
+      
+      <guid>http://www.gordonburgett.net/post/2016/09_taking_control_of_my_data/</guid>
+      <description>One of my projects during my vacation has been to take back control of my data. The question of online privacy is a difficult one, because while there&amp;rsquo;s some things you can do to improve your privacy, to really own your data takes a lot of effort and learning. For most people, hosting their own services is more headache than it&amp;rsquo;s worth. There&amp;rsquo;s a lot of good privacy-conscious services out there if you&amp;rsquo;re willing to pay, but most people are not willing to pay.</description>
+    </item>
     
+    <item>
+      <title>Adventures in Dockerland</title>
+      <link>http://www.gordonburgett.net/post/2016/02_adventures-in-dockerland/</link>
+      <pubDate>Sat, 20 Feb 2016 20:33:52 +0100</pubDate>
+      
+      <guid>http://www.gordonburgett.net/post/2016/02_adventures-in-dockerland/</guid>
+      <description>I&amp;rsquo;ve been on a serious docker/aws kick recently. I&amp;rsquo;ve learned just enough that it drives me to play with it. I spent a lot of my free time on it this week, and didn&amp;rsquo;t spend as much as I&amp;rsquo;d like on learning Albanian&amp;hellip; This could be a problem&amp;hellip;
+Anyways I might as well post more about what I&amp;rsquo;ve learned. I&amp;rsquo;ve been wanting to make my web server more robust, to where if it dies for whatever reason I don&amp;rsquo;t have to do anything, it&amp;rsquo;ll come back on a new instance all on its own.</description>
+    </item>
     
+    <item>
+      <title>Docker Cloud is Neat</title>
+      <link>http://www.gordonburgett.net/post/2016/02_docker-cloud-is-neat/</link>
+      <pubDate>Mon, 15 Feb 2016 14:09:13 +0100</pubDate>
+      
+      <guid>http://www.gordonburgett.net/post/2016/02_docker-cloud-is-neat/</guid>
+      <description>I had some time off today so I decided to revisit how I&amp;rsquo;m hosting all my stuff. One of my issues with using Amazon&amp;rsquo;s container service is that they make you assign resource values to each container, and those are not flexible. So, I have to give each container high enough memory that it won&amp;rsquo;t die, but then I run out of space on my server real quick. Since most of the stuff I want to host just sits idle the majority of the time, this wasn&amp;rsquo;t ideal for me.</description>
+    </item>
     
+    <item>
+      <title>Hosting Reclaimed</title>
+      <link>http://www.gordonburgett.net/post/2016/01_hosting_reclaimed/</link>
+      <pubDate>Tue, 19 Jan 2016 21:31:01 +0100</pubDate>
+      
+      <guid>http://www.gordonburgett.net/post/2016/01_hosting_reclaimed/</guid>
+      <description>Here&amp;rsquo;s another technical post for y&amp;rsquo;all!
+I had some time this past weekend, so I took a look into the website I made a year ago for Reclaimed. The old version was made with Locomotive CMS, and hosted on Locomotive hosting. It was a good choice at the time, because we needed something fast. We wanted to deploy it before the 2015 super bowl.
+I&amp;rsquo;d previously looked into moving it to Wordpress or Drupal, but that would basically require redoing the whole site.</description>
+    </item>
     
+    <item>
+      <title>Running with Docker</title>
+      <link>http://www.gordonburgett.net/post/2015/10_running_with_docker/</link>
+      <pubDate>Wed, 07 Oct 2015 20:33:41 +0200</pubDate>
+      
+      <guid>http://www.gordonburgett.net/post/2015/10_running_with_docker/</guid>
+      <description>Locked out! I managed to lock myself out of my EC2 instance when I was managing my keys. So in order to update my blog, I had to deploy it to a new EC2 instance. I decided to take the opportunity to improve the way I&amp;rsquo;m deploying new versions of my site.
+Note: This will be a technical post. If you&amp;rsquo;re following along with my adventure in Albania, you can skip this one.</description>
+    </item>
     
+    <item>
+      <title>Migrating to Node</title>
+      <link>http://www.gordonburgett.net/post/2015/04_migrating-to-node/</link>
+      <pubDate>Fri, 10 Apr 2015 23:23:19 -0500</pubDate>
+      
+      <guid>http://www.gordonburgett.net/post/2015/04_migrating-to-node/</guid>
+      <description>So I wanted an app server. How hard could it be right? Well, not really that hard at all.
+I was tired of having a static site served by apache. I want to do some cool stuff with the google APIs, like maybe a form submit where the results end up in a google doc for me. To do that I need more than hugo&amp;rsquo;s static site generation. But I didn&amp;rsquo;t want to get rid of hugo because I like a lot of it&amp;rsquo;s features, so I added nodejs on top of it as the application server.</description>
+    </item>
     
+    <item>
+      <title>which which?</title>
+      <link>http://www.gordonburgett.net/post/2015/01_which-which/</link>
+      <pubDate>Tue, 06 Jan 2015 22:49:08 +0100</pubDate>
+      
+      <guid>http://www.gordonburgett.net/post/2015/01_which-which/</guid>
+      <description>I&amp;rsquo;m using locomotivecms for a project I&amp;rsquo;m working on, and it uses ImageMagick for resizing pictures on the fly. The standard instructions say to use the bitnami Ruby stack installer to get everything you need in a nice neat bundle.
+That worked for me for a while, until I needed to update the version of ruby I&amp;rsquo;m using. So, I went through the long and painful process of uninstalling the ruby stack, installing each component individually, identifying and correcting a ton of minor problems, and finally squashed the last bug by writing this program.</description>
+    </item>
     
+    <item>
+      <title>hosting the blog</title>
+      <link>http://www.gordonburgett.net/post/2014/12_hosting-the-blog/</link>
+      <pubDate>Sun, 14 Dec 2014 18:42:21 -0600</pubDate>
+      
+      <guid>http://www.gordonburgett.net/post/2014/12_hosting-the-blog/</guid>
+      <description>I decided to use Amazon EC2 to host the blog, because they give you 1 year free on a micro instance. Plus I&amp;rsquo;ve always wanted to learn how to host something on Amazon&amp;rsquo;s cloud. I&amp;rsquo;ll get a linux instance and put an Apache HTTP server on it. Should be easy enough to do.
+Here&amp;rsquo;s my EC2 management console after signing up for an Amazon account and creating a linux micro instance: It took a bit to then be able to log in.</description>
+    </item>
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    <item>
+      <title>Creating a blog</title>
+      <link>http://www.gordonburgett.net/post/2014/12_creating-a-blog/</link>
+      <pubDate>Sun, 14 Dec 2014 13:52:12 -0600</pubDate>
+      
+      <guid>http://www.gordonburgett.net/post/2014/12_creating-a-blog/</guid>
+      <description>Well, here it is. I&amp;rsquo;ve been wanting to create a blog for a while. I don&amp;rsquo;t know what it will look like in the future, or how often I&amp;rsquo;ll update it, but as I sit here writing it it&amp;rsquo;s kind of cathartic. It would be good to get some thoughts out there, and if anybody reads it that&amp;rsquo;s a bonus.
+I want to talk about anything and everything on this blog.</description>
+    </item>
     
   </channel>
 </rss>

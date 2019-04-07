@@ -2,21 +2,51 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Missions on first things first</title>
-    <link>http://www.gordonburgett.net/sq/tags/missions/index.xml</link>
+    <link>http://www.gordonburgett.net/sq/tags/missions/</link>
     <description>Recent content in Missions on first things first</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All content © Gordon Burgett, 2014-2015</copyright>
-    <atom:link href="/sq/tags/missions/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Jul 2017 21:36:09 -0500</lastBuildDate>
+    
+	<atom:link href="http://www.gordonburgett.net/sq/tags/missions/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Ditar • 2017</title>
+      <link>http://www.gordonburgett.net/sq/albania/2017/</link>
+      <pubDate>Mon, 10 Jul 2017 21:36:09 -0500</pubDate>
+      
+      <guid>http://www.gordonburgett.net/sq/albania/2017/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>Ditar • 2016 - Ice And Spice</title>
+      <link>http://www.gordonburgett.net/sq/albania/2016_iceandspice/</link>
+      <pubDate>Sat, 25 Jun 2016 21:36:09 -0500</pubDate>
+      
+      <guid>http://www.gordonburgett.net/sq/albania/2016_iceandspice/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>Ditar • 2016 - Profesionistët</title>
+      <link>http://www.gordonburgett.net/sq/albania/2016_youngprofessionals/</link>
+      <pubDate>Sat, 25 Jun 2016 21:36:09 -0500</pubDate>
+      
+      <guid>http://www.gordonburgett.net/sq/albania/2016_youngprofessionals/</guid>
+      <description></description>
+    </item>
     
-    
-    
-    
-    
+    <item>
+      <title>Ditar • 2015</title>
+      <link>http://www.gordonburgett.net/sq/albania/2015/</link>
+      <pubDate>Sun, 12 Jul 2015 21:36:09 -0500</pubDate>
+      
+      <guid>http://www.gordonburgett.net/sq/albania/2015/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Shqipëria!</title>
@@ -24,21 +54,27 @@
       <pubDate>Thu, 09 Apr 2015 22:20:15 -0500</pubDate>
       
       <guid>http://www.gordonburgett.net/sq/albania/</guid>
-      <description>
-
-&lt;h1 id=&#34;koha-ime-në-shqipëri-ka-mbaruar&#34;&gt;Koha ime në Shqipëri ka mbaruar!&lt;/h1&gt;
-
-&lt;p&gt;Sa shpejt ikin 2 vjet!  Kam patur shume qejf gjithësesi.  Lexo &lt;a href=&#34;http://www.gordonburgett.net/sq/post/&#34;&gt;të gjithë postimet nga 2015 deri në 2017&lt;/a&gt;.  Fillo me &lt;a href=&#34;http://www.gordonburgett.net/sq/post/2015/09_day-1-in-albania/&#34;&gt;&amp;ldquo;Ditën e Parë në Shqipëri&amp;rdquo;&lt;/a&gt; dhe mbaro me &lt;a href=&#34;http://www.gordonburgett.net/sq/post/2017/07_home/&#34;&gt;&amp;ldquo;Shtëpi&amp;rdquo;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h1 id=&#34;çfarë-do-të-bëj-tani&#34;&gt;Çfarë do të bëj tani?&lt;/h1&gt;
-
-&lt;p&gt;Duke filluar nga 1 Shtator 20...</description>
+      <description>Koha ime në Shqipëri ka mbaruar! Sa shpejt ikin 2 vjet! Kam patur shume qejf gjithësesi. Lexo të gjithë postimet nga 2015 deri në 2017. Fillo me &amp;ldquo;Ditën e Parë në Shqipëri&amp;rdquo; dhe mbaro me &amp;ldquo;Shtëpi&amp;rdquo;.
+Çfarë do të bëj tani? Duke filluar nga 1 Shtator 2017, do të filloj një punë tek kisha ime në Dallas, Watermark Community Church! Jam i gëzuar për këtë mundësi të lidhem prapë me kishën, dhe ta ndihmoj në fushën e IT.</description>
     </item>
     
+    <item>
+      <title>Ditar • 2014</title>
+      <link>http://www.gordonburgett.net/sq/albania/2014/</link>
+      <pubDate>Sat, 12 Jul 2014 21:36:09 -0500</pubDate>
+      
+      <guid>http://www.gordonburgett.net/sq/albania/2014/</guid>
+      <description></description>
+    </item>
     
-    
-    
-    
+    <item>
+      <title>Ditar • 2013</title>
+      <link>http://www.gordonburgett.net/sq/albania/2013/</link>
+      <pubDate>Fri, 26 Jul 2013 21:36:09 -0500</pubDate>
+      
+      <guid>http://www.gordonburgett.net/sq/albania/2013/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

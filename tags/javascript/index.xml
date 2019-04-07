@@ -2,16 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Javascript on first things first</title>
-    <link>http://www.gordonburgett.net/tags/javascript/index.xml</link>
+    <link>http://www.gordonburgett.net/tags/javascript/</link>
     <description>Recent content in Javascript on first things first</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All content © Gordon Burgett, 2014-2015</copyright>
-    <atom:link href="/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 May 2018 14:52:15 -0500</lastBuildDate>
+    
+	<atom:link href="http://www.gordonburgett.net/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Feeling Like I&#39;m at Hogwarts</title>
+      <link>http://www.gordonburgett.net/post/2018/05_enrolled_at_hogwarts/</link>
+      <pubDate>Sun, 20 May 2018 14:52:15 -0500</pubDate>
+      
+      <guid>http://www.gordonburgett.net/post/2018/05_enrolled_at_hogwarts/</guid>
+      <description>I spent some time this week playing with Typescript 2.8&amp;rsquo;s new features for modeling various complex types. The new syntax that I wanted to play with was the conditional type syntax,
+T extends U ? X : Y  This syntax allows you to express some really crazy type relationships! Some of the most interesting ones have been pre-defined in the Typescript standard lib:
+ Exclude&amp;lt;T, U&amp;gt; – Exclude from T those types that are assignable to U.</description>
+    </item>
     
-    
+    <item>
+      <title>Modern Static Sites</title>
+      <link>http://www.gordonburgett.net/post/2017/04_modern_static_sites/</link>
+      <pubDate>Thu, 20 Apr 2017 13:49:22 +0200</pubDate>
+      
+      <guid>http://www.gordonburgett.net/post/2017/04_modern_static_sites/</guid>
+      <description>Today in 2017, there are a thousand and one different ways to build a website. As always there&amp;rsquo;s good old fashioned Wordpress, and of course there&amp;rsquo;s drag-n-drop website builders like Wix. One thing these have in common is that they need a traditional hosting environment, and for that you gotta pay.
+If you can manage it, the cheapest way to host a website nowadays is to create a static HTML site.</description>
+    </item>
     
   </channel>
 </rss>

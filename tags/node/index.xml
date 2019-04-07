@@ -2,16 +2,34 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Node on first things first</title>
-    <link>http://www.gordonburgett.net/tags/node/index.xml</link>
+    <link>http://www.gordonburgett.net/tags/node/</link>
     <description>Recent content in Node on first things first</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All content © Gordon Burgett, 2014-2015</copyright>
-    <atom:link href="/tags/node/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 23 Jul 2017 17:28:52 +0200</lastBuildDate>
+    
+	<atom:link href="http://www.gordonburgett.net/tags/node/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Making a static site searchable</title>
+      <link>http://www.gordonburgett.net/post/2017/07_making_a_searchable_static_site/</link>
+      <pubDate>Sun, 23 Jul 2017 17:28:52 +0200</pubDate>
+      
+      <guid>http://www.gordonburgett.net/post/2017/07_making_a_searchable_static_site/</guid>
+      <description>My site is getting pretty big now! 50+ posts, plus my journal entries from years past, I have content stretching over 4 years. So I started thinking about ways to add search functionality. And anyone who knows me knows I like to make these kind of things more complicated than they need to be, so with that in mind I had a fun challenge to solve. How do I add search functionality to a static site?</description>
+    </item>
     
-    
+    <item>
+      <title>Migrating to Node</title>
+      <link>http://www.gordonburgett.net/post/2015/04_migrating-to-node/</link>
+      <pubDate>Fri, 10 Apr 2015 23:23:19 -0500</pubDate>
+      
+      <guid>http://www.gordonburgett.net/post/2015/04_migrating-to-node/</guid>
+      <description>So I wanted an app server. How hard could it be right? Well, not really that hard at all.
+I was tired of having a static site served by apache. I want to do some cool stuff with the google APIs, like maybe a form submit where the results end up in a google doc for me. To do that I need more than hugo&amp;rsquo;s static site generation. But I didn&amp;rsquo;t want to get rid of hugo because I like a lot of it&amp;rsquo;s features, so I added nodejs on top of it as the application server.</description>
+    </item>
     
   </channel>
 </rss>

@@ -2,27 +2,79 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Albania!  YEEEEHAWWW! on first things first</title>
-    <link>http://www.gordonburgett.net/albania/index.xml</link>
+    <link>http://www.gordonburgett.net/albania/</link>
     <description>Recent content in Albania!  YEEEEHAWWW! on first things first</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All content © Gordon Burgett, 2014-2015</copyright>
     <lastBuildDate>Thu, 09 Apr 2015 22:20:15 -0500</lastBuildDate>
-    <atom:link href="/albania/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://www.gordonburgett.net/albania/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Journal • 2018</title>
+      <link>http://www.gordonburgett.net/albania/2018/</link>
+      <pubDate>Sun, 01 Jul 2018 00:36:09 -0500</pubDate>
+      
+      <guid>http://www.gordonburgett.net/albania/2018/</guid>
+      <description>Day 1 Sunday July 1 We traveled overnight Friday, finally arriving Saturday night. After checking into the hotel I was beat. I went to sleep right away and managed to sleep 9 hours straight. It was good though to see Berti, Pal, Ueda, and Aldo, who all picked us up at the airport.
+Berti invited me to his bible study group before church. I met up with them at 8am at Mon Cheri.</description>
+    </item>
     
+    <item>
+      <title>Journal • 2017</title>
+      <link>http://www.gordonburgett.net/albania/2017/</link>
+      <pubDate>Mon, 10 Jul 2017 21:36:09 -0500</pubDate>
+      
+      <guid>http://www.gordonburgett.net/albania/2017/</guid>
+      <description>photo by Lauren Dean  Day 1 Sunday July 2 Today was a travel day for the others, fortunately I didn&amp;rsquo;t have to travel :). I got to go to church and have a nice afternoon coffee with a friend. We went to go pick up the group at the airport at 5:00, but the plane was delayed a bit. We had a good coffee at the airport waiting for them.</description>
+    </item>
     
+    <item>
+      <title>Journal • 2016 - Ice And Spice</title>
+      <link>http://www.gordonburgett.net/albania/2016_iceandspice/</link>
+      <pubDate>Sat, 25 Jun 2016 21:36:09 -0500</pubDate>
+      
+      <guid>http://www.gordonburgett.net/albania/2016_iceandspice/</guid>
+      <description>photo by Ron Acord  Day 1 Monday June 27 This year things have been a bit different, but I&amp;rsquo;m trying as much as possible to feel like I&amp;rsquo;m part of the American group. For the first 2 days though I also have some other responsibilities. My ministry team here in Albania, Leader-Led Movements, has a 2-day evangelistic conference called Life Choices. The graciously allowed me to go do Ice and Spice instead, but I still want to help them set up and tear down.</description>
+    </item>
     
+    <item>
+      <title>Journal • 2016 - Young Professionals</title>
+      <link>http://www.gordonburgett.net/albania/2016_youngprofessionals/</link>
+      <pubDate>Sat, 25 Jun 2016 21:36:09 -0500</pubDate>
+      
+      <guid>http://www.gordonburgett.net/albania/2016_youngprofessionals/</guid>
+      <description>Day 1 Monday July 4 Today was a nice break. We canceled the morning trip to Kruja, because all the Americans (including me) were worn out from the high schoolers. I slept in till about 9:30, then camped out with Wes and Chris at Mulliri Vjeter. They had to finish working on last minute changes to their presentations. We met up with the staff team for a relaxing lunch. The American team and staff got introduced to each-other and we had a nice relaxing time.</description>
+    </item>
     
+    <item>
+      <title>Journal • 2015</title>
+      <link>http://www.gordonburgett.net/albania/2015/</link>
+      <pubDate>Sun, 12 Jul 2015 21:36:09 -0500</pubDate>
+      
+      <guid>http://www.gordonburgett.net/albania/2015/</guid>
+      <description>photo by Ron Acord  Day 1 Thursday July 2 Back for a third time! Kinda hard to believe we got 20 people. We have 2 teams full of great people and we&amp;rsquo;re here and ready to rumble. Will and Lauren are leading one team of 10 that&amp;rsquo;s staying in Tirana, while Lucy and I lead the team that will depart to Elbasan on Sunday. Getting here was much better than last year, thanks mostly to Lucy&amp;rsquo;s organizational leadership and Will&amp;rsquo;s being on the ball with prep.</description>
+    </item>
     
+    <item>
+      <title>Journal • 2014</title>
+      <link>http://www.gordonburgett.net/albania/2014/</link>
+      <pubDate>Sat, 12 Jul 2014 21:36:09 -0500</pubDate>
+      
+      <guid>http://www.gordonburgett.net/albania/2014/</guid>
+      <description>Travel Days July 12-13 We flew overnight on Austrian airways, leaving early morning on the 12th with a layover at Washington Dulles. We were all tired, but some of us were awake enough to go out to the National Air and Space museum Udvar-Hazy center for a couple hours. My dad decided to meet us there, since my parents live in Washington DC. He, my little sister Alina and I hung out with Will, Danita, and Ron at the museum, which was pretty awesome.</description>
+    </item>
     
-    
-    
-    
-    
-    
-    
+    <item>
+      <title>Journal • 2013</title>
+      <link>http://www.gordonburgett.net/albania/2013/</link>
+      <pubDate>Fri, 26 Jul 2013 21:36:09 -0500</pubDate>
+      
+      <guid>http://www.gordonburgett.net/albania/2013/</guid>
+      <description>Day 1 Thursday July 18 I don&amp;rsquo;t even know why God brought us down here. What more can we do that He&amp;rsquo;s not already doing? Today we got off the plane, and found out our luggage won&amp;rsquo;t arrive until tomorrow. We rode into town with a nice guy who picked us up. We were met at the hotel by Aldo, who is one of the leaders of Ice and Spice.</description>
+    </item>
     
   </channel>
 </rss>

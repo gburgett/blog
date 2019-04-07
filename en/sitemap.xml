@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
     <loc>http://www.gordonburgett.net/post/2018/07_acts_29_in_albania/</loc>
@@ -39,11 +40,31 @@
   <url>
     <loc>http://www.gordonburgett.net/post/2017/07_home/</loc>
     <lastmod>2017-07-20T11:38:22+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="sq"
+                href="http://www.gordonburgett.net/sq/post/2017/07_home/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://www.gordonburgett.net/post/2017/07_home/"
+                />
   </url>
   
   <url>
     <loc>http://www.gordonburgett.net/albania/2017/</loc>
     <lastmod>2017-07-10T21:36:09-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="sq"
+                href="http://www.gordonburgett.net/sq/albania/2017/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://www.gordonburgett.net/albania/2017/"
+                />
   </url>
   
   <url>
@@ -107,13 +128,33 @@
   </url>
   
   <url>
-    <loc>http://www.gordonburgett.net/albania/2016_IceAndSpice/</loc>
+    <loc>http://www.gordonburgett.net/albania/2016_iceandspice/</loc>
     <lastmod>2016-06-25T21:36:09-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="sq"
+                href="http://www.gordonburgett.net/sq/albania/2016_iceandspice/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://www.gordonburgett.net/albania/2016_iceandspice/"
+                />
   </url>
   
   <url>
-    <loc>http://www.gordonburgett.net/albania/2016_YoungProfessionals/</loc>
+    <loc>http://www.gordonburgett.net/albania/2016_youngprofessionals/</loc>
     <lastmod>2016-06-25T21:36:09-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="sq"
+                href="http://www.gordonburgett.net/sq/albania/2016_youngprofessionals/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://www.gordonburgett.net/albania/2016_youngprofessionals/"
+                />
   </url>
   
   <url>
@@ -204,6 +245,16 @@
   <url>
     <loc>http://www.gordonburgett.net/post/2015/09_day-1-in-albania/</loc>
     <lastmod>2015-09-28T15:15:11+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="sq"
+                href="http://www.gordonburgett.net/sq/post/2015/09_day-1-in-albania/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://www.gordonburgett.net/post/2015/09_day-1-in-albania/"
+                />
   </url>
   
   <url>
@@ -219,6 +270,16 @@
   <url>
     <loc>http://www.gordonburgett.net/albania/2015/</loc>
     <lastmod>2015-07-12T21:36:09-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="sq"
+                href="http://www.gordonburgett.net/sq/albania/2015/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://www.gordonburgett.net/albania/2015/"
+                />
   </url>
   
   <url>
@@ -234,6 +295,16 @@
   <url>
     <loc>http://www.gordonburgett.net/albania/</loc>
     <lastmod>2015-04-09T22:20:15-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="sq"
+                href="http://www.gordonburgett.net/sq/albania/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://www.gordonburgett.net/albania/"
+                />
   </url>
   
   <url>
@@ -269,28 +340,79 @@
   <url>
     <loc>http://www.gordonburgett.net/albania/2014/</loc>
     <lastmod>2014-07-12T21:36:09-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="sq"
+                href="http://www.gordonburgett.net/sq/albania/2014/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://www.gordonburgett.net/albania/2014/"
+                />
   </url>
   
   <url>
     <loc>http://www.gordonburgett.net/albania/2013/</loc>
     <lastmod>2013-07-26T21:36:09-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="sq"
+                href="http://www.gordonburgett.net/sq/albania/2013/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://www.gordonburgett.net/albania/2013/"
+                />
   </url>
   
   <url>
     <loc>http://www.gordonburgett.net/categories/albania/</loc>
     <lastmod>2018-07-11T08:55:43+02:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="sq"
+                href="http://www.gordonburgett.net/sq/categories/albania/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://www.gordonburgett.net/categories/albania/"
+                />
   </url>
   
   <url>
     <loc>http://www.gordonburgett.net/tags/albania/</loc>
     <lastmod>2018-07-11T08:55:43+02:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="sq"
+                href="http://www.gordonburgett.net/sq/tags/albania/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://www.gordonburgett.net/tags/albania/"
+                />
   </url>
   
   <url>
     <loc>http://www.gordonburgett.net/categories/</loc>
+    <lastmod>2018-07-11T08:55:43+02:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="sq"
+                href="http://www.gordonburgett.net/sq/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://www.gordonburgett.net/categories/"
+                />
   </url>
   
   <url>
@@ -309,12 +431,32 @@
     <loc>http://www.gordonburgett.net/categories/cru/</loc>
     <lastmod>2018-07-11T08:55:43+02:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="sq"
+                href="http://www.gordonburgett.net/sq/categories/cru/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://www.gordonburgett.net/categories/cru/"
+                />
   </url>
   
   <url>
     <loc>http://www.gordonburgett.net/tags/cru/</loc>
     <lastmod>2018-07-11T08:55:43+02:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="sq"
+                href="http://www.gordonburgett.net/sq/tags/cru/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://www.gordonburgett.net/tags/cru/"
+                />
   </url>
   
   <url>
@@ -393,6 +535,16 @@
     <loc>http://www.gordonburgett.net/tags/journal/</loc>
     <lastmod>2018-07-01T00:36:09-05:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="sq"
+                href="http://www.gordonburgett.net/sq/tags/journal/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://www.gordonburgett.net/tags/journal/"
+                />
   </url>
   
   <url>
@@ -411,12 +563,32 @@
     <loc>http://www.gordonburgett.net/categories/missions/</loc>
     <lastmod>2018-07-01T00:36:09-05:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="sq"
+                href="http://www.gordonburgett.net/sq/categories/missions/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://www.gordonburgett.net/categories/missions/"
+                />
   </url>
   
   <url>
     <loc>http://www.gordonburgett.net/tags/missions/</loc>
     <lastmod>2018-07-01T00:36:09-05:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="sq"
+                href="http://www.gordonburgett.net/sq/tags/missions/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://www.gordonburgett.net/tags/missions/"
+                />
   </url>
   
   <url>
@@ -441,6 +613,16 @@
     <loc>http://www.gordonburgett.net/post/</loc>
     <lastmod>2018-07-11T08:55:43+02:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="sq"
+                href="http://www.gordonburgett.net/sq/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://www.gordonburgett.net/post/"
+                />
   </url>
   
   <url>
@@ -463,11 +645,32 @@
   
   <url>
     <loc>http://www.gordonburgett.net/search/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="sq"
+                href="http://www.gordonburgett.net/sq/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://www.gordonburgett.net/search/"
+                />
   </url>
   
   <url>
     <loc>http://www.gordonburgett.net/tags/</loc>
+    <lastmod>2018-07-11T08:55:43+02:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="sq"
+                href="http://www.gordonburgett.net/sq/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://www.gordonburgett.net/tags/"
+                />
   </url>
   
   <url>
@@ -486,6 +689,16 @@
     <loc>http://www.gordonburgett.net/</loc>
     <lastmod>2018-07-11T08:55:43+02:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="sq"
+                href="http://www.gordonburgett.net/sq/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://www.gordonburgett.net/"
+                />
   </url>
   
 </urlset>
