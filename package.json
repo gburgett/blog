@@ -9,7 +9,7 @@
     "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.7.6",
     "@babel/preset-typescript": "^7.7.4",
-    "@babel/register": "^7.4.0",
+    "@babel/register": "^7.7.4",
     "@types/node": "^11.13.0",
     "browser-sync": "^2.18.12",
     "fs-extra": "^8.1.0",
