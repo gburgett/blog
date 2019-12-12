@@ -12,7 +12,7 @@
     "@babel/register": "^7.4.0",
     "@types/node": "^11.13.0",
     "browser-sync": "^2.18.12",
-    "fs-extra": "^3.0.1",
+    "fs-extra": "^8.1.0",
     "gifsicle": "^4.0.1",
     "gulp": "^4.0.2",
     "gulp-debug": "^3.1.0",
