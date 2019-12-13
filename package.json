@@ -11,7 +11,7 @@
     "@babel/preset-typescript": "^7.7.4",
     "@babel/register": "^7.7.4",
     "@types/node": "^11.13.0",
-    "browser-sync": "^2.18.12",
+    "browser-sync": "^2.26.7",
     "fs-extra": "^8.1.0",
     "gifsicle": "^4.0.1",
     "gulp": "^4.0.2",
