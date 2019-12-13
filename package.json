@@ -15,7 +15,7 @@
     "fs-extra": "^8.1.0",
     "gifsicle": "^4.0.1",
     "gulp": "^4.0.2",
-    "gulp-debug": "^3.1.0",
+    "gulp-debug": "^4.0.0",
     "gulp-image-resize": "^0.13.1",
     "gulp-imagemin": "^6.2.0",
     "gulp-util": "^3.0.8"
