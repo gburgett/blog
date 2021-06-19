@@ -23,3 +23,6 @@ copyright = "All content © Gordon Burgett, 2014-2015"
 	languageName = "Shqip"
 	weight = 2
 	description = "Një blog për çfarëdo shkon ndër mend."
+
+[markup.goldmark.renderer]
+	unsafe= true
