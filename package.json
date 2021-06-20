@@ -3,8 +3,7 @@
   "version": "0.1.0",
   "description": "gordon burgett's personal blog",
   "repository": "https://github.com/gburgett/blog",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.7.7",
     "@babel/preset-env": "^7.7.7",
