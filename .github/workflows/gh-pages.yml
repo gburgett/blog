@@ -21,6 +21,12 @@ jobs:
           path: static/.640x
           key: ${{ runner.os }}-640x
 
+      - name: Cache node modules
+        uses: actions/cache@v2
+        with:
+          path: 'node_modules'
+          key: ${{ runner.os }}-modules-${{ hashFiles('yarn.lock') }}
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
