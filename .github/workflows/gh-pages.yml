@@ -25,6 +25,9 @@ jobs:
         with:
           node-version: '14'
 
+      - name: Install ImageMagick
+        run: sudo apt install imagemagick
+
       - run: yarn install
 
       - name: Build
