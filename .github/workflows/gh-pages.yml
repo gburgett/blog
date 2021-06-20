@@ -3,8 +3,7 @@ name: github pages
 on:
   push:
     branches:
-      - master  # Set a branch to deploy
-  pull_request:
+      - master
 
 jobs:
   deploy:
@@ -26,7 +25,7 @@ jobs:
           node-version: '14'
 
       - name: Install ImageMagick
-        run: sudo apt install imagemagick
+        run: sudo apt install imagemagick graphicsmagick
 
       - run: yarn install
 
