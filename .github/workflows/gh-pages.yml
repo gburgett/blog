@@ -14,6 +14,13 @@ jobs:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
+      - name: Cache converted images
+        id: cache-images
+        uses: actions/cache@v2
+        with:
+          path: static/.640x
+          key: ${{ runner.os }}-640x
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
