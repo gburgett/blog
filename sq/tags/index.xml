@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on first things first</title>
@@ -7,13 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All content © Gordon Burgett, 2014-2015</copyright>
-    <lastBuildDate>Thu, 20 Jul 2017 11:38:22 +0200</lastBuildDate>
-    
-	<atom:link href="http://www.gordonburgett.net/sq/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 20 Jul 2017 11:38:22 +0200</lastBuildDate><atom:link href="http://www.gordonburgett.net/sq/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Albania</title>
+      <title>albania</title>
       <link>http://www.gordonburgett.net/sq/tags/albania/</link>
       <pubDate>Thu, 20 Jul 2017 11:38:22 +0200</pubDate>
       
@@ -22,7 +18,7 @@
     </item>
     
     <item>
-      <title>Cru</title>
+      <title>cru</title>
       <link>http://www.gordonburgett.net/sq/tags/cru/</link>
       <pubDate>Thu, 20 Jul 2017 11:38:22 +0200</pubDate>
       
@@ -31,7 +27,7 @@
     </item>
     
     <item>
-      <title>Journal</title>
+      <title>journal</title>
       <link>http://www.gordonburgett.net/sq/tags/journal/</link>
       <pubDate>Mon, 10 Jul 2017 21:36:09 -0500</pubDate>
       
@@ -40,7 +36,7 @@
     </item>
     
     <item>
-      <title>Missions</title>
+      <title>missions</title>
       <link>http://www.gordonburgett.net/sq/tags/missions/</link>
       <pubDate>Mon, 10 Jul 2017 21:36:09 -0500</pubDate>
       

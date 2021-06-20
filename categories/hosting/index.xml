@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hosting on first things first</title>
@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All content © Gordon Burgett, 2014-2015</copyright>
-    <lastBuildDate>Wed, 07 Oct 2015 20:33:41 +0200</lastBuildDate>
-    
-	<atom:link href="http://www.gordonburgett.net/categories/hosting/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 07 Oct 2015 20:33:41 +0200</lastBuildDate><atom:link href="http://www.gordonburgett.net/categories/hosting/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Running with Docker</title>
       <link>http://www.gordonburgett.net/post/2015/10_running_with_docker/</link>
@@ -39,7 +35,7 @@ I was tired of having a static site served by apache. I want to do some cool stu
       
       <guid>http://www.gordonburgett.net/post/2014/12_hosting-the-blog/</guid>
       <description>I decided to use Amazon EC2 to host the blog, because they give you 1 year free on a micro instance. Plus I&amp;rsquo;ve always wanted to learn how to host something on Amazon&amp;rsquo;s cloud. I&amp;rsquo;ll get a linux instance and put an Apache HTTP server on it. Should be easy enough to do.
-Here&amp;rsquo;s my EC2 management console after signing up for an Amazon account and creating a linux micro instance: It took a bit to then be able to log in.</description>
+Here&amp;rsquo;s my EC2 management console after signing up for an Amazon account and creating a linux micro instance: !</description>
     </item>
     
     <item>

@@ -109,47 +109,30 @@
           <h1>The Realness of God</h1>
           <span class="post-date">Tue, Dec 16, 2014</span>
           <p>My friends and I were discussing christian music last night.  The main line of discussion was the lack of realness &amp; relevance of most christian songs.  Most of them end up a bit like this:</p>
-
 <iframe width="640" height="480" src="//www.youtube.com/embed/GhYuA0Cz8ls" frameborder="0" allowfullscreen></iframe>
-
 <p>When we turn worship leaders into recording artists, we get worship songs.  Worship songs are great for &ldquo;worship&rdquo; (i.e. that thing we do on Sunday mornings), but the problem is that in reality, <em>everything is supposed to be worship</em>.</p>
-
 <p>This was brought home for me today when I was listening to a reading of the poem <a href="http://www.desiringgod.org/calvinist">The Calvinist</a> by John Piper.  A verse in the middle of that poem echoes the same sentiment</p>
-
 <blockquote>
 <p>See him at his meal,
 Praying now to feel
 Thanks and, be it graced,
 God in ev’ry taste.</p>
 </blockquote>
-
 <p>God in ev&rsquo;ry taste.  God is in every bite of our food.  Sounds a bit pantheist. Yes, but it&rsquo;s so much more.  The problem with pantheism is that the god of pantheism is limited to creation.  The beauty of Christianity is that the God who created the universe <em>indwells every inch</em>.  Because of the reality of that indwelling, every act that we perform as redeemed men and women while we exist in this created realm is an act of worship towards our creator.</p>
-
 <p>Back to christian music.  The problem with &ldquo;worship&rdquo; music is that too much of it focuses too much on what Sproul called the &ldquo;otherness&rdquo; of God, that quality of His Holiness which is transcendent.  It is intended to produce a feeling in the &ldquo;worshipper&rdquo;, bringing them to an emotional climax towards something that is outside the realm of their everyday experience.  An emotional connection towards a thing that is completely transcendent is not much different than an emotional connection towards an imaginary friend.</p>
-
 <p>&ldquo;Worship&rdquo; music can also fall into another category, one that&rsquo;s less emotion and more theology.  I definitely appreciate it more than the first category.  The problem is that theology is also completely transcendent.  Here&rsquo;s a good example:</p>
-
 <iframe width="640" height="480" src="//www.youtube.com/embed/xhMPOieCMa0" frameborder="0" allowfullscreen></iframe>
-
 <p>God did not present Himself to us as an emotional experience.  He also didn&rsquo;t present Himself to us as a set of axioms from which we can derive theological principles.  He put on flesh and became a man.  He stepped down into the real world and lived life with us.  Down here in the everyday, real world we don&rsquo;t deal in emotionalism, nor in theology.  The real world is conflict, pain, suffering, toil, distraction.  God doesn&rsquo;t take any of that away, at least not yet.  Instead He adds to it: love, joy, peace, patience, kindness, goodness, self-control.  That&rsquo;s what&rsquo;s real.  Where are the songs that have all of that?</p>
-
 <p>Secular songs know what the real world is like.  Pop is full of pride, envy, fleeting pleasures, conflict, pain, and distraction.  Rap is full of hopelessness, despair and pride with a capital P.  And that appeals to the lost because it&rsquo;s real.  It&rsquo;s what we all experience at varying points of our lives and in varying amounts.  Christian music will never appeal to the masses until it has that realness.</p>
-
 <p>The best we have right now in my opinion is Christian Rap.  Many of them know about the gritty reality of suffering and it shows through in their music.  And it&rsquo;s appealing to non-Christians in a way that &ldquo;worship&rdquo; music never will be.  The mainstream Christian music industry could learn from those guys, who themselves are learning from Jesus, who stepped down into our grit and grime and shared in our sufferings with us.  And we can stop supporting the &ldquo;christian&rdquo; music industry until it figures that out.</p>
-
-<hr />
-
+<hr>
 <p>I put together a deploy script, here it is:</p>
-
-<pre><code class="language-bash">#! /bin/bash
-
-hugo --baseUrl=&quot;http://www.gordonburgett.net&quot;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#! /bin/bash
+</span><span style="color:#75715e"></span>
+hugo --baseUrl<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://www.gordonburgett.net&#34;</span>
 cd ./public
 scp -i $1 -r ./ ec2-user@gordonburgett.net:/var/www/html
-</code></pre>
-
-<p>Notice I don&rsquo;t have to specify <code>--theme</code>, that&rsquo;s cause I put <code>theme=&quot;hugo-uno&quot;</code> inside the config.toml file.</p>
-
+</code></pre></div><p>Notice I don&rsquo;t have to specify <code>--theme</code>, that&rsquo;s cause I put <code>theme=&quot;hugo-uno&quot;</code> inside the config.toml file.</p>
 <p>Now deploying a new page is as simple as <code>./deploy.sh ~/.ssh/macbook.pem</code>!</p>
 
         </div>

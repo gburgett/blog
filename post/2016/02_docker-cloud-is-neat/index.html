@@ -108,69 +108,50 @@
         <div class="post">
           <h1>Docker Cloud is Neat</h1>
           <span class="post-date">Mon, Feb 15, 2016</span>
-          
-
-<p>I had some time off today so I decided to revisit how I&rsquo;m hosting all my stuff.  One of my issues with using Amazon&rsquo;s container service is that they make you assign resource values to each container, and those are not flexible.  So, I have to give each container high enough memory that it won&rsquo;t die, but then I run out of space on my server real quick.  Since most of the stuff I want to host just sits idle the majority of the time, this wasn&rsquo;t ideal for me.</p>
-
+          <p>I had some time off today so I decided to revisit how I&rsquo;m hosting all my stuff.  One of my issues with using Amazon&rsquo;s container service is that they make you assign resource values to each container, and those are not flexible.  So, I have to give each container high enough memory that it won&rsquo;t die, but then I run out of space on my server real quick.  Since most of the stuff I want to host just sits idle the majority of the time, this wasn&rsquo;t ideal for me.</p>
 <p>I&rsquo;d heard about Tutum before, so I went to check it out.  It&rsquo;s another container management solution.  It&rsquo;s since been acquired by Docker and rebranded as <a href="https://cloud.docker.com">docker cloud</a>.  It&rsquo;s definitely got a slick interface, and looks to provide all the features I&rsquo;ll need.  One that I particularly like is the &ldquo;autoredeploy&rdquo; switch, which automatically redeploys a container when you push a new image.  Perfect for my blog.  So, I set about getting it set up.</p>
-
-<p><img src="/.640x/images/2016/docker-cloud-tour.png" alt="Docker cloud tour" />
+<p><img src="/.640x/images/2016/docker-cloud-tour.png" alt="Docker cloud tour">
 They have a neat tour!  Getting set up with AWS as my service provider was a snap.  It spins up its own AWS instances to use as nodes though, which means I can&rsquo;t use my fancy auto-initialization with an auto-scaling group.  But, you can also &lsquo;bring your own node&rsquo; by installing the docker-cloud client.  Turned out to be pretty simple to incorporate that into my launch script:</p>
-
-<pre><code class="language-bash"># set up docker cloud
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># set up docker cloud</span>
 sudo apt-get -y install python-pip
 sudo pip install docker-cloud
-# the 'byo' command prints out a list of instructions, we just need to run the line with the curl command.
-docker-cloud node byo | grep 'curl' | sh
+<span style="color:#75715e"># the &#39;byo&#39; command prints out a list of instructions, we just need to run the line with the curl command.</span>
+docker-cloud node byo | grep <span style="color:#e6db74">&#39;curl&#39;</span> | sh
 sudo gpasswd -a ubuntu docker
-</code></pre>
-
-<p>One tricky part was that I couldn&rsquo;t use the Amazon ECS-optimized image, since the docker-cloud client only supports ubuntu.  So I had to switch all my initialization stuff over to an ubuntu image.  That was a bit of a pain.  But, after getting it all set up, my node appeared in the &lsquo;nodes&rsquo; tab on docker cloud!</p>
-
+</code></pre></div><p>One tricky part was that I couldn&rsquo;t use the Amazon ECS-optimized image, since the docker-cloud client only supports ubuntu.  So I had to switch all my initialization stuff over to an ubuntu image.  That was a bit of a pain.  But, after getting it all set up, my node appeared in the &lsquo;nodes&rsquo; tab on docker cloud!</p>
 <p>Now to set up my services.  You can set them up directly using the web interface, but I prefer to have well-defined files somewhere describing my services.  Docker cloud has a concept called &lsquo;stacks&rsquo; which are defined by yaml files, similar to docker-compose.  This let me link all the dependent services together in a declarative way.  I created my &lsquo;blog&rsquo; stack like this:</p>
-
-<p><img src="/.640x/images/2016/blog-stack-yaml.png" alt="Blog stackfile" />
+<p><img src="/.640x/images/2016/blog-stack-yaml.png" alt="Blog stackfile">
 Now I need to set up my haproxy load balancer in front of it.  I decided this time I&rsquo;ll dockerize my load balancer instead of having it run straight on the EC2 instance.  I messed around with it for a long time before I found this image, which does everything I want: <a href="https://hub.docker.com/r/dockercloud/haproxy/">https://hub.docker.com/r/dockercloud/haproxy/</a></p>
-
 <p>Setting that up was a breeze.  I created a service to run it, and set it to listen on ports 80 and 443 (the HTTP and HTTPS ports).  It contacts the docker cloud API and discoveres the locations of all my other services automatically, and imports their info into its configuration.  I just needed to declare a couple environment variables in my other services, like hostname and SSL keys, and it imports them to route virtual hosts and terminate SSL connections automagically.  Sweet!</p>
-
-<p>Only a couple things tripped me up at this point.  One was the routing based on the <code>VIRTUAL_HOST</code> environment variable.  If you want it to route https traffic, you need an &ldquo;https://&rdquo; virtual host in there.  Another thing was that, while this haproxy service has a DNS hostname, I can&rsquo;t just make a CNAME to it from www.gordonburgett.net, since the DNS hostname changes whenever the container is reloaded.  So I stuck to my old way of assigning an Elastic IP to the node and using that in my DNS records.</p>
-
+<p>Only a couple things tripped me up at this point.  One was the routing based on the <code>VIRTUAL_HOST</code> environment variable.  If you want it to route https traffic, you need an &ldquo;https://&rdquo; virtual host in there.  Another thing was that, while this haproxy service has a DNS hostname, I can&rsquo;t just make a CNAME to it from <a href="http://www.gordonburgett.net">www.gordonburgett.net</a>, since the DNS hostname changes whenever the container is reloaded.  So I stuck to my old way of assigning an Elastic IP to the node and using that in my DNS records.</p>
 <h2 id="running-the-reclaimed-site">Running the Reclaimed site</h2>
-
 <p>One of the things that sparked all this was my attempt to get the Reclaimed site to do automatic nightly backups to aws s3.  I modified <a href="https://hub.docker.com/r/yaronr/backup-volume-container/">this docker container</a>, which automatically backs up anything in <code>/var/backup</code> to aws s3, and linked that in to my other two containers.  I also had to set up cron tasks in the other two containers to do automated backup and restore to and from <code>/var/backup</code>.  That took a while, but I think my solution works well.</p>
-
 <p>Once I got all that figured out locally, deploying it to docker cloud was pretty simple.  Here&rsquo;s my stackfile:</p>
-
-<pre><code class="language-yaml">backup:
-  image: 'gordonburgett/backup-volume-container:latest'
-  command: 's3://s3.amazonaws.com/gordonburgett.net/backup/reclaimed 30'
-  environment:
-    - AWS_ACCESS_KEY_ID=********
-    - AWS_SECRET_ACCESS_KEY=********
-db:
-  image: 'gordonburgett/mongo-locomotive:latest'
-  volumes_from:
-    - backup
-engine:
-  image: 'gordonburgett/locomotive_engine:latest'
-  environment:
-    - SECRET_KEY_BASE=********
-    - VIRTUAL_HOST=reclaimed.gordonburgett.net
-  expose:
-    - '8080'
-  links:
-    - db
-  restart: on-failure
-  volumes_from:
-    - backup
-</code></pre>
-
-<p>I updated my haproxy service to link to the &ldquo;engine&rdquo; service, and started it up.  Now going to &lsquo;reclaimed.gordonburgett.net&rsquo; gets me through the load balancer and into the rails app.  Perfect!  I uploaded the site, which you can see at <a href="http://reclaimed.gordonburgett.net">http://reclaimed.gordonburgett.net</a></p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">backup</span>:
+  <span style="color:#f92672">image</span>: <span style="color:#e6db74">&#39;gordonburgett/backup-volume-container:latest&#39;</span>
+  <span style="color:#f92672">command</span>: <span style="color:#e6db74">&#39;s3://s3.amazonaws.com/gordonburgett.net/backup/reclaimed 30&#39;</span>
+  <span style="color:#f92672">environment</span>:
+    - <span style="color:#ae81ff">AWS_ACCESS_KEY_ID=********</span>
+    - <span style="color:#ae81ff">AWS_SECRET_ACCESS_KEY=********</span>
+<span style="color:#f92672">db</span>:
+  <span style="color:#f92672">image</span>: <span style="color:#e6db74">&#39;gordonburgett/mongo-locomotive:latest&#39;</span>
+  <span style="color:#f92672">volumes_from</span>:
+    - <span style="color:#ae81ff">backup</span>
+<span style="color:#f92672">engine</span>:
+  <span style="color:#f92672">image</span>: <span style="color:#e6db74">&#39;gordonburgett/locomotive_engine:latest&#39;</span>
+  <span style="color:#f92672">environment</span>:
+    - <span style="color:#ae81ff">SECRET_KEY_BASE=********</span>
+    - <span style="color:#ae81ff">VIRTUAL_HOST=reclaimed.gordonburgett.net</span>
+  <span style="color:#f92672">expose</span>:
+    - <span style="color:#e6db74">&#39;8080&#39;</span>
+  <span style="color:#f92672">links</span>:
+    - <span style="color:#ae81ff">db</span>
+  <span style="color:#f92672">restart</span>: <span style="color:#66d9ef">on</span>-<span style="color:#ae81ff">failure</span>
+  <span style="color:#f92672">volumes_from</span>:
+    - <span style="color:#ae81ff">backup</span>
+</code></pre></div><p>I updated my haproxy service to link to the &ldquo;engine&rdquo; service, and started it up.  Now going to &lsquo;reclaimed.gordonburgett.net&rsquo; gets me through the load balancer and into the rails app.  Perfect!  I uploaded the site, which you can see at <a href="http://reclaimed.gordonburgett.net">http://reclaimed.gordonburgett.net</a></p>
 <p>Here it is!
-<img src="/.640x/images/2016/docker-cloud-node.png" alt="The node with everything running" /></p>
-
+<img src="/.640x/images/2016/docker-cloud-node.png" alt="The node with everything running"></p>
 <p>Like I said, neat!</p>
 
         </div>

@@ -109,184 +109,146 @@
           <h1>Automating more work</h1>
           <span class="post-date">Tue, Mar 21, 2017</span>
           <p>So I took a look at my blog recently to make sure everything is working, and got a big fat &ldquo;Your connection is not secure&rdquo; message.  Uh oh!</p>
-
-<p><img src="/images/2017/cert_expired.png" alt="certificate expired" /></p>
-
+<p><img src="/images/2017/cert_expired.png" alt="certificate expired"></p>
 <p>Fortunately I just need to request a new certificate from Let&rsquo;s Encrypt and install it.  I&rsquo;ve done this before, it&rsquo;s a 10 minute job.  Buuuuuttt&hellip;
-what if I could automate it?  If I spend all afternoon on this I&rsquo;ll save myself 15 minutes of work every 3 months!  That math totally works out right?<br />
+what if I could automate it?  If I spend all afternoon on this I&rsquo;ll save myself 15 minutes of work every 3 months!  That math totally works out right?<br>
 What does the XKCD guy have to say about it?</p>
-
-<p><img src="https://imgs.xkcd.com/comics/is_it_worth_the_time.png" alt="XKCD" /></p>
-
+<p><img src="https://imgs.xkcd.com/comics/is_it_worth_the_time.png" alt="XKCD"></p>
 <p>you know, I might actually be right in the sweet spot.</p>
-
 <p>So, let&rsquo;s get to it.  I&rsquo;ve previously set up a container that intercepts all requests to <code>/.well-known/*</code> so that it can respond to ACME challenges.  And
 I have <a href="https://github.com/Neilpang/acme.sh">acme.sh</a> installed on that container.  So the main challenges I need to overcome are formatting the new certs
 correctly and interacting with the Docker Cloud API.  Shouldn&rsquo;t be too tough.</p>
-
 <p>Formatting the new certs correctly is the easy part.  The hardest thing was figuring out the syntax for <code>find</code> in order to figure out the right files.  I
 wrote a script that concats the private key into the full chain, then uses <code>sed</code> to turn the newlines into <code>\n</code> strings, which is what Docker Cloud wants.
 Most of these lines are little more than copy-paste from google.</p>
-
-<pre><code class="language-bash">#! /bin/bash
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#! /bin/bash
+</span><span style="color:#75715e"></span>
 set -e
 
-[[ -z &quot;$S3_BUCKET&quot; ]] &amp;&amp; echo &quot;s3 bucket not set, exiting&quot; &amp;&amp; exit -1;
+<span style="color:#f92672">[[</span> -z <span style="color:#e6db74">&#34;</span>$S3_BUCKET<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]]</span> <span style="color:#f92672">&amp;&amp;</span> echo <span style="color:#e6db74">&#34;s3 bucket not set, exiting&#34;</span> <span style="color:#f92672">&amp;&amp;</span> exit -1;
 
 acme.sh --renewAll
 
-# find all directories which correspond to domains
-DOMAINS=`find ~/.acme.sh/ -maxdepth 1 -mindepth 1 -type d | grep '\.[^/]\{2,\}$'`
+<span style="color:#75715e"># find all directories which correspond to domains</span>
+DOMAINS<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>find ~/.acme.sh/ -maxdepth <span style="color:#ae81ff">1</span> -mindepth <span style="color:#ae81ff">1</span> -type d | grep <span style="color:#e6db74">&#39;\.[^/]\{2,\}$&#39;</span><span style="color:#e6db74">`</span>
 
-while read -r path; do
-    domain=`basename $path`
+<span style="color:#66d9ef">while</span> read -r path; <span style="color:#66d9ef">do</span>
+    domain<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>basename $path<span style="color:#e6db74">`</span>
 
-    # combine the certificate with the private key
+    <span style="color:#75715e"># combine the certificate with the private key</span>
     cat $path/fullchain.cer $path/$domain.key  &gt; $path/dockercloud.key
-    # replace newlines with the literal newline character as required by dockercloud
-    sed -i ':a;N;$!ba;s/\n/\\n/g' $path/dockercloud.key
+    <span style="color:#75715e"># replace newlines with the literal newline character as required by dockercloud</span>
+    sed -i <span style="color:#e6db74">&#39;:a;N;$!ba;s/\n/\\n/g&#39;</span> $path/dockercloud.key
 
-    echo &quot;built $path/dockercloud.key&quot;
-done &lt;&lt;&lt; &quot;$DOMAINS&quot;
-</code></pre>
-
-<p>The bigger step is uploading that to the <a href="https://docs.docker.com/apidocs/docker-cloud/">Docker Cloud API</a>.  I want to use cURL in order to
+    echo <span style="color:#e6db74">&#34;built </span>$path<span style="color:#e6db74">/dockercloud.key&#34;</span>
+<span style="color:#66d9ef">done</span> <span style="color:#f92672">&lt;&lt;&lt;</span> <span style="color:#e6db74">&#34;</span>$DOMAINS<span style="color:#e6db74">&#34;</span>
+</code></pre></div><p>The bigger step is uploading that to the <a href="https://docs.docker.com/apidocs/docker-cloud/">Docker Cloud API</a>.  I want to use cURL in order to
 not have to install anything else.  That means using the HTTP syntax, specifically the <a href="https://docs.docker.com/apidocs/docker-cloud/?http#update-an-existing-service">PATCH method of the service API</a>.</p>
-
 <p>Instead of mucking about with trying to discover the services, which was harder than I assumed, I decided to rename my services to match the hostnames of the SSL
 certs.  This was way easier and as a bonus it&rsquo;s more descriptive in the control panel.  Now I have a &ldquo;gordonburgett-net&rdquo; service instead of &ldquo;blog&rdquo;, and
 &ldquo;cloud-gordonburgett-net&rdquo; instead of &ldquo;nextcloud&rdquo;.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#! /bin/bash
+</span><span style="color:#75715e"></span>
+<span style="color:#f92672">[[</span> -z <span style="color:#e6db74">&#34;</span>$DOCKERCLOUD_AUTH<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]]</span> <span style="color:#f92672">&amp;&amp;</span> echo <span style="color:#e6db74">&#34;no DOCKERCLOUD_AUTH, exiting&#34;</span> <span style="color:#f92672">&amp;&amp;</span> exit -1;
 
-<pre><code class="language-bash">#! /bin/bash
+<span style="color:#75715e"># get all the dockercloud.key files that we need to upload to dockercloud&#39;s api</span>
+KEYS<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>find ~/.acme.sh/ -name dockercloud.key<span style="color:#e6db74">`</span>
 
-[[ -z &quot;$DOCKERCLOUD_AUTH&quot; ]] &amp;&amp; echo &quot;no DOCKERCLOUD_AUTH, exiting&quot; &amp;&amp; exit -1;
+<span style="color:#66d9ef">while</span> read -r keyfile; <span style="color:#66d9ef">do</span>
+    <span style="color:#75715e"># pull the name of the directory that the file is in, replacing dots with dashes to get the service name</span>
+    servicename<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>dirname <span style="color:#e6db74">&#34;</span>$keyfile<span style="color:#e6db74">&#34;</span> | xargs basename | sed <span style="color:#e6db74">&#39;s/\./-/g&#39;</span><span style="color:#e6db74">`</span>
 
-# get all the dockercloud.key files that we need to upload to dockercloud's api
-KEYS=`find ~/.acme.sh/ -name dockercloud.key`
+    serviceid<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>curl -H <span style="color:#e6db74">&#34;Authorization: </span>$DOCKERCLOUD_AUTH<span style="color:#e6db74">&#34;</span> https://cloud.docker.com/api/app/v1/service/?name<span style="color:#f92672">=</span>$servicename | jq -r <span style="color:#e6db74">&#39;.objects[].uuid&#39;</span><span style="color:#e6db74">`</span>
 
-while read -r keyfile; do
-    # pull the name of the directory that the file is in, replacing dots with dashes to get the service name
-    servicename=`dirname &quot;$keyfile&quot; | xargs basename | sed 's/\./-/g'`
+    <span style="color:#f92672">[[</span> -z <span style="color:#e6db74">&#34;</span>$serviceid<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]]</span> <span style="color:#f92672">&amp;&amp;</span> echo <span style="color:#e6db74">&#34;service </span>$servicename<span style="color:#e6db74"> doesnt exist&#34;</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#66d9ef">continue</span>;
 
-    serviceid=`curl -H &quot;Authorization: $DOCKERCLOUD_AUTH&quot; https://cloud.docker.com/api/app/v1/service/?name=$servicename | jq -r '.objects[].uuid'`
-
-    [[ -z &quot;$serviceid&quot; ]] &amp;&amp; echo &quot;service $servicename doesnt exist&quot; &amp;&amp; continue;
-
-    # continued below...
-</code></pre>
-
-<p>One thing I unfortunately discovered, is if I try to patch just the &ldquo;SSL_KEY&rdquo; environment variable, it clears out all the other environment variables too.
+    <span style="color:#75715e"># continued below...</span>
+</code></pre></div><p>One thing I unfortunately discovered, is if I try to patch just the &ldquo;SSL_KEY&rdquo; environment variable, it clears out all the other environment variables too.
 So I had to figure out how to patch the new value into all the old values using <code>jq</code>.  Fortunately I found this guy who has done exactly that:
-<a href="http://engineering.monsanto.com/2015/05/22/jq-change-json/">http://engineering.monsanto.com/2015/05/22/jq-change-json/</a><br />
+<a href="http://engineering.monsanto.com/2015/05/22/jq-change-json/">http://engineering.monsanto.com/2015/05/22/jq-change-json/</a><br>
 Thank you random tech blogger!</p>
-
-<pre><code class="language-bash">    # get the current environment variables and replace the correct one with the new cert value
-    service=`curl -H &quot;Authorization: $DOCKERCLOUD_AUTH&quot; https://cloud.docker.com/api/app/v1/service/$serviceid/`
-    cert=`cat $keyfile`
-    envvars=`echo $service | jq -r &quot;.container_envvars | map(if (.key == \&quot;SSL_CERT\&quot;) then . + { \&quot;value\&quot;: \&quot;$cert\&quot; } else . end)&quot;`
-</code></pre>
-
-<p>The final piece is invoking the PATCH method and uploading the new SSL key.  Also need to restart the service to pick up the changes.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">    <span style="color:#75715e"># get the current environment variables and replace the correct one with the new cert value</span>
+    service<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>curl -H <span style="color:#e6db74">&#34;Authorization: </span>$DOCKERCLOUD_AUTH<span style="color:#e6db74">&#34;</span> https://cloud.docker.com/api/app/v1/service/$serviceid/<span style="color:#e6db74">`</span>
+    cert<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>cat $keyfile<span style="color:#e6db74">`</span>
+    envvars<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>echo $service | jq -r <span style="color:#e6db74">&#34;.container_envvars | map(if (.key == \&#34;SSL_CERT\&#34;) then . + { \&#34;value\&#34;: \&#34;</span>$cert<span style="color:#e6db74">\&#34; } else . end)&#34;</span><span style="color:#e6db74">`</span>
+</code></pre></div><p>The final piece is invoking the PATCH method and uploading the new SSL key.  Also need to restart the service to pick up the changes.
 Fortunately I looked on Google for how to do a PATCH with cURL before I bashed my head against the keyboard several times.  Apparently
 <code>-XPATCH</code> doesn&rsquo;t work, you have to do <code>--request PATCH</code>.  This worked fine for me:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">    curl -H <span style="color:#e6db74">&#34;Authorization: </span>$DOCKERCLOUD_AUTH<span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>         -H <span style="color:#e6db74">&#34;Content-Type: application/json&#34;</span>  <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>         --request PATCH <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>         -d <span style="color:#e6db74">&#34;{\&#34;container_envvars\&#34;: </span>$envvars<span style="color:#e6db74"> }&#34;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>         https://cloud.docker.com/api/app/v1/service/$serviceid/ 
 
-<pre><code class="language-bash">    curl -H &quot;Authorization: $DOCKERCLOUD_AUTH&quot; \
-         -H &quot;Content-Type: application/json&quot;  \
-         --request PATCH \
-         -d &quot;{\&quot;container_envvars\&quot;: $envvars }&quot; \
-         https://cloud.docker.com/api/app/v1/service/$serviceid/ 
+    echo <span style="color:#e6db74">&#34;\npatched service </span>$servicename<span style="color:#e6db74">, redeploying...&#34;</span>
+    curl -H <span style="color:#e6db74">&#34;Authorization: </span>$DOCKERCLOUD_AUTH<span style="color:#e6db74">&#34;</span> -XPOST https://cloud.docker.com/api/app/v1/service/$serviceid/redeploy/
 
-    echo &quot;\npatched service $servicename, redeploying...&quot;
-    curl -H &quot;Authorization: $DOCKERCLOUD_AUTH&quot; -XPOST https://cloud.docker.com/api/app/v1/service/$serviceid/redeploy/
+<span style="color:#66d9ef">done</span> <span style="color:#f92672">&lt;&lt;&lt;</span> <span style="color:#e6db74">&#34;</span>$KEYS<span style="color:#e6db74">&#34;</span>
 
-done &lt;&lt;&lt; &quot;$KEYS&quot;
-
-</code></pre>
-
-<p>There&rsquo;s still a lot to do before it&rsquo;s automated, but at least now I don&rsquo;t have to remember how to combine the stupid files and update the
+</code></pre></div><p>There&rsquo;s still a lot to do before it&rsquo;s automated, but at least now I don&rsquo;t have to remember how to combine the stupid files and update the
 Docker Cloud service myself.</p>
-
 <p>Some of the things to do are:</p>
-
 <ul>
 <li>Bail out early if the certs don&rsquo;t need to be replaced</li>
 <li>Better error handling</li>
 <li>Blow my brains out trying to figure out how to do a cron job within the container</li>
 </ul>
-
 <p>All that&rsquo;s for the next time I have a spare afternoon :)</p>
-
 <hr />
-
 <p>Update: I got automatic renewal working! (at least I hope, it&rsquo;s going to be 2 months before any of these certs actually need renewal.)</p>
-
 <p>If you remember a <a href="/post/2016/09_taking_control_of_my_data/">previous post</a> I talked about setting up a
 <a href="https://github.com/gburgett/blog/blob/master/home/backup.sh">backup script</a> on a cron job.  This baby is still humming along just fine,
 and it is robust enough that it handles exactly my needs.  I&rsquo;m going to use it to execute my automatic certificate check by setting up
 my command as the <code>BACKUP_CMD</code> variable.</p>
-
 <p>First, we need a few modifications to the renewAll script.  It needs to automatically restore the <code>~/.acme.sh/</code> directory if it&rsquo;s a new
 container, can&rsquo;t have the script dying there.  So here&rsquo;s my additions to the beginning of the script (<a href="https://github.com/gburgett/dockerfile/blob/master/letsencrypt/scripts/renewAll.sh">see the whole thing on github</a>):</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[[</span> ! -d ~/.acme.sh/ <span style="color:#f92672">]]</span> <span style="color:#f92672">&amp;&amp;</span> echo <span style="color:#e6db74">&#34;restoring from s3&#34;</span> <span style="color:#f92672">&amp;&amp;</span> ./restore.sh
 
-<pre><code class="language-bash">[[ ! -d ~/.acme.sh/ ]] &amp;&amp; echo &quot;restoring from s3&quot; &amp;&amp; ./restore.sh
-
-# find all directories which correspond to domains &amp; list them so we can see what changed
-DOMAINS=`find ~/.acme.sh/ -maxdepth 1 -mindepth 1 -type d | grep '\.[^/]\{2,\}$'`
-if [[ -z &quot;$DOMAINS&quot; ]]; then
-    echo &quot;restoring from s3&quot;
+<span style="color:#75715e"># find all directories which correspond to domains &amp; list them so we can see what changed</span>
+DOMAINS<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>find ~/.acme.sh/ -maxdepth <span style="color:#ae81ff">1</span> -mindepth <span style="color:#ae81ff">1</span> -type d | grep <span style="color:#e6db74">&#39;\.[^/]\{2,\}$&#39;</span><span style="color:#e6db74">`</span>
+<span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> -z <span style="color:#e6db74">&#34;</span>$DOMAINS<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span>
+    echo <span style="color:#e6db74">&#34;restoring from s3&#34;</span>
     ./restore.sh
 
-    DOMAINS=`find ~/.acme.sh/ -maxdepth 1 -mindepth 1 -type d | grep '\.[^/]\{2,\}$'`
-    [[ -z &quot;$DOMAINS&quot; ]] &amp;&amp; echo &quot;error restoring from bucket $S3_BUCKET&quot; &amp;&amp; exit -1;
-fi
-</code></pre>
-
-<p>It also needs to check and see if anything actually changed, and not do anything if we didn&rsquo;t update any certs.<br />
+    DOMAINS<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>find ~/.acme.sh/ -maxdepth <span style="color:#ae81ff">1</span> -mindepth <span style="color:#ae81ff">1</span> -type d | grep <span style="color:#e6db74">&#39;\.[^/]\{2,\}$&#39;</span><span style="color:#e6db74">`</span>
+    <span style="color:#f92672">[[</span> -z <span style="color:#e6db74">&#34;</span>$DOMAINS<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]]</span> <span style="color:#f92672">&amp;&amp;</span> echo <span style="color:#e6db74">&#34;error restoring from bucket </span>$S3_BUCKET<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">&amp;&amp;</span> exit -1;
+<span style="color:#66d9ef">fi</span>
+</code></pre></div><p>It also needs to check and see if anything actually changed, and not do anything if we didn&rsquo;t update any certs.<br>
 I use an associative array which is a feature of bash 4 in order to keep track of what&rsquo;s changed.</p>
-
-<pre><code class="language-bash">set -e
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">set -e
 
 declare -A stats
-while read -r path; do
-    domain=`basename $path`
+<span style="color:#66d9ef">while</span> read -r path; <span style="color:#66d9ef">do</span>
+    domain<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>basename $path<span style="color:#e6db74">`</span>
 
-    stats[$domain]=`ls -l $path`
-done &lt;&lt;&lt; &quot;$DOMAINS&quot;
+    stats<span style="color:#f92672">[</span>$domain<span style="color:#f92672">]=</span><span style="color:#e6db74">`</span>ls -l $path<span style="color:#e6db74">`</span>
+<span style="color:#66d9ef">done</span> <span style="color:#f92672">&lt;&lt;&lt;</span> <span style="color:#e6db74">&#34;</span>$DOMAINS<span style="color:#e6db74">&#34;</span>
 
 acme.sh --renewAll
 
-# find all domains again and compare
-DOMAINS=`find ~/.acme.sh/ -maxdepth 1 -mindepth 1 -type d | grep '\.[^/]\{2,\}$'`
+<span style="color:#75715e"># find all domains again and compare</span>
+DOMAINS<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>find ~/.acme.sh/ -maxdepth <span style="color:#ae81ff">1</span> -mindepth <span style="color:#ae81ff">1</span> -type d | grep <span style="color:#e6db74">&#39;\.[^/]\{2,\}$&#39;</span><span style="color:#e6db74">`</span>
 
-while read -r path; do
-    domain=`basename $path`
+<span style="color:#66d9ef">while</span> read -r path; <span style="color:#66d9ef">do</span>
+    domain<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>basename $path<span style="color:#e6db74">`</span>
 
-    # nothing changed, skip creating the dockercloud file
-    [[ &quot;${stats[$domain]}&quot; == &quot;`ls -l $path`&quot; ]] &amp;&amp; continue;
+    <span style="color:#75715e"># nothing changed, skip creating the dockercloud file</span>
+    <span style="color:#f92672">[[</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>stats[$domain]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;`ls -l </span>$path<span style="color:#e6db74">`&#34;</span> <span style="color:#f92672">]]</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#66d9ef">continue</span>;
 
-    # combine the certificate with the private key
+    <span style="color:#75715e"># combine the certificate with the private key</span>
     cat $path/fullchain.cer $path/$domain.key  &gt; $path/dockercloud.key
-    # replace newlines with the literal newline character as required by dockercloud
-    sed -i ':a;N;$!ba;s/\n/\\n/g' $path/dockercloud.key
+    <span style="color:#75715e"># replace newlines with the literal newline character as required by dockercloud</span>
+    sed -i <span style="color:#e6db74">&#39;:a;N;$!ba;s/\n/\\n/g&#39;</span> $path/dockercloud.key
 
-    echo &quot;built $path/dockercloud.key&quot;
-done &lt;&lt;&lt; &quot;$DOMAINS&quot;
-</code></pre>
-
-<p>Now the &ldquo;updateDockercloud.sh&rdquo; script needs a tweak as well, it needs to remove the <code>dockercloud.key</code> file when it successfully
+    echo <span style="color:#e6db74">&#34;built </span>$path<span style="color:#e6db74">/dockercloud.key&#34;</span>
+<span style="color:#66d9ef">done</span> <span style="color:#f92672">&lt;&lt;&lt;</span> <span style="color:#e6db74">&#34;</span>$DOMAINS<span style="color:#e6db74">&#34;</span>
+</code></pre></div><p>Now the &ldquo;updateDockercloud.sh&rdquo; script needs a tweak as well, it needs to remove the <code>dockercloud.key</code> file when it successfully
 updates the service.  That was a one-line change. (<a href="https://github.com/gburgett/dockerfile/blob/master/letsencrypt/scripts/updateDockercloud.sh">See the whole thing on Github</a>)</p>
-
 <p>And with those tweaks, I can now run an automated check-and-update with this command:</p>
-
-<pre><code class="language-bash">~/renewAll.sh &amp;&amp; ~/updateDockercloud.sh &amp;&amp; ~/backup.sh
-</code></pre>
-
-<p>Almost there, just need to set that as the <code>BACKUP_CMD</code> environment variable.  Problem is I&rsquo;m executing that variable with <code>docker exec</code>, so
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">~/renewAll.sh <span style="color:#f92672">&amp;&amp;</span> ~/updateDockercloud.sh <span style="color:#f92672">&amp;&amp;</span> ~/backup.sh
+</code></pre></div><p>Almost there, just need to set that as the <code>BACKUP_CMD</code> environment variable.  Problem is I&rsquo;m executing that variable with <code>docker exec</code>, so
 I need to wrap it as an invocation to bash in the dockercloud console.</p>
-
-<p><img src="/images/2017/backup_cmd_letsencrypt.png" alt="environment variables" /></p>
-
+<p><img src="/images/2017/backup_cmd_letsencrypt.png" alt="environment variables"></p>
 <p>And voila!</p>
 
         </div>

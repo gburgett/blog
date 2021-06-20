@@ -1,17 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Golang on first things first</title>
+    <title>golang on first things first</title>
     <link>http://www.gordonburgett.net/tags/golang/</link>
-    <description>Recent content in Golang on first things first</description>
+    <description>Recent content in golang on first things first</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All content © Gordon Burgett, 2014-2015</copyright>
-    <lastBuildDate>Tue, 06 Jan 2015 22:49:08 +0100</lastBuildDate>
-    
-	<atom:link href="http://www.gordonburgett.net/tags/golang/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 06 Jan 2015 22:49:08 +0100</lastBuildDate><atom:link href="http://www.gordonburgett.net/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>which which?</title>
       <link>http://www.gordonburgett.net/post/2015/01_which-which/</link>

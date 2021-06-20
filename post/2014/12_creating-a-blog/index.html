@@ -108,32 +108,21 @@
         <div class="post">
           <h1>Creating a blog</h1>
           <span class="post-date">Sun, Dec 14, 2014</span>
-          
-
-<h3 id="well-here-it-is">Well, here it is.</h3>
-
+          <h3 id="well-here-it-is">Well, here it is.</h3>
 <p>I&rsquo;ve been wanting to create a blog for a while.  I don&rsquo;t know what it will look like in the future, or how often I&rsquo;ll update it, but as I sit here writing it it&rsquo;s kind of cathartic.  It would be good to get some thoughts out there, and if anybody reads it that&rsquo;s a bonus.</p>
-
 <p>I want to talk about anything and everything on this blog.  I&rsquo;ll delve into my work, hopefully some of these pages will be useful when another developer types some obscure error code into google.  I&rsquo;ll discuss my faith, hopefully that could spark some interesting discussion.  I&rsquo;ll discuss the important stuff that happens in my life, hopefully someone might find it interesting.</p>
-
 <p>I guess for my first post I&rsquo;ll just talk about how I went about creating this blog.  I chose <a href="http://gohugo.io/">Hugo</a> because we&rsquo;ve been playing with Go at work and it looked neat.  It&rsquo;s already been pretty simple to set up, I might be able to actually get this thing hosted within the next hour.  I&rsquo;m also trying to learn my new macbook pro, which work gave me.  I&rsquo;ve never worked with a mac before but I know a bit of linux, and I&rsquo;ve found the command line to be pretty intuitive.</p>
-
 <p>It was pretty easy to set up, I just did the following:</p>
-
 <ol>
 <li><code>hugo new site ~/projects/hugo/myblog</code></li>
 <li><code>cd ~/projects/hugo/myblog</code></li>
 <li><code>hugo new about.md</code></li>
 <li><code>hugo new post/first.md</code></li>
 </ol>
-
 <p>All this text is inside &lsquo;first.md&rsquo;, which I then renamed to &lsquo;creating a blog.md&rsquo;.  The URL after Hugo generates the html page is <code>http://localhost:1313/post/creating%20a%20blog/</code>.  Easy peasy.</p>
-
 <p>I grabbed the themes using <code>git clone --recursive https://github.com/spf13/hugoThemes themes</code>, then ran the server using the &lsquo;hugo-uno&rsquo; theme:
 <code>hugo server --theme=hugo-uno --buildDrafts --watch</code></p>
-
 <p>I had to update the &lsquo;config.toml&rsquo; file to have the links to my blog and the correct title and description, here&rsquo;s what I ended up with:</p>
-
 <pre><code>baseurl = &quot;http://yourSiteHere&quot;
 languageCode = &quot;en-us&quot;
 title = &quot;first things first&quot;
@@ -148,44 +137,32 @@ author = &quot;Gordon Burgett&quot;
 	github = &quot;gburgett&quot;
 	email = &quot;***planning to obfuscate this somehow***&quot;
 	description = &quot;A blog about whatever crosses my mind, ordered by importance.&quot;
-</code></pre>
+</code></pre><p>I wanted to obfuscate my email adress to avoid spam.  Unfortunately the hugo-uno default sidebar just uses a mailto link.  Here&rsquo;s the HTML inside social.html:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{ if .Site.Params.email }}
+<span style="color:#75715e">&lt;!-- Email --&gt;</span>
+&lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;navigation__item&#34;</span>&gt;
+    &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mailto:{{ .Site.Params.email }}&#34;</span> <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Email {{ .Site.Params.email }}&#34;</span>&gt; &lt;<span style="color:#f92672">i</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;fa fa-envelope-o&#39;</span>&gt;&lt;/<span style="color:#f92672">i</span>&gt; &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;label&#34;</span>&gt;Email&lt;/<span style="color:#f92672">span</span>&gt; &lt;/<span style="color:#f92672">a</span>&gt;
+&lt;/<span style="color:#f92672">li</span>&gt; {{ end }}
+</code></pre></div><p>So I overrode the social.html by copy-pasting it to myblog/layouts/partials/social.html, and removed the mailto: and title.  I added some javascript to only write the mailto when you click on the mail link.  I put the javascript inside static/js/custom.js, and included a link to it inside an overridden script.html:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">$</span>(document).<span style="color:#a6e22e">ready</span>(<span style="color:#66d9ef">function</span>(){
+	<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;#email&#39;</span>).<span style="color:#a6e22e">click</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">evt</span>){
+		<span style="color:#a6e22e">evt</span>.<span style="color:#a6e22e">preventDefault</span>();
 
-<p>I wanted to obfuscate my email adress to avoid spam.  Unfortunately the hugo-uno default sidebar just uses a mailto link.  Here&rsquo;s the HTML inside social.html:</p>
-
-<pre><code class="language-html">{{ if .Site.Params.email }}
-&lt;!-- Email --&gt;
-&lt;li class=&quot;navigation__item&quot;&gt;
-    &lt;a href=&quot;mailto:{{ .Site.Params.email }}&quot; title=&quot;Email {{ .Site.Params.email }}&quot;&gt; &lt;i class='fa fa-envelope-o'&gt;&lt;/i&gt; &lt;span class=&quot;label&quot;&gt;Email&lt;/span&gt; &lt;/a&gt;
-&lt;/li&gt; {{ end }}
-</code></pre>
-
-<p>So I overrode the social.html by copy-pasting it to myblog/layouts/partials/social.html, and removed the mailto: and title.  I added some javascript to only write the mailto when you click on the mail link.  I put the javascript inside static/js/custom.js, and included a link to it inside an overridden script.html:</p>
-
-<pre><code class="language-javascript">$(document).ready(function(){
-	$('#email').click(function(evt){
-		evt.preventDefault();
-
-		var e = 'gordon' + '.burgett' + '@gmail' + '.com';
-		var link = $('&lt;a&gt;').attr('href', 'mailto:' + e).text(e);
-		$('#email').empty();
-		$('#email').append(link);
-		$('#email').off();
+		<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">e</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;gordon&#39;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;.burgett&#39;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;@gmail&#39;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;.com&#39;</span>;
+		<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">link</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;&lt;a&gt;&#39;</span>).<span style="color:#a6e22e">attr</span>(<span style="color:#e6db74">&#39;href&#39;</span>, <span style="color:#e6db74">&#39;mailto:&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">e</span>).<span style="color:#a6e22e">text</span>(<span style="color:#a6e22e">e</span>);
+		<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;#email&#39;</span>).<span style="color:#a6e22e">empty</span>();
+		<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;#email&#39;</span>).<span style="color:#a6e22e">append</span>(<span style="color:#a6e22e">link</span>);
+		<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;#email&#39;</span>).<span style="color:#a6e22e">off</span>();
 	})
 });
-</code></pre>
-
-<p>Note: if you don&rsquo;t have well-formed HTML in your script.html, then Hugo basically just forgets to include it and doesn&rsquo;t tell you.  That tripped me up for about 15 minutes.</p>
-
+</code></pre></div><p>Note: if you don&rsquo;t have well-formed HTML in your script.html, then Hugo basically just forgets to include it and doesn&rsquo;t tell you.  That tripped me up for about 15 minutes.</p>
 <p>I also added syntax highlighting using <a href="https://highlightjs.org/usage/">highlight.js</a> by including this in the script.html:</p>
-
-<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css&quot;&gt;
-&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js&quot;&gt;&lt;/script&gt;
-&lt;script&gt;
-  hljs.initHighlightingOnLoad();
-&lt;/script&gt;
-</code></pre>
-
-<p>The hardest part will be getting a good background image, but I can put that off till later.  I guess my next post will be about the adventure of hosting this thing.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css&#34;</span>&gt;
+&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+&lt;<span style="color:#f92672">script</span>&gt;
+  <span style="color:#a6e22e">hljs</span>.<span style="color:#a6e22e">initHighlightingOnLoad</span>();
+&lt;/<span style="color:#f92672">script</span>&gt;
+</code></pre></div><p>The hardest part will be getting a good background image, but I can put that off till later.  I guess my next post will be about the adventure of hosting this thing.</p>
 
         </div>
       </div>

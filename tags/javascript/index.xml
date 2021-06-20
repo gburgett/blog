@@ -1,17 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Javascript on first things first</title>
+    <title>javascript on first things first</title>
     <link>http://www.gordonburgett.net/tags/javascript/</link>
-    <description>Recent content in Javascript on first things first</description>
+    <description>Recent content in javascript on first things first</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All content © Gordon Burgett, 2014-2015</copyright>
-    <lastBuildDate>Sun, 20 May 2018 14:52:15 -0500</lastBuildDate>
-    
-	<atom:link href="http://www.gordonburgett.net/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 20 May 2018 14:52:15 -0500</lastBuildDate><atom:link href="http://www.gordonburgett.net/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Feeling Like I&#39;m at Hogwarts</title>
       <link>http://www.gordonburgett.net/post/2018/05_enrolled_at_hogwarts/</link>
@@ -19,7 +15,7 @@
       
       <guid>http://www.gordonburgett.net/post/2018/05_enrolled_at_hogwarts/</guid>
       <description>I spent some time this week playing with Typescript 2.8&amp;rsquo;s new features for modeling various complex types. The new syntax that I wanted to play with was the conditional type syntax,
-T extends U ? X : Y  This syntax allows you to express some really crazy type relationships! Some of the most interesting ones have been pre-defined in the Typescript standard lib:
+T extends U ? X : Y This syntax allows you to express some really crazy type relationships! Some of the most interesting ones have been pre-defined in the Typescript standard lib:
  Exclude&amp;lt;T, U&amp;gt; – Exclude from T those types that are assignable to U.</description>
     </item>
     

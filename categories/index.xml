@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on first things first</title>
@@ -7,13 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All content © Gordon Burgett, 2014-2015</copyright>
-    <lastBuildDate>Sun, 25 Oct 2020 00:36:09 -0500</lastBuildDate>
-    
-	<atom:link href="http://www.gordonburgett.net/categories/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 25 Oct 2020 00:36:09 -0500</lastBuildDate><atom:link href="http://www.gordonburgett.net/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Albania</title>
+      <title>albania</title>
       <link>http://www.gordonburgett.net/categories/albania/</link>
       <pubDate>Sun, 25 Oct 2020 00:36:09 -0500</pubDate>
       
@@ -22,16 +18,16 @@
     </item>
     
     <item>
-      <title>Christianity</title>
-      <link>http://www.gordonburgett.net/categories/christianity/</link>
-      <pubDate>Mon, 30 Mar 2015 23:14:36 -0500</pubDate>
+      <title>missions</title>
+      <link>http://www.gordonburgett.net/categories/missions/</link>
+      <pubDate>Sun, 25 Oct 2020 00:36:09 -0500</pubDate>
       
-      <guid>http://www.gordonburgett.net/categories/christianity/</guid>
+      <guid>http://www.gordonburgett.net/categories/missions/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Cru</title>
+      <title>cru</title>
       <link>http://www.gordonburgett.net/categories/cru/</link>
       <pubDate>Sat, 13 Apr 2019 14:20:14 -0500</pubDate>
       
@@ -49,7 +45,7 @@
     </item>
     
     <item>
-      <title>Docker</title>
+      <title>docker</title>
       <link>http://www.gordonburgett.net/categories/docker/</link>
       <pubDate>Tue, 21 Mar 2017 16:20:52 +0100</pubDate>
       
@@ -58,11 +54,11 @@
     </item>
     
     <item>
-      <title>Golang</title>
-      <link>http://www.gordonburgett.net/categories/golang/</link>
-      <pubDate>Tue, 06 Jan 2015 22:49:08 +0100</pubDate>
+      <title>reclaimed</title>
+      <link>http://www.gordonburgett.net/categories/reclaimed/</link>
+      <pubDate>Tue, 19 Jan 2016 21:31:01 +0100</pubDate>
       
-      <guid>http://www.gordonburgett.net/categories/golang/</guid>
+      <guid>http://www.gordonburgett.net/categories/reclaimed/</guid>
       <description></description>
     </item>
     
@@ -76,20 +72,20 @@
     </item>
     
     <item>
-      <title>Missions</title>
-      <link>http://www.gordonburgett.net/categories/missions/</link>
-      <pubDate>Sun, 25 Oct 2020 00:36:09 -0500</pubDate>
+      <title>Christianity</title>
+      <link>http://www.gordonburgett.net/categories/christianity/</link>
+      <pubDate>Mon, 30 Mar 2015 23:14:36 -0500</pubDate>
       
-      <guid>http://www.gordonburgett.net/categories/missions/</guid>
+      <guid>http://www.gordonburgett.net/categories/christianity/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Reclaimed</title>
-      <link>http://www.gordonburgett.net/categories/reclaimed/</link>
-      <pubDate>Tue, 19 Jan 2016 21:31:01 +0100</pubDate>
+      <title>GoLang</title>
+      <link>http://www.gordonburgett.net/categories/golang/</link>
+      <pubDate>Tue, 06 Jan 2015 22:49:08 +0100</pubDate>
       
-      <guid>http://www.gordonburgett.net/categories/reclaimed/</guid>
+      <guid>http://www.gordonburgett.net/categories/golang/</guid>
       <description></description>
     </item>
     

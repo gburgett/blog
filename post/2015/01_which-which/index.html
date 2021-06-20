@@ -108,25 +108,14 @@
         <div class="post">
           <h1>which which?</h1>
           <span class="post-date">Tue, Jan 6, 2015</span>
-          
-
-<p>I&rsquo;m using <a href="http://locomotivecms.com/">locomotivecms</a> for a project I&rsquo;m working on, and it uses <a href="http://www.imagemagick.org/">ImageMagick</a> for resizing pictures on the fly.  The <a href="http://doc.locomotivecms.com/get-started/install-wagon#windows">standard instructions</a> say to use the bitnami Ruby stack installer to get everything you need in a nice neat bundle.</p>
-
+          <p>I&rsquo;m using <a href="http://locomotivecms.com/">locomotivecms</a> for a project I&rsquo;m working on, and it uses <a href="http://www.imagemagick.org/">ImageMagick</a> for resizing pictures on the fly.  The <a href="http://doc.locomotivecms.com/get-started/install-wagon#windows">standard instructions</a> say to use the bitnami Ruby stack installer to get everything you need in a nice neat bundle.</p>
 <p>That worked for me for a while, until I needed to update the version of ruby I&rsquo;m using.  So, I went through the long and painful process of uninstalling the ruby stack, installing each component individually, identifying and correcting a ton of minor problems, and finally squashed the last bug by writing this program.</p>
-
 <p>Essentially, the command <code>bundle exec wagon serve</code> looks up the location of ImageMagick&rsquo;s <code>convert.exe</code> program by invoking <code>which convert</code>, which only works on linux systems, or if you&rsquo;re using a port like unxutils.  So, once I got ruby working and was self-hosting my site for development, none of my resized images were showing up.  The console showed this error message:</p>
-
-<pre><code class="language-sh">which: no convert in (...;C:\Program Files\ImageMagick-6.9.0-Q16;...)
-</code></pre>
-
-<p>So GNU which v2.4 for some reason can&rsquo;t find convert.exe inside the ImageMagick install.  After playing with it, I found that <code>which convert.exe</code> worked, but <code>which convert</code> didn&rsquo;t.  Very lame.</p>
-
-<h3 id="cause-i-still-haven-t-found-what-i-m-looking-for">♪ Cause I still haven&rsquo;t found what I&rsquo;m looking for&hellip; ♪</h3>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">which: no convert in <span style="color:#f92672">(</span>...;C:<span style="color:#ae81ff">\P</span>rogram Files<span style="color:#ae81ff">\I</span>mageMagick-6.9.0-Q16;...<span style="color:#f92672">)</span>
+</code></pre></div><p>So GNU which v2.4 for some reason can&rsquo;t find convert.exe inside the ImageMagick install.  After playing with it, I found that <code>which convert.exe</code> worked, but <code>which convert</code> didn&rsquo;t.  Very lame.</p>
+<h3 id="-cause-i-still-havent-found-what-im-looking-for-">♪ Cause I still haven&rsquo;t found what I&rsquo;m looking for&hellip; ♪</h3>
 <p>The next couple hours were an adventure in dirty hacks.  First I tried removing GNU which off the path, and using MSYS which.  MSYS which is a shell script, so I made a batch file wrapper to invoke it using MSYS sh.  That could find the file, but it resulted in a unix-style path: <code>/c/Program Files/ImageMagick-6.9.0-Q16/convert</code>.  Since wagon is feeding this path directly into a <code>cmd /c</code> invocation, it wasn&rsquo;t good enough.</p>
-
 <p>After unsuccessfully playing with writing a batch script to invoke <code>where</code>, I decided to write a clone of <code>which</code> in go.  This accomplished two objectives: fix my locomotivecms install, and learn go.  The requirements are very simple, the command <code>which convert</code> should return a string that can be passed to <code>cmd /c</code> to invoke ImageMagick&rsquo;s convert.exe.</p>
-
 <p>It took me 2-3 hours to do, but here is my first complete go program! <a href="https://github.com/gburgett/which">https://github.com/gburgett/which</a></p>
 
         </div>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Development on first things first</title>
@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All content © Gordon Burgett, 2014-2015</copyright>
-    <lastBuildDate>Sun, 20 May 2018 14:52:15 -0500</lastBuildDate>
-    
-	<atom:link href="http://www.gordonburgett.net/tags/development/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 20 May 2018 14:52:15 -0500</lastBuildDate><atom:link href="http://www.gordonburgett.net/tags/development/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Feeling Like I&#39;m at Hogwarts</title>
       <link>http://www.gordonburgett.net/post/2018/05_enrolled_at_hogwarts/</link>
@@ -19,7 +15,7 @@
       
       <guid>http://www.gordonburgett.net/post/2018/05_enrolled_at_hogwarts/</guid>
       <description>I spent some time this week playing with Typescript 2.8&amp;rsquo;s new features for modeling various complex types. The new syntax that I wanted to play with was the conditional type syntax,
-T extends U ? X : Y  This syntax allows you to express some really crazy type relationships! Some of the most interesting ones have been pre-defined in the Typescript standard lib:
+T extends U ? X : Y This syntax allows you to express some really crazy type relationships! Some of the most interesting ones have been pre-defined in the Typescript standard lib:
  Exclude&amp;lt;T, U&amp;gt; – Exclude from T those types that are assignable to U.</description>
     </item>
     
@@ -109,7 +105,7 @@ That worked for me for a while, until I needed to update the version of ruby I&a
       
       <guid>http://www.gordonburgett.net/post/2014/12_hosting-the-blog/</guid>
       <description>I decided to use Amazon EC2 to host the blog, because they give you 1 year free on a micro instance. Plus I&amp;rsquo;ve always wanted to learn how to host something on Amazon&amp;rsquo;s cloud. I&amp;rsquo;ll get a linux instance and put an Apache HTTP server on it. Should be easy enough to do.
-Here&amp;rsquo;s my EC2 management console after signing up for an Amazon account and creating a linux micro instance: It took a bit to then be able to log in.</description>
+Here&amp;rsquo;s my EC2 management console after signing up for an Amazon account and creating a linux micro instance: !</description>
     </item>
     
     <item>

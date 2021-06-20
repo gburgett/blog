@@ -1,17 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Journal on first things first</title>
+    <title>journal on first things first</title>
     <link>http://www.gordonburgett.net/sq/tags/journal/</link>
-    <description>Recent content in Journal on first things first</description>
+    <description>Recent content in journal on first things first</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All content © Gordon Burgett, 2014-2015</copyright>
-    <lastBuildDate>Mon, 10 Jul 2017 21:36:09 -0500</lastBuildDate>
-    
-	<atom:link href="http://www.gordonburgett.net/sq/tags/journal/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 10 Jul 2017 21:36:09 -0500</lastBuildDate><atom:link href="http://www.gordonburgett.net/sq/tags/journal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ditar • 2017</title>
       <link>http://www.gordonburgett.net/sq/albania/2017/</link>

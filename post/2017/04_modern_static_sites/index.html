@@ -108,203 +108,139 @@
         <div class="post">
           <h1>Modern Static Sites</h1>
           <span class="post-date">Thu, Apr 20, 2017</span>
-          
-
-<p>Today in 2017, there are a thousand and one different ways to build a website.  As always there&rsquo;s good old fashioned <a href="https://wordpress.com">Wordpress</a>, and of course there&rsquo;s drag-n-drop website builders like <a href="http://www.wix.com">Wix</a>.  One thing these have in common is that they need a traditional hosting environment, and for that you gotta pay.</p>
-
+          <p>Today in 2017, there are a thousand and one different ways to build a website.  As always there&rsquo;s good old fashioned <a href="https://wordpress.com">Wordpress</a>, and of course there&rsquo;s drag-n-drop website builders like <a href="http://www.wix.com">Wix</a>.  One thing these have in common is that they need a traditional hosting environment, and for that you gotta pay.</p>
 <p>If you can manage it, the cheapest way to host a website nowadays is to create a static HTML site.  But don&rsquo;t hand-craft HTML, that&rsquo;s hard and boring.  Use a static site generator, for fun and profit!</p>
-
 <p><a href="#now-the-fun-part-spicing-up-the-javascript">Skip over the part about setting up Hugo</a></p>
-
 <h2 id="building-a-website-the-fun-way">Building a website the fun way</h2>
-
 <p>There&rsquo;s a whole ton of static site builders out there nowadays, written in all sorts of different languages.  This blog is written with <a href="https://gohugo.io">Hugo</a>.  Hugo is super easy to install on windows, mac and linux as well as being easy to get started with.  If you want a bit more control you can use <a href="https://jekyllrb.com">Jekyll</a> instead and even write custom plugins.  The point is to separate out your content from your presentation, so that you can more easily &ldquo;just write&rdquo;, and let the static site generator make your website.</p>
-
 <h4 id="separate-my-what-from-my-wha">Separate my what from my wha?</h4>
-
 <p>Every website is made up of 3 parts: Content, Presentation, and Data.  In a blog, your Content is your articles, events, images, etc.  It&rsquo;s stuff that you upload to present to your readers.  Data is things like comments, event regestrations, messages, user-uploaded images.  When your readers submit things to you and you have to store them somewhere.  Presentation is how you put all those things together to display them.  This includes themes, site layout, menus.</p>
-
 <p>Every website builder needs to deal with those 3 parts and combine them together to display the website.  It also needs to allow the content creators (you &amp; your friends/employees) to change the content, and to allow the web designers (you again for your personal blog, or the maintainer of the theme you chose) to edit the HTML and CSS styles.  Wordpress solves this problem on the server.  Content and Data are pulled from the SQL database and combined with the theme files in order to generate the webpage on request.  There&rsquo;s an admin section at <code>/wp-admin</code> which allows anyone with the correct password to change the Content, Data, and Presentation.  All of this happens on the web server</p>
-
 <p>A static site generator does this in a completely different way.  First, it does away with the Data part entirely.  You can still have a site with Data, but you have to combine the statically-generated site with another service.  Then, the Content and Presentation are combined <em>on your laptop</em>.  You run the static site generator once, and it produces the resulting HTML, Javascript, and CSS in a folder for you to upload to your web server.  No more PHP, no more MySql, you only need Apache.</p>
-
 <p>A static site is more secure, because the web server doesn&rsquo;t need to receive any Data from the user.  It doesn&rsquo;t have a <code>/wp-admin</code> section where a hacker can steal your admin password.  It only has an FTP or SSH connection which you use to upload your changes to the server.</p>
-
 <h4 id="but-then-how-do-you-do-cool-things">But then how do you do cool things?</h4>
-
 <p>The answer is Javascript.  And now that it&rsquo;s 2017, Javascript has gotten to be pretty cool.</p>
-
 <h3 id="step-1-get-hugo-and-create-a-site">Step 1: get Hugo and create a site.</h3>
-
 <p><a href="https://gohugo.io">Hugo</a> is a command-line tool.  That means you have to open up the Command Prompt to use it.  I&rsquo;ll show you how it&rsquo;s done in linux, but all of this applies to Windows too.  Go to the downloads page of Hugo and install the version for your system.  When you&rsquo;re done you should be able to open the Command Prompt or Terminal and type the following:</p>
-
-<pre><code class="language-bash">❯ hugo version  
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">❯ hugo version  
 Hugo Static Site Generator v0.19 linux/amd64 BuildDate: 2017-02-27T13:38:34+01:00
-</code></pre>
-
-<p>Now you can make a new website using the command <code>hugo new site [website name]</code>.  This creates a basic hugo site structure.  Now you need a theme.  Browse to <a href="http://themes.gohugo.io">themes.gohugo.io</a> and download one, then extract it into your themes directory.  For example, if you chose the &ldquo;Beautiful Hugo&rdquo; theme, it should go in a folder called &ldquo;beautifulHugo&rdquo; inside the &ldquo;themes&rdquo; directory in your site.  Then you need go back to your root folder and change <code>config.toml</code> to use that theme.  You can have as many themes as you want in your themes directory, and choose between them in <code>config.toml</code>.</p>
-
-<p><img src="/.640x/images/modern_static_sites/hugo_new_site.gif" alt="hugo new site example" /></p>
-
-<pre><code class="language-bash">❯ ls -l themes/beautifulhugo 
-total 40
-drwx------ 2 gordon gordon 4096 Apr 20 14:42 archetypes
-drwx------ 3 gordon gordon 4096 Apr 20 14:42 data
-drwx------ 5 gordon gordon 4096 Apr 20 14:42 exampleSite
-drwx------ 2 gordon gordon 4096 Apr 20 14:42 i18n
-drwx------ 2 gordon gordon 4096 Apr 20 14:42 images
-drwx------ 7 gordon gordon 4096 Apr 20 14:42 layouts
--rw-r--r-- 1 gordon gordon 1140 Apr 17 05:47 LICENSE
--rw-r--r-- 1 gordon gordon 2495 Apr 17 05:47 README.md
-drwx------ 5 gordon gordon 4096 Apr 20 14:42 static
--rw-r--r-- 1 gordon gordon  588 Apr 17 05:47 theme.toml
-</code></pre>
-
-<pre><code class="language-toml">languageCode = &quot;en-us&quot;
-title = &quot;My New Hugo Site&quot;
-baseURL = &quot;http://example.org/&quot;
-theme = &quot;beautifulhugo&quot;  # This should exactly match the name of the folder in your themes directory
-</code></pre>
-
-<p>Now if you run <code>hugo server</code> you can look at a preview of your new site at <code>http://localhost:1313</code>.  It should look like this because you have no content:</p>
-
-<p><img src="/.640x/images/modern_static_sites/new_site.png" alt="new site image" /></p>
-
+</code></pre></div><p>Now you can make a new website using the command <code>hugo new site [website name]</code>.  This creates a basic hugo site structure.  Now you need a theme.  Browse to <a href="http://themes.gohugo.io">themes.gohugo.io</a> and download one, then extract it into your themes directory.  For example, if you chose the &ldquo;Beautiful Hugo&rdquo; theme, it should go in a folder called &ldquo;beautifulHugo&rdquo; inside the &ldquo;themes&rdquo; directory in your site.  Then you need go back to your root folder and change <code>config.toml</code> to use that theme.  You can have as many themes as you want in your themes directory, and choose between them in <code>config.toml</code>.</p>
+<p><img src="/.640x/images/modern_static_sites/hugo_new_site.gif" alt="hugo new site example"></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">❯ ls -l themes/beautifulhugo 
+total <span style="color:#ae81ff">40</span>
+drwx------ <span style="color:#ae81ff">2</span> gordon gordon <span style="color:#ae81ff">4096</span> Apr <span style="color:#ae81ff">20</span> 14:42 archetypes
+drwx------ <span style="color:#ae81ff">3</span> gordon gordon <span style="color:#ae81ff">4096</span> Apr <span style="color:#ae81ff">20</span> 14:42 data
+drwx------ <span style="color:#ae81ff">5</span> gordon gordon <span style="color:#ae81ff">4096</span> Apr <span style="color:#ae81ff">20</span> 14:42 exampleSite
+drwx------ <span style="color:#ae81ff">2</span> gordon gordon <span style="color:#ae81ff">4096</span> Apr <span style="color:#ae81ff">20</span> 14:42 i18n
+drwx------ <span style="color:#ae81ff">2</span> gordon gordon <span style="color:#ae81ff">4096</span> Apr <span style="color:#ae81ff">20</span> 14:42 images
+drwx------ <span style="color:#ae81ff">7</span> gordon gordon <span style="color:#ae81ff">4096</span> Apr <span style="color:#ae81ff">20</span> 14:42 layouts
+-rw-r--r-- <span style="color:#ae81ff">1</span> gordon gordon <span style="color:#ae81ff">1140</span> Apr <span style="color:#ae81ff">17</span> 05:47 LICENSE
+-rw-r--r-- <span style="color:#ae81ff">1</span> gordon gordon <span style="color:#ae81ff">2495</span> Apr <span style="color:#ae81ff">17</span> 05:47 README.md
+drwx------ <span style="color:#ae81ff">5</span> gordon gordon <span style="color:#ae81ff">4096</span> Apr <span style="color:#ae81ff">20</span> 14:42 static
+-rw-r--r-- <span style="color:#ae81ff">1</span> gordon gordon  <span style="color:#ae81ff">588</span> Apr <span style="color:#ae81ff">17</span> 05:47 theme.toml
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#34;en-us&#34;</span>
+<span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;My New Hugo Site&#34;</span>
+<span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#34;http://example.org/&#34;</span>
+<span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;beautifulhugo&#34;</span>  <span style="color:#75715e"># This should exactly match the name of the folder in your themes directory</span>
+</code></pre></div><p>Now if you run <code>hugo server</code> you can look at a preview of your new site at <code>http://localhost:1313</code>.  It should look like this because you have no content:</p>
+<p><img src="/.640x/images/modern_static_sites/new_site.png" alt="new site image"></p>
 <h3 id="step-2-adding-content-and-images">Step 2: Adding content and images</h3>
-
 <p><a href="http://gohugo.io/overview/quickstart/">Hugo has a great tutorial</a> on how to build your site and add content.  Seriously, read through it.  The awesome thing about hugo is that all content is markdown files.  Markdown makes it super easy to just write, and you can worry about presentation later.</p>
-
 <p>All content goes in the <code>content/</code> folder, and the way it is organized within that folder affects where it is on the website.  Most websites, especially blogs like this one, have a <code>post/</code> category.  For example, this blog post is in the file <code>content/post/2017/04_modern_static_sites.md</code>.  <a href="https://github.com/gburgett/blog/blob/master/content/post/2017/04_modern_static_sites.md">Check out the raw content of this post here</a> to see an example.  All images are stored in the <code>static/images</code> folder.  Then you just reference them with the URL path <code>/images/my_image.jpg</code>.  Everything in the <code>static</code> folder actually gets copied directly to the output folder, so you can put anything you want in there.</p>
-
 <h3 id="step-3-adding-javascript-and-css">Step 3: Adding Javascript and CSS</h3>
-
 <p>You put your custom CSS and Javascript in the <code>static/</code> folder.  The trick now is to reference it.  Your theme already references some CSS and JavaScript, and if you want you can override those references.  If you name your CSS or JS files the same thing as the theme does, then your files will win.  However, then you lose the theme&rsquo;s stylings, which is not good.  It&rsquo;s better to override a layout file to include your custom CSS and JS.</p>
-
 <p>Layouts are how you tell Hugo what HTML to build out of your content.  Your theme already comes with layouts though you can always add more.  Here we&rsquo;ll override two layouts in order to add our CSS and JS.  The &ldquo;beautifulhugo&rdquo; theme has two custom layout files called <code>head_custom.html</code> and <code>footer_custom.html</code> (a different theme will have different layouts, you need to crack open the files and figure out which one you want to override).  They are in <code>my-awesome-site/themes/beautifulhugo/layouts/partials/</code>.  You need to copy those to the root folder, <code>my-awesome-site/themes/partials/head_custom.html</code> and <code>my-awesome-site/themes/partials/footer_custom.html</code>.</p>
-
 <p>Now open up those files and add in a reference to your scripts and css.  If you want to see a working example, <a href="https://github.com/gburgett/blog/blob/master/layouts/partials/script.html">here is the file I overwrote to add in custom scripts to my blog</a>.  My blog uses the hugo-uno theme, so I needed to overwrite the <code>script.html</code> file.</p>
-
 <h3 id="step-4-building-and-hosting-the-site">Step 4: Building and hosting the site</h3>
-
 <p>You can host your site anywhere, from a normal host like Hostgator to even <a href="http://www.dropboxwiki.com/tips-and-tricks/host-websites-with-dropbox">exposing a Dropbox folder as a website</a>.  If you have an account on Github, they provide &ldquo;Github Pages&rdquo;, which is free hosting for static sites.  <a href="https://gohugo.io/tutorials/github-pages-blog/">Hugo even has a tutorial on how to host using Github Pages</a>.  This is one of the great reasons to use a static site generator, you can host your website literally anywhere!</p>
-
 <p>If you have an existing webserver, all you have to do is run the <code>hugo</code> command, then using FTP upload the <code>public/</code> folder to your web server.  No PHP or MySql configuration necessary!</p>
-
-<h2 id="now-the-fun-part-spicing-up-the-javascript">Now the fun part - Spicing up the Javascript</h2>
-
+<h2 id="now-the-fun-part---spicing-up-the-javascript">Now the fun part - Spicing up the Javascript</h2>
 <p>The inspiration for this post is <a href="https://crualbaniadigital.gitlab.io">a new website I&rsquo;m working on for CRU Albania</a>.  We&rsquo;re using Hugo for that website too, but I wanted to do a little more with the Javascript and CSS.  Modern websites don&rsquo;t use raw Javascript and CSS anymore, they use preprocessors and bundlers like <a href="http://sass-lang.com/guide">Sass</a> and <a href="https://webpack.js.org/">Webpack</a>.  So instead of writing CSS I&rsquo;ll be writing Sass, and instead of using Javascript I&rsquo;ll be writing <a href="http://www.typescriptlang.org/">Typescript</a>.  Now since all of this gets transformed into CSS and Javascript by pre-processors, I can still use it along with Hugo to create a completely static site.</p>
-
 <p>I started with the <a href="https://github.com/netlify/victor-hugo">victor-hugo template on Github</a>.  This template uses <a href="http://gulpjs.com/">Gulp</a> to automate the process of running all the pre-processors, and producing the output.  The <a href="https://github.com/netlify/victor-hugo/blob/master/gulpfile.babel.js">provided gulpfile</a> runs Webpack on the &ldquo;js&rdquo; task, and Postcss on the &ldquo;css&rdquo; task.  The outputs of those tasks are put directly into the <code>public/</code> folder, the same place where Hugo puts its content.  The &ldquo;build&rdquo; task depends on those two tasks and also the &ldquo;hugo&rdquo; task, which calls hugo to build the site into the <code>public/</code> directory.  So simply running <code>gulp build</code> combines these pre-processors to build the static site.</p>
-
 <p><a href="https://gitlab.com/crualbaniadigital/crualbaniadigital.gitlab.io">Follow along with the code on Gitlab</a></p>
-
 <h4 id="using-sass-to-preprocess-the-css">Using Sass to preprocess the CSS</h4>
-
 <p>The first thing I did was change the css task to use Sass instead.  It also uses <code>cssnano</code> to minimize the resulting CSS.  Then it writes it out to the &lsquo;static/generated-css&rsquo; directory instead of directly to public.  This way I can check it in to Git, and Hugo will copy it to the output directory when it runs.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#34;css&#34;</span>, <span style="color:#a6e22e">buildCss</span>);
 
-<pre><code class="language-js">gulp.task(&quot;css&quot;, buildCss);
-
-function buildCss(onError) {
-  return gulp.src(&quot;./src/css/*.*css&quot;)
-    .pipe(sass().on('error', onError || sass.logError))
-    .pipe(gulp.dest('./static/generated-css'))
-    .pipe(cssnano().on('error', onError || gutil.log))
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(gulp.dest('./static/generated-css'))
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">buildCss</span>(<span style="color:#a6e22e">onError</span>) {
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#34;./src/css/*.*css&#34;</span>)
+    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">sass</span>().<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;error&#39;</span>, <span style="color:#a6e22e">onError</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">sass</span>.<span style="color:#a6e22e">logError</span>))
+    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;./static/generated-css&#39;</span>))
+    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">cssnano</span>().<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;error&#39;</span>, <span style="color:#a6e22e">onError</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">gutil</span>.<span style="color:#a6e22e">log</span>))
+    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">rename</span>({ <span style="color:#a6e22e">suffix</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;.min&#39;</span> }))
+    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;./static/generated-css&#39;</span>))
   }
-</code></pre>
-
-<h4 id="using-webpack-to-transform-typescript-into-javascript">Using Webpack to transform Typescript into Javascript</h4>
-
+</code></pre></div><h4 id="using-webpack-to-transform-typescript-into-javascript">Using Webpack to transform Typescript into Javascript</h4>
 <p>Then I changed the webpack config to use Typescript.  The key part is using <a href="https://github.com/s-panferov/awesome-typescript-loader">awesome-typescript-loader</a> to compile the typescript so that Webpack can use it.  Here&rsquo;s the relevant section of the webpack config file:</p>
-
-<pre><code class="language-json">module: {
-  loaders: [
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="color:#960050;background-color:#1e0010">module:</span> {
+  <span style="color:#960050;background-color:#1e0010">loaders:</span> <span style="color:#960050;background-color:#1e0010">[</span>
+    <span style="color:#960050;background-color:#1e0010">{</span>
+      <span style="color:#960050;background-color:#1e0010">test:</span> <span style="color:#960050;background-color:#1e0010">/\.((png)|(eot)|(woff)|(woff2)|(ttf)|(svg)|(gif))(\?v=\d+\.\d+\.\d+)?$/,</span>
+      <span style="color:#960050;background-color:#1e0010">loader:</span> <span style="color:#f92672">&#34;file?name=/[hash].[ext]&#34;</span>
+    }<span style="color:#960050;background-color:#1e0010">,</span>
+    {<span style="color:#960050;background-color:#1e0010">test:</span> <span style="color:#960050;background-color:#1e0010">/\.json$/,</span> <span style="color:#960050;background-color:#1e0010">loader:</span> <span style="color:#f92672">&#34;json-loader&#34;</span>}<span style="color:#960050;background-color:#1e0010">,</span>
     {
-      test: /\.((png)|(eot)|(woff)|(woff2)|(ttf)|(svg)|(gif))(\?v=\d+\.\d+\.\d+)?$/,
-      loader: &quot;file?name=/[hash].[ext]&quot;
-    },
-    {test: /\.json$/, loader: &quot;json-loader&quot;},
+      <span style="color:#960050;background-color:#1e0010">loader:</span> <span style="color:#f92672">&#34;babel-loader&#34;</span>,
+      <span style="color:#960050;background-color:#1e0010">test:</span> <span style="color:#960050;background-color:#1e0010">/\.js?$/,</span>
+      <span style="color:#960050;background-color:#1e0010">exclude:</span> <span style="color:#960050;background-color:#1e0010">/node_modules/,</span>
+      <span style="color:#960050;background-color:#1e0010">query:</span> <span style="color:#960050;background-color:#1e0010">{cacheDirectory:</span> <span style="color:#960050;background-color:#1e0010">true</span>}
+    <span style="color:#960050;background-color:#1e0010">},</span>
     {
-      loader: &quot;babel-loader&quot;,
-      test: /\.js?$/,
-      exclude: /node_modules/,
-      query: {cacheDirectory: true}
-    },
-    {
-      loaders: [&quot;babel-loader&quot;, &quot;awesome-typescript-loader&quot;],
-      test: /\.tsx?$/,
-      exclude: /node_modules/
+      <span style="color:#960050;background-color:#1e0010">loaders:</span> <span style="color:#960050;background-color:#1e0010">[</span><span style="color:#f92672">&#34;babel-loader&#34;</span>, <span style="color:#f92672">&#34;awesome-typescript-loader&#34;</span><span style="color:#960050;background-color:#1e0010">]</span>,
+      <span style="color:#960050;background-color:#1e0010">test:</span> <span style="color:#960050;background-color:#1e0010">/\.tsx?$/,</span>
+      <span style="color:#960050;background-color:#1e0010">exclude:</span> <span style="color:#960050;background-color:#1e0010">/node_modules/</span>
     }
-  ]
-},
-</code></pre>
-
-<p>Notice that you put the <code>babel-loader</code> in front of <code>awesome-typescript-loader</code> in the loader chain.  This is because in this project the <code>tsconfig.json</code> file tells typescript to target the ES2015 version of Javascript, so we use babel in order to translate that version into older versions for older browsers.</p>
-
+  <span style="color:#960050;background-color:#1e0010">]</span>
+<span style="color:#960050;background-color:#1e0010">},</span>
+</code></pre></div><p>Notice that you put the <code>babel-loader</code> in front of <code>awesome-typescript-loader</code> in the loader chain.  This is because in this project the <code>tsconfig.json</code> file tells typescript to target the ES2015 version of Javascript, so we use babel in order to translate that version into older versions for older browsers.</p>
 <p>The webpack config file also tells webpack to put the output file in the <code>static/generated-js</code> folder, for the same reason that the CSS goes there.</p>
-
 <h4 id="preprocessing-images-with-gulp">Preprocessing images with gulp</h4>
-
 <p>One thing to watch out for with a static site is your image size.  Wordpress isn&rsquo;t there with a convenient plugin to prevent you from uploading a huge image.  If you&rsquo;re not careful you can really blow up someone&rsquo;s mobile bandwidth with a gigantic 300 megabyte banner image.  This is important for my use case especially because other people will be writing blog posts for this website, and if they upload a huge image I want to automatically have it be resized before it&rsquo;s put on the web.</p>
-
 <p>Fortunately there&rsquo;s <a href="https://www.npmjs.com/package/gulp-image-resize">gulp-image-resize</a> and <a href="https://www.npmjs.com/package/gulp-imagemin">gulp-imagemin</a>.  These libraries use ImageMagick to resize images inside a gulp task.  I created <a href="https://gitlab.com/CruAlbaniaDigital/crualbaniadigital.gitlab.io/blob/master/gulp/image_tasks.babel.js">a separate file for the image tasks</a> which does the following steps:</p>
-
 <ol>
 <li>Scans for any new jpg, png, gif or svg files in <code>static/images/</code> and backs them up to <code>static/.original_images</code></li>
-<li>For all the original-size images in <code>static/.original_images/</code>:
-
-<ol>
+<li>For all the original-size images in <code>static/.original_images/</code>:</li>
 <li>Checks if the image has already been processed, i.e. the corresponding file in <code>static/images/</code> is not the same size</li>
 <li>If it&rsquo;s not already been processed, runs <code>imageResize</code> and <code>imagemin</code> to compress it down to 640px wide.</li>
-</ol></li>
 </ol>
-
 <p>After this task, the original images are stored in <code>static/.original_images/</code> and the ones in <code>static/images</code> are reprocessed and resized down to a reasonable size.  Now, since the original images are also stored on the server, we can serve them up to the user if they have a screen big enough to make use of them.  How do we determine that?  Javascript!</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;img&#39;</span>).<span style="color:#a6e22e">each</span>(<span style="color:#66d9ef">function</span>() {
+  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">attr</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">$</span>(<span style="color:#66d9ef">this</span>).<span style="color:#a6e22e">attr</span>(<span style="color:#e6db74">&#39;src&#39;</span>)
 
-<pre><code class="language-js">$('img').each(function() {
-  const attr = $(this).attr('src')
+  <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">attr</span> <span style="color:#f92672">!==</span> <span style="color:#66d9ef">typeof</span> <span style="color:#66d9ef">undefined</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">attr</span> <span style="color:#a6e22e">as</span> <span style="color:#a6e22e">any</span> <span style="color:#f92672">!==</span> <span style="color:#66d9ef">false</span>) {
+    <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>window.<span style="color:#a6e22e">matchMedia</span> <span style="color:#f92672">||</span> <span style="color:#f92672">!</span>window.<span style="color:#a6e22e">matchMedia</span>(<span style="color:#e6db74">&#39;(max-width: 640px)&#39;</span>).<span style="color:#a6e22e">matches</span>) {
+        <span style="color:#75715e">// This is not an iPhone, try to load the larger image
+</span><span style="color:#75715e"></span>
+      <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">location</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">URI</span>(<span style="color:#a6e22e">attr</span>)
+      <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">hostname</span>() <span style="color:#f92672">===</span> <span style="color:#e6db74">&#39;&#39;</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">hostname</span>() <span style="color:#f92672">===</span> window.<span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">hostname</span>) {
+            <span style="color:#75715e">// it&#39;s a locally sourced image, if it&#39;s in the /images/ directory load from /.original_images/ instead
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">path</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">path</span>().<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#39;/&#39;</span>)
+        <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">path</span>[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">===</span> <span style="color:#e6db74">&#39;images&#39;</span>) {
+          <span style="color:#a6e22e">path</span>[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;.original_images&#39;</span>
+          <span style="color:#a6e22e">location</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">path</span>(<span style="color:#a6e22e">path</span>.<span style="color:#a6e22e">join</span>(<span style="color:#e6db74">&#39;/&#39;</span>))
+          <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">src</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">normalize</span>().<span style="color:#a6e22e">href</span>()
 
-  if (typeof attr !== typeof undefined &amp;&amp; attr as any !== false) {
-    if (!window.matchMedia || !window.matchMedia('(max-width: 640px)').matches) {
-        // This is not an iPhone, try to load the larger image
-
-      let location = new URI(attr)
-      if (location.hostname() === '' || location.hostname() === window.location.hostname) {
-            // it's a locally sourced image, if it's in the /images/ directory load from /.original_images/ instead
-        const path = location.path().split('/')
-        if (path[1] === 'images') {
-          path[1] = '.original_images'
-          location = location.path(path.join('/'))
-          const src = location.normalize().href()
-
-            // preload with a detached Image element, and set it on the dom only if it succeedes.
-          const $this = $(this)
-          const i = new Image()
-          i.onload = () =&gt; {
-            $this.attr('src', src)
+            <span style="color:#75715e">// preload with a detached Image element, and set it on the dom only if it succeedes.
+</span><span style="color:#75715e"></span>          <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">$this</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">$</span>(<span style="color:#66d9ef">this</span>)
+          <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Image</span>()
+          <span style="color:#a6e22e">i</span>.<span style="color:#a6e22e">onload</span> <span style="color:#f92672">=</span> () =&gt; {
+            <span style="color:#a6e22e">$this</span>.<span style="color:#a6e22e">attr</span>(<span style="color:#e6db74">&#39;src&#39;</span>, <span style="color:#a6e22e">src</span>)
           }
-          i.onerror = (ev) =&gt; {
-            console.log('Error prefetching image ', location, ev)
+          <span style="color:#a6e22e">i</span>.<span style="color:#a6e22e">onerror</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">ev</span>) =&gt; {
+            <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Error prefetching image &#39;</span>, <span style="color:#a6e22e">location</span>, <span style="color:#a6e22e">ev</span>)
           }
-          i.src = src  // start loading
-        }
+          <span style="color:#a6e22e">i</span>.<span style="color:#a6e22e">src</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">src</span>  <span style="color:#75715e">// start loading
+</span><span style="color:#75715e"></span>        }
       }
     }
   }
 
-  return true
+  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span>
 })
-</code></pre>
-
-<p>This little baby is in <a href="https://gitlab.com/crualbaniadigital/crualbaniadigital.gitlab.io/blob/master/src/js/app.ts">src/js/app.ts</a> and runs over every <code>&lt;img &gt;</code> tag.  Using this line <code>window.matchMedia('(max-width: 640px)').matches</code> it checks if the current screen is wider than 640px.  If it is, then it replaces all hrefs that point to <code>/images/</code> with ones that point to <code>/.original-images</code>.  What this means is that phone screens which are less than 640px wide will only see the compressed images, while people on laptops and desktop computers will download the full image in all its glory.  This way we don&rsquo;t blow up the bandwidth of phone users.</p>
-
-<h4 id="here-s-how-it-looks-when-you-run-gulp-to-build-the-site">Here&rsquo;s how it looks when you run Gulp to build the site</h4>
-
-<p><img src="/images/modern_static_sites/gulp_output.gif" alt="gulp output gif" /></p>
-
+</code></pre></div><p>This little baby is in <a href="https://gitlab.com/crualbaniadigital/crualbaniadigital.gitlab.io/blob/master/src/js/app.ts">src/js/app.ts</a> and runs over every <code>&lt;img &gt;</code> tag.  Using this line <code>window.matchMedia('(max-width: 640px)').matches</code> it checks if the current screen is wider than 640px.  If it is, then it replaces all hrefs that point to <code>/images/</code> with ones that point to <code>/.original-images</code>.  What this means is that phone screens which are less than 640px wide will only see the compressed images, while people on laptops and desktop computers will download the full image in all its glory.  This way we don&rsquo;t blow up the bandwidth of phone users.</p>
+<h4 id="heres-how-it-looks-when-you-run-gulp-to-build-the-site">Here&rsquo;s how it looks when you run Gulp to build the site</h4>
+<p><img src="/images/modern_static_sites/gulp_output.gif" alt="gulp output gif"></p>
 <h2 id="conclusion">Conclusion</h2>
-
 <p>Static site generators are great, and they get even greater when you combine them with Javascript and CSS preprocessors.  Gulp is a great tool that can manage all 3, but you can really use any build system (even GNU Make) to link all these great tools together.  Plus, in the end you can get free hosting on Github or Gitlab!  So, next time you want to make a website with cool javascript functionality, use Hugo!</p>
 
         </div>

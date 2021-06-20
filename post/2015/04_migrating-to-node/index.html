@@ -108,16 +108,10 @@
         <div class="post">
           <h1>Migrating to Node</h1>
           <span class="post-date">Fri, Apr 10, 2015</span>
-          
-
-<h2 id="so-i-wanted-an-app-server">So I wanted an app server.</h2>
-
+          <h2 id="so-i-wanted-an-app-server">So I wanted an app server.</h2>
 <p>How hard could it be right?  Well, not really that hard at all.</p>
-
 <p>I was tired of having a static site served by apache.  I want to do some cool stuff with the google APIs, like maybe a form submit where the results end up in a google doc for me.  To do that I need more than hugo&rsquo;s static site generation.  But I didn&rsquo;t want to get rid of hugo because I like a lot of it&rsquo;s features, so I added nodejs on top of it as the application server.</p>
-
 <p>It really wasn&rsquo;t hard to set up.  The most difficult part is thinking through the deployment package.  I decided my .js files will be inside a special <code>/node</code> directory inside <code>static</code>, so hugo will copy them as-is into the output directory <code>/public</code>.  The public directory then looks like this after hugo generates the site:</p>
-
 <pre>
 public/
   | -- node
@@ -127,56 +121,45 @@ public/
   | -- 404.html
   | -- etc...
 </pre>
-
 <p>As it turns out, its pretty easy to set up a web server on node.  I installed a basic web framework called <a href="http://expressjs.com/">express</a> and I was off and running with a 25 line .js file:</p>
-
-<pre><code class="language-javascript">#!/usr/bin/env node
-
-port = 80
-if(process.argv.length &gt; 2){
-	port = parseInt(process.argv[2])
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">#!/usr/bin/env node
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">port</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">80</span>
+<span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">argv</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">2</span>){
+	<span style="color:#a6e22e">port</span> <span style="color:#f92672">=</span> parseInt(<span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">argv</span>[<span style="color:#ae81ff">2</span>])
 }
 
-var express = require('express')
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">express</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;express&#39;</span>)
 
-var app = express()
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">express</span>()
 
-	//hide everything in the node folder
-app.use('/node', function (req, res, next) {
-  res.status(404).sendFile('404.html', {root: process.cwd()});
+	<span style="color:#75715e">//hide everything in the node folder
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#e6db74">&#39;/node&#39;</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>, <span style="color:#a6e22e">next</span>) {
+  <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">404</span>).<span style="color:#a6e22e">sendFile</span>(<span style="color:#e6db74">&#39;404.html&#39;</span>, {<span style="color:#a6e22e">root</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">cwd</span>()});
 })
 
-app.use(express.static('.'))
+<span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#a6e22e">express</span>.<span style="color:#66d9ef">static</span>(<span style="color:#e6db74">&#39;.&#39;</span>))
 
 
-app.use(function(req, res, next) {
-  res.status(404).sendFile('404.html', {root: process.cwd()});
+<span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>, <span style="color:#a6e22e">next</span>) {
+  <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">404</span>).<span style="color:#a6e22e">sendFile</span>(<span style="color:#e6db74">&#39;404.html&#39;</span>, {<span style="color:#a6e22e">root</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">cwd</span>()});
 });
 
-console.log('listening on port ' + port)
-app.listen(port)
-</code></pre>
-
-<p>The big deal is the three <code>app.use(</code> statements in the middle.  The first one hides the /node folder, intercepting any requests and returning a 404 so noone can see the code running my site (important for later when I add fancy things).  The second serves up my whole static site.  It would serve up my js files too if not for the first one.  The third is a 404 handler which responds with my 404.html web page.</p>
-
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;listening on port &#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">port</span>)
+<span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">listen</span>(<span style="color:#a6e22e">port</span>)
+</code></pre></div><p>The big deal is the three <code>app.use(</code> statements in the middle.  The first one hides the /node folder, intercepting any requests and returning a 404 so noone can see the code running my site (important for later when I add fancy things).  The second serves up my whole static site.  It would serve up my js files too if not for the first one.  The third is a 404 handler which responds with my 404.html web page.</p>
 <p>Running it on the actual server box should be easy enough as well.  First I had to go install node, using instructions found <a href="https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager#enterprise-linux-and-fedora">here</a>.  Then I was able to install express using npm.</p>
-
 <p>I put the blog content in ~/blog, and can serve it up from there with <code>sudo node node/server.js</code>.  One important piece was where to put the node_modules directory.  I moved it to <code>~/node_modules</code>, so it&rsquo;s not served up by the static site server, and node can find it there just fine.</p>
-
-<p>Now, I don&rsquo;t want to start the server with sudo every time, because I want the app to run as ec2-user and not as root.  Now that it&rsquo;s no longer just a static site I need to be more worried about security.  Unfortunately ec2-user can&rsquo;t bind to port 80, so I had to do an IPTABLES redirect:<br />
-<code>iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8080</code><br />
-now I can start up the server on 8080 as a normal user, and it all works great:<br />
+<p>Now, I don&rsquo;t want to start the server with sudo every time, because I want the app to run as ec2-user and not as root.  Now that it&rsquo;s no longer just a static site I need to be more worried about security.  Unfortunately ec2-user can&rsquo;t bind to port 80, so I had to do an IPTABLES redirect:<br>
+<code>iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8080</code><br>
+now I can start up the server on 8080 as a normal user, and it all works great:<br>
 <code>node node/server.js 8080</code></p>
-
-<p>One last thing, I want to set up an automated process to monitor my server and reload whenever I upload changes.  I&rsquo;m using <a href="https://github.com/Unitech/pm2">pm2</a> which is a pretty nifty tool:<br />
+<p>One last thing, I want to set up an automated process to monitor my server and reload whenever I upload changes.  I&rsquo;m using <a href="https://github.com/Unitech/pm2">pm2</a> which is a pretty nifty tool: <br>
 <code>pm2 start node/server.js --watch -- 8080</code></p>
-
 <p>And I can see the list of running prcesses with <code>pm2 list</code>, and see details of my server process with <code>pm2 show server</code>.  With the &ldquo;&ndash;watch&rdquo; flag, it automatically detects changes to my files and restarts the process.  I didn&rsquo;t even really have to change my deploy script!</p>
-
-<p><img src="/images/2015/pm2-list-show.png" alt="pm2 list and show" /><br />
+<p><img src="/images/2015/pm2-list-show.png" alt="pm2 list and show"><br>
 <code>pm2 monit</code>:
-<img src="/images/2015/pm2-monitoring.png" alt="pm2 monitoring" /></p>
-
+<img src="/images/2015/pm2-monitoring.png" alt="pm2 monitoring"></p>
 <p>Well, all that was fun.  Now I have the capability through node.js to add more fun features to my blog in the future.  Who knows what crazy things I&rsquo;ll fire up on that thing next?</p>
 
         </div>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on first things first</title>
@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All content © Gordon Burgett, 2014-2015</copyright>
-    <lastBuildDate>Sat, 13 Apr 2019 14:20:14 -0500</lastBuildDate>
-    
-	<atom:link href="http://www.gordonburgett.net/post/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 13 Apr 2019 14:20:14 -0500</lastBuildDate><atom:link href="http://www.gordonburgett.net/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Building on The Foundation</title>
       <link>http://www.gordonburgett.net/post/2019/04_summer_projects_2019/</link>
@@ -19,7 +15,7 @@
       
       <guid>http://www.gordonburgett.net/post/2019/04_summer_projects_2019/</guid>
       <description>According to the grace of God given to me, like a skilled master builder I laid a foundation, and someone else is building upon it. Let each one take care how he builds upon it. For no one can lay a foundation other than that which is laid, which is Jesus Christ. 1 Corinthians 3:10-11
- What is it that we are building together with our partners in Albania?</description>
+ What is it that we are building together with our partners in Albania? Why do you keep supporting me and my team in going back, now for the 7th year in a row?</description>
     </item>
     
     <item>
@@ -39,7 +35,7 @@
       
       <guid>http://www.gordonburgett.net/post/2018/05_enrolled_at_hogwarts/</guid>
       <description>I spent some time this week playing with Typescript 2.8&amp;rsquo;s new features for modeling various complex types. The new syntax that I wanted to play with was the conditional type syntax,
-T extends U ? X : Y  This syntax allows you to express some really crazy type relationships! Some of the most interesting ones have been pre-defined in the Typescript standard lib:
+T extends U ? X : Y This syntax allows you to express some really crazy type relationships! Some of the most interesting ones have been pre-defined in the Typescript standard lib:
  Exclude&amp;lt;T, U&amp;gt; – Exclude from T those types that are assignable to U.</description>
     </item>
     
@@ -146,7 +142,7 @@ Fortunately I just need to request a new certificate from Let&amp;rsquo;s Encryp
       
       <guid>http://www.gordonburgett.net/post/2017/03_tranet_2017/</guid>
       <description>What a great weekend! This past weekend we went to Cyprus for a conference about reaching leaders and influencers for Christ. The group was about 28 people, including 10 professionals, 4 teachers, two businesswomen and a government worker. It was a great time of learning and inspiring our partners to reach their peers for Christ.
-One speaker was a bible teacher who took us through the book of Mark, highlighting the disciples&amp;rsquo; stories and their leadership journeys.</description>
+One speaker was a bible teacher who took us through the book of Mark, highlighting the disciples&#39; stories and their leadership journeys.</description>
     </item>
     
     <item>
@@ -402,8 +398,7 @@ I was tired of having a static site served by apache. I want to do some cool stu
       <pubDate>Mon, 30 Mar 2015 23:14:36 -0500</pubDate>
       
       <guid>http://www.gordonburgett.net/post/2015/03_what-is-love/</guid>
-      <description>What is love? Is it just not hurting me, as the song goes?
-  The scripture has a different definition of love.
+      <description>What is love? Is it just not hurting me, as the song goes?   The scripture has a different definition of love.
  &amp;ldquo;This is My commandment, that you love one another, just as I have loved you. Greater love has no one than this, that one lay down his life for his friends. You are My friends if you do what I command you. No longer do I call you slaves, for the slave does not know what his master is doing; but I have called you friends, for all things that I have heard from My Father I have made known to you.</description>
     </item>
     
@@ -444,7 +439,7 @@ Wien, Österreich We began the trip in Vienna, where we went sightseeing just th
       
       <guid>http://www.gordonburgett.net/post/2014/12_hosting-the-blog/</guid>
       <description>I decided to use Amazon EC2 to host the blog, because they give you 1 year free on a micro instance. Plus I&amp;rsquo;ve always wanted to learn how to host something on Amazon&amp;rsquo;s cloud. I&amp;rsquo;ll get a linux instance and put an Apache HTTP server on it. Should be easy enough to do.
-Here&amp;rsquo;s my EC2 management console after signing up for an Amazon account and creating a linux micro instance: It took a bit to then be able to log in.</description>
+Here&amp;rsquo;s my EC2 management console after signing up for an Amazon account and creating a linux micro instance: !</description>
     </item>
     
     <item>

@@ -1,17 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Search on first things first</title>
+    <title>search on first things first</title>
     <link>http://www.gordonburgett.net/tags/search/</link>
-    <description>Recent content in Search on first things first</description>
+    <description>Recent content in search on first things first</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All content © Gordon Burgett, 2014-2015</copyright>
-    <lastBuildDate>Sun, 23 Jul 2017 17:28:52 +0200</lastBuildDate>
-    
-	<atom:link href="http://www.gordonburgett.net/tags/search/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 23 Jul 2017 17:28:52 +0200</lastBuildDate><atom:link href="http://www.gordonburgett.net/tags/search/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Making a static site searchable</title>
       <link>http://www.gordonburgett.net/post/2017/07_making_a_searchable_static_site/</link>
