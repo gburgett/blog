@@ -7,7 +7,7 @@ menu = "main"
 title = "Albania!  YEEEEHAWWW!"
 navtitle = "Albania"
 type = "albania"
-modal_message = "Yes, the newsletter is still happening even though my STINT has finished :)"
+modal_message = "Yes, the newsletter is still happening even though my STINT has finished!"
 
 +++
 
@@ -15,7 +15,7 @@ Howdy!  My name is Gordon Burgett and I'm going to Albania this summer.  I first
 went in the summer of 2013, and fell in love with both the people and the mission.
 Since that time I’ve been back and forth every summer, and a few stints in between.
 
-This summer, we're continuing the work we've been doing over the past 7+ years.
+We're continuing the work we've been doing over the past 8+ years.
 As the Poland Re:Generation project matures, we're starting to look into new ways
 we can support the native staff and church members in Albania and beyond.  This
 is a great opportunity for us to continue to invest in people whose hearts are
@@ -31,28 +31,13 @@ we are now asking ourselves is, [how can we be part of that support?](https://ww
 is to investigate opportunities to support leaders throughout the year, not just
 during the summer.
 
-One avenue we are investigating is the ministry to college students in Shkodër,
-Albania.  My good friend and former roommate [Pal Hila](https://give.cru.org/0790936)
-lives there, leading the college ministry team.  He has invited myself and Jenn
-Saucier to come take part in that ministry for a week.  Pal and his wife Ueda
-are among those whom we believe God has big plans for; anything we can do to support
-them will be a valuable use of time and resources.
-
-In addition to this, I will be taking part in the Young Professionals ministry
-again this year.  This is another area worth investing in, because the lay leaders
-in the Young Professionals ministry are the key to the next generation of the church.
-They are active, inspired, and trained to take the Gospel to their
-workplaces and friend groups.  Beyond that, they form the core of the next
-generation of church leaders.  We can and must continue to invest in discipling
-them.
-
 # How you can help
 
-By God’s grace, several of those who supported my 2-year STINT have continued to
-be generous over the last year, and most of my support needs for this summer are
-already met!  Any additional funds you see fit to gift to this work will be transferred
-to the Young Professionals ministry in Albania. If you do decide to donate,
-[you can do so here](https://give.cru.org/0746249).
+My wife and I need your financial support to continue serving in Albania.  As my
+time with CRU has come to an end, a new avenue has opened up with our home church,
+Watermark Community Church in Dallas, TX.  We need to raise $2500/ea to make the
+trip every year and have a little left over to help fund the CRU ministries in
+Albania.  [Please consider donating!](https://fcsmnstry.io/oc7/k0hmzWjwXl)
 
 More importantly I need your prayers!  The most effective part of my support comes
 from those who are on their knees pleading beside me before our Father in Heaven,
