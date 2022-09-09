@@ -73,7 +73,7 @@ const filterIfCopyNotSameSize = (findMirror) => new Transform({
  */
 gulp.task('img-make-640x', () => {
         // note- not processing GIFs due to a problem with gif resizing
-  return gulp.src('./static/images/**/*.{jpg,png,svg}')
+  return gulp.src('./static/images/**/*.{jpg,jpeg,png,svg}')
         // filter out files where the copy in the 640x directory has already been processed
       .pipe(filterIfCopyExists(srcToMirror))
 
