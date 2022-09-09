@@ -16,7 +16,7 @@
       <guid>http://www.gordonburgett.net/post/2018/05_enrolled_at_hogwarts/</guid>
       <description>I spent some time this week playing with Typescript 2.8&amp;rsquo;s new features for modeling various complex types. The new syntax that I wanted to play with was the conditional type syntax,
 T extends U ? X : Y This syntax allows you to express some really crazy type relationships! Some of the most interesting ones have been pre-defined in the Typescript standard lib:
- Exclude&amp;lt;T, U&amp;gt; – Exclude from T those types that are assignable to U.</description>
+Exclude&amp;lt;T, U&amp;gt; – Exclude from T those types that are assignable to U.</description>
     </item>
     
   </channel>

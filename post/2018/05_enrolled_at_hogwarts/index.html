@@ -111,8 +111,8 @@
           <p>I spent some time this week playing with <a href="https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-8.html">Typescript 2.8&rsquo;s new features</a>
 for modeling various complex types.  The new syntax that I wanted to play with
 was the conditional type syntax,</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#a6e22e">T</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">U</span> <span style="color:#f92672">?</span> <span style="color:#a6e22e">X</span> : <span style="color:#66d9ef">Y</span>
-</code></pre></div><p>This syntax allows you to express some really crazy type relationships!  Some of
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#a6e22e">T</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">U</span> <span style="color:#f92672">?</span> <span style="color:#a6e22e">X</span> : <span style="color:#66d9ef">Y</span>
+</span></span></code></pre></div><p>This syntax allows you to express some really crazy type relationships!  Some of
 the most interesting ones have been pre-defined in the Typescript standard lib:</p>
 <ul>
 <li><code>Exclude&lt;T, U&gt;</code> – Exclude from T those types that are assignable to U.</li>
@@ -124,130 +124,130 @@ return values from <a href="https://www.contentful.com/developers/docs/reference
 <h2 id="modeling-a-cdn-api-response">Modeling a CDN API response</h2>
 <p>We can break up the raw response into several re-usable sections.  First, all links
 have a common structure that we can model with an <code>ILink</code> type:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
-  <span style="color:#f92672">&#34;sys&#34;</span>: {
-    <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Link&#34;</span>,
-    <span style="color:#f92672">&#34;linkType&#34;</span>: <span style="color:#e6db74">&#34;Entry&#34;</span>,
-    <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;0SUbYs2vZlXjVR6bH6o83O&#34;</span>
-  }
-}
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">ILink</span>&lt;<span style="color:#f92672">Type</span> <span style="color:#a6e22e">extends</span> <span style="color:#a6e22e">string</span>&gt; {
-  <span style="color:#a6e22e">sys</span><span style="color:#f92672">:</span> {
-    <span style="color:#66d9ef">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Link&#39;</span>,
-    <span style="color:#a6e22e">linkType</span>: <span style="color:#66d9ef">Type</span>,
-    <span style="color:#a6e22e">id</span>: <span style="color:#66d9ef">string</span>,
-  },
-}
-</code></pre></div><p>Notice that the ILink is generic over the LinkType.  This lets us have a
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;sys&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Link&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;linkType&#34;</span>: <span style="color:#e6db74">&#34;Entry&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;0SUbYs2vZlXjVR6bH6o83O&#34;</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">ILink</span>&lt;<span style="color:#f92672">Type</span> <span style="color:#a6e22e">extends</span> <span style="color:#a6e22e">string</span>&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">sys</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Link&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">linkType</span>: <span style="color:#66d9ef">Type</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">id</span>: <span style="color:#66d9ef">string</span>,
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Notice that the ILink is generic over the LinkType.  This lets us have a
 <code>ILink&lt;'Entry'&gt;</code> and an <code>ILink&lt;'Space'&gt;</code>, which cannot be assigned to eachother.
 This reflects all the kinds of links that can exist in a response.</p>
 <p>Next let&rsquo;s wrap up the entry Sys field in its own interface:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">ISys</span>&lt;<span style="color:#f92672">Type</span> <span style="color:#a6e22e">extends</span> <span style="color:#a6e22e">string</span>&gt; {
-  <span style="color:#a6e22e">space</span>: <span style="color:#66d9ef">ILink</span><span style="color:#f92672">&lt;</span><span style="color:#e6db74">&#39;Space&#39;</span><span style="color:#f92672">&gt;</span>,
-  <span style="color:#a6e22e">id</span>: <span style="color:#66d9ef">string</span>,
-  <span style="color:#66d9ef">type</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">Type</span>,
-  <span style="color:#a6e22e">createdAt?</span>: <span style="color:#66d9ef">string</span>,
-  <span style="color:#a6e22e">updatedAt?</span>: <span style="color:#66d9ef">string</span>,
-  <span style="color:#a6e22e">revision?</span>: <span style="color:#66d9ef">number</span>,
-  <span style="color:#a6e22e">environment?</span>: <span style="color:#66d9ef">ILink</span><span style="color:#f92672">&lt;</span><span style="color:#e6db74">&#39;Environment&#39;</span><span style="color:#f92672">&gt;</span>,
-  <span style="color:#a6e22e">contentType</span>: <span style="color:#66d9ef">ILink</span><span style="color:#f92672">&lt;</span><span style="color:#e6db74">&#39;ContentType&#39;</span><span style="color:#f92672">&gt;</span>,
-  <span style="color:#a6e22e">locale?</span>: <span style="color:#66d9ef">string</span>,
-}
-</code></pre></div><p>ISys is also generic over the type, so an <code>ISys&lt;'Entry'&gt;</code> and <code>ISys&lt;'Asset'&gt;</code> are
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">ISys</span>&lt;<span style="color:#f92672">Type</span> <span style="color:#a6e22e">extends</span> <span style="color:#a6e22e">string</span>&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">space</span>: <span style="color:#66d9ef">ILink</span><span style="color:#f92672">&lt;</span><span style="color:#e6db74">&#39;Space&#39;</span><span style="color:#f92672">&gt;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">id</span>: <span style="color:#66d9ef">string</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">type</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">Type</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">createdAt?</span>: <span style="color:#66d9ef">string</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">updatedAt?</span>: <span style="color:#66d9ef">string</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">revision?</span>: <span style="color:#66d9ef">number</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">environment?</span>: <span style="color:#66d9ef">ILink</span><span style="color:#f92672">&lt;</span><span style="color:#e6db74">&#39;Environment&#39;</span><span style="color:#f92672">&gt;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">contentType</span>: <span style="color:#66d9ef">ILink</span><span style="color:#f92672">&lt;</span><span style="color:#e6db74">&#39;ContentType&#39;</span><span style="color:#f92672">&gt;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">locale?</span>: <span style="color:#66d9ef">string</span>,
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>ISys is also generic over the type, so an <code>ISys&lt;'Entry'&gt;</code> and <code>ISys&lt;'Asset'&gt;</code> are
 not compatible.</p>
 <p>Now we can define an Entry:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">IEntry</span>&lt;<span style="color:#f92672">TFields</span>&gt; {
-  <span style="color:#a6e22e">sys</span>: <span style="color:#66d9ef">ISys</span><span style="color:#f92672">&lt;</span><span style="color:#e6db74">&#39;Entry&#39;</span><span style="color:#f92672">&gt;</span>,
-  <span style="color:#a6e22e">fields</span>: <span style="color:#66d9ef">TFields</span>
-}
-</code></pre></div><p>and an Asset:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">IAsset</span> {
-  <span style="color:#a6e22e">sys</span>: <span style="color:#66d9ef">ISys</span><span style="color:#f92672">&lt;</span><span style="color:#e6db74">&#39;Asset&#39;</span><span style="color:#f92672">&gt;</span>,
-  <span style="color:#a6e22e">fields</span><span style="color:#f92672">:</span> {
-    <span style="color:#75715e">// TODO: more fields for different asset types
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">title?</span>: <span style="color:#66d9ef">string</span>,
-    <span style="color:#a6e22e">description?</span>: <span style="color:#66d9ef">string</span>,
-    <span style="color:#a6e22e">file</span><span style="color:#f92672">:</span> {
-      <span style="color:#a6e22e">url?</span>: <span style="color:#66d9ef">string</span>,
-      <span style="color:#a6e22e">details</span><span style="color:#f92672">?:</span> {
-        <span style="color:#a6e22e">size?</span>: <span style="color:#66d9ef">number</span>,
-      },
-      <span style="color:#a6e22e">fileName?</span>: <span style="color:#66d9ef">string</span>,
-      <span style="color:#a6e22e">contentType?</span>: <span style="color:#66d9ef">string</span>,
-    },
-  }
-}
-</code></pre></div><p>This construction allows us to define Typescript interfaces for our content types
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">IEntry</span>&lt;<span style="color:#f92672">TFields</span>&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">sys</span>: <span style="color:#66d9ef">ISys</span><span style="color:#f92672">&lt;</span><span style="color:#e6db74">&#39;Entry&#39;</span><span style="color:#f92672">&gt;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">fields</span>: <span style="color:#66d9ef">TFields</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>and an Asset:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">IAsset</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">sys</span>: <span style="color:#66d9ef">ISys</span><span style="color:#f92672">&lt;</span><span style="color:#e6db74">&#39;Asset&#39;</span><span style="color:#f92672">&gt;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">fields</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// TODO: more fields for different asset types
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">title?</span>: <span style="color:#66d9ef">string</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">description?</span>: <span style="color:#66d9ef">string</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">file</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">url?</span>: <span style="color:#66d9ef">string</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">details</span><span style="color:#f92672">?:</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">size?</span>: <span style="color:#66d9ef">number</span>,
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">fileName?</span>: <span style="color:#66d9ef">string</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">contentType?</span>: <span style="color:#66d9ef">string</span>,
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>This construction allows us to define Typescript interfaces for our content types
 by simply defining their fields, without duplicating the Sys object definition:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">IPageProps</span> {
-  <span style="color:#a6e22e">title</span>: <span style="color:#66d9ef">string</span>
-  <span style="color:#a6e22e">slug</span>: <span style="color:#66d9ef">string</span>
-  <span style="color:#a6e22e">parent</span>: <span style="color:#66d9ef">ILink</span><span style="color:#f92672">&lt;</span><span style="color:#e6db74">&#39;Entry&#39;</span><span style="color:#f92672">&gt;</span>
-  <span style="color:#a6e22e">sections?</span>: <span style="color:#66d9ef">Array</span>&lt;<span style="color:#f92672">ILink</span><span style="color:#960050;background-color:#1e0010">&lt;&#39;</span><span style="color:#a6e22e">Entry</span><span style="color:#960050;background-color:#1e0010">&#39;</span>&gt;<span style="color:#f92672">&gt;</span>
-  <span style="color:#a6e22e">subpages?</span>: <span style="color:#66d9ef">Array</span>&lt;<span style="color:#f92672">ILink</span><span style="color:#960050;background-color:#1e0010">&lt;&#39;</span><span style="color:#a6e22e">Entry</span><span style="color:#960050;background-color:#1e0010">&#39;</span>&gt;<span style="color:#f92672">&gt;</span>
-}
-
-<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">IPage</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">IEntry</span>&lt;<span style="color:#f92672">IPageProps</span>&gt; {}
-
-<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">isPage</span>(<span style="color:#a6e22e">entry</span>: <span style="color:#66d9ef">IEntry</span>&lt;<span style="color:#f92672">any</span>&gt;)<span style="color:#f92672">:</span> <span style="color:#a6e22e">entry</span> <span style="color:#66d9ef">is</span> <span style="color:#a6e22e">IPage</span> {
-  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">entry</span> <span style="color:#f92672">&amp;&amp;</span>
-    <span style="color:#a6e22e">entry</span>.<span style="color:#a6e22e">sys</span> <span style="color:#f92672">&amp;&amp;</span>
-    <span style="color:#a6e22e">entry</span>.<span style="color:#a6e22e">sys</span>.<span style="color:#a6e22e">contentType</span> <span style="color:#f92672">&amp;&amp;</span>
-    <span style="color:#a6e22e">entry</span>.<span style="color:#a6e22e">sys</span>.<span style="color:#a6e22e">contentType</span>.<span style="color:#a6e22e">sys</span> <span style="color:#f92672">&amp;&amp;</span>
-    <span style="color:#a6e22e">entry</span>.<span style="color:#a6e22e">sys</span>.<span style="color:#a6e22e">contentType</span>.<span style="color:#a6e22e">sys</span>.<span style="color:#a6e22e">id</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;page&#39;</span>
-}
-</code></pre></div><p>I love having intellisense pop up to help me see the fields on an entry!
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">IPageProps</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">title</span>: <span style="color:#66d9ef">string</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">slug</span>: <span style="color:#66d9ef">string</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">parent</span>: <span style="color:#66d9ef">ILink</span><span style="color:#f92672">&lt;</span><span style="color:#e6db74">&#39;Entry&#39;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">sections?</span>: <span style="color:#66d9ef">Array</span>&lt;<span style="color:#f92672">ILink</span><span style="color:#960050;background-color:#1e0010">&lt;&#39;</span><span style="color:#a6e22e">Entry</span><span style="color:#960050;background-color:#1e0010">&#39;</span>&gt;<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">subpages?</span>: <span style="color:#66d9ef">Array</span>&lt;<span style="color:#f92672">ILink</span><span style="color:#960050;background-color:#1e0010">&lt;&#39;</span><span style="color:#a6e22e">Entry</span><span style="color:#960050;background-color:#1e0010">&#39;</span>&gt;<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">IPage</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">IEntry</span>&lt;<span style="color:#f92672">IPageProps</span>&gt; {}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">isPage</span>(<span style="color:#a6e22e">entry</span>: <span style="color:#66d9ef">IEntry</span>&lt;<span style="color:#f92672">any</span>&gt;)<span style="color:#f92672">:</span> <span style="color:#a6e22e">entry</span> <span style="color:#66d9ef">is</span> <span style="color:#a6e22e">IPage</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">entry</span> <span style="color:#f92672">&amp;&amp;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">entry</span>.<span style="color:#a6e22e">sys</span> <span style="color:#f92672">&amp;&amp;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">entry</span>.<span style="color:#a6e22e">sys</span>.<span style="color:#a6e22e">contentType</span> <span style="color:#f92672">&amp;&amp;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">entry</span>.<span style="color:#a6e22e">sys</span>.<span style="color:#a6e22e">contentType</span>.<span style="color:#a6e22e">sys</span> <span style="color:#f92672">&amp;&amp;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">entry</span>.<span style="color:#a6e22e">sys</span>.<span style="color:#a6e22e">contentType</span>.<span style="color:#a6e22e">sys</span>.<span style="color:#a6e22e">id</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;page&#39;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>I love having intellisense pop up to help me see the fields on an entry!
 <img src="/images/2018/05_entry_intellisense.jpg" alt="Intellisense on an entry"></p>
 <h2 id="resolving-links">Resolving links</h2>
 <p>Now I have a problem though, because I want to take a link to a section and then
 download the actual section object in order to render it.  One way to do that
 is to wrap a function around the API that resolves my links:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">resolve</span>&lt;<span style="color:#f92672">TLink</span>&gt;(<span style="color:#a6e22e">link</span>: <span style="color:#66d9ef">ILink</span>&lt;<span style="color:#f92672">TLink</span>&gt;)<span style="color:#f92672">:</span> <span style="color:#a6e22e">IEntry</span>&lt;<span style="color:#f92672">any</span>&gt; {
-  <span style="color:#75715e">// hit the API here
-</span><span style="color:#75715e"></span>}
-</code></pre></div><p>But ideally, I&rsquo;d like to be able to just resolve my tree of objects once using
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">resolve</span>&lt;<span style="color:#f92672">TLink</span>&gt;(<span style="color:#a6e22e">link</span>: <span style="color:#66d9ef">ILink</span>&lt;<span style="color:#f92672">TLink</span>&gt;)<span style="color:#f92672">:</span> <span style="color:#a6e22e">IEntry</span>&lt;<span style="color:#f92672">any</span>&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// hit the API here
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><p>But ideally, I&rsquo;d like to be able to just resolve my tree of objects once using
 something like <a href="https://www.contentful.com/developers/docs/references/content-delivery-api/#/reference/links/retrieval-of-linked-items">the <code>include</code> parameter</a>
 and then replace links in my object structure with the actual resolved entry.
 The implementation of this is not too difficult - and less interesting.  What&rsquo;s
 more interesting is modeling the types.  My goal is to be able to do something
 ridiculous like this:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">thumbUrl</span> <span style="color:#f92672">=</span>
-  <span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">fields</span>.<span style="color:#a6e22e">parent</span>.<span style="color:#a6e22e">fields</span>.<span style="color:#a6e22e">sections</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">fields</span>.<span style="color:#a6e22e">header</span>.<span style="color:#a6e22e">fields</span>.<span style="color:#a6e22e">thumbnail</span>.<span style="color:#a6e22e">fields</span>.<span style="color:#a6e22e">file</span>.<span style="color:#a6e22e">url</span>
-</code></pre></div><p>Defining the types to be able to do this in an elegant way is going to take some
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">thumbUrl</span> <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">fields</span>.<span style="color:#a6e22e">parent</span>.<span style="color:#a6e22e">fields</span>.<span style="color:#a6e22e">sections</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">fields</span>.<span style="color:#a6e22e">header</span>.<span style="color:#a6e22e">fields</span>.<span style="color:#a6e22e">thumbnail</span>.<span style="color:#a6e22e">fields</span>.<span style="color:#a6e22e">file</span>.<span style="color:#a6e22e">url</span>
+</span></span></code></pre></div><p>Defining the types to be able to do this in an elegant way is going to take some
 magic.  So let&rsquo;s take a trip to Hogwarts :)</p>
 <p>First, let&rsquo;s reflect the fact that my Page can have links that are either resolved
 or not, and define the allowable types that they can resolve to:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">IPageProps</span> {
-  <span style="color:#a6e22e">title</span>: <span style="color:#66d9ef">string</span>
-  <span style="color:#a6e22e">slug</span>: <span style="color:#66d9ef">string</span>
-  <span style="color:#a6e22e">parent</span>: <span style="color:#66d9ef">ILink</span><span style="color:#f92672">&lt;</span><span style="color:#e6db74">&#39;Entry&#39;</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">IPage</span>
-  <span style="color:#a6e22e">sections?</span>: <span style="color:#66d9ef">Array</span>&lt;<span style="color:#f92672">ILink</span><span style="color:#960050;background-color:#1e0010">&lt;&#39;</span><span style="color:#a6e22e">Entry</span><span style="color:#960050;background-color:#1e0010">&#39;</span>&gt; <span style="color:#f92672">|</span> <span style="color:#a6e22e">PageSection</span><span style="color:#f92672">&gt;</span>
-  <span style="color:#a6e22e">subpages?</span>: <span style="color:#66d9ef">Array</span>&lt;<span style="color:#f92672">ILink</span><span style="color:#960050;background-color:#1e0010">&lt;&#39;</span><span style="color:#a6e22e">Entry</span><span style="color:#960050;background-color:#1e0010">&#39;</span>&gt; <span style="color:#f92672">|</span> <span style="color:#a6e22e">IPage</span><span style="color:#f92672">&gt;</span>
-}
-
-<span style="color:#75715e">// this is all the content types that can be assigned to the Sections array.
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">PageSection</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">ISectionHeader</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">ISectionBlockText</span> <span style="color:#f92672">|</span> ...
-</code></pre></div><p>This gets me part-way there.  Now instead of calling <code>resolve</code> to hit the API
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">IPageProps</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">title</span>: <span style="color:#66d9ef">string</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">slug</span>: <span style="color:#66d9ef">string</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">parent</span>: <span style="color:#66d9ef">ILink</span><span style="color:#f92672">&lt;</span><span style="color:#e6db74">&#39;Entry&#39;</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">IPage</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">sections?</span>: <span style="color:#66d9ef">Array</span>&lt;<span style="color:#f92672">ILink</span><span style="color:#960050;background-color:#1e0010">&lt;&#39;</span><span style="color:#a6e22e">Entry</span><span style="color:#960050;background-color:#1e0010">&#39;</span>&gt; <span style="color:#f92672">|</span> <span style="color:#a6e22e">PageSection</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">subpages?</span>: <span style="color:#66d9ef">Array</span>&lt;<span style="color:#f92672">ILink</span><span style="color:#960050;background-color:#1e0010">&lt;&#39;</span><span style="color:#a6e22e">Entry</span><span style="color:#960050;background-color:#1e0010">&#39;</span>&gt; <span style="color:#f92672">|</span> <span style="color:#a6e22e">IPage</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// this is all the content types that can be assigned to the Sections array.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">PageSection</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">ISectionHeader</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">ISectionBlockText</span> <span style="color:#f92672">|</span> ...
+</span></span></code></pre></div><p>This gets me part-way there.  Now instead of calling <code>resolve</code> to hit the API
 every time I want to access a section, I can just cast it.  Or, to get some runtime
 protection, I can create a method <code>expectResolved</code> to early-exit if it&rsquo;s still a link:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">expectResolved</span>&lt;<span style="color:#f92672">T</span>&gt;(<span style="color:#a6e22e">prop</span>: <span style="color:#66d9ef">T</span>)<span style="color:#f92672">:</span> <span style="color:#a6e22e">Exclude</span>&lt;<span style="color:#f92672">T</span><span style="color:#960050;background-color:#1e0010">,</span> <span style="color:#a6e22e">ILink</span><span style="color:#960050;background-color:#1e0010">&lt;</span><span style="color:#a6e22e">any</span>&gt;<span style="color:#f92672">&gt;</span> {
-  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">isLink</span>(<span style="color:#a6e22e">prop</span>)) {
-    <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> Error(<span style="color:#e6db74">`Expect </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">prop</span>.<span style="color:#a6e22e">sys</span>.<span style="color:#a6e22e">id</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> to have been resolved but was still a link.`</span>)
-  }
-  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">prop</span>
-}
-</code></pre></div><p>usage:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx">  <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">render</span>() {
-    <span style="color:#66d9ef">const</span> { <span style="color:#a6e22e">title</span>, <span style="color:#a6e22e">sections</span> } <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">props</span>.<span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">fields</span>
-
-    <span style="color:#66d9ef">return</span> &lt;<span style="color:#f92672">div</span>&gt;
-      &lt;<span style="color:#f92672">h1</span>&gt;{<span style="color:#a6e22e">title</span>}&lt;/<span style="color:#f92672">h1</span>&gt;
-      {<span style="color:#a6e22e">sections</span>.<span style="color:#a6e22e">map</span>((<span style="color:#a6e22e">s</span>) =&gt; <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">renderSection</span>(<span style="color:#a6e22e">expectResolved</span>(<span style="color:#a6e22e">s</span>)))}
-    &lt;/<span style="color:#f92672">div</span>&gt;
-  }
-
-  <span style="color:#66d9ef">private</span> <span style="color:#a6e22e">renderSection</span>(<span style="color:#a6e22e">s</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">PageSection</span>) {
-</code></pre></div><p>But this doesn&rsquo;t satisfy me.  This is some Ron Weasley code.  What would Hermione do?</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">expectResolved</span>&lt;<span style="color:#f92672">T</span>&gt;(<span style="color:#a6e22e">prop</span>: <span style="color:#66d9ef">T</span>)<span style="color:#f92672">:</span> <span style="color:#a6e22e">Exclude</span>&lt;<span style="color:#f92672">T</span><span style="color:#960050;background-color:#1e0010">,</span> <span style="color:#a6e22e">ILink</span><span style="color:#960050;background-color:#1e0010">&lt;</span><span style="color:#a6e22e">any</span>&gt;<span style="color:#f92672">&gt;</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">isLink</span>(<span style="color:#a6e22e">prop</span>)) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> Error(<span style="color:#e6db74">`Expect </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">prop</span>.<span style="color:#a6e22e">sys</span>.<span style="color:#a6e22e">id</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> to have been resolved but was still a link.`</span>)
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">prop</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>usage:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-jsx" data-lang="jsx"><span style="display:flex;"><span>  <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">render</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> { <span style="color:#a6e22e">title</span>, <span style="color:#a6e22e">sections</span> } <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">props</span>.<span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">fields</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> &lt;<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">h1</span>&gt;{<span style="color:#a6e22e">title</span>}&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>      {<span style="color:#a6e22e">sections</span>.<span style="color:#a6e22e">map</span>((<span style="color:#a6e22e">s</span>) =&gt; <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">renderSection</span>(<span style="color:#a6e22e">expectResolved</span>(<span style="color:#a6e22e">s</span>)))}
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">private</span> <span style="color:#a6e22e">renderSection</span>(<span style="color:#a6e22e">s</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">PageSection</span>) {
+</span></span></code></pre></div><p>But this doesn&rsquo;t satisfy me.  This is some Ron Weasley code.  What would Hermione do?</p>
 <h2 id="enter-the-magic">Enter the magic</h2>
 <p>I know I can recursively resolve my entire tree at runtime, but can I recursively
 modify the type definitions in order to tell Typescript that <code>ILink</code> is never
@@ -256,83 +256,83 @@ versions of <code>IPage</code>.  That would be a pain.  I&rsquo;d ideally like a
 <code>Resolved&lt;T&gt;</code> such that <code>Resolved&lt;IPage&gt;</code> says there are no links in the fields,
 and no links in the fields of those linked fields.  This&rsquo;ll enable my desired
 result:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">page</span>: <span style="color:#66d9ef">Resolved</span>&lt;<span style="color:#f92672">IPage</span>&gt; <span style="color:#f92672">=</span> ...
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">thumbUrl</span> <span style="color:#f92672">=</span>
-  <span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">fields</span>.<span style="color:#a6e22e">parent</span>.<span style="color:#a6e22e">fields</span>.<span style="color:#a6e22e">sections</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">fields</span>.<span style="color:#a6e22e">header</span>.<span style="color:#a6e22e">fields</span>.<span style="color:#a6e22e">thumbnail</span>.<span style="color:#a6e22e">fields</span>.<span style="color:#a6e22e">file</span>.<span style="color:#a6e22e">url</span>
-</code></pre></div><p>Fortunately Typescript 2.8 just introduced a new form of magic - the conditional
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">page</span>: <span style="color:#66d9ef">Resolved</span>&lt;<span style="color:#f92672">IPage</span>&gt; <span style="color:#f92672">=</span> ...
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">thumbUrl</span> <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">fields</span>.<span style="color:#a6e22e">parent</span>.<span style="color:#a6e22e">fields</span>.<span style="color:#a6e22e">sections</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">fields</span>.<span style="color:#a6e22e">header</span>.<span style="color:#a6e22e">fields</span>.<span style="color:#a6e22e">thumbnail</span>.<span style="color:#a6e22e">fields</span>.<span style="color:#a6e22e">file</span>.<span style="color:#a6e22e">url</span>
+</span></span></code></pre></div><p>Fortunately Typescript 2.8 just introduced a new form of magic - the conditional
 type defs!  Using those together with the <code>infer</code> keyword, I can basically use
 if statements and assign variables inside a typedef!</p>
 <p>So let&rsquo;s go top-down.  Supposing I have an <code>IEntry&lt;ISomeFields&gt;</code>, I want to transform
 <code>ISomeFields</code> such that <code>ILink&lt;any&gt;</code> does not appear in any of its properties.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Resolved</span>&lt;<span style="color:#f92672">TEntry</span>&gt; <span style="color:#f92672">=</span>
-  <span style="color:#a6e22e">TEntry</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">IEntry</span>&lt;<span style="color:#f92672">infer</span> <span style="color:#a6e22e">TProps</span>&gt; <span style="color:#f92672">?</span>
-    <span style="color:#75715e">// TEntry is an entry and we know the type of it&#39;s props
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">IEntry</span><span style="color:#f92672">&lt;</span>{
-      [<span style="color:#a6e22e">P</span> <span style="color:#66d9ef">in</span> <span style="color:#66d9ef">keyof</span> <span style="color:#a6e22e">TProps</span>]<span style="color:#f92672">:</span> ... <span style="color:#75715e">// Transform the values of these props
-</span><span style="color:#75715e"></span>    }<span style="color:#f92672">&gt;</span>
-    <span style="color:#75715e">// Compiler should validate that TEntry is never not an entry
-</span><span style="color:#75715e"></span>    <span style="color:#f92672">:</span> <span style="color:#66d9ef">never</span>
-</code></pre></div><p>Now we&rsquo;re down into the weeds of this spell.  We have access to the type of each
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Resolved</span>&lt;<span style="color:#f92672">TEntry</span>&gt; <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">TEntry</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">IEntry</span>&lt;<span style="color:#f92672">infer</span> <span style="color:#a6e22e">TProps</span>&gt; <span style="color:#f92672">?</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// TEntry is an entry and we know the type of it&#39;s props
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">IEntry</span><span style="color:#f92672">&lt;</span>{
+</span></span><span style="display:flex;"><span>      [<span style="color:#a6e22e">P</span> <span style="color:#66d9ef">in</span> <span style="color:#66d9ef">keyof</span> <span style="color:#a6e22e">TProps</span>]<span style="color:#f92672">:</span> ... <span style="color:#75715e">// Transform the values of these props
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    }<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Compiler should validate that TEntry is never not an entry
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#f92672">:</span> <span style="color:#66d9ef">never</span>
+</span></span></code></pre></div><p>Now we&rsquo;re down into the weeds of this spell.  We have access to the type of each
 property in the entry&rsquo;s <code>fields</code> via <code>TProps[P]</code>.  If the field <code>name</code> is a string,
 then <code>TProps['name'] == string</code>.  If the field <code>parent</code> is an <code>ILink&lt;'Entry'&gt; | IPage</code>,
 how do we get it to be just an <code>IPage</code>?  <code>Exclude</code> does the trick:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts">  [<span style="color:#a6e22e">P</span> <span style="color:#66d9ef">in</span> <span style="color:#66d9ef">keyof</span> <span style="color:#a6e22e">TProps</span>]<span style="color:#f92672">:</span> <span style="color:#a6e22e">Exclude</span>&lt;<span style="color:#f92672">TProps</span><span style="color:#960050;background-color:#1e0010">[</span><span style="color:#a6e22e">P</span><span style="color:#960050;background-color:#1e0010">],</span> <span style="color:#a6e22e">ILink</span><span style="color:#960050;background-color:#1e0010">&lt;</span><span style="color:#a6e22e">any</span>&gt;<span style="color:#f92672">&gt;</span>
-</code></pre></div><p>Alrighty, now we&rsquo;ve got <code>parent</code> working.  We also get assets for free, since
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span>  [<span style="color:#a6e22e">P</span> <span style="color:#66d9ef">in</span> <span style="color:#66d9ef">keyof</span> <span style="color:#a6e22e">TProps</span>]<span style="color:#f92672">:</span> <span style="color:#a6e22e">Exclude</span>&lt;<span style="color:#f92672">TProps</span><span style="color:#960050;background-color:#1e0010">[</span><span style="color:#a6e22e">P</span><span style="color:#960050;background-color:#1e0010">],</span> <span style="color:#a6e22e">ILink</span><span style="color:#960050;background-color:#1e0010">&lt;</span><span style="color:#a6e22e">any</span>&gt;<span style="color:#f92672">&gt;</span>
+</span></span></code></pre></div><p>Alrighty, now we&rsquo;ve got <code>parent</code> working.  We also get assets for free, since
 <code>ILink&lt;'Asset'&gt; | IAsset</code> becomes just <code>IAsset</code>.  Time to go deeper.  We need to
 handle Arrays.  Let&rsquo;s define a new type:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">ResolvedArray</span>&lt;<span style="color:#f92672">TItem</span>&gt; <span style="color:#f92672">=</span> Array&lt;<span style="color:#f92672">Exclude</span><span style="color:#960050;background-color:#1e0010">&lt;</span><span style="color:#a6e22e">TItem</span><span style="color:#960050;background-color:#1e0010">,</span> <span style="color:#a6e22e">ILink</span><span style="color:#960050;background-color:#1e0010">&lt;</span><span style="color:#a6e22e">any</span>&gt;<span style="color:#f92672">&gt;&gt;</span>
-</code></pre></div><p>And a wrapper type that checks if the field is an array:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">ResolvedField</span>&lt;<span style="color:#f92672">TField</span>&gt; <span style="color:#f92672">=</span>
-    <span style="color:#a6e22e">TField</span> <span style="color:#66d9ef">extends</span> Array&lt;<span style="color:#f92672">infer</span> <span style="color:#a6e22e">TItem</span>&gt; <span style="color:#f92672">?</span>
-      <span style="color:#75715e">// Array of entries - dive into the item type to remove links
-</span><span style="color:#75715e"></span>      <span style="color:#a6e22e">ResolvedArray</span>&lt;<span style="color:#f92672">TItem</span>&gt; <span style="color:#f92672">:</span>
-      <span style="color:#a6e22e">TField</span>
-</code></pre></div><p>Then we use that in our properties declaration:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts">  [<span style="color:#a6e22e">P</span> <span style="color:#66d9ef">in</span> <span style="color:#66d9ef">keyof</span> <span style="color:#a6e22e">TProps</span>]<span style="color:#f92672">:</span> <span style="color:#a6e22e">ResolvedField</span>&lt;<span style="color:#f92672">Exclude</span><span style="color:#960050;background-color:#1e0010">&lt;</span><span style="color:#a6e22e">TProps</span><span style="color:#960050;background-color:#1e0010">[</span><span style="color:#a6e22e">P</span><span style="color:#960050;background-color:#1e0010">],</span> <span style="color:#a6e22e">ILink</span><span style="color:#960050;background-color:#1e0010">&lt;</span><span style="color:#a6e22e">any</span>&gt;<span style="color:#f92672">&gt;&gt;</span>
-</code></pre></div><p>Now we&rsquo;ve got a type that wraps any <code>IEntry</code>, conforming to the IEntry interface
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">ResolvedArray</span>&lt;<span style="color:#f92672">TItem</span>&gt; <span style="color:#f92672">=</span> Array&lt;<span style="color:#f92672">Exclude</span><span style="color:#960050;background-color:#1e0010">&lt;</span><span style="color:#a6e22e">TItem</span><span style="color:#960050;background-color:#1e0010">,</span> <span style="color:#a6e22e">ILink</span><span style="color:#960050;background-color:#1e0010">&lt;</span><span style="color:#a6e22e">any</span>&gt;<span style="color:#f92672">&gt;&gt;</span>
+</span></span></code></pre></div><p>And a wrapper type that checks if the field is an array:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">ResolvedField</span>&lt;<span style="color:#f92672">TField</span>&gt; <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">TField</span> <span style="color:#66d9ef">extends</span> Array&lt;<span style="color:#f92672">infer</span> <span style="color:#a6e22e">TItem</span>&gt; <span style="color:#f92672">?</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// Array of entries - dive into the item type to remove links
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#a6e22e">ResolvedArray</span>&lt;<span style="color:#f92672">TItem</span>&gt; <span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">TField</span>
+</span></span></code></pre></div><p>Then we use that in our properties declaration:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span>  [<span style="color:#a6e22e">P</span> <span style="color:#66d9ef">in</span> <span style="color:#66d9ef">keyof</span> <span style="color:#a6e22e">TProps</span>]<span style="color:#f92672">:</span> <span style="color:#a6e22e">ResolvedField</span>&lt;<span style="color:#f92672">Exclude</span><span style="color:#960050;background-color:#1e0010">&lt;</span><span style="color:#a6e22e">TProps</span><span style="color:#960050;background-color:#1e0010">[</span><span style="color:#a6e22e">P</span><span style="color:#960050;background-color:#1e0010">],</span> <span style="color:#a6e22e">ILink</span><span style="color:#960050;background-color:#1e0010">&lt;</span><span style="color:#a6e22e">any</span>&gt;<span style="color:#f92672">&gt;&gt;</span>
+</span></span></code></pre></div><p>Now we&rsquo;ve got a type that wraps any <code>IEntry</code>, conforming to the IEntry interface
 and none of it&rsquo;s properties are links!  So we can do this:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">page</span>: <span style="color:#66d9ef">Resolved</span>&lt;<span style="color:#f92672">IPage</span>&gt; <span style="color:#f92672">=</span> ...
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">headerSection</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">fields</span>.<span style="color:#a6e22e">parent</span>.<span style="color:#a6e22e">fields</span>.<span style="color:#a6e22e">sections</span>[<span style="color:#ae81ff">0</span>]
-<span style="color:#75715e">// headerSection is `ILink&lt;&#39;Entry&#39;&gt; | PageSection`
-</span></code></pre></div><p>but we can&rsquo;t recursively dig deeper.  Yet :)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">page</span>: <span style="color:#66d9ef">Resolved</span>&lt;<span style="color:#f92672">IPage</span>&gt; <span style="color:#f92672">=</span> ...
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">headerSection</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">fields</span>.<span style="color:#a6e22e">parent</span>.<span style="color:#a6e22e">fields</span>.<span style="color:#a6e22e">sections</span>[<span style="color:#ae81ff">0</span>]
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// headerSection is `ILink&lt;&#39;Entry&#39;&gt; | PageSection`
+</span></span></span></code></pre></div><p>but we can&rsquo;t recursively dig deeper.  Yet :)</p>
 <h2 id="going-recursive">Going recursive</h2>
 <p>In Harry Potter, Dumbledore gives Hermione a Time-Turner, which can rewind time
 allowing her to get to all her classes and finish her homework every night.</p>
-<p><img src="/images/2018/05_hermione_time_turner.jpg" alt="Hermione&rsquo;s time turner"></p>
+<p><img src="/images/2018/05_hermione_time_turner.jpg" alt="Hermione&amp;rsquo;s time turner"></p>
 <p>That&rsquo;s the kind of power that recursion gives us!  Thanks to Typescript 2.8, we
 can go recursive in type definitions as well, building a type definition that
 recursively modifies properties all the way down the tree!  All we have to do
 is find every spot in our typedef that could be an entry, and if it is, wrap it
 in a <code>Resolved&lt;&gt;</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">ResolvedField</span>&lt;<span style="color:#f92672">TField</span>&gt; <span style="color:#f92672">=</span>
-  <span style="color:#75715e">// three cases - an Entry which we recursively declare resolved,
-</span><span style="color:#75715e"></span>  <span style="color:#75715e">//  an Array which we recursively declare resolved,
-</span><span style="color:#75715e"></span>  <span style="color:#75715e">//  or a normal field which we declare to not have links.
-</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">TField</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">IEntry</span>&lt;<span style="color:#f92672">infer</span> <span style="color:#a6e22e">TProps</span>&gt; <span style="color:#f92672">?</span>
-    <span style="color:#75715e">// Single entry link, recursively declare it resolved.
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">Resolved</span>&lt;<span style="color:#f92672">TField</span>&gt; <span style="color:#f92672">:</span>
-    <span style="color:#a6e22e">TField</span> <span style="color:#66d9ef">extends</span> Array&lt;<span style="color:#f92672">infer</span> <span style="color:#a6e22e">TItem</span>&gt; <span style="color:#f92672">?</span>
-      <span style="color:#75715e">// Array of entries - dive into the item type to remove links
-</span><span style="color:#75715e"></span>      <span style="color:#a6e22e">ResolvedArray</span>&lt;<span style="color:#f92672">TItem</span>&gt; <span style="color:#f92672">:</span>
-      <span style="color:#75715e">// Some other type that doesn&#39;t need recursive resolution -
-</span><span style="color:#75715e"></span>      <span style="color:#75715e">//  declare it has no links and be done
-</span><span style="color:#75715e"></span>      <span style="color:#a6e22e">TField</span>
-
-<span style="color:#66d9ef">type</span> <span style="color:#a6e22e">ResolvedArray</span>&lt;<span style="color:#f92672">TItem</span>&gt; <span style="color:#f92672">=</span>
-  <span style="color:#a6e22e">TItem</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">IEntry</span>&lt;<span style="color:#f92672">any</span>&gt; <span style="color:#f92672">?</span>
-      <span style="color:#75715e">// Entries must be recursively resolved.
-</span><span style="color:#75715e"></span>    Array&lt;<span style="color:#f92672">Resolved</span><span style="color:#960050;background-color:#1e0010">&lt;</span><span style="color:#a6e22e">TItem</span>&gt;<span style="color:#f92672">&gt;</span> <span style="color:#f92672">:</span>
-    Array&lt;<span style="color:#f92672">Exclude</span><span style="color:#960050;background-color:#1e0010">&lt;</span><span style="color:#a6e22e">TItem</span><span style="color:#960050;background-color:#1e0010">,</span> <span style="color:#a6e22e">ILink</span><span style="color:#960050;background-color:#1e0010">&lt;</span><span style="color:#a6e22e">any</span>&gt;<span style="color:#f92672">&gt;&gt;</span>
-
-<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Resolved</span>&lt;<span style="color:#f92672">TEntry</span>&gt; <span style="color:#f92672">=</span>
-  <span style="color:#a6e22e">TEntry</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">IEntry</span>&lt;<span style="color:#f92672">infer</span> <span style="color:#a6e22e">TProps</span>&gt; <span style="color:#f92672">?</span>
-    <span style="color:#75715e">// TEntry is an entry and we know the type of it&#39;s props
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">IEntry</span><span style="color:#f92672">&lt;</span>{
-      [<span style="color:#a6e22e">P</span> <span style="color:#66d9ef">in</span> <span style="color:#66d9ef">keyof</span> <span style="color:#a6e22e">TProps</span>]<span style="color:#f92672">:</span> <span style="color:#a6e22e">ResolvedField</span>&lt;<span style="color:#f92672">Exclude</span><span style="color:#960050;background-color:#1e0010">&lt;</span><span style="color:#a6e22e">TProps</span><span style="color:#960050;background-color:#1e0010">[</span><span style="color:#a6e22e">P</span><span style="color:#960050;background-color:#1e0010">],</span> <span style="color:#a6e22e">ILink</span><span style="color:#960050;background-color:#1e0010">&lt;</span><span style="color:#a6e22e">any</span>&gt;<span style="color:#f92672">&gt;&gt;</span>
-    }<span style="color:#f92672">&gt;</span>
-    <span style="color:#75715e">// Compiler should validate that TEntry is never not an entry
-</span><span style="color:#75715e"></span>    <span style="color:#f92672">:</span> <span style="color:#66d9ef">never</span>
-</code></pre></div><p>I found it!  I found the incantation which lets me magically declare all fields
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">ResolvedField</span>&lt;<span style="color:#f92672">TField</span>&gt; <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// three cases - an Entry which we recursively declare resolved,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">//  an Array which we recursively declare resolved,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">//  or a normal field which we declare to not have links.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">TField</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">IEntry</span>&lt;<span style="color:#f92672">infer</span> <span style="color:#a6e22e">TProps</span>&gt; <span style="color:#f92672">?</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Single entry link, recursively declare it resolved.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">Resolved</span>&lt;<span style="color:#f92672">TField</span>&gt; <span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">TField</span> <span style="color:#66d9ef">extends</span> Array&lt;<span style="color:#f92672">infer</span> <span style="color:#a6e22e">TItem</span>&gt; <span style="color:#f92672">?</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// Array of entries - dive into the item type to remove links
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#a6e22e">ResolvedArray</span>&lt;<span style="color:#f92672">TItem</span>&gt; <span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// Some other type that doesn&#39;t need recursive resolution -
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#75715e">//  declare it has no links and be done
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#a6e22e">TField</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">ResolvedArray</span>&lt;<span style="color:#f92672">TItem</span>&gt; <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">TItem</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">IEntry</span>&lt;<span style="color:#f92672">any</span>&gt; <span style="color:#f92672">?</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// Entries must be recursively resolved.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    Array&lt;<span style="color:#f92672">Resolved</span><span style="color:#960050;background-color:#1e0010">&lt;</span><span style="color:#a6e22e">TItem</span>&gt;<span style="color:#f92672">&gt;</span> <span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>    Array&lt;<span style="color:#f92672">Exclude</span><span style="color:#960050;background-color:#1e0010">&lt;</span><span style="color:#a6e22e">TItem</span><span style="color:#960050;background-color:#1e0010">,</span> <span style="color:#a6e22e">ILink</span><span style="color:#960050;background-color:#1e0010">&lt;</span><span style="color:#a6e22e">any</span>&gt;<span style="color:#f92672">&gt;&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Resolved</span>&lt;<span style="color:#f92672">TEntry</span>&gt; <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">TEntry</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">IEntry</span>&lt;<span style="color:#f92672">infer</span> <span style="color:#a6e22e">TProps</span>&gt; <span style="color:#f92672">?</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// TEntry is an entry and we know the type of it&#39;s props
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">IEntry</span><span style="color:#f92672">&lt;</span>{
+</span></span><span style="display:flex;"><span>      [<span style="color:#a6e22e">P</span> <span style="color:#66d9ef">in</span> <span style="color:#66d9ef">keyof</span> <span style="color:#a6e22e">TProps</span>]<span style="color:#f92672">:</span> <span style="color:#a6e22e">ResolvedField</span>&lt;<span style="color:#f92672">Exclude</span><span style="color:#960050;background-color:#1e0010">&lt;</span><span style="color:#a6e22e">TProps</span><span style="color:#960050;background-color:#1e0010">[</span><span style="color:#a6e22e">P</span><span style="color:#960050;background-color:#1e0010">],</span> <span style="color:#a6e22e">ILink</span><span style="color:#960050;background-color:#1e0010">&lt;</span><span style="color:#a6e22e">any</span>&gt;<span style="color:#f92672">&gt;&gt;</span>
+</span></span><span style="display:flex;"><span>    }<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Compiler should validate that TEntry is never not an entry
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#f92672">:</span> <span style="color:#66d9ef">never</span>
+</span></span></code></pre></div><p>I found it!  I found the incantation which lets me magically declare all fields
 as resolved all the way down the tree!</p>
 <h2 id="application">Application</h2>
 <p>This has real-life uses for our new app at Watermark Community Church.  We have

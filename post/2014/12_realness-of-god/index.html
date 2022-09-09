@@ -127,12 +127,12 @@ God in ev’ry taste.</p>
 <p>The best we have right now in my opinion is Christian Rap.  Many of them know about the gritty reality of suffering and it shows through in their music.  And it&rsquo;s appealing to non-Christians in a way that &ldquo;worship&rdquo; music never will be.  The mainstream Christian music industry could learn from those guys, who themselves are learning from Jesus, who stepped down into our grit and grime and shared in our sufferings with us.  And we can stop supporting the &ldquo;christian&rdquo; music industry until it figures that out.</p>
 <hr>
 <p>I put together a deploy script, here it is:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#! /bin/bash
-</span><span style="color:#75715e"></span>
-hugo --baseUrl<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://www.gordonburgett.net&#34;</span>
-cd ./public
-scp -i $1 -r ./ ec2-user@gordonburgett.net:/var/www/html
-</code></pre></div><p>Notice I don&rsquo;t have to specify <code>--theme</code>, that&rsquo;s cause I put <code>theme=&quot;hugo-uno&quot;</code> inside the config.toml file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#! /bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>hugo --baseUrl<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://www.gordonburgett.net&#34;</span>
+</span></span><span style="display:flex;"><span>cd ./public
+</span></span><span style="display:flex;"><span>scp -i $1 -r ./ ec2-user@gordonburgett.net:/var/www/html
+</span></span></code></pre></div><p>Notice I don&rsquo;t have to specify <code>--theme</code>, that&rsquo;s cause I put <code>theme=&quot;hugo-uno&quot;</code> inside the config.toml file.</p>
 <p>Now deploying a new page is as simple as <code>./deploy.sh ~/.ssh/macbook.pem</code>!</p>
 
         </div>

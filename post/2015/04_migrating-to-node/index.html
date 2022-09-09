@@ -122,32 +122,32 @@ public/
   | -- etc...
 </pre>
 <p>As it turns out, its pretty easy to set up a web server on node.  I installed a basic web framework called <a href="http://expressjs.com/">express</a> and I was off and running with a 25 line .js file:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">#!/usr/bin/env node
-</span><span style="color:#75715e"></span>
-<span style="color:#a6e22e">port</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">80</span>
-<span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">argv</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">2</span>){
-	<span style="color:#a6e22e">port</span> <span style="color:#f92672">=</span> parseInt(<span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">argv</span>[<span style="color:#ae81ff">2</span>])
-}
-
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">express</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;express&#39;</span>)
-
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">express</span>()
-
-	<span style="color:#75715e">//hide everything in the node folder
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#e6db74">&#39;/node&#39;</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>, <span style="color:#a6e22e">next</span>) {
-  <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">404</span>).<span style="color:#a6e22e">sendFile</span>(<span style="color:#e6db74">&#39;404.html&#39;</span>, {<span style="color:#a6e22e">root</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">cwd</span>()});
-})
-
-<span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#a6e22e">express</span>.<span style="color:#66d9ef">static</span>(<span style="color:#e6db74">&#39;.&#39;</span>))
-
-
-<span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>, <span style="color:#a6e22e">next</span>) {
-  <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">404</span>).<span style="color:#a6e22e">sendFile</span>(<span style="color:#e6db74">&#39;404.html&#39;</span>, {<span style="color:#a6e22e">root</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">cwd</span>()});
-});
-
-<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;listening on port &#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">port</span>)
-<span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">listen</span>(<span style="color:#a6e22e">port</span>)
-</code></pre></div><p>The big deal is the three <code>app.use(</code> statements in the middle.  The first one hides the /node folder, intercepting any requests and returning a 404 so noone can see the code running my site (important for later when I add fancy things).  The second serves up my whole static site.  It would serve up my js files too if not for the first one.  The third is a 404 handler which responds with my 404.html web page.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/env node
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">port</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">80</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">argv</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">2</span>){
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">port</span> <span style="color:#f92672">=</span> parseInt(<span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">argv</span>[<span style="color:#ae81ff">2</span>])
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">express</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;express&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">express</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">//hide everything in the node folder
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#e6db74">&#39;/node&#39;</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>, <span style="color:#a6e22e">next</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">404</span>).<span style="color:#a6e22e">sendFile</span>(<span style="color:#e6db74">&#39;404.html&#39;</span>, {<span style="color:#a6e22e">root</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">cwd</span>()});
+</span></span><span style="display:flex;"><span>})
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#a6e22e">express</span>.<span style="color:#66d9ef">static</span>(<span style="color:#e6db74">&#39;.&#39;</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>, <span style="color:#a6e22e">next</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">404</span>).<span style="color:#a6e22e">sendFile</span>(<span style="color:#e6db74">&#39;404.html&#39;</span>, {<span style="color:#a6e22e">root</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">cwd</span>()});
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;listening on port &#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">port</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">listen</span>(<span style="color:#a6e22e">port</span>)
+</span></span></code></pre></div><p>The big deal is the three <code>app.use(</code> statements in the middle.  The first one hides the /node folder, intercepting any requests and returning a 404 so noone can see the code running my site (important for later when I add fancy things).  The second serves up my whole static site.  It would serve up my js files too if not for the first one.  The third is a 404 handler which responds with my 404.html web page.</p>
 <p>Running it on the actual server box should be easy enough as well.  First I had to go install node, using instructions found <a href="https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager#enterprise-linux-and-fedora">here</a>.  Then I was able to install express using npm.</p>
 <p>I put the blog content in ~/blog, and can serve it up from there with <code>sudo node node/server.js</code>.  One important piece was where to put the node_modules directory.  I moved it to <code>~/node_modules</code>, so it&rsquo;s not served up by the static site server, and node can find it there just fine.</p>
 <p>Now, I don&rsquo;t want to start the server with sudo every time, because I want the app to run as ec2-user and not as root.  Now that it&rsquo;s no longer just a static site I need to be more worried about security.  Unfortunately ec2-user can&rsquo;t bind to port 80, so I had to do an IPTABLES redirect:<br>
