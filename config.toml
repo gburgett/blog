@@ -2,7 +2,7 @@ BaseURL = "http://www.gordonburgett.net"
 languageCode = "en-us"
 title = "first things first"
 author = "Gordon Burgett"
-theme="hugo-uno"
+theme="hugo-porto"
 copyright = "All content © Gordon Burgett, 2014-2015"
 
 [indexes]

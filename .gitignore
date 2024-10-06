@@ -9,3 +9,5 @@ blog.sublime-workspace
 yarn-error.log
 
 .hugo_build.lock
+
+resources/_gen/*
