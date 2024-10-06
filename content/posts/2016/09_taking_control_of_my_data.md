@@ -3,7 +3,6 @@ Categories = ["Development"]
 Description = ""
 Tags = ["Development", "docker"]
 date = "2016-09-17T15:33:34+02:00"
-menu = "main"
 title = "Taking Control of My Data"
 aliases = [
   "/post/taking_control_of_my_data/",

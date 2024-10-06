@@ -3,7 +3,6 @@ Categories = ["missions"]
 Tags = ["missions", "cru", "albania"]
 Description = ""
 date = "2015-01-05T10:20:47-06:00"
-menu = "main"
 title = "Euro Trip!"
 aliases = [
   "/post/Euro Trip!/",

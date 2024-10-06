@@ -3,7 +3,6 @@ Categories = ["Christianity"]
 Description = ""
 Tags = ["Christianity", "love", "truth"]
 date = "2015-03-30T23:14:36-05:00"
-menu = "main"
 title = "what is love?"
 aliases = [
   "/post/what-is-love/",

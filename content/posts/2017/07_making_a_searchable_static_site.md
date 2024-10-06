@@ -3,7 +3,6 @@ Tags = ["search","gulp","node"]
 date = "2017-07-23T17:28:52+02:00"
 title = "Making a static site searchable"
 Description = ""
-menu = "main"
 Categories = ["development"]
 
 +++

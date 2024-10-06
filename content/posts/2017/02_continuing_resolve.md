@@ -3,7 +3,6 @@ Categories = ["cru", "Albania"]
 Description = ""
 Tags = ["cru", "Albania"]
 date = "2017-02-04T19:05:49+01:00"
-menu = "main"
 title = "Continuing Resolve"
 aliases = [
   "/post/continuing_resolve/",

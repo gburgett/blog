@@ -3,7 +3,6 @@ Categories = ["cru", "Albania"]
 Description = ""
 Tags = ["cru", "Albania"]
 date = "2015-12-07T20:31:24+01:00"
-menu = "main"
 title = "Welcome Weekend"
 aliases = [
   "/post/welcome_weekend/",

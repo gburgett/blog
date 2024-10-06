@@ -3,7 +3,6 @@ Categories = ["cru", "Albania"]
 Description = ""
 Tags = ["cru", "Albania"]
 date = "2016-03-24T17:56:00+02:00"
-menu = "main"
 title = "Shift musical"
 aliases = [
   "/post/shift_musical/",

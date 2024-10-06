@@ -3,7 +3,6 @@ Categories = ["cru", "Albania"]
 Description = ""
 Tags = ["cru", "Albania"]
 date = "2015-12-13T13:49:46+01:00"
-menu = "main"
 title = "The first 3 months"
 aliases = [
   "/post/the_first_3_months/",

@@ -1,7 +1,6 @@
 +++
 date = "2017-10-26T20:28:57-06:00"
 title = "Not Done Yet!"
-menu = "main"
 Categories = ["cru","Albania"]
 Tags = ["cru","Albania"]
 Description = ""

@@ -3,7 +3,6 @@ Categories = ["missions", "albania"]
 Description = ""
 Tags = ["missions", "albania", "cru"]
 date = "2015-08-05T20:40:27-05:00"
-menu = "main"
 title = "Fully funded!"
 aliases = [
   "/post/fully-funded/",

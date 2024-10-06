@@ -3,7 +3,6 @@ Categories = ["cru", "Albania"]
 Description = ""
 Tags = ["cru", "Albania"]
 date = "2016-12-25T04:56:31+01:00"
-menu = "main"
 title = "Merry Christmas"
 aliases = [
   "/post/merry_christmas/",

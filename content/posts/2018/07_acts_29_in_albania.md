@@ -3,7 +3,6 @@ title = "Acts 29"
 Description = ""
 Tags = ["cru", "Albania"]
 Categories = ["cru", "Albania"]
-menu = "main"
 date = 2018-07-11T08:55:43+02:00
 +++
 

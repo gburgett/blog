@@ -3,7 +3,6 @@ title = "Building on The Foundation"
 Description = ""
 Tags = ["cru", "Albania"]
 Categories = ["cru", "Albania"]
-menu = "main"
 date = 2019-04-13T14:20:14-05:00
 +++
 

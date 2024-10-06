@@ -3,7 +3,6 @@ Categories = ["Development", "Hosting"]
 Description = ""
 Tags = ["Development", "docker", "hosting"]
 date = "2015-10-07T20:33:41+02:00"
-menu = "main"
 title = "Running with Docker"
 aliases = [
   "/post/running_with_docker/",

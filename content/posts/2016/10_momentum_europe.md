@@ -3,7 +3,6 @@ Categories = ["cru", "Albania"]
 Description = ""
 Tags = ["cru", "Albania"]
 date = "2016-10-23T23:06:47+02:00"
-menu = "main"
 title = "Momentum Europe"
 aliases = [
   "/post/momentum_europe/",

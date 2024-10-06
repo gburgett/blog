@@ -4,7 +4,6 @@ Tags = ["cru","Albania"]
 Description = ""
 date = "2017-12-14T20:18:22-07:00"
 title = "Men's Retreat in Albania"
-menu = "main"
 
 +++
 

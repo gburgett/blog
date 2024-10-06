@@ -1,0 +1,60 @@
+BaseURL: http://www.gordonburgett.net
+languageCode: en-us
+title: Gordon Burgett | Director of Technology Development
+author: Gordon Burgett
+theme: hugo-profile
+copyright: All content © Gordon Burgett, 2014-2024
+
+indexes:
+  category: categories
+  tag: tags
+
+params:
+  AuthorName: Gordon
+  github: gburgett
+  email: gordon@gordonburgett.net
+  description: A blog about whatever crosses my mind, ordered by importance.
+  animate: true
+  
+  hero:
+    enable: true
+    intro: Hi, my name is
+    title: Gordon Burgett
+    subtitle: I help bring ideas to reality
+    content: I love taking unformed ideas and turning them into working software. With 13+ years of experience in software development, I can help you take your idea from inception to a working product, quickly and efficiently.
+    image: /images/headshot.jpg
+    roundImage: true
+    
+    button:
+      enable: true
+      url: https://burgettconsulting.com
+      name: Let's build something together!
+
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/gburgett
+    
+    bottomImage:
+      enable: false
+
+languages:
+  en:
+    languageName: English
+    weight: 1
+  sq:
+    languageName: Shqip
+    weight: 2
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+menu:
+  main:
+    - identifier: blog
+      name: Blog
+      title: Blog posts
+      url: /blogs
+      weight: 1

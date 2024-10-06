@@ -3,7 +3,6 @@ Categories = ["reclaimed", "Development"]
 Description = ""
 Tags = ["reclaimed", "Development", "docker"]
 date = "2016-01-19T21:31:01+01:00"
-menu = "main"
 title = "Hosting Reclaimed"
 aliases = [
   "/post/hosting_reclaimed/",

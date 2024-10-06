@@ -3,7 +3,6 @@ Categories = ["missions", "albania"]
 Description = "Things "
 Tags = ["missions", "albania", "cru"]
 date = "2015-04-09T22:20:15-05:00"
-menu = "main"
 title = "Albania!  YEEEEHAWWW!"
 navtitle = "Albania"
 type = "albania"

@@ -3,7 +3,6 @@ Categories = ["docker"]
 Description = ""
 Tags = ["docker", "linux"]
 date = "2017-03-21T16:20:52+01:00"
-menu = "main"
 title = "Automating more work"
 aliases = [
   "/post/automating_more_work/",

@@ -3,7 +3,6 @@ title = "Feeling Like I'm at Hogwarts"
 Description = ""
 Tags = ["javascript", "development", "typescript"]
 Categories = ["development"]
-menu = "main"
 date = 2018-05-20T14:52:15-05:00
 +++
 

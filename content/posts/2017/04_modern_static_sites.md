@@ -1,7 +1,6 @@
 +++
 date = "2017-04-20T13:49:22+02:00"
 title = "Modern Static Sites"
-menu = "main"
 Categories = ["development"]
 Tags = ["development", "hugo", "javascript"]
 Description = ""

@@ -3,7 +3,6 @@ Tags = ["cru","Albania"]
 Description = ""
 date = "2017-06-18T19:50:29+02:00"
 title = "Big Decision"
-menu = "main"
 Categories = ["cru","Albania"]
 
 +++

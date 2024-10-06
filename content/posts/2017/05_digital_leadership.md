@@ -1,7 +1,6 @@
 +++
 date = "2017-05-08T13:39:29+02:00"
 title = "Digital Leadership"
-menu = "main"
 Categories = ["cru","Albania"]
 Tags = ["cru","Albania"]
 Description = ""

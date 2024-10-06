@@ -3,7 +3,6 @@ Categories = ["cru", "Albania"]
 Description = ""
 Tags = ["cru", "Albania"]
 date = "2016-11-21T14:29:43+01:00"
-menu = "main"
 title = "When you eat chili 3 days in a row"
 aliases = [
   "/post/too_much_chili/",

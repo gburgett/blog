@@ -3,7 +3,6 @@ Categories = ["Development", "hosting"]
 Description = "My experience migrating my blog to nodejs"
 Tags = ["Development", "node", "expressjs", "hosting"]
 date = "2015-04-10T23:23:19-05:00"
-menu = "main"
 title = "Migrating to Node"
 aliases = [
   "/post/migrating-to-node/",

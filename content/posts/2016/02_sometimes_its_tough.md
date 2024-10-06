@@ -3,7 +3,6 @@ Categories = ["cru", "Albania"]
 Description = ""
 Tags = ["cru", "Albania"]
 date = "2016-02-27T14:35:52+01:00"
-menu = "main"
 title = "Sometimes It's Tough"
 aliases = [
   "/post/sometimes_its_tough/",

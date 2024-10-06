@@ -3,7 +3,6 @@ Categories = ["cru", "Albania"]
 Description = ""
 Tags = ["cru", "Albania"]
 date = "2016-08-14T15:30:48+02:00"
-menu = "main"
 title = "Summer Recap"
 aliases = [
   "/post/summer_recap/",

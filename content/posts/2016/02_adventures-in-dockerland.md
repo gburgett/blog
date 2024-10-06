@@ -3,7 +3,6 @@ Categories = ["Development"]
 Description = ""
 Tags = ["Development", "docker"]
 date = "2016-02-20T20:33:52+01:00"
-menu = "main"
 title = "Adventures in Dockerland"
 aliases = [
   "/post/adventures-in-dockerland/",

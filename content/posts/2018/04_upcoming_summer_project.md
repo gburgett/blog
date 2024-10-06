@@ -2,7 +2,6 @@
 Description = ""
 Tags = ["cru", "Albania"]
 Categories = ["cru", "Albania"]
-menu = "main"
 date = "2018-04-05T20:18:22-07:00"
 title = "Preparing for the Summer"
 +++

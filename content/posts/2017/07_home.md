@@ -1,7 +1,6 @@
 +++
 date = "2017-07-20T11:38:22+02:00"
 title = "Home"
-menu = "main"
 Categories = ["cru","Albania"]
 Tags = ["cru","Albania"]
 Description = ""

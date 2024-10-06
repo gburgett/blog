@@ -3,7 +3,6 @@ Categories = ["Development", "GoLang"]
 Description = ""
 Tags = ["Development", "golang"]
 date = "2015-01-06T22:49:08+01:00"
-menu = "main"
 title = "which which?"
 aliases = [
   "/post/which which/",

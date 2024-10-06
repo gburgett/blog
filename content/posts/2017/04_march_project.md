@@ -1,6 +1,5 @@
 +++
 title = "March Project"
-menu = "main"
 Categories = ["cru","Albania"]
 Tags = ["cru","Albania"]
 Description = ""
