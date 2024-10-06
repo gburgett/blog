@@ -1,21 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>search on first things first</title>
-    <link>http://www.gordonburgett.net/tags/search/</link>
-    <description>Recent content in search on first things first</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>All content © Gordon Burgett, 2014-2015</copyright>
-    <lastBuildDate>Sun, 23 Jul 2017 17:28:52 +0200</lastBuildDate><atom:link href="http://www.gordonburgett.net/tags/search/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Making a static site searchable</title>
-      <link>http://www.gordonburgett.net/post/2017/07_making_a_searchable_static_site/</link>
-      <pubDate>Sun, 23 Jul 2017 17:28:52 +0200</pubDate>
-      
-      <guid>http://www.gordonburgett.net/post/2017/07_making_a_searchable_static_site/</guid>
-      <description>My site is getting pretty big now! 50+ posts, plus my journal entries from years past, I have content stretching over 4 years. So I started thinking about ways to add search functionality. And anyone who knows me knows I like to make these kind of things more complicated than they need to be, so with that in mind I had a fun challenge to solve. How do I add search functionality to a static site?</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Search on first things first</title><link>http://www.gordonburgett.net/tags/search/</link><description>Recent content in Search on first things first</description><generator>Hugo</generator><language>en</language><copyright>All content © Gordon Burgett, 2014-2015</copyright><lastBuildDate>Sun, 23 Jul 2017 17:28:52 +0200</lastBuildDate><atom:link href="http://www.gordonburgett.net/tags/search/index.xml" rel="self" type="application/rss+xml"/><item><title>Making a static site searchable</title><link>http://www.gordonburgett.net/post/2017/07_making_a_searchable_static_site/</link><pubDate>Sun, 23 Jul 2017 17:28:52 +0200</pubDate><guid>http://www.gordonburgett.net/post/2017/07_making_a_searchable_static_site/</guid><description>&lt;p>My site is getting pretty big now! 50+ posts, plus my journal entries from years past, I have content stretching over 4 years.
+So I started thinking about ways to add search functionality. And anyone who knows me knows I like to make these kind of things
+more complicated than they need to be, so with that in mind I had a fun challenge to solve. How do I add search functionality to
+a static site?&lt;/p></description></item></channel></rss>

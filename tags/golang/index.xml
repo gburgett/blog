@@ -1,22 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>golang on first things first</title>
-    <link>http://www.gordonburgett.net/tags/golang/</link>
-    <description>Recent content in golang on first things first</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>All content © Gordon Burgett, 2014-2015</copyright>
-    <lastBuildDate>Tue, 06 Jan 2015 22:49:08 +0100</lastBuildDate><atom:link href="http://www.gordonburgett.net/tags/golang/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>which which?</title>
-      <link>http://www.gordonburgett.net/post/2015/01_which-which/</link>
-      <pubDate>Tue, 06 Jan 2015 22:49:08 +0100</pubDate>
-      
-      <guid>http://www.gordonburgett.net/post/2015/01_which-which/</guid>
-      <description>I&amp;rsquo;m using locomotivecms for a project I&amp;rsquo;m working on, and it uses ImageMagick for resizing pictures on the fly. The standard instructions say to use the bitnami Ruby stack installer to get everything you need in a nice neat bundle.
-That worked for me for a while, until I needed to update the version of ruby I&amp;rsquo;m using. So, I went through the long and painful process of uninstalling the ruby stack, installing each component individually, identifying and correcting a ton of minor problems, and finally squashed the last bug by writing this program.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Golang on first things first</title><link>http://www.gordonburgett.net/tags/golang/</link><description>Recent content in Golang on first things first</description><generator>Hugo</generator><language>en</language><copyright>All content © Gordon Burgett, 2014-2015</copyright><lastBuildDate>Tue, 06 Jan 2015 22:49:08 +0100</lastBuildDate><atom:link href="http://www.gordonburgett.net/tags/golang/index.xml" rel="self" type="application/rss+xml"/><item><title>which which?</title><link>http://www.gordonburgett.net/post/2015/01_which-which/</link><pubDate>Tue, 06 Jan 2015 22:49:08 +0100</pubDate><guid>http://www.gordonburgett.net/post/2015/01_which-which/</guid><description>&lt;p>I&amp;rsquo;m using &lt;a href="http://locomotivecms.com/">locomotivecms&lt;/a> for a project I&amp;rsquo;m working on, and it uses &lt;a href="http://www.imagemagick.org/">ImageMagick&lt;/a> for resizing pictures on the fly. The &lt;a href="http://doc.locomotivecms.com/get-started/install-wagon#windows">standard instructions&lt;/a> say to use the bitnami Ruby stack installer to get everything you need in a nice neat bundle.&lt;/p>
+&lt;p>That worked for me for a while, until I needed to update the version of ruby I&amp;rsquo;m using. So, I went through the long and painful process of uninstalling the ruby stack, installing each component individually, identifying and correcting a ton of minor problems, and finally squashed the last bug by writing this program.&lt;/p></description></item></channel></rss>

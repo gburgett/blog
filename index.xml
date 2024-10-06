@@ -1,35 +1,6 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>first things first on first things first</title>
-    <link>http://www.gordonburgett.net/</link>
-    <description>Recent content in first things first on first things first</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>All content © Gordon Burgett, 2014-2015</copyright>
-    <lastBuildDate>Sat, 02 Jul 2022 00:36:09 -0500</lastBuildDate>
-    <atom:link href="http://www.gordonburgett.net/" rel="self" type="application/rss+xml" />
-    
-    
-    
-    
-    
-    
-    <item>
-      <title>Albania!  YEEEEHAWWW!</title>
-      <link>http://www.gordonburgett.net/albania/</link>
-      <pubDate>Thu, 09 Apr 2015 22:20:15 -0500</pubDate>
-      
-      <guid>http://www.gordonburgett.net/albania/</guid>
-      <description>&lt;p&gt;Howdy!  My name is Gordon Burgett and I&amp;rsquo;m going to Albania this summer.  I first
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>first things first on first things first</title><link>http://www.gordonburgett.net/</link><description>Recent content in first things first on first things first</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>All content © Gordon Burgett, 2014-2015</copyright><lastBuildDate>Sat, 02 Jul 2022 00:36:09 -0500</lastBuildDate><atom:link href="http://www.gordonburgett.net/" rel="self" type="application/rss+xml"/><item><title>Albania! YEEEEHAWWW!</title><link>http://www.gordonburgett.net/albania/</link><pubDate>Thu, 09 Apr 2015 22:20:15 -0500</pubDate><guid>http://www.gordonburgett.net/albania/</guid><description>&lt;p>Howdy! My name is Gordon Burgett and I&amp;rsquo;m going to Albania this summer. I first
 went in the summer of 2013, and fell in love with both the people and the mission.
-Since that time I’ve been back and forth every summer, and a few stints in between.&lt;/p&gt;
-&lt;p&gt;We&amp;rsquo;re continuing the work we&amp;rsquo;ve been doing over the past 8+ years.
+Since that time I’ve been back and forth every summer, and a few stints in between.&lt;/p>
+&lt;p>We&amp;rsquo;re continuing the work we&amp;rsquo;ve been doing over the past 8+ years.
 As the Poland Re:Generation project matures, we&amp;rsquo;re starting to look into new ways
-we can support the native staff and church members in Albania and b...</description>
-    </item>
-    
-    
-    
-    
-  </channel>
-</rss>
+we can support the native staff and church members in Albania and b...</description></item></channel></rss>

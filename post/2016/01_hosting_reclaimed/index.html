@@ -1,158 +1,36 @@
-  <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-<head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <title> Hosting Reclaimed &middot; first things first </title>
-    
-    <link rel="stylesheet" type="text/css" href="/css/uno.min.css" />
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/custom.css" />
-    
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-
-    
-    <link href="http://www.gordonburgett.net/index.xml" rel="alternate" type="application/rss+xml" title="first things first" />
-
-    
-      <link rel="canonical" href="http://www.gordonburgett.net/post/2016/01_hosting_reclaimed/">
-    
-</head>
-
-  <body>
-    <span class="mobile btn-mobile-menu">
-        <i class="fa fa-bars btn-mobile-menu__icon"></i>
-        <i class="fa fa-times btn-mobile-close__icon hidden"></i>
-    </span>
-<header class="panel-cover panel-cover--collapsed " >
-    <div class="panel-main">
-        <div class="panel-main__inner panel-inverted">
-            <div class="panel-main__content"> 
-                <h1 class="panel-cover__title panel-title">
-                    <a href="/" title="link to homepage for first things first">first things first</a>
-                </h1>
-                <hr class="panel-cover__divider" />
-                <p class="panel-cover__description">  A blog about whatever crosses my mind, ordered by importance.  </p>
-                <hr class="panel-cover__divider panel-cover__divider--secondary" />
-                <div class="navigation-wrapper">
-                    <nav class="cover-navigation cover-navigation--primary">
-                        <ul class="navigation">
-                            <li class="navigation__item"><a href="/albania" title='Albania' class="blog-button">
-                            Albania
-                            </a></li>
-                            <br/>
-                            <li class="navigation__item"><a href="/search" title='Search' class="blog-button">Search</a></li>
-                            <br/>
-                            <li class="navigation__item">
-                                
-                            </li>
-                        </ul>
-                    </nav> <nav class="cover-navigation navigation--social">
-    <ul class="navigation">
-        <li class="navigation__item">
-        <a href="http://www.gordonburgett.net/index.xml" title="RSS">
-            <i class="fa fa-rss"></i>
-            <span class="label">RSS</span>
-        </a>
-        </li>
-        <br/>
-        
-         
-        
-        
-        <li class="navigation__item">
-            <a href="https://github.com/gburgett" title="gburgett on github"> <i class='fa fa-github'></i> <span class="label">Github</span> </a>
-        </li>
-        
-         </br>
-         
-         
-         
-        
-        <li class="navigation__item">
-            <a href="#" id="email" title="Email"> <i class='fa fa-envelope-o'></i> <span class="label">Email</span> </a>
-        </li>
-        
-        <br/>
-        
-        <li class="navigation__item">
-            <a href="/pubkey.txt" id="gpg" title="GPG key"> <i class='fa fa-key'></i> <span class="label">GPG key</span> </a>
-        </li>
-    </ul>
-</nav>
- </div>
-            </div>
-        </div>
-        <div class="panel-cover--overlay"></div>
-    </div>
-</header>
-    <div class="content-wrapper">
-      <div class="content-wrapper__inner">
-        <div class="post">
-          <h1>Hosting Reclaimed</h1>
-          <span class="post-date">Tue, Jan 19, 2016</span>
-          <p>Here&rsquo;s another technical post for y&rsquo;all!</p>
-<p>I had some time this past weekend, so I took a look into the website I made a year ago for <a href="http://www.reclaimed431.org">Reclaimed</a>.  The old version was made with <a href="http://locomotivecms.com/">Locomotive CMS</a>, and hosted on <a href="http://www.locomotivehosting.com">Locomotive hosting</a>.  It was a good choice at the time, because we needed something fast.  We wanted to deploy it before the 2015 super bowl.</p>
-<p>I&rsquo;d previously looked into moving it to Wordpress or Drupal, but that would basically require redoing the whole site.  More work than I&rsquo;m willing to put in.  But, just this past weekend, <a href="http://locomotive.works/">Locomotive v3</a> came out.  I decided to try hosting it myself, because $20/mo is just a bit too much to be paying for a simple website like this.  Plus, it would be fun! (or so I thought.)</p>
-<p>Follow along in another tab with my repo: <a href="https://github.com/gburgett/locomotive_engine">https://github.com/gburgett/locomotive_engine</a></p>
-<p>First things first, I&rsquo;ve learned from past mistakes, anytime you&rsquo;re installing open source software make sure you do it in a Linux VM.  Too often open source stuff, especially ruby (oh how I loathe you now), only works on OSX and Linux.</p>
-<p>The second thing I&rsquo;ve learned from past mistakes is always have a repeatable build of your environment.  My go-to nowadays is Vagrant and Docker.  So I hacked a simple <a href="https://github.com/gburgett/locomotive_engine/blob/master/Vagrantfile">Vagrantfile</a> and <a href="https://github.com/gburgett/locomotive_engine/blob/master/provision.sh">provisioning script</a> which just sets up docker and docker-compose.  <code>vagrant up</code>!</p>
-<h2 id="ok-now-we-can-get-started">OK now we can get started!</h2>
-<p>So now that I have a linux system, I need to start building the environment that hosts the LocomotiveCMS engine.  Following along from <a href="https://locomotive-v3.readme.io/docs/getting-started-with-locomotive">this guide</a>, I built my environment from the <code>rails:4</code> base.  I created the rails app and installed the &rsquo;locomotivecms&rsquo; ruby gem, then set the command to run the server:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-docker" data-lang="docker"><span style="display:flex;"><span><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> rails:4</span><span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">MAINTAINER</span><span style="color:#e6db74"> gordon.burgett@gmail.com</span><span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># create the rails app, add locomotivecms as a dependency, install all the gems</span><span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> rails new engine --skip-bundle --skip-active-record<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">WORKDIR</span><span style="color:#e6db74"> engine/</span><span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> bundle inject <span style="color:#e6db74">&#39;locomotivecms&#39;</span> <span style="color:#e6db74">&#39;~&gt; 3.0.0&#39;</span><span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> bundle install <span style="color:#f92672">&amp;&amp;</span> <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>	 bundle exec rails generate locomotive:install <span style="color:#f92672">&amp;&amp;</span> <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>	 bundle install<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">EXPOSE</span><span style="color:#e6db74"> 8080</span><span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">CMD</span> bundle exec rails server -p <span style="color:#ae81ff">8080</span><span style="color:#960050;background-color:#1e0010">
-</span></span></span></code></pre></div><p>Using docker-compose, I connected my engine image to mongoDB:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">engine</span>:
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">build</span>: <span style="color:#ae81ff">engine/</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">ports</span>:
-</span></span><span style="display:flex;"><span>   - <span style="color:#e6db74">&#34;8080:8080&#34;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">links</span>:
-</span></span><span style="display:flex;"><span>   - <span style="color:#ae81ff">db</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">db</span>:
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">image</span>: <span style="color:#ae81ff">mongo:3</span>
-</span></span></code></pre></div><p><code>docker-compose up</code> and&hellip; can&rsquo;t connect.  But I can connect if I get into the docker image.  It must be running in development mode and only accepting connections to localhost.  Time for some research!</p>
-<h2 id="several-hours-of-googling-later">Several hours of googling later&hellip;</h2>
-<p>Apparently the standard way to set up a rails app is to use nginx in front, and proxy through a unix socket.  So, time to set all that up!  This was a pain.  First, even installing nginx required a non-trivial script which I found somewhere:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#! /bin/bash
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span>nginx<span style="color:#f92672">=</span>stable <span style="color:#75715e"># use nginx=development for latest development version</span>
-</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;deb http://ppa.launchpad.net/nginx/</span>$nginx<span style="color:#e6db74">/ubuntu lucid main&#34;</span> &gt; /etc/apt/sources.list.d/nginx-$nginx-lucid.list
-</span></span><span style="display:flex;"><span>apt-key adv --keyserver keyserver.ubuntu.com --recv-keys C300EE8C
-</span></span><span style="display:flex;"><span>apt-get update -y
-</span></span><span style="display:flex;"><span>apt-get install -y nginx
-</span></span></code></pre></div><p>And there&rsquo;s a lot of conflicting info on how to set up your nginx configuration to proxy.  For the most part, I just needed to set up the &ldquo;upstream&rdquo; section, define it later as a location, and proxy to it.  I decided I&rsquo;d have it first look for static assets in the <code>./public</code> folder, hence the <code>try_files</code> directive.  <a href="https://github.com/gburgett/locomotive_engine/blob/master/engine/nginx.conf">Here it is</a>:</p>
-<pre tabindex="0"><code class="language-conf" data-lang="conf">http {
+<!doctype html><html xmlns=http://www.w3.org/1999/xhtml xml:lang=en lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1"><title>Hosting Reclaimed &#183; first things first </title><link rel=stylesheet type=text/css href=/css/uno.min.css><link rel=stylesheet href=//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css><link rel=stylesheet type=text/css href=/css/custom.css><link rel=apple-touch-icon sizes=57x57 href=/apple-icon-57x57.png><link rel=apple-touch-icon sizes=60x60 href=/apple-icon-60x60.png><link rel=apple-touch-icon sizes=72x72 href=/apple-icon-72x72.png><link rel=apple-touch-icon sizes=76x76 href=/apple-icon-76x76.png><link rel=apple-touch-icon sizes=114x114 href=/apple-icon-114x114.png><link rel=apple-touch-icon sizes=120x120 href=/apple-icon-120x120.png><link rel=apple-touch-icon sizes=144x144 href=/apple-icon-144x144.png><link rel=apple-touch-icon sizes=152x152 href=/apple-icon-152x152.png><link rel=apple-touch-icon sizes=180x180 href=/apple-icon-180x180.png><link rel=icon type=image/png sizes=192x192 href=/android-icon-192x192.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=96x96 href=/favicon-96x96.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/manifest.json><meta name=msapplication-TileColor content="#ffffff"><meta name=msapplication-TileImage content="/ms-icon-144x144.png"><meta name=theme-color content="#ffffff"><link rel=canonical href=http://www.gordonburgett.net/post/2016/01_hosting_reclaimed/></head><body><span class="mobile btn-mobile-menu"><i class="fa fa-bars btn-mobile-menu__icon"></i>
+<i class="fa fa-times btn-mobile-close__icon hidden"></i></span><header class="panel-cover panel-cover--collapsed"><div class=panel-main><div class="panel-main__inner panel-inverted"><div class=panel-main__content><h1 class="panel-cover__title panel-title"><a href=/ title="link to homepage for first things first">first things first</a></h1><hr class=panel-cover__divider><p class=panel-cover__description>A blog about whatever crosses my mind, ordered by importance.</p><hr class="panel-cover__divider panel-cover__divider--secondary"><div class=navigation-wrapper><nav class="cover-navigation cover-navigation--primary"><ul class=navigation><li class=navigation__item><a href=/albania title=Albania class=blog-button>Albania</a></li><br><li class=navigation__item><a href=/search title=Search class=blog-button>Search</a></li><br><li class=navigation__item></li></ul></nav><nav class="cover-navigation navigation--social"><ul class=navigation><br><li class=navigation__item><a href=https://github.com/gburgett title="gburgett on github"><i class='fa fa-github'></i> <span class=label>Github</span></a></li></br><li class=navigation__item><a href=# id=email title=Email><i class='fa fa-envelope-o'></i> <span class=label>Email</span></a></li><br><li class=navigation__item><a href=/pubkey.txt id=gpg title="GPG key"><i class='fa fa-key'></i> <span class=label>GPG key</span></a></li></ul></nav></div></div></div><div class=panel-cover--overlay></div></div></header><div class=content-wrapper><div class=content-wrapper__inner><div class=post><h1>Hosting Reclaimed</h1><span class=post-date>Tue, Jan 19, 2016</span><p>Here&rsquo;s another technical post for y&rsquo;all!</p><p>I had some time this past weekend, so I took a look into the website I made a year ago for <a href=http://www.reclaimed431.org>Reclaimed</a>. The old version was made with <a href=http://locomotivecms.com/>Locomotive CMS</a>, and hosted on <a href=http://www.locomotivehosting.com>Locomotive hosting</a>. It was a good choice at the time, because we needed something fast. We wanted to deploy it before the 2015 super bowl.</p><p>I&rsquo;d previously looked into moving it to Wordpress or Drupal, but that would basically require redoing the whole site. More work than I&rsquo;m willing to put in. But, just this past weekend, <a href=http://locomotive.works/>Locomotive v3</a> came out. I decided to try hosting it myself, because $20/mo is just a bit too much to be paying for a simple website like this. Plus, it would be fun! (or so I thought.)</p><p>Follow along in another tab with my repo: <a href=https://github.com/gburgett/locomotive_engine>https://github.com/gburgett/locomotive_engine</a></p><p>First things first, I&rsquo;ve learned from past mistakes, anytime you&rsquo;re installing open source software make sure you do it in a Linux VM. Too often open source stuff, especially ruby (oh how I loathe you now), only works on OSX and Linux.</p><p>The second thing I&rsquo;ve learned from past mistakes is always have a repeatable build of your environment. My go-to nowadays is Vagrant and Docker. So I hacked a simple <a href=https://github.com/gburgett/locomotive_engine/blob/master/Vagrantfile>Vagrantfile</a> and <a href=https://github.com/gburgett/locomotive_engine/blob/master/provision.sh>provisioning script</a> which just sets up docker and docker-compose. <code>vagrant up</code>!</p><h2 id=ok-now-we-can-get-started>OK now we can get started!</h2><p>So now that I have a linux system, I need to start building the environment that hosts the LocomotiveCMS engine. Following along from <a href=https://locomotive-v3.readme.io/docs/getting-started-with-locomotive>this guide</a>, I built my environment from the <code>rails:4</code> base. I created the rails app and installed the &rsquo;locomotivecms&rsquo; ruby gem, then set the command to run the server:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-docker data-lang=docker><span style=display:flex><span><span style=color:#66d9ef>FROM</span><span style=color:#e6db74> rails:4</span><span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>MAINTAINER</span><span style=color:#e6db74> gordon.burgett@gmail.com</span><span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#75715e># create the rails app, add locomotivecms as a dependency, install all the gems</span><span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>RUN</span> rails new engine --skip-bundle --skip-active-record<span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>WORKDIR</span><span style=color:#e6db74> engine/</span><span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>RUN</span> bundle inject <span style=color:#e6db74>&#39;locomotivecms&#39;</span> <span style=color:#e6db74>&#39;~&gt; 3.0.0&#39;</span><span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>RUN</span> bundle install <span style=color:#f92672>&amp;&amp;</span> <span style=color:#ae81ff>\
+</span></span></span><span style=display:flex><span><span style=color:#ae81ff></span>	 bundle exec rails generate locomotive:install <span style=color:#f92672>&amp;&amp;</span> <span style=color:#ae81ff>\
+</span></span></span><span style=display:flex><span><span style=color:#ae81ff></span>	 bundle install<span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>EXPOSE</span><span style=color:#e6db74> 8080</span><span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>CMD</span> bundle exec rails server -p <span style=color:#ae81ff>8080</span><span style=color:#960050;background-color:#1e0010>
+</span></span></span></code></pre></div><p>Using docker-compose, I connected my engine image to mongoDB:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#f92672>engine</span>:
+</span></span><span style=display:flex><span>  <span style=color:#f92672>build</span>: <span style=color:#ae81ff>engine/</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>ports</span>:
+</span></span><span style=display:flex><span>   - <span style=color:#e6db74>&#34;8080:8080&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>links</span>:
+</span></span><span style=display:flex><span>   - <span style=color:#ae81ff>db</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>db</span>:
+</span></span><span style=display:flex><span>  <span style=color:#f92672>image</span>: <span style=color:#ae81ff>mongo:3</span>
+</span></span></code></pre></div><p><code>docker-compose up</code> and&mldr; can&rsquo;t connect. But I can connect if I get into the docker image. It must be running in development mode and only accepting connections to localhost. Time for some research!</p><h2 id=several-hours-of-googling-later>Several hours of googling later&mldr;</h2><p>Apparently the standard way to set up a rails app is to use nginx in front, and proxy through a unix socket. So, time to set all that up! This was a pain. First, even installing nginx required a non-trivial script which I found somewhere:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#75715e>#! /bin/bash
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span>nginx<span style=color:#f92672>=</span>stable <span style=color:#75715e># use nginx=development for latest development version</span>
+</span></span><span style=display:flex><span>echo <span style=color:#e6db74>&#34;deb http://ppa.launchpad.net/nginx/</span>$nginx<span style=color:#e6db74>/ubuntu lucid main&#34;</span> &gt; /etc/apt/sources.list.d/nginx-$nginx-lucid.list
+</span></span><span style=display:flex><span>apt-key adv --keyserver keyserver.ubuntu.com --recv-keys C300EE8C
+</span></span><span style=display:flex><span>apt-get update -y
+</span></span><span style=display:flex><span>apt-get install -y nginx
+</span></span></code></pre></div><p>And there&rsquo;s a lot of conflicting info on how to set up your nginx configuration to proxy. For the most part, I just needed to set up the &ldquo;upstream&rdquo; section, define it later as a location, and proxy to it. I decided I&rsquo;d have it first look for static assets in the <code>./public</code> folder, hence the <code>try_files</code> directive. <a href=https://github.com/gburgett/locomotive_engine/blob/master/engine/nginx.conf>Here it is</a>:</p><pre tabindex=0><code class=language-conf data-lang=conf>http {
   # tell nginx where to find the ruby engine
   upstream engine {
     server unix:///var/run/puma.sock fail_timeout=0;
@@ -180,10 +58,8 @@
     error_page 500 502 503 504 /500.html;
   }
 }
-</code></pre><p>I also had to tell the ruby server to listen on that unix socket, so I added the <a href="https://github.com/gburgett/locomotive_engine/blob/master/engine/config/puma.rb">puma.rb config file</a>.  The crucial line:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>bind <span style="color:#e6db74">&#39;unix:///var/run/puma.sock&#39;</span>  <span style="color:#75715e"># nginx will proxy to this socket</span>
-</span></span></code></pre></div><p>Since we now have 2 processes in this container, I need <code>supervisord</code> to coordinate them.  <a href="https://github.com/gburgett/locomotive_engine/blob/master/engine/supervisord.conf">My supervisord.conf</a> is mostly pulled from some examples I found (you can see the full thing in the repo), here&rsquo;s the critical stuff:</p>
-<pre tabindex="0"><code class="language-conf" data-lang="conf">[supervisord]
+</code></pre><p>I also had to tell the ruby server to listen on that unix socket, so I added the <a href=https://github.com/gburgett/locomotive_engine/blob/master/engine/config/puma.rb>puma.rb config file</a>. The crucial line:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-ruby data-lang=ruby><span style=display:flex><span>bind <span style=color:#e6db74>&#39;unix:///var/run/puma.sock&#39;</span>  <span style=color:#75715e># nginx will proxy to this socket</span>
+</span></span></code></pre></div><p>Since we now have 2 processes in this container, I need <code>supervisord</code> to coordinate them. <a href=https://github.com/gburgett/locomotive_engine/blob/master/engine/supervisord.conf>My supervisord.conf</a> is mostly pulled from some examples I found (you can see the full thing in the repo), here&rsquo;s the critical stuff:</p><pre tabindex=0><code class=language-conf data-lang=conf>[supervisord]
 nodaemon=true
 
 [program:rails]
@@ -194,108 +70,54 @@ directory=/engine/
 [program:nginx]
 command = /usr/sbin/nginx
 ...
-</code></pre><p>And of course nginx can&rsquo;t run as a daemon anymore so you have to add <code>daemon off;</code> at the top of nginx.conf.</p>
-<p>So that all has to get back into the Dockerfile.  Here&rsquo;s the lines:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-docker" data-lang="docker"><span style="display:flex;"><span><span style="color:#75715e"># we need nginx</span><span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> install_nginx.sh install_nginx.sh<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> /bin/bash install_nginx.sh <span style="color:#f92672">&amp;&amp;</span> rm install_nginx.sh<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># and supervisor</span><span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> apt-get install -y supervisor<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>...<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># copy all the config files into the image</span><span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> supervisord.conf /etc/supervisor/conf.d/supervisord.conf<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> nginx.conf /etc/nginx/nginx.conf<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> config config<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># start by running supervisord</span><span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">CMD</span> [<span style="color:#e6db74">&#34;/usr/bin/supervisord&#34;</span>]<span style="color:#960050;background-color:#1e0010">
-</span></span></span></code></pre></div><p>Annndd&hellip; minor success!  I can access the page from outside!</p>
-<iframe width="640" height="360" src="https://www.youtube.com/embed/YQHsXMglC9A" frameborder="0" allowfullscreen></iframe>
-<h2 id="fixing-the-assets">Fixing the assets</h2>
-<p>I was getting the HTML, but all the javascripts, css, and images were not loading.  The browser was being redirected to the sign-in page when it tried to load them.  Hmm&hellip; is nginx supposed to be serving these?</p>
-<p>Several more (ok, maybe 1 and a half) hours of googling later, and apparently you&rsquo;re supposed to precompile assets in the rails asset pipeline.  So, let&rsquo;s add that to the docker image:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-docker" data-lang="docker"><span style="display:flex;"><span><span style="color:#75715e"># precompile all the assets so nginx can serve them</span><span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> RAILS_ENV<span style="color:#f92672">=</span>production SECRET_KEY_BASE<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;foo&#39;</span> bin/rake assets:precompile<span style="color:#960050;background-color:#1e0010">
-</span></span></span></code></pre></div><p>And now&hellip; the assets are serving but the browser isn&rsquo;t displaying them.  For some reason, they&rsquo;re all being served as MIME type text/plain?  I thought nginx understood javascript and css files ought to be served as the correct MIME types?</p>
-<p>More googling came up with this missing piece: nginx has a special file that has to be included in it&rsquo;s configuration to tell it about MIME types.</p>
-<pre tabindex="0"><code># include this so that nginx doesn&#39;t serve everything as text/plain
+</code></pre><p>And of course nginx can&rsquo;t run as a daemon anymore so you have to add <code>daemon off;</code> at the top of nginx.conf.</p><p>So that all has to get back into the Dockerfile. Here&rsquo;s the lines:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-docker data-lang=docker><span style=display:flex><span><span style=color:#75715e># we need nginx</span><span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>COPY</span> install_nginx.sh install_nginx.sh<span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>RUN</span> /bin/bash install_nginx.sh <span style=color:#f92672>&amp;&amp;</span> rm install_nginx.sh<span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#75715e># and supervisor</span><span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>RUN</span> apt-get install -y supervisor<span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span>...<span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#75715e># copy all the config files into the image</span><span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>COPY</span> supervisord.conf /etc/supervisor/conf.d/supervisord.conf<span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>COPY</span> nginx.conf /etc/nginx/nginx.conf<span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>COPY</span> config config<span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#75715e># start by running supervisord</span><span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>CMD</span> [<span style=color:#e6db74>&#34;/usr/bin/supervisord&#34;</span>]<span style=color:#960050;background-color:#1e0010>
+</span></span></span></code></pre></div><p>Annndd&mldr; minor success! I can access the page from outside!</p><iframe width=640 height=360 src=https://www.youtube.com/embed/YQHsXMglC9A frameborder=0 allowfullscreen></iframe><h2 id=fixing-the-assets>Fixing the assets</h2><p>I was getting the HTML, but all the javascripts, css, and images were not loading. The browser was being redirected to the sign-in page when it tried to load them. Hmm&mldr; is nginx supposed to be serving these?</p><p>Several more (ok, maybe 1 and a half) hours of googling later, and apparently you&rsquo;re supposed to precompile assets in the rails asset pipeline. So, let&rsquo;s add that to the docker image:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-docker data-lang=docker><span style=display:flex><span><span style=color:#75715e># precompile all the assets so nginx can serve them</span><span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>RUN</span> RAILS_ENV<span style=color:#f92672>=</span>production SECRET_KEY_BASE<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;foo&#39;</span> bin/rake assets:precompile<span style=color:#960050;background-color:#1e0010>
+</span></span></span></code></pre></div><p>And now&mldr; the assets are serving but the browser isn&rsquo;t displaying them. For some reason, they&rsquo;re all being served as MIME type text/plain? I thought nginx understood javascript and css files ought to be served as the correct MIME types?</p><p>More googling came up with this missing piece: nginx has a special file that has to be included in it&rsquo;s configuration to tell it about MIME types.</p><pre tabindex=0><code># include this so that nginx doesn&#39;t serve everything as text/plain
 include /etc/nginx/mime.types;
-</code></pre><p>Include that, rebuild, and SUCCESS!  I&rsquo;m seeing it the way it should be!</p>
-<p><img src="/.640x/images/2016/locomotive_3_home.png" alt="LocomotiveCMS 3.0 homepage"></p>
-<h2 id="now-to-put-it-on-the-server">Now to put it on the server</h2>
-<p>Since I have a dockerfile, it&rsquo;s fairly trivial to set up a <a href="https://hub.docker.com/r/gordonburgett/locomotive_engine/">repo on dockerhub</a>.  I even set up an automatic build to trigger whenever I push to github.  Now I can set up my AWS server to run it.</p>
-<p>I changed up the HAProxy configuration on my AWS server to redirect incoming requests for reclaimed.gordonburgett.net to port 8180.  I had previously set up my EC2 instance to connect to the &ldquo;default&rdquo; cluster in ECS, so I just needed to configure ECS to fire up my docker containers.</p>
-<p><img src="/.640x/images/2016/ecs_task_dash.png" alt="ECS task definition dashboard"></p>
-<p>One thing to make sure of is that the total memory allocations don&rsquo;t top the available memory of the system, or else ECS won&rsquo;t be able to place the containers.  So unfortunately Locomotive gets a rather low allocation, only 256MB.</p>
-<p>I also had to remember to link the engine container to the DB container so they can talk, and to mount the mongodb data directory onto the disk so it won&rsquo;t be destroyed whenever I redeploy the system.</p>
-<p>I&rsquo;ve put my secret keys in environment variables (which is why I won&rsquo;t show you the whole configuration).  But you&rsquo;ve seen the core parts in the above screenshot.</p>
-<p>Last thing to do is define a service with that task and wait for it to spin up!</p>
-<p><img src="/.640x/images/2016/ecs_locomotive_service.png" alt="ECS service definition"></p>
-<p>Since I have HAProxy running on my EC2 instance, I don&rsquo;t need to pay $15/mo for a load balancer.  I just mounted port 8180 in the task definition, and HAProxy sends traffic to that port.</p>
-<p>And it worked!  I created an account on the locomotive engine &amp; set about uploading my site.  That was a bit more of a pain than I thought.</p>
-<h2 id="uploading-the-site">Uploading the site</h2>
-<p>I needed to be able to run the upload tool, Wagon.  Some time ago I had tried installing it on my windows machine and that was a huge pain.  So again we go to Vagrant!</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span><span style="color:#66d9ef">Vagrant</span><span style="color:#f92672">.</span>require_version <span style="color:#e6db74">&#34;&gt;= 1.3.5&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">Vagrant</span><span style="color:#f92672">.</span>configure(<span style="color:#ae81ff">2</span>) <span style="color:#66d9ef">do</span> <span style="color:#f92672">|</span>config<span style="color:#f92672">|</span>
-</span></span><span style="display:flex;"><span>  config<span style="color:#f92672">.</span>vm<span style="color:#f92672">.</span>provider <span style="color:#e6db74">&#34;virtualbox&#34;</span> <span style="color:#66d9ef">do</span> <span style="color:#f92672">|</span>v<span style="color:#f92672">|</span> 
-</span></span><span style="display:flex;"><span>  	v<span style="color:#f92672">.</span>memory <span style="color:#f92672">=</span> <span style="color:#ae81ff">2048</span>
-</span></span><span style="display:flex;"><span>    v<span style="color:#f92672">.</span>customize <span style="color:#f92672">[</span><span style="color:#e6db74">&#34;setextradata&#34;</span>, <span style="color:#e6db74">:id</span>, <span style="color:#e6db74">&#34;VBoxInternal2/SharedFoldersEnableSymlinksCreate//vagrant&#34;</span>, <span style="color:#e6db74">&#34;1&#34;</span><span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">end</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  config<span style="color:#f92672">.</span>vm<span style="color:#f92672">.</span>box <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;ubuntu/vivid64&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  config<span style="color:#f92672">.</span>vm<span style="color:#f92672">.</span>network <span style="color:#e6db74">&#34;forwarded_port&#34;</span>, <span style="color:#e6db74">guest</span>: <span style="color:#ae81ff">3333</span>, <span style="color:#e6db74">host</span>: <span style="color:#ae81ff">3333</span>
-</span></span><span style="display:flex;"><span>  config<span style="color:#f92672">.</span>vm<span style="color:#f92672">.</span>network <span style="color:#e6db74">&#34;forwarded_port&#34;</span>, <span style="color:#e6db74">guest</span>: <span style="color:#ae81ff">35729</span>, <span style="color:#e6db74">host</span>: <span style="color:#ae81ff">35729</span>
-</span></span><span style="display:flex;"><span>  
-</span></span><span style="display:flex;"><span>  config<span style="color:#f92672">.</span>vm<span style="color:#f92672">.</span>provision <span style="color:#e6db74">&#34;file&#34;</span>, <span style="color:#e6db74">source</span>: <span style="color:#e6db74">&#34;~/.gitconfig&#34;</span>, <span style="color:#e6db74">destination</span>: <span style="color:#e6db74">&#34;~/.gitconfig&#34;</span>
-</span></span><span style="display:flex;"><span>  config<span style="color:#f92672">.</span>vm<span style="color:#f92672">.</span>provision <span style="color:#e6db74">&#34;shell&#34;</span>, <span style="color:#e6db74">path</span>: <span style="color:#e6db74">&#34;./provision.sh&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#75715e"># provision.sh</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#install ruby</span>
-</span></span><span style="display:flex;"><span>curl -o rubystack-2.3.0-0-dev.run https://downloads.bitnami.com/files/stacks/rubystack/2.3.0-0/bitnami-rubystack-2.3.0-0-dev-linux-x64-installer.run
-</span></span><span style="display:flex;"><span>chmod +x rubystack-2.3.0-0-dev.run
-</span></span><span style="display:flex;"><span>./rubystack-2.3.0-0-dev.run --mode unattended --disable-components varnish,phpmyadmin,rvm
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#install ruby dev headers</span>
-</span></span><span style="display:flex;"><span>apt-get install -y g++ ruby-dev zlib1g-dev
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#install wagon</span>
-</span></span><span style="display:flex;"><span>gem install locomotivecms_wagon
-</span></span></code></pre></div><p>The difficult part here was installing Ruby.  They do not like to make it easy.  I am downloading Bitnami&rsquo;s Ruby Stack &amp; running that, then installing wagon using the &ldquo;gem&rdquo; tool.</p>
-<p>I kept getting an error when installing wagon, because it was trying to build some native extensions.  That was really frustrating, it took me several hours to figure out (fortunately I could work parallel with the above efforts).  The critical line was installing ruby-dev, g++ and zlib1g-dev.  After installing all those it would finally compile and install wagon.</p>
-<p>The wagon docs aren&rsquo;t that great, they assume a certain knowledge of ruby.  Well I&rsquo;ve certainly gained enough of that over this experience.  I managed to push to my server using this command:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>wagon auth &lt;my-email&gt;@gmail.com &lt;my-password&gt; http://reclaimed.gordonburgett.net
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>wagon deploy reclaimed.gordonburgett.net
-</span></span></code></pre></div><p>It still prompted me for several questions, including my password again, and I&rsquo;m not entirely sure where all that config data is stored.  But it worked!</p>
-<h2 id="time-to-celebrate">Time to celebrate!</h2>
-<p>I&rsquo;m glad it worked.  We maybe won&rsquo;t want to shift over to this setup, but at least I learned a lot about rails.  It was a fun excercise.</p>
-<p><img src="/.640x/images/2016/reclaimed_header.png" alt="Reclaimed hosted on my own server"></p>
-
-        </div>
-      </div>
-    </div>
-  </body>
-  
-
-<link rel="stylesheet" href="/js/highlight/styles/vs2015.css">
-
-
-
-<script
-  src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous"></script>
-<script src="/js/main.min.js"></script>
-<script src="/js/custom.js" ></script>
-
-<script src="/js/highlight/highlight.pack.js"></script>
-<script>
-  hljs.initHighlightingOnLoad();
-</script>
-
-</html>
+</code></pre><p>Include that, rebuild, and SUCCESS! I&rsquo;m seeing it the way it should be!</p><p><img alt="LocomotiveCMS 3.0 homepage" src=/images/2016/locomotive_3_home.png></p><h2 id=now-to-put-it-on-the-server>Now to put it on the server</h2><p>Since I have a dockerfile, it&rsquo;s fairly trivial to set up a <a href=https://hub.docker.com/r/gordonburgett/locomotive_engine/>repo on dockerhub</a>. I even set up an automatic build to trigger whenever I push to github. Now I can set up my AWS server to run it.</p><p>I changed up the HAProxy configuration on my AWS server to redirect incoming requests for reclaimed.gordonburgett.net to port 8180. I had previously set up my EC2 instance to connect to the &ldquo;default&rdquo; cluster in ECS, so I just needed to configure ECS to fire up my docker containers.</p><p><img alt="ECS task definition dashboard" src=/images/2016/ecs_task_dash.png></p><p>One thing to make sure of is that the total memory allocations don&rsquo;t top the available memory of the system, or else ECS won&rsquo;t be able to place the containers. So unfortunately Locomotive gets a rather low allocation, only 256MB.</p><p>I also had to remember to link the engine container to the DB container so they can talk, and to mount the mongodb data directory onto the disk so it won&rsquo;t be destroyed whenever I redeploy the system.</p><p>I&rsquo;ve put my secret keys in environment variables (which is why I won&rsquo;t show you the whole configuration). But you&rsquo;ve seen the core parts in the above screenshot.</p><p>Last thing to do is define a service with that task and wait for it to spin up!</p><p><img alt="ECS service definition" src=/images/2016/ecs_locomotive_service.png></p><p>Since I have HAProxy running on my EC2 instance, I don&rsquo;t need to pay $15/mo for a load balancer. I just mounted port 8180 in the task definition, and HAProxy sends traffic to that port.</p><p>And it worked! I created an account on the locomotive engine & set about uploading my site. That was a bit more of a pain than I thought.</p><h2 id=uploading-the-site>Uploading the site</h2><p>I needed to be able to run the upload tool, Wagon. Some time ago I had tried installing it on my windows machine and that was a huge pain. So again we go to Vagrant!</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-ruby data-lang=ruby><span style=display:flex><span><span style=color:#66d9ef>Vagrant</span><span style=color:#f92672>.</span>require_version <span style=color:#e6db74>&#34;&gt;= 1.3.5&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>Vagrant</span><span style=color:#f92672>.</span>configure(<span style=color:#ae81ff>2</span>) <span style=color:#66d9ef>do</span> <span style=color:#f92672>|</span>config<span style=color:#f92672>|</span>
+</span></span><span style=display:flex><span>  config<span style=color:#f92672>.</span>vm<span style=color:#f92672>.</span>provider <span style=color:#e6db74>&#34;virtualbox&#34;</span> <span style=color:#66d9ef>do</span> <span style=color:#f92672>|</span>v<span style=color:#f92672>|</span> 
+</span></span><span style=display:flex><span>  	v<span style=color:#f92672>.</span>memory <span style=color:#f92672>=</span> <span style=color:#ae81ff>2048</span>
+</span></span><span style=display:flex><span>    v<span style=color:#f92672>.</span>customize <span style=color:#f92672>[</span><span style=color:#e6db74>&#34;setextradata&#34;</span>, <span style=color:#e6db74>:id</span>, <span style=color:#e6db74>&#34;VBoxInternal2/SharedFoldersEnableSymlinksCreate//vagrant&#34;</span>, <span style=color:#e6db74>&#34;1&#34;</span><span style=color:#f92672>]</span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>end</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  config<span style=color:#f92672>.</span>vm<span style=color:#f92672>.</span>box <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;ubuntu/vivid64&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  config<span style=color:#f92672>.</span>vm<span style=color:#f92672>.</span>network <span style=color:#e6db74>&#34;forwarded_port&#34;</span>, <span style=color:#e6db74>guest</span>: <span style=color:#ae81ff>3333</span>, <span style=color:#e6db74>host</span>: <span style=color:#ae81ff>3333</span>
+</span></span><span style=display:flex><span>  config<span style=color:#f92672>.</span>vm<span style=color:#f92672>.</span>network <span style=color:#e6db74>&#34;forwarded_port&#34;</span>, <span style=color:#e6db74>guest</span>: <span style=color:#ae81ff>35729</span>, <span style=color:#e6db74>host</span>: <span style=color:#ae81ff>35729</span>
+</span></span><span style=display:flex><span>  
+</span></span><span style=display:flex><span>  config<span style=color:#f92672>.</span>vm<span style=color:#f92672>.</span>provision <span style=color:#e6db74>&#34;file&#34;</span>, <span style=color:#e6db74>source</span>: <span style=color:#e6db74>&#34;~/.gitconfig&#34;</span>, <span style=color:#e6db74>destination</span>: <span style=color:#e6db74>&#34;~/.gitconfig&#34;</span>
+</span></span><span style=display:flex><span>  config<span style=color:#f92672>.</span>vm<span style=color:#f92672>.</span>provision <span style=color:#e6db74>&#34;shell&#34;</span>, <span style=color:#e6db74>path</span>: <span style=color:#e6db74>&#34;./provision.sh&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>end</span>
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#75715e>#!/bin/bash
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#75715e># provision.sh</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#install ruby</span>
+</span></span><span style=display:flex><span>curl -o rubystack-2.3.0-0-dev.run https://downloads.bitnami.com/files/stacks/rubystack/2.3.0-0/bitnami-rubystack-2.3.0-0-dev-linux-x64-installer.run
+</span></span><span style=display:flex><span>chmod +x rubystack-2.3.0-0-dev.run
+</span></span><span style=display:flex><span>./rubystack-2.3.0-0-dev.run --mode unattended --disable-components varnish,phpmyadmin,rvm
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#install ruby dev headers</span>
+</span></span><span style=display:flex><span>apt-get install -y g++ ruby-dev zlib1g-dev
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#install wagon</span>
+</span></span><span style=display:flex><span>gem install locomotivecms_wagon
+</span></span></code></pre></div><p>The difficult part here was installing Ruby. They do not like to make it easy. I am downloading Bitnami&rsquo;s Ruby Stack & running that, then installing wagon using the &ldquo;gem&rdquo; tool.</p><p>I kept getting an error when installing wagon, because it was trying to build some native extensions. That was really frustrating, it took me several hours to figure out (fortunately I could work parallel with the above efforts). The critical line was installing ruby-dev, g++ and zlib1g-dev. After installing all those it would finally compile and install wagon.</p><p>The wagon docs aren&rsquo;t that great, they assume a certain knowledge of ruby. Well I&rsquo;ve certainly gained enough of that over this experience. I managed to push to my server using this command:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>wagon auth &lt;my-email&gt;@gmail.com &lt;my-password&gt; http://reclaimed.gordonburgett.net
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>wagon deploy reclaimed.gordonburgett.net
+</span></span></code></pre></div><p>It still prompted me for several questions, including my password again, and I&rsquo;m not entirely sure where all that config data is stored. But it worked!</p><h2 id=time-to-celebrate>Time to celebrate!</h2><p>I&rsquo;m glad it worked. We maybe won&rsquo;t want to shift over to this setup, but at least I learned a lot about rails. It was a fun excercise.</p><p><img alt="Reclaimed hosted on my own server" src=/images/2016/reclaimed_header.png></p></div></div></div></body><link rel=stylesheet href=/js/highlight/styles/vs2015.css><script src=https://code.jquery.com/jquery-2.2.4.min.js integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin=anonymous></script><script src=/js/main.min.js></script><script src=/js/custom.js></script><script src=/js/highlight/highlight.pack.js></script><script>hljs.initHighlightingOnLoad()</script></html>

@@ -1,526 +1,328 @@
-  <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-<head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <title> Making a static site searchable &middot; first things first </title>
-    
-    <link rel="stylesheet" type="text/css" href="/css/uno.min.css" />
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/custom.css" />
-    
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-
-    
-    <link href="http://www.gordonburgett.net/index.xml" rel="alternate" type="application/rss+xml" title="first things first" />
-
-    
-      <link rel="canonical" href="http://www.gordonburgett.net/post/2017/07_making_a_searchable_static_site/">
-    
-</head>
-
-  <body>
-    <span class="mobile btn-mobile-menu">
-        <i class="fa fa-bars btn-mobile-menu__icon"></i>
-        <i class="fa fa-times btn-mobile-close__icon hidden"></i>
-    </span>
-<header class="panel-cover panel-cover--collapsed " >
-    <div class="panel-main">
-        <div class="panel-main__inner panel-inverted">
-            <div class="panel-main__content"> 
-                <h1 class="panel-cover__title panel-title">
-                    <a href="/" title="link to homepage for first things first">first things first</a>
-                </h1>
-                <hr class="panel-cover__divider" />
-                <p class="panel-cover__description">  A blog about whatever crosses my mind, ordered by importance.  </p>
-                <hr class="panel-cover__divider panel-cover__divider--secondary" />
-                <div class="navigation-wrapper">
-                    <nav class="cover-navigation cover-navigation--primary">
-                        <ul class="navigation">
-                            <li class="navigation__item"><a href="/albania" title='Albania' class="blog-button">
-                            Albania
-                            </a></li>
-                            <br/>
-                            <li class="navigation__item"><a href="/search" title='Search' class="blog-button">Search</a></li>
-                            <br/>
-                            <li class="navigation__item">
-                                
-                            </li>
-                        </ul>
-                    </nav> <nav class="cover-navigation navigation--social">
-    <ul class="navigation">
-        <li class="navigation__item">
-        <a href="http://www.gordonburgett.net/index.xml" title="RSS">
-            <i class="fa fa-rss"></i>
-            <span class="label">RSS</span>
-        </a>
-        </li>
-        <br/>
-        
-         
-        
-        
-        <li class="navigation__item">
-            <a href="https://github.com/gburgett" title="gburgett on github"> <i class='fa fa-github'></i> <span class="label">Github</span> </a>
-        </li>
-        
-         </br>
-         
-         
-         
-        
-        <li class="navigation__item">
-            <a href="#" id="email" title="Email"> <i class='fa fa-envelope-o'></i> <span class="label">Email</span> </a>
-        </li>
-        
-        <br/>
-        
-        <li class="navigation__item">
-            <a href="/pubkey.txt" id="gpg" title="GPG key"> <i class='fa fa-key'></i> <span class="label">GPG key</span> </a>
-        </li>
-    </ul>
-</nav>
- </div>
-            </div>
-        </div>
-        <div class="panel-cover--overlay"></div>
-    </div>
-</header>
-    <div class="content-wrapper">
-      <div class="content-wrapper__inner">
-        <div class="post">
-          <h1>Making a static site searchable</h1>
-          <span class="post-date">Sun, Jul 23, 2017</span>
-          <p>My site is getting pretty big now!  50+ posts, plus my journal entries from years past, I have content stretching over 4 years.
-So I started thinking about ways to add search functionality.  And anyone who knows me knows I like to make these kind of things
-more complicated than they need to be, so with that in mind I had a fun challenge to solve.  How do I add search functionality to
-a static site?</p>
-<h2 id="whats-a-static-site--and-why-is-it-hard-to-search-it">What&rsquo;s a static site?  And why is it hard to search it?</h2>
-<p><a href="/post/2017/04_modern_static_sites">Modern static sites</a> are compiled from Markdown files to create HTML.  My website is built using
-<a href="https://gohugo.io">Hugo</a>, a static site generator.  What that means is that I have a folder full of partial HTML files, another folder
+<!doctype html><html xmlns=http://www.w3.org/1999/xhtml xml:lang=en lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1"><title>Making a static site searchable &#183; first things first </title><link rel=stylesheet type=text/css href=/css/uno.min.css><link rel=stylesheet href=//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css><link rel=stylesheet type=text/css href=/css/custom.css><link rel=apple-touch-icon sizes=57x57 href=/apple-icon-57x57.png><link rel=apple-touch-icon sizes=60x60 href=/apple-icon-60x60.png><link rel=apple-touch-icon sizes=72x72 href=/apple-icon-72x72.png><link rel=apple-touch-icon sizes=76x76 href=/apple-icon-76x76.png><link rel=apple-touch-icon sizes=114x114 href=/apple-icon-114x114.png><link rel=apple-touch-icon sizes=120x120 href=/apple-icon-120x120.png><link rel=apple-touch-icon sizes=144x144 href=/apple-icon-144x144.png><link rel=apple-touch-icon sizes=152x152 href=/apple-icon-152x152.png><link rel=apple-touch-icon sizes=180x180 href=/apple-icon-180x180.png><link rel=icon type=image/png sizes=192x192 href=/android-icon-192x192.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=96x96 href=/favicon-96x96.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/manifest.json><meta name=msapplication-TileColor content="#ffffff"><meta name=msapplication-TileImage content="/ms-icon-144x144.png"><meta name=theme-color content="#ffffff"><link rel=canonical href=http://www.gordonburgett.net/post/2017/07_making_a_searchable_static_site/></head><body><span class="mobile btn-mobile-menu"><i class="fa fa-bars btn-mobile-menu__icon"></i>
+<i class="fa fa-times btn-mobile-close__icon hidden"></i></span><header class="panel-cover panel-cover--collapsed"><div class=panel-main><div class="panel-main__inner panel-inverted"><div class=panel-main__content><h1 class="panel-cover__title panel-title"><a href=/ title="link to homepage for first things first">first things first</a></h1><hr class=panel-cover__divider><p class=panel-cover__description>A blog about whatever crosses my mind, ordered by importance.</p><hr class="panel-cover__divider panel-cover__divider--secondary"><div class=navigation-wrapper><nav class="cover-navigation cover-navigation--primary"><ul class=navigation><li class=navigation__item><a href=/albania title=Albania class=blog-button>Albania</a></li><br><li class=navigation__item><a href=/search title=Search class=blog-button>Search</a></li><br><li class=navigation__item></li></ul></nav><nav class="cover-navigation navigation--social"><ul class=navigation><br><li class=navigation__item><a href=https://github.com/gburgett title="gburgett on github"><i class='fa fa-github'></i> <span class=label>Github</span></a></li></br><li class=navigation__item><a href=# id=email title=Email><i class='fa fa-envelope-o'></i> <span class=label>Email</span></a></li><br><li class=navigation__item><a href=/pubkey.txt id=gpg title="GPG key"><i class='fa fa-key'></i> <span class=label>GPG key</span></a></li></ul></nav></div></div></div><div class=panel-cover--overlay></div></div></header><div class=content-wrapper><div class=content-wrapper__inner><div class=post><h1>Making a static site searchable</h1><span class=post-date>Sun, Jul 23, 2017</span><p>My site is getting pretty big now! 50+ posts, plus my journal entries from years past, I have content stretching over 4 years.
+So I started thinking about ways to add search functionality. And anyone who knows me knows I like to make these kind of things
+more complicated than they need to be, so with that in mind I had a fun challenge to solve. How do I add search functionality to
+a static site?</p><h2 id=whats-a-static-site--and-why-is-it-hard-to-search-it>What&rsquo;s a static site? And why is it hard to search it?</h2><p><a href=/post/2017/04_modern_static_sites/>Modern static sites</a> are compiled from Markdown files to create HTML. My website is built using
+<a href=https://gohugo.io>Hugo</a>, a static site generator. What that means is that I have a folder full of partial HTML files, another folder
 full of plain text files in a format called Markdown, a folder full of images/javascript/css, and when I type the command <code>hugo</code> in my
-terminal, it combines all of those to create HTML files in an output folder.  So if you want to
-<a href="https://github.com/gburgett/blog">download the source code for my blog</a>, you&rsquo;re not getting HTML.  You&rsquo;re getting all the things
-that go into creating the HTML.</p>
-<p>So why does that matter for adding search functionality?  Well a static site, however it&rsquo;s generated, is just HTML, Javascript, CSS, and media.
-None of those things run on the server.  To add search, I need to create a search index of my site and then provide a method to run queries against it.
-Traditional ways of doing this require PHP or other server-side programming language, or an external 3rd party service like Google.  I&rsquo;d rather
-not rely on a 3rd party service at run time, and if I add PHP then I can&rsquo;t use super-cheap or free hosting like <a href="https://www.netlify.com/">netlify</a> or
-<a href="https://pages.github.com/">Github Pages</a>.  If I want to keep it a static-site, I have to provide search by serving only static files: HTML, JavaScript,
-CSS, and assets.</p>
-<h2 id="the-plan">The plan</h2>
-<p>With those limits, I started doing some research and came across this Javascript library: <a href="https://github.com/fergiemcdowall/search-index/">https://github.com/fergiemcdowall/search-index/</a>.<br>
-It allows you to build a search index and execute queries in it, in 100% javascript.  It even provides a bundle for use in the web browser!
-So with that my plan was born.  I&rsquo;d use <a href="http://gulpjs.com/">gulp</a> to read all my markdown files and build an index of my website.  Then I&rsquo;d serve
-that index in a zipped file and download it in the browser, load it into the library, and execute searches.  Here was my plan of operation:</p>
-<ol>
-<li>When I compile my site, use Gulp to also compile a search index.</li>
-</ol>
-<ul>
-<li>Open a searchable index using the above library inside the running NodeJS process</li>
-<li>Process each markdown file into a searchable document and add it to the index</li>
-<li>Export the underlying database as a gzip file to the <code>public</code> directory</li>
-</ul>
-<ol start="2">
-<li>Serve the gzip file from the root of my web server</li>
-</ol>
-<ul>
-<li>The web server just serves all files in the <code>public</code> directory, so just gotta put it in there.</li>
-</ul>
-<ol start="3">
-<li>Within the user&rsquo;s browser, download and load the search index</li>
-</ol>
-<ul>
-<li>The index is easy to get, just need to do an XMLHttpRequest</li>
-<li>Since it&rsquo;s GZip encoded, we need to inflate it using <a href="https://github.com/nodeca/pako">pako</a> which is a javascript port of zlib</li>
-<li>Then we load the database into the search-index library</li>
-</ul>
-<ol start="4">
-<li>Now we hook up a search bar to the library and run searches!</li>
-</ol>
-<ul>
-<li>Just a simple HTML form with one input, where we intercept the onSubmit event</li>
-<li>We&rsquo;ll render the search results to a simple HTML table and style it with CSS</li>
-</ul>
-<h2 id="the-gulp-tasks">The Gulp tasks</h2>
-<p><a href="https://github.com/gburgett/hugo-search-index/blob/master/src/gulp/index.ts"><em>Follow along with the actual code here</em></a></p>
-<p>Gulp is a NodeJS program, and a gulpfile is executed just like any other nodejs script.  Which means we can import the search-index library
-and do things with it inside a gulp task.  So, the first thing to do is within our gulp task, open a search index <a href="https://github.com/fergiemcdowall/search-index/blob/master/docs/create.md">following the documentation</a>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;build-search-index&#39;</span>, (<span style="color:#a6e22e">done</span>) =&gt; {
-</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// load up our search-index so we can populate and export it
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">searchIndex</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;search-index&#39;</span>)
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">searchIndex</span>({}, (<span style="color:#a6e22e">openDatabaseError</span>, <span style="color:#a6e22e">index</span>) =&gt; {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">openDatabaseError</span>) {
-</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">done</span>(<span style="color:#a6e22e">openDatabaseError</span>)
-</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span>
-</span></span><span style="display:flex;"><span>    }
-</span></span></code></pre></div><p>Now, using Gulp&rsquo;s streaming API, we&rsquo;ll load all the markdown files into the search index:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>  <span style="color:#75715e">// import all the markdown files into our search index
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;./content/**/*.md&#39;</span>)
-</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">buildDocument</span>())
-</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">index</span>.<span style="color:#a6e22e">defaultPipeline</span>())
-</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">index</span>.<span style="color:#a6e22e">add</span>())
-</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;finish&#39;</span>, (<span style="color:#a6e22e">pipeErr</span>) =&gt; {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">pipeErr</span>) {
-</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">done</span>(<span style="color:#a6e22e">pipeErr</span>)
-</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span>
-</span></span><span style="display:flex;"><span>    }
+terminal, it combines all of those to create HTML files in an output folder. So if you want to
+<a href=https://github.com/gburgett/blog>download the source code for my blog</a>, you&rsquo;re not getting HTML. You&rsquo;re getting all the things
+that go into creating the HTML.</p><p>So why does that matter for adding search functionality? Well a static site, however it&rsquo;s generated, is just HTML, Javascript, CSS, and media.
+None of those things run on the server. To add search, I need to create a search index of my site and then provide a method to run queries against it.
+Traditional ways of doing this require PHP or other server-side programming language, or an external 3rd party service like Google. I&rsquo;d rather
+not rely on a 3rd party service at run time, and if I add PHP then I can&rsquo;t use super-cheap or free hosting like <a href=https://www.netlify.com/>netlify</a> or
+<a href=https://pages.github.com/>Github Pages</a>. If I want to keep it a static-site, I have to provide search by serving only static files: HTML, JavaScript,
+CSS, and assets.</p><h2 id=the-plan>The plan</h2><p>With those limits, I started doing some research and came across this Javascript library: <a href=https://github.com/fergiemcdowall/search-index/>https://github.com/fergiemcdowall/search-index/</a>.<br>It allows you to build a search index and execute queries in it, in 100% javascript. It even provides a bundle for use in the web browser!
+So with that my plan was born. I&rsquo;d use <a href=http://gulpjs.com/>gulp</a> to read all my markdown files and build an index of my website. Then I&rsquo;d serve
+that index in a zipped file and download it in the browser, load it into the library, and execute searches. Here was my plan of operation:</p><ol><li>When I compile my site, use Gulp to also compile a search index.</li></ol><ul><li>Open a searchable index using the above library inside the running NodeJS process</li><li>Process each markdown file into a searchable document and add it to the index</li><li>Export the underlying database as a gzip file to the <code>public</code> directory</li></ul><ol start=2><li>Serve the gzip file from the root of my web server</li></ol><ul><li>The web server just serves all files in the <code>public</code> directory, so just gotta put it in there.</li></ul><ol start=3><li>Within the user&rsquo;s browser, download and load the search index</li></ol><ul><li>The index is easy to get, just need to do an XMLHttpRequest</li><li>Since it&rsquo;s GZip encoded, we need to inflate it using <a href=https://github.com/nodeca/pako>pako</a> which is a javascript port of zlib</li><li>Then we load the database into the search-index library</li></ul><ol start=4><li>Now we hook up a search bar to the library and run searches!</li></ol><ul><li>Just a simple HTML form with one input, where we intercept the onSubmit event</li><li>We&rsquo;ll render the search results to a simple HTML table and style it with CSS</li></ul><h2 id=the-gulp-tasks>The Gulp tasks</h2><p><a href=https://github.com/gburgett/hugo-search-index/blob/master/src/gulp/index.ts><em>Follow along with the actual code here</em></a></p><p>Gulp is a NodeJS program, and a gulpfile is executed just like any other nodejs script. Which means we can import the search-index library
+and do things with it inside a gulp task. So, the first thing to do is within our gulp task, open a search index <a href=https://github.com/fergiemcdowall/search-index/blob/master/docs/create.md>following the documentation</a>:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span><span style=color:#a6e22e>gulp</span>.<span style=color:#a6e22e>task</span>(<span style=color:#e6db74>&#39;build-search-index&#39;</span>, (<span style=color:#a6e22e>done</span>) =&gt; {
+</span></span><span style=display:flex><span>  <span style=color:#75715e>// load up our search-index so we can populate and export it
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>searchIndex</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>require</span>(<span style=color:#e6db74>&#39;search-index&#39;</span>)
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>searchIndex</span>({}, (<span style=color:#a6e22e>openDatabaseError</span>, <span style=color:#a6e22e>index</span>) =&gt; {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> (<span style=color:#a6e22e>openDatabaseError</span>) {
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>done</span>(<span style=color:#a6e22e>openDatabaseError</span>)
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>return</span>
+</span></span><span style=display:flex><span>    }
+</span></span></code></pre></div><p>Now, using Gulp&rsquo;s streaming API, we&rsquo;ll load all the markdown files into the search index:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span>  <span style=color:#75715e>// import all the markdown files into our search index
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#a6e22e>gulp</span>.<span style=color:#a6e22e>src</span>(<span style=color:#e6db74>&#39;./content/**/*.md&#39;</span>)
+</span></span><span style=display:flex><span>  .<span style=color:#a6e22e>pipe</span>(<span style=color:#a6e22e>buildDocument</span>())
+</span></span><span style=display:flex><span>  .<span style=color:#a6e22e>pipe</span>(<span style=color:#a6e22e>index</span>.<span style=color:#a6e22e>defaultPipeline</span>())
+</span></span><span style=display:flex><span>  .<span style=color:#a6e22e>pipe</span>(<span style=color:#a6e22e>index</span>.<span style=color:#a6e22e>add</span>())
+</span></span><span style=display:flex><span>  .<span style=color:#a6e22e>on</span>(<span style=color:#e6db74>&#39;finish&#39;</span>, (<span style=color:#a6e22e>pipeErr</span>) =&gt; {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> (<span style=color:#a6e22e>pipeErr</span>) {
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>done</span>(<span style=color:#a6e22e>pipeErr</span>)
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>return</span>
+</span></span><span style=display:flex><span>    }
 </span></span></code></pre></div><p><code>buildDocument()</code> is a transform stream that I wrote which reads the contents of the markdown file, processes the front-matter which can be YAML,
-TOML, or JSON, and builds a javascript object that ends up looking something like this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{ 
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;post/2017/04_march_project.md&#34;</span>,
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;date&#34;</span>: <span style="color:#e6db74">&#34;2017-04-05T22:08:16+02:00&#34;</span>,
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;title&#34;</span>: <span style="color:#e6db74">&#34;March Project&#34;</span>,
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;categories&#34;</span>: [<span style="color:#e6db74">&#34;cru&#34;</span>,<span style="color:#e6db74">&#34;Albania&#34;</span>],
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;tags&#34;</span>: [<span style="color:#e6db74">&#34;cru&#34;</span>,<span style="color:#e6db74">&#34;Albania&#34;</span>],
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;author&#34;</span>: <span style="color:#e6db74">&#34;gordon&#34;</span>,
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;body&#34;</span>: <span style="color:#e6db74">&#34;## We love momentum\n\nMarch 13-17 was a big week for us.  We...&#34;</span>
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>All those fields become searchable.  So we can do things like narrow our search by tags or categories.  The most important thing though is to get
-the <code>id</code> and <code>body</code> attributes.</p>
-<p>Once we get the <code>finish</code> event on the pipeline, we can start exporting the index by modifying <a href="https://github.com/fergiemcdowall/search-index/blob/master/docs/replicate.md#save-index-to-file">these instructions in the documentation</a>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>  <span style="color:#a6e22e">index</span>.<span style="color:#a6e22e">dbReadStream</span>({ <span style="color:#a6e22e">gzip</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span> })
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">JSONStream</span>.<span style="color:#a6e22e">stringify</span>(<span style="color:#66d9ef">false</span>))    <span style="color:#75715e">// Using the JSONStream library we turn the database objects into strings
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">zlib</span>.<span style="color:#a6e22e">createGzip</span>())              <span style="color:#75715e">// Then we gzip the resulting stream of strings
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">fs</span>.<span style="color:#a6e22e">createWriteStream</span>(<span style="color:#e6db74">&#39;./public/search_index.gz&#39;</span>))   <span style="color:#75715e">// and write it to the output file
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    .<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;close&#39;</span>, () =&gt; {
-</span></span><span style="display:flex;"><span>      
-</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// do some other checks...
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">done</span>()    <span style="color:#75715e">// tell Gulp that this task finished successfully
-</span></span></span></code></pre></div><p>Once that finishes we have our search index file in the <code>public/</code> directory!  Step 1 down :)</p>
-<h2 id="loading-it-in-the-browser">Loading it in the browser</h2>
-<p>Once the gzip file is served it&rsquo;s pretty easy to download it.  For my site with 50 articles the index is about 650kb, so about the size of just one
-modern javascript framework which gets loaded into your browser :).  I&rsquo;m going to use typescript along with webpack to create the javascript bundle
-which runs the search, so from now on you&rsquo;ll be looking at typescript code.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">downloadIndex</span>(<span style="color:#a6e22e">url</span>: <span style="color:#66d9ef">string</span>, <span style="color:#a6e22e">cb</span><span style="color:#f92672">:</span> (<span style="color:#a6e22e">err</span>, <span style="color:#a6e22e">index?</span>: <span style="color:#66d9ef">Uint8Array</span>) <span style="color:#f92672">=&gt;</span> <span style="color:#66d9ef">void</span>) {
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">oReq</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">XMLHttpRequest</span>()
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">oReq</span>.<span style="color:#a6e22e">onload</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">oEvent</span>) <span style="color:#f92672">=&gt;</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">arrayBuffer</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">oReq</span>.<span style="color:#a6e22e">response</span> <span style="color:#75715e">// Note: not oReq.responseText
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">arrayBuffer</span>) {
-</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">byteArray</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Uint8Array</span>(<span style="color:#a6e22e">arrayBuffer</span>)
-</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">cb</span>(<span style="color:#66d9ef">null</span>, <span style="color:#a6e22e">byteArray</span>)
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">oReq</span>.<span style="color:#a6e22e">onerror</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">oError</span>) <span style="color:#f92672">=&gt;</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">cb</span>(<span style="color:#a6e22e">oError</span>)
-</span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">oReq</span>.<span style="color:#a6e22e">responseType</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;arraybuffer&#39;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">oReq</span>.<span style="color:#a6e22e">open</span>(<span style="color:#e6db74">&#39;GET&#39;</span>, <span style="color:#a6e22e">url</span>, <span style="color:#66d9ef">true</span>)
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">oReq</span>.<span style="color:#a6e22e">send</span>()
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>So this gets us a Uint8Array with the gzipped contents.  One note - depending on how it gets served, if it gets served as <code>Content-Encoding: gzip</code> and <code>Content-Type: application/octet-stream</code> it will be inflated automatically by Mozilla Firefox (and I assume by other browsers).  So we have to be aware of that, but also ready to unzip it ourselves using Pako.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">inflate</span>(<span style="color:#a6e22e">contents</span>: <span style="color:#66d9ef">Uint8Array</span>, <span style="color:#a6e22e">cb</span><span style="color:#f92672">:</span> (<span style="color:#a6e22e">err</span>: <span style="color:#66d9ef">Error</span>, <span style="color:#a6e22e">inflated?</span>: <span style="color:#66d9ef">string</span>) <span style="color:#f92672">=&gt;</span> <span style="color:#66d9ef">void</span>) {
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">try</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">inflated</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">pako</span>.<span style="color:#a6e22e">inflate</span>(<span style="color:#a6e22e">contents</span>, { <span style="color:#a6e22e">to</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;string&#39;</span> })
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">cb</span>(<span style="color:#66d9ef">null</span>, <span style="color:#a6e22e">inflated</span>)
-</span></span><span style="display:flex;"><span>  } <span style="color:#66d9ef">catch</span> (<span style="color:#a6e22e">err</span>) {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">err</span> <span style="color:#f92672">!==</span> <span style="color:#e6db74">&#39;incorrect header check&#39;</span>) {
-</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">cb</span>(<span style="color:#a6e22e">err</span>)
-</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span>
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// the browser already inflated this for us.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// This happens if the server supports gzip encoding,
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// and sets the &#39;Content-Encoding: &#34;gzip&#34;&#39; header.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">largeuint8ArrToString</span>(<span style="color:#a6e22e">contents</span>, (<span style="color:#a6e22e">result</span>) <span style="color:#f92672">=&gt;</span> {
-</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">cb</span>(<span style="color:#66d9ef">null</span>, <span style="color:#a6e22e">result</span>)
-</span></span><span style="display:flex;"><span>    })
-</span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">largeuint8ArrToString</span>(<span style="color:#a6e22e">uint8arr</span>, <span style="color:#a6e22e">callback</span>) {
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">bb</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Blob</span>([<span style="color:#a6e22e">uint8arr</span>])
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">f</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">FileReader</span>()
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">f</span>.<span style="color:#a6e22e">onload</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">e</span>) <span style="color:#f92672">=&gt;</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">callback</span>((<span style="color:#a6e22e">e</span>.<span style="color:#a6e22e">target</span> <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">any</span>).<span style="color:#a6e22e">result</span>)
-</span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">f</span>.<span style="color:#a6e22e">readAsText</span>(<span style="color:#a6e22e">bb</span>)
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>Now we have the unzipped search index as a string in the browser.  It looks a bit like this:</p>
-<pre tabindex="0"><code>...
+TOML, or JSON, and builds a javascript object that ends up looking something like this:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json><span style=display:flex><span>{ 
+</span></span><span style=display:flex><span>  <span style=color:#f92672>&#34;id&#34;</span>: <span style=color:#e6db74>&#34;post/2017/04_march_project.md&#34;</span>,
+</span></span><span style=display:flex><span>  <span style=color:#f92672>&#34;date&#34;</span>: <span style=color:#e6db74>&#34;2017-04-05T22:08:16+02:00&#34;</span>,
+</span></span><span style=display:flex><span>  <span style=color:#f92672>&#34;title&#34;</span>: <span style=color:#e6db74>&#34;March Project&#34;</span>,
+</span></span><span style=display:flex><span>  <span style=color:#f92672>&#34;categories&#34;</span>: [<span style=color:#e6db74>&#34;cru&#34;</span>,<span style=color:#e6db74>&#34;Albania&#34;</span>],
+</span></span><span style=display:flex><span>  <span style=color:#f92672>&#34;tags&#34;</span>: [<span style=color:#e6db74>&#34;cru&#34;</span>,<span style=color:#e6db74>&#34;Albania&#34;</span>],
+</span></span><span style=display:flex><span>  <span style=color:#f92672>&#34;author&#34;</span>: <span style=color:#e6db74>&#34;gordon&#34;</span>,
+</span></span><span style=display:flex><span>  <span style=color:#f92672>&#34;body&#34;</span>: <span style=color:#e6db74>&#34;## We love momentum\n\nMarch 13-17 was a big week for us.  We...&#34;</span>
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>All those fields become searchable. So we can do things like narrow our search by tags or categories. The most important thing though is to get
+the <code>id</code> and <code>body</code> attributes.</p><p>Once we get the <code>finish</code> event on the pipeline, we can start exporting the index by modifying <a href=https://github.com/fergiemcdowall/search-index/blob/master/docs/replicate.md#save-index-to-file>these instructions in the documentation</a>:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span>  <span style=color:#a6e22e>index</span>.<span style=color:#a6e22e>dbReadStream</span>({ <span style=color:#a6e22e>gzip</span><span style=color:#f92672>:</span> <span style=color:#66d9ef>true</span> })
+</span></span><span style=display:flex><span>    .<span style=color:#a6e22e>pipe</span>(<span style=color:#a6e22e>JSONStream</span>.<span style=color:#a6e22e>stringify</span>(<span style=color:#66d9ef>false</span>))    <span style=color:#75715e>// Using the JSONStream library we turn the database objects into strings
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    .<span style=color:#a6e22e>pipe</span>(<span style=color:#a6e22e>zlib</span>.<span style=color:#a6e22e>createGzip</span>())              <span style=color:#75715e>// Then we gzip the resulting stream of strings
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    .<span style=color:#a6e22e>pipe</span>(<span style=color:#a6e22e>fs</span>.<span style=color:#a6e22e>createWriteStream</span>(<span style=color:#e6db74>&#39;./public/search_index.gz&#39;</span>))   <span style=color:#75715e>// and write it to the output file
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    .<span style=color:#a6e22e>on</span>(<span style=color:#e6db74>&#39;close&#39;</span>, () =&gt; {
+</span></span><span style=display:flex><span>      
+</span></span><span style=display:flex><span>      <span style=color:#75715e>// do some other checks...
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>done</span>()    <span style=color:#75715e>// tell Gulp that this task finished successfully
+</span></span></span></code></pre></div><p>Once that finishes we have our search index file in the <code>public/</code> directory! Step 1 down :)</p><h2 id=loading-it-in-the-browser>Loading it in the browser</h2><p>Once the gzip file is served it&rsquo;s pretty easy to download it. For my site with 50 articles the index is about 650kb, so about the size of just one
+modern javascript framework which gets loaded into your browser :). I&rsquo;m going to use typescript along with webpack to create the javascript bundle
+which runs the search, so from now on you&rsquo;ll be looking at typescript code.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-ts data-lang=ts><span style=display:flex><span><span style=color:#66d9ef>function</span> <span style=color:#a6e22e>downloadIndex</span>(<span style=color:#a6e22e>url</span>: <span style=color:#66d9ef>string</span>, <span style=color:#a6e22e>cb</span><span style=color:#f92672>:</span> (<span style=color:#a6e22e>err</span>, <span style=color:#a6e22e>index?</span>: <span style=color:#66d9ef>Uint8Array</span>) <span style=color:#f92672>=&gt;</span> <span style=color:#66d9ef>void</span>) {
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>oReq</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> <span style=color:#a6e22e>XMLHttpRequest</span>()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>oReq</span>.<span style=color:#a6e22e>onload</span> <span style=color:#f92672>=</span> (<span style=color:#a6e22e>oEvent</span>) <span style=color:#f92672>=&gt;</span> {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>arrayBuffer</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>oReq</span>.<span style=color:#a6e22e>response</span> <span style=color:#75715e>// Note: not oReq.responseText
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#66d9ef>if</span> (<span style=color:#a6e22e>arrayBuffer</span>) {
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>byteArray</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> <span style=color:#a6e22e>Uint8Array</span>(<span style=color:#a6e22e>arrayBuffer</span>)
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>cb</span>(<span style=color:#66d9ef>null</span>, <span style=color:#a6e22e>byteArray</span>)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>oReq</span>.<span style=color:#a6e22e>onerror</span> <span style=color:#f92672>=</span> (<span style=color:#a6e22e>oError</span>) <span style=color:#f92672>=&gt;</span> {
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>cb</span>(<span style=color:#a6e22e>oError</span>)
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>oReq</span>.<span style=color:#a6e22e>responseType</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;arraybuffer&#39;</span>
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>oReq</span>.<span style=color:#a6e22e>open</span>(<span style=color:#e6db74>&#39;GET&#39;</span>, <span style=color:#a6e22e>url</span>, <span style=color:#66d9ef>true</span>)
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>oReq</span>.<span style=color:#a6e22e>send</span>()
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>So this gets us a Uint8Array with the gzipped contents. One note - depending on how it gets served, if it gets served as <code>Content-Encoding: gzip</code> and <code>Content-Type: application/octet-stream</code> it will be inflated automatically by Mozilla Firefox (and I assume by other browsers). So we have to be aware of that, but also ready to unzip it ourselves using Pako.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-ts data-lang=ts><span style=display:flex><span><span style=color:#66d9ef>function</span> <span style=color:#a6e22e>inflate</span>(<span style=color:#a6e22e>contents</span>: <span style=color:#66d9ef>Uint8Array</span>, <span style=color:#a6e22e>cb</span><span style=color:#f92672>:</span> (<span style=color:#a6e22e>err</span>: <span style=color:#66d9ef>Error</span>, <span style=color:#a6e22e>inflated?</span>: <span style=color:#66d9ef>string</span>) <span style=color:#f92672>=&gt;</span> <span style=color:#66d9ef>void</span>) {
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>try</span> {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>inflated</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>pako</span>.<span style=color:#a6e22e>inflate</span>(<span style=color:#a6e22e>contents</span>, { <span style=color:#a6e22e>to</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;string&#39;</span> })
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>cb</span>(<span style=color:#66d9ef>null</span>, <span style=color:#a6e22e>inflated</span>)
+</span></span><span style=display:flex><span>  } <span style=color:#66d9ef>catch</span> (<span style=color:#a6e22e>err</span>) {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> (<span style=color:#a6e22e>err</span> <span style=color:#f92672>!==</span> <span style=color:#e6db74>&#39;incorrect header check&#39;</span>) {
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>cb</span>(<span style=color:#a6e22e>err</span>)
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>return</span>
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// the browser already inflated this for us.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#75715e>// This happens if the server supports gzip encoding,
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#75715e>// and sets the &#39;Content-Encoding: &#34;gzip&#34;&#39; header.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>largeuint8ArrToString</span>(<span style=color:#a6e22e>contents</span>, (<span style=color:#a6e22e>result</span>) <span style=color:#f92672>=&gt;</span> {
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>cb</span>(<span style=color:#66d9ef>null</span>, <span style=color:#a6e22e>result</span>)
+</span></span><span style=display:flex><span>    })
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>function</span> <span style=color:#a6e22e>largeuint8ArrToString</span>(<span style=color:#a6e22e>uint8arr</span>, <span style=color:#a6e22e>callback</span>) {
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>bb</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> <span style=color:#a6e22e>Blob</span>([<span style=color:#a6e22e>uint8arr</span>])
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>f</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> <span style=color:#a6e22e>FileReader</span>()
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>f</span>.<span style=color:#a6e22e>onload</span> <span style=color:#f92672>=</span> (<span style=color:#a6e22e>e</span>) <span style=color:#f92672>=&gt;</span> {
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>callback</span>((<span style=color:#a6e22e>e</span>.<span style=color:#a6e22e>target</span> <span style=color:#66d9ef>as</span> <span style=color:#66d9ef>any</span>).<span style=color:#a6e22e>result</span>)
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>f</span>.<span style=color:#a6e22e>readAsText</span>(<span style=color:#a6e22e>bb</span>)
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>Now we have the unzipped search index as a string in the browser. It looks a bit like this:</p><pre tabindex=0><code>...
 {&#34;key&#34;:&#34;TF~body~beat&#34;,&#34;value&#34;:[[0.5024271844660194,&#34;albania/2016_YoungProfessionals.md&#34;]]}
 {&#34;key&#34;:&#34;TF~body~beatle&amp;#39;s&#34;,&#34;value&#34;:[[0.5161290322580645,&#34;post/2016/03_shift_musical.md&#34;]]}
 {&#34;key&#34;:&#34;TF~body~beautiful&#34;,&#34;value&#34;:[[0.5510204081632653,&#34;post/2016/08_summer_recap.md&#34;],[0.5277777777777778,&#34;post/2016/06_its_summer.md&#34;],[0.5266990291262136,&#34;albania/2016_YoungProfessionals.md&#34;],[0.5178571428571429,&#34;post/2016/02_sometimes_its_tough.md&#34;],[0.5175438596491229,&#34;post/2017/07_home.md&#34;],[0.5131578947368421,&#34;post/2016/04_six_months_and_counting.md&#34;],[0.5108695652173914,&#34;post/2016/01_exploring-and-networking.md&#34;],[0.5045045045045045,&#34;post/2016/05_my_happy_place.md&#34;],[0.502770083102493,&#34;albania/2017.md&#34;],[0.5022222222222222,&#34;albania/2016_IceAndSpice.md&#34;],[0.5018656716417911,&#34;albania/2015.md&#34;]]}
 {&#34;key&#34;:&#34;TF~body~beauty&#34;,&#34;value&#34;:[[0.5161290322580645,&#34;post/2014/12_realness-of-god.md&#34;],[0.5102040816326531,&#34;post/2015/01_euro-trip.md&#34;]]}
 ...
-</code></pre><p>So each line is a javascript object.  Time to read it and load it into our open <code>search-index</code> instance:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">options</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">options</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">SearchIndex</span>(<span style="color:#a6e22e">options</span>, (<span style="color:#a6e22e">libErr</span>, <span style="color:#a6e22e">si</span>) <span style="color:#f92672">=&gt;</span> {
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">libErr</span>) {
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">cb</span>(<span style="color:#a6e22e">libErr</span>)
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span>
-</span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// create a readable stream around our inflated string to read and JSON parse one line at a time
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">lines</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">docStream</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Readable</span>({
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">objectMode</span>: <span style="color:#66d9ef">true</span>,
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">read() {</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">chunk</span>: <span style="color:#66d9ef">any</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">do</span> {
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">i</span> <span style="color:#f92672">&gt;=</span> <span style="color:#a6e22e">inflated</span>.<span style="color:#a6e22e">length</span>) {
-</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// we&#39;re done, tell the connected streams that we&#39;ve got no more to send them.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>          <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">push</span>(<span style="color:#66d9ef">null</span>)
-</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">return</span>
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>          <span style="color:#75715e">// find the next newline character and pull out this substring
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">nextNewline</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">inflated</span>.<span style="color:#a6e22e">indexOf</span>(<span style="color:#e6db74">&#39;\n&#39;</span>, <span style="color:#a6e22e">i</span>)
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">nextNewline</span> <span style="color:#f92672">&lt;=</span> <span style="color:#a6e22e">i</span>) {
-</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">nextNewline</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">undefined</span>
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">substr</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">inflated</span>.<span style="color:#a6e22e">substring</span>(<span style="color:#a6e22e">i</span>, <span style="color:#a6e22e">nextNewline</span>)
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">chunk</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">substr</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>          <span style="color:#75715e">// If we didn&#39;t find another newline, we&#39;re at the end.  Can&#39;t break yet, still gotta push.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#66d9ef">if</span>  (<span style="color:#a6e22e">nextNewline</span>) {
-</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">nextNewline</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span>        } <span style="color:#66d9ef">else</span> {
-</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">inflated</span>.<span style="color:#a6e22e">length</span>
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">lines</span><span style="color:#f92672">++</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>          <span style="color:#75715e">// push the chunk and go read the next one, until the downstream pipe returns false.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>          <span style="color:#75715e">// If it returns false, we take a break until they call &#34;read()&#34; again on this instance.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      } <span style="color:#66d9ef">while</span> (<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">push</span>(<span style="color:#a6e22e">chunk</span>))
-</span></span><span style="display:flex;"><span>    },
-</span></span><span style="display:flex;"><span>  })
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// hook up our readable stream to the opened search index
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">docStream</span>
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">si</span>.<span style="color:#a6e22e">dbWriteStream</span>({ <span style="color:#a6e22e">merge</span>: <span style="color:#66d9ef">false</span> }))
-</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// an empty listener lets the pipe keep moving, otherwise it gets stuck
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    .<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;data&#39;</span>, () <span style="color:#f92672">=&gt;</span> {})
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;finish&#39;</span>, () <span style="color:#f92672">=&gt;</span> {
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Finished successfully!  Tell the main script that the search index is open.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#a6e22e">cb</span>(<span style="color:#66d9ef">null</span>, <span style="color:#a6e22e">si</span>)
-</span></span><span style="display:flex;"><span>    })
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;error&#39;</span>, (<span style="color:#a6e22e">error</span>) <span style="color:#f92672">=&gt;</span> {
-</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">cb</span>(<span style="color:#a6e22e">error</span>)
-</span></span><span style="display:flex;"><span>    })
-</span></span><span style="display:flex;"><span>})
-</span></span></code></pre></div><p>You can see all this in the actual file <a href="https://github.com/gburgett/hugo-search-index/blob/master/src/lib/search/SearchIndexLoader.ts">here</a>.</p>
-<h2 id="executing-a-search">Executing a search</h2>
-<p>To execute a search, we need to generate a query object and execute the <code>search</code> method on the search index, as described <a href="https://github.com/fergiemcdowall/search-index/blob/master/docs/search.md">in the documentation</a>.
-I built a wrapper object around the search index to handle this, with a method <code>executeSearch</code>.  <a href="https://github.com/gburgett/hugo-search-index/blob/master/src/lib/search/store.ts">Here is the source</a>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#a6e22e">runSearch</span>(<span style="color:#a6e22e">query</span>: <span style="color:#66d9ef">string</span>, <span style="color:#a6e22e">lang?</span>: <span style="color:#66d9ef">string</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">SearchCallback</span>, <span style="color:#a6e22e">cb?</span>: <span style="color:#66d9ef">SearchCallback</span>)<span style="color:#f92672">:</span> <span style="color:#66d9ef">void</span> {
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">cb</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">lang</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#39;function&#39;</span>) {
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">cb</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">lang</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">lang</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">undefined</span>
-</span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">results</span>: <span style="color:#66d9ef">SearchResult</span>[] <span style="color:#f92672">=</span> []
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// search index only handles lower case - no matches on uppercase
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">query</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">query</span>.<span style="color:#a6e22e">toLocaleLowerCase</span>()
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">queryObj</span> <span style="color:#f92672">=</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">AND</span><span style="color:#f92672">:</span> {
-</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#39;*&#39;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">query</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#39; &#39;</span>),
-</span></span><span style="display:flex;"><span>    },
-</span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// add in the language to limit search results only to that language, for multilingual sites.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">lang</span>) {
-</span></span><span style="display:flex;"><span>    (<span style="color:#a6e22e">queryObj</span>.<span style="color:#a6e22e">AND</span> <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">any</span>).<span style="color:#a6e22e">lang</span> <span style="color:#f92672">=</span> [ <span style="color:#a6e22e">lang</span> ]
-</span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">index</span>.<span style="color:#a6e22e">search</span>({ <span style="color:#a6e22e">query</span>: <span style="color:#66d9ef">queryObj</span> })
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;data&#39;</span>, (<span style="color:#a6e22e">doc</span>) <span style="color:#f92672">=&gt;</span> {
-</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">results</span>.<span style="color:#a6e22e">push</span>(<span style="color:#a6e22e">doc</span>)
-</span></span><span style="display:flex;"><span>    })
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;end&#39;</span>, () <span style="color:#f92672">=&gt;</span> {
-</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">cb</span>(<span style="color:#66d9ef">undefined</span>, <span style="color:#a6e22e">results</span>)
-</span></span><span style="display:flex;"><span>    })
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;error&#39;</span>, (<span style="color:#a6e22e">error</span>) <span style="color:#f92672">=&gt;</span> {
-</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">cb</span>(<span style="color:#a6e22e">error</span>)
-</span></span><span style="display:flex;"><span>    })
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><h2 id="hooking-it-up-to-the-search-bar">Hooking it up to the search bar</h2>
-<p>The last step is hooking it all up!  We need a simple form with a text input, and a table for the results:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span>&gt;
-</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">form</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;searchForm&#34;</span>&gt;
-</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;searchContainer&#39;</span>&gt;
-</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;search&#34;</span> <span style="color:#a6e22e">placeholder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Search...&#34;</span>&gt;&lt;/<span style="color:#f92672">input</span>&gt;
-</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">i</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;searchSpinner&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fa fa-spinner fa-spin&#34;</span> <span style="color:#a6e22e">aria-hidden</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span>&gt;&lt;/<span style="color:#f92672">i</span>&gt;
-</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">div</span>&gt;
-</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">form</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span>&gt;
-</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">table</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;searchResults&#34;</span>&gt;
-</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">table</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
+</code></pre><p>So each line is a javascript object. Time to read it and load it into our open <code>search-index</code> instance:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-ts data-lang=ts><span style=display:flex><span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>options</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>options</span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>SearchIndex</span>(<span style=color:#a6e22e>options</span>, (<span style=color:#a6e22e>libErr</span>, <span style=color:#a6e22e>si</span>) <span style=color:#f92672>=&gt;</span> {
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>if</span> (<span style=color:#a6e22e>libErr</span>) {
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>cb</span>(<span style=color:#a6e22e>libErr</span>)
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span>
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// create a readable stream around our inflated string to read and JSON parse one line at a time
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#66d9ef>let</span> <span style=color:#a6e22e>i</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>let</span> <span style=color:#a6e22e>lines</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>docStream</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> <span style=color:#a6e22e>Readable</span>({
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>objectMode</span>: <span style=color:#66d9ef>true</span>,
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>read() {</span>
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>let</span> <span style=color:#a6e22e>chunk</span>: <span style=color:#66d9ef>any</span>
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>do</span> {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span> (<span style=color:#a6e22e>i</span> <span style=color:#f92672>&gt;=</span> <span style=color:#a6e22e>inflated</span>.<span style=color:#a6e22e>length</span>) {
+</span></span><span style=display:flex><span>            <span style=color:#75715e>// we&#39;re done, tell the connected streams that we&#39;ve got no more to send them.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>          <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>push</span>(<span style=color:#66d9ef>null</span>)
+</span></span><span style=display:flex><span>          <span style=color:#66d9ef>return</span>
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>          <span style=color:#75715e>// find the next newline character and pull out this substring
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>        <span style=color:#66d9ef>let</span> <span style=color:#a6e22e>nextNewline</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>inflated</span>.<span style=color:#a6e22e>indexOf</span>(<span style=color:#e6db74>&#39;\n&#39;</span>, <span style=color:#a6e22e>i</span>)
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span> (<span style=color:#a6e22e>nextNewline</span> <span style=color:#f92672>&lt;=</span> <span style=color:#a6e22e>i</span>) {
+</span></span><span style=display:flex><span>          <span style=color:#a6e22e>nextNewline</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>undefined</span>
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>substr</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>inflated</span>.<span style=color:#a6e22e>substring</span>(<span style=color:#a6e22e>i</span>, <span style=color:#a6e22e>nextNewline</span>)
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>chunk</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>JSON</span>.<span style=color:#a6e22e>parse</span>(<span style=color:#a6e22e>substr</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>          <span style=color:#75715e>// If we didn&#39;t find another newline, we&#39;re at the end.  Can&#39;t break yet, still gotta push.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>        <span style=color:#66d9ef>if</span>  (<span style=color:#a6e22e>nextNewline</span>) {
+</span></span><span style=display:flex><span>          <span style=color:#a6e22e>i</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>nextNewline</span> <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>        } <span style=color:#66d9ef>else</span> {
+</span></span><span style=display:flex><span>          <span style=color:#a6e22e>i</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>inflated</span>.<span style=color:#a6e22e>length</span>
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>lines</span><span style=color:#f92672>++</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>          <span style=color:#75715e>// push the chunk and go read the next one, until the downstream pipe returns false.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>          <span style=color:#75715e>// If it returns false, we take a break until they call &#34;read()&#34; again on this instance.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>      } <span style=color:#66d9ef>while</span> (<span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>push</span>(<span style=color:#a6e22e>chunk</span>))
+</span></span><span style=display:flex><span>    },
+</span></span><span style=display:flex><span>  })
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// hook up our readable stream to the opened search index
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#a6e22e>docStream</span>
+</span></span><span style=display:flex><span>    .<span style=color:#a6e22e>pipe</span>(<span style=color:#a6e22e>si</span>.<span style=color:#a6e22e>dbWriteStream</span>({ <span style=color:#a6e22e>merge</span>: <span style=color:#66d9ef>false</span> }))
+</span></span><span style=display:flex><span>      <span style=color:#75715e>// an empty listener lets the pipe keep moving, otherwise it gets stuck
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    .<span style=color:#a6e22e>on</span>(<span style=color:#e6db74>&#39;data&#39;</span>, () <span style=color:#f92672>=&gt;</span> {})
+</span></span><span style=display:flex><span>    .<span style=color:#a6e22e>on</span>(<span style=color:#e6db74>&#39;finish&#39;</span>, () <span style=color:#f92672>=&gt;</span> {
+</span></span><span style=display:flex><span>        <span style=color:#75715e>// Finished successfully!  Tell the main script that the search index is open.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>      <span style=color:#a6e22e>cb</span>(<span style=color:#66d9ef>null</span>, <span style=color:#a6e22e>si</span>)
+</span></span><span style=display:flex><span>    })
+</span></span><span style=display:flex><span>    .<span style=color:#a6e22e>on</span>(<span style=color:#e6db74>&#39;error&#39;</span>, (<span style=color:#a6e22e>error</span>) <span style=color:#f92672>=&gt;</span> {
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>cb</span>(<span style=color:#a6e22e>error</span>)
+</span></span><span style=display:flex><span>    })
+</span></span><span style=display:flex><span>})
+</span></span></code></pre></div><p>You can see all this in the actual file <a href=https://github.com/gburgett/hugo-search-index/blob/master/src/lib/search/SearchIndexLoader.ts>here</a>.</p><h2 id=executing-a-search>Executing a search</h2><p>To execute a search, we need to generate a query object and execute the <code>search</code> method on the search index, as described <a href=https://github.com/fergiemcdowall/search-index/blob/master/docs/search.md>in the documentation</a>.
+I built a wrapper object around the search index to handle this, with a method <code>executeSearch</code>. <a href=https://github.com/gburgett/hugo-search-index/blob/master/src/lib/search/store.ts>Here is the source</a>.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-ts data-lang=ts><span style=display:flex><span><span style=color:#66d9ef>public</span> <span style=color:#a6e22e>runSearch</span>(<span style=color:#a6e22e>query</span>: <span style=color:#66d9ef>string</span>, <span style=color:#a6e22e>lang?</span>: <span style=color:#66d9ef>string</span> <span style=color:#f92672>|</span> <span style=color:#a6e22e>SearchCallback</span>, <span style=color:#a6e22e>cb?</span>: <span style=color:#66d9ef>SearchCallback</span>)<span style=color:#f92672>:</span> <span style=color:#66d9ef>void</span> {
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>if</span> (<span style=color:#f92672>!</span><span style=color:#a6e22e>cb</span> <span style=color:#f92672>&amp;&amp;</span> <span style=color:#66d9ef>typeof</span> <span style=color:#a6e22e>lang</span> <span style=color:#f92672>===</span> <span style=color:#e6db74>&#39;function&#39;</span>) {
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>cb</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>lang</span>
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>lang</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>undefined</span>
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>results</span>: <span style=color:#66d9ef>SearchResult</span>[] <span style=color:#f92672>=</span> []
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#75715e>// search index only handles lower case - no matches on uppercase
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#a6e22e>query</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>query</span>.<span style=color:#a6e22e>toLocaleLowerCase</span>()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>queryObj</span> <span style=color:#f92672>=</span> {
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>AND</span><span style=color:#f92672>:</span> {
+</span></span><span style=display:flex><span>      <span style=color:#e6db74>&#39;*&#39;</span><span style=color:#f92672>:</span> <span style=color:#a6e22e>query</span>.<span style=color:#a6e22e>split</span>(<span style=color:#e6db74>&#39; &#39;</span>),
+</span></span><span style=display:flex><span>    },
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// add in the language to limit search results only to that language, for multilingual sites.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#66d9ef>if</span> (<span style=color:#a6e22e>lang</span>) {
+</span></span><span style=display:flex><span>    (<span style=color:#a6e22e>queryObj</span>.<span style=color:#a6e22e>AND</span> <span style=color:#66d9ef>as</span> <span style=color:#66d9ef>any</span>).<span style=color:#a6e22e>lang</span> <span style=color:#f92672>=</span> [ <span style=color:#a6e22e>lang</span> ]
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>index</span>.<span style=color:#a6e22e>search</span>({ <span style=color:#a6e22e>query</span>: <span style=color:#66d9ef>queryObj</span> })
+</span></span><span style=display:flex><span>    .<span style=color:#a6e22e>on</span>(<span style=color:#e6db74>&#39;data&#39;</span>, (<span style=color:#a6e22e>doc</span>) <span style=color:#f92672>=&gt;</span> {
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>results</span>.<span style=color:#a6e22e>push</span>(<span style=color:#a6e22e>doc</span>)
+</span></span><span style=display:flex><span>    })
+</span></span><span style=display:flex><span>    .<span style=color:#a6e22e>on</span>(<span style=color:#e6db74>&#39;end&#39;</span>, () <span style=color:#f92672>=&gt;</span> {
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>cb</span>(<span style=color:#66d9ef>undefined</span>, <span style=color:#a6e22e>results</span>)
+</span></span><span style=display:flex><span>    })
+</span></span><span style=display:flex><span>    .<span style=color:#a6e22e>on</span>(<span style=color:#e6db74>&#39;error&#39;</span>, (<span style=color:#a6e22e>error</span>) <span style=color:#f92672>=&gt;</span> {
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>cb</span>(<span style=color:#a6e22e>error</span>)
+</span></span><span style=display:flex><span>    })
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><h2 id=hooking-it-up-to-the-search-bar>Hooking it up to the search bar</h2><p>The last step is hooking it all up! We need a simple form with a text input, and a table for the results:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;<span style=color:#f92672>div</span>&gt;
+</span></span><span style=display:flex><span>  &lt;<span style=color:#f92672>form</span> <span style=color:#a6e22e>id</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;searchForm&#34;</span>&gt;
+</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#39;searchContainer&#39;</span>&gt;
+</span></span><span style=display:flex><span>      &lt;<span style=color:#f92672>input</span> <span style=color:#a6e22e>type</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;search&#34;</span> <span style=color:#a6e22e>placeholder</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;Search...&#34;</span>&gt;&lt;/<span style=color:#f92672>input</span>&gt;
+</span></span><span style=display:flex><span>      &lt;<span style=color:#f92672>i</span> <span style=color:#a6e22e>id</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;searchSpinner&#34;</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;fa fa-spinner fa-spin&#34;</span> <span style=color:#a6e22e>aria-hidden</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;true&#34;</span>&gt;&lt;/<span style=color:#f92672>i</span>&gt;
+</span></span><span style=display:flex><span>    &lt;/<span style=color:#f92672>div</span>&gt;
+</span></span><span style=display:flex><span>  &lt;/<span style=color:#f92672>form</span>&gt;
+</span></span><span style=display:flex><span>&lt;/<span style=color:#f92672>div</span>&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>&lt;<span style=color:#f92672>div</span>&gt;
+</span></span><span style=display:flex><span>  &lt;<span style=color:#f92672>table</span> <span style=color:#a6e22e>id</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;searchResults&#34;</span>&gt;
+</span></span><span style=display:flex><span>  &lt;/<span style=color:#f92672>table</span>&gt;
+</span></span><span style=display:flex><span>&lt;/<span style=color:#f92672>div</span>&gt;
 </span></span></code></pre></div><p>Then in the page&rsquo;s javascript we run all that above code to load the search index, and hook up to
-the search form&rsquo;s <code>onSubmit</code> event.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span>  <span style="color:#75715e">// Initialize the search index in the page context
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">InitSearch</span>(<span style="color:#a6e22e">url</span>, (<span style="color:#a6e22e">err</span>, <span style="color:#a6e22e">store</span>) <span style="color:#f92672">=&gt;</span> {
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">err</span>) {
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">&#39;Error loading search index: &#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">err</span>)
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span>
-</span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Search index initialized, add it to the window.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">w</span>.<span style="color:#a6e22e">Search</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">store</span>
-</span></span><span style="display:flex;"><span>})
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">searchForm</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;searchForm&#39;</span>)
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">output</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;searchResults&#39;</span>)
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">spinner</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;searchSpinner&#39;</span>)
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">spinner</span>) {
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">spinner</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">visibility</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;hidden&#39;</span>   <span style="color:#75715e">// hidden while not searching
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">searchForm</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">searchForm</span> <span style="color:#66d9ef">instanceof</span> <span style="color:#a6e22e">HTMLFormElement</span>) {
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">searchForm</span>.<span style="color:#a6e22e">onsubmit</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">evt</span>) <span style="color:#f92672">=&gt;</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">evt</span>.<span style="color:#a6e22e">preventDefault</span>()
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">input</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">form</span>.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#39;input&#39;</span>) <span style="color:#66d9ef">as</span> <span style="color:#a6e22e">HTMLInputElement</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">text</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">input</span>.<span style="color:#a6e22e">value</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">text</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">text</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#39;&#39;</span>) {
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// do nothing for empty string search
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#66d9ef">return</span>
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">spinner</span>) {
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// turn on the spinner while we search
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#a6e22e">spinner</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">visibility</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;visible&#39;</span>
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">w</span>.<span style="color:#a6e22e">Search</span>) {
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// already loaded
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#a6e22e">doSearch</span>(<span style="color:#a6e22e">text</span>)
-</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">else</span> {
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// wait for loading to complete then do the search
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#a6e22e">me</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#39;searchIndexLoaded&#39;</span>, () <span style="color:#f92672">=&gt;</span> {
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">doSearch</span>(<span style="color:#a6e22e">text</span>)
-</span></span><span style="display:flex;"><span>      })
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">doSearch</span>(<span style="color:#a6e22e">text</span>: <span style="color:#66d9ef">string</span>)<span style="color:#f92672">:</span> <span style="color:#66d9ef">void</span> {
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">w</span>.<span style="color:#a6e22e">Search</span>.<span style="color:#a6e22e">runSearch</span>(<span style="color:#a6e22e">text</span>, <span style="color:#a6e22e">lang</span>, (<span style="color:#a6e22e">error</span>, <span style="color:#a6e22e">results</span>) <span style="color:#f92672">=&gt;</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">error</span>) {
-</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#a6e22e">error</span>)
-</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span>
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">output</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">output</span> <span style="color:#66d9ef">instanceof</span> <span style="color:#a6e22e">HTMLTableElement</span>) {
-</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">writeSearchResults</span>(<span style="color:#a6e22e">output</span>, <span style="color:#a6e22e">results</span>)
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">spinner</span>) {
-</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// now we stop the spinner
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#a6e22e">spinner</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">visibility</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;hidden&#39;</span>
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>  })
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>One last piece is writing the results to the table.  We get the results back as a javascript document
-and need to format it into table rows.  That&rsquo;s this <code>writeSearchResults</code> function:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#75715e">/** Formats and writes search results to the given HTMLTableElement in the &lt;tbody&gt; */</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">writeSearchResults</span>(<span style="color:#a6e22e">table</span>: <span style="color:#66d9ef">HTMLTableElement</span>, <span style="color:#a6e22e">results</span>: <span style="color:#66d9ef">SearchResult</span>[])<span style="color:#f92672">:</span> <span style="color:#66d9ef">void</span> {
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">body</span>: <span style="color:#66d9ef">HTMLTableSectionElement</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">table</span>.<span style="color:#a6e22e">tBodies</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">table</span>.<span style="color:#a6e22e">tBodies</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>) {
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">body</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">table</span>.<span style="color:#a6e22e">tBodies</span>[<span style="color:#ae81ff">0</span>]
-</span></span><span style="display:flex;"><span>  } <span style="color:#66d9ef">else</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">body</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">table</span>.<span style="color:#a6e22e">createTBody</span>()
-</span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">resultToRow</span>(<span style="color:#a6e22e">r</span>: <span style="color:#66d9ef">SearchResult</span>, <span style="color:#a6e22e">row</span>: <span style="color:#66d9ef">HTMLTableRowElement</span>)<span style="color:#f92672">:</span> <span style="color:#66d9ef">void</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">date</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">r</span>.document.<span style="color:#a6e22e">date</span> <span style="color:#f92672">?</span> <span style="color:#66d9ef">new</span> Date(<span style="color:#a6e22e">r</span>.document.<span style="color:#a6e22e">date</span>).<span style="color:#a6e22e">toLocaleDateString</span>() <span style="color:#f92672">:</span> <span style="color:#66d9ef">undefined</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">docBody</span>: <span style="color:#66d9ef">string</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">r</span>.document.<span style="color:#a6e22e">body</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">docBody</span>) {
-</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">docBody</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">docBody</span>.<span style="color:#a6e22e">substring</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">150</span>) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;...&#39;</span>
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">row</span>.<span style="color:#a6e22e">innerHTML</span> <span style="color:#f92672">=</span>
-</span></span><span style="display:flex;"><span><span style="color:#e6db74">`&lt;td&gt;
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  &lt;h3&gt;&lt;a href=</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">r</span>.document.<span style="color:#a6e22e">relativeurl</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&gt;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">r</span>.document.<span style="color:#a6e22e">title</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">r</span>.document.<span style="color:#a6e22e">name</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&lt;/a&gt;&lt;/h3&gt;
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  &lt;span class=&#34;date&#34;&gt;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">date</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&lt;/span&gt;
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  &lt;div class=&#34;body&#34;&gt;
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">docBody</span><span style="color:#e6db74">}</span><span style="color:#e6db74">
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  &lt;/div&gt;
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&lt;/td&gt;`</span>
-</span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> (; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">rows</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">results</span>.<span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// overwrite existing rows
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">resultToRow</span>(<span style="color:#a6e22e">results</span>[<span style="color:#a6e22e">i</span>], <span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">rows</span>[<span style="color:#a6e22e">i</span>])
-</span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> (; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">results</span>.<span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// append new rows as necessary
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">resultToRow</span>(<span style="color:#a6e22e">results</span>[<span style="color:#a6e22e">i</span>], <span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">insertRow</span>())
-</span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// delete old rows
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">for</span> (; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">rows</span>.<span style="color:#a6e22e">length</span>; ) {
-</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// since this is a live list, as we delete items it shrinks.  Thus we don&#39;t increment i.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">deleteRow</span>(<span style="color:#a6e22e">i</span>)
-</span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">results</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">0</span>) {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">row</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">insertRow</span>()
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">row</span>.<span style="color:#a6e22e">innerHTML</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&lt;h3&gt;No Results&lt;/h3&gt;&#39;</span>
-</span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>That&rsquo;s how it works on my site!  Check it out for yourself <a href="/search">here</a>.</p>
-<p>This is what it looks like to build my site now, with Gulp and Hugo:</p>
-<p><img src="/.640x/images/2017/2017_07_build.gif" alt="A gif showing the build process"></p>
-<p>Of course I have all that automated over at <a href="https://travis-ci.org/gburgett/blog">Travis CI</a>.  Whenever I push to my blog&rsquo;s github
+the search form&rsquo;s <code>onSubmit</code> event.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-ts data-lang=ts><span style=display:flex><span>  <span style=color:#75715e>// Initialize the search index in the page context
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#a6e22e>InitSearch</span>(<span style=color:#a6e22e>url</span>, (<span style=color:#a6e22e>err</span>, <span style=color:#a6e22e>store</span>) <span style=color:#f92672>=&gt;</span> {
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>if</span> (<span style=color:#a6e22e>err</span>) {
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>error</span>(<span style=color:#e6db74>&#39;Error loading search index: &#39;</span> <span style=color:#f92672>+</span> <span style=color:#a6e22e>err</span>)
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span>
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Search index initialized, add it to the window.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#a6e22e>w</span>.<span style=color:#a6e22e>Search</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>store</span>
+</span></span><span style=display:flex><span>})
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>searchForm</span> <span style=color:#f92672>=</span> document.<span style=color:#a6e22e>getElementById</span>(<span style=color:#e6db74>&#39;searchForm&#39;</span>)
+</span></span><span style=display:flex><span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>output</span> <span style=color:#f92672>=</span> document.<span style=color:#a6e22e>getElementById</span>(<span style=color:#e6db74>&#39;searchResults&#39;</span>)
+</span></span><span style=display:flex><span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>spinner</span> <span style=color:#f92672>=</span> document.<span style=color:#a6e22e>getElementById</span>(<span style=color:#e6db74>&#39;searchSpinner&#39;</span>)
+</span></span><span style=display:flex><span><span style=color:#66d9ef>if</span> (<span style=color:#a6e22e>spinner</span>) {
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>spinner</span>.<span style=color:#a6e22e>style</span>.<span style=color:#a6e22e>visibility</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;hidden&#39;</span>   <span style=color:#75715e>// hidden while not searching
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>if</span> (<span style=color:#a6e22e>searchForm</span> <span style=color:#f92672>&amp;&amp;</span> <span style=color:#a6e22e>searchForm</span> <span style=color:#66d9ef>instanceof</span> <span style=color:#a6e22e>HTMLFormElement</span>) {
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>searchForm</span>.<span style=color:#a6e22e>onsubmit</span> <span style=color:#f92672>=</span> (<span style=color:#a6e22e>evt</span>) <span style=color:#f92672>=&gt;</span> {
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>evt</span>.<span style=color:#a6e22e>preventDefault</span>()
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>input</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>form</span>.<span style=color:#a6e22e>querySelector</span>(<span style=color:#e6db74>&#39;input&#39;</span>) <span style=color:#66d9ef>as</span> <span style=color:#a6e22e>HTMLInputElement</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>text</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>input</span>.<span style=color:#a6e22e>value</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> (<span style=color:#f92672>!</span><span style=color:#a6e22e>text</span> <span style=color:#f92672>||</span> <span style=color:#a6e22e>text</span> <span style=color:#f92672>===</span> <span style=color:#e6db74>&#39;&#39;</span>) {
+</span></span><span style=display:flex><span>        <span style=color:#75715e>// do nothing for empty string search
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>      <span style=color:#66d9ef>return</span>
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> (<span style=color:#a6e22e>spinner</span>) {
+</span></span><span style=display:flex><span>        <span style=color:#75715e>// turn on the spinner while we search
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>      <span style=color:#a6e22e>spinner</span>.<span style=color:#a6e22e>style</span>.<span style=color:#a6e22e>visibility</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;visible&#39;</span>
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> (<span style=color:#a6e22e>w</span>.<span style=color:#a6e22e>Search</span>) {
+</span></span><span style=display:flex><span>        <span style=color:#75715e>// already loaded
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>      <span style=color:#a6e22e>doSearch</span>(<span style=color:#a6e22e>text</span>)
+</span></span><span style=display:flex><span>    } <span style=color:#66d9ef>else</span> {
+</span></span><span style=display:flex><span>        <span style=color:#75715e>// wait for loading to complete then do the search
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>      <span style=color:#a6e22e>me</span>.<span style=color:#a6e22e>addEventListener</span>(<span style=color:#e6db74>&#39;searchIndexLoaded&#39;</span>, () <span style=color:#f92672>=&gt;</span> {
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>doSearch</span>(<span style=color:#a6e22e>text</span>)
+</span></span><span style=display:flex><span>      })
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>function</span> <span style=color:#a6e22e>doSearch</span>(<span style=color:#a6e22e>text</span>: <span style=color:#66d9ef>string</span>)<span style=color:#f92672>:</span> <span style=color:#66d9ef>void</span> {
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>w</span>.<span style=color:#a6e22e>Search</span>.<span style=color:#a6e22e>runSearch</span>(<span style=color:#a6e22e>text</span>, <span style=color:#a6e22e>lang</span>, (<span style=color:#a6e22e>error</span>, <span style=color:#a6e22e>results</span>) <span style=color:#f92672>=&gt;</span> {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> (<span style=color:#a6e22e>error</span>) {
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>error</span>(<span style=color:#a6e22e>error</span>)
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>return</span>
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> (<span style=color:#a6e22e>output</span> <span style=color:#f92672>&amp;&amp;</span> <span style=color:#a6e22e>output</span> <span style=color:#66d9ef>instanceof</span> <span style=color:#a6e22e>HTMLTableElement</span>) {
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>writeSearchResults</span>(<span style=color:#a6e22e>output</span>, <span style=color:#a6e22e>results</span>)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> (<span style=color:#a6e22e>spinner</span>) {
+</span></span><span style=display:flex><span>      <span style=color:#75715e>// now we stop the spinner
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>      <span style=color:#a6e22e>spinner</span>.<span style=color:#a6e22e>style</span>.<span style=color:#a6e22e>visibility</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;hidden&#39;</span>
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>  })
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>One last piece is writing the results to the table. We get the results back as a javascript document
+and need to format it into table rows. That&rsquo;s this <code>writeSearchResults</code> function:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-ts data-lang=ts><span style=display:flex><span><span style=color:#75715e>/** Formats and writes search results to the given HTMLTableElement in the &lt;tbody&gt; */</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>function</span> <span style=color:#a6e22e>writeSearchResults</span>(<span style=color:#a6e22e>table</span>: <span style=color:#66d9ef>HTMLTableElement</span>, <span style=color:#a6e22e>results</span>: <span style=color:#66d9ef>SearchResult</span>[])<span style=color:#f92672>:</span> <span style=color:#66d9ef>void</span> {
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>let</span> <span style=color:#a6e22e>body</span>: <span style=color:#66d9ef>HTMLTableSectionElement</span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>if</span> (<span style=color:#a6e22e>table</span>.<span style=color:#a6e22e>tBodies</span> <span style=color:#f92672>&amp;&amp;</span> <span style=color:#a6e22e>table</span>.<span style=color:#a6e22e>tBodies</span>.<span style=color:#a6e22e>length</span> <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>0</span>) {
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>body</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>table</span>.<span style=color:#a6e22e>tBodies</span>[<span style=color:#ae81ff>0</span>]
+</span></span><span style=display:flex><span>  } <span style=color:#66d9ef>else</span> {
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>body</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>table</span>.<span style=color:#a6e22e>createTBody</span>()
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>function</span> <span style=color:#a6e22e>resultToRow</span>(<span style=color:#a6e22e>r</span>: <span style=color:#66d9ef>SearchResult</span>, <span style=color:#a6e22e>row</span>: <span style=color:#66d9ef>HTMLTableRowElement</span>)<span style=color:#f92672>:</span> <span style=color:#66d9ef>void</span> {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>date</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>r</span>.document.<span style=color:#a6e22e>date</span> <span style=color:#f92672>?</span> <span style=color:#66d9ef>new</span> Date(<span style=color:#a6e22e>r</span>.document.<span style=color:#a6e22e>date</span>).<span style=color:#a6e22e>toLocaleDateString</span>() <span style=color:#f92672>:</span> <span style=color:#66d9ef>undefined</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>let</span> <span style=color:#a6e22e>docBody</span>: <span style=color:#66d9ef>string</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>r</span>.document.<span style=color:#a6e22e>body</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> (<span style=color:#a6e22e>docBody</span>) {
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>docBody</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>docBody</span>.<span style=color:#a6e22e>substring</span>(<span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>150</span>) <span style=color:#f92672>+</span> <span style=color:#e6db74>&#39;...&#39;</span>
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>row</span>.<span style=color:#a6e22e>innerHTML</span> <span style=color:#f92672>=</span>
+</span></span><span style=display:flex><span><span style=color:#e6db74>`&lt;td&gt;
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>  &lt;h3&gt;&lt;a href=</span><span style=color:#e6db74>${</span><span style=color:#a6e22e>r</span>.document.<span style=color:#a6e22e>relativeurl</span><span style=color:#e6db74>}</span><span style=color:#e6db74>&gt;</span><span style=color:#e6db74>${</span><span style=color:#a6e22e>r</span>.document.<span style=color:#a6e22e>title</span> <span style=color:#f92672>||</span> <span style=color:#a6e22e>r</span>.document.<span style=color:#a6e22e>name</span><span style=color:#e6db74>}</span><span style=color:#e6db74>&lt;/a&gt;&lt;/h3&gt;
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>  &lt;span class=&#34;date&#34;&gt;</span><span style=color:#e6db74>${</span><span style=color:#a6e22e>date</span><span style=color:#e6db74>}</span><span style=color:#e6db74>&lt;/span&gt;
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>  &lt;div class=&#34;body&#34;&gt;
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>      </span><span style=color:#e6db74>${</span><span style=color:#a6e22e>docBody</span><span style=color:#e6db74>}</span><span style=color:#e6db74>
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>  &lt;/div&gt;
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>&lt;/td&gt;`</span>
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>let</span> <span style=color:#a6e22e>i</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>for</span> (; <span style=color:#a6e22e>i</span> <span style=color:#f92672>&lt;</span> <span style=color:#a6e22e>body</span>.<span style=color:#a6e22e>rows</span>.<span style=color:#a6e22e>length</span> <span style=color:#f92672>&amp;&amp;</span> <span style=color:#a6e22e>i</span> <span style=color:#f92672>&lt;</span> <span style=color:#a6e22e>results</span>.<span style=color:#a6e22e>length</span>; <span style=color:#a6e22e>i</span><span style=color:#f92672>++</span>) {
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// overwrite existing rows
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>resultToRow</span>(<span style=color:#a6e22e>results</span>[<span style=color:#a6e22e>i</span>], <span style=color:#a6e22e>body</span>.<span style=color:#a6e22e>rows</span>[<span style=color:#a6e22e>i</span>])
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>for</span> (; <span style=color:#a6e22e>i</span> <span style=color:#f92672>&lt;</span> <span style=color:#a6e22e>results</span>.<span style=color:#a6e22e>length</span>; <span style=color:#a6e22e>i</span><span style=color:#f92672>++</span>) {
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// append new rows as necessary
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>resultToRow</span>(<span style=color:#a6e22e>results</span>[<span style=color:#a6e22e>i</span>], <span style=color:#a6e22e>body</span>.<span style=color:#a6e22e>insertRow</span>())
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// delete old rows
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#66d9ef>for</span> (; <span style=color:#a6e22e>i</span> <span style=color:#f92672>&lt;</span> <span style=color:#a6e22e>body</span>.<span style=color:#a6e22e>rows</span>.<span style=color:#a6e22e>length</span>; ) {
+</span></span><span style=display:flex><span>      <span style=color:#75715e>// since this is a live list, as we delete items it shrinks.  Thus we don&#39;t increment i.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>body</span>.<span style=color:#a6e22e>deleteRow</span>(<span style=color:#a6e22e>i</span>)
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>if</span> (<span style=color:#a6e22e>results</span>.<span style=color:#a6e22e>length</span> <span style=color:#f92672>===</span> <span style=color:#ae81ff>0</span>) {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>row</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>body</span>.<span style=color:#a6e22e>insertRow</span>()
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>row</span>.<span style=color:#a6e22e>innerHTML</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;&lt;h3&gt;No Results&lt;/h3&gt;&#39;</span>
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>That&rsquo;s how it works on my site! Check it out for yourself <a href=/search/>here</a>.</p><p>This is what it looks like to build my site now, with Gulp and Hugo:</p><p><img alt="A gif showing the build process" src=/images/2017/2017_07_build.gif></p><p>Of course I have all that automated over at <a href=https://travis-ci.org/gburgett/blog>Travis CI</a>. Whenever I push to my blog&rsquo;s github
 repo, it automatically builds the <code>public</code> folder using Gulp, and then the Docker container using Docker, and pushes that to
-the <a href="https://hub.docker.com/r/gordonburgett/blog/">official docker repository</a>.  Then my server automatically pulls the latest
-docker image for the blog and deploys it.</p>
-<h2 id="wrapping-it-all-up-in-a-library">Wrapping it all up in a library</h2>
-<p>In working all this out, I had to learn about various ways to test javascript programs in the browser.  I used <a href="https://karma-runner.github.io/1.0/index.html">Karma</a> in order to set up a test environment in Mozilla Firefox, and discovered
+the <a href=https://hub.docker.com/r/gordonburgett/blog/>official docker repository</a>. Then my server automatically pulls the latest
+docker image for the blog and deploys it.</p><h2 id=wrapping-it-all-up-in-a-library>Wrapping it all up in a library</h2><p>In working all this out, I had to learn about various ways to test javascript programs in the browser. I used <a href=https://karma-runner.github.io/1.0/index.html>Karma</a> in order to set up a test environment in Mozilla Firefox, and discovered
 that the way <code>search-index</code> stores its underlying library is different in the NodeJS version and the browser version!
-<a href="https://github.com/fergiemcdowall/search-index/issues/394">I opened a bug report to address that</a> but also was able to create
-a workaround. I also discovered a dozen other minor issues that had to be worked around.</p>
-<p>To make it easier to share all this work, I&rsquo;ve published it as an open source project and a nodejs library:</p>
-<p><a href="https://github.com/gburgett/hugo-search-index">https://github.com/gburgett/hugo-search-index</a><br>
-<a href="https://www.npmjs.com/package/hugo-search-index">https://www.npmjs.com/package/hugo-search-index</a></p>
-<p>Now you can make your own search index just by installing the library and loading the gulp tasks in your gulpfile!
-Hope you enjoyed this as much as I did, it was a fun challenge this week!</p>
-
-        </div>
-      </div>
-    </div>
-  </body>
-  
-
-<link rel="stylesheet" href="/js/highlight/styles/vs2015.css">
-
-
-
-<script
-  src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous"></script>
-<script src="/js/main.min.js"></script>
-<script src="/js/custom.js" ></script>
-
-<script src="/js/highlight/highlight.pack.js"></script>
-<script>
-  hljs.initHighlightingOnLoad();
-</script>
-
-</html>
+<a href=https://github.com/fergiemcdowall/search-index/issues/394>I opened a bug report to address that</a> but also was able to create
+a workaround. I also discovered a dozen other minor issues that had to be worked around.</p><p>To make it easier to share all this work, I&rsquo;ve published it as an open source project and a nodejs library:</p><p><a href=https://github.com/gburgett/hugo-search-index>https://github.com/gburgett/hugo-search-index</a><br><a href=https://www.npmjs.com/package/hugo-search-index>https://www.npmjs.com/package/hugo-search-index</a></p><p>Now you can make your own search index just by installing the library and loading the gulp tasks in your gulpfile!
+Hope you enjoyed this as much as I did, it was a fun challenge this week!</p></div></div></div></body><link rel=stylesheet href=/js/highlight/styles/vs2015.css><script src=https://code.jquery.com/jquery-2.2.4.min.js integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin=anonymous></script><script src=/js/main.min.js></script><script src=/js/custom.js></script><script src=/js/highlight/highlight.pack.js></script><script>hljs.initHighlightingOnLoad()</script></html>
