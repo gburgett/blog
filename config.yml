@@ -16,6 +16,10 @@ params:
   description: A blog about whatever crosses my mind, ordered by importance.
   animate: true
   
+  navbar:
+    brandName: Gordon Burgett
+    disableSearch: true
+  
   hero:
     enable: true
     intro: Hi, my name is
@@ -56,5 +60,10 @@ menu:
     - identifier: blog
       name: Blog
       title: Blog posts
-      url: /blogs
+      url: /posts
+      weight: 1
+    - identifier: albania
+      name: Albania
+      title: Albania
+      url: /albania
       weight: 1
