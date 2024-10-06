@@ -15,7 +15,7 @@ I had some time off today so I decided to revisit how I'm hosting all my stuff. 
 
 I'd heard about Tutum before, so I went to check it out.  It's another container management solution.  It's since been acquired by Docker and rebranded as [docker cloud](https://cloud.docker.com).  It's definitely got a slick interface, and looks to provide all the features I'll need.  One that I particularly like is the "autoredeploy" switch, which automatically redeploys a container when you push a new image.  Perfect for my blog.  So, I set about getting it set up.
 
-![Docker cloud tour](/.640x/images/2016/docker-cloud-tour.png)
+![Docker cloud tour](/images/2016/docker-cloud-tour.png)
 They have a neat tour!  Getting set up with AWS as my service provider was a snap.  It spins up its own AWS instances to use as nodes though, which means I can't use my fancy auto-initialization with an auto-scaling group.  But, you can also 'bring your own node' by installing the docker-cloud client.  Turned out to be pretty simple to incorporate that into my launch script:
 
 ```bash
@@ -30,7 +30,7 @@ One tricky part was that I couldn't use the Amazon ECS-optimized image, since th
 
 Now to set up my services.  You can set them up directly using the web interface, but I prefer to have well-defined files somewhere describing my services.  Docker cloud has a concept called 'stacks' which are defined by yaml files, similar to docker-compose.  This let me link all the dependent services together in a declarative way.  I created my 'blog' stack like this:
 
-![Blog stackfile](/.640x/images/2016/blog-stack-yaml.png)
+![Blog stackfile](/images/2016/blog-stack-yaml.png)
 Now I need to set up my haproxy load balancer in front of it.  I decided this time I'll dockerize my load balancer instead of having it run straight on the EC2 instance.  I messed around with it for a long time before I found this image, which does everything I want: https://hub.docker.com/r/dockercloud/haproxy/
 
 Setting that up was a breeze.  I created a service to run it, and set it to listen on ports 80 and 443 (the HTTP and HTTPS ports).  It contacts the docker cloud API and discoveres the locations of all my other services automatically, and imports their info into its configuration.  I just needed to declare a couple environment variables in my other services, like hostname and SSL keys, and it imports them to route virtual hosts and terminate SSL connections automagically.  Sweet!
@@ -71,6 +71,6 @@ engine:
 I updated my haproxy service to link to the "engine" service, and started it up.  Now going to 'reclaimed.gordonburgett.net' gets me through the load balancer and into the rails app.  Perfect!  I uploaded the site, which you can see at http://reclaimed.gordonburgett.net
 
 Here it is!
-![The node with everything running](/.640x/images/2016/docker-cloud-node.png)
+![The node with everything running](/images/2016/docker-cloud-node.png)
 
 Like I said, neat!

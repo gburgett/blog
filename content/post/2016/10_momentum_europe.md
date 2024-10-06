@@ -71,7 +71,7 @@ care package full of chips, salsa, and sour patch kids!  And two new Aggie T-shi
 just in time for A&M vs Alabama!  It was really encouraging to read their notes.
 Thanks Lauren, Danita, Matt, Ron, Chris, and Joseph.  Love you guys.
 
-![Care package](/.640x/images/2016/care_package_10_2016.jpg)
+![Care package](/images/2016/care_package_10_2016.jpg)
 
 Some of them are even coming to visit in December!  Will, Lucy, Lauren, and Matt Rial
 are going to spend a week here just hanging out with the Albania staff, then we'll

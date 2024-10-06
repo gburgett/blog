@@ -28,7 +28,7 @@ I spent the next week putting the finishing touches on my translation and
 subtitling of Seasons of Gray, a modern-day Joseph story.  This film was made
 by a small independent studio with the support of Watermark Church in Dallas,
 and I still had my DVD copy so I decided to translate it as a language project.
-![Seasons Of Gray trailer image](/.640x/images/2017/sograydvd_bottom.jpg)
+![Seasons Of Gray trailer image](/images/2017/sograydvd_bottom.jpg)
 We finished the translation and had a small screening as a Sotmeria event.
 It went fantastic!  Everybody was teared up at the end.  I went out for coffee
 with a couple guys afterwards and we talked about forgiveness, eventually
@@ -53,10 +53,10 @@ all over Eastern Europe.  The focus is to help train our partners to be owners
 of the ministry and to give their L.I.F.E. (Leadership, Influence, Finances, and Expertise) to the mission.  We have 27 people going from all 3 focuses of LeaderImpact.  Some of them still need to raise support for their plane tickets.  It's going to cost 150 euros per person for plane tickets, plus $100 conference registration fee.  That's a lot when the average salary here is $300/mo.  
 
 <span style="font-size:16pt; color:black">
-If you'd like to make a donation to help cover the costs for a young professional, [please click here](https://give.cru.org/0905203)<br/> and write in the comments: <b>TraNet 2017 young professional</b>
+If you'd like to make a donation to help cover the costs for a young professional, <a href="https://give.cru.org/0905203">please click here</a><br/> and write in the comments: <b>TraNet 2017 young professional</b>
 </span>
 
-![Cyprus](/.640x/images/2017/cyprus.jpg)
+![Cyprus](/images/2017/cyprus.jpg)
 Here's hoping Cyprus will look like this when we get there!
 
 ### What's next?

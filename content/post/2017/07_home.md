@@ -12,7 +12,7 @@ Description = ""
 
 <div>
   <a href="/albania/2017">
-    <img src="/.640x/images/2017/2017_07_retreat.jpg" alt="Summer retreat group">
+    <img src="/images/2017/2017_07_retreat.jpg" alt="Summer retreat group">
   </a>
   <span class="attribution">photo by Lauren Dean</span>
 </div>
@@ -58,6 +58,6 @@ Shifemi shumë shpejt miq :)
 
 
 <div>
-  <img src="/.640x/images/2017/project/sunset.jpg" alt="sunset">
+  <img src="/images/2017/project/sunset.jpg" alt="sunset">
   <span class="attribution">photo by Lauren Dean</span>
 </div>

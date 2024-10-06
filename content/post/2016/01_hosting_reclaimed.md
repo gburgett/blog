@@ -174,7 +174,7 @@ include /etc/nginx/mime.types;
 
 Include that, rebuild, and SUCCESS!  I'm seeing it the way it should be!
 
-![LocomotiveCMS 3.0 homepage](/.640x/images/2016/locomotive_3_home.png)
+![LocomotiveCMS 3.0 homepage](/images/2016/locomotive_3_home.png)
 
 ## Now to put it on the server
 
@@ -182,7 +182,7 @@ Since I have a dockerfile, it's fairly trivial to set up a [repo on dockerhub](h
 
 I changed up the HAProxy configuration on my AWS server to redirect incoming requests for reclaimed.gordonburgett.net to port 8180.  I had previously set up my EC2 instance to connect to the "default" cluster in ECS, so I just needed to configure ECS to fire up my docker containers.
 
-![ECS task definition dashboard](/.640x/images/2016/ecs_task_dash.png)
+![ECS task definition dashboard](/images/2016/ecs_task_dash.png)
 
 One thing to make sure of is that the total memory allocations don't top the available memory of the system, or else ECS won't be able to place the containers.  So unfortunately Locomotive gets a rather low allocation, only 256MB.
 
@@ -192,7 +192,7 @@ I've put my secret keys in environment variables (which is why I won't show you 
 
 Last thing to do is define a service with that task and wait for it to spin up!
 
-![ECS service definition](/.640x/images/2016/ecs_locomotive_service.png)
+![ECS service definition](/images/2016/ecs_locomotive_service.png)
 
 Since I have HAProxy running on my EC2 instance, I don't need to pay $15/mo for a load balancer.  I just mounted port 8180 in the task definition, and HAProxy sends traffic to that port.
 
@@ -255,4 +255,4 @@ It still prompted me for several questions, including my password again, and I'm
 
 I'm glad it worked.  We maybe won't want to shift over to this setup, but at least I learned a lot about rails.  It was a fun excercise.
 
-![Reclaimed hosted on my own server](/.640x/images/2016/reclaimed_header.png)
+![Reclaimed hosted on my own server](/images/2016/reclaimed_header.png)

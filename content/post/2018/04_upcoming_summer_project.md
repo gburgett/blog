@@ -9,7 +9,7 @@ title = "Preparing for the Summer"
 
 It's that time again!  We've begun preparing to go back to Albania this summer!
 
-![2018 team photo](/.640x/images/2018/2018_albania_group_photo_social.jpg)
+![2018 team photo](/images/2018/2018_albania_group_photo_social.jpg)
 
 # Looking forward to going back
 
@@ -31,7 +31,7 @@ the weekend for the believers.  I'm hoping we can make it as fun as last year!
 We definitely have a great team.  And we still have someone on the ground:
 Lauren Dean has been living in Albania since last July!
 
-![2018 first team meeting](/.640x/images/2018/first_team_meeting.jpg)
+![2018 first team meeting](/images/2018/first_team_meeting.jpg)
 
 Our first team meeting was a big success, and people are already working on
 their support letters.  The system is already set up so you can donate, and

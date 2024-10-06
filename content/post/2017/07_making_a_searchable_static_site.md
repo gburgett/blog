@@ -435,7 +435,7 @@ That's how it works on my site!  Check it out for yourself [here](/search).
 
 This is what it looks like to build my site now, with Gulp and Hugo:
 
-![A gif showing the build process](/.640x/images/2017/2017_07_build.gif)
+![A gif showing the build process](/images/2017/2017_07_build.gif)
 
 Of course I have all that automated over at [Travis CI](https://travis-ci.org/gburgett/blog).  Whenever I push to my blog's github
 repo, it automatically builds the `public` folder using Gulp, and then the Docker container using Docker, and pushes that to

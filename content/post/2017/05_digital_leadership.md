@@ -12,12 +12,12 @@ April was a fairly slow month.  We had our normal schedule of a professional mee
 
 At the end of the month we also got to celebrate my 30th birthday!  I invited everyone I knew to one of my favorite restaurants, Zgarra Korçare.  It's cheap and it has my favorite beer on tap, Korça e zezë.  I really enjoyed celebrating with all the new friends I've made over the past year and a half.
 
-![My birthday](/.640x/images/2017/2017_04_birthday.jpg)
+![My birthday](/images/2017/2017_04_birthday.jpg)
 
 Albert, Egli, Kyle and I also went on a day trip to Shkodër.  We saw the castle there, and ate lunch at a delicious place called 'Mrizi i Zanave', which means something like "the fairy's glen".  The food was all fresh from the attached farm; I especially enjoyed the pork.
 
-![Shkoder castle](/.640x/images/2017/2017_04_shkoder_2.jpg)
-![Shkoder castle](/.640x/images/2017/2017_04_shkoder.jpg)
+![Shkoder castle](/images/2017/2017_04_shkoder_2.jpg)
+![Shkoder castle](/images/2017/2017_04_shkoder.jpg)
 
 The next day, May 1st, I left for a conference in Budapest.
 

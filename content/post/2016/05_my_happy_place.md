@@ -12,7 +12,7 @@ aliases = [
 +++
 
 ### This is my happy place
-![Lake LBJ](/.640x/images/2016/lake_lbj_dock.jpg)
+![Lake LBJ](/images/2016/lake_lbj_dock.jpg)
 
 Lake Lyndon B. Johnson, about 45 minutes west of Austin.  A beautiful constant-level freshwater lake.  My grandmother has owned a lakehouse here for more than 30 years.  My family and I vacationed here almost every summer.  If there were no Good News to preach, I would as much as possible spend my time here.
 

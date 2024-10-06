@@ -27,7 +27,7 @@ I don't mean to write this post to get sympathy.  One thing that I know is there
 
 <div class="data-img col-md-6">
 	<span>An unexpected crowd at our dating seminar!</span>
-	<img src="/.640x/images/2016/dating_seminar_crowd.jpg" >
+	<img src="/images/2016/dating_seminar_crowd.jpg" >
 	</img>
 </div>
 

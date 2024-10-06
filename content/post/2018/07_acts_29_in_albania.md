@@ -86,7 +86,7 @@ where I was staying.  I paid for 2 weeks in a co-working space, which turned out
 be a great decision not just for my own sanity, but also for opportunities for
 evangelism.
 
-![Morning Coffee Spot](/.640x/images/2018/morning_coffee_spot.jpg)
+![Morning Coffee Spot](/images/2018/morning_coffee_spot.jpg)
 <span class="subtitle">My morning coffee spot</span>
 
 The first opportunity I had was with a guy whom I'd shared the Gospel with over a year
@@ -97,7 +97,7 @@ Bible as well.  I helped him to download the Bible app on his phone, and showed 
 how to activate the audio-book feature.  I will keep up with him over facebook to
 encourage him to keep reading the Bible.
 
-![View from the Office](/.640x/images/2018/office.jpg)
+![View from the Office](/images/2018/office.jpg)
 <span class="subtitle">The view from the office</span>
 
 My second week in the office I struck up a conversation with the IT manager for the
@@ -140,7 +140,7 @@ more open mind.  Please pray for Eriona.
 
 ### Relationship and Partnership Building
 
-![World Cup watching](/.640x/images/2018/world_cup.jpg)
+![World Cup watching](/images/2018/world_cup.jpg)
 <span class="subtitle">Watching the World Cup with friends</span>
 
 #### Church Camp
@@ -161,8 +161,8 @@ day we discussed a different "key word" or theme:
 3. Gifts, your spiritual gifting
 4. Purpose, the objective of your life.
 
-![View from the Beach](/.640x/images/2018/zvernec_2.jpg)
-![Sunset from the bluff](/.640x/images/2018/zvernec_sunset.jpg)
+![View from the Beach](/images/2018/zvernec_2.jpg)
+![Sunset from the bluff](/images/2018/zvernec_sunset.jpg)
 
 A lot of very real discussion took place.  I was glad to see the guys opening up somewhat.
 We talked a lot on the last day about things that would block us from achieving our
@@ -192,7 +192,7 @@ a day trip.  He suggested Shengjergj, a village on the other side of Dajti mount
 and I later found a hiking trail up to a mountain lake.  It's only 5 kilometers, I thought.  No big deal,
 we'll hike from morning till late afternoon and then go have dinner.
 
-![Shengjergj waterfall](/.640x/images/2018/waterfall.jpg)
+![Shengjergj waterfall](/images/2018/waterfall.jpg)
 <span class="subtitle">Shengjergj waterfall</span>
 
 The waterfall was really cool!  It's a short walk from the main road, through a wooded area following along
@@ -200,7 +200,7 @@ a creek.  The water was cool and clear, very fresh.  We were not the only ones t
 trafficed tourist stop.  So, we left there around 11:30 am and headed over to the village where the trail
 started.
 
-![Swimming in a mountain lake](/.640x/images/2018/mountain_lake_swimming.jpg)
+![Swimming in a mountain lake](/images/2018/mountain_lake_swimming.jpg)
 <span class="subtitle">Swimming on top of a mountain</span>
 
 There was some discussion about whether we should actually do this adventure, but we decided to go ahead
@@ -219,7 +219,7 @@ couldn't stop sharing about the hiking adventure up the mountain.
 
 #### The Wedding
 
-![Cutting the Cake](/.640x/images/2018/wedding_1.jpg)
+![Cutting the Cake](/images/2018/wedding_1.jpg)
 
 No better way to end this blog post than with the wedding!  You'd think it was royalty getting married
 with how many people RSVP'd.  The venue was on top of mount Dajti, overlooking Tirana.  It was a very
@@ -234,7 +234,7 @@ friend Endri.  Endri himself finally set a date for his wedding, it will be in A
 forward to photos from that wedding as well!  We wrapped up all the dancing around 2:30pm, and left
 the venue to take a break before the second wedding.
 
-![Pal & Ueda Dancing](/.640x/images/2018/wedding_2.jpg)
+![Pal & Ueda Dancing](/images/2018/wedding_2.jpg)
 
 We had about 6 hours before the second wedding, which is mainly for the Bride's family.  This one took
 place in Lezhe, their home town.  It was much more traditional style.  The bride and her family got there
@@ -247,7 +247,7 @@ kids came out and performed a dance routine.  At another point, several of the w
 Albanian costumes and danced for a while in those.  There was a lot of dancing and celebrating well into
 the night.  The cake didn't even come out until 2:15 AM.
 
-![Me with the couple](/.640x/images/2018/wedding_3.jpg)
+![Me with the couple](/images/2018/wedding_3.jpg)
 
 Unfortunately I had not realized that it would go this late when I booked my plane tickets, and so I
 had to leave at 2:30 am.  This was a good excuse for some of the others to leave as well, those who didn't

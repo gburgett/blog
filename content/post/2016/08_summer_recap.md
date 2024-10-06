@@ -23,7 +23,7 @@ After the Young Professionals camp, Wes and Chris went home but Lauren and Will 
 
 We took the ferry to Corfu for 2 days as well, and found a place on the west side of Corfu to watch the sunset.  This was another of the most beautiful sights I have ever seen.  The colors reflecting off the water and the rocks framing the sky were so beautiful, we all sat there in silence for at least half an hour staring at it.
 
-![Sunset in Corfu](/.640x/images/2016/corfu_sunset.jpg)
+![Sunset in Corfu](/images/2016/corfu_sunset.jpg)
 
 The drive back from Sarande was beautiful as well.  The valley of Gjirokaster all the way up through Tepelena is a wonderfully scenic view.  We got to Durres just in time to see the last sunset of the vacation from the beach.  Albania is really a beautiful country.
 

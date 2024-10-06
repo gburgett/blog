@@ -42,7 +42,7 @@ Being back in Dallas reminded me how much I miss it there.  I miss my friends, m
 There's lots of opportunities for ministry in Dallas.  I could easily be a cross-cultural missionary there, even as I work a full time job.  The Porch just opened a second location in south Dallas.  I could get a job closer to downtown, live in south Dallas, and invite my neighbors to know Jesus through The Porch.  Maybe I'll still have opportunity to do that in the future.
 
 Btw, did you guys know that there's a Muslim yellow pages in Richardson?
-![The muslim yellow pages](/.640x/images/2016/muslim_yellow_pages.jpg)
+![The muslim yellow pages](/images/2016/muslim_yellow_pages.jpg)
 
 For now however, I'm committed to this mission here in Tirana.  While I was gone I saw on facebook many exciting developments in the ministry.  The night I returned to Tirana I attended one of our seminars & saw how our young professionals are really stepping up to be leaders.  I'm excited for the direction this is going!  And I'm excited to be part of it.  This is one of those times that I'll remember for the rest of my life.
 
@@ -54,4 +54,4 @@ Is it too much to ask for the ability to live in 2 places at once?
 
 When you try too hard to hold on to things, often God takes them away from you.  I can't go back to the exact same life I enjoyed in Dallas, and in truth I don't want to.  I likely will still go back to Dallas after my 2nd year here, but I'll be going forward into a new adventure there.  All things change, and the God who makes all things new always turns that change into an opportunity for His glory.  Knowing that He is in control gives me peace for the future, however it turns out.
 
-![West dallas towards ft worth](/.640x/images/2016/west_dallas_towards_ft_worth.jpg)
+![West dallas towards ft worth](/images/2016/west_dallas_towards_ft_worth.jpg)

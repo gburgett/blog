@@ -7,3 +7,5 @@ blog.sublime-workspace
 .640x/
 .package-lock.json
 yarn-error.log
+
+.hugo_build.lock

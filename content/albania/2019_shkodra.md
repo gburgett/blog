@@ -9,7 +9,7 @@ navtitle = "2019 - Shkodra"
 
 +++
 
-![Pre-trip team photo](/.640x/images/albania/2019/06_shkodra_view.jpg)
+![Pre-trip team photo](/images/albania/2019/06_shkodra_view.jpg)
 
 # Day 1
 <h2 id="June-25" class="hidden-xs">Tuesday June 25</h2>
@@ -114,7 +114,7 @@ came to know Jesus, as described in his biography
 Pray that he'd begin to really investigate these things for himself rather than
 just accept what the Imam says.
 
-![Picnic at Shkodra castle](/.640x/images/albania/2019/06_shkodra_castle.jpg)
+![Picnic at Shkodra castle](/images/albania/2019/06_shkodra_castle.jpg)
 
 At 4:30, we went up to the castle for the picnic.  It was still really hot in the
 late afternoon, but we persevered and played volleyball and frisbee for a long
@@ -151,7 +151,7 @@ placed on him by his family, and so we got to talk through that and pray about i
 together.  We also chatted about their plans to return to Tirana next year, and
 how Watermark can help the church more broadly in the future.
 
-![Meeting with Believers](/.640x/images/albania/2019/06_shkodra_meeting.jpg)
+![Meeting with Believers](/images/albania/2019/06_shkodra_meeting.jpg)
 
 Around 5 we met up for the evening meeting, which was just for the believers who
 have been involved with the ministry as volunteers.  There were about 7 or 8 girls

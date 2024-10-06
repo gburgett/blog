@@ -16,7 +16,7 @@ project.  I spent half of it working remote and the rest just catching up with
 friends.  I found a really good coffee shop to work from. with a wonderful view.
 
 <div class="data-img">
-	<img src="/.640x/images/albania/2019/07_coffee_shop_view.jpg"
+	<img src="/images/albania/2019/07_coffee_shop_view.jpg"
     alt="Coffee shop in Tirana"></img>
 </div>
 
@@ -56,7 +56,7 @@ a couple from Granbury, TX which has been partnering with CRU in the Ukraine and
 is looking to partner with CRU again in Albania.
 
 <div class="data-img">
-	<img src="/.640x/images/albania/2019/07_ministry_timeline.jpg"
+	<img src="/images/albania/2019/07_ministry_timeline.jpg"
     alt="Berti showing us the ministry timeline"></img>
 </div>
 
@@ -74,7 +74,7 @@ barely make out Tirana though in the mid-summer haze.
 
 
 <div class="data-img">
-	<img src="/.640x/images/albania/2019/07_prayer_dajti.jpg"
+	<img src="/images/albania/2019/07_prayer_dajti.jpg"
     alt="Tirana from Mount Dajti"></img>
   <span>The view from Mount Dajti</span>
 </div>
@@ -129,7 +129,7 @@ reading Psalms & thinking more about Justice, how the population longs for the
 Justice that the Lord brings.
 
 <div class="data-img">
-	<img src="/.640x/images/albania/2019/07_maga.jpg"
+	<img src="/images/albania/2019/07_maga.jpg"
     alt="MAGA Coffee"></img>
   <span>The Bartender saw we were Americans</span>
 </div>
@@ -339,7 +339,7 @@ pictures, but I'm going to have to make sure I can do the same tomorrow during
 dinner.  The sunset is so beautiful out here.
 
 <div class="data-img">
-	<img src="/.640x/images/albania/2019/07_retreat_sunset.jpg"
+	<img src="/images/albania/2019/07_retreat_sunset.jpg"
     alt="Retreat sunset"></img>
 </div>
 
@@ -412,7 +412,7 @@ the day.  This project has been pretty tiring and I'll honestly be glad when I
 can go home and rest.
 
 <div class="data-img">
-	<img src="/.640x/images/albania/2019/07_dancing.jpg"
+	<img src="/images/albania/2019/07_dancing.jpg"
     alt="Dancing at the Retreat"></img>
 </div>
 
@@ -509,4 +509,4 @@ when it will be possible to get back to Albania.  For me, the sooner the better.
 
 Till next time,
 
-![YP Team Airport](/.640x/images/albania/2019/07_yp_team_airport.jpg)
+![YP Team Airport](/images/albania/2019/07_yp_team_airport.jpg)
