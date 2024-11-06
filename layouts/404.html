@@ -1,0 +1,21 @@
+{{ define "head" }}
+<meta name="description" content={{ .Site.Params.description }}>
+{{ end }}
+
+{{ define "title" }}
+{{ .Site.Title }} | {{ .Site.Params.terms.pageNotFound | default "404 page not found" }}
+{{ end }}
+
+{{ define "main" }}
+<div class="container py-5 text-center">
+    <img src="{{ .Site.Params.staticPath }}/404.png" alt='{{ .Site.Params.terms.pageNotFound | default "404 page not found" }}' class="img-fluid" width="40%">
+    <h1>{{ .Site.Params.terms.pageNotFound | default "404 page not found" }}</h1>
+    
+    <div class="row">
+        <div class="col-md-12">
+            If you are looking for old blog content, I've moved it to the <a href="/archive">archives</a>.<br>
+            If you are looking for something related to Albania, you can find it in the <a href="/albania">Albania section</a>.
+        </div>
+    </div>
+</div>
+{{ end }}
