@@ -6,7 +6,7 @@ badges = ["React", "PWA", "Supabase"]
 links = [
     {icon = "fas fa-globe", url = "https://healthsharetech.com"}
 ]
-
+date = "2024-11-16"
 +++
 
 I built the HealthShare app to solve my own problems with Christian Healthcare Ministries (CHM).  We've now grown it into a B2B 
