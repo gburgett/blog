@@ -44,6 +44,10 @@ params:
     
     bottomImage:
       enable: false
+      
+  projects:
+    enable: true
+    title: "Projects"
 
 languages:
   en:
