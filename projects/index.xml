@@ -6,9 +6,9 @@ marketing the app through his network of attorneys to build out the user base.&l
 &lt;p>Many attorneys still use pen and paper sticky notes to write down juror notes, including tracking responses to juror
 questions during the jury selection process. We solved the note taking process electronically, making note taking
 both more robust and searchable. It also helps attorneys appear more organized in the courtroom, where appearances
-can make a difference on the margins in the outcome of a case.&lt;/p></description></item><item><title>Neighbor Solutions</title><link>http://www.gordonburgett.net/projects/neighbor-solutions/</link><pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate><guid>http://www.gordonburgett.net/projects/neighbor-solutions/</guid><description>&lt;p>In contracting hourly for &lt;a href="https://www.ourtechnology.co/">Our Technology&lt;/a> on Neighbor Solutions, I&amp;rsquo;ve been enjoying
+can make a difference on the margins in the outcome of a case.&lt;/p></description></item><item><title>Neighbor Solutions</title><link>http://www.gordonburgett.net/projects/neighbor-solutions/</link><pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate><guid>http://www.gordonburgett.net/projects/neighbor-solutions/</guid><description>&lt;p>In contracting hourly for &lt;a href="https://neighbor.solutions/">Neighbor Solutions&lt;/a>, I&amp;rsquo;ve been enjoying
 working with AI to build unstructured data import and a Retrieval Augmented Generation (RAG) pipeline.&lt;/p>
-&lt;p>Neighbor Solutions is a brand new CRM built to enable homeless ministries to better care for our unhoused neighbors.
+&lt;p>Neighbor Solutions is a brand new CRM built to enable organizations to better care for our unhoused neighbors and those in need.
 It features a frontend app built using &lt;a href="astro.build">the Astro javascript framework&lt;/a> that displays a local map with
 all available resources for homeless people. The backend built using Ruby on Rails also provides case notes, interaction
 tracking, automation, and other tools for service providers to more effectively care for those who come through their doors.
