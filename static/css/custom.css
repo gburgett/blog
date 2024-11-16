@@ -149,3 +149,26 @@ blockquote p {
 .btn {
   cursor: pointer;
 }
+
+.page-content {
+  a {
+    text-decoration: underline !important;
+  }
+}
+
+.related-posts {
+  margin-top: 20px;
+  
+  .list-item {
+    border-top: 1px solid var(--text-secondary-color);
+    
+    a {
+      text-decoration: none !important;
+      color: var(--text-color);
+    }
+    
+    small {
+      opacity: 0.5;
+    }
+  }
+}
