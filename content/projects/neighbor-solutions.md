@@ -10,11 +10,11 @@ links = [
 date = "2024-08-02"
 +++
 
-In contracting hourly for [Our Technology](https://www.ourtechnology.co/) on Neighbor Solutions, I've been enjoying
+In contracting hourly for [Neighbor Solutions](https://neighbor.solutions/), I've been enjoying
 working with AI to build unstructured data import and a Retrieval Augmented Generation (RAG) pipeline.
 
 
-Neighbor Solutions is a brand new CRM built to enable homeless ministries to better care for our unhoused neighbors.
+Neighbor Solutions is a brand new CRM built to enable organizations to better care for our unhoused neighbors and those in need.
 It features a frontend app built using [the Astro javascript framework](astro.build) that displays a local map with
 all available resources for homeless people.  The backend built using Ruby on Rails also provides case notes, interaction
 tracking, automation, and other tools for service providers to more effectively care for those who come through their doors.
@@ -41,6 +41,6 @@ an individual, including recommended referrals for next steps.
 
 One of the challenges we've had in building this system is handling Protected Health Information (PHI).  We have interest
  from medical service providers in using the system, but it must be HIPAA compliant.  Fortunately my experience building a 
-[HIPAA Compliant finance app](/projects/healthshare-technology-solutions/) has been very helpful to Our Technology.  We
+[HIPAA Compliant finance app](/projects/healthshare-technology-solutions/) has been very helpful to Neighbor Solutions.  We
 have put a plan in place to protect PHI very soon.  This plan involves migrating to Amazon Web Services (AWS), ensuring
 proper cloud backups and locking down shell access to the production servers.
