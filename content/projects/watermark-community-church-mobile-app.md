@@ -1,5 +1,6 @@
 +++
 showInHome = true
+toc = false
 title = "Watermark Community Church App"
 image = "/images/projects/wm-app-figma.png"
 badges = ["Outsourcing", "Rock Mobile"]

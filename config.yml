@@ -23,6 +23,9 @@ params:
     brandName: Gordon Burgett
     disableSearch: true
   
+  terms:
+    social: Share
+  
   hero:
     enable: true
     intro: Hi, my name is

@@ -1,5 +1,6 @@
 +++
 showInHome = true
+toc = false
 title = "Healthshare Technology Solutions"
 image = "/images/projects/healthshare-track.png"
 badges = ["React", "PWA", "Supabase"]
