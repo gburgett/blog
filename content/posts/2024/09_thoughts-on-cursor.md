@@ -7,7 +7,9 @@ date = "2024-11-16T10:00:00-05:00"
 
 As AI tools continue to reshape software development, I've been particularly impressed with Cursor, an AI-powered code editor that has transformed my daily workflow. After several months of use, I want to share my experiences and observations about why this tool has become indispensable in my development process.
 
-The most striking impact of Cursor has been the dramatic increase in my productivity - I estimate it has easily doubled my coding speed. The key to this success lies in how Cursor has masterfully designed the user experience around AI code suggestions. Unlike other AI coding tools, Cursor makes it incredibly intuitive to accept, reject, or modify AI-generated code. The experience feels natural, almost like dictating your thoughts to a junior developer who then implements the code exactly as you envision it.
+The most striking impact of Cursor has been the dramatic increase in my productivity - I estimate it has doubled my coding speed.
+The secret sauce that Cursor has nailed is the UX around applying suggested edits back to my codebase.
+The experience feels natural, almost like dictating your thoughts to a junior developer who then implements the code exactly as you envision it.
 
 I've experienced this benefit firsthand while developing the admin interface for HealthShare Technology Solutions using Laravel and PHP. Despite my limited experience with PHP, Cursor has enabled me to efficiently build out complex features by translating my intentions into working code. I don't need to be a PHP expert - I just need to know what I want to accomplish, and Cursor helps bridge the knowledge gap.
 
@@ -45,9 +47,9 @@ be worth their weight in gold, and hiring managers need to begin taking that int
 I have effectively doubled my productivity using Cursor and other AI tools.  For salaried employees, your
 negotiating power (and pay) does not necessarily increase when your personal productivity increases; the hiring managers
 at the companies you're interviewing for need to believe that you are worth the money.  Typically this means your pay
-really only increases with the *average* productivity increase of devs with similar experience.  
+really only increases with the *average* productivity increase of devs with similar resumes.  
 
-For me, I have decided that I need to find a way to capture more of that productivity gain than I otherwise might as a 
+I am thinking that I need to find a way to capture more of that productivity gain than I otherwise might as a 
 salaried worker.  This likely means contracting, bidding fixed-price contracts and delivering on them with half the
 effort and hours.  Or it means creating a product and finding product-market fit in half the time and effort.
 
