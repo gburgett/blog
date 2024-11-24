@@ -12,7 +12,7 @@
                 <div class="card shadow-sm">
                   <div class="card-body text-center p-5">
                     <blockquote class="blockquote">
-                      <p class="mb-4"><em>"{{ .Params.quote }}"</em></p>
+                      <p class="mb-4"><em>"{{ .Params.quote | markdownify }}"</em></p>
                       <footer class="blockquote-footer">
                         From <cite>{{ .Title }}</cite>
                       </footer>

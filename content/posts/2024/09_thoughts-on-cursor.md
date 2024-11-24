@@ -2,7 +2,7 @@
 Categories = ["Development"]
 title = "Thoughts on Cursor"
 Tags = ["Development", "AI"]
-date = "2024-11-16T10:00:00-05:00"
+date = "2024-09-20T10:00:00-05:00"
 quote = "Developers who effectively leverage AI tools will easily be 2 or 3 times as productive as other devs with equivalent experience."
 +++
 
