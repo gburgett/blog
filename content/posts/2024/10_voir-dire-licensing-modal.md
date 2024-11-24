@@ -4,6 +4,7 @@ title = "Implementing Licensing & Permissions in a React Redux app"
 Tags = ["Development", "VoirDire App"]
 date = "2024-10-20T10:00:00-05:00"
 image = "/images/projects/voir-dire-license-modal.png"
+quote = "By solving the problem at the right layer, we were able to implement licensing in 1/4 of the budgeted time, bringing the project back on track."
 +++
 
 In the process of building out the [VoirDire App](https://www.voirdire.app/) for our client, we ran into an interesting

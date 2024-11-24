@@ -3,6 +3,7 @@ Categories = ["Development"]
 title = "Thoughts on Cursor"
 Tags = ["Development", "AI"]
 date = "2024-11-16T10:00:00-05:00"
+quote = "Developers who effectively leverage AI tools will easily be 2 or 3 times as productive as other devs with equivalent experience."
 +++
 
 As AI tools continue to reshape software development, I've been particularly impressed with Cursor, an AI-powered code editor that has transformed my daily workflow. After several months of use, I want to share my experiences and observations about why this tool has become indispensable in my development process.

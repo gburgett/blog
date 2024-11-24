@@ -16,9 +16,6 @@ params:
   description: A blog about whatever crosses my mind, ordered by importance.
   animate: true
   
-  customCSS:
-    - /css/custom.css
-  
   navbar:
     brandName: Gordon Burgett
     disableSearch: true

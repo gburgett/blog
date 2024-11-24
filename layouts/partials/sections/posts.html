@@ -1,0 +1,39 @@
+<section id="posts" class="py-5">
+  <div class="container">
+    <h3 class="text-center mb-4">Thoughts on Software Development</h3>
+    
+    <div id="quoteCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        {{ $firstItem := true }}
+        {{ range where .Site.RegularPages "Section" "posts" }}
+          {{ if .Params.quote }}
+            <div class="carousel-item {{ if $firstItem }}active{{ end }}">
+              <a href="{{ .RelPermalink }}" class="text-decoration-none">
+                <div class="card shadow-sm">
+                  <div class="card-body text-center p-5">
+                    <blockquote class="blockquote">
+                      <p class="mb-4"><em>"{{ .Params.quote }}"</em></p>
+                      <footer class="blockquote-footer">
+                        From <cite>{{ .Title }}</cite>
+                      </footer>
+                    </blockquote>
+                  </div>
+                </div>
+              </a>
+            </div>
+            {{ $firstItem = false }}
+          {{ end }}
+        {{ end }}
+      </div>
+      
+      <button class="carousel-control-prev" type="button" data-bs-target="#quoteCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#quoteCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
