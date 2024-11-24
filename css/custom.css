@@ -172,3 +172,22 @@ blockquote p {
     }
   }
 }
+
+/* Quote carousel styling */
+#quoteCarousel .card {
+  background-color: var(--background-color);
+  border: 0;
+}
+
+#quoteCarousel blockquote p {
+  color: var(--text-color);
+}
+
+#quoteCarousel blockquote cite {
+  color: var(--text-secondary-color);
+}
+
+#quoteCarousel .carousel-control-prev-icon,
+#quoteCarousel .carousel-control-next-icon {
+  color: var(--text-color);
+}
