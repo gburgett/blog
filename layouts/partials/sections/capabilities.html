@@ -1,0 +1,20 @@
+{{ if .Site.Params.capabilities.enable | default false }}
+<section id="capabilities">
+    <div class="capabilities-container">
+        <h2 class="capabilities-title">{{ .Site.Params.capabilities.title | default "Core Capabilities" }}</h2>
+
+        <div class="capabilities-grid">
+            {{ range .Site.Params.capabilities.items }}
+            <div class="capability-item">
+                <div class="capability-category">{{ .category }}</div>
+                <ul class="capability-list">
+                    {{ range .items }}
+                    <li>{{ . }}</li>
+                    {{ end }}
+                </ul>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}

@@ -88,6 +88,39 @@ params:
     hiddenInList: false
     hiddenInSingle: false
 
+  # Capabilities section
+  capabilities:
+    enable: true
+    title: "Core Capabilities"
+    items:
+      - category: "AI/ML Engineering"
+        items:
+          - "Full-lifecycle AI workflow integration and deployment"
+          - "Large Language Model (LLM) implementation and optimization"
+          - "ML pipeline architecture and automation"
+          - "Custom AI solution development for mission-critical systems"
+
+      - category: "Systems Architecture"
+        items:
+          - "Distributed systems design and implementation"
+          - "Microservices and cloud-native architecture"
+          - "API design and integration"
+          - "Performance optimization and scalability"
+
+      - category: "Technical Leadership"
+        items:
+          - "Cross-functional team leadership and mentorship"
+          - "AI transformation in Software Engineering"
+          - "Agile/DevOps process"
+          - "Vendor evaluation and technology selection"
+
+      - category: "Technology Stack"
+        items:
+          - "Languages: Go, Rust, TypeScript, C#/.NET"
+          - "Cloud: AWS, Azure, containerization (Docker/Kubernetes)"
+          - "Databases: PostgreSQL, MongoDB, Redis"
+          - "Actor model for high-throughput systems"
+
   # Projects section (hugo-profile compatibility)
   projects:
     enable: true

@@ -1,5 +1,5 @@
 +++
-showInHome = true
+showInHome = false
 toc = false
 title = "VoirDire App"
 image = "/images/projects/voir-dire-app.png"

@@ -10,6 +10,12 @@
 <br />
 {{- end }}
 
+{{- partial "sections/capabilities.html" . -}}
+
+{{- if .Site.Params.capabilities.enable }}
+<br />
+{{- end }}
+
 {{- partial "sections/projects.html" . -}}
 
 {{- if .Site.Params.homeInfoParams.Content }}
