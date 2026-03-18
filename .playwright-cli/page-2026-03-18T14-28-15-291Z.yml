@@ -1,0 +1,146 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - generic [ref=e4]:
+        - link "Gordon Burgett | Director of Software Engineering, Albers Aerospace" [ref=e5] [cursor=pointer]:
+          - /url: http://localhost:1313/
+        - generic [ref=e6]:
+          - button "(Alt + T)" [ref=e7] [cursor=pointer]:
+            - img [ref=e8]
+          - list [ref=e10]:
+            - listitem [ref=e11]: "|"
+      - list [ref=e12]:
+        - listitem [ref=e13]:
+          - link "Blog" [ref=e14] [cursor=pointer]:
+            - /url: http://localhost:1313/posts/
+        - listitem [ref=e15]:
+          - link "Projects" [ref=e16] [cursor=pointer]:
+            - /url: http://localhost:1313/projects/
+        - listitem [ref=e17]:
+          - link "Albania" [ref=e18] [cursor=pointer]:
+            - /url: http://localhost:1313/albania/
+        - listitem [ref=e19]:
+          - link "Archive" [ref=e20] [cursor=pointer]:
+            - /url: http://localhost:1313/archive/
+        - listitem [ref=e21]:
+          - link "Search" [ref=e22] [cursor=pointer]:
+            - /url: http://localhost:1313/search/
+  - main [ref=e23]:
+    - article [ref=e24]:
+      - img "Gordon Burgett" [ref=e26]
+      - heading "Gordon Burgett" [level=1] [ref=e28]
+      - generic [ref=e29]:
+        - text: Director of Software Engineering, Albers Aerospace Director, HealthShare Technology Solutions Engineering Leader with 15+ years of Software Engineering expertise. Currently leading AI workflow transformation at Albers Aerospace. In my spare time, I enjoy helping churches navigate the complexities of healthcare cost-sharing ministries such as CHM (Christian Healthcare Ministries.
+        - link "Let’s build something together →" [ref=e30] [cursor=pointer]:
+          - /url: https://albers.engineering/capabilities/software
+      - generic [ref=e32]:
+        - link "Github" [ref=e33] [cursor=pointer]:
+          - /url: https://github.com/gburgett
+          - img [ref=e34]
+        - link "Linkedin" [ref=e36] [cursor=pointer]:
+          - /url: https://www.linkedin.com/in/gordonburgett
+          - img [ref=e37]
+        - link "Email" [ref=e41] [cursor=pointer]:
+          - /url: mailto:gordon@gordonburgett.net
+          - img [ref=e42]
+    - generic [ref=e46]:
+      - heading "Featured Projects" [level=2] [ref=e47]
+      - generic [ref=e48]:
+        - article [ref=e49]:
+          - link "Watermark Community Church App" [ref=e51] [cursor=pointer]:
+            - /url: /projects/watermark-community-church-mobile-app/
+            - img "Watermark Community Church App" [ref=e52]
+          - generic [ref=e53]:
+            - heading "Watermark Community Church App" [level=3] [ref=e54]:
+              - link "Watermark Community Church App" [ref=e55] [cursor=pointer]:
+                - /url: /projects/watermark-community-church-mobile-app/
+            - generic [ref=e56]:
+              - generic [ref=e57]: Outsourcing
+              - generic [ref=e58]: Rock Mobile
+            - generic [ref=e59]: As Director of Tech Dev at Watermark, I overhauled our mobile app managing the entire process from vision casting through budgeting, vendor selection, …
+            - link "Read More" [ref=e61] [cursor=pointer]:
+              - /url: /projects/watermark-community-church-mobile-app/
+        - article [ref=e62]:
+          - link "Healthshare Technology Solutions" [ref=e64] [cursor=pointer]:
+            - /url: /projects/healthshare-technology-solutions/
+            - img "Healthshare Technology Solutions" [ref=e65]
+          - generic [ref=e66]:
+            - heading "Healthshare Technology Solutions" [level=3] [ref=e67]:
+              - link "Healthshare Technology Solutions" [ref=e68] [cursor=pointer]:
+                - /url: /projects/healthshare-technology-solutions/
+            - generic [ref=e69]:
+              - generic [ref=e70]: React
+              - generic [ref=e71]: PWA
+              - generic [ref=e72]: Supabase
+            - generic [ref=e73]: I built the HealthShare app to solve my own problems with Christian Healthcare Ministries (CHM). We’ve now grown it into a B2B SAAS serving …
+            - generic [ref=e74]:
+              - link "Visit Project →" [ref=e75] [cursor=pointer]:
+                - /url: https://healthsharetech.com
+              - link "Read More" [ref=e76] [cursor=pointer]:
+                - /url: /projects/healthshare-technology-solutions/
+        - article [ref=e77]:
+          - link "VoirDire App" [ref=e79] [cursor=pointer]:
+            - /url: /projects/voir-dire-app/
+            - img "VoirDire App" [ref=e80]
+          - generic [ref=e81]:
+            - heading "VoirDire App" [level=3] [ref=e82]:
+              - link "VoirDire App" [ref=e83] [cursor=pointer]:
+                - /url: /projects/voir-dire-app/
+            - generic [ref=e84]:
+              - generic [ref=e85]: React
+              - generic [ref=e86]: PWA
+              - generic [ref=e87]: Electron
+            - generic [ref=e88]: We built the VoirDire app to help our client handle jury selection electronically for his upcoming trials. He is now marketing the app through his …
+            - generic [ref=e89]:
+              - link "Visit Project →" [ref=e90] [cursor=pointer]:
+                - /url: https://www.voirdire.app/
+              - link "Read More" [ref=e91] [cursor=pointer]:
+                - /url: /projects/voir-dire-app/
+        - article [ref=e92]:
+          - link "Neighbor Solutions" [ref=e94] [cursor=pointer]:
+            - /url: /projects/neighbor-solutions/
+            - img "Neighbor Solutions" [ref=e95]
+          - generic [ref=e96]:
+            - heading "Neighbor Solutions" [level=3] [ref=e97]:
+              - link "Neighbor Solutions" [ref=e98] [cursor=pointer]:
+                - /url: /projects/neighbor-solutions/
+            - generic [ref=e99]:
+              - generic [ref=e100]: Rails
+              - generic [ref=e101]: RAG
+              - generic [ref=e102]: AI
+            - generic [ref=e103]: In contracting hourly for Neighbor Solutions, I’ve been enjoying working with AI to build unstructured data import and a Retrieval Augmented …
+            - generic [ref=e104]:
+              - link "Visit Project →" [ref=e105] [cursor=pointer]:
+                - /url: https://neighbor.solutions/
+              - link "Read More" [ref=e106] [cursor=pointer]:
+                - /url: /projects/neighbor-solutions/
+      - link "View All Projects →" [ref=e108] [cursor=pointer]:
+        - /url: /projects/
+    - heading "Recent Blog Posts" [level=2] [ref=e109]
+    - article [ref=e110]:
+      - heading "Building an Unstructured Data Import" [level=2] [ref=e112]
+      - paragraph [ref=e114]: Sometimes the hardest thing to figure out is not “how” to best apply a new technology, but “when not” to apply it. Nowhere has this been more true than with AI. With the rush to stick the AI brand on every project, software engineers are being pressured to “just throw more AI” at the problem and hope it works. In my hourly contracting on Neighbor Solutions, I’ve been asked to build a data import pipeline for community resources. To give a bit of context, one core function of the Neighbor Solutions app is to help users who have a heart for our unhoused neighbors to guide them towards helpful resources in their community. These can be food banks, shelters, warming stations, and many more. The major technical difficulty here is getting accurate data into the system in an automated way. Many times, lists of these resources are in poorly formatted PDFs or screenshots of webpages. There is very little consistency here, so some amount of natural language processing is required. ...
+      - generic [ref=e115]: November 16, 2024 · 5 min · 912 words · Gordon Burgett
+      - link "post link to Building an Unstructured Data Import" [ref=e116] [cursor=pointer]:
+        - /url: http://localhost:1313/posts/2024/11_neighbor-solutions-import/
+    - article [ref=e117]:
+      - heading "Implementing Licensing & Permissions in a React Redux app" [level=2] [ref=e119]
+      - paragraph [ref=e121]: "In the process of building out the VoirDire App for our client, we ran into an interesting problem. How do we enforce licensing requirements in a cross-cutting way, without tediously identifying every area in the UI where the user might take an action that they were not allowed to take? The client’s licensing requirements were: On the free plan, a user can have 1 trial, up to 20 jurors, and up to 20 stored questions. With a standard license ($30), up to trials, 100 jurors, and 100 stored questions. An unlimited license ($50) removes all limitations. Since we are using Redux to handle application state, calculating the remaining jurors, trials, etc. in the license can be done with a selector. The selector accepts the entire redux state and the user’s current license key, then calculates whether they are over or under the limit. ..."
+      - generic [ref=e122]: October 20, 2024 · 2 min · 305 words · Gordon Burgett
+      - link "post link to Implementing Licensing & Permissions in a React Redux app" [ref=e123] [cursor=pointer]:
+        - /url: http://localhost:1313/posts/2024/10_voir-dire-licensing-modal/
+    - article [ref=e124]:
+      - heading "Thoughts on Cursor" [level=2] [ref=e126]
+      - paragraph [ref=e128]: As AI tools continue to reshape software development, I’ve been particularly impressed with Cursor, an AI-powered code editor that has transformed my daily workflow. After several months of use, I want to share my experiences and observations about why this tool has become indispensable in my development process. The most striking impact of Cursor has been the dramatic increase in my productivity - I estimate it has doubled my coding speed. The secret sauce that Cursor has nailed is the UX around applying suggested edits back to my codebase. The experience feels natural, almost like dictating your thoughts to a junior developer who then implements the code exactly as you envision it. ...
+      - generic [ref=e129]: September 20, 2024 · 4 min · 813 words · Gordon Burgett
+      - link "post link to Thoughts on Cursor" [ref=e130] [cursor=pointer]:
+        - /url: http://localhost:1313/posts/2024/09_thoughts-on-cursor/
+  - contentinfo [ref=e131]:
+    - text: All content © Gordon Burgett, 2014-2026 ·
+    - generic [ref=e132]:
+      - text: Powered by
+      - link "Hugo" [ref=e133] [cursor=pointer]:
+        - /url: https://gohugo.io/
+      - text: "&"
+      - link "PaperMod" [ref=e134] [cursor=pointer]:
+        - /url: https://github.com/adityatelange/hugo-PaperMod/

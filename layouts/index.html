@@ -1,23 +1,80 @@
-{{ define "head" }}
-<meta name="description" content={{ .Site.Params.description }}>
-<link rel="stylesheet" href="{{ .Site.Params.staticPath }}/css/index.css" media="all">
-<link rel="stylesheet" href="{{ .Site.Params.staticPath }}/css/projects.css" media="all">
+{{- define "main" }}
 
-<!-- fontawesome -->
-<script defer src="{{ .Site.Params.staticPath }}/fontawesome-6/all-6.4.2.js"></script>
-{{ end }}
+{{- if (ne .Site.Params.profileMode.enabled true) }}
 
-{{ define "title" }}
-{{ .Site.Title }}
-{{ end }}
+{{- partial "home_info.html" . }}
 
-{{ define "main" }}
-{{- partial "sections/hero/index.html" . -}}
-{{- partial "sections/about.html" . -}}
-{{- partial "sections/experience.html" . -}}
-{{- partial "sections/education.html" . -}}
+{{- end }}
+
+{{- if .Site.Params.homeInfoParams.Content }}
+<br />
+{{- end }}
+
 {{- partial "sections/projects.html" . -}}
-{{- partial "sections/achievements.html" . -}}
-{{- partial "sections/posts.html" . -}}
-{{- partial "sections/contact.html" . -}}
-{{ end }}
+
+{{- if .Site.Params.homeInfoParams.Content }}
+<br /><br />
+{{- end }}
+
+{{- if (ne .Site.Params.profileMode.enabled true) }}
+
+<h2 class="post-title" style="margin-top: 2em; margin-bottom: 1em;">Recent Blog Posts</h2>
+
+{{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+
+{{- if site.Params.homeInfoParams }}
+{{- $pages = where site.RegularPages "Type" "in" (slice "posts") }}
+{{- end }}
+
+{{- $paginator := .Paginate (first 5 $pages) }}
+
+{{- range $index, $page := $paginator.Pages }}
+
+{{- $class := "post-entry" }}
+
+{{- $user_preferred := or site.Params.disableSpecial1stPost site.Params.homeInfoParams }}
+{{- if (and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) (not $user_preferred)) }}
+{{- $class = "first-entry" }}
+{{- else if $page.Params.hiddenInHomeList }}
+{{- $class = "post-entry hidden" }}
+{{- end }}
+
+<article class="{{ $class }}">
+  {{- $isHidden := (site.Params.cover.hidden | default site.Params.cover.hiddenInList) }}
+  {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
+  <header class="entry-header">
+    <h2>
+      {{- .Title }}
+      {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
+    </h2>
+  </header>
+  {{- if (ne (.Param "hideSummary") true) }}
+  <div class="entry-content">
+    <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+  </div>
+  {{- end }}
+  {{- if not (.Param "hideMeta") }}
+  <footer class="entry-footer">
+    {{- partial "post_meta.html" . -}}
+  </footer>
+  {{- end }}
+  <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+</article>
+{{- end }}
+
+{{- if gt $paginator.TotalPages 1 }}
+<footer class="page-footer">
+  <nav class="pagination">
+    {{- if $paginator.HasPrev }}
+    <a class="prev" href="{{ $paginator.Prev.URL | absURL }}">« {{ i18n "prev_page" }}</a>
+    {{- end }}
+    {{- if $paginator.HasNext }}
+    <a class="next" href="{{ $paginator.Next.URL | absURL }}">{{ i18n "next_page" }} »</a>
+    {{- end }}
+  </nav>
+</footer>
+{{- end }}
+
+{{- end }}{{/* end profileMode */}}
+
+{{- end }}{{- /* end main */ -}}

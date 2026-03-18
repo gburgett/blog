@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git submodule:*)",
+      "WebSearch",
+      "WebFetch(domain:themes.gohugo.io)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(hugo:*)",
+      "Bash(pkill:*)",
+      "Skill(playwright-cli)",
+      "Bash(cat:*)",
+      "Bash(playwright-cli open:*)",
+      "Bash(playwright-cli eval:*)",
+      "Bash(playwright-cli screenshot:*)",
+      "Bash(playwright-cli close:*)",
+      "Bash(playwright-cli resize:*)",
+      "Bash(playwright-cli click:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

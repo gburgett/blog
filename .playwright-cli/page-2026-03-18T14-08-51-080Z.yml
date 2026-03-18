@@ -1,0 +1,138 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - generic [ref=e4]:
+        - link "Gordon Burgett | Director of Technology Development" [ref=e5] [cursor=pointer]:
+          - /url: http://localhost:1313/
+        - generic [ref=e6]:
+          - button "Toggle theme" [ref=e7] [cursor=pointer]:
+            - img [ref=e8]
+          - list [ref=e10]:
+            - listitem [ref=e11]: "|"
+            - listitem [ref=e12]:
+              - link "Shqip" [ref=e13] [cursor=pointer]:
+                - /url: http://localhost:1313/sq/
+                - text: Sq
+      - list [ref=e14]:
+        - listitem [ref=e15]:
+          - link "Blog" [ref=e16] [cursor=pointer]:
+            - /url: http://localhost:1313/posts/
+        - listitem [ref=e17]:
+          - link "Projects" [ref=e18] [cursor=pointer]:
+            - /url: http://localhost:1313/projects/
+        - listitem [ref=e19]:
+          - link "Albania" [ref=e20] [cursor=pointer]:
+            - /url: http://localhost:1313/albania/
+        - listitem [ref=e21]:
+          - link "Archive" [ref=e22] [cursor=pointer]:
+            - /url: http://localhost:1313/archive/
+        - listitem [ref=e23]:
+          - link "Search" [ref=e24] [cursor=pointer]:
+            - /url: http://localhost:1313/search/
+  - main [ref=e25]:
+    - article [ref=e26]:
+      - heading "Hi, I’m Gordon Burgett" [level=1] [ref=e28]
+      - generic [ref=e29]:
+        - paragraph [ref=e30]: I help bring ideas to reality. With 13+ years of experience in software development, I can help you take your idea from inception to a working product, quickly and efficiently.
+        - paragraph [ref=e31]: Director of Technology Development | Technical Thought Leader
+        - paragraph [ref=e32]:
+          - link "Let’s build something together →" [ref=e33] [cursor=pointer]:
+            - /url: https://burgettconsulting.com
+      - generic [ref=e35]:
+        - link "Github" [ref=e36] [cursor=pointer]:
+          - /url: https://github.com/gburgett
+          - img [ref=e37]
+        - link "Linkedin" [ref=e39] [cursor=pointer]:
+          - /url: https://www.linkedin.com/in/gordonburgett
+          - img [ref=e40]
+        - link "Email" [ref=e44] [cursor=pointer]:
+          - /url: mailto:gordon@gordonburgett.net
+          - img [ref=e45]
+    - generic [ref=e49]:
+      - heading "Featured Projects" [level=3] [ref=e50]
+      - generic [ref=e51]:
+        - generic "Watermark Community Church App" [ref=e53]:
+          - img "Watermark Community Church App" [ref=e55]
+          - generic [ref=e56]:
+            - generic [ref=e57]:
+              - generic [ref=e58]: Outsourcing
+              - generic [ref=e59]: Rock Mobile
+            - heading "Watermark Community Church App" [level=5] [ref=e60]
+            - paragraph [ref=e62]: As Director of Tech Dev at Watermark, I overhauled our mobile app managing the entire process from vision casting through budgeting, vendor selection, implementation, testing, and launch.
+          - link "Read more" [ref=e65] [cursor=pointer]:
+            - /url: /projects/watermark-community-church-mobile-app/
+        - generic "Healthshare Technology Solutions" [ref=e67]:
+          - img "Healthshare Technology Solutions" [ref=e69]
+          - generic [ref=e70]:
+            - generic [ref=e71]:
+              - generic [ref=e72]: React
+              - generic [ref=e73]: PWA
+              - generic [ref=e74]: Supabase
+            - heading "Healthshare Technology Solutions" [level=5] [ref=e75]
+            - paragraph [ref=e77]: I built the HealthShare app to solve my own problems with Christian Healthcare Ministries (CHM). We’ve now grown it into a B2B SAAS serving multiple churches. With the HealthShare app, we’ve solved the administrative burden of CHM for …
+          - generic [ref=e78]:
+            - generic:
+              - link:
+                - /url: https://healthsharetech.com
+            - link "Read more" [ref=e80] [cursor=pointer]:
+              - /url: /projects/healthshare-technology-solutions/
+        - generic "VoirDire App" [ref=e82]:
+          - img "VoirDire App" [ref=e84]
+          - generic [ref=e85]:
+            - generic [ref=e86]:
+              - generic [ref=e87]: React
+              - generic [ref=e88]: PWA
+              - generic [ref=e89]: Electron
+            - heading "VoirDire App" [level=5] [ref=e90]
+            - generic [ref=e91]:
+              - paragraph [ref=e92]: We built the VoirDire app to help our client handle jury selection electronically for his upcoming trials. He is now marketing the app through his network of attorneys to build out the user base.
+              - paragraph [ref=e93]: Many attorneys still use pen and paper sticky notes …
+          - generic [ref=e94]:
+            - generic:
+              - link:
+                - /url: https://www.voirdire.app/
+            - link "Read more" [ref=e96] [cursor=pointer]:
+              - /url: /projects/voir-dire-app/
+        - generic "Neighbor Solutions" [ref=e98]:
+          - img "Neighbor Solutions" [ref=e100]
+          - generic [ref=e101]:
+            - generic [ref=e102]:
+              - generic [ref=e103]: Rails
+              - generic [ref=e104]: RAG
+              - generic [ref=e105]: AI
+            - heading "Neighbor Solutions" [level=5] [ref=e106]
+            - generic [ref=e107]:
+              - paragraph [ref=e108]:
+                - text: In contracting hourly for
+                - link "Neighbor Solutions" [ref=e109] [cursor=pointer]:
+                  - /url: https://neighbor.solutions/
+                - text: ", I’ve been enjoying working with AI to build unstructured data import and a Retrieval Augmented Generation (RAG) pipeline."
+              - paragraph [ref=e110]: Neighbor Solutions is a brand new CRM built to enable organizations to …
+          - generic [ref=e111]:
+            - generic:
+              - link:
+                - /url: https://neighbor.solutions/
+            - link "Read more" [ref=e113] [cursor=pointer]:
+              - /url: /projects/neighbor-solutions/
+    - heading "Recent Blog Posts" [level=2] [ref=e114]
+    - article [ref=e115]:
+      - heading "Building an Unstructured Data Import" [level=2] [ref=e117]
+      - paragraph [ref=e119]: Sometimes the hardest thing to figure out is not “how” to best apply a new technology, but “when not” to apply it. Nowhere has this been more true than with AI. With the rush to stick the AI brand on every project, software engineers are being pressured to “just throw more AI” at the problem and hope it works. In my hourly contracting on Neighbor Solutions, I’ve been asked to build a data import pipeline for community resources. To give a bit of context, one core function of the Neighbor Solutions app is to help users who have a heart for our unhoused neighbors to guide them towards helpful resources in their community. These can be food banks, shelters, warming stations, and many more. The major technical difficulty here is getting accurate data into the system in an automated way. Many times, lists of these resources are in poorly formatted PDFs or screenshots of webpages. There is very little consistency here, so some amount of natural language processing is required. ...
+      - generic [ref=e120]: November 16, 2024 · 5 min · 912 words · Gordon Burgett
+      - link "post link to Building an Unstructured Data Import" [ref=e121] [cursor=pointer]:
+        - /url: http://localhost:1313/posts/2024/11_neighbor-solutions-import/
+    - article [ref=e122]:
+      - heading "Implementing Licensing & Permissions in a React Redux app" [level=2] [ref=e124]
+      - paragraph [ref=e126]: "In the process of building out the VoirDire App for our client, we ran into an interesting problem. How do we enforce licensing requirements in a cross-cutting way, without tediously identifying every area in the UI where the user might take an action that they were not allowed to take? The client’s licensing requirements were: On the free plan, a user can have 1 trial, up to 20 jurors, and up to 20 stored questions. With a standard license ($30), up to trials, 100 jurors, and 100 stored questions. An unlimited license ($50) removes all limitations. Since we are using Redux to handle application state, calculating the remaining jurors, trials, etc. in the license can be done with a selector. The selector accepts the entire redux state and the user’s current license key, then calculates whether they are over or under the limit. ..."
+      - generic [ref=e127]: October 20, 2024 · 2 min · 305 words · Gordon Burgett
+      - link "post link to Implementing Licensing & Permissions in a React Redux app" [ref=e128] [cursor=pointer]:
+        - /url: http://localhost:1313/posts/2024/10_voir-dire-licensing-modal/
+    - article [ref=e129]:
+      - heading "Thoughts on Cursor" [level=2] [ref=e131]
+      - paragraph [ref=e133]: As AI tools continue to reshape software development, I’ve been particularly impressed with Cursor, an AI-powered code editor that has transformed my daily workflow. After several months of use, I want to share my experiences and observations about why this tool has become indispensable in my development process. The most striking impact of Cursor has been the dramatic increase in my productivity - I estimate it has doubled my coding speed. The secret sauce that Cursor has nailed is the UX around applying suggested edits back to my codebase. The experience feels natural, almost like dictating your thoughts to a junior developer who then implements the code exactly as you envision it. ...
+      - generic [ref=e134]: September 20, 2024 · 4 min · 813 words · Gordon Burgett
+      - link "post link to Thoughts on Cursor" [ref=e135] [cursor=pointer]:
+        - /url: http://localhost:1313/posts/2024/09_thoughts-on-cursor/
+  - contentinfo [ref=e136]:
+    - link:
+      - /url: https://ruby.social/@gburgett

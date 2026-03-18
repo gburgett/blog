@@ -1,0 +1,4 @@
+[     201ms] [WARNING] Ignoring Event: localhost @ https://plausible.io/js/script.js:0
+[     533ms] [ERROR] Warning: localhost detected. Please use a valid host. @ https://newassets.hcaptcha.com/captcha/v1/6ae4a3c801c9d99b7e0b591e01eb3ddc17b34400/static/hcaptcha.html:13
+[   57116ms] [WARNING] Ignoring Event: localhost @ https://plausible.io/js/script.js:0
+[   57244ms] [ERROR] Warning: localhost detected. Please use a valid host. @ https://newassets.hcaptcha.com/captcha/v1/6ae4a3c801c9d99b7e0b591e01eb3ddc17b34400/static/hcaptcha.html:13

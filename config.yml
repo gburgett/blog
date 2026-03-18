@@ -1,81 +1,156 @@
-BaseURL: http://www.gordonburgett.net
+baseURL: http://www.gordonburgett.net
 languageCode: en-us
-title: Gordon Burgett | Director of Technology Development
-author: Gordon Burgett
-theme: hugo-profile
-copyright: All content © Gordon Burgett, 2014-2024
+title: Gordon Burgett | Director of Software Engineering, Albers Aerospace
+theme: PaperMod
+copyright: All content © Gordon Burgett, 2014-2026
 
-indexes:
-  category: categories
-  tag: tags
+pagination:
+  pagerSize: 10
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
 
 params:
+  env: production
+  title: Gordon Burgett
+  description: "Director of Software Engineering, Albers Aerospace"
+  keywords:
+    [Software Engineering, Technical Leadership, AI, Development, Architecture]
+  author: Gordon Burgett
+  images: ["/images/headshot.jpg"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: false
+
+  # Profile Image
+  profileImage: "/images/headshot.jpg"
+
+  # Home Page Info
+  homeInfoParams:
+    Title: "Gordon Burgett"
+    Content: |
+      Director of Software Engineering, Albers Aerospace
+      Director, HealthShare Technology Solutions
+
+      Engineering Leader with 15+ years of Software Engineering expertise.
+      Currently leading AI workflow transformation at Albers Aerospace.
+
+      In my spare time, I enjoy helping churches navigate the complexities of healthcare cost-sharing ministries such as CHM (Christian Healthcare Ministries.
+
+      [Let's build something together →](https://albers.engineering/capabilities/software)
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/gburgett"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/gordonburgett"
+    - name: email
+      url: "/contact/"
+
+  # Search
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+  # Open Graph / Twitter Card
+  assets:
+    disableHLJS: true # Use Hugo's built-in syntax highlighting
+
+  cover:
+    hidden: false
+    hiddenInList: false
+    hiddenInSingle: false
+
+  # Projects section (hugo-profile compatibility)
+  projects:
+    enable: true
+    title: "Featured Projects"
+
+  # Static path for assets (hugo-profile compatibility)
+  staticPath: ""
+
+  # Legacy params for backwards compatibility
   AuthorName: Gordon
   github: gburgett
   email: gordon@gordonburgett.net
-  description: A blog about whatever crosses my mind, ordered by importance.
-  animate: true
-  
-  navbar:
-    brandName: Gordon Burgett
-    disableSearch: true
-  
-  terms:
-    social: Share
-  
-  hero:
-    enable: true
-    intro: Hi, my name is
-    title: Gordon Burgett
-    subtitle: I help bring ideas to reality
-    content: I love taking unformed ideas and turning them into working software. With 13+ years of experience in software development, I can help you take your idea from inception to a working product, quickly and efficiently.
-    image: /images/headshot.jpg
-    roundImage: true
-    
-    button:
-      enable: true
-      url: https://burgettconsulting.com
-      name: Let's build something together!
-
-    socialLinks:
-      fontAwesomeIcons:
-        - icon: fab fa-github
-          url: https://github.com/gburgett
-    
-    bottomImage:
-      enable: false
-      
-  projects:
-    enable: true
-    title: "Projects"
 
 languages:
   en:
     languageName: English
     weight: 1
-  sq:
-    languageName: Shqip
-    weight: 2
+    menu:
+      main:
+        - identifier: blog
+          name: Blog
+          title: Blog posts
+          url: /posts/
+          weight: 1
+        - identifier: projects
+          name: Projects
+          title: Projects
+          url: /projects/
+          weight: 2
+        - identifier: albania
+          name: Albania
+          title: Albania mission work
+          url: /albania/
+          weight: 3
+        - identifier: archive
+          name: Archive
+          title: Archive
+          url: /archive/
+          weight: 4
+        - identifier: search
+          name: Search
+          url: /search/
+          weight: 5
 
 markup:
   goldmark:
     renderer:
       unsafe: true
+  highlight:
+    noClasses: false
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    lineNumbersInTable: true
+    style: monokai
 
-menu:
-  main:
-    - identifier: blog
-      name: Blog
-      title: Blog posts
-      url: /posts
-      weight: 1
-    - identifier: albania
-      name: Albania
-      title: Albania
-      url: /albania
-      weight: 2
-    - identifier: archive
-      name: Archive
-      title: Archive
-      url: /archive
-      weight: 3
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+# Preserve custom taxonomies
+indexes:
+  category: categories
+  tag: tags
