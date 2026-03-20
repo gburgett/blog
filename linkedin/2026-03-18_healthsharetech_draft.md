@@ -2,7 +2,7 @@
 
 Everyone's talking about AI agents transforming their work. It's certainly transformed mine.
 
-But I've been wondering—what does it look like to build AI agents that actually empower people's lives, not just "augment" them?
+But I've been wondering, what does it look like to build AI agents that actually empower people's lives, not just "augment" them?
 
 I've spent the last 6 months building Alice, an AI agent that handles healthcare paperwork for churches leveraging HealthCare Cost Sharing Ministries. Here are 4 things I've learned about building AI that empowers users:
 
