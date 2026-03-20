@@ -27,10 +27,11 @@
 <h2 class="post-title" style="margin-top: 2em; margin-bottom: 1em;">Recent Blog Posts</h2>
 
 {{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{- $pages = where $pages "Params.unlisted" "ne" true }}
 
 {{- if site.Params.homeInfoParams }}
 {{- $pages = where site.RegularPages "Type" "in" (slice "posts") }}
-{{- $pages = where $pages "Params.unlisted" "!=" true }}
+{{- $pages = where $pages "Params.unlisted" "ne" true }}
 {{- end }}
 
 {{- $paginator := .Paginate (first 5 $pages) }}
