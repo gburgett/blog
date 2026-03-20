@@ -6,59 +6,97 @@ date = "2026-03-20T10:00:00-05:00"
 draft = true
 +++
 
-# Intro
+# The Problem I'm Trying to Solve
 
-My current development process with AI involves a lot of human in the loop.  Thats a bottleneck.  How do I get less human and more long running AI?
-Code review is another bottleneck.  Is there a way I can get a final product that's just as secure, just as well-tested, just as good - without having eyes on every line of code?  What needs to stand out from the noise?
+I've been coding with AI agents for as long as they've been generally available, and I keep running into the same bottleneck: me. Every time Claude generates code, I need to review it. Every time it completes a feature, I need to verify it actually works. Every time it runs tests, I need to check if the failures are real bugs or hallucinations. I'm the human in the loop, and I'm slowing everything down.
 
-This is an unsolved problem.  Lots of blogs will tell you to review your test cases, but how do you know which ones are important when the previous developer named them "test_001" and "test_bug_fix_2935"?  Other blogs will tell you to push your code review left, into the planning phase.  But this doesn't catch hallucinations injected by the LLM.
+Here's what's been bugging me: Is there a way to let an AI agent run for hours, implement a complex feature, and come back to a result that's secure, well-tested, and correct - without me having to review every single line of code? What if I could just review the high-level decisions and trust that the implementation details are solid?
 
-Let's take a step back and think about what LLMs are good at.  LLMs are good at recognizing patterns, greenfielding small sections of code, refactoring (given adequate guardrails), and summarizing.  Context Management is the art of getting the most out of LLMs.  What we need is a way to break requirements down into small, LLM-context-window friendly bites, automate the verification of those requirements, and then compose them into a coherent whole.
+This is still an unsolved problem, and most of the advice I've read misses the mark:
 
-In this blog I'm going to attempt to synthesize a couple of disparate conversations into an idea and experiment, and present the results.
+- **"Review your test cases"** - Great, but how do I know which tests matter when the AI named them `test_001` or `test_bug_fix_2935`? What's the signal in all that noise?
+- **"Shift left, review during planning"** - This helps with architecture but completely misses LLM hallucinations. An agent can perfectly understand what you want and still generate subtly broken code.
 
-# Where does the rigor go?
+LLMs are genuinely good at certain things: recognizing patterns, writing small sections of code from scratch, refactoring when you give them guardrails, summarizing information. The trick is context management - keeping the right information in the AI's working memory at the right time.
 
-[This report from ThoughtWorks](https://www.thoughtworks.com/content/dam/thoughtworks/documents/report/tw_future%20_of_software_development_retreat_%20key_takeaways.pdf) raises a number of important questions - I'll be addressing the first one today but thinking through a number of other ones for future posts.
-Some of the problems they identified:
-- Spec driven development needs new tool formats
-- Traditional user stories are too vague
+What I need is a way to:
+1. Break requirements into small, context-window-friendly chunks
+2. Automatically verify each requirement as it's implemented
+3. Keep the "why" close to the "what" so the AI doesn't lose the plot
+4. Make it obvious during code review what actually matters
+
+This post is me working through an experiment that's showing promise. I'm combining some old ideas about behavior-driven development with new realities of AI coding agents, and the results have been surprisingly good.
+
+# Where Does the Rigor Go?
+
+I recently read [this ThoughtWorks report on the future of software development](https://www.thoughtworks.com/content/dam/thoughtworks/documents/report/tw_future%20_of_software_development_retreat_%20key_takeaways.pdf), and a few observations jumped out at me:
+- Spec-driven development needs new tool formats
+- Traditional user stories are too vague for AI agents
 - TDD produces dramatically better results with AI coding agents
 
-If you've been coding with an Agentic coding loop for a while then you're familiar with the above problems.  How do we push past that?
+If you've been working with AI coding agents for a while, these probably feel familiar. The question is: how do we actually solve them in practice?
 
-## A locked-up experience from a decade ago, and a recent conversation that turned the key
+## An Old Tool, A New Context
 
-When I was a young, naiive mid-level software developer at GDSX (later Concur, then SAP), I came across [cucumber.io](https://cucumber.io/).  I thought, "This is amazing!  Finally I can get the businesspeople to write clear acceptance criteria, and I can just go implement it!"  I even attempted to print out a set of cucumber specs and show them to the CEO to describe how a particular mission-critical feature would work.  She did not care in the slightest that the user stories and acceptance criteria on that sheet of paper were machine-readable and verifiable.  After realizing that the sales and business types weren't going to do the job for me, I decided I didn't want the hassle of implementing Cucumber specs, preferring traditional BDD tools like RSpec because all the setup, act, assert for one spec is self-contained.
+About a decade ago, when I was a mid-level developer at GDSX (later acquired by Concur, then SAP), I discovered [Cucumber](https://cucumber.io/) and got really excited about it. The promise was music to my developer ears: business stakeholders write acceptance criteria in plain English, I get to just bang out the code, and in the end I get executable documentation that verifies the system works as intended.
 
-Much more recently, I was discussing requirements with our CTO at Albers Aerospace.  He said "If we wanted to recreate this web service from scratch, how would we even know what the whole requirements set is?"  That question struck me - the requirements set was built iteratively from countless Jira tickets and Claude Code prompts that have now been lost to the archives.  We couldn't re-create the requirements from scratch, much less validate which ones are still relevant.  The requirements ought to live inside the repo.
+I was naive enough to print out a set of Cucumber specs and show them to our CEO, thinking she'd appreciate that our feature requirements were both human-readable and machine-verifiable. She politely nodded and moved on - she didn't care about the technical elegance. When I realized the business folks weren't going to write specs for me, I gave up on Cucumber. The pain of implementing step definitions across multiple files and tracing scenarios through the codebase wasn't worth it when I could just write self-contained RSpec tests.
 
-After that conversation, the promise of Cucumber came back to me.  We *can* document all the requirements in the repo at a high level, *and* we can automate verification of those requirements.
-The reason I had abandoned Cucumber in the past was the pain of implementing the steps, and the hassle of tracing a scenario through a dozen different files.  But AI can handle that.  It doesn't even have to do a particularly good job of code reuse.  And it can iterate over the details a lot faster than I can, and for a lot longer.
+Fast forward to a few weeks ago. I'm discussing one of our services with the CTO at Albers Aerospace, and he asks: "If we had to recreate this service from scratch, how would we even know what all the requirements are?"
 
-Cucumber maps well to the Context Engineering required for long-running AI coding agents:
-* Individual steps are one-line self-contained sentences defining a particular behavior that should be implemented in less than 100 lines of code
-* The individual steps roll up into an executable, verifiable Scenario
-* The Scenarios are defined in the same file as the User Story giving the "why" to the AI agent.
+That question hit me hard. Our requirements were scattered across hundreds of closed Jira tickets and lost Claude Code prompts. We'd built the system iteratively, feature by feature, but we had no single source of truth for what the system should actually do. The requirements should live in the repo, not in archived project management tools.
 
-## Benefits
+That conversation brought Cucumber back to mind, but with a completely different context. The reason I'd abandoned it before - the tedious work of implementing step definitions and connecting scenarios across multiple files - is exactly the kind of work AI agents excel at. An AI doesn't care if it has to implement the same pattern 50 times. It doesn't get bored. It can iterate over implementation details far longer than I can.
 
-The AI agent can be told to never modify feature files, and churn forever until all scenarios pass.  If an agent ever decides to modify a feature file, that turns into a red flag in code review that needs to be reviewed by a senior engineer for validity.  If an agent is implementing a feature in one section of the code and causes a failure in a wholly disconnected scenario, the user story gives the agent immediate feedback as to whether the failing scenario is still relevant, and re-injects the "Why" back into the context at the appropriate time.  This is a massive multiplier over simple failing tests, because the AI agent will often decide to modify the failing test to just "make it pass" rather than re-evaluating their approach.
+Here's why Cucumber is well-suited for AI agent context management:
 
-## Experimenting
+**Individual steps are atomic and bounded.** Each step is a single-line sentence that defines one specific behavior. In practice, implementing a step definition rarely requires more than 50-100 lines of code - well within an LLM's sweet spot for code generation.
 
-I've got a couple of experiments running with this, and am finding good success so far.
+**Steps compose into verifiable scenarios.** The AI doesn't need to understand the entire system at once. It just needs to understand one scenario at a time, implement the missing steps, and verify that scenario passes. This matches how LLMs actually work best - focused, bounded tasks with clear success criteria.
 
-In the first experiment, I had to copy and modify a subset of features from one Rails app and package them up into a separate Rails app.  I accomplished this with the following process:
-1. Run `rails new` in a new directory
-2. Instruct Claude to copy certain features from the other Rails app
-3. While Claude was running, I created several Cucumber feature files describing the new behavior I wanted to add
-4. After Claude had copied the subset of the original Rails app, I instructed Claude to install Cucumber and implement all scenarios defined in the feature files.
-5. Claude ran to completion and all the new features not only worked, they also had test coverage.
+**User stories provide context alongside scenarios.** The Gherkin format puts the "As a... I want... So that..." user story in the same file as the acceptance criteria. When a test fails during a long-running agent session, the AI gets re-injected with the business context, not just a stack trace. This is huge for preventing the agent from "fixing" a failing test by changing the test instead of fixing the bug.
 
-In the second experiment, I used cucumber-rs to create integration tests for the Albers SC-410 Camera firmware.  Since we are about to release revision 2 of the camera hardware with a complete firmware rewrite, I wanted to ensure that all the behavior was well tested.  I wrote very high level feature specs describing the behavior I wanted to see.  
+**Acceptance Criteria provide a useful framework for defining what you want.**  The actual hardest problem in computer science - communicating what you actually want the software to do for you.  As Director of External Technology Development at Watermark Community Church, I performed a lot of product owner responsibilities and appreciated the Gherkin framework of "Given... When... Then..." to clarify my thinking.  It's a useful mental framework in addition to becoming an executable verifiable scenario.
 
-For instance, here is one scenario from one feature:
+## What This Actually Gets You
+
+**Clear boundaries in code review.** I tell the AI agent: "Never modify feature files. Only implement step definitions and application code." This creates a bright line in code review. If I see a modified feature file in the diff, I know the agent tried to change the requirements instead of meeting them. That's a red flag that needs human review.
+
+**Long-running autonomous work.** With this setup, I can tell Claude: "Implement all scenarios in the features/ directory. Keep iterating until all tests pass." Then I can walk away. The agent has clear success criteria (all scenarios green) and clear constraints (don't modify the .feature files).
+
+**Better failure recovery.** Here's where it gets interesting. When an agent is working on Feature A and accidentally breaks a test in Feature B, a traditional test failure just shows a stack trace. The agent often "fixes" this by modifying the test. But with Cucumber, the failing scenario comes with the user story attached. The AI sees:
+
+```gherkin
+Feature: Online Status Report
+  As an agent,
+  I want to see a timestamped status report recording when the camera came online
+  So that I can analyze PIR trigger frequency and battery usage
+```
+
+Then the failing scenario. This context helps the agent understand whether the failure is a regression (the feature should still work) or expected (maybe Feature A intentionally changed this behavior). The "why" gets re-injected automatically at the moment it's needed.
+
+## Two Experiments
+
+I've been testing this approach on two different projects, and the results have been encouraging.
+
+**Experiment 1: Rails App Feature Extraction**
+
+I needed to extract a subset of features from one Rails application and package them as a standalone microservice.  Here's what I did:
+1. Created a new Rails app: `rails new feature-service`
+2. Told Claude: "Copy the authentication, organization management, and user invitation features from the main app"
+3. While Claude was working on that, I wrote Cucumber feature files describing the new behavior I wanted (API endpoints and user views that didn't exist in the original)
+4. Once the copy was complete, I told Claude: "Install Cucumber and implement all scenarios in features/"
+5. Walked away for about 2 hours
+
+When I came back, all scenarios were passing. The extracted features worked, the new features were implemented, and everything had integration test coverage. I still reviewed the code, but I was reviewing architectural decisions and API contracts, not hunting for nil pointer bugs.
+
+**Experiment 2: Camera Firmware Integration Tests**
+
+This one's more complex. We're about to ship revision 2 of our SC-410 camera hardware with a complete firmware rewrite (moving from Ambarella to a TI chip). I wanted comprehensive integration tests to ensure we are matching the SOW of our contract.
+
+I wrote high-level Cucumber features describing camera behavior from the perspective of our backend system. No implementation details - just what the camera should do when it wakes up, connects to LTE, captures images, etc.
+
+Here's one example scenario. Notice how it describes behavior at a high level - no mention of specific APIs, data structures, or implementation details:
 
 ```gherkin
 Feature: Online Status Report
@@ -80,7 +118,9 @@ Feature: Online Status Report
     And no other HTTP messages are sent before going back to sleep
 ```
 
-From that, Claude generated these step definitions:
+That last assertion - "no other HTTP messages are sent" - is important for battery life. If the camera makes extra API calls during wakeup, it drains the battery faster. This is the kind of requirement that's easy to verify in a test but easy to miss in code review.
+
+From that scenario, Claude generated these step definitions in Rust:
 ```rs
 
 #[when("the camera wakes from an RTC trigger timeout")]
@@ -116,12 +156,23 @@ async fn camera_returns_to_sleep(world: &mut TestWorld) {
 // ... snipped other assertions
 ```
 
-I've had Claude running continually for about 8 hours in the background now to verify all 6 features and 16 scenarios.  Some of them are complex, requiring Claude to implement an entire WebRTC peer connection to validate.  Claude initially questioned whether it was worth it, but since I have a max plan I said hell yeah.  Now we have a full-featured integration test suite that has verified all major requirements of the software, *and* we have the requirements documented in both a human-readable and AI-verifiable format.
+I let Claude run for about 8 hours implementing all 6 features and 16 scenarios. Some of these were genuinely complex - one scenario required implementing a full WebRTC peer connection to verify that the camera could connect a data channel to a remote viewer. Claude actually asked me if I was sure I wanted it to implement that much infrastructure just for a test. I said yes (perks of having a Claude Code max plan).
 
-# Conclusion
+In the end I got a comprehensive integration test suite that verifies all major firmware behaviors, with requirements documented in a format that's both human-readable and machine-verifiable. When we inevitably refactor parts of the firmware, these scenarios will catch regressions immediately.
 
-I believe spec-driven development with Cucumber is the (near) future.  It enables software engineers to specify behavior at a higher level, and allows Claude to verify behavior in a way that keeps the "why" in the near context at all times.  It also provides documentation of the entire requirement set for a particular app.
+More importantly, when a new engineer joins the team, they can read the feature files and understand what the camera is supposed to do without reading thousands of lines of embedded Rust code.
 
-Note that this does not remove the hard parts of software engineering.  The engineer must still define how this component fits into the larger whole of the system.  Additionally the software engineer ought to be intimately involved in designing the data structures.  With spec-driven development, you can promote Claude to the senior software engineer level but it still requires principal or staff level involvement in the system architecture and design.
+# Where This Leaves Us
 
-Finally, it's important to verify at least once that Claude has actually implemented the steps.  Claude has a tendency to bail out and leave TODO: comments when things are too hard.  It also likes to stop and declare success before all the specs have passed.  I am now looking into ways to get Claude to keep iterating for longer without human involvement, until it can implement all the required specs.
+I think spec-driven development with tools like Cucumber is going to become standard practice for AI-assisted development. The workflow matches how LLMs actually work: bounded tasks, clear success criteria, and context re-injection at the right moments.
+
+**What this doesn't solve:** This isn't a replacement for software engineering expertise. Someone still needs to design the system architecture, choose the right data structures, and make decisions about how components interact. Writing good Cucumber scenarios requires understanding what behavior matters and how to test it meaningfully.
+
+In my experience, this approach lets AI agents handle senior engineer-level implementation work, but you still need principal or staff-level thinking for architecture and design. The difference is that the principal engineer can focus on those high-level decisions instead of implementing every detail.
+
+**What I'm still figuring out:** AI agents have a tendency to give up when things get hard. Claude will sometimes leave `TODO:` comments in the code or declare victory before all scenarios actually pass. I'm currently experimenting with:
+- Better prompting techniques to keep agents iterating longer
+- Automated verification that step definitions actually implement the steps (not just stubs)
+- Ways to detect when an agent has given up and needs a nudge
+
+I'd love to hear from others experimenting with similar approaches. What's worked for you? What patterns have you found for keeping AI agents on track during long-running sessions?
