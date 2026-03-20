@@ -1,2 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on Gordon Burgett | Director of Technology Development</title><link>http://www.gordonburgett.net/tags/hugo/</link><description>Recent content in Hugo on Gordon Burgett | Director of Technology Development</description><generator>Hugo</generator><language>en</language><copyright>All content © Gordon Burgett, 2014-2024</copyright><lastBuildDate>Thu, 20 Apr 2017 13:49:22 +0200</lastBuildDate><atom:link href="http://www.gordonburgett.net/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>Modern Static Sites</title><link>http://www.gordonburgett.net/archive/2017/04_modern_static_sites/</link><pubDate>Thu, 20 Apr 2017 13:49:22 +0200</pubDate><guid>http://www.gordonburgett.net/archive/2017/04_modern_static_sites/</guid><description>&lt;p>Today in 2017, there are a thousand and one different ways to build a website. As always there&amp;rsquo;s good old fashioned &lt;a href="https://wordpress.com">Wordpress&lt;/a>, and of course there&amp;rsquo;s drag-n-drop website builders like &lt;a href="http://www.wix.com">Wix&lt;/a>. One thing these have in common is that they need a traditional hosting environment, and for that you gotta pay.&lt;/p>
-&lt;p>If you can manage it, the cheapest way to host a website nowadays is to create a static HTML site. But don&amp;rsquo;t hand-craft HTML, that&amp;rsquo;s hard and boring. Use a static site generator, for fun and profit!&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Hugo on Gordon Burgett | Director of Software Engineering, Albers Aerospace</title>
+    <link>http://www.gordonburgett.net/tags/hugo/</link>
+    <description>Recent content in Hugo on Gordon Burgett | Director of Software Engineering, Albers Aerospace</description>
+    <image>
+      <title>Gordon Burgett | Director of Software Engineering, Albers Aerospace</title>
+      <url>http://www.gordonburgett.net/images/headshot.jpg</url>
+      <link>http://www.gordonburgett.net/images/headshot.jpg</link>
+    </image>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>All content © Gordon Burgett, 2014-2026</copyright>
+    <lastBuildDate>Thu, 20 Apr 2017 13:49:22 +0200</lastBuildDate>
+    <atom:link href="http://www.gordonburgett.net/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Modern Static Sites</title>
+      <link>http://www.gordonburgett.net/archive/2017/04_modern_static_sites/</link>
+      <pubDate>Thu, 20 Apr 2017 13:49:22 +0200</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2017/04_modern_static_sites/</guid>
+      <description>&lt;p&gt;Today in 2017, there are a thousand and one different ways to build a website.  As always there&amp;rsquo;s good old fashioned &lt;a href=&#34;https://wordpress.com&#34;&gt;Wordpress&lt;/a&gt;, and of course there&amp;rsquo;s drag-n-drop website builders like &lt;a href=&#34;http://www.wix.com&#34;&gt;Wix&lt;/a&gt;.  One thing these have in common is that they need a traditional hosting environment, and for that you gotta pay.&lt;/p&gt;
+&lt;p&gt;If you can manage it, the cheapest way to host a website nowadays is to create a static HTML site.  But don&amp;rsquo;t hand-craft HTML, that&amp;rsquo;s hard and boring.  Use a static site generator, for fun and profit!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

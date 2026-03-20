@@ -1,6 +1,1107 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Gordon Burgett | Director of Technology Development on Gordon Burgett | Director of Technology Development</title><link>http://www.gordonburgett.net/</link><description>Recent content in Gordon Burgett | Director of Technology Development on Gordon Burgett | Director of Technology Development</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>All content © Gordon Burgett, 2014-2024</copyright><lastBuildDate>Mon, 02 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://www.gordonburgett.net/" rel="self" type="application/rss+xml"/><item><title>Albania! YEEEEHAWWW!</title><link>http://www.gordonburgett.net/albania/</link><pubDate>Thu, 09 Apr 2015 22:20:15 -0500</pubDate><guid>http://www.gordonburgett.net/albania/</guid><description>&lt;p>Howdy! My name is Gordon Burgett and I&amp;rsquo;m going to Albania this summer. I first
-went in the summer of 2013, and fell in love with both the people and the mission.
-Since that time I’ve been back and forth every summer, and a few stints in between.&lt;/p>
-&lt;p>We&amp;rsquo;re continuing the work we&amp;rsquo;ve been doing over the past 8+ years.
-As the Poland Re:Generation project matures, we&amp;rsquo;re starting to look into new ways
-we can support the native staff and church members in Albania and b...</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Gordon Burgett | Director of Software Engineering, Albers Aerospace</title>
+    <link>http://www.gordonburgett.net/</link>
+    <description>Recent content on Gordon Burgett | Director of Software Engineering, Albers Aerospace</description>
+    <image>
+      <title>Gordon Burgett | Director of Software Engineering, Albers Aerospace</title>
+      <url>http://www.gordonburgett.net/images/headshot.jpg</url>
+      <link>http://www.gordonburgett.net/images/headshot.jpg</link>
+    </image>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>All content © Gordon Burgett, 2014-2026</copyright>
+    <lastBuildDate>Wed, 18 Mar 2026 10:00:00 -0500</lastBuildDate>
+    <atom:link href="http://www.gordonburgett.net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building Alice, an Empowering AI Agent</title>
+      <link>http://www.gordonburgett.net/posts/2026/03_building-ai-agents-that-empower/</link>
+      <pubDate>Wed, 18 Mar 2026 10:00:00 -0500</pubDate>
+      <guid>http://www.gordonburgett.net/posts/2026/03_building-ai-agents-that-empower/</guid>
+      <description>&lt;p&gt;What does it look like to build AI agents that actually empower people&amp;rsquo;s lives, not just &amp;ldquo;augment&amp;rdquo; them?  For HealthShare Technology Solutions, I wanted to build an AI agent
+that non-technical users can actually use to take the hassle out of their health care cost sharing plan.  In this post I&amp;rsquo;ll describe the guiding principles and design
+decisions that made Alice not just possible, but empowering to everyday users.&lt;/p&gt;
+&lt;p&gt;The guiding principles I used in building Alice come down to four key words:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Watermark Community Church App</title>
+      <link>http://www.gordonburgett.net/projects/watermark-community-church-mobile-app/</link>
+      <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://www.gordonburgett.net/projects/watermark-community-church-mobile-app/</guid>
+      <description>&lt;p&gt;As Director of Tech Dev at Watermark, I overhauled our mobile app managing the entire process from
+vision casting through budgeting, vendor selection, implementation, testing, and launch.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Building an Unstructured Data Import</title>
+      <link>http://www.gordonburgett.net/posts/2024/11_neighbor-solutions-import/</link>
+      <pubDate>Sat, 16 Nov 2024 10:00:00 -0500</pubDate>
+      <guid>http://www.gordonburgett.net/posts/2024/11_neighbor-solutions-import/</guid>
+      <description>&lt;p&gt;Sometimes the hardest thing to figure out is not &amp;ldquo;how&amp;rdquo; to best apply a new technology, but &amp;ldquo;when not&amp;rdquo; to apply it.
+Nowhere has this been more true than with AI.  With the rush to stick the AI brand on every project, software engineers
+are being pressured to &amp;ldquo;just throw more AI&amp;rdquo; at the problem and hope it works.&lt;/p&gt;
+&lt;p&gt;In my hourly contracting on &lt;a href=&#34;https://neighbor.solutions/&#34;&gt;Neighbor Solutions&lt;/a&gt;, I&amp;rsquo;ve been asked to build a data import
+pipeline for community resources.  To give a bit of context, one core function of the Neighbor Solutions app is to
+help users who have a heart for our unhoused neighbors to guide them towards helpful resources in their community.  These
+can be food banks, shelters, warming stations, and many more.  The major technical difficulty here is getting accurate
+data into the system in an automated way.  Many times, lists of these resources are in poorly formatted PDFs or screenshots
+of webpages.  There is very little consistency here, so some amount of natural language processing is required.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Healthshare Technology Solutions</title>
+      <link>http://www.gordonburgett.net/projects/healthshare-technology-solutions/</link>
+      <pubDate>Sat, 16 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://www.gordonburgett.net/projects/healthshare-technology-solutions/</guid>
+      <description>&lt;p&gt;I built the HealthShare app to solve my own problems with Christian Healthcare Ministries (CHM).  We&amp;rsquo;ve now grown it into a B2B
+SAAS serving multiple churches.  With the HealthShare app, we&amp;rsquo;ve solved the administrative burden of CHM for members,
+and we&amp;rsquo;re providing visibility into CHM spend for healthcare plan administrators at our partner churches and businesses.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Would you like to try the app out for yourself? &lt;a href=&#34;https://www.healthsharetech.com/contact/&#34;&gt;Contact Us&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Implementing Licensing &amp; Permissions in a React Redux app</title>
+      <link>http://www.gordonburgett.net/posts/2024/10_voir-dire-licensing-modal/</link>
+      <pubDate>Sun, 20 Oct 2024 10:00:00 -0500</pubDate>
+      <guid>http://www.gordonburgett.net/posts/2024/10_voir-dire-licensing-modal/</guid>
+      <description>&lt;p&gt;In the process of building out the &lt;a href=&#34;https://www.voirdire.app/&#34;&gt;VoirDire App&lt;/a&gt; for our client, we ran into an interesting
+problem.  How do we enforce licensing requirements in a cross-cutting way, without tediously identifying every area
+in the UI where the user might take an action that they were not allowed to take?  The client&amp;rsquo;s licensing requirements
+were:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;On the free plan, a user can have 1 trial, up to 20 jurors, and up to 20 stored questions.&lt;/li&gt;
+&lt;li&gt;With a standard license ($30), up to trials, 100 jurors, and 100 stored questions.&lt;/li&gt;
+&lt;li&gt;An unlimited license ($50) removes all limitations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Since we are using Redux to handle application state, calculating the remaining jurors, trials, etc. in the license can
+be done with a selector.  The selector accepts the entire redux state and the user&amp;rsquo;s current license key, then calculates
+whether they are over or under the limit.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>VoirDire App</title>
+      <link>http://www.gordonburgett.net/projects/voir-dire-app/</link>
+      <pubDate>Sun, 20 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://www.gordonburgett.net/projects/voir-dire-app/</guid>
+      <description>&lt;p&gt;We built the VoirDire app to help our client handle jury selection electronically for his upcoming trials.  He is now
+marketing the app through his network of attorneys to build out the user base.&lt;/p&gt;
+&lt;p&gt;Many attorneys still use pen and paper sticky notes to write down juror notes, including tracking responses to juror
+questions during the jury selection process.  We solved the note taking process electronically, making note taking
+both more robust and searchable.  It also helps attorneys appear more organized in the courtroom, where appearances
+can make a difference on the margins in the outcome of a case.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Thoughts on Cursor</title>
+      <link>http://www.gordonburgett.net/posts/2024/09_thoughts-on-cursor/</link>
+      <pubDate>Fri, 20 Sep 2024 10:00:00 -0500</pubDate>
+      <guid>http://www.gordonburgett.net/posts/2024/09_thoughts-on-cursor/</guid>
+      <description>&lt;p&gt;As AI tools continue to reshape software development, I&amp;rsquo;ve been particularly impressed with Cursor, an AI-powered code editor that has transformed my daily workflow. After several months of use, I want to share my experiences and observations about why this tool has become indispensable in my development process.&lt;/p&gt;
+&lt;p&gt;The most striking impact of Cursor has been the dramatic increase in my productivity - I estimate it has doubled my coding speed.
+The secret sauce that Cursor has nailed is the UX around applying suggested edits back to my codebase.
+The experience feels natural, almost like dictating your thoughts to a junior developer who then implements the code exactly as you envision it.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Neighbor Solutions</title>
+      <link>http://www.gordonburgett.net/projects/neighbor-solutions/</link>
+      <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://www.gordonburgett.net/projects/neighbor-solutions/</guid>
+      <description>&lt;p&gt;In contracting hourly for &lt;a href=&#34;https://neighbor.solutions/&#34;&gt;Neighbor Solutions&lt;/a&gt;, I&amp;rsquo;ve been enjoying
+working with AI to build unstructured data import and a Retrieval Augmented Generation (RAG) pipeline.&lt;/p&gt;
+&lt;p&gt;Neighbor Solutions is a brand new CRM built to enable organizations to better care for our unhoused neighbors and those in need.
+It features a frontend app built using &lt;a href=&#34;astro.build&#34;&gt;the Astro javascript framework&lt;/a&gt; that displays a local map with
+all available resources for homeless people.  The backend built using Ruby on Rails also provides case notes, interaction
+tracking, automation, and other tools for service providers to more effectively care for those who come through their doors.
+Finally, a closed-loop referral solution enables metrics for defining success by the ultimate outcome of a case, not just
+by number of services provided.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Journal • 2022</title>
+      <link>http://www.gordonburgett.net/albania/2022/</link>
+      <pubDate>Sat, 02 Jul 2022 00:36:09 -0500</pubDate>
+      <guid>http://www.gordonburgett.net/albania/2022/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;Team photo&#34; loading=&#34;lazy&#34; src=&#34;http://www.gordonburgett.net/images/albania/2022/2022_team.jpeg&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;day-1&#34;&gt;Day 1&lt;/h1&gt;
+&lt;h2 id=&#34;Jul-2&#34; class=&#34;hidden-xs&#34;&gt;Saturday July 2&lt;/h2&gt;
+&lt;p&gt;After an 11 hour overnight flight, a 7 hour layover, and multiple last-minute
+passport issues, we made it!  As it turned out, two of our team members were
+unable to get their passports or travel documents in time for the flight.  But
+the Lord is sovereign over that too, and He has a reason for everything He does.
+We are thankful that He allowed 10 of us to get over here!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Journal • 2021</title>
+      <link>http://www.gordonburgett.net/albania/2021/</link>
+      <pubDate>Sun, 19 Sep 2021 00:36:09 -0500</pubDate>
+      <guid>http://www.gordonburgett.net/albania/2021/</guid>
+      <description>&lt;h1 id=&#34;day-1&#34;&gt;Day 1&lt;/h1&gt;
+&lt;h2 id=&#34;Sep-19&#34; class=&#34;hidden-xs&#34;&gt;Sunday September 19&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Travel day - got on flight Saturday night at 8&lt;/li&gt;
+&lt;li&gt;Mini heart attack about proving vaccination status&lt;/li&gt;
+&lt;li&gt;Ate dinner pre-flight, got to know the team (what you do, what got you to Albania)
+&lt;ul&gt;
+&lt;li&gt;Brian, engineer&lt;/li&gt;
+&lt;li&gt;Andrew, accountant&lt;/li&gt;
+&lt;li&gt;Allison (Alli), WM students team admin&lt;/li&gt;
+&lt;li&gt;Madison, PR &amp;amp; Social media&lt;/li&gt;
+&lt;li&gt;Allye, PR&lt;/li&gt;
+&lt;li&gt;Tobin, WM director of intl ministry &amp;amp; former pastor in hong kong for 20 yrs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;day-2&#34;&gt;Day 2&lt;/h1&gt;
+&lt;h2 id=&#34;Sep-20&#34; class=&#34;hidden-xs&#34;&gt;Monday Sept 20&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Early meeting with Afrim &amp;amp; Marsel, Disciples of Christ church
+&lt;ul&gt;
+&lt;li&gt;Discussed their new building project.  Tobin shared a bit about never having had a building in Hong Kong.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Orientation w/ Albanian team
+&lt;ul&gt;
+&lt;li&gt;Aldo&lt;/li&gt;
+&lt;li&gt;Kaon &amp;amp; Danjela&lt;/li&gt;
+&lt;li&gt;Albi&lt;/li&gt;
+&lt;li&gt;Jonida&lt;/li&gt;
+&lt;li&gt;Edi&lt;/li&gt;
+&lt;li&gt;Pal &amp;amp; Ueda came at the end&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Lunch &amp;amp; souvenir shopping, including Gelato (getting it all out of the way)&lt;/li&gt;
+&lt;li&gt;HS meeting 1
+&lt;ul&gt;
+&lt;li&gt;7 or 8 new high schoolers&lt;/li&gt;
+&lt;li&gt;team introduction, getting to know you games&lt;/li&gt;
+&lt;li&gt;dancing - I missed it after a year&lt;/li&gt;
+&lt;li&gt;Andrew and Alli both set multiple coffees&lt;/li&gt;
+&lt;li&gt;I got Luka&amp;rsquo;s instagram, will set up coffee tomorrow&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Meeting w/ Cornerstone
+&lt;ul&gt;
+&lt;li&gt;Ylli&lt;/li&gt;
+&lt;li&gt;Visi&lt;/li&gt;
+&lt;li&gt;Altin&lt;/li&gt;
+&lt;li&gt;Pal&lt;/li&gt;
+&lt;li&gt;Tobin&lt;/li&gt;
+&lt;li&gt;Me&lt;/li&gt;
+&lt;li&gt;Discussed small group formation - was a takewaway from the Church Leaders Conference&lt;/li&gt;
+&lt;li&gt;Discussed Re:Engage&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Allye got to hang out w/ Alli and Bora to share fliers - got to pour into Bora for a bit&lt;/li&gt;
+&lt;li&gt;Dinner @ Artigiano w/ Re:Gen team
+&lt;ul&gt;
+&lt;li&gt;Carrie, Morgan, Marlie, Tobin, Lauren, Allye&lt;/li&gt;
+&lt;li&gt;Morgan said the hardest part was the ladies kept saying &amp;ldquo;that&amp;rsquo;s not our culture&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Goodbye to Re:Gen team, we are not waking up at 4am to see them off&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;day-3&#34;&gt;Day 3&lt;/h1&gt;
+&lt;h2 id=&#34;Oct-14&#34; class=&#34;hidden-xs&#34;&gt;Tuesday Sept 21&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;AM coffee @ Sophie then breakfast with Allye&lt;/li&gt;
+&lt;li&gt;Morning devotional and prayer time&lt;/li&gt;
+&lt;li&gt;Coffee with Genti and Nikollin&lt;/li&gt;
+&lt;li&gt;Byrek for lunch&lt;/li&gt;
+&lt;li&gt;Coffee at Komiteti
+&lt;ul&gt;
+&lt;li&gt;Tobin&lt;/li&gt;
+&lt;li&gt;Alli&lt;/li&gt;
+&lt;li&gt;Alesso&lt;/li&gt;
+&lt;li&gt;Klevisa&lt;/li&gt;
+&lt;li&gt;Tod&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Hotel break&lt;/li&gt;
+&lt;li&gt;3pm started the event, Alli shared about social media and anxiety
+&lt;ul&gt;
+&lt;li&gt;The girl in front of us turned around and nodded to her friend to say, &amp;ldquo;this is real&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Tobin &amp;amp; I had coffee afterward with Alban Pasho, new head of Student ministries
+&lt;ul&gt;
+&lt;li&gt;Alban is new to the role, still trying to figure it out&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Dinner 7:30 at Pasta restaurant w/ Kaon &amp;amp; Danjela&lt;/li&gt;
+&lt;li&gt;Tobin left to get ready for bed, I took team to get Ice Cream and Bakllava&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;day-4&#34;&gt;Day 4&lt;/h1&gt;
+&lt;h2 id=&#34;Oct-15&#34; class=&#34;hidden-xs&#34;&gt;Wednesday Sept 22&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;AM coffee w/ Allye at mon cheri&lt;/li&gt;
+&lt;li&gt;Met team at Office then spent some time at other coffee shop
+&lt;ul&gt;
+&lt;li&gt;Alli shared her devotional&lt;/li&gt;
+&lt;li&gt;Berti Berhami showed up - coffee with Berti &amp;amp; Marenglen
+&lt;ul&gt;
+&lt;li&gt;More info on new structure of CRU Albania, informative re: convo with Alban yesterday&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;On the way back to the office, ran into Skerdi w/ Edi Bicaku&lt;/li&gt;
+&lt;li&gt;12pm left w/ Edi N, Allye, Albi and Ueda for Peqin&lt;/li&gt;
+&lt;li&gt;Arrived around 1:30, stopped at market for snacks&lt;/li&gt;
+&lt;li&gt;2:45 started w/ games - 12 kids total, all believers
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;Over the mountain&amp;rdquo; if&amp;hellip;&lt;/li&gt;
+&lt;li&gt;Pictionary&lt;/li&gt;
+&lt;li&gt;Texas Trivia&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Shared my story of grace w/ a challenge built around Micah 6:8&lt;/li&gt;
+&lt;li&gt;Dancing&lt;/li&gt;
+&lt;li&gt;Met pastor as we were leaving&lt;/li&gt;
+&lt;li&gt;Dinner in Tirana w/ Gedis and Celjeta
+&lt;ul&gt;
+&lt;li&gt;Great things in and around Elbasan - lots of opportunity to share the Gospel,
+some Elbasan kids becoming key volunteers which is unusual b/c they are more Muslim typically&lt;/li&gt;
+&lt;li&gt;Re:Gen camp was good.  Gedis decided he wanted to do Re:gen b/c of Berti Berhami sharing his testimony&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Allye went to sleep, I stayed up for the Fier team&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;day-5&#34;&gt;Day 5&lt;/h1&gt;
+&lt;h2 id=&#34;Oct-16&#34; class=&#34;hidden-xs&#34;&gt;Thursday Sept 23&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Rest morning - rolled out of bed at 9:30
+&lt;ul&gt;
+&lt;li&gt;Allye felt so much better&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Most of the group went for brunch and then walked around the city.&lt;/li&gt;
+&lt;li&gt;Allye and I took a taxi up to &amp;ldquo;Bar Class&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;12:00 - met at the office to prepare for the &amp;ldquo;World Game&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;1:00 - coffee w/ Brian and Luka
+&lt;ul&gt;
+&lt;li&gt;Believer, grew up in a Christian family.&lt;/li&gt;
+&lt;li&gt;Interested in Software Engineering&lt;/li&gt;
+&lt;li&gt;Talked about life purpose - challenged him to think about this for a purpose: seek joy&lt;/li&gt;
+&lt;li&gt;Discussed tithing and giving, not out of obligation.  He had the advantage of watching his parents give 10%&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;3:00 meeting went well
+&lt;ul&gt;
+&lt;li&gt;World game
+&lt;ul&gt;
+&lt;li&gt;Pyramid scheme&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;I shared my testimony, centered around the concept of &amp;ldquo;Right vs Wrong&amp;rdquo; and &amp;ldquo;Objective Morality&amp;rdquo;.
+&lt;ul&gt;
+&lt;li&gt;Micah 6:8&lt;/li&gt;
+&lt;li&gt;Story re: SQL injection&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Board game time&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;6:00 met with Berti and Zamir
+&lt;ul&gt;
+&lt;li&gt;Berti has a new job, he had been considering leaving his old job without even having a new one lined up, but he went to the church camp and prayed with Altin, and on the way back from the church camp he had two interviews lined up!&lt;/li&gt;
+&lt;li&gt;Zamir has been growing his business, he has 25 employees now and is getting a new office!  The Lord has blessed them both.&lt;/li&gt;
+&lt;li&gt;I really enjoyed having a long coffee to catch up with them.  I&amp;rsquo;m glad for them and praying that they will keep being involved in church, and being a light for others.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;7:30 dinner at Era with Pal and Ueda.  Just another great time together with friends.  I love that I get to spend a lot of time with them on these trips.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;day-6&#34;&gt;Day 6&lt;/h1&gt;
+&lt;h2 id=&#34;Oct-17&#34; class=&#34;hidden-xs&#34;&gt;Friday Sept 24&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;8:30 AM went to Dajti with a fugon&lt;/li&gt;
+&lt;li&gt;Stopped at Natyra e Qete, where Pal and Ueda got married&lt;/li&gt;
+&lt;li&gt;Prayer time
+&lt;ul&gt;
+&lt;li&gt;Prayed over the project, specific names of kids that we had shared with or will share with&lt;/li&gt;
+&lt;li&gt;Prayed for Albania
+&lt;ul&gt;
+&lt;li&gt;Justice&lt;/li&gt;
+&lt;li&gt;Corruption&lt;/li&gt;
+&lt;li&gt;Social media usage among the youth&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Prayed for America
+&lt;ul&gt;
+&lt;li&gt;Divided country w/ politics&lt;/li&gt;
+&lt;li&gt;Materialism&lt;/li&gt;
+&lt;li&gt;Church to be the Church&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Celebrated Edi &amp;amp; Kela&amp;rsquo;s 10 year anniversary w/ a cake&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Came down the mountain - I prayed that the brakes would hold!&lt;/li&gt;
+&lt;li&gt;Coffee with Mario, Klevisa, Alexa, and Allye
+&lt;ul&gt;
+&lt;li&gt;Allye talked with Klevisa and Alexa while I asked Mario some questions&lt;/li&gt;
+&lt;li&gt;On a scale of 1-10 he&amp;rsquo;s a 7, because he&amp;rsquo;s confused about some things.  I asked him what he&amp;rsquo;s confused about.
+&lt;ul&gt;
+&lt;li&gt;Why would God make others suffer because of Adam and Eve
+&lt;ul&gt;
+&lt;li&gt;He&amp;rsquo;s patient towards us, not wanting that any should perish&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Why are there so many different faiths
+&lt;ul&gt;
+&lt;li&gt;Read paul&amp;rsquo;s sermon at the Areopagus&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Purpose was to get him to see that the answers to his questions are in the bible&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Alesio came later with a friend and started asking questions too, both of them said they are a 0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Came late to the Texas Night meeting
+&lt;ul&gt;
+&lt;li&gt;Andrew started off with Frank Sinatra&lt;/li&gt;
+&lt;li&gt;Texas Trivia - the question about Sweetwater&amp;rsquo;s rattlesnake roundup got the most people&lt;/li&gt;
+&lt;li&gt;Q &amp;amp; A time - asked about Rodeo, we showed a video about mutton busting&lt;/li&gt;
+&lt;li&gt;Dancing started with two stepping for 3 songs, then &amp;ldquo;Copperhead road&amp;rdquo;, then &amp;ldquo;Footloose&amp;rdquo; (madison)
+&lt;ul&gt;
+&lt;li&gt;For Cotton-Eye Joe, we tried to teach one dance but they were already doing another one&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;I went for coffee afterwards with Samuel, Luka, and Elia.  Edi joined after a bit.
+&lt;ul&gt;
+&lt;li&gt;I shared my testimony, they appreciated the change in my life from 10 years ago&lt;/li&gt;
+&lt;li&gt;I asked Sam to share how he became a believer
+&lt;ul&gt;
+&lt;li&gt;Last year was a dark time in his life, with lots of isolation.  A pastor came all the way across Tirana, even during curfew, just to talk to him.  That made a huge impression on him.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Luka said that last year he didn&amp;rsquo;t want to be a believer because he thought that meant he couldn&amp;rsquo;t have fun anymore.  I shared that I am a &amp;ldquo;Christian Hedonist&amp;rdquo; like John Piper&lt;/li&gt;
+&lt;li&gt;Encouraging to get to invest in some young believers.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Andrew went for coffee with a young boy named Alessio.  He accepted christ tonight!  Andrew had been working with him all week&lt;/li&gt;
+&lt;li&gt;Met up for dinner with Berti and Adelina Berhami at Stephen Center.  They treated us to dinner.
+&lt;ul&gt;
+&lt;li&gt;Good conversation with good friends&lt;/li&gt;
+&lt;li&gt;Sara, their daughter, took part in the re:gen camp this last weekend in Durres.  Sara said that this is what we&amp;rsquo;ve been needing, since she experienced this many years ago in Dallas.  Berti was studying at DTS at the time and the family were members of Watermark.  Sara and Klea both went to WM youth ministry.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;After dinner we took a nice walk through town and arrived safely at our hotel, and of course went directly to sleep.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;day-7&#34;&gt;Day 7&lt;/h1&gt;
+&lt;h2 id=&#34;Sep-25&#34; class=&#34;hidden-xs&#34;&gt;Saturday Sept 25&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Met with Genti Tupa early
+&lt;ul&gt;
+&lt;li&gt;Had to change things up with the YP ministry, almost &amp;ldquo;starting from zero&amp;rdquo;.  He&amp;rsquo;s looking to connect with the medical community now as he has a supporter who will come who is a doctor.&lt;/li&gt;
+&lt;li&gt;Talked about asking around our church if any lawyers would be interested in coming to Albania to make inroads with the legal community there.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Covid test time!  Went to a testing site on the other side of the city
+&lt;ul&gt;
+&lt;li&gt;Anxiety that one or more tests would be positive.  Us all being negative would be a miracle.&lt;/li&gt;
+&lt;li&gt;Allye said it best, &amp;ldquo;praying that God would help my attitude if we&amp;rsquo;re not all negative&amp;rdquo;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Coffee time with Klei and Albi
+&lt;ul&gt;
+&lt;li&gt;Klei is a typical high school student, he didn&amp;rsquo;t say much in response to questions.&lt;/li&gt;
+&lt;li&gt;Just wants a family and a good job.  We talked about having a bigger purpose for your life.  He says he is a believer but hasn&amp;rsquo;t been very much involved in church.  Albi is trying to get him to go to church in Yzberisht together with albi&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Meeting time at 11am
+&lt;ul&gt;
+&lt;li&gt;There was a funny skit about a couple who goes to the movie theater.  They have to sit on opposite sides of the row, and a jerk of a guy is in between them.  The boyfriend passes gifts along to his girlfriend but they all end up being eaten or somehow messed up by the jerk.  Meanwhile the other guy actually sitting next to the girl presents the gifts as though they are from him, and the girlfriend ends up leaving with the other guy!&lt;/li&gt;
+&lt;li&gt;Brian did an excellent job with the Gospel presentation!
+&lt;ul&gt;
+&lt;li&gt;Very clear explanation of the 4 laws&lt;/li&gt;
+&lt;li&gt;Left the final slide up for the duration of the meeting - &amp;ldquo;you must make a personal choice&amp;rdquo;.  Sam said he appreciated that this slide remained up for the whole meeting&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Lots of dancing!  Our last chance to get in all the albanian dancing we want&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Lunch afterwards with about a dozen students.
+&lt;ul&gt;
+&lt;li&gt;Allye talked to Nertila for a while, she&amp;rsquo;s a believer&lt;/li&gt;
+&lt;li&gt;I tried to engage Igli and his brother Bruno in conversation.  I asked them what they want out of life - &amp;ldquo;money&amp;rdquo;.  We talked about John D Rockefeller, who when asked how much more would satisfy him, said &amp;ldquo;only 1 more dollar&amp;rdquo;.  I was trying to make the point that Igli will never be satisfied, but he seemed to like that phrase.  Or at least it was &amp;ldquo;cool&amp;rdquo; to like that in front of his friends.  I challenged him instead to seek Wisdom, and we read some from Proverbs about how wisdom is more valuable than gold and silver.  Pray for him, he didn&amp;rsquo;t seem interested in taking that path.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Headed back to the office and piled into 3 cars to go out to Durres for the evening.  This was our time of rest, relaxation with our Albanian friends, and evaluation of the project.&lt;/li&gt;
+&lt;li&gt;First, we toured the Roman amphitheater in Durres.  It&amp;rsquo;s likely the 2nd largest ever built by Rome outside the Coliseum.
+&lt;ul&gt;
+&lt;li&gt;It&amp;rsquo;s thought that Titus was martyred here&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Drove down to the beach and a nice outdoor seafood restaurant there.  We walked the beach a bit and took some photos before heading in to eat.&lt;/li&gt;
+&lt;li&gt;Discussed the project, what went well, what we could do better.
+&lt;ul&gt;
+&lt;li&gt;The video was a hit, we&amp;rsquo;ll definitely have to make a better one next time.  Maybe Jordan Thompson would be on board?&lt;/li&gt;
+&lt;li&gt;Doing a run-through of texas night and our gospel presentation would have helped.&lt;/li&gt;
+&lt;li&gt;Praise the Lord for negative covid tests!  We all got the emails at dinner.  It&amp;rsquo;s seriously a miracle that none of us caught it.&lt;/li&gt;
+&lt;li&gt;It was good to see both new students and returning students.  It&amp;rsquo;s important to invest in the believers too.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;After a long and enjoyable dinner, we said goodnight to Kaon and Danjela as they were returning separately with their kids.  The rest of us packed up in the cars again and went to the hotel.&lt;/li&gt;
+&lt;li&gt;Since our flight out was at 4am, we decided to leave the hotel at 1 to go to the airport.  Pal and Genti graciously stayed up to take us there.  We chilled at the hotel until 11, hanging out and checking the score of the College Football games.  I was watching A&amp;amp;M v Arkansas, while Brian was trying to follow Baylor vs Iowa State&lt;/li&gt;
+&lt;li&gt;That last night of time with our friends was hard but good.  Good because we are just such good friends now. Hard because of the exhaustion, and wanting to be present to spend time with them.  I already miss them.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title>Journal • 2020</title>
+      <link>http://www.gordonburgett.net/albania/2020/</link>
+      <pubDate>Sun, 25 Oct 2020 00:36:09 -0500</pubDate>
+      <guid>http://www.gordonburgett.net/albania/2020/</guid>
+      <description>&lt;p&gt;This year we unfortunately had to cancel our summer project due to COVID-19.
+But there&amp;rsquo;s a purpose in everything God does! Though we were sad to not see our
+friends during the summer, we have kept in touch with them through a weekly Zoom
+call. Through this weekly touchpoint, and God&amp;rsquo;s provision, we were able to go
+as a small team in October!&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Team photo&#34; loading=&#34;lazy&#34; src=&#34;http://www.gordonburgett.net/images/albania/2020/hs_ministry_team.png&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;day-1&#34;&gt;Day 1&lt;/h1&gt;
+&lt;h2 id=&#34;Oct-12&#34; class=&#34;hidden-xs&#34;&gt;Monday October 12&lt;/h2&gt;
+&lt;p&gt;My Fiancee Allye Foster and I traveled first, arriving Monday October 12 to
+participate in the high school ministry&amp;rsquo;s project.  We arrived about noon, very
+tired from the flights.  Pal picked us up at the airport and drove us to the
+hotel.  I was very excited to see him again, we hadn&amp;rsquo;t seen eachother since he
+and Ueda came to Dallas in February.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Journal • 2019 - Young Professionals</title>
+      <link>http://www.gordonburgett.net/albania/2019_youngprofessionals/</link>
+      <pubDate>Mon, 08 Jul 2019 21:36:09 -0500</pubDate>
+      <guid>http://www.gordonburgett.net/albania/2019_youngprofessionals/</guid>
+      <description>&lt;h1 id=&#34;the-in-between&#34;&gt;The in-between&lt;/h1&gt;
+&lt;p&gt;I had a full week in between the &lt;a href=&#34;http://www.gordonburgett.net/albania/2019_shkodra/&#34;&gt;Shkoder project&lt;/a&gt; and the YP
+project.  I spent half of it working remote and the rest just catching up with
+friends.  I found a really good coffee shop to work from. with a wonderful view.&lt;/p&gt;
+&lt;div class=&#34;data-img&#34;&gt;
+	&lt;img src=&#34;http://www.gordonburgett.net/images/albania/2019/07_coffee_shop_view.jpg&#34;
+    alt=&#34;Coffee shop in Tirana&#34;&gt;&lt;/img&gt;
+&lt;/div&gt;
+&lt;h1 id=&#34;day-1&#34;&gt;Day 1&lt;/h1&gt;
+&lt;h2 id=&#34;July-7&#34; class=&#34;hidden-xs&#34;&gt;Sunday July 7&lt;/h2&gt;
+&lt;p&gt;Today my first responsibility was going to get everyone from the airport.  Back
+on the receiving end!  I enjoy hosting and it was fun to be able to welcome
+everyone and get them settled in.  First thing we did was go to the hotel, where
+Joanne went straight in to take a nap.  Smart choice.  The rest of us got up and
+went out for lunch. We had Suflaqe across the street, and near the end of lunch a couple people who
+thought they were OK ended up just being done.  So they headed back to the hotel
+while the rest of us walked around and exchanged leke, bought water, and took care
+of whatever needs we could think of.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Journal • 2019 - Shkodra</title>
+      <link>http://www.gordonburgett.net/albania/2019_shkodra/</link>
+      <pubDate>Tue, 25 Jun 2019 00:36:09 -0500</pubDate>
+      <guid>http://www.gordonburgett.net/albania/2019_shkodra/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;Pre-trip team photo&#34; loading=&#34;lazy&#34; src=&#34;http://www.gordonburgett.net/images/albania/2019/06_shkodra_view.jpg&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;day-1&#34;&gt;Day 1&lt;/h1&gt;
+&lt;h2 id=&#34;June-25&#34; class=&#34;hidden-xs&#34;&gt;Tuesday June 25&lt;/h2&gt;
+&lt;p&gt;We arrived in Tirana around noon and met Pal at the airport.  Glad to be back in
+country!  It&amp;rsquo;s been almost a year since I was here last - too long.  We went with
+Pal to pick up Wes and Daniel at Hotel Sokrat.  While there we met with Aldo
+for a bit.  It was nice to catch up with him too!  He&amp;rsquo;s tranisitioning to a new
+role with partnerships, and Pal &amp;amp; Ueda next year will be taking over for him as leader
+of the Tirana high school ministry.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Building on The Foundation</title>
+      <link>http://www.gordonburgett.net/archive/2019/04_summer_projects_2019/</link>
+      <pubDate>Sat, 13 Apr 2019 14:20:14 -0500</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2019/04_summer_projects_2019/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;According to the grace of God given to me, like a skilled master builder I laid
+a foundation, and someone else is building upon it. Let each one take care how
+he builds upon it. For no one can lay a foundation other than that which is laid,
+which is Jesus Christ.
+&lt;span class=&#34;source&#34;&gt;&lt;a href=&#34;http://biblehub.com/esv/1_corinthians/3.htm&#34;&gt;1 Corinthians 3:10-11&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;What is it that we are building together with our partners in Albania?  Why do you keep
+supporting me and my team in going back, now for the 7th year in a row?  Firstly
+let me be clear that we are building nothing of our own, but rather we are building
+on the foundation that has already been laid.  CRU has already done an amazing
+job of building up the Church in Albania, coming in shortly after Communism fell
+armed with nothing but the Gospel.  Christ through them has laid the foundation
+of a small yet vibrant Church in Albania.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Acts 29</title>
+      <link>http://www.gordonburgett.net/archive/2018/07_acts_29_in_albania/</link>
+      <pubDate>Wed, 11 Jul 2018 08:55:43 +0200</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2018/07_acts_29_in_albania/</guid>
+      <description>&lt;p&gt;This month, while we&amp;rsquo;ve been working on the summer project here in Albania, I&amp;rsquo;ve
+been reading the book of Acts.  I love all the descriptions in the book of Acts
+of faithful people who were not Apostles.  Some of them, like Cornelius the centurion,
+had been faithful for a very long time, and God answered their prayers powefully.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;About the ninth hour of the day he saw clearly in a vision an angel of God come in
+and say to him, “Cornelius.” And he stared at him in terror and said, “What is it,
+Lord?” And he said to him, “Your prayers and your alms have ascended as a memorial
+before God.
+&amp;hellip;
+While Peter was still saying these things, the Holy Spirit fell on all who heard the
+word. And the believers from among the circumcised who had come with Peter were amazed,
+because the gift of the Holy Spirit was poured out even on the Gentiles.
+&lt;span class=&#34;source&#34;&gt;&lt;a href=&#34;http://biblehub.com/esv/acts/10.htm&#34;&gt;Acts 10:3-4,44-45&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Journal • 2018</title>
+      <link>http://www.gordonburgett.net/albania/2018/</link>
+      <pubDate>Sun, 01 Jul 2018 00:36:09 -0500</pubDate>
+      <guid>http://www.gordonburgett.net/albania/2018/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;Pre-trip team photo&#34; loading=&#34;lazy&#34; src=&#34;http://www.gordonburgett.net/images/albania/2018/pre_trip_american_team.jpg&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;day-1&#34;&gt;Day 1&lt;/h1&gt;
+&lt;h2 id=&#34;Jul-1&#34; class=&#34;hidden-xs&#34;&gt;Sunday July 1&lt;/h2&gt;
+&lt;p&gt;We traveled overnight Friday, finally arriving Saturday night.  After checking into the hotel I was beat.  I went to sleep right away and managed to sleep 9 hours straight.  It was good though to see Berti, Pal, Ueda, and Aldo, who all picked us up at the airport.&lt;/p&gt;
+&lt;p&gt;Berti invited me to his bible study group before church.  I met up with them at 8am at Mon Cheri.  Berti, Xhulio, Zamir, Visi, and Landi have been meeting regularly to study the Bible.  They were talking about Psalm 58 this week, and we discussed the contrast between &amp;ldquo;The righteous will rejoice when he sees the vengeance;&amp;rdquo; (v10) and Jesus&amp;rsquo; words: &amp;ldquo;Love your enemies and proy for those who persecute you&amp;rdquo; (Matthew 5:44).  I&amp;rsquo;m glad to see those guys getting together to dig into God&amp;rsquo;s word!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Feeling Like I&#39;m at Hogwarts</title>
+      <link>http://www.gordonburgett.net/archive/2018/05_enrolled_at_hogwarts/</link>
+      <pubDate>Sun, 20 May 2018 14:52:15 -0500</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2018/05_enrolled_at_hogwarts/</guid>
+      <description>&lt;p&gt;I spent some time this week playing with &lt;a href=&#34;https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-8.html&#34;&gt;Typescript 2.8&amp;rsquo;s new features&lt;/a&gt;
+for modeling various complex types.  The new syntax that I wanted to play with
+was the conditional type syntax,&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-ts&#34; data-lang=&#34;ts&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;T&lt;/span&gt; &lt;span class=&#34;kr&#34;&gt;extends&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;U&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;?&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;X&lt;/span&gt; : &lt;span class=&#34;kt&#34;&gt;Y&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;This syntax allows you to express some really crazy type relationships!  Some of
+the most interesting ones have been pre-defined in the Typescript standard lib:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Exclude&amp;lt;T, U&amp;gt;&lt;/code&gt; – Exclude from T those types that are assignable to U.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Extract&amp;lt;T, U&amp;gt;&lt;/code&gt; – Extract from T those types that are assignable to U.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I wanted to see if I could use these to model the way we&amp;rsquo;ve been working with
+return values from &lt;a href=&#34;https://www.contentful.com/developers/docs/references/content-delivery-api/&#34;&gt;Contentful&amp;rsquo;s Content Delivery API&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Preparing for the Summer</title>
+      <link>http://www.gordonburgett.net/archive/2018/04_upcoming_summer_project/</link>
+      <pubDate>Thu, 05 Apr 2018 20:18:22 -0700</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2018/04_upcoming_summer_project/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s that time again!  We&amp;rsquo;ve begun preparing to go back to Albania this summer!&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;2018 team photo&#34; loading=&#34;lazy&#34; src=&#34;http://www.gordonburgett.net/images/2018/2018_albania_group_photo_social.jpg&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;looking-forward-to-going-back&#34;&gt;Looking forward to going back&lt;/h1&gt;
+&lt;p&gt;I&amp;rsquo;m so glad that I already had a chance to get back to Albania in December,
+when we put on &lt;a href=&#34;http://www.gordonburgett.net/post/2017/12_mens_retreat/&#34;&gt;a men&amp;rsquo;s conference for Cornerstone Church of Tirana&lt;/a&gt;.
+That was a great time of fun and fellowship with many of my close Albanian friends.
+I&amp;rsquo;ve been keeping in touch with them although it&amp;rsquo;s been difficult due to the time
+difference.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Men&#39;s Retreat in Albania</title>
+      <link>http://www.gordonburgett.net/archive/2017/12_mens_retreat/</link>
+      <pubDate>Thu, 14 Dec 2017 20:18:22 -0700</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2017/12_mens_retreat/</guid>
+      <description>&lt;p&gt;When I look back on my experience with Albania, starting from &lt;a href=&#34;http://www.gordonburgett.net/albania/2013/&#34;&gt;my first trip there in 2013&lt;/a&gt;
+until now, I can&amp;rsquo;t help but be amazed at the way God has used this partnership to bring
+change not only in my life but in the lives of my friends.  My key verse for my 2-year stint
+in Albania was Mark 10:29-30&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“Truly I tell you,” Jesus replied, “no one who has left home or brothers or sisters or
+mother or father or children or fields for me and the gospel will fail to receive a
+hundred times as much in this present age: homes, brothers, sisters, mothers, children
+and fields—along with persecutions—and in the age to come eternal life.
+&lt;span class=&#34;source&#34;&gt;&lt;a href=&#34;http://biblehub.com/niv/mark/10.htm&#34;&gt;Mark 10:29-30&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Not Done Yet!</title>
+      <link>http://www.gordonburgett.net/archive/2017/10_nothings_over/</link>
+      <pubDate>Thu, 26 Oct 2017 20:28:57 -0600</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2017/10_nothings_over/</guid>
+      <description>&lt;p&gt;Hey Y&amp;rsquo;all!  It&amp;rsquo;s been a while!  I&amp;rsquo;ve been busy with settling in to my new job and routine with Watermark.
+It&amp;rsquo;s a really great place to work and I feel super blessed to have the opportunity to join staff there!
+But even as I readjust to life in America I&amp;rsquo;m still looking back to Albania and my next opportunity to
+go.&lt;/p&gt;
+&lt;p&gt;And the Lord graciously provides!  I will be going on a trip in December with Will Noll, Matt Rial,
+Chris Hyland, and hopefully 1 to 2 others.  We have been communicating with the elders of Guri i Themelit
+church over there to set up a weekend guys&amp;rsquo; retreat, where we will discuss openness and authenticity.
+They expect upwards of 50 guys to come out to this retreat!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Making a static site searchable</title>
+      <link>http://www.gordonburgett.net/archive/2017/07_making_a_searchable_static_site/</link>
+      <pubDate>Sun, 23 Jul 2017 17:28:52 +0200</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2017/07_making_a_searchable_static_site/</guid>
+      <description>&lt;p&gt;My site is getting pretty big now!  50+ posts, plus my journal entries from years past, I have content stretching over 4 years.
+So I started thinking about ways to add search functionality.  And anyone who knows me knows I like to make these kind of things
+more complicated than they need to be, so with that in mind I had a fun challenge to solve.  How do I add search functionality to
+a static site?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Home</title>
+      <link>http://www.gordonburgett.net/archive/2017/07_home/</link>
+      <pubDate>Thu, 20 Jul 2017 11:38:22 +0200</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2017/07_home/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.gordonburgett.net/albania/2017/&#34;&gt;My journal for the 2017 project is up!&lt;/a&gt;&lt;/p&gt;
+&lt;div&gt;
+  &lt;a href=&#34;http://www.gordonburgett.net/albania/2017&#34;&gt;
+    &lt;img src=&#34;http://www.gordonburgett.net/images/2017/2017_07_retreat.jpg&#34; alt=&#34;Summer retreat group&#34;&gt;
+  &lt;/a&gt;
+  &lt;span class=&#34;attribution&#34;&gt;photo by Lauren Dean&lt;/span&gt;
+&lt;/div&gt;
+&lt;h1 id=&#34;end-of-the-road&#34;&gt;End of the road&lt;/h1&gt;
+&lt;p&gt;All good things come to an end, and my STINT in Albania is no different.  On 7 August I fly back to Dallas to spend at least 1 year there, with the hope that I&amp;rsquo;ll return to live in Albania sooner rather than later.  At this point I&amp;rsquo;m holding all my plans loosely.  I know what I want to do for the next year, but beyond that it&amp;rsquo;s up to God.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Journal • 2017</title>
+      <link>http://www.gordonburgett.net/albania/2017/</link>
+      <pubDate>Mon, 10 Jul 2017 21:36:09 -0500</pubDate>
+      <guid>http://www.gordonburgett.net/albania/2017/</guid>
+      <description>&lt;div class=&#34;data-img&#34; style=&#34;width:100%; max-width:100%&#34;&gt;
+	&lt;img src=&#34;http://www.gordonburgett.net/images/2017/project/committee.jpg&#34; &gt;
+	&lt;/img&gt;
+	&lt;span&gt;photo by Lauren Dean&lt;/span&gt;
+&lt;/div&gt;
+&lt;h1 id=&#34;day-1&#34;&gt;Day 1&lt;/h1&gt;
+&lt;h2 id=&#34;Jul-2&#34; class=&#34;hidden-xs&#34;&gt;Sunday July 2&lt;/h2&gt;
+&lt;p&gt;Today was a travel day for the others, fortunately I didn&amp;rsquo;t have to travel :).  I got to go to church and have a nice afternoon coffee with a friend.  We went to go pick up the group at the airport at 5:00, but the plane was delayed a bit.  We had a good coffee at the airport waiting for them.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Big Decision</title>
+      <link>http://www.gordonburgett.net/archive/2017/06_big_decision/</link>
+      <pubDate>Sun, 18 Jun 2017 19:50:29 +0200</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2017/06_big_decision/</guid>
+      <description>&lt;p&gt;So, I&amp;rsquo;ve got an announcement to make.  These past several months I&amp;rsquo;ve been exploring two options for my time after my STINT is up.  One area I was exploring was with the Digital Strategies team in Albania, working for Afrim Karoshi.  I went to a conference with the Digital Strategies team here in May as part of that exploration.  The second area was an open position at Watermark Community Church as a programmer.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Digital Leadership</title>
+      <link>http://www.gordonburgett.net/archive/2017/05_digital_leadership/</link>
+      <pubDate>Mon, 08 May 2017 13:39:29 +0200</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2017/05_digital_leadership/</guid>
+      <description>&lt;p&gt;April was a fairly slow month.  We had our normal schedule of a professional meeting and a social time.  This month we had fewer people than normal, but we had a lot of new people which was very interesting.  I&amp;rsquo;ve had several opportunities to follow up with contacts, though this appears to be a busy time of year for most of the professionals.  We are trying more to model the follow-up process for our partners, inviting them into these meetings and giving them opportunities to lead.  Albert has been doing a great job helping me mentor one of the new believers in the first steps of learning about his faith.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Modern Static Sites</title>
+      <link>http://www.gordonburgett.net/archive/2017/04_modern_static_sites/</link>
+      <pubDate>Thu, 20 Apr 2017 13:49:22 +0200</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2017/04_modern_static_sites/</guid>
+      <description>&lt;p&gt;Today in 2017, there are a thousand and one different ways to build a website.  As always there&amp;rsquo;s good old fashioned &lt;a href=&#34;https://wordpress.com&#34;&gt;Wordpress&lt;/a&gt;, and of course there&amp;rsquo;s drag-n-drop website builders like &lt;a href=&#34;http://www.wix.com&#34;&gt;Wix&lt;/a&gt;.  One thing these have in common is that they need a traditional hosting environment, and for that you gotta pay.&lt;/p&gt;
+&lt;p&gt;If you can manage it, the cheapest way to host a website nowadays is to create a static HTML site.  But don&amp;rsquo;t hand-craft HTML, that&amp;rsquo;s hard and boring.  Use a static site generator, for fun and profit!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>March Project</title>
+      <link>http://www.gordonburgett.net/archive/2017/04_march_project/</link>
+      <pubDate>Wed, 05 Apr 2017 22:08:16 +0200</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2017/04_march_project/</guid>
+      <description>&lt;h2 id=&#34;we-love-momentum&#34;&gt;We love momentum&lt;/h2&gt;
+&lt;p&gt;March 13-17 was a big week for us.  We invited a group from Louisville, TX To join us for a week-long momentum building project.  This group had an amazing impact, we drew in well over 100 people for the seminar, and our social time was a big success as well.  We got a lot of new contacts and, as was our goal, we will be following up with them over the coming weeks.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Automating more work</title>
+      <link>http://www.gordonburgett.net/archive/2017/03_automating_more_work/</link>
+      <pubDate>Tue, 21 Mar 2017 16:20:52 +0100</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2017/03_automating_more_work/</guid>
+      <description>&lt;p&gt;So I took a look at my blog recently to make sure everything is working, and got a big fat &amp;ldquo;Your connection is not secure&amp;rdquo; message.  Uh oh!&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;certificate expired&#34; loading=&#34;lazy&#34; src=&#34;http://www.gordonburgett.net/images/2017/cert_expired.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Fortunately I just need to request a new certificate from Let&amp;rsquo;s Encrypt and install it.  I&amp;rsquo;ve done this before, it&amp;rsquo;s a 10 minute job.  Buuuuuttt&amp;hellip;
+what if I could automate it?  If I spend all afternoon on this I&amp;rsquo;ll save myself 15 minutes of work every 3 months!  That math totally works out right?&lt;br&gt;
+What does the XKCD guy have to say about it?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>TraNet 2017</title>
+      <link>http://www.gordonburgett.net/archive/2017/03_tranet_2017/</link>
+      <pubDate>Fri, 03 Mar 2017 14:36:09 +0100</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2017/03_tranet_2017/</guid>
+      <description>&lt;p&gt;What a great weekend!  This past weekend we went to Cyprus for a conference about reaching leaders and influencers for Christ.  The group was about 28 people, including 10 professionals, 4 teachers, two businesswomen and a government worker.  It was a great time of learning and inspiring our partners to reach their peers for Christ.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Group pic&#34; loading=&#34;lazy&#34; src=&#34;http://www.gordonburgett.net/images/2017/tranet_2017/group_pic.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;One speaker was a bible teacher who took us through the book of Mark, highlighting the disciples&amp;rsquo; stories and their leadership journeys.  Another speaker was a professional business consultant who focuses on leadership training.  Alba in particular got a lot out of that speaker, because she leads a team at her work.  The third speaker was the vice president of Leader Impact worldwide, he introduced to us the concept and mission of TraNet.  We also had various smaller seminars throughout, on interesting topics such as the Sabbath rest as applies to business, and integrating faith and work from a former communist perspective.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Continuing Resolve</title>
+      <link>http://www.gordonburgett.net/archive/2017/02_continuing_resolve/</link>
+      <pubDate>Sat, 04 Feb 2017 19:05:49 +0100</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2017/02_continuing_resolve/</guid>
+      <description>&lt;p&gt;Lots of stuff has happened this past month!  Last I posted I was in the middle
+of a 2-week break in Dallas.  That was a great and relaxing time for me, helped
+me to prepare mentally and spiritually for these next 7 months in Albania. I
+saw friends and family and enjoyed plenty of tacos.&lt;/p&gt;
+&lt;p&gt;When I got back it was right back into the swing of things with a seminar the
+next day.  It was a video seminar, we showed &lt;a href=&#34;http://www.willowcreek.com/events/leadership/2016-domestic-b/#faculty%23PatrickLencioni&#34;&gt;Patrick Lencioni&amp;rsquo;s talk from the
+2016 Global Leadership Summit&lt;/a&gt;.&lt;br&gt;
+It had already been subtitled in Albanian.  The talk was great, but when we
+asked our partners afterwards for their feedback they said it would be better
+to have a live speaker in the future.  So, as much as possible, we&amp;rsquo;ll try to
+do that.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Merry Christmas</title>
+      <link>http://www.gordonburgett.net/archive/2016/12_merry_christmas/</link>
+      <pubDate>Sun, 25 Dec 2016 04:56:31 +0100</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2016/12_merry_christmas/</guid>
+      <description>&lt;p&gt;Merry Christmas to everybody!&lt;/p&gt;
+&lt;p&gt;I love Christmas time, spending time with family, listening to the Advent messages at church, and especially the Christmas hymns.  My favorite is &amp;lsquo;O Holy Night&amp;rsquo;.  It&amp;rsquo;s my favorite because it speaks of the hope that came into the world when Jesus Christ was born.  Hope is an elusive thing.  Lots of people lose hope when what they desire becomes impossible, or even worse, when they get exactly what they wanted.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>When you eat chili 3 days in a row</title>
+      <link>http://www.gordonburgett.net/archive/2016/11_too_much_chili/</link>
+      <pubDate>Mon, 21 Nov 2016 14:29:43 +0100</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2016/11_too_much_chili/</guid>
+      <description>&lt;p&gt;We&amp;rsquo;ve been working on follow up since Momentum Europe.  We&amp;rsquo;ve had some good
+meetings with people, and had some good conversations.  Of course our goal is
+to help our partners to do that more and more - to have the conversations that
+lead to Gospel presentations, to encourage them to share with and invite
+more people, and to build their confidence.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;professionals on the beach in Durres&#34; loading=&#34;lazy&#34; src=&#34;http://www.gordonburgett.net/images/2016/yps_byb_1.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;To that end we organized a training conference this past weekend.  We invited
+about 20 young professionals out to Durres for 2 days of working through the
+&lt;a href=&#34;http://burstingyourbubble.org/&#34;&gt;&amp;ldquo;Bursting Your Bubble&amp;rdquo;&lt;/a&gt; curriculum.  It was
+a great success!  They enjoyed the time together and came away with a stronger
+desire to serve and share with their peers.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Momentum Europe</title>
+      <link>http://www.gordonburgett.net/archive/2016/10_momentum_europe/</link>
+      <pubDate>Sun, 23 Oct 2016 23:06:47 +0200</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2016/10_momentum_europe/</guid>
+      <description>&lt;p&gt;September and October have been pretty slow months, as we plan and gear up for our
+first big event, Momentum Europe.  I&amp;rsquo;ve been busying myself with a lot of administrative
+work, but we&amp;rsquo;ve also had opportunity to begin training our committed believers.&lt;/p&gt;
+&lt;h2 id=&#34;bursting-your-bubble&#34;&gt;Bursting your Bubble&lt;/h2&gt;
+&lt;p&gt;In my opinion, our greatest success last year was finding 8 believers who have decided
+to commit to being part of our ministry.  One of the things we asked of them is to
+commit to be trained in evangelism by our staff.  We started that training this month
+with the series &lt;a href=&#34;http://burstingyourbubble.org/&#34;&gt;&amp;ldquo;Bursting Your Bubble&amp;rdquo;&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Taking Control of My Data</title>
+      <link>http://www.gordonburgett.net/archive/2016/09_taking_control_of_my_data/</link>
+      <pubDate>Sat, 17 Sep 2016 15:33:34 +0200</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2016/09_taking_control_of_my_data/</guid>
+      <description>&lt;p&gt;One of my projects during my vacation has been to take back control of my data.  The question of online privacy is a difficult one, because while there&amp;rsquo;s some things you can do to improve your privacy, to really own your data takes a lot of effort and learning.  For most people, hosting their own services is more headache than it&amp;rsquo;s worth.  There&amp;rsquo;s a lot of good privacy-conscious services out there if you&amp;rsquo;re willing to pay, but most people are not willing to pay.  The convenience trumps the privacy concerns, and for me it has been that way for a long time as well.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Summer Recap</title>
+      <link>http://www.gordonburgett.net/archive/2016/08_summer_recap/</link>
+      <pubDate>Sun, 14 Aug 2016 15:30:48 +0200</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2016/08_summer_recap/</guid>
+      <description>&lt;p&gt;Well, it&amp;rsquo;s been a crazy couple months!  When I last posted we were about to start Ice and Spice, CRU Albania&amp;rsquo;s summer camp for high school students.  As part of my role on the LLM team, I was also helping out with an International School Project conference for teachers and principals.  So I was already a little worn out when Ice and Spice started!  But I got energized when my friends arrived from Texas.  It was a great week, filled with a lot of good conversations with high school students.  And as the Albanian team followed up with the students after my friends left, we heard several times about students who received christ!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Journal • 2016 - Ice And Spice</title>
+      <link>http://www.gordonburgett.net/albania/2016_iceandspice/</link>
+      <pubDate>Sat, 25 Jun 2016 21:36:09 -0500</pubDate>
+      <guid>http://www.gordonburgett.net/albania/2016_iceandspice/</guid>
+      <description>&lt;div class=&#34;data-img&#34; style=&#34;width:100%; max-width:100%&#34;&gt;
+	&lt;img src=&#34;http://www.gordonburgett.net/images/albania/2016/2016_team.jpg&#34; &gt;
+	&lt;/img&gt;
+	&lt;span&gt;photo by &lt;a href=&#34;http://www.ronacord.com&#34;&gt;Ron Acord&lt;/a&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;h1 id=&#34;day-1&#34;&gt;Day 1&lt;/h1&gt;
+&lt;h2 id=&#34;Jun-27&#34; class=&#34;hidden-xs&#34;&gt;Monday June 27&lt;/h2&gt;
+&lt;p&gt;This year things have been a bit different, but I&amp;rsquo;m trying as much as possible to feel like I&amp;rsquo;m part of the American group.  For the first 2 days though I also have some other responsibilities.  My ministry team here in Albania, Leader-Led Movements, has a 2-day evangelistic conference called Life Choices.  The graciously allowed me to go do Ice and Spice instead, but I still want to help them set up and tear down.  It&amp;rsquo;s also different because I won&amp;rsquo;t stay at the hotel with the team.  So this morning I didn&amp;rsquo;t see them until we all met at the office for orientation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Journal • 2016 - Young Professionals</title>
+      <link>http://www.gordonburgett.net/albania/2016_youngprofessionals/</link>
+      <pubDate>Sat, 25 Jun 2016 21:36:09 -0500</pubDate>
+      <guid>http://www.gordonburgett.net/albania/2016_youngprofessionals/</guid>
+      <description>&lt;h1 id=&#34;day-1&#34;&gt;Day 1&lt;/h1&gt;
+&lt;h2 id=&#34;July-4&#34; class=&#34;hidden-xs&#34;&gt;Monday July 4&lt;/h2&gt;
+&lt;p&gt;Today was a nice break.  We canceled the morning trip to Kruja, because all the Americans (including me) were worn out from the high schoolers.  I slept in till about 9:30, then camped out with Wes and Chris at Mulliri Vjeter.  They had to finish working on last minute changes to their presentations.  We met up with the staff team for a relaxing lunch.  The American team and staff got introduced to each-other and we had a nice relaxing time.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>It&#39;s Summertime!</title>
+      <link>http://www.gordonburgett.net/archive/2016/06_its_summer/</link>
+      <pubDate>Sat, 25 Jun 2016 14:33:26 +0200</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2016/06_its_summer/</guid>
+      <description>&lt;h3 id=&#34;what-time-is-it-its-summertime&#34;&gt;What time is it? It&amp;rsquo;s summertime!&lt;/h3&gt;
+&lt;iframe width=&#34;854&#34; height=&#34;480&#34; src=&#34;https://www.youtube.com/embed/x42aPmtnVDg&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;It&amp;rsquo;s about time for Ice and Spice, the annual summer camp for high school students here in Tirana!  My friends and I have been helping with this camp since the first time I came to Tirana, way back &lt;a href=&#34;http://www.gordonburgett.net/albania/2013/&#34;&gt;in 2013&lt;/a&gt;.  A lot has changed since then!  Albania Fried Chicken went out of business, but there&amp;rsquo;s now a legit KFC at the mall (Albania has only one mall).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Refreshed and Ready</title>
+      <link>http://www.gordonburgett.net/archive/2016/06_refreshed_and_ready/</link>
+      <pubDate>Sat, 11 Jun 2016 11:49:34 +0300</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2016/06_refreshed_and_ready/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s always great to go home.  I&amp;rsquo;ve had multiple definitions of &amp;ldquo;home&amp;rdquo; over the years, but right now the place I most identify as &amp;ldquo;home&amp;rdquo; is Dallas.  Having just spent 5 weeks there, I can totally confirm that is still the case.&lt;/p&gt;
+&lt;p&gt;Since I&amp;rsquo;ve committed to a second year here, I felt the need to go home and ask my supporters to commit to a second year with me.  This was the perfect time to do it, since my cousin was getting married on June 4.  The only other opportunity I might have would be in August, and who really wants to go to Dallas in August?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>My Happy Place</title>
+      <link>http://www.gordonburgett.net/archive/2016/05_my_happy_place/</link>
+      <pubDate>Sun, 22 May 2016 11:59:12 -0600</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2016/05_my_happy_place/</guid>
+      <description>&lt;h3 id=&#34;this-is-my-happy-place&#34;&gt;This is my happy place&lt;/h3&gt;
+&lt;p&gt;&lt;img alt=&#34;Lake LBJ&#34; loading=&#34;lazy&#34; src=&#34;http://www.gordonburgett.net/images/2016/lake_lbj_dock.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Lake Lyndon B. Johnson, about 45 minutes west of Austin.  A beautiful constant-level freshwater lake.  My grandmother has owned a lakehouse here for more than 30 years.  My family and I vacationed here almost every summer.  If there were no Good News to preach, I would as much as possible spend my time here.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and by which you are being saved, if you hold fast to the word I preached to you—unless you believed in vain.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>6 Months and Counting</title>
+      <link>http://www.gordonburgett.net/archive/2016/04_six_months_and_counting/</link>
+      <pubDate>Wed, 20 Apr 2016 17:15:47 +0200</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2016/04_six_months_and_counting/</guid>
+      <description>&lt;p&gt;We&amp;rsquo;re moving into the spring now, and as I&amp;rsquo;m preparing to go back to Dallas for a 1 month fundraising trip, I thought I&amp;rsquo;d reflect on where we are after 6 months.&lt;/p&gt;
+&lt;h2 id=&#34;towards-the-goal&#34;&gt;Towards the Goal&lt;/h2&gt;
+&lt;p&gt;We have a growing number of contacts now, young professional believers who have been joining us for seminars and other activities.  We&amp;rsquo;ve had a couple of vision casting meetings with them too.  Word is beginning to get around that this is a place to continue what they were doing with student ministries.  Most of our volunteers were formerly part of Jete Studentore (CRU&amp;rsquo;s campus ministry), which is a very good thing.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Shift musical</title>
+      <link>http://www.gordonburgett.net/archive/2016/03_shift_musical/</link>
+      <pubDate>Thu, 24 Mar 2016 17:56:00 +0200</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2016/03_shift_musical/</guid>
+      <description>&lt;p&gt;We got to see a really cool musical event this week!  A big group of high school students from Colorado came to perform their evangelistic musical, &amp;ldquo;SHIFT&amp;rdquo;.&lt;/p&gt;
+&lt;iframe src=&#34;https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Funebesoj.org%2Fvideos%2Fvb.521502178022308%2F542761429229716%2F%3Ftype%3D3&amp;show_text=0&amp;width=560&#34; width=&#34;560&#34; height=&#34;315&#34; style=&#34;border:none;overflow:hidden&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; allowTransparency=&#34;true&#34; allowFullScreen=&#34;true&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;CRU&amp;rsquo;s high school and college ministries invited a lot of students from all around Tirana.  I even saw the Elbasan kids show up.  Our young professionals all went and sat together near the front.  It was pretty awesome to see how many people showed up!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sometimes It&#39;s Tough</title>
+      <link>http://www.gordonburgett.net/archive/2016/02_sometimes_its_tough/</link>
+      <pubDate>Sat, 27 Feb 2016 14:35:52 +0100</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2016/02_sometimes_its_tough/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve posted a lot about the good times recently on this blog, but I thought with this post I&amp;rsquo;d let y&amp;rsquo;all in on the tough parts.  Like any job it&amp;rsquo;s got ups and downs.  Sometimes you work real hard for what seems like minimal gain.  Sometimes you have all these cool plans and they get interrupted by something out of your control.  Especially when your job is people.&lt;/p&gt;
+&lt;p&gt;This past week was tough for me.  It started out good, I had a couple good coffees and we planned our social meeting on Wednesday.  Tuesday evening we had a bible study, and that was enjoyable.  I&amp;rsquo;m feeling some progress on Albanian, but it&amp;rsquo;s still tough to understand native speakers.  Wednesday we had our social meeting, and we had a bunch of people come, but the two people I specifically invited did not come.  So that was a bit disappointing.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Adventures in Dockerland</title>
+      <link>http://www.gordonburgett.net/archive/2016/02_adventures-in-dockerland/</link>
+      <pubDate>Sat, 20 Feb 2016 20:33:52 +0100</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2016/02_adventures-in-dockerland/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been on a serious docker/aws kick recently.  I&amp;rsquo;ve learned just enough that it drives me to play with it.  I spent a lot of my free time on it this week, and didn&amp;rsquo;t spend as much as I&amp;rsquo;d like on learning Albanian&amp;hellip; This could be a problem&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Anyways I might as well post more about what I&amp;rsquo;ve learned.  I&amp;rsquo;ve been wanting to make my web server more robust, to where if it dies for whatever reason I don&amp;rsquo;t have to do anything, it&amp;rsquo;ll come back on a new instance all on its own.  Unfortunately that&amp;rsquo;s a bit more difficult than you&amp;rsquo;d expect.  Lots of moving parts.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Docker Cloud is Neat</title>
+      <link>http://www.gordonburgett.net/archive/2016/02_docker-cloud-is-neat/</link>
+      <pubDate>Mon, 15 Feb 2016 14:09:13 +0100</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2016/02_docker-cloud-is-neat/</guid>
+      <description>&lt;p&gt;I had some time off today so I decided to revisit how I&amp;rsquo;m hosting all my stuff.  One of my issues with using Amazon&amp;rsquo;s container service is that they make you assign resource values to each container, and those are not flexible.  So, I have to give each container high enough memory that it won&amp;rsquo;t die, but then I run out of space on my server real quick.  Since most of the stuff I want to host just sits idle the majority of the time, this wasn&amp;rsquo;t ideal for me.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Exploring and Networking</title>
+      <link>http://www.gordonburgett.net/archive/2016/01_exploring-and-networking/</link>
+      <pubDate>Sat, 30 Jan 2016 22:02:22 +0100</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2016/01_exploring-and-networking/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;Sunrise over Malaga&#34; loading=&#34;lazy&#34; src=&#34;http://www.gordonburgett.net/images/2016/malaga_sunrise.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This past week I went to the STINT Mid-Year conference in Málaga, Spain.  It was a lot of fun to hang out with a bunch of Americans!  I didn&amp;rsquo;t know anyone when I got there, but by the end I had made several friends.  The beachfront was beautiful, especially the late sunrise over the Mediterranean.  I was excited to play a bunch of Ultimate Frisbee, since I hadn&amp;rsquo;t played for several months.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hosting Reclaimed</title>
+      <link>http://www.gordonburgett.net/archive/2016/01_hosting_reclaimed/</link>
+      <pubDate>Tue, 19 Jan 2016 21:31:01 +0100</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2016/01_hosting_reclaimed/</guid>
+      <description>&lt;p&gt;Here&amp;rsquo;s another technical post for y&amp;rsquo;all!&lt;/p&gt;
+&lt;p&gt;I had some time this past weekend, so I took a look into the website I made a year ago for &lt;a href=&#34;http://www.reclaimed431.org&#34;&gt;Reclaimed&lt;/a&gt;.  The old version was made with &lt;a href=&#34;http://locomotivecms.com/&#34;&gt;Locomotive CMS&lt;/a&gt;, and hosted on &lt;a href=&#34;http://www.locomotivehosting.com&#34;&gt;Locomotive hosting&lt;/a&gt;.  It was a good choice at the time, because we needed something fast.  We wanted to deploy it before the 2015 super bowl.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;d previously looked into moving it to Wordpress or Drupal, but that would basically require redoing the whole site.  More work than I&amp;rsquo;m willing to put in.  But, just this past weekend, &lt;a href=&#34;http://locomotive.works/&#34;&gt;Locomotive v3&lt;/a&gt; came out.  I decided to try hosting it myself, because $20/mo is just a bit too much to be paying for a simple website like this.  Plus, it would be fun! (or so I thought.)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The first 3 months</title>
+      <link>http://www.gordonburgett.net/archive/2015/12_the_first_3_months/</link>
+      <pubDate>Sun, 13 Dec 2015 13:49:46 +0100</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2015/12_the_first_3_months/</guid>
+      <description>&lt;p&gt;I want to spend some time in this blog post unpacking what I&amp;rsquo;ve felt, what I&amp;rsquo;ve learned, and what I&amp;rsquo;ve found here in the past almost 3 months since I came to Albania.  I really can&amp;rsquo;t believe time has gone by so fast.  There&amp;rsquo;s so much to do, and so many new friends that it&amp;rsquo;s never boring.  Is this what I want to do with the rest of my life?  I can&amp;rsquo;t answer that yet.  But I have met so many people here who have devoted their lives to missions.  Is it worth it to do so?  They would answer unequivocally yes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Welcome Weekend</title>
+      <link>http://www.gordonburgett.net/archive/2015/12_welcome_weekend/</link>
+      <pubDate>Mon, 07 Dec 2015 20:31:24 +0100</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2015/12_welcome_weekend/</guid>
+      <description>&lt;h2 id=&#34;what-a-great-weekend&#34;&gt;What a great weekend!&lt;/h2&gt;
+&lt;p&gt;This weekend we had some visitors from Dallas.  Rick Howard, the missions pastor for Watermark, and Cheryl Boyd came to visit.  It was great to see them, to be encouraged by some friends from home.  I&amp;rsquo;ve been looking forward to this for a while!&lt;/p&gt;
+&lt;p&gt;Cheryl has been in Eastern Europe with CRU for 12+ years, and so she knew a lot of CRU staff here in Albania.  She and Alma Elliot are great friends, and were super excited to see eachother.  In all those years somehow she never made it to Albania, so this was a great chance for her to catch up with some of her old friends.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Newsletter • Dec 1 2015</title>
+      <link>http://www.gordonburgett.net/newsletter/01-12-2015/</link>
+      <pubDate>Tue, 01 Dec 2015 12:00:00 +0100</pubDate>
+      <guid>http://www.gordonburgett.net/newsletter/01-12-2015/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Remaining Humble</title>
+      <link>http://www.gordonburgett.net/archive/2015/11_remaining_humble/</link>
+      <pubDate>Thu, 12 Nov 2015 10:31:35 +0100</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2015/11_remaining_humble/</guid>
+      <description>&lt;p&gt;This week we had our first young-professionals meeting!  We had 17 people come to hear Dennis Beck speak on worldview.  He did a great job telling stories which got the participants to think.  He has a talent for conveying these high concepts in story form.  The discussion went well also.  I sat at a table with a few young professionals.  Two of them are believers from Fabi&amp;rsquo;s church.  The other was Dejvis, with whom I&amp;rsquo;ve been building a relationship.  He&amp;rsquo;s the manager of the Cinnabon franchise next to the American embassy.  He really enjoys coming to our seminars when he&amp;rsquo;s not working, and often brings friends.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Newsletter • Nov 3 2015</title>
+      <link>http://www.gordonburgett.net/newsletter/03-11-2015/</link>
+      <pubDate>Tue, 03 Nov 2015 12:00:00 +0100</pubDate>
+      <guid>http://www.gordonburgett.net/newsletter/03-11-2015/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Slow Going</title>
+      <link>http://www.gordonburgett.net/archive/2015/10_slow-going/</link>
+      <pubDate>Sat, 17 Oct 2015 14:35:49 +0200</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2015/10_slow-going/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been in Albania now almost 3 weeks.  Prior to now, the longest I&amp;rsquo;d ever been outside the US was 10 days.  It definitely feels strange, knowing I&amp;rsquo;ll be here probably 6 or 7 more months before I make a trip back to Dallas.  There&amp;rsquo;s a lot of things I&amp;rsquo;ve been missing - including having a clothes dryer and a dishwasher.  I saw some pictures of friends going to the State Fair, and I felt a bit homesick.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Running with Docker</title>
+      <link>http://www.gordonburgett.net/archive/2015/10_running_with_docker/</link>
+      <pubDate>Wed, 07 Oct 2015 20:33:41 +0200</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2015/10_running_with_docker/</guid>
+      <description>&lt;h3 id=&#34;locked-out&#34;&gt;Locked out!&lt;/h3&gt;
+&lt;p&gt;I managed to lock myself out of my EC2 instance when I was managing my keys.  So in order to update my blog, I had to deploy it to a new EC2 instance.  I decided to take the opportunity to improve the way I&amp;rsquo;m deploying new versions of my site.&lt;/p&gt;
+&lt;p&gt;Note: This will be a technical post.  If you&amp;rsquo;re following along with my adventure in Albania, you can skip this one.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Day 1 in Albania</title>
+      <link>http://www.gordonburgett.net/archive/2015/09_day-1-in-albania/</link>
+      <pubDate>Mon, 28 Sep 2015 15:15:11 +0100</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2015/09_day-1-in-albania/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m here!&lt;/p&gt;
+&lt;iframe src=&#34;https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.4535466042985!2d19.824206000000004!3d41.32075000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350311c1967ddd5%3A0x9e7b34200fa98786!2sInstituti+Jeta+e+Re!5e0!3m2!1sen!2s!4v1443700342010&#34; width=&#34;600&#34; height=&#34;450&#34; frameborder=&#34;0&#34; style=&#34;border:0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;It&amp;rsquo;s just as I remember it.  All the buildings, streets, people.  It almost feels like a 2nd home.  I arrived at 2:30pm, and was picked up by my team leader Illir Stavro.  He dropped me off at my apartment, which I&amp;rsquo;m sharing with two new members of the high-school ministry team: Gedis and Pal.  It&amp;rsquo;s a nice, small apartment.  I have my own room, and there&amp;rsquo;s a living area with a couch and a small bathroom and kitchen.  It&amp;rsquo;s different from what I&amp;rsquo;m used to but not too different.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Newsletter • Sep 26 2015</title>
+      <link>http://www.gordonburgett.net/newsletter/26-9-2015/</link>
+      <pubDate>Sat, 26 Sep 2015 12:00:00 +0100</pubDate>
+      <guid>http://www.gordonburgett.net/newsletter/26-9-2015/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fully funded!</title>
+      <link>http://www.gordonburgett.net/archive/2015/08_fully-funded/</link>
+      <pubDate>Wed, 05 Aug 2015 20:40:27 -0500</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2015/08_fully-funded/</guid>
+      <description>&lt;p&gt;Thanks to a good friend hosting an event last weekend, I have now reached my monthly goal!  And I have some room to spare!  I&amp;rsquo;m really thankful for everyone who&amp;rsquo;s contributed to help me.  I&amp;rsquo;m excited to finalize my plans to begin this journey!&lt;/p&gt;
+&lt;p&gt;Speaking of which, I bought my plane tickets today!  First time I&amp;rsquo;ve ever bought a one-way flight.  But it&amp;rsquo;s locked in now.  I fly from Dallas to Washington D.C. on September 23, and I&amp;rsquo;ll fly from DC to Tirana on Sunday the 27th.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Journal • 2015</title>
+      <link>http://www.gordonburgett.net/albania/2015/</link>
+      <pubDate>Sun, 12 Jul 2015 21:36:09 -0500</pubDate>
+      <guid>http://www.gordonburgett.net/albania/2015/</guid>
+      <description>&lt;div class=&#34;data-img&#34; style=&#34;width:100%; max-width:100%&#34;&gt;
+	&lt;img src=&#34;http://www.gordonburgett.net/images/albania/2015/team_in_berat.jpg&#34; &gt;
+	&lt;/img&gt;
+	&lt;span&gt;photo by &lt;a href=&#34;http://www.ronacord.com&#34;&gt;Ron Acord&lt;/a&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;h1 id=&#34;day-1&#34;&gt;Day 1&lt;/h1&gt;
+&lt;h2 id=&#34;Jul-2&#34; class=&#34;hidden-xs&#34;&gt;Thursday July 2&lt;/h2&gt;
+&lt;p&gt;Back for a third time!  Kinda hard to believe we got 20 people.  We have 2 teams full of great people and we&amp;rsquo;re here and ready to rumble.  Will and Lauren are leading one team of 10 that&amp;rsquo;s staying in Tirana, while Lucy and I lead the team that will depart to Elbasan on Sunday.
+Getting here was much better than last year, thanks mostly to Lucy&amp;rsquo;s organizational leadership and Will&amp;rsquo;s being on the ball with prep.  In fact I pretty much left most of the prep work to them.  It&amp;rsquo;s great that Lucy&amp;rsquo;s leadership style is pretty much the opposite of mine.  We complement eachother well even if we butt heads sometimes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Almost time</title>
+      <link>http://www.gordonburgett.net/archive/2015/06_almost-time/</link>
+      <pubDate>Thu, 18 Jun 2015 21:38:47 -0500</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2015/06_almost-time/</guid>
+      <description>&lt;p&gt;In less than 2 weeks, I&amp;rsquo;ll be in Albania :)  This time just for 2 weeks, but I&amp;rsquo;m ready to go for good.  But, all things in their time:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;There is a time for everything,&lt;br&gt;
+and a season for every activity under the heavens:&lt;br&gt;
+a time to be born and a time to die,&lt;br&gt;
+a time to plant and a time to uproot,&lt;br&gt;
+a time to kill and a time to heal,&lt;br&gt;
+a time to tear down and a time to build,&lt;br&gt;
+a time to weep and a time to laugh,&lt;br&gt;
+a time to mourn and a time to dance,&lt;br&gt;
+a time to scatter stones and a time to gather them,&lt;br&gt;
+a time to embrace and a time to refrain from embracing,&lt;br&gt;
+a time to search and a time to give up,&lt;br&gt;
+a time to keep and a time to throw away,&lt;br&gt;
+a time to tear and a time to mend,&lt;br&gt;
+a time to be silent and a time to speak,&lt;br&gt;
+a time to love and a time to hate,&lt;br&gt;
+a time for war and a time for peace.&lt;br&gt;
+&lt;span class=&#34;source&#34;&gt;&lt;a href=&#34;http://biblehub.com/niv/ecclesiastes/3.htm&#34;&gt;Ecclesiastes 3:1&lt;/a&gt;&lt;/source&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Migrating to Node</title>
+      <link>http://www.gordonburgett.net/archive/2015/04_migrating-to-node/</link>
+      <pubDate>Fri, 10 Apr 2015 23:23:19 -0500</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2015/04_migrating-to-node/</guid>
+      <description>My experience migrating my blog to nodejs</description>
+    </item>
+    <item>
+      <title>what is love?</title>
+      <link>http://www.gordonburgett.net/archive/2015/03_what-is-love/</link>
+      <pubDate>Mon, 30 Mar 2015 23:14:36 -0500</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2015/03_what-is-love/</guid>
+      <description>&lt;br/&gt;
+What is love?  Is it just not hurting me, as the song goes?
+&lt;div class=&#34;video-container&#34;&gt;
+&lt;iframe width=&#34;854&#34; height=&#34;510&#34; src=&#34;https://www.youtube.com/embed/D2h4PhgobI8&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;The scripture has a different definition of love.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;This is My commandment, that you love one another, just as I have loved you. Greater love has no one than this, that one lay down his life for his friends. &lt;span class=&#34;red&#34;&gt;You are My friends if you do what I command you.&lt;/span&gt; No longer do I call you slaves, for the slave does not know what his master is doing; but I have called you friends, for all things that I have heard from My Father I have made known to you. You did not choose Me but I chose you, and appointed you that you would go and bear fruit, and that your fruit would remain, so that whatever you ask of the Father in My name He may give to you. This I command you, that you love one another.&lt;br&gt;
+&lt;span class=&#34;source&#34;&gt;&lt;a href=&#34;http://biblehub.com/nasb/john/15.htm&#34;&gt;John 15:12-17&lt;/a&gt;&lt;/source&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>which which?</title>
+      <link>http://www.gordonburgett.net/archive/2015/01_which-which/</link>
+      <pubDate>Tue, 06 Jan 2015 22:49:08 +0100</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2015/01_which-which/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m using &lt;a href=&#34;http://locomotivecms.com/&#34;&gt;locomotivecms&lt;/a&gt; for a project I&amp;rsquo;m working on, and it uses &lt;a href=&#34;http://www.imagemagick.org/&#34;&gt;ImageMagick&lt;/a&gt; for resizing pictures on the fly.  The &lt;a href=&#34;http://doc.locomotivecms.com/get-started/install-wagon#windows&#34;&gt;standard instructions&lt;/a&gt; say to use the bitnami Ruby stack installer to get everything you need in a nice neat bundle.&lt;/p&gt;
+&lt;p&gt;That worked for me for a while, until I needed to update the version of ruby I&amp;rsquo;m using.  So, I went through the long and painful process of uninstalling the ruby stack, installing each component individually, identifying and correcting a ton of minor problems, and finally squashed the last bug by writing this program.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Euro Trip!</title>
+      <link>http://www.gordonburgett.net/archive/2015/01_euro-trip/</link>
+      <pubDate>Mon, 05 Jan 2015 10:20:47 -0600</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2015/01_euro-trip/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;Budapest Parliament&#34; loading=&#34;lazy&#34; src=&#34;http://www.gordonburgett.net/images/2015/euro2015/parliament_night.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The best part is it&amp;rsquo;s only half over!  I&amp;rsquo;m writing this post from the home of my good friend Aldo Rustemi, in Tirana the capital city of Albania.  So much has happened, and so much more is to come.  It&amp;rsquo;s awesome :)&lt;/p&gt;
+&lt;h3 id=&#34;wien-österreich&#34;&gt;Wien, Österreich&lt;/h3&gt;
+&lt;p&gt;We began the trip in Vienna, where we went sightseeing just the three of us (me, Lucy and Chris).  Vienna in the winter is amazing, especially when there&amp;rsquo;s snow on the ground.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Realness of God</title>
+      <link>http://www.gordonburgett.net/archive/2014/12_realness-of-god/</link>
+      <pubDate>Tue, 16 Dec 2014 22:20:34 -0600</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2014/12_realness-of-god/</guid>
+      <description>&lt;p&gt;My friends and I were discussing christian music last night.  The main line of discussion was the lack of realness &amp;amp; relevance of most christian songs.  Most of them end up a bit like this:&lt;/p&gt;
+&lt;iframe width=&#34;640&#34; height=&#34;480&#34; src=&#34;//www.youtube.com/embed/GhYuA0Cz8ls&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;When we turn worship leaders into recording artists, we get worship songs.  Worship songs are great for &amp;ldquo;worship&amp;rdquo; (i.e. that thing we do on Sunday mornings), but the problem is that in reality, &lt;em&gt;everything is supposed to be worship&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>hosting the blog</title>
+      <link>http://www.gordonburgett.net/archive/2014/12_hosting-the-blog/</link>
+      <pubDate>Sun, 14 Dec 2014 18:42:21 -0600</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2014/12_hosting-the-blog/</guid>
+      <description>&lt;p&gt;I decided to use Amazon EC2 to host the blog, because they give you 1 year free on a micro instance.  Plus I&amp;rsquo;ve always wanted to learn how to host something on Amazon&amp;rsquo;s cloud.  I&amp;rsquo;ll get a linux instance and put an Apache HTTP server on it.  Should be easy enough to do.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s my EC2 management console after signing up for an Amazon account and creating a linux micro instance:
+![EC2 Management console](/images/2014/EC2 management console.png)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Creating a blog</title>
+      <link>http://www.gordonburgett.net/archive/2014/12_creating-a-blog/</link>
+      <pubDate>Sun, 14 Dec 2014 13:52:12 -0600</pubDate>
+      <guid>http://www.gordonburgett.net/archive/2014/12_creating-a-blog/</guid>
+      <description>&lt;h3 id=&#34;well-here-it-is&#34;&gt;Well, here it is.&lt;/h3&gt;
+&lt;p&gt;I&amp;rsquo;ve been wanting to create a blog for a while.  I don&amp;rsquo;t know what it will look like in the future, or how often I&amp;rsquo;ll update it, but as I sit here writing it it&amp;rsquo;s kind of cathartic.  It would be good to get some thoughts out there, and if anybody reads it that&amp;rsquo;s a bonus.&lt;/p&gt;
+&lt;p&gt;I want to talk about anything and everything on this blog.  I&amp;rsquo;ll delve into my work, hopefully some of these pages will be useful when another developer types some obscure error code into google.  I&amp;rsquo;ll discuss my faith, hopefully that could spark some interesting discussion.  I&amp;rsquo;ll discuss the important stuff that happens in my life, hopefully someone might find it interesting.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Journal • 2014</title>
+      <link>http://www.gordonburgett.net/albania/2014/</link>
+      <pubDate>Sat, 12 Jul 2014 21:36:09 -0500</pubDate>
+      <guid>http://www.gordonburgett.net/albania/2014/</guid>
+      <description>&lt;h1 id=&#34;travel-days&#34;&gt;Travel Days&lt;/h1&gt;
+&lt;h2 id=&#34;Jul-12-13&#34; class=&#34;hidden-xs&#34;&gt;July 12-13&lt;/h2&gt;
+&lt;p&gt;We flew overnight on Austrian airways, leaving early morning on the 12th with a layover at Washington Dulles.  We were all tired, but some of us were awake enough to go out to the National Air and Space museum Udvar-Hazy center for a couple hours.  My dad decided to meet us there, since my parents live in Washington DC.  He, my little sister Alina and I hung out with Will, Danita, and Ron at the museum, which was pretty awesome.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Journal • 2013</title>
+      <link>http://www.gordonburgett.net/albania/2013/</link>
+      <pubDate>Fri, 26 Jul 2013 21:36:09 -0500</pubDate>
+      <guid>http://www.gordonburgett.net/albania/2013/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;Albania Fried Chicken&#34; loading=&#34;lazy&#34; src=&#34;http://www.gordonburgett.net/images/albania/2013/afc.jpg&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;day-1&#34;&gt;Day 1&lt;/h1&gt;
+&lt;h2 id=&#34;Jul-18&#34; class=&#34;hidden-xs&#34;&gt;Thursday July 18&lt;/h2&gt;
+&lt;p&gt;I don&amp;rsquo;t even know why God brought us down here.  What more can we do that He&amp;rsquo;s not already doing?  Today we got off the plane, and found out our luggage won&amp;rsquo;t arrive until tomorrow.  We rode into town with a nice guy who picked us up.  We were met at the hotel by Aldo, who is one of the leaders of Ice and Spice.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Thank You!</title>
+      <link>http://www.gordonburgett.net/contact/thanks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://www.gordonburgett.net/contact/thanks/</guid>
+      <description>&lt;h2 id=&#34;message-sent-successfully&#34;&gt;Message Sent Successfully&lt;/h2&gt;
+&lt;p&gt;Thank you for reaching out! I&amp;rsquo;ve received your message and will get back to you as soon as possible.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.gordonburgett.net/&#34;&gt;← Back to Home&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,17 +1,62 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Projects on Gordon Burgett | Director of Technology Development</title><link>http://www.gordonburgett.net/projects/</link><description>Recent content in Projects on Gordon Burgett | Director of Technology Development</description><generator>Hugo</generator><language>en</language><copyright>All content © Gordon Burgett, 2014-2024</copyright><lastBuildDate>Mon, 02 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://www.gordonburgett.net/projects/index.xml" rel="self" type="application/rss+xml"/><item><title>Watermark Community Church App</title><link>http://www.gordonburgett.net/projects/watermark-community-church-mobile-app/</link><pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate><guid>http://www.gordonburgett.net/projects/watermark-community-church-mobile-app/</guid><description>&lt;p>As Director of Tech Dev at Watermark, I overhauled our mobile app managing the entire process from
-vision casting through budgeting, vendor selection, implementation, testing, and launch.&lt;/p></description></item><item><title>Healthshare Technology Solutions</title><link>http://www.gordonburgett.net/projects/healthshare-technology-solutions/</link><pubDate>Sat, 16 Nov 2024 00:00:00 +0000</pubDate><guid>http://www.gordonburgett.net/projects/healthshare-technology-solutions/</guid><description>&lt;p>I built the HealthShare app to solve my own problems with Christian Healthcare Ministries (CHM). We&amp;rsquo;ve now grown it into a B2B
-SAAS serving multiple churches. With the HealthShare app, we&amp;rsquo;ve solved the administrative burden of CHM for members,
-and we&amp;rsquo;re providing visibility into CHM spend for healthcare plan administrators at our partner churches and businesses.&lt;/p>
-&lt;p>&lt;em>Would you like to try the app out for yourself? &lt;a href="https://www.healthsharetech.com/contact/">Contact Us&lt;/a>&lt;/em>&lt;/p></description></item><item><title>VoirDire App</title><link>http://www.gordonburgett.net/projects/voir-dire-app/</link><pubDate>Sun, 20 Oct 2024 00:00:00 +0000</pubDate><guid>http://www.gordonburgett.net/projects/voir-dire-app/</guid><description>&lt;p>We built the VoirDire app to help our client handle jury selection electronically for his upcoming trials. He is now
-marketing the app through his network of attorneys to build out the user base.&lt;/p>
-&lt;p>Many attorneys still use pen and paper sticky notes to write down juror notes, including tracking responses to juror
-questions during the jury selection process. We solved the note taking process electronically, making note taking
-both more robust and searchable. It also helps attorneys appear more organized in the courtroom, where appearances
-can make a difference on the margins in the outcome of a case.&lt;/p></description></item><item><title>Neighbor Solutions</title><link>http://www.gordonburgett.net/projects/neighbor-solutions/</link><pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate><guid>http://www.gordonburgett.net/projects/neighbor-solutions/</guid><description>&lt;p>In contracting hourly for &lt;a href="https://neighbor.solutions/">Neighbor Solutions&lt;/a>, I&amp;rsquo;ve been enjoying
-working with AI to build unstructured data import and a Retrieval Augmented Generation (RAG) pipeline.&lt;/p>
-&lt;p>Neighbor Solutions is a brand new CRM built to enable organizations to better care for our unhoused neighbors and those in need.
-It features a frontend app built using &lt;a href="astro.build">the Astro javascript framework&lt;/a> that displays a local map with
-all available resources for homeless people. The backend built using Ruby on Rails also provides case notes, interaction
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Projects on Gordon Burgett | Director of Software Engineering, Albers Aerospace</title>
+    <link>http://www.gordonburgett.net/projects/</link>
+    <description>Recent content in Projects on Gordon Burgett | Director of Software Engineering, Albers Aerospace</description>
+    <image>
+      <title>Gordon Burgett | Director of Software Engineering, Albers Aerospace</title>
+      <url>http://www.gordonburgett.net/images/headshot.jpg</url>
+      <link>http://www.gordonburgett.net/images/headshot.jpg</link>
+    </image>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>All content © Gordon Burgett, 2014-2026</copyright>
+    <lastBuildDate>Mon, 02 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://www.gordonburgett.net/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Watermark Community Church App</title>
+      <link>http://www.gordonburgett.net/projects/watermark-community-church-mobile-app/</link>
+      <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://www.gordonburgett.net/projects/watermark-community-church-mobile-app/</guid>
+      <description>&lt;p&gt;As Director of Tech Dev at Watermark, I overhauled our mobile app managing the entire process from
+vision casting through budgeting, vendor selection, implementation, testing, and launch.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Healthshare Technology Solutions</title>
+      <link>http://www.gordonburgett.net/projects/healthshare-technology-solutions/</link>
+      <pubDate>Sat, 16 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://www.gordonburgett.net/projects/healthshare-technology-solutions/</guid>
+      <description>&lt;p&gt;I built the HealthShare app to solve my own problems with Christian Healthcare Ministries (CHM).  We&amp;rsquo;ve now grown it into a B2B
+SAAS serving multiple churches.  With the HealthShare app, we&amp;rsquo;ve solved the administrative burden of CHM for members,
+and we&amp;rsquo;re providing visibility into CHM spend for healthcare plan administrators at our partner churches and businesses.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Would you like to try the app out for yourself? &lt;a href=&#34;https://www.healthsharetech.com/contact/&#34;&gt;Contact Us&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>VoirDire App</title>
+      <link>http://www.gordonburgett.net/projects/voir-dire-app/</link>
+      <pubDate>Sun, 20 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://www.gordonburgett.net/projects/voir-dire-app/</guid>
+      <description>&lt;p&gt;We built the VoirDire app to help our client handle jury selection electronically for his upcoming trials.  He is now
+marketing the app through his network of attorneys to build out the user base.&lt;/p&gt;
+&lt;p&gt;Many attorneys still use pen and paper sticky notes to write down juror notes, including tracking responses to juror
+questions during the jury selection process.  We solved the note taking process electronically, making note taking
+both more robust and searchable.  It also helps attorneys appear more organized in the courtroom, where appearances
+can make a difference on the margins in the outcome of a case.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Neighbor Solutions</title>
+      <link>http://www.gordonburgett.net/projects/neighbor-solutions/</link>
+      <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://www.gordonburgett.net/projects/neighbor-solutions/</guid>
+      <description>&lt;p&gt;In contracting hourly for &lt;a href=&#34;https://neighbor.solutions/&#34;&gt;Neighbor Solutions&lt;/a&gt;, I&amp;rsquo;ve been enjoying
+working with AI to build unstructured data import and a Retrieval Augmented Generation (RAG) pipeline.&lt;/p&gt;
+&lt;p&gt;Neighbor Solutions is a brand new CRM built to enable organizations to better care for our unhoused neighbors and those in need.
+It features a frontend app built using &lt;a href=&#34;astro.build&#34;&gt;the Astro javascript framework&lt;/a&gt; that displays a local map with
+all available resources for homeless people.  The backend built using Ruby on Rails also provides case notes, interaction
 tracking, automation, and other tools for service providers to more effectively care for those who come through their doors.
 Finally, a closed-loop referral solution enables metrics for defining success by the ultimate outcome of a case, not just
-by number of services provided.&lt;/p></description></item></channel></rss>
+by number of services provided.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
