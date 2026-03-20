@@ -1,3 +1,8 @@
+<!-- Prevent indexing of unlisted posts -->
+{{- if .Params.unlisted }}
+<meta name="robots" content="noindex, nofollow" />
+{{- end }}
+
 <!-- Enhanced Open Graph / LinkedIn meta tags -->
 {{- if .IsPage }}
 <meta property="og:type" content="article" />

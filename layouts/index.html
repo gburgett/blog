@@ -30,6 +30,7 @@
 
 {{- if site.Params.homeInfoParams }}
 {{- $pages = where site.RegularPages "Type" "in" (slice "posts") }}
+{{- $pages = where $pages "Params.unlisted" "!=" true }}
 {{- end }}
 
 {{- $paginator := .Paginate (first 5 $pages) }}
