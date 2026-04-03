@@ -1,4 +1,4 @@
-# 2026-03-20 Spec-Driven Development (DRAFT)
+# 2026-03-20 Spec-Driven Development (posted 2026-04-03)
 
 I've been coding with AI agents for a while now, and I kept hitting the same bottleneck: me.
 
