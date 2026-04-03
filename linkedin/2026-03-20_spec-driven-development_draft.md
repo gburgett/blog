@@ -20,6 +20,8 @@ The user story lives alongside the acceptance criteria. When a test fails during
 
 2. Comprehensive firmware integration tests for our Albers Aerospace SC-410 camera - 8 hour run implementing 16 scenarios, including one that required a full WebRTC peer connection just for testing
 
+3. Dynamic data entry replacing manual form with approval process and analytics for managers supporting our Albers Industrials division - This one I built from first principles, translating spoken requirements into acceptance criteria before letting Claude loose on a 4 hour run.
+
 **The workflow:**
 
 I write high-level Cucumber scenarios describing what the system should do. No implementation details, just behavior. Then I tell Claude: "Never modify feature files. Implement all scenarios. Keep iterating until all tests pass."
@@ -42,4 +44,4 @@ AI agents give up when things get hard. Claude will sometimes leave TODO comment
 
 Anyone else experimenting with BDD tools for AI-driven development? I'd love to compare notes on what's working.
 
-Full writeup on my blog: [link to come]
+Full writeup on my blog: https://gordonburgett.net/posts/2026/03_spec-driven-development/

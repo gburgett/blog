@@ -4,14 +4,14 @@ title = "Pushing Claude Code Further with Spec Driven Development"
 Tags = ["AI", "Development", "Albers Aerospace", "Claude Code"]
 date = "2026-03-20T10:00:00-05:00"
 draft = false
-unlisted = true
+unlisted = false
 +++
 
 # The Problem I'm Trying to Solve
 
 I've been coding with AI agents for as long as they've been generally available, and I keep running into the same bottleneck: me. Every time Claude generates code, I need to review it. Every time it completes a feature, I need to verify it actually works. Every time it runs tests, I need to check if the failures are real bugs or hallucinations. I'm the human in the loop, and I'm slowing everything down.
 
-Here's what's been bugging me: Is there a way to let an AI agent run for hours, implement a complex feature, and come back to a result that's secure, well-tested, and correct - without me having to review every single line of code? What if I could just review the high-level decisions and trust that the implementation details are solid?
+Here's what's been bugging me: Is there a way to let an AI agent run for hours through multiple compaction cycles, implement a complex feature, and come back to a result that's secure, well-tested, and correct - without me having to review every single line of code? What if I could just review the high-level decisions and trust that the implementation details are solid?
 
 This is still an unsolved problem, and most of the advice I've read misses the mark:
 
@@ -41,7 +41,7 @@ If you've been working with AI coding agents for a while, these probably feel fa
 
 About a decade ago, when I was a mid-level developer at GDSX (later acquired by Concur, then SAP), I discovered [Cucumber](https://cucumber.io/) and got really excited about it. The promise was music to my developer ears: business stakeholders write acceptance criteria in plain English, I get to just bang out the code, and in the end I get executable documentation that verifies the system works as intended.
 
-I was naive enough to print out a set of Cucumber specs and show them to our CEO, thinking she'd appreciate that our feature requirements were both human-readable and machine-verifiable. She politely nodded and moved on - she didn't care about the technical elegance. When I realized the business folks weren't going to write specs for me, I gave up on Cucumber. The pain of implementing step definitions across multiple files and tracing scenarios through the codebase wasn't worth it when I could just write self-contained RSpec tests.
+I was naive enough to print out a set of Cucumber specs and show them to our CEO, thinking she'd appreciate that our feature requirements were both human-readable and machine-verifiable. She politely nodded and moved on - she was operating at too high a level to really review the feature descriptions. When I realized the business folks weren't going to write specs for me, I gave up on Cucumber. The pain of implementing step definitions across multiple files and tracing scenarios through the codebase wasn't worth it when I could just write self-contained RSpec tests.
 
 Fast forward to a few weeks ago. I'm discussing one of our services with the CTO at Albers Aerospace, and he asks: "If we had to recreate this service from scratch, how would we even know what all the requirements are?"
 
