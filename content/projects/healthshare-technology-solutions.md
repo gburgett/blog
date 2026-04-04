@@ -5,7 +5,7 @@ title = "Healthshare Technology Solutions"
 image = "/images/projects/healthshare-track.png"
 badges = ["React", "PWA", "Supabase"]
 links = [
-    {icon = "fas fa-globe", url = "https://healthsharetech.com"}
+    {icon = "fas fa-globe", url = "https://www.healthsharetech.com"}
 ]
 date = "2024-11-16"
 +++
