@@ -1,7 +1,7 @@
 +++
 Categories = ["AI", "Development"]
 title = "Towards an Effective AI Agent Authorization Framework"
-Tags = ["AI", "Agent Design", "Albers Aerospace"]
+Tags = ["AI", "Agent Design"]
 date = "2026-03-20T10:00:00-05:00"
 draft = true
 unlisted = true
@@ -15,7 +15,7 @@ In this blog post I want to think through what kind of granular authorization co
 
 ## Background
 
-I run Agile project management at Albers Aerospace through a self-hosted Redmine instance with several custom plugins.  I recently thought about adding a CLI over the API, allowing me to triage my backlog through Claude Code.  I very quickly got the proof of concept up and working: the CLI can create, read, update, and delete projects and stories, as well as re-order my agile board.  But the permission scope is too broad - Claude can do everything I can do.  If I want to run it in the background I need a more fine-grained permissions system.
+I run Agile project management through a self-hosted Redmine instance with several custom plugins.  I recently thought about adding a CLI over the API, allowing me to triage my backlog through Claude Code.  I very quickly got the proof of concept up and working: the CLI can create, read, update, and delete projects and stories, as well as re-order my agile board.  But the permission scope is too broad - Claude can do everything I can do.  If I want to run it in the background I need a more fine-grained permissions system.
 
 ## Thought process
 

@@ -1,7 +1,7 @@
 +++
 Categories = ["AI", "Development"]
 title = "Pushing Claude Code Further with Spec Driven Development"
-Tags = ["AI", "Development", "Albers Aerospace", "Claude Code"]
+Tags = ["AI", "Development", "Claude Code"]
 date = "2026-03-20T10:00:00-05:00"
 draft = false
 unlisted = false
