@@ -13,3 +13,5 @@ yarn-error.log
 resources/_gen/*
 
 .playwright-cli
+
+.DS_Store

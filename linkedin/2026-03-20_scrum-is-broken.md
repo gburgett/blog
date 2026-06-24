@@ -1,4 +1,4 @@
-# 2026-03-20 Scrum is Broken (DRAFT)
+# 2026-03-20 Scrum is Broken
 
 I thought I knew what Agile looked like. 2-week sprints, story points, daily standups. I ran that cadence at my last job and it worked.
 

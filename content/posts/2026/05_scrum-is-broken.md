@@ -2,7 +2,7 @@
 Categories = ["AI", "Development"]
 title = "Scrum is Broken"
 Tags = ["AI"]
-date = "2026-03-20T10:00:00-05:00"
+date = "2026-06-24T10:00:00-05:00"
 draft = false
 unlisted = false
 quote = "What does Agile look like when the cost of writing code trends to zero?"
