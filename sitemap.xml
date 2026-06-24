@@ -4,34 +4,62 @@
   
   <url>
     <loc>http://www.gordonburgett.net/categories/ai/</loc>
-    <lastmod>2026-03-20T10:00:00-05:00</lastmod>
+    <lastmod>2026-06-24T10:00:00-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://www.gordonburgett.net/tags/ai/</loc>
-    <lastmod>2026-03-20T10:00:00-05:00</lastmod>
+    <lastmod>2026-06-24T10:00:00-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://www.gordonburgett.net/categories/</loc>
-    <lastmod>2026-03-20T10:00:00-05:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.gordonburgett.net/tags/claude-code/</loc>
-    <lastmod>2026-03-20T10:00:00-05:00</lastmod>
+    <lastmod>2026-06-24T10:00:00-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://www.gordonburgett.net/categories/development/</loc>
+    <lastmod>2026-06-24T10:00:00-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.gordonburgett.net/</loc>
+    <lastmod>2026-06-24T10:00:00-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.gordonburgett.net/posts/</loc>
+    <lastmod>2026-06-24T10:00:00-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.gordonburgett.net/posts/2026/05_scrum-is-broken/</loc>
+    <lastmod>2026-06-24T10:00:00-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.gordonburgett.net/tags/</loc>
+    <lastmod>2026-06-24T10:00:00-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.gordonburgett.net/tags/claude-code/</loc>
     <lastmod>2026-03-20T10:00:00-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -45,35 +73,7 @@
   </url>
   
   <url>
-    <loc>http://www.gordonburgett.net/</loc>
-    <lastmod>2026-03-20T10:00:00-05:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.gordonburgett.net/posts/</loc>
-    <lastmod>2026-03-20T10:00:00-05:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://www.gordonburgett.net/posts/2026/03_spec-driven-development/</loc>
-    <lastmod>2026-03-20T10:00:00-05:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.gordonburgett.net/posts/2026/05_scrum-is-broken/</loc>
-    <lastmod>2026-03-20T10:00:00-05:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.gordonburgett.net/tags/</loc>
     <lastmod>2026-03-20T10:00:00-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
