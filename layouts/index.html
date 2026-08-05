@@ -1,5 +1,7 @@
 {{- define "main" }}
 
+{{- partial "ai_honeytrap.html" . }}
+
 {{- if (ne .Site.Params.profileMode.enabled true) }}
 
 {{- partial "home_info.html" . }}
