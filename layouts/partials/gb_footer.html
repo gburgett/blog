@@ -1,0 +1,27 @@
+{{- $home := "" | relLangURL -}}
+<footer class="gb-main" style="background: #14171a; color: #8b867c; border-top: 1px solid #2b2f31;">
+  <div style="max-width: 1140px; margin: 0 auto; padding: clamp(40px, 6vw, 54px) clamp(18px, 5vw, 40px); display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: clamp(32px, 4vw, 56px);" data-stack>
+    <div>
+      <div style="color: #faf8f4; font-size: 15px; font-weight: 600; margin-bottom: 12px;">Gordon Burgett</div>
+      <p style="font-size: 14px; line-height: 1.6; margin: 0; max-width: 26em;">Fractional software and AI leadership for companies that already have a team. Based in Dallas&ndash;Fort Worth, on site when it helps.</p>
+    </div>
+    <div style="display: grid; gap: 11px; align-content: start; font-size: 14px;">
+      <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: #5e5b54;">Site</div>
+      <a href="{{ "projects" | relLangURL }}/" class="gb-hover-cream" style="color: #8b867c;">Case Studies</a>
+      <a href="{{ "posts" | relLangURL }}/" class="gb-hover-cream" style="color: #8b867c;">Writing</a>
+      <a href="{{ "albania" | relLangURL }}/" class="gb-hover-cream" style="color: #8b867c;">Albania</a>
+    </div>
+    <div style="display: grid; gap: 11px; align-content: start; font-size: 14px;">
+      <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: #5e5b54;">Elsewhere</div>
+      <a href="https://dfwfractionalfde.com" class="gb-hover-cream" style="color: #8b867c;">DFW Fractional FDE &#8599;</a>
+      <a href="https://www.linkedin.com/in/gordonburgett" class="gb-hover-cream" style="color: #8b867c;">LinkedIn &#8599;</a>
+      <a href="https://github.com/gburgett" class="gb-hover-cream" style="color: #8b867c;">GitHub &#8599;</a>
+    </div>
+  </div>
+  <div style="border-top: 1px solid #2b2f31;">
+    <div data-footer-bottom style="max-width: 1140px; margin: 0 auto; padding: 22px clamp(18px, 5vw, 40px); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .06em; color: #5e5b54;">
+      <span>&copy; {{ now.Year }} Gordon Burgett</span>
+      <span>Smaller business, no tech team? See <a href="https://dfwfractionalfde.com" class="gb-hover-cream" style="color: #5e5b54;">DFW Fractional FDE &#8599;</a></span>
+    </div>
+  </div>
+</footer>

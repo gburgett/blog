@@ -1,90 +1,186 @@
 {{- define "main" }}
+{{- $watermark := site.GetPage "/projects/watermark-community-church-mobile-app" }}
+{{- $aiAgents := site.GetPage "/posts/2026/03_building-ai-agents-that-empower" }}
+{{- $dataImport := site.GetPage "/posts/2024/11_neighbor-solutions-import" }}
+{{- $scrum := site.GetPage "/posts/2026/05_scrum-is-broken" }}
 
-{{- partial "ai_honeytrap.html" . }}
+<div class="gb-main">
+<main id="top">
 
-{{- if (ne .Site.Params.profileMode.enabled true) }}
+  <section style="border-bottom: 1px solid #e6e0d6;">
+    <div style="max-width: 1140px; margin: 0 auto; padding: clamp(48px, 9vw, 96px) clamp(18px, 5vw, 40px) clamp(44px, 7vw, 76px); display: grid; grid-template-columns: 1.35fr .85fr; gap: clamp(34px, 5vw, 72px); align-items: start;" data-stack>
+      <div>
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: #1c5f63; margin-bottom: 26px;">Dallas&ndash;Fort Worth &middot; Available now</div>
+        <h1 style="font-size: clamp(40px, 8.5vw, 62px); line-height: 1.04; letter-spacing: -.035em; font-weight: 600; margin: 0 0 18px; color: #14171a;">Gordon Burgett</h1>
+        <div style="font-family: 'IBM Plex Serif', serif; font-size: clamp(20px, 4.4vw, 27px); line-height: 1.35; color: #1c5f63; margin: 0 0 30px;">Fractional AI Engineering Director</div>
+        <p style="font-size: clamp(16.5px, 2.2vw, 19px); line-height: 1.62; color: #40403b; margin: 0 0 18px; max-width: 40em;">I spent the last few years leading engineering through the AI shift from the inside &mdash; most recently as Director of Software Engineering at an aerospace company.</p>
+        <p style="font-size: clamp(16.5px, 2.2vw, 19px); line-height: 1.62; color: #40403b; margin: 0 0 36px; max-width: 40em;">Now, I help teams navigate the new reality of Software Engineering when writing code is no longer the bottleneck.</p>
+        <div data-hero-cta style="display: flex; flex-wrap: wrap; align-items: center; gap: 22px;">
+          <a href="#contact" class="gb-btn-dark" style="display: inline-flex; align-items: center; gap: 9px; background: #14171a; color: #faf8f4; padding: 15px 26px; border-radius: 2px; font-size: 15px; font-weight: 500;">Have a conversation &rarr;</a>
+        </div>
+      </div>
+      <div data-sidebar style="border-left: 1px solid #e6e0d6; padding-left: 40px; padding-top: 6px;">
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: #8a8478; margin-bottom: 22px;">What I bring</div>
+        <div style="display: grid; gap: 20px;">
+          <div style="display: grid; gap: 5px;"><div style="font-size: 15px; font-weight: 600;">Engineering leadership</div><div style="font-size: 14px; line-height: 1.55; color: #6f6a61;">Team structure, hiring, delivery cadence, and the judgment calls a director makes every week.</div></div>
+          <div style="height: 1px; background: #e6e0d6;"></div>
+          <div style="display: grid; gap: 5px;"><div style="font-size: 15px; font-weight: 600;">AI in real systems</div><div style="font-size: 14px; line-height: 1.55; color: #6f6a61;">Where models actually help, how to evaluate them, and how to ship them into software people depend on.</div></div>
+          <div style="height: 1px; background: #e6e0d6;"></div>
+          <div style="display: grid; gap: 5px;"><div style="font-size: 15px; font-weight: 600;">Build, buy, or skip</div><div style="font-size: 14px; line-height: 1.55; color: #6f6a61;">Reading a roadmap and a vendor pitch with the same eye, then saying plainly which one to take.</div></div>
+          <div style="height: 1px; background: #e6e0d6;"></div>
+          <div style="display: grid; gap: 5px;"><div style="font-size: 15px; font-weight: 600;">Regulated + high-stakes work</div><div style="font-size: 14px; line-height: 1.55; color: #6f6a61;">Defense and Healthcare software, where leaks damage more than your reputation.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-{{- partial "home_info.html" . }}
+  <section style="border-bottom: 1px solid #e6e0d6; background: #f3efe8;">
+    <div style="max-width: 1140px; margin: 0 auto; padding: clamp(44px, 7vw, 72px) clamp(18px, 5vw, 40px);">
+      <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: #8a8478; margin-bottom: 30px;">HOW I THINK ABOUT THIS</div>
+      <div style="display: grid; grid-template-columns: 1.1fr 1fr; gap: clamp(28px, 4vw, 64px); align-items: start;" data-stack>
+        <p style="font-family: 'IBM Plex Serif', serif; font-size: clamp(20px, 3.4vw, 25px); line-height: 1.5; color: #14171a; margin: 0; text-wrap: pretty;">When the cost of writing code approaches zero, what else in your process breaks? What opportunities does that enable?</p>
+        <div style="display: grid; gap: 14px; padding-top: 6px;">
+          <p style="font-size: 16px; line-height: 1.68; color: #4a4741; margin: 0;">That's a leadership problem more than a technical one, and it doesn't take a full-time hire to solve. It takes someone with the standing to make a call and the context to make the right one.</p>
+          <p style="font-size: 16px; line-height: 1.68; color: #4a4741; margin: 0;">I build relationships with your team, standing alongside your developers as we rethink Agile ceremonies, CI/CD pipelines, and review cycles. Realizing the full potential of AI assisted software takes real engineering effort and relational leadership.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-{{- end }}
+  <section id="proof" style="border-bottom: 1px solid #e6e0d6;">
+    <div style="max-width: 1140px; margin: 0 auto; padding: clamp(48px, 8vw, 90px) clamp(18px, 5vw, 40px);">
+      <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: #8a8478; margin-bottom: 18px;">Some things I've worked on</div>
+      <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 18px 40px; margin-bottom: 54px;">
+        <h2 style="font-size: clamp(28px, 5.4vw, 38px); line-height: 1.14; letter-spacing: -.025em; font-weight: 600; margin: 0; max-width: 18em; color: #14171a;">Mostly cases where the call that mattered wasn't a technical one.</h2>
+        {{- with $watermark }}
+        <a href="{{ .RelPermalink }}" class="gb-hover-ink" style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: #1c5f63; white-space: nowrap;">Read a full write-up &rarr;</a>
+        {{- end }}
+      </div>
+      <div data-quad style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: #e6e0d6; border: 1px solid #e6e0d6;">
+        {{- $cases := slice
+          (dict "page" $watermark "tag" "Outside team &middot; Vendor selection" "title" "A mobile app built entirely by someone else" "body" "I carried the vision, the budget, the vendor choice, and the delivery oversight for an app used at congregation scale &mdash; without an internal mobile team to build it." "outcome" "Shipped, and still running")
+          (dict "page" $aiAgents "tag" "AI agents &middot; Product" "title" "An AI agent that non-technical users trust" "body" "I set the design principles for a customer-facing agent at HealthShare &mdash; the goal being to make people more capable, not to put AI on the box." "outcome" "In production")
+          (dict "page" $dataImport "tag" "Knowing when not to" "title" "A data import I deliberately kept boring" "body" "Messy PDFs and screenshots, and an obvious temptation to point an LLM at all of it. The interesting decision was where the AI stopped and ordinary code took over." "outcome" "Cheaper and more accurate")
+          (dict "page" $scrum "tag" "Ways of working" "title" "What AI does to how a team actually ships" "body" "What I worked through at Albers &mdash; including what happens to your planning cadence when a sprint of work finishes in an afternoon." "outcome" "Learned in a regulated industry")
+        -}}
+        {{- range $cases }}
+        <a href="{{ .page.RelPermalink }}" class="gb-card-cream" style="background: #faf8f4; padding: 34px; display: grid; gap: 14px; align-content: start; min-height: 210px;">
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: #1c5f63;">{{ .tag | safeHTML }}</div>
+          <h3 style="font-size: 22px; line-height: 1.25; letter-spacing: -.015em; font-weight: 600; margin: 0; color: #14171a;">{{ .title }}</h3>
+          <p style="font-size: 15px; line-height: 1.6; color: #6f6a61; margin: 0;">{{ .body | safeHTML }}</p>
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: #14171a; margin-top: 4px;">{{ .outcome }}</div>
+        </a>
+        {{- end }}
+      </div>
+    </div>
+  </section>
 
-{{- if .Site.Params.homeInfoParams.Content }}
-<br />
-{{- end }}
+  <section id="about" style="border-bottom: 1px solid #e6e0d6; background: #f3efe8;">
+    <div style="max-width: 1140px; margin: 0 auto; padding: clamp(48px, 8vw, 90px) clamp(18px, 5vw, 40px); display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(34px, 5vw, 76px); align-items: start;" data-stack>
+      <div>
+        <img src="/images/headshot.jpg" alt="Gordon Burgett" style="width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center top; border-radius: 2px; filter: grayscale(1) contrast(1.04);">
+        <div style="display: flex; gap: 18px; margin-top: 18px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .08em; text-transform: uppercase;">
+          <a href="https://www.linkedin.com/in/gordonburgett" class="gb-hover-teal" style="color: #6f6a61;">LinkedIn &#8599;</a>
+          <a href="https://github.com/gburgett" class="gb-hover-teal" style="color: #6f6a61;">GitHub &#8599;</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: #8a8478; margin-bottom: 20px;">About</div>
+        <h2 style="font-size: clamp(26px, 5vw, 34px); line-height: 1.18; letter-spacing: -.025em; font-weight: 600; margin: 0 0 24px; max-width: 18em; color: #14171a;">Who am I?</h2>
+        <p style="font-size: 17px; line-height: 1.68; color: #40403b; margin: 0 0 16px;">I've spent fifteen years building production software and the last several leading the people who build it &mdash; in aerospace, healthcare, nonprofit, and B2B SaaS. I've run in-house teams, chosen and managed outsourced ones, and inherited the results of both.</p>
+        <p style="font-size: 17px; line-height: 1.68; color: #40403b; margin: 0 0 16px;">I still write code, which I think matters for this kind of work: it's hard to tell a team what's realistic with AI if you haven't recently found out for yourself.</p>
+        <p style="font-size: 17px; line-height: 1.68; color: #40403b; margin: 0 0 34px;">Outside of work I'm in Dallas&ndash;Fort Worth with my family, an active member at <a href="https://www.watermark.org" class="gb-underline-teal" style="color: #1c5f63; border-bottom: 1px solid #b6cfcb;">Watermark Community Church</a>, and building into missionaries <a href="{{ "albania" | relLangURL }}/" class="gb-underline-teal" style="color: #1c5f63; border-bottom: 1px solid #b6cfcb;">in Albania</a>.</p>
+        <div data-quad style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: #ddd6ca; border: 1px solid #ddd6ca;">
+          {{- $creds := slice
+            (dict "k" "Now" "v" "Fractional software and AI director, full time")
+            (dict "k" "Most recently" "v" "Director of Software Engineering, Albers Aerospace")
+            (dict "k" "Hands still in it" "v" "Go, Rust, TypeScript, C#/.NET; AWS and Azure")
+            (dict "k" "Industries" "v" "Aerospace, healthcare, nonprofit, B2B SaaS")
+          -}}
+          {{- range $creds }}
+          <div style="background: #f3efe8; padding: 20px 22px;">
+            <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: #8a8478; margin-bottom: 8px;">{{ .k }}</div>
+            <div style="font-size: 15px; line-height: 1.5; color: #14171a;">{{ .v }}</div>
+          </div>
+          {{- end }}
+        </div>
+      </div>
+    </div>
+  </section>
 
-{{- partial "sections/capabilities.html" . -}}
+  <section id="reading" style="border-bottom: 1px solid #e6e0d6;">
+    <div style="max-width: 1140px; margin: 0 auto; padding: clamp(48px, 8vw, 90px) clamp(18px, 5vw, 40px); display: grid; grid-template-columns: .7fr 1.3fr; gap: clamp(30px, 5vw, 76px); align-items: start;" data-stack>
+      <div>
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: #8a8478; margin-bottom: 18px;">What I'm reading</div>
+        <h2 style="font-size: clamp(25px, 4.8vw, 32px); line-height: 1.18; letter-spacing: -.025em; font-weight: 600; margin: 0 0 22px; color: #14171a;">Canoeing the Mountains</h2>
+        <div style="font-family: 'IBM Plex Serif', serif; font-size: 18px; line-height: 1.4; color: #1c5f63; margin-bottom: 26px;">Tod Bolsinger</div>
+        <div style="border-left: 2px solid #b6cfcb; padding-left: 18px; font-family: 'IBM Plex Serif', serif; font-size: 17px; line-height: 1.5; color: #4a4741;">It's a book about church leadership. I keep reading it as a book about engineering leadership after AI.</div>
+      </div>
+      <div style="display: grid; gap: 18px;">
+        <p style="font-size: 17px; line-height: 1.68; color: #40403b; margin: 0;">Bolsinger's premise is that Lewis and Clark set out to canoe to the Pacific and found the Rocky Mountains in the way. The canoes were excellent. They were also the wrong tool. What happens when everything that took you up to this point no longer adds value?</p>
+        <p style="font-size: 17px; line-height: 1.68; color: #40403b; margin: 0;">In the past, coding was leading. Writing the hard part yourself, being the person who could unblock anything &mdash; that was how engineering leaders earned the room. Post-AI, those tools are available to everyone. What happens to your processes, your team dynamics, and your sense of self-worth when the skills you used to pride yourself on no longer drive value in the same way?</p>
+        <p style="font-size: 17px; line-height: 1.68; color: #40403b; margin: 0;">The book is blunt about the cost of that. When the old map stops working, something in you has to die before anything new gets built, and replacing your own paradigm is both genuinely painful and completely necessary. Most organizations don't move until they feel that. I've come to think part of my job is naming it early enough that it's a decision instead of an emergency.</p>
+        <p style="font-size: 17px; line-height: 1.68; color: #40403b; margin: 0;">Two other things I've underlined. First: before people follow you off the map, you have to have demonstrated competence on it &mdash; which is a large part of why I still write code. Second: in uncharted territory, trust is the whole currency, and if it's lost the trip is over. That's why this work is measured in days spent alongside your team rather than decks delivered to them.</p>
+        <div data-quad style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: #e6e0d6; border: 1px solid #e6e0d6; margin-top: 10px;">
+          <div style="background: #faf8f4; padding: 20px 22px;">
+            <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: #8a8478; margin-bottom: 8px;">Old map</div>
+            <div style="font-size: 15px; line-height: 1.5; color: #14171a;">Vision meant seeing what's ahead and getting people excited about it.</div>
+          </div>
+          <div style="background: #faf8f4; padding: 20px 22px;">
+            <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: #8a8478; margin-bottom: 8px;">Off the map</div>
+            <div style="font-size: 15px; line-height: 1.5; color: #14171a;">Vision means seeing yourselves accurately and defining reality out loud.</div>
+          </div>
+          <div style="background: #faf8f4; padding: 20px 22px;">
+            <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: #8a8478; margin-bottom: 8px;">Old map</div>
+            <div style="font-size: 15px; line-height: 1.5; color: #14171a;">Leadership was arriving with the solution.</div>
+          </div>
+          <div style="background: #faf8f4; padding: 20px 22px;">
+            <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: #8a8478; margin-bottom: 8px;">Off the map</div>
+            <div style="font-size: 15px; line-height: 1.5; color: #14171a;">Leadership is running the experiment, in public, with the team watching.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-{{- if .Site.Params.capabilities.enable }}
-<br />
-{{- end }}
+  <section id="faq" style="border-bottom: 1px solid #e6e0d6;">
+    <div style="max-width: 1140px; margin: 0 auto; padding: clamp(48px, 8vw, 90px) clamp(18px, 5vw, 40px); display: grid; grid-template-columns: .7fr 1.3fr; gap: clamp(30px, 5vw, 76px); align-items: start;" data-stack>
+      <div>
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: #8a8478; margin-bottom: 18px;">FAQ</div>
+        <h2 style="font-size: clamp(25px, 4.8vw, 32px); line-height: 1.18; letter-spacing: -.025em; font-weight: 600; margin: 0; color: #14171a;">Things people usually ask me.</h2>
+      </div>
+      <div style="border-top: 1px solid #e6e0d6;">
+        {{- $faqs := slice
+          (dict "q" "How is this different from an advisor who takes calls?" "a" "I believe transformational leadership requires trust and attention. That means sitting in your team planning meetings, understanding team dynamics, and shepherding the team to come up with their own answers. Guiding your people to their own transformation at a rate they can absorb.")
+          (dict "q" "How much of your time would we actually get?" "a" "Usually two to four days a month &mdash; a standing weekly block plus whatever comes up in between. Enough to steer things, not so much that I become the bottleneck.")
+          (dict "q" "We already have a CTO. Where would you fit?" "a" "Within their structure, not above or around them. Most CTOs at this size are already carrying platform, security, hiring, and team organization. I come inside that structure to provide process transformation through continuous improvement.")
+          (dict "q" "Could you work with our outsourced team?" "a" "Often that's the reason I'm called. I've chosen vendors, run the relationship end to end, and rebuilt the review and acceptance habits that make an outside team productive rather than expensive.")
+          (dict "q" "What if we end up wanting someone full time?" "a" "That happens, and it's fine. I've covered during searches and handed off to the permanent hire &mdash; sometimes sitting on the panel that picked them.")
+          (dict "q" "How does this work, practically?" "a" "A flat monthly rate rather than hourly billing, and thirty days notice on either side. What it costs depends on cadence and scope, so it is easiest to sort out on a call.")
+        -}}
+        {{- range $faqs }}
+        <details class="gb-faq-item" style="border-bottom: 1px solid #e6e0d6;">
+          <summary style="width: 100%; display: flex; align-items: baseline; justify-content: space-between; gap: 24px; padding: 22px 0; font-family: inherit; font-size: 18px; font-weight: 500; letter-spacing: -.01em; color: #14171a;">
+            <span>{{ .q | safeHTML }}</span>
+            <span class="gb-faq-sign" style="font-family: 'IBM Plex Mono', monospace; font-size: 15px; color: #1c5f63;"></span>
+          </summary>
+          <p style="font-size: 16px; line-height: 1.68; color: #4a4741; margin: 0 0 24px; max-width: 46em;">{{ .a | safeHTML }}</p>
+        </details>
+        {{- end }}
+      </div>
+    </div>
+  </section>
 
-{{- partial "sections/projects.html" . -}}
-
-{{- if .Site.Params.homeInfoParams.Content }}
-<br /><br />
-{{- end }}
-
-{{- if (ne .Site.Params.profileMode.enabled true) }}
-
-<h2 class="post-title" style="margin-top: 2em; margin-bottom: 1em;">Recent Blog Posts</h2>
-
-{{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
-{{- $pages = where $pages "Params.unlisted" "ne" true }}
-
-{{- if site.Params.homeInfoParams }}
-{{- $pages = where site.RegularPages "Type" "in" (slice "posts") }}
-{{- $pages = where $pages "Params.unlisted" "ne" true }}
-{{- end }}
-
-{{- $paginator := .Paginate (first 5 $pages) }}
-
-{{- range $index, $page := $paginator.Pages }}
-
-{{- $class := "post-entry" }}
-
-{{- $user_preferred := or site.Params.disableSpecial1stPost site.Params.homeInfoParams }}
-{{- if (and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) (not $user_preferred)) }}
-{{- $class = "first-entry" }}
-{{- else if $page.Params.hiddenInHomeList }}
-{{- $class = "post-entry hidden" }}
-{{- end }}
-
-<article class="{{ $class }}">
-  {{- $isHidden := (site.Params.cover.hidden | default site.Params.cover.hiddenInList) }}
-  {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
-  <header class="entry-header">
-    <h2>
-      {{- .Title }}
-      {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
-    </h2>
-  </header>
-  {{- if (ne (.Param "hideSummary") true) }}
-  <div class="entry-content">
-    <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
-  </div>
-  {{- end }}
-  {{- if not (.Param "hideMeta") }}
-  <footer class="entry-footer">
-    {{- partial "post_meta.html" . -}}
-  </footer>
-  {{- end }}
-  <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
-</article>
-{{- end }}
-
-{{- if gt $paginator.TotalPages 1 }}
-<footer class="page-footer">
-  <nav class="pagination">
-    {{- if $paginator.HasPrev }}
-    <a class="prev" href="{{ $paginator.Prev.URL | absURL }}">« {{ i18n "prev_page" }}</a>
-    {{- end }}
-    {{- if $paginator.HasNext }}
-    <a class="next" href="{{ $paginator.Next.URL | absURL }}">{{ i18n "next_page" }} »</a>
-    {{- end }}
-  </nav>
-</footer>
-{{- end }}
-
-{{- end }}{{/* end profileMode */}}
-
+  <section id="contact" style="background: #14171a; color: #faf8f4;">
+    <div style="max-width: 1140px; margin: 0 auto; padding: clamp(52px, 8vw, 96px) clamp(18px, 5vw, 40px);">
+      <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: #7fb3ad; margin-bottom: 24px;">Getting in touch</div>
+      <h2 style="font-size: clamp(30px, 6vw, 42px); line-height: 1.12; letter-spacing: -.03em; font-weight: 600; margin: 0 0 22px; max-width: 16em; color: #faf8f4;">If any of this sounds like your situation, I'd enjoy the conversation.</h2>
+      <p style="font-size: clamp(16px, 2.1vw, 18px); line-height: 1.65; color: #b9b4aa; margin: 0 0 40px; max-width: 34em;">Half an hour, no deck, no follow-up sequence. I'm happy to be useful on the call whether or not anything comes of it &mdash; and if what you need isn't me, I'll tell you what I'd do instead.</p>
+      <div data-hero-cta style="display: flex; flex-wrap: wrap; align-items: center; gap: 22px;">
+        <a href="{{ "contact" | relLangURL }}/" class="gb-btn-light" style="display: inline-flex; align-items: center; gap: 9px; background: #faf8f4; color: #14171a; padding: 16px 28px; border-radius: 2px; font-size: 15px; font-weight: 500;">Send me a note &rarr;</a>
+      </div>
+    </div>
+  </section>
+</main>
+</div>
 {{- end }}{{- /* end main */ -}}

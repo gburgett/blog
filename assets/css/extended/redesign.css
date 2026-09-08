@@ -1,0 +1,185 @@
+/* ==========================================================================
+   Fractional Director redesign
+   Scoped to body.gb-redesign (home, case study / post articles, contact).
+   Most layout/color is applied inline in the templates to mirror the source
+   design; this file covers font loading, hover states (CSS can't do
+   per-element hover any other way), the FAQ accordion, and responsive rules.
+   ========================================================================== */
+
+body.gb-redesign {
+  margin: 0;
+  background: #faf8f4;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+  color: #14171a;
+}
+
+body.gb-redesign .gb-main a {
+  color: #14171a;
+  text-decoration: none;
+}
+
+body.gb-redesign ::selection {
+  background: #cfe0dd;
+}
+
+body.gb-redesign img {
+  max-width: 100%;
+}
+
+/* -- hover utilities (replace the design's style-hover attributes) -- */
+body.gb-redesign .gb-hover-teal:hover { color: #1c5f63 !important; }
+body.gb-redesign .gb-hover-ink:hover { color: #14171a !important; }
+body.gb-redesign .gb-hover-cream:hover { color: #faf8f4 !important; }
+body.gb-redesign .gb-btn-dark:hover { background: #1c5f63 !important; }
+body.gb-redesign .gb-btn-light:hover { background: #7fb3ad !important; }
+body.gb-redesign .gb-btn-outline:hover { border-color: #faf8f4 !important; }
+body.gb-redesign .gb-underline-teal:hover { border-color: #1c5f63 !important; }
+body.gb-redesign .gb-card-cream:hover { background: #f3efe8 !important; }
+body.gb-redesign .gb-card-alt:hover { background: #faf8f4 !important; }
+
+/* -- FAQ accordion (native <details>/<summary>, no JS) -- */
+body.gb-redesign .gb-faq-item summary {
+  list-style: none;
+  cursor: pointer;
+}
+body.gb-redesign .gb-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+body.gb-redesign .gb-faq-sign::before {
+  content: '+';
+}
+body.gb-redesign .gb-faq-item[open] .gb-faq-sign::before {
+  content: '\2212';
+}
+
+/* -- responsive rules, ported from the design's @media blocks -- */
+@media (max-width: 900px) {
+  body.gb-redesign [data-stack] { grid-template-columns: 1fr !important; }
+  body.gb-redesign [data-sidebar] { border-left: 0 !important; border-top: 1px solid #e6e0d6 !important; padding-left: 0 !important; padding-top: 30px !important; position: static !important; }
+  body.gb-redesign [data-quad] { grid-template-columns: repeat(2, 1fr) !important; }
+  body.gb-redesign [data-brandbar] { height: auto !important; min-height: 58px; gap: 14px !important; }
+  body.gb-redesign [data-brandtag] { display: none !important; }
+  body.gb-redesign [data-brandname] { white-space: nowrap; }
+  body.gb-redesign [data-navcta] { white-space: nowrap; padding: 9px 14px !important; font-size: 12px !important; }
+  body.gb-redesign [data-navlinks] { position: absolute; left: 0; right: 0; top: 100%; display: flex !important; gap: 0 !important; overflow-x: auto; background: rgba(250,248,244,.95); border-top: 1px solid #e6e0d6; padding: 0 clamp(18px, 5vw, 40px); scrollbar-width: none; }
+  body.gb-redesign [data-navlinks]::-webkit-scrollbar { display: none; }
+  body.gb-redesign [data-navlinks] > a { white-space: nowrap; padding: 12px 18px 12px 0; font-size: 13px; }
+  body.gb-redesign [data-statrow] { grid-template-columns: 1fr 1fr !important; }
+  body.gb-redesign [data-statrow] > div { padding: 22px 20px 24px 0 !important; }
+}
+@media (max-width: 560px) {
+  body.gb-redesign [data-quad], body.gb-redesign [data-statrow] { grid-template-columns: 1fr !important; }
+  body.gb-redesign [data-statrow] > div { border-right: 0 !important; border-bottom: 1px solid #2b2f31 !important; }
+  body.gb-redesign [data-hero-cta] { align-items: stretch !important; }
+  body.gb-redesign [data-footer-bottom] { flex-direction: column !important; gap: 10px !important; }
+  body.gb-redesign [data-hero-cta] > a:first-child { justify-content: center !important; }
+}
+
+/* -- sticky rail table of contents (from Hugo's .TableOfContents) -- */
+body.gb-redesign .gb-toc nav#TableOfContents,
+body.gb-redesign .gb-toc nav#TableOfContents ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body.gb-redesign .gb-toc nav#TableOfContents ul {
+  display: grid;
+  gap: 10px;
+}
+body.gb-redesign .gb-toc nav#TableOfContents ul ul {
+  margin-top: 8px;
+  margin-left: 12px;
+}
+body.gb-redesign .gb-toc a {
+  font-size: 14px;
+  line-height: 1.45;
+  color: #4a4741;
+}
+body.gb-redesign .gb-toc a:hover {
+  color: #1c5f63;
+}
+
+/* -- article prose (real Markdown content rendered by Hugo) -- */
+body.gb-redesign .gb-article-body h1,
+body.gb-redesign .gb-article-body h2,
+body.gb-redesign .gb-article-body h3 {
+  font-size: clamp(22px, 3.6vw, 27px);
+  line-height: 1.22;
+  letter-spacing: -.02em;
+  font-weight: 600;
+  margin: 40px 0 16px;
+  scroll-margin-top: 96px;
+  color: #14171a;
+}
+body.gb-redesign .gb-article-body p {
+  font-size: 17.5px;
+  line-height: 1.75;
+  color: #35342f;
+  margin: 0 0 20px;
+  text-wrap: pretty;
+}
+body.gb-redesign .gb-article-body blockquote {
+  border-left: 2px solid #1c5f63;
+  padding: 4px 0 4px 22px;
+  margin: 30px 0 32px;
+}
+body.gb-redesign .gb-article-body blockquote p {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: clamp(19px, 2.8vw, 23px);
+  line-height: 1.45;
+  color: #14171a;
+  margin: 0;
+}
+body.gb-redesign .gb-article-body ul,
+body.gb-redesign .gb-article-body ol {
+  margin: 4px 0 26px;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 12px;
+}
+body.gb-redesign .gb-article-body li {
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  gap: 10px;
+  font-size: 17px;
+  line-height: 1.65;
+  color: #35342f;
+}
+body.gb-redesign .gb-article-body li::before {
+  content: '\2014';
+  color: #b0a99c;
+  font-family: 'IBM Plex Mono', monospace;
+}
+body.gb-redesign .gb-article-body img {
+  border-radius: 2px;
+  margin: 8px 0 30px;
+}
+body.gb-redesign .gb-article-body a {
+  color: #1c5f63;
+  border-bottom: 1px solid #b6cfcb;
+}
+body.gb-redesign .gb-article-body a:hover {
+  border-color: #1c5f63;
+}
+body.gb-redesign .gb-callout {
+  background: #f3efe8;
+  border: 1px solid #e6e0d6;
+  padding: 24px 26px;
+  margin: 28px 0 30px;
+}
+body.gb-redesign .gb-callout-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: #8a8478;
+  margin-bottom: 10px;
+}
+body.gb-redesign .gb-callout p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #35342f;
+  margin: 0;
+}

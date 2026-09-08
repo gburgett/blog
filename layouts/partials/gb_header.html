@@ -1,0 +1,19 @@
+{{- $home := "" | relLangURL -}}
+<header class="gb-main" style="position: sticky; top: 0; z-index: 80; overflow: visible; background: rgba(250,248,244,.9); backdrop-filter: blur(12px); border-bottom: 1px solid #e6e0d6;">
+  <div data-brandbar style="max-width: 1140px; margin: 0 auto; padding: 0 clamp(18px, 5vw, 40px); height: 70px; display: flex; align-items: center; gap: 36px;">
+    <a href="{{ $home }}" style="display: flex; align-items: baseline; gap: 11px;">
+      <span data-brandname style="font-size: 16px; font-weight: 600; letter-spacing: -.015em;">Gordon Burgett</span>
+      <span data-brandtag style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: #6f6a61;">Fractional AI Director</span>
+    </a>
+    <nav style="margin-left: auto; display: flex; align-items: center; gap: 28px; font-size: 14px; color: #4a4741;">
+      <div data-navlinks style="display: flex; align-items: center; gap: 28px;">
+        <a href="{{ $home }}#proof" class="gb-hover-teal" style="color: #4a4741;">Proof</a>
+        <a href="{{ $home }}#about" class="gb-hover-teal" style="color: #4a4741;">About</a>
+        <a href="{{ $home }}#reading" class="gb-hover-teal" style="color: #4a4741;">Reading</a>
+        <a href="{{ "posts" | relLangURL }}/" class="gb-hover-teal" style="color: #4a4741;">Writing</a>
+        <a href="{{ $home }}#faq" class="gb-hover-teal" style="color: #4a4741;">FAQ</a>
+      </div>
+      <a href="{{ "contact" | relLangURL }}/" data-navcta class="gb-btn-dark" style="display: inline-flex; align-items: center; gap: 8px; background: #14171a; color: #faf8f4; padding: 10px 17px; border-radius: 2px; font-size: 13px; font-weight: 500; white-space: nowrap;">Get in touch &rarr;</a>
+    </nav>
+  </div>
+</header>
