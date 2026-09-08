@@ -18,7 +18,7 @@
 
 {{- $gbRedesign := partial "gb_is_redesign.html" . }}
 {{- $bodyClasses := slice }}
-{{- if (or (ne .Kind `page` ) (eq .Layout `archives`) (eq .Layout `search`)) }}
+{{- if and (or (ne .Kind `page` ) (eq .Layout `archives`) (eq .Layout `search`)) (not $gbRedesign) }}
 {{- $bodyClasses = $bodyClasses | append "list" }}
 {{- end }}
 {{- if $gbRedesign }}

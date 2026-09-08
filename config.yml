@@ -1,6 +1,6 @@
 baseURL: http://www.gordonburgett.net
 languageCode: en-us
-title: Gordon Burgett | Director of Software Engineering, Albers Aerospace
+title: Gordon Burgett | Fractional AI Engineering Director
 theme: PaperMod
 copyright: All content © Gordon Burgett, 2014-2026
 
@@ -25,7 +25,7 @@ minify:
 params:
   env: production
   title: Gordon Burgett
-  description: "Director of Software Engineering, Albers Aerospace"
+  description: "Fractional AI Engineering Director"
   keywords:
     [Software Engineering, Technical Leadership, AI, Development, Architecture]
   author: Gordon Burgett

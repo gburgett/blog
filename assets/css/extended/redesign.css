@@ -76,6 +76,41 @@ body.gb-redesign .gb-faq-item[open] .gb-faq-sign::before {
   body.gb-redesign [data-hero-cta] > a:first-child { justify-content: center !important; }
 }
 
+/* -- contact form -- */
+body.gb-redesign .gb-form-group {
+  margin-bottom: 22px;
+}
+body.gb-redesign .gb-form-group label {
+  display: block;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: #6f6a61;
+  margin-bottom: 8px;
+}
+body.gb-redesign .gb-form-group input,
+body.gb-redesign .gb-form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid #ddd6ca;
+  border-radius: 2px;
+  background: #faf8f4;
+  color: #14171a;
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+  font-size: 15px;
+}
+body.gb-redesign .gb-form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+body.gb-redesign .gb-form-group input:focus,
+body.gb-redesign .gb-form-group textarea:focus {
+  outline: none;
+  border-color: #1c5f63;
+}
+
 /* -- sticky rail table of contents (from Hugo's .TableOfContents) -- */
 body.gb-redesign .gb-toc nav#TableOfContents,
 body.gb-redesign .gb-toc nav#TableOfContents ul {
