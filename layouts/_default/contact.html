@@ -2,51 +2,51 @@
 
 {{- partial "ai_honeytrap.html" . }}
 
-<article class="post-single">
-  <header class="post-header">
-    <h1 class="post-title">
-      {{ .Title }}
+<div class="gb-main">
+<section style="border-bottom: 1px solid #e6e0d6;">
+  <div style="max-width: 640px; margin: 0 auto; padding: clamp(48px, 9vw, 90px) clamp(18px, 5vw, 40px);">
+    <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: #1c5f63; margin-bottom: 18px;">Getting in touch</div>
+    <h1 style="font-size: clamp(32px, 6vw, 42px); line-height: 1.1; letter-spacing: -.03em; font-weight: 600; margin: 0 0 18px; color: #14171a;">
+      {{ if .Title }}{{ .Title }}{{ else }}Let's have a conversation.{{ end }}
     </h1>
     {{- if .Description }}
-    <div class="post-description">
+    <div style="font-size: 17px; line-height: 1.65; color: #40403b; margin: 0 0 8px;">
       {{ .Description }}
     </div>
     {{- end }}
-  </header>
-
-  <div class="post-content contact-form-container">
     {{- if .Content }}
-    {{ .Content }}
+    <div style="font-size: 17px; line-height: 1.65; color: #40403b;">
+      {{ .Content }}
+    </div>
     {{- end }}
 
-    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" id="contact-form">
+    <form action="https://api.web3forms.com/submit" method="POST" class="gb-contact-form" id="contact-form" style="border: 1px solid #e6e0d6; background: #f3efe8; padding: clamp(24px, 4vw, 34px); margin-top: 34px;">
       <input type="hidden" name="access_key" value="ac2c3f76-ff83-4ee4-9732-d7eaa11f143e">
       <input type="hidden" name="redirect" value="{{ .Site.BaseURL }}contact/thanks/">
       <input type="hidden" name="subject" value="New contact from {{ .Site.Title }}">
 
-      <div class="form-group">
+      <div class="gb-form-group">
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required placeholder="Your name">
       </div>
 
-      <div class="form-group">
+      <div class="gb-form-group">
         <label for="email">Email</label>
         <input type="email" id="email" name="email" required placeholder="your@email.com">
       </div>
 
-      <div class="form-group">
+      <div class="gb-form-group">
         <label for="message">Message</label>
         <textarea id="message" name="message" required placeholder="Your message..." rows="6"></textarea>
       </div>
 
       <div class="h-captcha" data-captcha="true"></div>
 
-      <button type="submit" class="contact-submit">Send Message</button>
+      <button type="submit" class="gb-btn-dark" style="width: 100%; display: inline-flex; align-items: center; justify-content: center; gap: 9px; background: #14171a; color: #faf8f4; padding: 15px 26px; border: 0; border-radius: 2px; font-size: 15px; font-weight: 500; font-family: inherit; cursor: pointer;">Send Message</button>
     </form>
   </div>
-
-  <footer class="post-footer"></footer>
-</article>
+</section>
+</div>
 
 <script src="https://web3forms.com/client/script.js" async defer></script>
 

@@ -1,0 +1,19 @@
+{{- /* Returns true for pages that should get the new fractional-director
+   redesign chrome: homepage, individual case study (project) pages,
+   individual blog posts, the contact page, and the posts list page.
+   Everything else (archive, albania, tag/category lists, search, the
+   projects index list) keeps the existing PaperMod look. */ -}}
+{{- $p := . -}}
+{{- $result := false -}}
+{{- if $p.IsHome -}}
+  {{- $result = true -}}
+{{- else if and (eq $p.Type "projects") $p.IsPage -}}
+  {{- $result = true -}}
+{{- else if and (eq $p.Type "posts") $p.IsPage -}}
+  {{- $result = true -}}
+{{- else if eq $p.Section "contact" -}}
+  {{- $result = true -}}
+{{- else if and (eq $p.Kind "section") (eq $p.Section "posts") -}}
+  {{- $result = true -}}
+{{- end -}}
+{{- return $result -}}
