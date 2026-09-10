@@ -31,7 +31,7 @@ Doesn&amp;rsquo;t matter how many cards we throw into a sprint, we just fire up 
       <pubDate>Wed, 24 Jun 2026 10:00:00 -0500</pubDate>
       <guid>http://www.gordonburgett.net/posts/2026/09_programming-as-theory-building/</guid>
       <description>&lt;h1 id=&#34;what-is-the-act-of-programming&#34;&gt;What is the act of programming?&lt;/h1&gt;
-&lt;p&gt;As my team and I reevaluated our development processes in light of AI&amp;rsquo;s capabilities earlier this year, &lt;a href=&#34;http://www.gordonburgett.net/posts/2026/05_scrum-is-broken/&#34;&gt;we went back to first principles&lt;/a&gt;.
+&lt;p&gt;My team and I &lt;a href=&#34;http://www.gordonburgett.net/posts/2026/05_scrum-is-broken/&#34;&gt;went back to first principles&lt;/a&gt; earlier this year.
 And I went back to the old masters: Brooks, Naur, Djikstra.  I was seeking to re-learn the essence of Software Engineering from those who had thought about the
 problem in the beginning.&lt;/p&gt;
 &lt;p&gt;If the act of programming is no longer typing symbols into computer code, then what is it?  I think Naur has a great definition in his paper, &lt;a href=&#34;https://pages.cs.wisc.edu/~remzi/Naur.pdf&#34;&gt;&amp;ldquo;Programming as Theory Building&amp;rdquo;&lt;/a&gt;.&lt;/p&gt;</description>
