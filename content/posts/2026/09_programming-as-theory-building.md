@@ -14,7 +14,7 @@ As my team and I reevaluated our development processes in light of AI's capabili
 And I went back to the old masters: Brooks, Naur, Djikstra.  I was seeking to re-learn the essence of Software Engineering from those who had thought about the
 problem in the beginning.
 
-If the act of programming is no longer typing symbols into computer code, then what is it?  I think Naur has a great definition in his paper, "Programming as Theory Building".
+If the act of programming is no longer typing symbols into computer code, then what is it?  I think Naur has a great definition in his paper, ["Programming as Theory Building"](https://pages.cs.wisc.edu/~remzi/Naur.pdf).
 
 > ...programming properly should be regarded as an activity by which the programmers form or achieve a certain kind of insight, a theory, of the matters at hand.  
 > - Naur, Programming as Theory Building, 1985
