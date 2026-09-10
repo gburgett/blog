@@ -9,8 +9,7 @@ quote = "How does an AI gain an understanding of your codebase?"
 +++
 
 # What is the act of programming?
-
-As my team and I reevaluated our development processes in light of AI's capabilities earlier this year, [we went back to first principles](./05_scrum-is-broken).
+My team and I [went back to first principles](./05_scrum-is-broken) earlier this year.
 And I went back to the old masters: Brooks, Naur, Djikstra.  I was seeking to re-learn the essence of Software Engineering from those who had thought about the
 problem in the beginning.
 
