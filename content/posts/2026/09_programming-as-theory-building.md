@@ -2,7 +2,7 @@
 Categories = ["AI", "Development"]
 title = "Theory Building with AI"
 Tags = ["AI"]
-date = "2026-06-24T10:00:00-05:00"
+date = "2026-09-10T10:00:00-05:00"
 draft = false
 unlisted = false
 quote = "How does an AI gain an understanding of your codebase?"
