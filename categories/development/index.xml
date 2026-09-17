@@ -12,8 +12,31 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>All content © Gordon Burgett, 2014-2026</copyright>
-    <lastBuildDate>Wed, 24 Jun 2026 10:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 15 Sep 2026 10:00:00 -0500</lastBuildDate>
     <atom:link href="http://www.gordonburgett.net/categories/development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Transformational Leadership: The Antidote to AI Fear</title>
+      <link>http://www.gordonburgett.net/posts/2026/09_shepherding-through-transformation/</link>
+      <pubDate>Tue, 15 Sep 2026 10:00:00 -0500</pubDate>
+      <guid>http://www.gordonburgett.net/posts/2026/09_shepherding-through-transformation/</guid>
+      <description>&lt;p&gt;The AI revolution is bringing out the extremes in both camps.  I&amp;rsquo;ve seen it play out personally at work.  Fear and giddy excitement are present in
+equal portion, driving employees&amp;rsquo; daily decisions around AI adoption.  Both reactions are dangerous for different reasons, but I want to focus
+on fear in this post for one simple reason: fear is what slams the door shut on AI adoption.&lt;/p&gt;
+&lt;p&gt;AI usage mandates won&amp;rsquo;t fix fear.  Your employees will stop at compliance; what you need is transformation.  Replacing uncooperative employees
+doesn&amp;rsquo;t fix it either; the fear becomes infectious, spreading through the rest of the organization.  CEOs aren&amp;rsquo;t immune to the fear either.
+The saying I have heard from our own CEO this year is &amp;ldquo;every day you&amp;rsquo;re late to AI is 2 days you fall behind&amp;rdquo;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Theory Building with AI</title>
+      <link>http://www.gordonburgett.net/posts/2026/09_programming-as-theory-building/</link>
+      <pubDate>Thu, 10 Sep 2026 10:00:00 -0500</pubDate>
+      <guid>http://www.gordonburgett.net/posts/2026/09_programming-as-theory-building/</guid>
+      <description>&lt;h1 id=&#34;what-is-the-act-of-programming&#34;&gt;What is the act of programming?&lt;/h1&gt;
+&lt;p&gt;My team and I &lt;a href=&#34;http://www.gordonburgett.net/posts/2026/05_scrum-is-broken/&#34;&gt;went back to first principles&lt;/a&gt; earlier this year.
+And I went back to the old masters: Brooks, Naur, Djikstra.  I was seeking to re-learn the essence of Software Engineering from those who had thought about the
+problem in the beginning.&lt;/p&gt;
+&lt;p&gt;If the act of programming is no longer typing symbols into computer code, then what is it?  I think Naur has a great definition in his paper, &lt;a href=&#34;https://pages.cs.wisc.edu/~remzi/Naur.pdf&#34;&gt;&amp;ldquo;Programming as Theory Building&amp;rdquo;&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Scrum is Broken</title>
       <link>http://www.gordonburgett.net/posts/2026/05_scrum-is-broken/</link>
@@ -24,17 +47,6 @@
 But something changed with Opus 4.7.  Now, once we&amp;rsquo;ve groomed the cards and defined the sprint, everything is done within a day.&lt;br&gt;
 Doesn&amp;rsquo;t matter how many cards we throw into a sprint, we just fire up more parallel agents.&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;everything&amp;rsquo;s made up and the points don&amp;rsquo;t matter&#34; loading=&#34;lazy&#34; src=&#34;http://www.gordonburgett.net/images/2026/everythings-made-up.webp&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Theory Building with AI</title>
-      <link>http://www.gordonburgett.net/posts/2026/09_programming-as-theory-building/</link>
-      <pubDate>Wed, 24 Jun 2026 10:00:00 -0500</pubDate>
-      <guid>http://www.gordonburgett.net/posts/2026/09_programming-as-theory-building/</guid>
-      <description>&lt;h1 id=&#34;what-is-the-act-of-programming&#34;&gt;What is the act of programming?&lt;/h1&gt;
-&lt;p&gt;My team and I &lt;a href=&#34;http://www.gordonburgett.net/posts/2026/05_scrum-is-broken/&#34;&gt;went back to first principles&lt;/a&gt; earlier this year.
-And I went back to the old masters: Brooks, Naur, Djikstra.  I was seeking to re-learn the essence of Software Engineering from those who had thought about the
-problem in the beginning.&lt;/p&gt;
-&lt;p&gt;If the act of programming is no longer typing symbols into computer code, then what is it?  I think Naur has a great definition in his paper, &lt;a href=&#34;https://pages.cs.wisc.edu/~remzi/Naur.pdf&#34;&gt;&amp;ldquo;Programming as Theory Building&amp;rdquo;&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Pushing Claude Code Further with Spec Driven Development</title>
