@@ -76,6 +76,144 @@ body.gb-redesign .gb-faq-item[open] .gb-faq-sign::before {
   body.gb-redesign [data-hero-cta] > a:first-child { justify-content: center !important; }
 }
 
+/* -- hero: full-viewport default intro + interactive specialty variants --
+   [data-hero-default] is the resting state with no JS required; JS toggles
+   [data-spec-hero].is-active / [data-hero-default].is-suppressed to swap in
+   a specialty, and mirrors the pin/hover state onto the matching sidebar
+   [data-spec-item]. */
+body.gb-redesign [data-hero-col] {
+  display: grid;
+  grid-template-areas: 'v';
+}
+body.gb-redesign [data-hero-default],
+body.gb-redesign [data-spec-hero] {
+  grid-area: v;
+  transition: opacity .2s ease;
+}
+body.gb-redesign [data-hero-default] {
+  opacity: 1;
+  visibility: visible;
+}
+body.gb-redesign [data-hero-default].is-suppressed {
+  opacity: 0;
+  visibility: hidden;
+}
+body.gb-redesign [data-spec-hero] {
+  opacity: 0;
+  visibility: hidden;
+}
+body.gb-redesign [data-spec-hero].is-active {
+  opacity: 1;
+  visibility: visible;
+}
+body.gb-redesign [data-hero-clear] {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: #8a8478;
+  background: none;
+  border: 1px solid #e6e0d6;
+  border-radius: 2px;
+  padding: 4px 9px;
+  cursor: pointer;
+  transition: color .16s ease, border-color .16s ease;
+}
+body.gb-redesign [data-hero-clear]:hover {
+  color: #1c5f63;
+  border-color: #1c5f63;
+}
+
+/* -- "where I specialize" sidebar items -- */
+body.gb-redesign [data-spec-item] {
+  width: 100%;
+  border: 0;
+  border-radius: 2px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  transition: background .16s ease;
+}
+body.gb-redesign [data-spec-item].is-active {
+  background: #ece7dd;
+}
+body.gb-redesign [data-spec-bar] {
+  border-radius: 2px;
+  background: transparent;
+  transition: background .16s ease;
+}
+body.gb-redesign [data-spec-item].is-active [data-spec-bar] {
+  background: #1c5f63;
+}
+body.gb-redesign [data-spec-name] {
+  transition: color .16s ease;
+}
+body.gb-redesign [data-spec-item].is-active [data-spec-name] {
+  color: #1c5f63;
+}
+
+/* -- mobile-only inline accordion, driven by the same active state -- */
+body.gb-redesign [data-spec-panel] {
+  display: none;
+  overflow: hidden;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition: grid-template-rows .26s cubic-bezier(.22,.7,.3,1), opacity .2s ease;
+}
+body.gb-redesign [data-spec-item].is-active [data-spec-panel] {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
+/* -- hero swap / scroll-cue animation -- */
+@keyframes gbHeroBob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(5px); } }
+@keyframes gbHeroInA { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+@keyframes gbHeroInB { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) {
+  @keyframes gbHeroInA { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes gbHeroInB { from { opacity: 0; } to { opacity: 1; } }
+}
+body.gb-redesign .gb-hero-bob {
+  animation: gbHeroBob 1.9s ease-in-out infinite;
+}
+body.gb-redesign .gb-hero-anim-a {
+  animation: gbHeroInA .22s cubic-bezier(.22,.7,.3,1) both;
+}
+body.gb-redesign .gb-hero-anim-b {
+  animation: gbHeroInB .22s cubic-bezier(.22,.7,.3,1) both;
+}
+
+/* -- hero responsive: full-viewport + swap on desktop, natural flow +
+   inline accordion on mobile, plus short-viewport tiers so the scroll cue
+   and the next section stay reachable without scrolling the hero itself -- */
+@media (max-width: 900px) {
+  body.gb-redesign [data-spec-hero] { display: none !important; }
+  body.gb-redesign [data-hero-default] { display: block !important; opacity: 1 !important; visibility: visible !important; }
+  body.gb-redesign [data-spec-panel] { display: grid !important; }
+  body.gb-redesign [data-hero-section] { min-height: 0 !important; }
+  body.gb-redesign [data-hero-scroll] { display: none !important; }
+}
+@media (min-width: 901px) and (max-height: 820px) {
+  body.gb-redesign [data-hero-grid] { padding-top: 40px !important; padding-bottom: 16px !important; }
+  body.gb-redesign [data-hero-grid] h1 { font-size: 44px !important; }
+  body.gb-redesign [data-spec-dek] { font-size: 22px !important; margin-bottom: 20px !important; }
+}
+@media (min-width: 901px) and (max-height: 700px) {
+  body.gb-redesign [data-hero-grid] { padding-top: 14px !important; padding-bottom: 6px !important; gap: 34px !important; }
+  body.gb-redesign [data-hero-grid] h1 { font-size: 28px !important; margin-bottom: 8px !important; }
+  body.gb-redesign [data-hero-grid] p { font-size: 15.5px !important; line-height: 1.5 !important; margin-bottom: 8px !important; }
+  body.gb-redesign [data-hero-cta] a { padding: 11px 20px !important; font-size: 14px !important; }
+  body.gb-redesign [data-spec-dek] { font-size: 17px !important; margin-bottom: 10px !important; }
+  body.gb-redesign [data-spec-stat] { padding-top: 8px !important; margin-bottom: 10px !important; }
+  body.gb-redesign [data-spec-kicker] { margin-bottom: 8px !important; }
+  body.gb-redesign [data-hero-scroll] { padding-bottom: 16px !important; }
+  body.gb-redesign [data-sidebar] { padding-top: 0 !important; }
+  body.gb-redesign [data-sidebar] > div:first-child { margin-bottom: 12px !important; }
+  body.gb-redesign [data-spec-blurb] { display: none !important; }
+  body.gb-redesign [data-spec-item] { padding-top: 9px !important; padding-bottom: 9px !important; }
+}
+
 /* -- contact form -- */
 body.gb-redesign .gb-form-group {
   margin-bottom: 22px;
