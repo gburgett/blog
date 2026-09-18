@@ -12,6 +12,21 @@ body.gb-redesign {
   -webkit-font-smoothing: antialiased;
   font-family: 'IBM Plex Sans', system-ui, sans-serif;
   color: #14171a;
+
+  /* Shared container width. Every redesign section reads this, so widening
+     the whole site is a one-line change here. */
+  --gb-maxw: 1280px;
+}
+
+/* PaperMod wraps the page in <main class="main">, and custom.css clamps that
+   to 900px. The redesign sections set their own container width, and the
+   header/footer partials render outside .main -- so without this the body
+   content is pinched ~300px narrower than the brand bar above it. */
+body.gb-redesign .main {
+  max-width: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body.gb-redesign .gb-main a {
@@ -194,8 +209,33 @@ body.gb-redesign .gb-hero-anim-b {
   body.gb-redesign [data-hero-section] { min-height: 0 !important; }
   body.gb-redesign [data-hero-scroll] { display: none !important; }
 }
+/* Desktop: the hero's natural content height (~585px) already exceeds 82svh
+   on common viewports, so min-height alone never governed -- the generous
+   clamp padding did. Trim both so the next section crests the fold instead
+   of sitting just under it. Inline styles on the element, so !important. */
+@media (min-width: 901px) {
+  body.gb-redesign [data-hero-section] { min-height: 64svh !important; }
+  body.gb-redesign [data-hero-grid] {
+    padding-top: clamp(22px, 2.8vw, 32px) !important;
+    padding-bottom: clamp(12px, 1.4vw, 18px) !important;
+  }
+  /* The cue stays in normal flow. Floating it over the hero's bottom padding
+     looked like free space, but the section shrinks with the column, so the
+     cue tracks the content up and collides with the tallest specialty CTA
+     instead of clearing it. Trim its padding rather than lift it out. */
+  body.gb-redesign [data-hero-scroll] { padding-bottom: 10px !important; }
+  /* The hero column reserves the height of the TALLEST specialty variant so
+     swapping never reflows the page, so that variant -- not the default
+     intro -- is what sets where the fold lands. Tightening its trailing
+     spacing is the only lever that actually moves the next section up. */
+  body.gb-redesign [data-spec-hero] p + p { margin-bottom: 20px !important; }
+  body.gb-redesign [data-spec-stat] {
+    padding-top: 12px !important;
+    margin-bottom: 20px !important;
+  }
+}
 @media (min-width: 901px) and (max-height: 820px) {
-  body.gb-redesign [data-hero-grid] { padding-top: 40px !important; padding-bottom: 16px !important; }
+  body.gb-redesign [data-hero-grid] { padding-top: 26px !important; padding-bottom: 12px !important; }
   body.gb-redesign [data-hero-grid] h1 { font-size: 44px !important; }
   body.gb-redesign [data-spec-dek] { font-size: 22px !important; margin-bottom: 20px !important; }
 }

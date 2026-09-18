@@ -8,7 +8,7 @@
 <main id="writing">
 
   <section style="border-bottom: 1px solid #e6e0d6;">
-    <div style="max-width: 1140px; margin: 0 auto; padding: clamp(48px, 9vw, 90px) clamp(18px, 5vw, 40px) clamp(44px, 7vw, 60px);">
+    <div style="max-width: var(--gb-maxw, 1140px); margin: 0 auto; padding: clamp(48px, 9vw, 90px) clamp(18px, 5vw, 40px) clamp(44px, 7vw, 60px);">
       <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: #1c5f63; margin-bottom: 22px;">Writing</div>
       <h1 style="font-size: clamp(36px, 7vw, 54px); line-height: 1.06; letter-spacing: -.03em; font-weight: 600; margin: 0 0 18px; max-width: 18em; color: #14171a;">{{ .Title | default "Engineering leadership after AI" }}</h1>
       {{- with .Description }}
@@ -20,7 +20,7 @@
   </section>
 
   <section>
-    <div style="max-width: 1140px; margin: 0 auto; padding: clamp(20px, 4vw, 40px) clamp(18px, 5vw, 40px) clamp(60px, 9vw, 96px);">
+    <div style="max-width: var(--gb-maxw, 1140px); margin: 0 auto; padding: clamp(20px, 4vw, 40px) clamp(18px, 5vw, 40px) clamp(60px, 9vw, 96px);">
       <div style="border-top: 1px solid #e6e0d6;">
         {{- range $pages }}
         {{- $kicker := "Writing" }}
@@ -39,7 +39,7 @@
   </section>
 
   <section style="background: #14171a; color: #faf8f4;">
-    <div style="max-width: 1140px; margin: 0 auto; padding: clamp(48px, 7vw, 84px) clamp(18px, 5vw, 40px); display: grid; grid-template-columns: 1.2fr .8fr; gap: clamp(30px, 5vw, 70px); align-items: center;" data-stack>
+    <div style="max-width: var(--gb-maxw, 1140px); margin: 0 auto; padding: clamp(48px, 7vw, 84px) clamp(18px, 5vw, 40px); display: grid; grid-template-columns: 1.2fr .8fr; gap: clamp(30px, 5vw, 70px); align-items: center;" data-stack>
       <div>
         <h2 style="font-size: clamp(26px, 5vw, 36px); line-height: 1.13; letter-spacing: -.028em; font-weight: 600; margin: 0 0 18px; max-width: 18em; color: #faf8f4;">Rethinking how your team plans work in the AI shift?</h2>
         <p style="font-size: clamp(15.5px, 2vw, 17px); line-height: 1.65; color: #b9b4aa; margin: 0; max-width: 34em;">This is most of what I do now &mdash; happy to compare notes on what you're seeing.</p>
