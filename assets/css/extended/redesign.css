@@ -12,6 +12,21 @@ body.gb-redesign {
   -webkit-font-smoothing: antialiased;
   font-family: 'IBM Plex Sans', system-ui, sans-serif;
   color: #14171a;
+
+  /* Shared container width. Every redesign section reads this, so widening
+     the whole site is a one-line change here. */
+  --gb-maxw: 1280px;
+}
+
+/* PaperMod wraps the page in <main class="main">, and custom.css clamps that
+   to 900px. The redesign sections set their own container width, and the
+   header/footer partials render outside .main -- so without this the body
+   content is pinched ~300px narrower than the brand bar above it. */
+body.gb-redesign .main {
+  max-width: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body.gb-redesign .gb-main a {

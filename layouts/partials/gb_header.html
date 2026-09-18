@@ -1,6 +1,6 @@
 {{- $home := "" | relLangURL -}}
 <header class="gb-main" style="position: sticky; top: 0; z-index: 80; overflow: visible; background: rgba(250,248,244,.9); backdrop-filter: blur(12px); border-bottom: 1px solid #e6e0d6;">
-  <div data-brandbar style="max-width: 1140px; margin: 0 auto; padding: 0 clamp(18px, 5vw, 40px); height: 70px; display: flex; align-items: center; gap: 36px;">
+  <div data-brandbar style="max-width: var(--gb-maxw, 1140px); margin: 0 auto; padding: 0 clamp(18px, 5vw, 40px); height: 70px; display: flex; align-items: center; gap: 36px;">
     <a href="{{ $home }}" style="display: flex; align-items: baseline; gap: 11px;">
       <span data-brandname style="font-size: 16px; font-weight: 600; letter-spacing: -.015em;">Gordon Burgett</span>
       <span data-brandtag style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: #6f6a61;">Fractional AI Director</span>
