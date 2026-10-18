@@ -1,0 +1,28 @@
+{{- $sameAs := slice
+  "https://github.com/gburgett"
+  "https://www.linkedin.com/in/gordonburgett"
+  "https://dfwfractionalfde.com"
+  "https://ruby.social/@gburgett"
+-}}
+{{- $person := dict
+  "@context" "https://schema.org"
+  "@type" "Person"
+  "@id" (printf "%s#person" site.Home.Permalink)
+  "name" "Gordon Burgett"
+  "jobTitle" "Fractional AI Engineer"
+  "url" site.Home.Permalink
+  "image" ("/images/headshot.jpg" | absURL)
+  "address" (dict
+    "@type" "PostalAddress"
+    "addressLocality" "Dallas"
+    "addressRegion" "TX"
+    "addressCountry" "US"
+  )
+  "worksFor" (dict
+    "@type" "Organization"
+    "name" "DFW Fractional FDE"
+    "url" "https://dfwfractionalfde.com"
+  )
+  "sameAs" $sameAs
+-}}
+<script type="application/ld+json">{{ $person | jsonify (dict "indent" "  ") | safeJS }}</script>

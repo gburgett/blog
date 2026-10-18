@@ -1,0 +1,23 @@
+{{- /*
+  Meta description for a page.
+  Front matter description wins. Otherwise a pull quote on a single page,
+  otherwise a single-line truncation of the summary.
+  trim is called as a function: piping into trim treats the text as the cutset.
+*/ -}}
+{{- $desc := "" -}}
+{{- if .Params.description -}}
+  {{- $desc = .Params.description -}}
+{{- else if and .IsPage .Params.quote -}}
+  {{- $desc = .Params.quote -}}
+{{- else if or .IsPage .IsSection -}}
+  {{- $desc = .Summary -}}
+{{- end -}}
+{{- if not $desc -}}
+  {{- $desc = or site.Params.description site.Title -}}
+{{- end -}}
+{{- $desc = $desc | markdownify | plainify | htmlUnescape | replaceRE `\s+` " " -}}
+{{- $desc = trim $desc " " -}}
+{{- if not $desc -}}
+  {{- $desc = or site.Params.description site.Title -}}
+{{- end -}}
+{{- return ($desc | truncate 160) -}}
