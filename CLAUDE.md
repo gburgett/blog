@@ -44,8 +44,6 @@ Pushes to `master` are built and published to GitHub Pages by `.github/workflows
 
 `baseURL` in `config.yml` is `https://gordonburgett.net/`. Canonical URLs, Open Graph, the sitemap, JSON-LD, and the Sitemap line in robots.txt all follow it.
 
-A Dockerfile from an older Apache setup is still in the repo. It is not how the site is deployed.
-
 ## Architecture
 
 ### Content Organization
