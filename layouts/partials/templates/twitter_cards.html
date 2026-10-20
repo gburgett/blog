@@ -1,0 +1,43 @@
+{{- /* PaperMod twitter_cards.html override. Changes: description uses page_description.html, and Params.image is used when set. */ -}}
+{{- if .Params.cover.image -}}
+<meta name="twitter:card" content="summary_large_image">
+{{- if (ne $.Params.cover.relative true) }}
+<meta name="twitter:image" content="{{ .Params.cover.image | absURL }}">
+{{- else }}
+<meta name="twitter:image" content="{{ (path.Join .RelPermalink .Params.cover.image ) | absURL }}">
+{{- end}}
+{{- else if .Params.image }}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ .Params.image | absURL }}">
+{{- else }}
+{{- $images := partial "templates/_funcs/get-page-images" . }}
+{{- with index $images 0 }}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="{{ .Permalink }}">
+{{- else }}
+  <meta name="twitter:card" content="summary">
+{{- end }}
+{{- end }}
+
+{{- $pageTitle := .Title -}}
+{{- if .IsHome }}{{ $pageTitle = site.Title }}{{ end -}}
+{{- with or $pageTitle site.Title site.Params.title | plainify }}
+  <meta name="twitter:title" content="{{ . }}">
+{{- end }}
+
+{{- with partial "page_description.html" . }}
+  <meta name="twitter:description" content="{{ . }}">
+{{- end }}
+
+{{- $twitterSite := "" }}
+{{- with site.Params.social }}
+  {{- if reflect.IsMap . }}
+    {{- with .twitter }}
+      {{- $content := . }}
+      {{- if not (strings.HasPrefix . "@") }}
+        {{- $content = printf "@%v" . }}
+      {{- end }}
+      <meta name="twitter:site" content="{{ $content }}">
+    {{- end }}
+  {{- end }}
+{{- end }}

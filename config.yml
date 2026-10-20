@@ -1,6 +1,6 @@
-baseURL: http://www.gordonburgett.net
+baseURL: https://gordonburgett.net/
 languageCode: en-us
-title: Gordon Burgett | Fractional AI Engineering Director
+title: Gordon Burgett | Fractional AI Engineer, Dallas-Fort Worth
 theme: PaperMod
 copyright: All content © Gordon Burgett, 2014-2026
 
@@ -25,9 +25,20 @@ minify:
 params:
   env: production
   title: Gordon Burgett
-  description: "Fractional AI Engineering Director"
+  description: "Fractional AI engineer in Dallas-Fort Worth. I help small and mid-sized businesses with AI-connected company knowledge bases, custom CRMs, and AI strategy."
   keywords:
-    [Software Engineering, Technical Leadership, AI, Development, Architecture]
+    - Fractional AI engineer
+    - Dallas-Fort Worth
+    - AI knowledge base
+    - Custom CRM
+    - AI strategy
+  # Absolute profile URLs only. PaperMod otherwise copies socialIcons, including the relative /contact/ email link.
+  schema:
+    sameAs:
+      - https://github.com/gburgett
+      - https://www.linkedin.com/in/gordonburgett
+      - https://dfwfractionalfde.com
+      - https://ruby.social/@gburgett
   author: Gordon Burgett
   images: ["/images/headshot.jpg"]
   DateFormat: "January 2, 2006"
@@ -57,15 +68,11 @@ params:
   homeInfoParams:
     Title: "Gordon Burgett"
     Content: |
-      Director of Software Engineering, Albers Aerospace
-      Director, HealthShare Technology Solutions
+      Fractional AI engineer in Dallas-Fort Worth.
 
-      Engineering Leader with 15+ years of Software Engineering expertise.
-      Currently leading AI workflow transformation at Albers Aerospace.
+      I help small and mid-sized businesses with AI-connected company knowledge bases, custom CRMs, and AI strategy.
 
-      In my spare time, I enjoy helping churches navigate the complexities of healthcare cost-sharing ministries such as CHM (Christian Healthcare Ministries).
-
-      [Let's build something together →](https://albers.engineering/capabilities/software)
+      [DFW Fractional FDE](https://dfwfractionalfde.com)
 
   socialIcons:
     - name: github

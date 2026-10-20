@@ -1,0 +1,20 @@
+{{- /* Home FAQ JSON-LD. Caller passes the same slice the visible FAQ renders. */ -}}
+{{- $entities := slice -}}
+{{- range . -}}
+  {{- $q := index . "q" | htmlUnescape | plainify | replaceRE `\s+` " " -}}
+  {{- $a := index . "a" | htmlUnescape | plainify | replaceRE `\s+` " " -}}
+  {{- $q = trim $q " " -}}
+  {{- $a = trim $a " " -}}
+  {{- $entities = $entities | append (dict
+    "@type" "Question"
+    "name" $q
+    "acceptedAnswer" (dict "@type" "Answer" "text" $a)
+  ) -}}
+{{- end -}}
+{{- $page := dict
+  "@context" "https://schema.org"
+  "@type" "FAQPage"
+  "url" site.Home.Permalink
+  "mainEntity" $entities
+-}}
+<script type="application/ld+json">{{ $page | jsonify (dict "indent" "  ") | safeJS }}</script>

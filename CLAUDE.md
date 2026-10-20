@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Overview
 
-This is Gordon Burgett's personal blog built with Hugo static site generator, using the PaperMod theme with extensive customizations. The site focuses on technical leadership, AI/ML projects, and professional portfolio presentation with LinkedIn-aligned branding.
+This is Gordon Burgett's site, built with the Hugo static site generator and the PaperMod theme, plus custom layouts. He is a fractional AI engineer in Dallas-Fort Worth. The business site is https://dfwfractionalfde.com. This site is his writing and background, and it is live at https://gordonburgett.net.
 
 ## Development Commands
 
@@ -36,12 +36,15 @@ hugo new projects/my-project.md
 
 ### Deployment
 
-The site is deployed via Docker:
+Pushes to `master` are built and published to GitHub Pages by `.github/workflows/gh-pages.yml`.
 
-1. Build static files: `hugo`
-2. Docker builds Apache container with `public/` directory
-3. Container pushed to DockerHub: `gordonburgett/blog`
-4. HAProxy terminates SSL and forwards to container ports 8080/8081
+1. The workflow checks out the repo with theme submodules and runs `hugo --minify`
+2. `peaceiris/actions-gh-pages` publishes the `public/` directory
+3. GitHub Pages serves the apex host `https://gordonburgett.net` (`static/CNAME`)
+
+`baseURL` in `config.yml` is `https://gordonburgett.net/`. Canonical URLs, Open Graph, the sitemap, JSON-LD, and the Sitemap line in robots.txt all follow it.
+
+A Dockerfile from an older Apache setup is still in the repo. It is not how the site is deployed.
 
 ## Architecture
 
@@ -89,18 +92,25 @@ image = "/images/post-image.png"
 The site heavily customizes PaperMod theme through layout overrides:
 
 **Key Layout Files:**
-- `layouts/index.html` - Home page: renders home_info, capabilities section, projects grid, recent posts
-- `layouts/partials/header.html` - Custom header with hamburger menu and mobile navigation
-- `layouts/partials/extend_head.html` - Meta tags for Open Graph, Twitter Cards, Plausible Analytics
-- `layouts/partials/sections/capabilities.html` - Capabilities grid section (4 categories)
-- `layouts/partials/sections/projects.html` - Featured projects grid with cards
-- `layouts/projects/single.html` - Individual project page template
+- `layouts/index.html` - Home page (hero, proof, about, reading, FAQ, contact)
+- `layouts/partials/gb_header.html` - Redesign header. `header.html` switches between this and the classic PaperMod header
+- `layouts/partials/gb_footer.html` - Redesign footer, including the link to https://dfwfractionalfde.com
+- `layouts/partials/extend_head.html` - Fonts for redesign pages, Search Console verification, Person JSON-LD, noindex for unlisted posts. Open Graph and Twitter cards are not emitted here
+- `layouts/partials/templates/opengraph.html` and `twitter_cards.html` - The only Open Graph and Twitter tags
+- `layouts/partials/page_description.html` - Meta description: front matter `description`, then `quote`, then a shortened summary
+- `layouts/posts/single.html` and `layouts/projects/single.html` - Article pages via `gb_article.html`
+- `layouts/albania/single.html` - Albania journal pages, including the only Plausible snippet
 
 **Custom Sections on Homepage:**
-1. Home info (profile image, bio, social icons)
-2. Capabilities section (4 categories: AI/ML, Systems, Leadership, Tech Stack)
-3. Featured Projects (filtered by `showInHome` parameter)
-4. Recent Blog Posts (first 5)
+1. Hero (name, fractional AI engineer, who the work is for)
+2. How I think about this
+3. Proof (linked case studies)
+4. About
+5. What I'm reading
+6. FAQ (the visible questions and the FAQPage JSON-LD come from the same `$faqs` slice)
+7. Contact
+
+`layouts/partials/sections/capabilities.html` and `sections/projects.html` are leftovers from an older home page. The current home page does not render them.
 
 ### Styling
 
@@ -124,51 +134,44 @@ The site heavily customizes PaperMod theme through layout overrides:
 **Main Config:** `config.yml`
 
 **Important Parameters:**
-- `params.homeInfoParams` - Home page headline and bio
-- `params.capabilities` - Capabilities section with 4 categories
-- `params.projects.enable` - Toggle featured projects section
-- `params.socialIcons` - GitHub, LinkedIn, Email links
+- `baseURL` - `https://gordonburgett.net/`
+- `title` and `params.description` - Home page title and meta description
+- `params.title` - Short site name used on inner page titles (`Page | Gordon Burgett`)
+- `params.schema.sameAs` - Absolute profile URLs for the home Organization JSON-LD. Do not put relative paths here
+- `params.homeInfoParams` - Older home bio, kept for the classic list layout
+- `params.socialIcons` - GitHub, LinkedIn, and the contact page
 - `params.fuseOpts` - Client-side search configuration
 - `languages.en.menu.main` - Navigation menu items
 
 **Search:** Uses Fuse.js for client-side search with JSON index output.
 
-**Analytics:** Plausible Analytics script in `extend_head.html`.
+**Analytics:** Plausible (`https://plausible.io/js/script.js`, `data-domain="gordonburgett.net"`) is loaded only in `layouts/albania/single.html`. Home, posts, projects, and the other sections do not load it. `layouts/partials/google_analytics.html` is intentionally empty.
+
+**SEO files:**
+- `static/llms.txt` - Plain-text summary for answer engines (who Gordon is, what he offers, key pages)
+- `enableRobotsTXT: true` - Generated robots.txt allows all crawlers, including AI crawlers, and points at the sitemap
+- Home FAQ JSON-LD is `layouts/partials/schema_faq.html`, called with the same slice the FAQ renders
+- Person JSON-LD is `layouts/partials/schema_person.html`
 
 ## Common Patterns
 
-### Adding a New Featured Project
+### Adding a New Project
 
 1. Create project file: `hugo new projects/project-name.md`
-2. Set `showInHome = true` in front matter
-3. Add project image to `static/images/projects/`
-4. Include badges array and links array
-5. Project will appear in homepage grid automatically
+2. Add a project image to `static/images/projects/`
+3. Include badges and links in front matter
+4. The home page proof block is a fixed list in `layouts/index.html`. Add the page there if it should show on the home page
 
 ### Adding a New Blog Post
 
-1. Create post in appropriate year: `hugo new posts/2026/05_post-name.md`
-2. Set front matter: title, date, Categories, Tags
-3. Add images to `static/images/2026/` (organize by year)
+1. Create the post in the right year: `hugo new posts/2026/05_post-name.md`
+2. Set front matter: title, date, Categories, Tags, and a `description` (plain sentence, used as the meta description)
+3. Add images to `static/images/YYYY/`
 4. Set `draft = false` when ready to publish
-
-### Hiding a Project from Homepage
-
-Set `showInHome = false` in project front matter. The project page remains accessible but won't appear in the featured grid.
-
-### Modifying the Capabilities Section
-
-Edit `config.yml` under `params.capabilities.items`. Each item has:
-- `category` - Section header
-- `items` - Array of bullet points
 
 ### Mobile Navigation
 
-The custom hamburger menu is implemented in:
-- `layouts/partials/header.html` - HTML structure and JavaScript
-- `assets/css/extended/custom.css` - Styling and animations
-
-Mobile menu overlay activates at 768px breakpoint.
+Redesign pages use `layouts/partials/gb_header.html`. The nav collapses at 900px in `assets/css/extended/redesign.css`. Older pages still use `layouts/partials/header_classic.html`, with the overlay menu at 768px in `assets/css/extended/custom.css`.
 
 ## Theme Relationship
 
@@ -181,7 +184,7 @@ The site overrides theme templates by placing files in `layouts/` with matching 
 ## Important Notes
 
 - Avoid em-dashes in content - use regular dashes or rewrite (user preference)
-- LinkedIn blue (#0077b5) is the primary brand color
+- Redesign pages use near-black `#14171a` and teal `#1c5f63`. LinkedIn blue (`#0077b5`) remains in the older custom CSS
 - Images should be organized by year in `static/images/YYYY/`
 - All new posts should follow the TOML front matter format with `+++` delimiters
 - Draft posts require `draft = true` and will only show with `hugo server -D`
