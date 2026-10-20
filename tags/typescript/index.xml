@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Typescript on Gordon Burgett | Fractional AI Engineering Director</title>
-    <link>http://www.gordonburgett.net/tags/typescript/</link>
-    <description>Recent content in Typescript on Gordon Burgett | Fractional AI Engineering Director</description>
+    <title>Typescript on Gordon Burgett | Fractional AI Engineer, Dallas-Fort Worth</title>
+    <link>https://gordonburgett.net/tags/typescript/</link>
+    <description>Recent content in Typescript on Gordon Burgett | Fractional AI Engineer, Dallas-Fort Worth</description>
     <image>
-      <title>Gordon Burgett | Fractional AI Engineering Director</title>
-      <url>http://www.gordonburgett.net/images/headshot.jpg</url>
-      <link>http://www.gordonburgett.net/images/headshot.jpg</link>
+      <title>Gordon Burgett | Fractional AI Engineer, Dallas-Fort Worth</title>
+      <url>https://gordonburgett.net/images/headshot.jpg</url>
+      <link>https://gordonburgett.net/images/headshot.jpg</link>
     </image>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>All content © Gordon Burgett, 2014-2026</copyright>
     <lastBuildDate>Sun, 20 May 2018 14:52:15 -0500</lastBuildDate>
-    <atom:link href="http://www.gordonburgett.net/tags/typescript/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://gordonburgett.net/tags/typescript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Feeling Like I&#39;m at Hogwarts</title>
-      <link>http://www.gordonburgett.net/archive/2018/05_enrolled_at_hogwarts/</link>
+      <link>https://gordonburgett.net/archive/2018/05_enrolled_at_hogwarts/</link>
       <pubDate>Sun, 20 May 2018 14:52:15 -0500</pubDate>
-      <guid>http://www.gordonburgett.net/archive/2018/05_enrolled_at_hogwarts/</guid>
+      <guid>https://gordonburgett.net/archive/2018/05_enrolled_at_hogwarts/</guid>
       <description>&lt;p&gt;I spent some time this week playing with &lt;a href=&#34;https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-8.html&#34;&gt;Typescript 2.8&amp;rsquo;s new features&lt;/a&gt;
 for modeling various complex types.  The new syntax that I wanted to play with
 was the conditional type syntax,&lt;/p&gt;

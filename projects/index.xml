@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Case Studies on Gordon Burgett | Fractional AI Engineering Director</title>
-    <link>http://www.gordonburgett.net/projects/</link>
-    <description>Recent content in Case Studies on Gordon Burgett | Fractional AI Engineering Director</description>
+    <title>Case Studies on Gordon Burgett | Fractional AI Engineer, Dallas-Fort Worth</title>
+    <link>https://gordonburgett.net/projects/</link>
+    <description>Recent content in Case Studies on Gordon Burgett | Fractional AI Engineer, Dallas-Fort Worth</description>
     <image>
-      <title>Gordon Burgett | Fractional AI Engineering Director</title>
-      <url>http://www.gordonburgett.net/images/headshot.jpg</url>
-      <link>http://www.gordonburgett.net/images/headshot.jpg</link>
+      <title>Gordon Burgett | Fractional AI Engineer, Dallas-Fort Worth</title>
+      <url>https://gordonburgett.net/images/headshot.jpg</url>
+      <link>https://gordonburgett.net/images/headshot.jpg</link>
     </image>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>All content © Gordon Burgett, 2014-2026</copyright>
     <lastBuildDate>Mon, 02 Dec 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://www.gordonburgett.net/projects/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://gordonburgett.net/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Watermark Community Church App</title>
-      <link>http://www.gordonburgett.net/projects/watermark-community-church-mobile-app/</link>
+      <link>https://gordonburgett.net/projects/watermark-community-church-mobile-app/</link>
       <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://www.gordonburgett.net/projects/watermark-community-church-mobile-app/</guid>
+      <guid>https://gordonburgett.net/projects/watermark-community-church-mobile-app/</guid>
       <description>&lt;p&gt;As Director of Tech Dev at Watermark, I overhauled our mobile app managing the entire process from
 vision casting through budgeting, vendor selection, implementation, testing, and launch.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Healthshare Technology Solutions</title>
-      <link>http://www.gordonburgett.net/projects/healthshare-technology-solutions/</link>
+      <link>https://gordonburgett.net/projects/healthshare-technology-solutions/</link>
       <pubDate>Sat, 16 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://www.gordonburgett.net/projects/healthshare-technology-solutions/</guid>
+      <guid>https://gordonburgett.net/projects/healthshare-technology-solutions/</guid>
       <description>&lt;p&gt;I built the HealthShare app to solve my own problems with Christian Healthcare Ministries (CHM).  We&amp;rsquo;ve now grown it into a B2B
 SAAS serving multiple churches.  With the HealthShare app, we&amp;rsquo;ve solved the administrative burden of CHM for members,
 and we&amp;rsquo;re providing visibility into CHM spend for healthcare plan administrators at our partner churches and businesses.&lt;/p&gt;
@@ -34,9 +34,9 @@ and we&amp;rsquo;re providing visibility into CHM spend for healthcare plan admi
     </item>
     <item>
       <title>VoirDire App</title>
-      <link>http://www.gordonburgett.net/projects/voir-dire-app/</link>
+      <link>https://gordonburgett.net/projects/voir-dire-app/</link>
       <pubDate>Sun, 20 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://www.gordonburgett.net/projects/voir-dire-app/</guid>
+      <guid>https://gordonburgett.net/projects/voir-dire-app/</guid>
       <description>&lt;p&gt;We built the VoirDire app to help our client handle jury selection electronically for his upcoming trials.  He is now
 marketing the app through his network of attorneys to build out the user base.&lt;/p&gt;
 &lt;p&gt;Many attorneys still use pen and paper sticky notes to write down juror notes, including tracking responses to juror
@@ -46,9 +46,9 @@ can make a difference on the margins in the outcome of a case.&lt;/p&gt;</descri
     </item>
     <item>
       <title>Neighbor Solutions</title>
-      <link>http://www.gordonburgett.net/projects/neighbor-solutions/</link>
+      <link>https://gordonburgett.net/projects/neighbor-solutions/</link>
       <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://www.gordonburgett.net/projects/neighbor-solutions/</guid>
+      <guid>https://gordonburgett.net/projects/neighbor-solutions/</guid>
       <description>&lt;p&gt;In contracting hourly for &lt;a href=&#34;https://neighbor.solutions/&#34;&gt;Neighbor Solutions&lt;/a&gt;, I&amp;rsquo;ve been enjoying
 working with AI to build unstructured data import and a Retrieval Augmented Generation (RAG) pipeline.&lt;/p&gt;
 &lt;p&gt;Neighbor Solutions is a brand new CRM built to enable organizations to better care for our unhoused neighbors and those in need.

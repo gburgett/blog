@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>VoirDire App on Gordon Burgett | Fractional AI Engineering Director</title>
-    <link>http://www.gordonburgett.net/tags/voirdire-app/</link>
-    <description>Recent content in VoirDire App on Gordon Burgett | Fractional AI Engineering Director</description>
+    <title>VoirDire App on Gordon Burgett | Fractional AI Engineer, Dallas-Fort Worth</title>
+    <link>https://gordonburgett.net/tags/voirdire-app/</link>
+    <description>Recent content in VoirDire App on Gordon Burgett | Fractional AI Engineer, Dallas-Fort Worth</description>
     <image>
-      <title>Gordon Burgett | Fractional AI Engineering Director</title>
-      <url>http://www.gordonburgett.net/images/headshot.jpg</url>
-      <link>http://www.gordonburgett.net/images/headshot.jpg</link>
+      <title>Gordon Burgett | Fractional AI Engineer, Dallas-Fort Worth</title>
+      <url>https://gordonburgett.net/images/headshot.jpg</url>
+      <link>https://gordonburgett.net/images/headshot.jpg</link>
     </image>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>All content © Gordon Burgett, 2014-2026</copyright>
     <lastBuildDate>Sun, 20 Oct 2024 10:00:00 -0500</lastBuildDate>
-    <atom:link href="http://www.gordonburgett.net/tags/voirdire-app/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://gordonburgett.net/tags/voirdire-app/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Implementing Licensing &amp; Permissions in a React Redux app</title>
-      <link>http://www.gordonburgett.net/posts/2024/10_voir-dire-licensing-modal/</link>
+      <link>https://gordonburgett.net/posts/2024/10_voir-dire-licensing-modal/</link>
       <pubDate>Sun, 20 Oct 2024 10:00:00 -0500</pubDate>
-      <guid>http://www.gordonburgett.net/posts/2024/10_voir-dire-licensing-modal/</guid>
+      <guid>https://gordonburgett.net/posts/2024/10_voir-dire-licensing-modal/</guid>
       <description>&lt;p&gt;In the process of building out the &lt;a href=&#34;https://www.voirdire.app/&#34;&gt;VoirDire App&lt;/a&gt; for our client, we ran into an interesting
 problem.  How do we enforce licensing requirements in a cross-cutting way, without tediously identifying every area
 in the UI where the user might take an action that they were not allowed to take?  The client&amp;rsquo;s licensing requirements

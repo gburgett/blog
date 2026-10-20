@@ -1,0 +1,29 @@
+# Gordon Burgett
+
+> Fractional AI engineer in Dallas-Fort Worth. I help small and mid-sized businesses with AI-connected company knowledge bases, custom CRMs, and AI strategy.
+
+Gordon Burgett is a fractional AI engineer based in Dallas-Fort Worth. He works with small and mid-sized businesses on a retainer: connecting company knowledge to AI, building custom CRMs (including CRMs on Notion), thinking through AI strategy, go-to-market engineering, and evals for companies that are building AI features.
+
+The business site is https://dfwfractionalfde.com. This site, https://gordonburgett.net, is his writing and background.
+
+## Offers
+
+- AI-connected company knowledge bases
+- Custom CRMs, including CRMs built on Notion
+- Strategic AI thought partnership
+- Go-to-market engineering
+- Evals for companies building AI features
+
+## Key pages
+
+- [Home](https://gordonburgett.net/): Who Gordon is, how an engagement works, and common questions
+- [Writing](https://gordonburgett.net/posts/): Notes on AI, engineering, and running a business
+- [Case studies](https://gordonburgett.net/projects/): Selected work
+- [Contact](https://gordonburgett.net/contact/): Send a note
+- [DFW Fractional FDE](https://dfwfractionalfde.com): Business site
+
+## Elsewhere
+
+- GitHub: https://github.com/gburgett
+- LinkedIn: https://www.linkedin.com/in/gordonburgett
+- Mastodon: https://ruby.social/@gburgett

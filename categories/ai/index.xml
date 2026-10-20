@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>AI on Gordon Burgett | Fractional AI Engineering Director</title>
-    <link>http://www.gordonburgett.net/categories/ai/</link>
-    <description>Recent content in AI on Gordon Burgett | Fractional AI Engineering Director</description>
+    <title>AI on Gordon Burgett | Fractional AI Engineer, Dallas-Fort Worth</title>
+    <link>https://gordonburgett.net/categories/ai/</link>
+    <description>Recent content in AI on Gordon Burgett | Fractional AI Engineer, Dallas-Fort Worth</description>
     <image>
-      <title>Gordon Burgett | Fractional AI Engineering Director</title>
-      <url>http://www.gordonburgett.net/images/headshot.jpg</url>
-      <link>http://www.gordonburgett.net/images/headshot.jpg</link>
+      <title>Gordon Burgett | Fractional AI Engineer, Dallas-Fort Worth</title>
+      <url>https://gordonburgett.net/images/headshot.jpg</url>
+      <link>https://gordonburgett.net/images/headshot.jpg</link>
     </image>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>All content © Gordon Burgett, 2014-2026</copyright>
     <lastBuildDate>Mon, 05 Oct 2026 10:00:00 -0500</lastBuildDate>
-    <atom:link href="http://www.gordonburgett.net/categories/ai/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://gordonburgett.net/categories/ai/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Most Expensive Email in Your Inbox</title>
-      <link>http://www.gordonburgett.net/posts/2026/10_retention-churn/</link>
+      <link>https://gordonburgett.net/posts/2026/10_retention-churn/</link>
       <pubDate>Mon, 05 Oct 2026 10:00:00 -0500</pubDate>
-      <guid>http://www.gordonburgett.net/posts/2026/10_retention-churn/</guid>
+      <guid>https://gordonburgett.net/posts/2026/10_retention-churn/</guid>
       <description>&lt;p&gt;More sales only treads water if you can&amp;rsquo;t hold on to the customers you already have.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;m working with an independent insurance agency right now, and their real growth problem isn&amp;rsquo;t acquisition. It&amp;rsquo;s retention. Renewals compound. Lose the customer and that stream just stops. They spent real time and money winning that person. Losing them to a forgotten email is the expensive kind of churn - the kind where nobody decided to lose them.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Transformational Leadership: The Antidote to AI Fear</title>
-      <link>http://www.gordonburgett.net/posts/2026/09_shepherding-through-transformation/</link>
+      <link>https://gordonburgett.net/posts/2026/09_shepherding-through-transformation/</link>
       <pubDate>Tue, 15 Sep 2026 10:00:00 -0500</pubDate>
-      <guid>http://www.gordonburgett.net/posts/2026/09_shepherding-through-transformation/</guid>
+      <guid>https://gordonburgett.net/posts/2026/09_shepherding-through-transformation/</guid>
       <description>&lt;p&gt;The AI revolution is bringing out the extremes in both camps.  I&amp;rsquo;ve seen it play out personally at work.  Fear and giddy excitement are present in
 equal portion, driving employees&amp;rsquo; daily decisions around AI adoption.  Both reactions are dangerous for different reasons, but I want to focus
 on fear in this post for one simple reason: fear is what slams the door shut on AI adoption.&lt;/p&gt;
@@ -36,39 +36,39 @@ The saying I have heard from our own CEO this year is &amp;ldquo;every day you&a
     </item>
     <item>
       <title>Theory Building with AI</title>
-      <link>http://www.gordonburgett.net/posts/2026/09_programming-as-theory-building/</link>
+      <link>https://gordonburgett.net/posts/2026/09_programming-as-theory-building/</link>
       <pubDate>Thu, 10 Sep 2026 10:00:00 -0500</pubDate>
-      <guid>http://www.gordonburgett.net/posts/2026/09_programming-as-theory-building/</guid>
+      <guid>https://gordonburgett.net/posts/2026/09_programming-as-theory-building/</guid>
       <description>&lt;h1 id=&#34;what-is-the-act-of-programming&#34;&gt;What is the act of programming?&lt;/h1&gt;
-&lt;p&gt;My team and I &lt;a href=&#34;http://www.gordonburgett.net/posts/2026/05_scrum-is-broken/&#34;&gt;went back to first principles&lt;/a&gt; earlier this year.
+&lt;p&gt;My team and I &lt;a href=&#34;https://gordonburgett.net/posts/2026/05_scrum-is-broken/&#34;&gt;went back to first principles&lt;/a&gt; earlier this year.
 And I went back to the old masters: Brooks, Naur, Djikstra.  I was seeking to re-learn the essence of Software Engineering from those who had thought about the
 problem in the beginning.&lt;/p&gt;
 &lt;p&gt;If the act of programming is no longer typing symbols into computer code, then what is it?  I think Naur has a great definition in his paper, &lt;a href=&#34;https://pages.cs.wisc.edu/~remzi/Naur.pdf&#34;&gt;&amp;ldquo;Programming as Theory Building&amp;rdquo;&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Scrum is Broken</title>
-      <link>http://www.gordonburgett.net/posts/2026/05_scrum-is-broken/</link>
+      <link>https://gordonburgett.net/posts/2026/05_scrum-is-broken/</link>
       <pubDate>Wed, 24 Jun 2026 10:00:00 -0500</pubDate>
-      <guid>http://www.gordonburgett.net/posts/2026/05_scrum-is-broken/</guid>
+      <guid>https://gordonburgett.net/posts/2026/05_scrum-is-broken/</guid>
       <description>&lt;h1 id=&#34;scrum-is-broken&#34;&gt;Scrum is broken.&lt;/h1&gt;
 &lt;p&gt;I thought I knew what Agile looked like.  2-week sprints, story points, daily standups.  I ran that cadence at my last job.
 But something changed with Opus 4.7.  Now, once we&amp;rsquo;ve groomed the cards and defined the sprint, everything is done within a day.&lt;br&gt;
 Doesn&amp;rsquo;t matter how many cards we throw into a sprint, we just fire up more parallel agents.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;everything&amp;rsquo;s made up and the points don&amp;rsquo;t matter&#34; loading=&#34;lazy&#34; src=&#34;http://www.gordonburgett.net/images/2026/everythings-made-up.webp&#34;&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img alt=&#34;everything&amp;rsquo;s made up and the points don&amp;rsquo;t matter&#34; loading=&#34;lazy&#34; src=&#34;https://gordonburgett.net/images/2026/everythings-made-up.webp&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Pushing Claude Code Further with Spec Driven Development</title>
-      <link>http://www.gordonburgett.net/posts/2026/03_spec-driven-development/</link>
+      <link>https://gordonburgett.net/posts/2026/03_spec-driven-development/</link>
       <pubDate>Fri, 20 Mar 2026 10:00:00 -0500</pubDate>
-      <guid>http://www.gordonburgett.net/posts/2026/03_spec-driven-development/</guid>
+      <guid>https://gordonburgett.net/posts/2026/03_spec-driven-development/</guid>
       <description>&lt;h1 id=&#34;the-problem-im-trying-to-solve&#34;&gt;The Problem I&amp;rsquo;m Trying to Solve&lt;/h1&gt;
 &lt;p&gt;I&amp;rsquo;ve been coding with AI agents for as long as they&amp;rsquo;ve been generally available, and I keep running into the same bottleneck: me. Every time Claude generates code, I need to review it. Every time it completes a feature, I need to verify it actually works. Every time it runs tests, I need to check if the failures are real bugs or hallucinations. I&amp;rsquo;m the human in the loop, and I&amp;rsquo;m slowing everything down.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Building Alice, an Empowering AI Agent</title>
-      <link>http://www.gordonburgett.net/posts/2026/03_building-ai-agents-that-empower/</link>
+      <link>https://gordonburgett.net/posts/2026/03_building-ai-agents-that-empower/</link>
       <pubDate>Wed, 18 Mar 2026 10:00:00 -0500</pubDate>
-      <guid>http://www.gordonburgett.net/posts/2026/03_building-ai-agents-that-empower/</guid>
+      <guid>https://gordonburgett.net/posts/2026/03_building-ai-agents-that-empower/</guid>
       <description>&lt;p&gt;What does it look like to build AI agents that actually empower people&amp;rsquo;s lives, not just &amp;ldquo;augment&amp;rdquo; them?  For HealthShare Technology Solutions, I wanted to build an AI agent
 that non-technical users can actually use to take the hassle out of their health care cost sharing plan.  In this post I&amp;rsquo;ll describe the guiding principles and design
 decisions that made Alice not just possible, but empowering to everyday users.&lt;/p&gt;

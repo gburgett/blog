@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Node on Gordon Burgett | Fractional AI Engineering Director</title>
-    <link>http://www.gordonburgett.net/tags/node/</link>
-    <description>Recent content in Node on Gordon Burgett | Fractional AI Engineering Director</description>
+    <title>Node on Gordon Burgett | Fractional AI Engineer, Dallas-Fort Worth</title>
+    <link>https://gordonburgett.net/tags/node/</link>
+    <description>Recent content in Node on Gordon Burgett | Fractional AI Engineer, Dallas-Fort Worth</description>
     <image>
-      <title>Gordon Burgett | Fractional AI Engineering Director</title>
-      <url>http://www.gordonburgett.net/images/headshot.jpg</url>
-      <link>http://www.gordonburgett.net/images/headshot.jpg</link>
+      <title>Gordon Burgett | Fractional AI Engineer, Dallas-Fort Worth</title>
+      <url>https://gordonburgett.net/images/headshot.jpg</url>
+      <link>https://gordonburgett.net/images/headshot.jpg</link>
     </image>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>All content © Gordon Burgett, 2014-2026</copyright>
     <lastBuildDate>Sun, 23 Jul 2017 17:28:52 +0200</lastBuildDate>
-    <atom:link href="http://www.gordonburgett.net/tags/node/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://gordonburgett.net/tags/node/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Making a static site searchable</title>
-      <link>http://www.gordonburgett.net/archive/2017/07_making_a_searchable_static_site/</link>
+      <link>https://gordonburgett.net/archive/2017/07_making_a_searchable_static_site/</link>
       <pubDate>Sun, 23 Jul 2017 17:28:52 +0200</pubDate>
-      <guid>http://www.gordonburgett.net/archive/2017/07_making_a_searchable_static_site/</guid>
+      <guid>https://gordonburgett.net/archive/2017/07_making_a_searchable_static_site/</guid>
       <description>&lt;p&gt;My site is getting pretty big now!  50+ posts, plus my journal entries from years past, I have content stretching over 4 years.
 So I started thinking about ways to add search functionality.  And anyone who knows me knows I like to make these kind of things
 more complicated than they need to be, so with that in mind I had a fun challenge to solve.  How do I add search functionality to
@@ -26,9 +26,9 @@ a static site?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Migrating to Node</title>
-      <link>http://www.gordonburgett.net/archive/2015/04_migrating-to-node/</link>
+      <link>https://gordonburgett.net/archive/2015/04_migrating-to-node/</link>
       <pubDate>Fri, 10 Apr 2015 23:23:19 -0500</pubDate>
-      <guid>http://www.gordonburgett.net/archive/2015/04_migrating-to-node/</guid>
+      <guid>https://gordonburgett.net/archive/2015/04_migrating-to-node/</guid>
       <description>My experience migrating my blog to nodejs</description>
     </item>
   </channel>

@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Neighbor Solutions on Gordon Burgett | Fractional AI Engineering Director</title>
-    <link>http://www.gordonburgett.net/tags/neighbor-solutions/</link>
-    <description>Recent content in Neighbor Solutions on Gordon Burgett | Fractional AI Engineering Director</description>
+    <title>Neighbor Solutions on Gordon Burgett | Fractional AI Engineer, Dallas-Fort Worth</title>
+    <link>https://gordonburgett.net/tags/neighbor-solutions/</link>
+    <description>Recent content in Neighbor Solutions on Gordon Burgett | Fractional AI Engineer, Dallas-Fort Worth</description>
     <image>
-      <title>Gordon Burgett | Fractional AI Engineering Director</title>
-      <url>http://www.gordonburgett.net/images/headshot.jpg</url>
-      <link>http://www.gordonburgett.net/images/headshot.jpg</link>
+      <title>Gordon Burgett | Fractional AI Engineer, Dallas-Fort Worth</title>
+      <url>https://gordonburgett.net/images/headshot.jpg</url>
+      <link>https://gordonburgett.net/images/headshot.jpg</link>
     </image>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>All content © Gordon Burgett, 2014-2026</copyright>
     <lastBuildDate>Sat, 16 Nov 2024 10:00:00 -0500</lastBuildDate>
-    <atom:link href="http://www.gordonburgett.net/tags/neighbor-solutions/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://gordonburgett.net/tags/neighbor-solutions/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Building an Unstructured Data Import</title>
-      <link>http://www.gordonburgett.net/posts/2024/11_neighbor-solutions-import/</link>
+      <link>https://gordonburgett.net/posts/2024/11_neighbor-solutions-import/</link>
       <pubDate>Sat, 16 Nov 2024 10:00:00 -0500</pubDate>
-      <guid>http://www.gordonburgett.net/posts/2024/11_neighbor-solutions-import/</guid>
+      <guid>https://gordonburgett.net/posts/2024/11_neighbor-solutions-import/</guid>
       <description>&lt;p&gt;Sometimes the hardest thing to figure out is not &amp;ldquo;how&amp;rdquo; to best apply a new technology, but &amp;ldquo;when not&amp;rdquo; to apply it.
 Nowhere has this been more true than with AI.  With the rush to stick the AI brand on every project, software engineers
 are being pressured to &amp;ldquo;just throw more AI&amp;rdquo; at the problem and hope it works.&lt;/p&gt;

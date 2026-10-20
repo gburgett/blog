@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Expressjs on Gordon Burgett | Fractional AI Engineering Director</title>
-    <link>http://www.gordonburgett.net/tags/expressjs/</link>
-    <description>Recent content in Expressjs on Gordon Burgett | Fractional AI Engineering Director</description>
+    <title>Expressjs on Gordon Burgett | Fractional AI Engineer, Dallas-Fort Worth</title>
+    <link>https://gordonburgett.net/tags/expressjs/</link>
+    <description>Recent content in Expressjs on Gordon Burgett | Fractional AI Engineer, Dallas-Fort Worth</description>
     <image>
-      <title>Gordon Burgett | Fractional AI Engineering Director</title>
-      <url>http://www.gordonburgett.net/images/headshot.jpg</url>
-      <link>http://www.gordonburgett.net/images/headshot.jpg</link>
+      <title>Gordon Burgett | Fractional AI Engineer, Dallas-Fort Worth</title>
+      <url>https://gordonburgett.net/images/headshot.jpg</url>
+      <link>https://gordonburgett.net/images/headshot.jpg</link>
     </image>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>All content © Gordon Burgett, 2014-2026</copyright>
     <lastBuildDate>Fri, 10 Apr 2015 23:23:19 -0500</lastBuildDate>
-    <atom:link href="http://www.gordonburgett.net/tags/expressjs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://gordonburgett.net/tags/expressjs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Migrating to Node</title>
-      <link>http://www.gordonburgett.net/archive/2015/04_migrating-to-node/</link>
+      <link>https://gordonburgett.net/archive/2015/04_migrating-to-node/</link>
       <pubDate>Fri, 10 Apr 2015 23:23:19 -0500</pubDate>
-      <guid>http://www.gordonburgett.net/archive/2015/04_migrating-to-node/</guid>
+      <guid>https://gordonburgett.net/archive/2015/04_migrating-to-node/</guid>
       <description>My experience migrating my blog to nodejs</description>
     </item>
   </channel>

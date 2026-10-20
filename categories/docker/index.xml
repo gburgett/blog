@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Docker on Gordon Burgett | Fractional AI Engineering Director</title>
-    <link>http://www.gordonburgett.net/categories/docker/</link>
-    <description>Recent content in Docker on Gordon Burgett | Fractional AI Engineering Director</description>
+    <title>Docker on Gordon Burgett | Fractional AI Engineer, Dallas-Fort Worth</title>
+    <link>https://gordonburgett.net/categories/docker/</link>
+    <description>Recent content in Docker on Gordon Burgett | Fractional AI Engineer, Dallas-Fort Worth</description>
     <image>
-      <title>Gordon Burgett | Fractional AI Engineering Director</title>
-      <url>http://www.gordonburgett.net/images/headshot.jpg</url>
-      <link>http://www.gordonburgett.net/images/headshot.jpg</link>
+      <title>Gordon Burgett | Fractional AI Engineer, Dallas-Fort Worth</title>
+      <url>https://gordonburgett.net/images/headshot.jpg</url>
+      <link>https://gordonburgett.net/images/headshot.jpg</link>
     </image>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>All content © Gordon Burgett, 2014-2026</copyright>
     <lastBuildDate>Tue, 21 Mar 2017 16:20:52 +0100</lastBuildDate>
-    <atom:link href="http://www.gordonburgett.net/categories/docker/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://gordonburgett.net/categories/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Automating more work</title>
-      <link>http://www.gordonburgett.net/archive/2017/03_automating_more_work/</link>
+      <link>https://gordonburgett.net/archive/2017/03_automating_more_work/</link>
       <pubDate>Tue, 21 Mar 2017 16:20:52 +0100</pubDate>
-      <guid>http://www.gordonburgett.net/archive/2017/03_automating_more_work/</guid>
+      <guid>https://gordonburgett.net/archive/2017/03_automating_more_work/</guid>
       <description>&lt;p&gt;So I took a look at my blog recently to make sure everything is working, and got a big fat &amp;ldquo;Your connection is not secure&amp;rdquo; message.  Uh oh!&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;certificate expired&#34; loading=&#34;lazy&#34; src=&#34;http://www.gordonburgett.net/images/2017/cert_expired.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;certificate expired&#34; loading=&#34;lazy&#34; src=&#34;https://gordonburgett.net/images/2017/cert_expired.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Fortunately I just need to request a new certificate from Let&amp;rsquo;s Encrypt and install it.  I&amp;rsquo;ve done this before, it&amp;rsquo;s a 10 minute job.  Buuuuuttt&amp;hellip;
 what if I could automate it?  If I spend all afternoon on this I&amp;rsquo;ll save myself 15 minutes of work every 3 months!  That math totally works out right?&lt;br&gt;
 What does the XKCD guy have to say about it?&lt;/p&gt;</description>

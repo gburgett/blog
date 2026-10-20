@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Development on Gordon Burgett | Fractional AI Engineering Director</title>
-    <link>http://www.gordonburgett.net/tags/development/</link>
-    <description>Recent content in Development on Gordon Burgett | Fractional AI Engineering Director</description>
+    <title>Development on Gordon Burgett | Fractional AI Engineer, Dallas-Fort Worth</title>
+    <link>https://gordonburgett.net/tags/development/</link>
+    <description>Recent content in Development on Gordon Burgett | Fractional AI Engineer, Dallas-Fort Worth</description>
     <image>
-      <title>Gordon Burgett | Fractional AI Engineering Director</title>
-      <url>http://www.gordonburgett.net/images/headshot.jpg</url>
-      <link>http://www.gordonburgett.net/images/headshot.jpg</link>
+      <title>Gordon Burgett | Fractional AI Engineer, Dallas-Fort Worth</title>
+      <url>https://gordonburgett.net/images/headshot.jpg</url>
+      <link>https://gordonburgett.net/images/headshot.jpg</link>
     </image>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>All content © Gordon Burgett, 2014-2026</copyright>
     <lastBuildDate>Fri, 20 Mar 2026 10:00:00 -0500</lastBuildDate>
-    <atom:link href="http://www.gordonburgett.net/tags/development/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://gordonburgett.net/tags/development/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pushing Claude Code Further with Spec Driven Development</title>
-      <link>http://www.gordonburgett.net/posts/2026/03_spec-driven-development/</link>
+      <link>https://gordonburgett.net/posts/2026/03_spec-driven-development/</link>
       <pubDate>Fri, 20 Mar 2026 10:00:00 -0500</pubDate>
-      <guid>http://www.gordonburgett.net/posts/2026/03_spec-driven-development/</guid>
+      <guid>https://gordonburgett.net/posts/2026/03_spec-driven-development/</guid>
       <description>&lt;h1 id=&#34;the-problem-im-trying-to-solve&#34;&gt;The Problem I&amp;rsquo;m Trying to Solve&lt;/h1&gt;
 &lt;p&gt;I&amp;rsquo;ve been coding with AI agents for as long as they&amp;rsquo;ve been generally available, and I keep running into the same bottleneck: me. Every time Claude generates code, I need to review it. Every time it completes a feature, I need to verify it actually works. Every time it runs tests, I need to check if the failures are real bugs or hallucinations. I&amp;rsquo;m the human in the loop, and I&amp;rsquo;m slowing everything down.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Building Alice, an Empowering AI Agent</title>
-      <link>http://www.gordonburgett.net/posts/2026/03_building-ai-agents-that-empower/</link>
+      <link>https://gordonburgett.net/posts/2026/03_building-ai-agents-that-empower/</link>
       <pubDate>Wed, 18 Mar 2026 10:00:00 -0500</pubDate>
-      <guid>http://www.gordonburgett.net/posts/2026/03_building-ai-agents-that-empower/</guid>
+      <guid>https://gordonburgett.net/posts/2026/03_building-ai-agents-that-empower/</guid>
       <description>&lt;p&gt;What does it look like to build AI agents that actually empower people&amp;rsquo;s lives, not just &amp;ldquo;augment&amp;rdquo; them?  For HealthShare Technology Solutions, I wanted to build an AI agent
 that non-technical users can actually use to take the hassle out of their health care cost sharing plan.  In this post I&amp;rsquo;ll describe the guiding principles and design
 decisions that made Alice not just possible, but empowering to everyday users.&lt;/p&gt;
@@ -34,9 +34,9 @@ decisions that made Alice not just possible, but empowering to everyday users.&l
     </item>
     <item>
       <title>Building an Unstructured Data Import</title>
-      <link>http://www.gordonburgett.net/posts/2024/11_neighbor-solutions-import/</link>
+      <link>https://gordonburgett.net/posts/2024/11_neighbor-solutions-import/</link>
       <pubDate>Sat, 16 Nov 2024 10:00:00 -0500</pubDate>
-      <guid>http://www.gordonburgett.net/posts/2024/11_neighbor-solutions-import/</guid>
+      <guid>https://gordonburgett.net/posts/2024/11_neighbor-solutions-import/</guid>
       <description>&lt;p&gt;Sometimes the hardest thing to figure out is not &amp;ldquo;how&amp;rdquo; to best apply a new technology, but &amp;ldquo;when not&amp;rdquo; to apply it.
 Nowhere has this been more true than with AI.  With the rush to stick the AI brand on every project, software engineers
 are being pressured to &amp;ldquo;just throw more AI&amp;rdquo; at the problem and hope it works.&lt;/p&gt;
@@ -49,9 +49,9 @@ of webpages.  There is very little consistency here, so some amount of natural l
     </item>
     <item>
       <title>Implementing Licensing &amp; Permissions in a React Redux app</title>
-      <link>http://www.gordonburgett.net/posts/2024/10_voir-dire-licensing-modal/</link>
+      <link>https://gordonburgett.net/posts/2024/10_voir-dire-licensing-modal/</link>
       <pubDate>Sun, 20 Oct 2024 10:00:00 -0500</pubDate>
-      <guid>http://www.gordonburgett.net/posts/2024/10_voir-dire-licensing-modal/</guid>
+      <guid>https://gordonburgett.net/posts/2024/10_voir-dire-licensing-modal/</guid>
       <description>&lt;p&gt;In the process of building out the &lt;a href=&#34;https://www.voirdire.app/&#34;&gt;VoirDire App&lt;/a&gt; for our client, we ran into an interesting
 problem.  How do we enforce licensing requirements in a cross-cutting way, without tediously identifying every area
 in the UI where the user might take an action that they were not allowed to take?  The client&amp;rsquo;s licensing requirements
@@ -67,9 +67,9 @@ whether they are over or under the limit.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Thoughts on Cursor</title>
-      <link>http://www.gordonburgett.net/posts/2024/09_thoughts-on-cursor/</link>
+      <link>https://gordonburgett.net/posts/2024/09_thoughts-on-cursor/</link>
       <pubDate>Fri, 20 Sep 2024 10:00:00 -0500</pubDate>
-      <guid>http://www.gordonburgett.net/posts/2024/09_thoughts-on-cursor/</guid>
+      <guid>https://gordonburgett.net/posts/2024/09_thoughts-on-cursor/</guid>
       <description>&lt;p&gt;As AI tools continue to reshape software development, I&amp;rsquo;ve been particularly impressed with Cursor, an AI-powered code editor that has transformed my daily workflow. After several months of use, I want to share my experiences and observations about why this tool has become indispensable in my development process.&lt;/p&gt;
 &lt;p&gt;The most striking impact of Cursor has been the dramatic increase in my productivity - I estimate it has doubled my coding speed.
 The secret sauce that Cursor has nailed is the UX around applying suggested edits back to my codebase.
@@ -77,9 +77,9 @@ The experience feels natural, almost like dictating your thoughts to a junior de
     </item>
     <item>
       <title>Feeling Like I&#39;m at Hogwarts</title>
-      <link>http://www.gordonburgett.net/archive/2018/05_enrolled_at_hogwarts/</link>
+      <link>https://gordonburgett.net/archive/2018/05_enrolled_at_hogwarts/</link>
       <pubDate>Sun, 20 May 2018 14:52:15 -0500</pubDate>
-      <guid>http://www.gordonburgett.net/archive/2018/05_enrolled_at_hogwarts/</guid>
+      <guid>https://gordonburgett.net/archive/2018/05_enrolled_at_hogwarts/</guid>
       <description>&lt;p&gt;I spent some time this week playing with &lt;a href=&#34;https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-8.html&#34;&gt;Typescript 2.8&amp;rsquo;s new features&lt;/a&gt;
 for modeling various complex types.  The new syntax that I wanted to play with
 was the conditional type syntax,&lt;/p&gt;
@@ -102,81 +102,81 @@ return values from &lt;a href=&#34;https://www.contentful.com/developers/docs/re
     </item>
     <item>
       <title>Modern Static Sites</title>
-      <link>http://www.gordonburgett.net/archive/2017/04_modern_static_sites/</link>
+      <link>https://gordonburgett.net/archive/2017/04_modern_static_sites/</link>
       <pubDate>Thu, 20 Apr 2017 13:49:22 +0200</pubDate>
-      <guid>http://www.gordonburgett.net/archive/2017/04_modern_static_sites/</guid>
+      <guid>https://gordonburgett.net/archive/2017/04_modern_static_sites/</guid>
       <description>&lt;p&gt;Today in 2017, there are a thousand and one different ways to build a website.  As always there&amp;rsquo;s good old fashioned &lt;a href=&#34;https://wordpress.com&#34;&gt;Wordpress&lt;/a&gt;, and of course there&amp;rsquo;s drag-n-drop website builders like &lt;a href=&#34;http://www.wix.com&#34;&gt;Wix&lt;/a&gt;.  One thing these have in common is that they need a traditional hosting environment, and for that you gotta pay.&lt;/p&gt;
 &lt;p&gt;If you can manage it, the cheapest way to host a website nowadays is to create a static HTML site.  But don&amp;rsquo;t hand-craft HTML, that&amp;rsquo;s hard and boring.  Use a static site generator, for fun and profit!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Taking Control of My Data</title>
-      <link>http://www.gordonburgett.net/archive/2016/09_taking_control_of_my_data/</link>
+      <link>https://gordonburgett.net/archive/2016/09_taking_control_of_my_data/</link>
       <pubDate>Sat, 17 Sep 2016 15:33:34 +0200</pubDate>
-      <guid>http://www.gordonburgett.net/archive/2016/09_taking_control_of_my_data/</guid>
+      <guid>https://gordonburgett.net/archive/2016/09_taking_control_of_my_data/</guid>
       <description>&lt;p&gt;One of my projects during my vacation has been to take back control of my data.  The question of online privacy is a difficult one, because while there&amp;rsquo;s some things you can do to improve your privacy, to really own your data takes a lot of effort and learning.  For most people, hosting their own services is more headache than it&amp;rsquo;s worth.  There&amp;rsquo;s a lot of good privacy-conscious services out there if you&amp;rsquo;re willing to pay, but most people are not willing to pay.  The convenience trumps the privacy concerns, and for me it has been that way for a long time as well.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Adventures in Dockerland</title>
-      <link>http://www.gordonburgett.net/archive/2016/02_adventures-in-dockerland/</link>
+      <link>https://gordonburgett.net/archive/2016/02_adventures-in-dockerland/</link>
       <pubDate>Sat, 20 Feb 2016 20:33:52 +0100</pubDate>
-      <guid>http://www.gordonburgett.net/archive/2016/02_adventures-in-dockerland/</guid>
+      <guid>https://gordonburgett.net/archive/2016/02_adventures-in-dockerland/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve been on a serious docker/aws kick recently.  I&amp;rsquo;ve learned just enough that it drives me to play with it.  I spent a lot of my free time on it this week, and didn&amp;rsquo;t spend as much as I&amp;rsquo;d like on learning Albanian&amp;hellip; This could be a problem&amp;hellip;&lt;/p&gt;
 &lt;p&gt;Anyways I might as well post more about what I&amp;rsquo;ve learned.  I&amp;rsquo;ve been wanting to make my web server more robust, to where if it dies for whatever reason I don&amp;rsquo;t have to do anything, it&amp;rsquo;ll come back on a new instance all on its own.  Unfortunately that&amp;rsquo;s a bit more difficult than you&amp;rsquo;d expect.  Lots of moving parts.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Docker Cloud is Neat</title>
-      <link>http://www.gordonburgett.net/archive/2016/02_docker-cloud-is-neat/</link>
+      <link>https://gordonburgett.net/archive/2016/02_docker-cloud-is-neat/</link>
       <pubDate>Mon, 15 Feb 2016 14:09:13 +0100</pubDate>
-      <guid>http://www.gordonburgett.net/archive/2016/02_docker-cloud-is-neat/</guid>
+      <guid>https://gordonburgett.net/archive/2016/02_docker-cloud-is-neat/</guid>
       <description>&lt;p&gt;I had some time off today so I decided to revisit how I&amp;rsquo;m hosting all my stuff.  One of my issues with using Amazon&amp;rsquo;s container service is that they make you assign resource values to each container, and those are not flexible.  So, I have to give each container high enough memory that it won&amp;rsquo;t die, but then I run out of space on my server real quick.  Since most of the stuff I want to host just sits idle the majority of the time, this wasn&amp;rsquo;t ideal for me.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hosting Reclaimed</title>
-      <link>http://www.gordonburgett.net/archive/2016/01_hosting_reclaimed/</link>
+      <link>https://gordonburgett.net/archive/2016/01_hosting_reclaimed/</link>
       <pubDate>Tue, 19 Jan 2016 21:31:01 +0100</pubDate>
-      <guid>http://www.gordonburgett.net/archive/2016/01_hosting_reclaimed/</guid>
+      <guid>https://gordonburgett.net/archive/2016/01_hosting_reclaimed/</guid>
       <description>&lt;p&gt;Here&amp;rsquo;s another technical post for y&amp;rsquo;all!&lt;/p&gt;
 &lt;p&gt;I had some time this past weekend, so I took a look into the website I made a year ago for &lt;a href=&#34;http://www.reclaimed431.org&#34;&gt;Reclaimed&lt;/a&gt;.  The old version was made with &lt;a href=&#34;http://locomotivecms.com/&#34;&gt;Locomotive CMS&lt;/a&gt;, and hosted on &lt;a href=&#34;http://www.locomotivehosting.com&#34;&gt;Locomotive hosting&lt;/a&gt;.  It was a good choice at the time, because we needed something fast.  We wanted to deploy it before the 2015 super bowl.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;d previously looked into moving it to Wordpress or Drupal, but that would basically require redoing the whole site.  More work than I&amp;rsquo;m willing to put in.  But, just this past weekend, &lt;a href=&#34;http://locomotive.works/&#34;&gt;Locomotive v3&lt;/a&gt; came out.  I decided to try hosting it myself, because $20/mo is just a bit too much to be paying for a simple website like this.  Plus, it would be fun! (or so I thought.)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Running with Docker</title>
-      <link>http://www.gordonburgett.net/archive/2015/10_running_with_docker/</link>
+      <link>https://gordonburgett.net/archive/2015/10_running_with_docker/</link>
       <pubDate>Wed, 07 Oct 2015 20:33:41 +0200</pubDate>
-      <guid>http://www.gordonburgett.net/archive/2015/10_running_with_docker/</guid>
+      <guid>https://gordonburgett.net/archive/2015/10_running_with_docker/</guid>
       <description>&lt;h3 id=&#34;locked-out&#34;&gt;Locked out!&lt;/h3&gt;
 &lt;p&gt;I managed to lock myself out of my EC2 instance when I was managing my keys.  So in order to update my blog, I had to deploy it to a new EC2 instance.  I decided to take the opportunity to improve the way I&amp;rsquo;m deploying new versions of my site.&lt;/p&gt;
 &lt;p&gt;Note: This will be a technical post.  If you&amp;rsquo;re following along with my adventure in Albania, you can skip this one.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Migrating to Node</title>
-      <link>http://www.gordonburgett.net/archive/2015/04_migrating-to-node/</link>
+      <link>https://gordonburgett.net/archive/2015/04_migrating-to-node/</link>
       <pubDate>Fri, 10 Apr 2015 23:23:19 -0500</pubDate>
-      <guid>http://www.gordonburgett.net/archive/2015/04_migrating-to-node/</guid>
+      <guid>https://gordonburgett.net/archive/2015/04_migrating-to-node/</guid>
       <description>My experience migrating my blog to nodejs</description>
     </item>
     <item>
       <title>which which?</title>
-      <link>http://www.gordonburgett.net/archive/2015/01_which-which/</link>
+      <link>https://gordonburgett.net/archive/2015/01_which-which/</link>
       <pubDate>Tue, 06 Jan 2015 22:49:08 +0100</pubDate>
-      <guid>http://www.gordonburgett.net/archive/2015/01_which-which/</guid>
+      <guid>https://gordonburgett.net/archive/2015/01_which-which/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m using &lt;a href=&#34;http://locomotivecms.com/&#34;&gt;locomotivecms&lt;/a&gt; for a project I&amp;rsquo;m working on, and it uses &lt;a href=&#34;http://www.imagemagick.org/&#34;&gt;ImageMagick&lt;/a&gt; for resizing pictures on the fly.  The &lt;a href=&#34;http://doc.locomotivecms.com/get-started/install-wagon#windows&#34;&gt;standard instructions&lt;/a&gt; say to use the bitnami Ruby stack installer to get everything you need in a nice neat bundle.&lt;/p&gt;
 &lt;p&gt;That worked for me for a while, until I needed to update the version of ruby I&amp;rsquo;m using.  So, I went through the long and painful process of uninstalling the ruby stack, installing each component individually, identifying and correcting a ton of minor problems, and finally squashed the last bug by writing this program.&lt;/p&gt;</description>
     </item>
     <item>
       <title>hosting the blog</title>
-      <link>http://www.gordonburgett.net/archive/2014/12_hosting-the-blog/</link>
+      <link>https://gordonburgett.net/archive/2014/12_hosting-the-blog/</link>
       <pubDate>Sun, 14 Dec 2014 18:42:21 -0600</pubDate>
-      <guid>http://www.gordonburgett.net/archive/2014/12_hosting-the-blog/</guid>
+      <guid>https://gordonburgett.net/archive/2014/12_hosting-the-blog/</guid>
       <description>&lt;p&gt;I decided to use Amazon EC2 to host the blog, because they give you 1 year free on a micro instance.  Plus I&amp;rsquo;ve always wanted to learn how to host something on Amazon&amp;rsquo;s cloud.  I&amp;rsquo;ll get a linux instance and put an Apache HTTP server on it.  Should be easy enough to do.&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s my EC2 management console after signing up for an Amazon account and creating a linux micro instance:
 ![EC2 Management console](/images/2014/EC2 management console.png)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Creating a blog</title>
-      <link>http://www.gordonburgett.net/archive/2014/12_creating-a-blog/</link>
+      <link>https://gordonburgett.net/archive/2014/12_creating-a-blog/</link>
       <pubDate>Sun, 14 Dec 2014 13:52:12 -0600</pubDate>
-      <guid>http://www.gordonburgett.net/archive/2014/12_creating-a-blog/</guid>
+      <guid>https://gordonburgett.net/archive/2014/12_creating-a-blog/</guid>
       <description>&lt;h3 id=&#34;well-here-it-is&#34;&gt;Well, here it is.&lt;/h3&gt;
 &lt;p&gt;I&amp;rsquo;ve been wanting to create a blog for a while.  I don&amp;rsquo;t know what it will look like in the future, or how often I&amp;rsquo;ll update it, but as I sit here writing it it&amp;rsquo;s kind of cathartic.  It would be good to get some thoughts out there, and if anybody reads it that&amp;rsquo;s a bonus.&lt;/p&gt;
 &lt;p&gt;I want to talk about anything and everything on this blog.  I&amp;rsquo;ll delve into my work, hopefully some of these pages will be useful when another developer types some obscure error code into google.  I&amp;rsquo;ll discuss my faith, hopefully that could spark some interesting discussion.  I&amp;rsquo;ll discuss the important stuff that happens in my life, hopefully someone might find it interesting.&lt;/p&gt;</description>

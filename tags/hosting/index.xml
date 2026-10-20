@@ -1,49 +1,49 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Hosting on Gordon Burgett | Fractional AI Engineering Director</title>
-    <link>http://www.gordonburgett.net/tags/hosting/</link>
-    <description>Recent content in Hosting on Gordon Burgett | Fractional AI Engineering Director</description>
+    <title>Hosting on Gordon Burgett | Fractional AI Engineer, Dallas-Fort Worth</title>
+    <link>https://gordonburgett.net/tags/hosting/</link>
+    <description>Recent content in Hosting on Gordon Burgett | Fractional AI Engineer, Dallas-Fort Worth</description>
     <image>
-      <title>Gordon Burgett | Fractional AI Engineering Director</title>
-      <url>http://www.gordonburgett.net/images/headshot.jpg</url>
-      <link>http://www.gordonburgett.net/images/headshot.jpg</link>
+      <title>Gordon Burgett | Fractional AI Engineer, Dallas-Fort Worth</title>
+      <url>https://gordonburgett.net/images/headshot.jpg</url>
+      <link>https://gordonburgett.net/images/headshot.jpg</link>
     </image>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>All content © Gordon Burgett, 2014-2026</copyright>
     <lastBuildDate>Wed, 07 Oct 2015 20:33:41 +0200</lastBuildDate>
-    <atom:link href="http://www.gordonburgett.net/tags/hosting/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://gordonburgett.net/tags/hosting/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Running with Docker</title>
-      <link>http://www.gordonburgett.net/archive/2015/10_running_with_docker/</link>
+      <link>https://gordonburgett.net/archive/2015/10_running_with_docker/</link>
       <pubDate>Wed, 07 Oct 2015 20:33:41 +0200</pubDate>
-      <guid>http://www.gordonburgett.net/archive/2015/10_running_with_docker/</guid>
+      <guid>https://gordonburgett.net/archive/2015/10_running_with_docker/</guid>
       <description>&lt;h3 id=&#34;locked-out&#34;&gt;Locked out!&lt;/h3&gt;
 &lt;p&gt;I managed to lock myself out of my EC2 instance when I was managing my keys.  So in order to update my blog, I had to deploy it to a new EC2 instance.  I decided to take the opportunity to improve the way I&amp;rsquo;m deploying new versions of my site.&lt;/p&gt;
 &lt;p&gt;Note: This will be a technical post.  If you&amp;rsquo;re following along with my adventure in Albania, you can skip this one.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Migrating to Node</title>
-      <link>http://www.gordonburgett.net/archive/2015/04_migrating-to-node/</link>
+      <link>https://gordonburgett.net/archive/2015/04_migrating-to-node/</link>
       <pubDate>Fri, 10 Apr 2015 23:23:19 -0500</pubDate>
-      <guid>http://www.gordonburgett.net/archive/2015/04_migrating-to-node/</guid>
+      <guid>https://gordonburgett.net/archive/2015/04_migrating-to-node/</guid>
       <description>My experience migrating my blog to nodejs</description>
     </item>
     <item>
       <title>hosting the blog</title>
-      <link>http://www.gordonburgett.net/archive/2014/12_hosting-the-blog/</link>
+      <link>https://gordonburgett.net/archive/2014/12_hosting-the-blog/</link>
       <pubDate>Sun, 14 Dec 2014 18:42:21 -0600</pubDate>
-      <guid>http://www.gordonburgett.net/archive/2014/12_hosting-the-blog/</guid>
+      <guid>https://gordonburgett.net/archive/2014/12_hosting-the-blog/</guid>
       <description>&lt;p&gt;I decided to use Amazon EC2 to host the blog, because they give you 1 year free on a micro instance.  Plus I&amp;rsquo;ve always wanted to learn how to host something on Amazon&amp;rsquo;s cloud.  I&amp;rsquo;ll get a linux instance and put an Apache HTTP server on it.  Should be easy enough to do.&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s my EC2 management console after signing up for an Amazon account and creating a linux micro instance:
 ![EC2 Management console](/images/2014/EC2 management console.png)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Creating a blog</title>
-      <link>http://www.gordonburgett.net/archive/2014/12_creating-a-blog/</link>
+      <link>https://gordonburgett.net/archive/2014/12_creating-a-blog/</link>
       <pubDate>Sun, 14 Dec 2014 13:52:12 -0600</pubDate>
-      <guid>http://www.gordonburgett.net/archive/2014/12_creating-a-blog/</guid>
+      <guid>https://gordonburgett.net/archive/2014/12_creating-a-blog/</guid>
       <description>&lt;h3 id=&#34;well-here-it-is&#34;&gt;Well, here it is.&lt;/h3&gt;
 &lt;p&gt;I&amp;rsquo;ve been wanting to create a blog for a while.  I don&amp;rsquo;t know what it will look like in the future, or how often I&amp;rsquo;ll update it, but as I sit here writing it it&amp;rsquo;s kind of cathartic.  It would be good to get some thoughts out there, and if anybody reads it that&amp;rsquo;s a bonus.&lt;/p&gt;
 &lt;p&gt;I want to talk about anything and everything on this blog.  I&amp;rsquo;ll delve into my work, hopefully some of these pages will be useful when another developer types some obscure error code into google.  I&amp;rsquo;ll discuss my faith, hopefully that could spark some interesting discussion.  I&amp;rsquo;ll discuss the important stuff that happens in my life, hopefully someone might find it interesting.&lt;/p&gt;</description>
