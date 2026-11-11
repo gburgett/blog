@@ -1,0 +1,13 @@
+{{- define "main" }}
+<div class="gb-main">
+<section style="border-bottom: 1px solid #e6e0d6;">
+  <div style="max-width: 640px; margin: 0 auto; padding: clamp(48px, 9vw, 90px) clamp(18px, 5vw, 40px);">
+    <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: #1c5f63; margin-bottom: 18px;">Message sent</div>
+    <h1 style="font-size: clamp(32px, 6vw, 42px); line-height: 1.1; letter-spacing: -.03em; font-weight: 600; margin: 0 0 18px; color: #14171a;">{{ .Title }}</h1>
+    <div class="gb-thanks" style="font-size: 17px; line-height: 1.65; color: #40403b;">
+      {{ .Content }}
+    </div>
+  </div>
+</section>
+</div>
+{{- end }}

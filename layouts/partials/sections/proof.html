@@ -1,0 +1,33 @@
+{{- /* Home page "Some things I've worked on" section, removed from index.html. To restore: add {{ partial "sections/proof.html" . }} where it should show (it was between About and Reading). */ -}}
+{{- $watermark := site.GetPage "/projects/watermark-community-church-mobile-app" }}
+{{- $aiAgents := site.GetPage "/posts/2026/03_building-ai-agents-that-empower" }}
+{{- $dataImport := site.GetPage "/posts/2024/11_neighbor-solutions-import" }}
+{{- $scrum := site.GetPage "/posts/2026/05_scrum-is-broken" }}
+
+  <section id="proof" style="border-bottom: 1px solid #e6e0d6;">
+    <div style="max-width: var(--gb-maxw, 1140px); margin: 0 auto; padding: clamp(48px, 8vw, 90px) clamp(18px, 5vw, 40px);">
+      <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: #8a8478; margin-bottom: 18px;">Some things I've worked on</div>
+      <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 18px 40px; margin-bottom: 54px;">
+        <h2 style="font-size: clamp(28px, 5.4vw, 38px); line-height: 1.14; letter-spacing: -.025em; font-weight: 600; margin: 0; max-width: 18em; color: #14171a;">Mostly cases where the call that mattered wasn't a technical one.</h2>
+        {{- with $watermark }}
+        <a href="{{ .RelPermalink }}" class="gb-hover-ink" style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: #1c5f63; white-space: nowrap;">Read a full write-up &rarr;</a>
+        {{- end }}
+      </div>
+      <div data-quad style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: #e6e0d6; border: 1px solid #e6e0d6;">
+        {{- $cases := slice
+          (dict "page" $watermark "tag" "Outside team &middot; Vendor selection" "title" "A mobile app built entirely by someone else" "body" "I carried the vision, the budget, the vendor choice, and the delivery oversight for an app used at congregation scale &mdash; without an internal mobile team to build it." "outcome" "Shipped, and still running")
+          (dict "page" $aiAgents "tag" "AI agents &middot; Product" "title" "An AI agent that non-technical users trust" "body" "I set the design principles for a customer-facing agent at HealthShare &mdash; the goal being to make people more capable, not to put AI on the box." "outcome" "In production")
+          (dict "page" $dataImport "tag" "Knowing when not to" "title" "A data import I deliberately kept boring" "body" "Messy PDFs and screenshots, and an obvious temptation to point an LLM at all of it. The interesting decision was where the AI stopped and ordinary code took over." "outcome" "Cheaper and more accurate")
+          (dict "page" $scrum "tag" "Ways of working" "title" "What AI does to how a team actually ships" "body" "What I worked through at Albers &mdash; including what happens to your planning cadence when a sprint of work finishes in an afternoon." "outcome" "Learned in a regulated industry")
+        -}}
+        {{- range $cases }}
+        <a href="{{ .page.RelPermalink }}" class="gb-card-cream" style="background: #faf8f4; padding: 34px; display: grid; gap: 14px; align-content: start; min-height: 210px;">
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: #1c5f63;">{{ .tag | safeHTML }}</div>
+          <h3 style="font-size: 22px; line-height: 1.25; letter-spacing: -.015em; font-weight: 600; margin: 0; color: #14171a;">{{ .title }}</h3>
+          <p style="font-size: 15px; line-height: 1.6; color: #6f6a61; margin: 0;">{{ .body | safeHTML }}</p>
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: #14171a; margin-top: 4px;">{{ .outcome }}</div>
+        </a>
+        {{- end }}
+      </div>
+    </div>
+  </section>

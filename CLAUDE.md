@@ -103,14 +103,12 @@ The site heavily customizes PaperMod theme through layout overrides:
 
 **Custom Sections on Homepage:**
 1. Hero (name, fractional AI engineer, who the work is for)
-2. How I think about this
-3. Proof (linked case studies)
-4. About
-5. What I'm reading
-6. FAQ (the visible questions and the FAQPage JSON-LD come from the same `$faqs` slice)
-7. Contact
+2. About ("Who am I?")
+3. What I'm reading
+4. FAQ (the visible questions and the FAQPage JSON-LD come from the same `$faqs` slice)
+5. Contact
 
-`layouts/partials/sections/capabilities.html` and `sections/projects.html` are leftovers from an older home page. The current home page does not render them.
+The Proof block (linked case studies) is parked in `layouts/partials/sections/proof.html` until it goes back on the home page. `layouts/partials/sections/capabilities.html` and `sections/projects.html` are leftovers from an older home page. The current home page does not render them.
 
 ### Styling
 
